@@ -1,0 +1,49 @@
+{
+    "id": "java-advanced",
+    "name": "Advanced Java Programming",
+    "shortName": "Java",
+    "icon": "☕",
+    "categories": ["programming", "java", "development", "oop", "enterprise", "backend"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "☕", "label": "Java basics", "text": "Explain Java variables, data types, and basic syntax." },
+        { "icon": "🔄", "label": "Control flow", "text": "How do I use if-else statements, switch, and loops in Java?" },
+        { "icon": "🧩", "label": "OOP fundamentals", "text": "Explain classes, objects, constructors, and methods in Java." },
+        { "icon": "🔗", "label": "Inheritance", "text": "How do I use inheritance, interfaces, and abstract classes in Java?" },
+        { "icon": "📦", "label": "Collections", "text": "Explain ArrayList, HashMap, LinkedList, and the Collections Framework." },
+        { "icon": "⚠️", "label": "Exceptions", "text": "How do I handle checked and unchecked exceptions in Java?" },
+        { "icon": "🔍", "label": "Generics", "text": "Explain Java generics, type parameters, and wildcards." },
+        { "icon": "🚀", "label": "Streams & Lambdas", "text": "Teach me Java 8+ streams, lambda expressions, and functional interfaces." },
+        { "icon": "🔀", "label": "Concurrency", "text": "Explain threads, synchronization, and the java.util.concurrent package." },
+        { "icon": "🗄️", "label": "I/O & NIO", "text": "How do I read and write files using Java I/O and NIO?" },
+        { "icon": "🧪", "label": "Testing", "text": "How to write unit tests with JUnit 5 and Mockito?" },
+        { "icon": "🏗️", "label": "Design patterns", "text": "Explain common design patterns like Singleton, Factory, and Observer." },
+        { "icon": "⚡", "label": "Performance", "text": "Tips for optimizing Java application performance and JVM tuning." },
+        { "icon": "🌐", "label": "Spring Boot", "text": "Show me how to build a REST API with Spring Boot." },
+        { "icon": "📝", "label": "Practice", "text": "Give me an advanced Java coding challenge to solve." }
+    ],
+    "quickActions": [
+        { "icon": "☕", "label": "Basics", "text": "Explain Java basics." },
+        { "icon": "🔄", "label": "Control flow", "text": "Help with if/switch/loops." },
+        { "icon": "🧩", "label": "OOP", "text": "Explain classes and objects." },
+        { "icon": "🔗", "label": "Inheritance", "text": "Help with inheritance/interfaces." },
+        { "icon": "📦", "label": "Collections", "text": "Explain Collections Framework." },
+        { "icon": "⚠️", "label": "Exceptions", "text": "Help with exception handling." },
+        { "icon": "🔍", "label": "Generics", "text": "Explain generics." },
+        { "icon": "🚀", "label": "Streams", "text": "Help with streams/lambdas." },
+        { "icon": "🔀", "label": "Concurrency", "text": "Explain threading/concurrency." },
+        { "icon": "🗄️", "label": "File I/O", "text": "Help with Java I/O." },
+        { "icon": "🧪", "label": "Testing", "text": "Help with JUnit/Mockito." },
+        { "icon": "🏗️", "label": "Patterns", "text": "Explain design patterns." },
+        { "icon": "⚡", "label": "Performance", "text": "JVM tuning tips." },
+        { "icon": "🌐", "label": "Spring Boot", "text": "Help with Spring Boot." },
+        { "icon": "📝", "label": "Practice", "text": "Give me a challenge." }
+    ],
+    "filenames": {
+        "syllabusMap": "java-syllabus-map.json",
+        "dotPoints": "java-dot-points.json",
+        "questionIndex": "java-index.json",
+        "questions": "java-questions.json",
+        "markingGuidelinesIndex": "java-marking-guidelines-index.json"
+    }
+}

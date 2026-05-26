@@ -1,0 +1,31 @@
+{
+    "id": "english-advanced",
+    "name": "HSC English Advanced",
+    "shortName": "Advanced",
+    "icon": "📝",
+    "categories": ["english", "writing", "reading"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "✍️", "label": "Model response", "text": "Can you show me a model essay introduction for a Module A question?" },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question on my prescribed text." },
+        { "icon": "❓", "label": "Explain", "text": "Explain what 'textual integrity' means and how to reference it in an essay." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC English Advanced past paper essay question." },
+        { "icon": "🔍", "label": "Check my writing", "text": "Check my essay paragraph: [paste your paragraph here]" },
+        { "icon": "🗺️", "label": "What to study", "text": "Based on my progress, what should I focus on today?" }
+    ],
+    "quickActions": [
+        { "icon": "✍️", "label": "Model response", "text": "Show me a model essay response." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice essay question." },
+        { "icon": "❓", "label": "Explain", "text": "Explain this concept or technique." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC English Advanced past paper question." },
+        { "icon": "🔍", "label": "Check my writing", "text": "Check my essay paragraph." },
+        { "icon": "🗺️", "label": "What to study", "text": "What should I study today?" }
+    ],
+    "filenames": {
+        "syllabusMap": "eng-adv-syllabus-map.json",
+        "dotPoints": "eng-adv-dot-points.json",
+        "questionIndex": "eng-adv-index.json",
+        "questions": "eng-adv-questions.json",
+        "markingGuidelinesIndex": "eng-adv-marking-guidelines-index.json"
+    }
+}

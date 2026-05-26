@@ -1,0 +1,1264 @@
+{
+  "subject": "HSC Mathematics Advanced",
+  "syllabusVersion": "2017",
+  "description": "Deep detail for each syllabus dot-point, supporting error analysis, Socratic questioning, worked examples and marking feedback skills.",
+  "dotPoints": {
+
+    "MA-F1.1": {
+      "code": "MA-F1.1",
+      "name": "Algebraic techniques",
+      "topic": "MA-F",
+      "subtopic": "MA-F1",
+      "year": 11,
+      "summary": "Manipulate surds and apply index laws to simplify algebraic expressions.",
+      "keyConcepts": [
+        "Index laws: a^m × a^n = a^(m+n), a^m ÷ a^n = a^(m-n), (a^m)^n = a^(mn)",
+        "Zero index: a^0 = 1 for a ≠ 0",
+        "Negative index: a^(-n) = 1/a^n",
+        "Fractional index: a^(1/n) = nth root of a, a^(m/n) = (nth root of a)^m",
+        "Surd: an irrational number expressed with a radical sign",
+        "Simplifying surds: √(ab) = √a × √b",
+        "Rationalising the denominator: multiply numerator and denominator by the conjugate surd"
+      ],
+      "commonErrors": [
+        "Adding indices instead of multiplying when raising a power to a power: (a^2)^3 ≠ a^5, it equals a^6",
+        "Incorrectly simplifying √(a+b) as √a + √b — surds do NOT distribute over addition",
+        "Forgetting to rationalise both terms when conjugate is (a - √b): (a + √b)(a - √b) = a² - b",
+        "Treating fractional indices incorrectly: a^(2/3) means cube root of a², not a² divided by 3",
+        "Sign errors when applying negative indices to fractions"
+      ],
+      "examTips": [
+        "Always look to simplify surds before rationalising — simplify √50 to 5√2 first",
+        "When rationalising, the conjugate of (a + √b) is (a - √b)",
+        "Check final answer has no surds in the denominator",
+        "In multi-step problems, keep exact surd form until the final answer"
+      ],
+      "socraticPrompts": [
+        "What does a^(1/2) actually mean? Can you connect that to something you already know?",
+        "If √(a × b) = √a × √b, does √(a + b) = √a + √b? Try a = 9, b = 16 to test your answer.",
+        "Why do we want to remove surds from the denominator? What makes that form 'simpler'?",
+        "What would you multiply by to eliminate the √3 from the denominator of 1/√3?"
+      ],
+      "workedExampleTemplate": {
+        "type": "simplify",
+        "steps": ["Identify index law or surd rule to apply", "Apply the rule step by step", "Check denominator is rationalised if required", "Verify the simplified form"]
+      },
+      "relatedDotPoints": ["MA-F1.3", "MA-E1.1"]
+    },
+
+    "MA-F1.2": {
+      "code": "MA-F1.2",
+      "name": "Introduction to functions",
+      "topic": "MA-F",
+      "subtopic": "MA-F1",
+      "year": 11,
+      "summary": "Understand functions as mappings, use function notation, and determine domain and range.",
+      "keyConcepts": [
+        "A function maps each input to exactly one output",
+        "Vertical line test: a relation is a function if every vertical line crosses the graph at most once",
+        "Function notation: f(x) means the output when input is x",
+        "Domain: the set of all valid input values (x-values)",
+        "Range: the set of all output values (y-values) actually produced",
+        "Natural domain: the largest domain for which the function is defined",
+        "Independent variable: x (input); Dependent variable: y or f(x) (output)"
+      ],
+      "commonErrors": [
+        "Confusing domain and range — domain is inputs (x), range is outputs (y)",
+        "Forgetting to exclude values that make a denominator zero from the domain",
+        "Forgetting to exclude values that make a square root negative from the domain",
+        "Misapplying the vertical line test to horizontal lines",
+        "Stating the range as the same as the domain without checking what y-values are actually produced"
+      ],
+      "examTips": [
+        "For rational functions, set denominator ≠ 0 to find domain restrictions",
+        "For square root functions, set expression under root ≥ 0",
+        "Always state domain and range using correct notation: {x: x > 2} or interval notation (2, ∞)",
+        "For composite functions f(g(x)), the domain must satisfy both g(x) defined AND the result within domain of f"
+      ],
+      "socraticPrompts": [
+        "If I put x = 3 into f(x) = x², what do I get? What if I put x = -3? Are these different inputs giving different outputs?",
+        "Draw a circle. Does it pass the vertical line test? Why does that matter?",
+        "For f(x) = 1/(x-2), what happens when you substitute x = 2? What does that tell you about the domain?",
+        "For f(x) = √x, can x be negative? Why or why not?"
+      ],
+      "workedExampleTemplate": {
+        "type": "domain-range",
+        "steps": ["Identify the type of function", "Find any restrictions (denominator ≠ 0, radicand ≥ 0)", "State the domain", "Determine the range by considering the shape of the graph or algebraic analysis"]
+      },
+      "relatedDotPoints": ["MA-F1.3", "MA-F1.4", "MA-F1.5"]
+    },
+
+    "MA-F1.3": {
+      "code": "MA-F1.3",
+      "name": "Linear, quadratic and cubic functions",
+      "topic": "MA-F",
+      "subtopic": "MA-F1",
+      "year": 11,
+      "summary": "Sketch and analyse linear, quadratic and cubic functions; solve quadratic equations.",
+      "keyConcepts": [
+        "Linear: y = mx + b, gradient m, y-intercept b",
+        "Quadratic: y = ax² + bx + c, parabola opening up (a>0) or down (a<0)",
+        "Vertex form: y = a(x-h)² + k, vertex at (h, k)",
+        "Axis of symmetry: x = -b/(2a)",
+        "Discriminant: Δ = b² - 4ac; Δ > 0 two real roots, Δ = 0 one root, Δ < 0 no real roots",
+        "Quadratic formula: x = (-b ± √(b²-4ac)) / 2a",
+        "Cubic: y = ax³ + ..., one or three real roots, always has at least one x-intercept"
+      ],
+      "commonErrors": [
+        "Axis of symmetry formula: x = -b/2a, not x = b/2a (forgetting the negative)",
+        "Completing the square: forgetting to balance the equation after adding and subtracting (b/2)²",
+        "Discriminant: using b² + 4ac instead of b² - 4ac",
+        "Finding vertex: substituting axis of symmetry value back into original equation (correct) vs guessing",
+        "Sketching: showing incorrect orientation (opening up vs down) based on sign of a"
+      ],
+      "examTips": [
+        "For sketching, always find: x-intercepts, y-intercept, vertex, and orientation",
+        "Use discriminant to quickly check how many x-intercepts before solving",
+        "Completing the square is useful both for finding vertex and for integration later",
+        "When factorising fails, use the quadratic formula — show all working"
+      ],
+      "socraticPrompts": [
+        "If a = -2 in y = ax², which way does the parabola open? How do you know?",
+        "The axis of symmetry is x = -b/2a. Can you explain why it falls exactly between the two x-intercepts?",
+        "If Δ = 0, what does that tell you about how the parabola meets the x-axis?",
+        "When completing the square for y = x² + 6x + 5, what do you add and subtract? Why?"
+      ],
+      "workedExampleTemplate": {
+        "type": "sketch-quadratic",
+        "steps": ["Find y-intercept (set x=0)", "Find x-intercepts (set y=0, use discriminant first)", "Find axis of symmetry x = -b/2a", "Find vertex by substituting", "Determine orientation from sign of a", "Sketch with all key features labelled"]
+      },
+      "relatedDotPoints": ["MA-F1.2", "MA-F1.5", "MA-C1.3"]
+    },
+
+    "MA-F1.4": {
+      "code": "MA-F1.4",
+      "name": "Further functions and relations",
+      "topic": "MA-F",
+      "subtopic": "MA-F1",
+      "year": 11,
+      "summary": "Recognise and sketch hyperbola, square root, semicircle and absolute value functions.",
+      "keyConcepts": [
+        "Hyperbola: y = k/x, asymptotes at x = 0 and y = 0, domain x ≠ 0",
+        "Square root: y = √x, domain x ≥ 0, range y ≥ 0",
+        "Semicircle: y = √(r² - x²), upper semicircle of circle x² + y² = r²",
+        "Absolute value: y = |x|, V-shaped graph, vertex at origin",
+        "Even function: f(-x) = f(x), symmetric about y-axis (e.g. y = x², y = |x|)",
+        "Odd function: f(-x) = -f(x), rotational symmetry about origin (e.g. y = x³, y = 1/x)"
+      ],
+      "commonErrors": [
+        "Forgetting the domain restriction for y = √x (x ≥ 0, not all reals)",
+        "Drawing the full circle instead of just the semicircle for y = √(r²-x²)",
+        "Confusing odd and even functions — even: y-axis symmetry, odd: origin symmetry",
+        "Asymptote errors: drawing the hyperbola touching or crossing its asymptote",
+        "Absolute value: drawing a U-shape instead of a V-shape"
+      ],
+      "examTips": [
+        "For absolute value equations |f(x)| = k, consider both f(x) = k and f(x) = -k",
+        "Always clearly mark asymptotes as dashed lines and label them",
+        "Semicircle domain is -r ≤ x ≤ r, range is 0 ≤ y ≤ r"
+      ],
+      "socraticPrompts": [
+        "For y = 1/x, what happens as x gets very large? What does that tell you about the graph?",
+        "Is y = x² an even or odd function? What does that mean graphically?",
+        "For y = √x, why can't x be negative? Can y be negative?",
+        "The graph of y = |x - 3| looks like y = |x| but moved. Where is the vertex?"
+      ],
+      "workedExampleTemplate": {
+        "type": "sketch-function",
+        "steps": ["Identify the function type", "Determine domain and range", "Find key points (intercepts, vertex, asymptotes)", "Apply any transformations", "Sketch with features labelled"]
+      },
+      "relatedDotPoints": ["MA-F1.2", "MA-F1.5", "MA-F2.1"]
+    },
+
+    "MA-F1.5": {
+      "code": "MA-F1.5",
+      "name": "Transformations of graphs",
+      "topic": "MA-F",
+      "subtopic": "MA-F1",
+      "year": 11,
+      "summary": "Apply translations, dilations and reflections to transform graphs.",
+      "keyConcepts": [
+        "Vertical translation: y = f(x) + c shifts graph up c units (down if c < 0)",
+        "Horizontal translation: y = f(x - a) shifts graph right a units (left if a < 0)",
+        "Vertical dilation: y = kf(x) stretches vertically by factor k",
+        "Horizontal dilation: y = f(kx) compresses horizontally by factor 1/k",
+        "Vertical reflection: y = -f(x) reflects in the x-axis",
+        "Horizontal reflection: y = f(-x) reflects in the y-axis",
+        "Order matters: apply dilations before translations"
+      ],
+      "commonErrors": [
+        "Horizontal translation direction confusion: y = f(x-3) moves RIGHT 3 (not left)",
+        "Horizontal dilation: y = f(2x) compresses by factor 1/2 (not stretches by 2)",
+        "Applying transformations in wrong order: for y = 2f(x-3), dilate first then translate",
+        "Reflection confusion: y = -f(x) reflects in x-axis, y = f(-x) reflects in y-axis",
+        "Not updating key points (intercepts, vertices) when sketching transformed graph"
+      ],
+      "examTips": [
+        "Describe transformations in precise language: 'translation of 3 units in the positive x-direction'",
+        "Track what happens to key points under each transformation",
+        "For combined transformations, describe each transformation separately in correct order",
+        "In HSC, questions often ask you to 'describe the transformation' — be specific about direction and magnitude"
+      ],
+      "socraticPrompts": [
+        "If y = f(x) passes through (2, 5), where does y = f(x) + 3 pass through? What about y = f(x-3)?",
+        "y = f(x-3) shifts right, not left. Can you convince yourself of this by testing x = 3?",
+        "What happens to the x-intercepts of y = f(x) when you apply y = f(-x)?",
+        "If the vertex of y = f(x) is at (1, 2), where is the vertex of y = 2f(x-1) + 3?"
+      ],
+      "workedExampleTemplate": {
+        "type": "transformation",
+        "steps": ["Identify the base function and all transformations present", "Apply dilations first, then translations", "Track the effect on key points", "State each transformation clearly", "Sketch the transformed graph"]
+      },
+      "relatedDotPoints": ["MA-F1.3", "MA-F1.4", "MA-F2.1", "MA-T3.1"]
+    },
+
+    "MA-F2.1": {
+      "code": "MA-F2.1",
+      "name": "Graphing techniques",
+      "topic": "MA-F",
+      "subtopic": "MA-F2",
+      "year": 12,
+      "summary": "Sketch reciprocal, squared, absolute value and sum/difference of function graphs.",
+      "keyConcepts": [
+        "y = 1/f(x): zeroes of f(x) become vertical asymptotes; where |f(x)| is large, |1/f(x)| is small",
+        "y = [f(x)]²: always non-negative; zeroes of f(x) remain; turning points added at x-intercepts",
+        "y = |f(x)|: any part of f(x) below x-axis is reflected above it",
+        "y = f(x) + g(x): add y-values of f and g at each x (graphical addition)",
+        "Asymptotes: vertical where denominator is zero, horizontal from end behaviour"
+      ],
+      "commonErrors": [
+        "For y = 1/f(x): forgetting that where f(x) = 0, there is a vertical asymptote (not a zero)",
+        "For y = [f(x)]²: forgetting the curve is always ≥ 0",
+        "For y = |f(x)|: reflecting the whole graph instead of just the negative parts",
+        "Not identifying all asymptotes before sketching",
+        "Graphical addition: adding x-values instead of y-values"
+      ],
+      "examTips": [
+        "For y = 1/f(x): analyse the sign of f(x) in each interval to determine sign of 1/f(x)",
+        "Always check: does the graph go to +∞ or -∞ near a vertical asymptote?",
+        "Mark asymptotes as dashed lines",
+        "For |f(x)|: identify where f(x) < 0, then reflect those sections"
+      ],
+      "socraticPrompts": [
+        "If f(2) = 4, what is 1/f(2)? If f(x) approaches 0 from above, what happens to 1/f(x)?",
+        "Where y = f(x) has a zero, what happens to y = 1/f(x)? Why?",
+        "For y = |f(x)|, which parts of the graph change? Which stay the same?",
+        "How does y = [f(x)]² behave at the x-intercepts of y = f(x)?"
+      ],
+      "workedExampleTemplate": {
+        "type": "advanced-sketch",
+        "steps": ["Sketch base function f(x) first", "Identify key features: intercepts, asymptotes, turning points", "Apply the graphing technique (reciprocal/square/absolute value/addition)", "Determine behaviour near critical points", "Sketch final graph with all features labelled"]
+      },
+      "relatedDotPoints": ["MA-F1.4", "MA-F1.5"]
+    },
+
+    "MA-T1.1": {
+      "code": "MA-T1.1",
+      "name": "Trigonometry of non-right-angled triangles",
+      "topic": "MA-T",
+      "subtopic": "MA-T1",
+      "year": 11,
+      "summary": "Apply sine rule, cosine rule and area formula to solve triangles and practical problems.",
+      "keyConcepts": [
+        "Sine rule: a/sinA = b/sinB = c/sinC",
+        "Cosine rule (finding side): a² = b² + c² - 2bc cosA",
+        "Cosine rule (finding angle): cosA = (b² + c² - a²) / 2bc",
+        "Area formula: Area = ½ab sinC",
+        "Ambiguous case: when given two sides and a non-included angle (SSA), there may be 0, 1 or 2 triangles",
+        "Bearing: angle measured clockwise from north",
+        "Angle of elevation: angle above the horizontal; angle of depression: angle below the horizontal"
+      ],
+      "commonErrors": [
+        "Using sine rule when cosine rule is required (or vice versa)",
+        "Ambiguous case: finding only one solution when two exist",
+        "Bearing problems: drawing the diagram incorrectly (north is up, bearing is clockwise)",
+        "Area formula: using the wrong angle (must be the included angle between the two sides)",
+        "Rounding intermediate values: always keep full precision until the final answer"
+      ],
+      "examTips": [
+        "Use sine rule when you know: two angles and a side (AAS), or two sides and a non-included angle (SSA)",
+        "Use cosine rule when you know: three sides (SSS), or two sides and the included angle (SAS)",
+        "In bearings problems, always draw a clear diagram with North arrows",
+        "Check for the ambiguous case whenever applying sine rule to find an angle"
+      ],
+      "socraticPrompts": [
+        "You know sides a and b, and angle A. Which rule would you use? Could there be two triangles?",
+        "Why does the area formula use sinC? Where does ½ab sinC come from?",
+        "A bearing of 120° — can you draw that? Which direction is it roughly?",
+        "In the ambiguous case, how do you find the second possible triangle?"
+      ],
+      "workedExampleTemplate": {
+        "type": "triangle-solving",
+        "steps": ["Draw and label the triangle clearly", "Identify known and unknown quantities", "Choose appropriate rule (sine or cosine)", "Apply rule and solve", "Check for ambiguous case if applicable", "State answer with units and correct rounding"]
+      },
+      "relatedDotPoints": ["MA-T1.2", "MA-T1.3"]
+    },
+
+    "MA-T1.2": {
+      "code": "MA-T1.2",
+      "name": "Radians and arc length",
+      "topic": "MA-T",
+      "subtopic": "MA-T1",
+      "year": 11,
+      "summary": "Convert between degrees and radians; calculate arc length and sector area.",
+      "keyConcepts": [
+        "Radian: the angle subtended at the centre by an arc equal in length to the radius",
+        "Conversion: degrees to radians × π/180; radians to degrees × 180/π",
+        "Key values: 30° = π/6, 45° = π/4, 60° = π/3, 90° = π/2, 180° = π, 360° = 2π",
+        "Arc length: l = rθ (θ in radians)",
+        "Sector area: A = ½r²θ (θ in radians)",
+        "Segment area = sector area - triangle area = ½r²θ - ½r²sinθ = ½r²(θ - sinθ)"
+      ],
+      "commonErrors": [
+        "Using degrees in the formulas l = rθ and A = ½r²θ — θ MUST be in radians",
+        "Confusing arc length (l = rθ) with sector area (A = ½r²θ)",
+        "Segment area: subtracting the wrong area — must subtract triangle area from sector area",
+        "Conversion errors: multiplying by 180/π instead of π/180 (or vice versa)"
+      ],
+      "examTips": [
+        "Always convert to radians before using l = rθ or A = ½r²θ",
+        "Memorise the key radian equivalents: π/6, π/4, π/3, π/2, π",
+        "Segment area: draw a diagram to clearly see sector minus triangle"
+      ],
+      "socraticPrompts": [
+        "What does 'radian' actually mean physically? Can you describe it in terms of the circle?",
+        "If the radius is 5 and the angle is π/3 radians, how long is the arc? Walk me through the formula.",
+        "Why must θ be in radians for l = rθ to work?",
+        "How would you find the area of a segment? Draw it first."
+      ],
+      "workedExampleTemplate": {
+        "type": "arc-sector",
+        "steps": ["Convert angle to radians if given in degrees", "Apply l = rθ for arc length or A = ½r²θ for sector", "For segment: calculate sector area then subtract triangle area", "State answer with correct units"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "MA-T3.1"]
+    },
+
+    "MA-T1.3": {
+      "code": "MA-T1.3",
+      "name": "Trigonometric functions and exact values",
+      "topic": "MA-T",
+      "subtopic": "MA-T1",
+      "year": 11,
+      "summary": "Use the unit circle to define trig functions; find exact values; apply ASTC rule.",
+      "keyConcepts": [
+        "Unit circle: x = cosθ, y = sinθ for angle θ measured anticlockwise from positive x-axis",
+        "ASTC rule: All (Q1), Sin (Q2), Tan (Q3), Cos (Q4) — which ratios are positive",
+        "Exact values: sin30°=½, cos30°=√3/2, tan30°=1/√3; sin45°=cos45°=1/√2, tan45°=1",
+        "sin60°=√3/2, cos60°=½, tan60°=√3",
+        "Supplementary: sin(180°-θ)=sinθ, cos(180°-θ)=-cosθ, tan(180°-θ)=-tanθ",
+        "Complementary: sin(90°-θ)=cosθ, cos(90°-θ)=sinθ"
+      ],
+      "commonErrors": [
+        "ASTC: forgetting which quadrant has which positive ratios",
+        "Exact values: confusing sin and cos for 30° and 60° (sin30=½ not √3/2)",
+        "Supplementary angles: getting the sign wrong for cos and tan",
+        "Not expressing answers in exact form when required (leaving 0.866 instead of √3/2)",
+        "Unit circle angle direction: forgetting angles increase anticlockwise"
+      ],
+      "examTips": [
+        "Memorise the exact values table — it is used in almost every trig question",
+        "ASTC memory: 'All Stations To Central' or 'All Silly Tom Cats'",
+        "To find trig ratios in other quadrants: find the related acute angle, then apply ASTC for sign",
+        "Exact form is almost always required in HSC — never leave a decimal for trig of special angles"
+      ],
+      "socraticPrompts": [
+        "Point P is on the unit circle at angle 150°. What are its coordinates? What is sin150°?",
+        "sin30° = ½. What is sin150°? What about sin210°? Can you use the unit circle to explain?",
+        "Why is cos90° = 0? Can you see this on the unit circle?",
+        "In which quadrant is tan negative but sin positive?"
+      ],
+      "workedExampleTemplate": {
+        "type": "exact-values",
+        "steps": ["Identify the angle and determine which quadrant it falls in", "Find the related acute angle", "Apply ASTC to determine the sign", "Write the exact value using the special angle table", "Verify using the unit circle if needed"]
+      },
+      "relatedDotPoints": ["MA-T1.2", "MA-T2.1", "MA-T2.2", "MA-T3.1"]
+    },
+
+    "MA-T2.1": {
+      "code": "MA-T2.1",
+      "name": "Trigonometric identities",
+      "topic": "MA-T",
+      "subtopic": "MA-T2",
+      "year": 11,
+      "summary": "Prove and apply the Pythagorean identity and tan identity to simplify expressions.",
+      "keyConcepts": [
+        "Pythagorean identity: sin²x + cos²x = 1",
+        "Variants: sin²x = 1 - cos²x; cos²x = 1 - sin²x",
+        "Dividing by cos²x: tan²x + 1 = sec²x",
+        "Quotient identity: tan x = sin x / cos x",
+        "Proving identities: work on one side only, transform to match the other side"
+      ],
+      "commonErrors": [
+        "Trying to 'cross-multiply' or move terms across the equals sign when proving identities",
+        "Using sin²x + cos²x = 1 incorrectly as sinx + cosx = 1",
+        "Forgetting to square: writing sin²x as (sinx)² — these are the same, but forgetting to square is common",
+        "Circular reasoning in proofs: using the result to prove itself"
+      ],
+      "examTips": [
+        "When proving an identity, start with the more complicated side",
+        "Common strategy: convert everything to sin and cos",
+        "Look for sin²x + cos²x = 1 patterns — substitute 1 - cos²x for sin²x or vice versa",
+        "Never cross the equals sign in a proof — work on each side independently"
+      ],
+      "socraticPrompts": [
+        "Where does sin²x + cos²x = 1 come from? Can you derive it from the unit circle?",
+        "If sinx = 3/5 and x is in the first quadrant, what is cosx? How do you use the identity?",
+        "When proving an identity, why can't you just cross-multiply to make both sides equal?",
+        "How would you simplify (sin²x - 1)/cosx? What identity helps here?"
+      ],
+      "workedExampleTemplate": {
+        "type": "identity-proof",
+        "steps": ["Choose the more complex side to work on", "Look for Pythagorean or quotient identity patterns", "Substitute identities to simplify", "Continue manipulating until matching the other side", "State LHS = RHS to complete the proof"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "MA-T2.2", "MA-C2.1"]
+    },
+
+    "MA-T2.2": {
+      "code": "MA-T2.2",
+      "name": "Solving trigonometric equations",
+      "topic": "MA-T",
+      "subtopic": "MA-T2",
+      "year": 11,
+      "summary": "Solve trigonometric equations over specified domains using exact values and identities.",
+      "keyConcepts": [
+        "For sinx = k: find reference angle, then find all solutions in the given domain using ASTC",
+        "For cosx = k: same approach using ASTC",
+        "For tanx = k: solutions in Q1 and Q3 (tan positive), Q2 and Q4 (tan negative)",
+        "Period of sinx and cosx is 2π (360°), period of tanx is π (180°)",
+        "Using identities to reduce equations: e.g. replace sin²x with 1 - cos²x"
+      ],
+      "commonErrors": [
+        "Finding only one solution when multiple solutions exist within the domain",
+        "Using wrong period: adding 2π for tanx (should be π) or adding π for sinx/cosx (should be 2π)",
+        "Forgetting to apply domain restrictions — only include solutions within the given interval",
+        "Sign errors when using ASTC to find angles in other quadrants"
+      ],
+      "examTips": [
+        "Always draw a unit circle diagram to visualise all solutions",
+        "State all solutions — HSC markers will deduct marks for missing solutions",
+        "Check each solution satisfies the original equation if in doubt",
+        "When the domain is given in radians, express solutions in radians"
+      ],
+      "socraticPrompts": [
+        "sinx = ½ has one reference angle of 30°. But how many solutions are there between 0° and 360°?",
+        "tanx = -1 between 0 and 2π. In which quadrants is tan negative? So where are the solutions?",
+        "For 2sin²x - sinx - 1 = 0, what technique from algebra might help?",
+        "How does the period of tanx being π (not 2π) affect the number of solutions?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-equation",
+        "steps": ["Identify the trigonometric function and isolate it", "Find the reference angle using inverse trig", "Use ASTC to find all angles in the domain", "Check period and add further solutions if domain allows", "List all solutions, verify against domain"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "MA-T2.1", "MA-T3.1"]
+    },
+
+    "MA-T3.1": {
+      "code": "MA-T3.1",
+      "name": "Graphs of trigonometric functions",
+      "topic": "MA-T",
+      "subtopic": "MA-T3",
+      "year": 12,
+      "summary": "Sketch and interpret graphs of sin, cos and tan with transformations.",
+      "keyConcepts": [
+        "y = a sin(bx + c) + d: amplitude |a|, period 2π/|b|, phase shift -c/b, vertical shift d",
+        "y = a cos(bx + c) + d: same parameters as sine",
+        "y = tan(bx + c): period π/|b|, vertical asymptotes where cos = 0",
+        "Amplitude: half the distance between maximum and minimum values",
+        "Period: horizontal distance for one complete cycle",
+        "Phase shift: horizontal displacement"
+      ],
+      "commonErrors": [
+        "Period formula: using 2π/b for tan (should be π/b)",
+        "Amplitude: using 'a' directly without taking absolute value (amplitude is always positive)",
+        "Phase shift direction: y = sin(x - π/3) shifts RIGHT by π/3 (common confusion with left/right)",
+        "Forgetting vertical shift when finding maximum/minimum values",
+        "Sketching tan with wrong asymptote positions"
+      ],
+      "examTips": [
+        "Identify a, b, c, d before sketching — write them out explicitly",
+        "Amplitude = |a|, Period = 2π/|b| (sine/cosine) or π/|b| (tan)",
+        "Show at least one complete cycle, marking x-intercepts, max/min, and key points",
+        "HSC often asks to 'find the equation' from a graph — work backwards using amplitude and period"
+      ],
+      "socraticPrompts": [
+        "For y = 3sin(2x), what is the amplitude? What is the period? How does it differ from y = sinx?",
+        "If the period of a cosine function is π, what is b in y = cos(bx)?",
+        "y = sin(x - π/4) is shifted. Which direction and by how much? Test x = π/4 to check.",
+        "How do you find the equation of a sinusoidal graph given its maximum, minimum and period?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-graph",
+        "steps": ["Identify a, b, c, d from the equation", "Calculate amplitude, period and phase shift", "Find the vertical shift and state max/min values", "Calculate key x-values (start, quarter-period points)", "Sketch at least one full cycle with all features labelled"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "MA-T2.2", "MA-F1.5"]
+    },
+
+    "MA-T3.2": {
+      "code": "MA-T3.2",
+      "name": "Trigonometric modelling",
+      "topic": "MA-T",
+      "subtopic": "MA-T3",
+      "year": 12,
+      "summary": "Model real-world periodic phenomena using trigonometric functions.",
+      "keyConcepts": [
+        "Identify amplitude from context (e.g. tidal range / 2)",
+        "Identify period from context (e.g. 12.5 hours for tides)",
+        "Vertical shift = (max + min) / 2",
+        "Amplitude = (max - min) / 2",
+        "Select sin or cos based on initial conditions (cosine starts at max or min)"
+      ],
+      "commonErrors": [
+        "Not halving the range to get amplitude: amplitude = (max - min)/2, not (max - min)",
+        "Incorrect vertical shift: should be (max + min)/2, not just the minimum value",
+        "Choosing wrong base function: use cos when the cycle starts at max/min, sin when it starts at midpoint",
+        "Period and b relationship: if period = T, then b = 2π/T"
+      ],
+      "examTips": [
+        "Extract amplitude, period and vertical shift from the problem context before writing the equation",
+        "Sketch the situation first to visualise the model",
+        "Check the equation predicts correctly at known data points"
+      ],
+      "socraticPrompts": [
+        "The tide goes from 0.5m to 3.5m. What is the amplitude? What is the vertical shift?",
+        "If the tide completes one cycle every 12.5 hours, what is b in the formula?",
+        "Should you use sin or cos here? When does the cycle start relative to a maximum?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-modelling",
+        "steps": ["Identify max, min, period from context", "Calculate amplitude = (max-min)/2 and vertical shift = (max+min)/2", "Determine b from period: b = 2π/T", "Choose sin or cos based on starting point", "Write the equation and verify with known values"]
+      },
+      "relatedDotPoints": ["MA-T3.1", "MA-C3.1"]
+    },
+
+    "MA-C1.3": {
+      "code": "MA-C1.3",
+      "name": "Differentiation of polynomials",
+      "topic": "MA-C",
+      "subtopic": "MA-C1",
+      "year": 11,
+      "summary": "Apply the power rule to differentiate polynomials; find tangent and normal equations.",
+      "keyConcepts": [
+        "Power rule: d/dx [x^n] = nx^(n-1)",
+        "Constant rule: d/dx [c] = 0",
+        "Sum/difference rule: derivative of sum = sum of derivatives",
+        "Constant multiple: d/dx [cf(x)] = c·f'(x)",
+        "Tangent at point (a, f(a)): gradient m = f'(a), equation y - f(a) = m(x - a)",
+        "Normal at (a, f(a)): gradient = -1/f'(a), perpendicular to tangent"
+      ],
+      "commonErrors": [
+        "Power rule: reducing the power but forgetting to multiply by it: d/dx[x³] = x² not 3x²... wait, 3x² is correct — common error is writing just x²",
+        "Forgetting the constant multiple: d/dx[5x³] = 15x² not 5x²",
+        "Differentiating a constant to get 1 instead of 0",
+        "Tangent vs normal: using the tangent gradient for the normal (should be negative reciprocal)",
+        "Point on curve: substituting into f'(x) not f(x) to find the y-coordinate"
+      ],
+      "examTips": [
+        "Rewrite before differentiating: convert √x to x^(1/2) and 1/x to x^(-1)",
+        "Always find the y-coordinate of the point by substituting into y = f(x), not f'(x)",
+        "Normal gradient = -1/m where m is the tangent gradient",
+        "Show full working for equation of tangent/normal — two marks usually means two steps"
+      ],
+      "socraticPrompts": [
+        "For f(x) = x³, what is f'(x)? What does f'(2) tell you about the curve at x = 2?",
+        "The tangent at x = 1 to y = x² has gradient 2. Can you find the equation of this tangent?",
+        "If the tangent has gradient 3, what is the gradient of the normal? Why?",
+        "To find the equation of the tangent, you need a point AND a gradient. Where do you get each?"
+      ],
+      "workedExampleTemplate": {
+        "type": "tangent-normal",
+        "steps": ["Differentiate f(x) to get f'(x)", "Substitute x-value to find gradient m = f'(a)", "Substitute x-value into f(x) to find y-coordinate (a, f(a))", "For tangent: use y - f(a) = m(x - a)", "For normal: use gradient -1/m in same point-slope form"]
+      },
+      "relatedDotPoints": ["MA-C1.1", "MA-C1.2", "MA-C1.4"]
+    },
+
+    "MA-C1.4": {
+      "code": "MA-C1.4",
+      "name": "Increasing, decreasing and stationary points",
+      "topic": "MA-C",
+      "subtopic": "MA-C1",
+      "year": 11,
+      "summary": "Use the first and second derivatives to classify stationary points and analyse function behaviour.",
+      "keyConcepts": [
+        "f'(x) > 0: function is increasing; f'(x) < 0: function is decreasing",
+        "Stationary point: where f'(x) = 0",
+        "Local maximum: f'(x) changes from + to - (or f''(x) < 0 at the point)",
+        "Local minimum: f'(x) changes from - to + (or f''(x) > 0 at the point)",
+        "Horizontal point of inflection: f'(x) = 0 but does NOT change sign (f''(x) = 0 not sufficient alone)",
+        "Second derivative test: at stationary point, f''(x) < 0 → max, f''(x) > 0 → min, f''(x) = 0 → inconclusive"
+      ],
+      "commonErrors": [
+        "Saying f''(x) = 0 means a point of inflection — need to verify sign change of f'(x) or f''(x)",
+        "Not checking sign change of f'(x) when second derivative test is inconclusive",
+        "Confusing horizontal point of inflection with a stationary point of inflection — HPoI has f'(x) = 0 AND f'(x) doesn't change sign",
+        "Missing stationary points by only partially solving f'(x) = 0",
+        "Wrong classification: saying local max when f''(x) > 0 (f''(x) > 0 → concave up → minimum)"
+      ],
+      "examTips": [
+        "Always test the sign of f'(x) on both sides of each stationary point",
+        "Second derivative test is a shortcut but fails when f''(x) = 0 — always have first derivative test as backup",
+        "In HSC, 'nature' of stationary point means: local max, local min, or horizontal point of inflection",
+        "Show a sign diagram or table of values for f'(x) to justify classification"
+      ],
+      "socraticPrompts": [
+        "f'(x) = 0 at x = 2. Does that definitely mean there's a maximum or minimum there?",
+        "If f'(x) goes from positive to negative at x = 3, what type of stationary point is there?",
+        "What does f''(x) > 0 tell you about the shape of the curve (concave up or down)?",
+        "Can a function have f''(x) = 0 at a point that is NOT a point of inflection? Give an example."
+      ],
+      "workedExampleTemplate": {
+        "type": "stationary-points",
+        "steps": ["Find f'(x)", "Solve f'(x) = 0 to find stationary points", "Test sign of f'(x) either side of each point (or use f''(x))", "Classify each point: local max, local min, or HPoI", "Find y-coordinates by substituting back into f(x)", "State the nature and coordinates of each stationary point"]
+      },
+      "relatedDotPoints": ["MA-C1.3", "MA-C1.5", "MA-C3.3"]
+    },
+
+    "MA-C1.5": {
+      "code": "MA-C1.5",
+      "name": "Curve sketching using calculus",
+      "topic": "MA-C",
+      "subtopic": "MA-C1",
+      "year": 11,
+      "summary": "Sketch curves using derivatives; relate graphs of f(x), f'(x) and f''(x).",
+      "keyConcepts": [
+        "Concave up: f''(x) > 0 (cup shape); concave down: f''(x) < 0 (cap shape)",
+        "Point of inflection: where concavity changes (f''(x) = 0 and changes sign)",
+        "Relationship: where f(x) has a stationary point, f'(x) = 0 (x-intercept on f'(x) graph)",
+        "Where f(x) is increasing, f'(x) > 0; where decreasing, f'(x) < 0",
+        "Where f'(x) has a stationary point, f''(x) = 0 (possible inflection of f)"
+      ],
+      "commonErrors": [
+        "Sketching f'(x): drawing the same shape as f(x) instead of its derivative",
+        "Point of inflection: marking where f''(x) = 0 without verifying sign change",
+        "Confusing the graphs of f, f' and f'' when reading from a graph",
+        "Missing inflection points when curve sketching",
+        "Not labelling all key features: intercepts, stationary points, inflection points"
+      ],
+      "examTips": [
+        "For full marks in curve sketching: find and label x-intercepts, y-intercept, stationary points with nature, inflection points",
+        "Relationship questions (given graph of f', sketch f) are common in HSC — practise this skill",
+        "Always check end behaviour: what happens as x → ±∞?"
+      ],
+      "socraticPrompts": [
+        "If f'(x) is positive for x < 2 and negative for x > 2, what does f(x) look like near x = 2?",
+        "Looking at the graph of f'(x), how can you tell where f(x) has a local maximum?",
+        "If f''(2) = 0 and f''(x) changes from negative to positive at x = 2, what does this mean for f?",
+        "How does a point of inflection appear on the graph of f'(x)?"
+      ],
+      "workedExampleTemplate": {
+        "type": "curve-sketch",
+        "steps": ["Find x and y intercepts", "Find f'(x) and solve f'(x) = 0 for stationary points", "Find f''(x) and determine concavity; find inflection points", "Classify all stationary points", "Determine end behaviour", "Sketch with all key features clearly labelled"]
+      },
+      "relatedDotPoints": ["MA-C1.4", "MA-C2.2", "MA-C3.3"]
+    },
+
+    "MA-C2.1": {
+      "code": "MA-C2.1",
+      "name": "Differentiation of trig, exponential and logarithmic functions",
+      "topic": "MA-C",
+      "subtopic": "MA-C2",
+      "year": 12,
+      "summary": "Differentiate sin, cos, tan, e^x and ln x; apply to composite functions.",
+      "keyConcepts": [
+        "d/dx[sin x] = cos x",
+        "d/dx[cos x] = -sin x",
+        "d/dx[tan x] = sec²x = 1/cos²x",
+        "d/dx[e^x] = e^x",
+        "d/dx[e^(f(x))] = f'(x)·e^(f(x)) (chain rule)",
+        "d/dx[ln x] = 1/x (x > 0)",
+        "d/dx[ln(f(x))] = f'(x)/f(x) (chain rule)",
+        "d/dx[a^x] = a^x·ln a"
+      ],
+      "commonErrors": [
+        "d/dx[cos x] = sin x (forgetting the negative sign — it's -sin x)",
+        "d/dx[ln x] = 1 (forgetting the 1/x)",
+        "Treating e^(2x) as if it differentiates to e^(2x) — need the chain rule factor of 2",
+        "d/dx[a^x]: forgetting the ln a factor",
+        "Chain rule errors with composite functions"
+      ],
+      "examTips": [
+        "Memorise the six standard derivatives — they appear in virtually every exam",
+        "For e^(f(x)) and ln(f(x)): always apply chain rule — multiply by f'(x)",
+        "The derivative of e^x is unique: it equals itself",
+        "For ln functions, check the domain: ln(f(x)) requires f(x) > 0"
+      ],
+      "socraticPrompts": [
+        "What is d/dx[cos x]? Many students write sin x — why is the sign important?",
+        "d/dx[e^(3x)]: the chain rule says multiply by the derivative of the exponent. What do you get?",
+        "Why is d/dx[ln x] = 1/x? Can you think about it as the inverse of e^x?",
+        "For d/dx[sin(x²)], what is the 'outer function' and what is the 'inner function'?"
+      ],
+      "workedExampleTemplate": {
+        "type": "differentiation",
+        "steps": ["Identify the function type(s)", "Apply appropriate differentiation rule", "Apply chain rule if composite function", "Simplify the result", "Check domain if necessary"]
+      },
+      "relatedDotPoints": ["MA-C1.3", "MA-C2.2", "MA-T1.3", "MA-E1.2"]
+    },
+
+    "MA-C2.2": {
+      "code": "MA-C2.2",
+      "name": "Rules of differentiation",
+      "topic": "MA-C",
+      "subtopic": "MA-C2",
+      "year": 12,
+      "summary": "Apply product rule, quotient rule and chain rule to differentiate complex functions.",
+      "keyConcepts": [
+        "Chain rule: d/dx[f(g(x))] = f'(g(x))·g'(x), or dy/dx = dy/du · du/dx",
+        "Product rule: d/dx[u·v] = u'v + uv'",
+        "Quotient rule: d/dx[u/v] = (u'v - uv') / v²",
+        "Choosing the right rule: chain for composite, product for multiplication, quotient for division"
+      ],
+      "commonErrors": [
+        "Product rule sign: u'v + uv' (not u'v - uv')",
+        "Quotient rule sign: (u'v - uv')/v² — the minus sign is crucial and in the numerator",
+        "Quotient rule denominator: squaring v only, not the entire fraction",
+        "Identifying inner and outer functions for chain rule",
+        "Not simplifying after applying the rule — always look to factorise the result"
+      ],
+      "examTips": [
+        "Write out u, v, u', v' explicitly before applying product or quotient rule",
+        "Chain rule: 'derivative of outside × derivative of inside'",
+        "After applying quotient rule, factorise numerator to check if simplification is possible",
+        "Sometimes product rule is easier than quotient rule — e.g. rewrite u/v as u·v^(-1)"
+      ],
+      "socraticPrompts": [
+        "For y = x²·sinx, identify u and v. Now apply the product rule — what do you get?",
+        "Why can't you just differentiate numerator and denominator separately for a quotient?",
+        "For y = sin(x³), what is the outer function? What is the inner? Apply chain rule.",
+        "Could you differentiate y = x/sinx using the product rule instead of quotient rule? How?"
+      ],
+      "workedExampleTemplate": {
+        "type": "product-quotient-chain",
+        "steps": ["Identify which rule(s) to apply", "Define u, v (and their derivatives) clearly", "Apply the rule, writing each term explicitly", "Simplify and factorise where possible", "Check answer by considering approximate values if needed"]
+      },
+      "relatedDotPoints": ["MA-C2.1", "MA-C3.2", "MA-C3.3"]
+    },
+
+    "MA-C3.1": {
+      "code": "MA-C3.1",
+      "name": "Exponential growth and decay",
+      "topic": "MA-C",
+      "subtopic": "MA-C3",
+      "year": 12,
+      "summary": "Solve exponential growth and decay problems using N = N₀e^(kt).",
+      "keyConcepts": [
+        "Model: dN/dt = kN (rate proportional to quantity)",
+        "Solution: N = N₀e^(kt) where N₀ is the initial quantity",
+        "k > 0: growth; k < 0: decay",
+        "Half-life: time for quantity to halve — solve N₀e^(kt) = N₀/2 for t",
+        "Doubling time: time for quantity to double — solve N₀e^(kt) = 2N₀ for t"
+      ],
+      "commonErrors": [
+        "Using N = N₀e^(kt) with k positive for a decaying quantity (k must be negative for decay)",
+        "Half-life: incorrectly solving — N₀ cancels, leaving e^(kt) = 1/2, so kt = ln(1/2) = -ln2",
+        "Not using exact values (ln2) in half-life calculations",
+        "Confusing N₀ (initial value) with the value at t = 0 after transforming the equation"
+      ],
+      "examTips": [
+        "Always identify k first — use two data points or initial/final conditions",
+        "Express k in exact form using ln when possible",
+        "Half-life T satisfies e^(kT) = 1/2, so T = -ln2/k = ln2/|k|",
+        "Check: does the model make physical sense? (e.g. does N decrease as expected?)"
+      ],
+      "socraticPrompts": [
+        "The model is N = N₀e^(kt). If N is decreasing, what sign must k have? Why?",
+        "If N₀ = 100 and N = 50 after 3 hours, how would you find k exactly?",
+        "What does 'half-life' mean, and how would you set up the equation to find it?",
+        "Show that if dN/dt = kN, then N = N₀e^(kt) is a solution."
+      ],
+      "workedExampleTemplate": {
+        "type": "growth-decay",
+        "steps": ["Write the model N = N₀e^(kt)", "Substitute known values to find k", "Solve for k exactly using ln", "Use the model to answer the question", "Interpret the answer in context"]
+      },
+      "relatedDotPoints": ["MA-E1.2", "MA-E1.3", "MA-C2.1"]
+    },
+
+    "MA-C3.3": {
+      "code": "MA-C3.3",
+      "name": "Optimisation problems",
+      "topic": "MA-C",
+      "subtopic": "MA-C3",
+      "year": 12,
+      "summary": "Formulate and solve optimisation problems to find maximum or minimum values.",
+      "keyConcepts": [
+        "Set up: define a variable, write an expression to optimise, apply any constraints",
+        "Find stationary points: differentiate and set equal to zero",
+        "Verify nature: use second derivative or first derivative sign test",
+        "Check endpoints if domain is a closed interval",
+        "Interpret: state the answer in context with correct units"
+      ],
+      "commonErrors": [
+        "Not defining variables clearly before setting up the equation",
+        "Setting up the wrong expression to optimise (maximising area but writing a perimeter formula)",
+        "Not verifying that the stationary point is actually a maximum/minimum",
+        "Forgetting to check endpoints of a restricted domain",
+        "Not interpreting the answer in context — stating x = 3 but not 'the dimensions are 3 m × 2 m'"
+      ],
+      "examTips": [
+        "Always define your variables and state what you are trying to maximise/minimise",
+        "Use the constraint equation to reduce to a single-variable expression",
+        "Verify the nature of the stationary point — don't assume it's a maximum",
+        "For physical problems, check the domain makes sense (e.g. lengths must be positive)"
+      ],
+      "socraticPrompts": [
+        "You want to maximise area. What's your constraint? How can you eliminate one variable?",
+        "You've found a stationary point at x = 3. How do you know it's a maximum and not minimum?",
+        "The domain is 0 < x < 10. Why should you also check x = 0 and x = 10?",
+        "The answer is x = 4. What does that mean in the context of this problem?"
+      ],
+      "workedExampleTemplate": {
+        "type": "optimisation",
+        "steps": ["Define variables clearly", "Write the expression to be optimised", "Apply constraint to reduce to one variable", "Differentiate and solve for stationary points", "Verify maximum/minimum using second derivative or sign test", "Check endpoints if applicable", "State answer with correct units in context"]
+      },
+      "relatedDotPoints": ["MA-C1.4", "MA-C2.2", "MA-C1.5"]
+    },
+
+    "MA-C4.1": {
+      "code": "MA-C4.1",
+      "name": "The anti-derivative",
+      "topic": "MA-C",
+      "subtopic": "MA-C4",
+      "year": 12,
+      "summary": "Find indefinite integrals using standard results; determine constants of integration.",
+      "keyConcepts": [
+        "∫x^n dx = x^(n+1)/(n+1) + C (n ≠ -1)",
+        "∫e^x dx = e^x + C",
+        "∫e^(ax) dx = e^(ax)/a + C",
+        "∫sin x dx = -cos x + C",
+        "∫cos x dx = sin x + C",
+        "∫1/x dx = ln|x| + C",
+        "∫[f(x) + g(x)] dx = ∫f(x)dx + ∫g(x)dx",
+        "Constant of integration C is required for all indefinite integrals"
+      ],
+      "commonErrors": [
+        "Forgetting +C in indefinite integrals",
+        "∫sin x dx = cos x (forgetting the negative sign — it's -cos x)",
+        "Not dividing by the coefficient of x: ∫e^(3x) dx = e^(3x)/3 + C, not e^(3x) + C",
+        "∫x^(-1) dx ≠ x^0/0 (undefined) — it equals ln|x| + C",
+        "Forgetting the absolute value in ln|x| + C"
+      ],
+      "examTips": [
+        "Always include +C for indefinite integrals — it costs a mark in HSC",
+        "Reverse the chain rule: if you differentiated f(g(x)) to get f'(g(x))·g'(x), reverse this",
+        "For ∫(ax + b)^n dx, use reverse chain rule: (ax+b)^(n+1) / [a(n+1)] + C",
+        "∫1/x dx = ln|x| + C — note the absolute value"
+      ],
+      "socraticPrompts": [
+        "Integration is the reverse of differentiation. If d/dx[x³/3] = x², what is ∫x² dx?",
+        "Why do we need +C? Give an example showing two different functions that have the same derivative.",
+        "∫e^(2x) dx — if you differentiated e^(2x), you'd get 2e^(2x). How does that help you integrate?",
+        "What is ∫sin x dx? Check your answer by differentiating it."
+      ],
+      "workedExampleTemplate": {
+        "type": "indefinite-integral",
+        "steps": ["Identify the integrand type", "Apply the appropriate integration rule", "Include the constant of integration C", "Verify by differentiating the result"]
+      },
+      "relatedDotPoints": ["MA-C2.1", "MA-C4.2", "MA-E1.2"]
+    },
+
+    "MA-C4.2": {
+      "code": "MA-C4.2",
+      "name": "The definite integral and area",
+      "topic": "MA-C",
+      "subtopic": "MA-C4",
+      "year": 12,
+      "summary": "Evaluate definite integrals; calculate areas under and between curves.",
+      "keyConcepts": [
+        "Definite integral: ∫[a to b] f(x) dx = F(b) - F(a) where F is the antiderivative",
+        "Area under curve (above x-axis): A = ∫[a to b] f(x) dx",
+        "Area below x-axis: A = -∫[a to b] f(x) dx (the integral is negative, take absolute value)",
+        "Area between two curves: A = ∫[a to b] [f(x) - g(x)] dx where f(x) ≥ g(x)",
+        "If unsure which curve is on top: find where they intersect, test a point in each interval"
+      ],
+      "commonErrors": [
+        "Area below x-axis: getting a negative area — must take absolute value or split the integral",
+        "Not splitting the integral when the curve crosses the x-axis between the limits",
+        "Area between curves: subtracting in the wrong order (always top minus bottom)",
+        "Forgetting to find intersection points when computing area between two curves",
+        "Arithmetic errors in F(b) - F(a) — especially with fractions and negatives"
+      ],
+      "examTips": [
+        "Always sketch the region before integrating — it prevents sign errors",
+        "If f(x) crosses the x-axis in [a,b], split into separate integrals",
+        "For area between curves, find intersection points first — these are the limits",
+        "Definite integral can be negative (displacement problems) but area is always positive"
+      ],
+      "socraticPrompts": [
+        "∫[0 to 2] x² dx gives a number. What does that number represent geometrically?",
+        "f(x) = x² - 4. Between x = -2 and x = 2, the curve is below the x-axis. What do you do?",
+        "To find area between y = x² and y = x, what do you integrate and between which limits?",
+        "Why is it possible for a definite integral to equal zero even though the area is not zero?"
+      ],
+      "workedExampleTemplate": {
+        "type": "definite-integral-area",
+        "steps": ["Sketch the region to identify limits and whether curve is above/below axis", "Find antiderivative F(x)", "Apply fundamental theorem: F(b) - F(a)", "If curve crosses x-axis: split integral and add absolute values", "For area between curves: integrate [top - bottom] over each interval", "State answer with correct units²"]
+      },
+      "relatedDotPoints": ["MA-C4.1", "MA-C4.3", "MA-C1.5"]
+    },
+
+    "MA-C4.3": {
+      "code": "MA-C4.3",
+      "name": "Applications of integration",
+      "topic": "MA-C",
+      "subtopic": "MA-C4",
+      "year": 12,
+      "summary": "Apply integration to kinematics and total change problems.",
+      "keyConcepts": [
+        "Velocity = derivative of displacement: v = dx/dt",
+        "Acceleration = derivative of velocity: a = dv/dt",
+        "Displacement from velocity: x = ∫v dt",
+        "Velocity from acceleration: v = ∫a dt",
+        "Distance (not displacement): integrate |v| dt, splitting where v changes sign",
+        "Total change = ∫(rate of change) dt"
+      ],
+      "commonErrors": [
+        "Confusing displacement and distance: displacement can be zero (returned to start) while distance is always positive",
+        "Not splitting the integral when velocity changes sign (for distance calculations)",
+        "Using the wrong limits — initial conditions determine constants of integration",
+        "Not using initial conditions to find the constant of integration"
+      ],
+      "examTips": [
+        "For 'total distance' vs 'displacement': distance uses |v|, displacement uses v directly",
+        "Find where v = 0 to determine when particle changes direction",
+        "Always use initial conditions to find constants after integrating",
+        "State whether you are finding displacement (signed) or distance (always positive)"
+      ],
+      "socraticPrompts": [
+        "v = 2t - 4. When is the particle moving backwards? How does this affect distance vs displacement?",
+        "If v(t) = t² - 3t, how would you find the displacement from t=0 to t=3? The distance?",
+        "What initial condition do you need to find the exact displacement function x(t) from v(t)?",
+        "The particle returns to its start. What is the displacement? What is the distance?"
+      ],
+      "workedExampleTemplate": {
+        "type": "kinematics",
+        "steps": ["Identify whether finding displacement or distance", "For displacement: integrate v(t) directly with limits", "For distance: find where v=0, split interval, integrate |v| in each part", "Apply initial conditions to find constants", "Interpret answer in context"]
+      },
+      "relatedDotPoints": ["MA-C4.2", "MA-C3.2"]
+    },
+
+    "MA-E1.1": {
+      "code": "MA-E1.1",
+      "name": "Logarithms",
+      "topic": "MA-E",
+      "subtopic": "MA-E1",
+      "year": 11,
+      "summary": "Define logarithms; apply logarithm laws to simplify and solve equations.",
+      "keyConcepts": [
+        "Definition: log_a(x) = y ⟺ a^y = x",
+        "Product law: log_a(mn) = log_a(m) + log_a(n)",
+        "Quotient law: log_a(m/n) = log_a(m) - log_a(n)",
+        "Power law: log_a(m^n) = n·log_a(m)",
+        "log_a(a) = 1; log_a(1) = 0",
+        "Change of base: log_a(x) = log_b(x) / log_b(a)"
+      ],
+      "commonErrors": [
+        "log(m + n) ≠ log(m) + log(n) — the product law applies to log(mn), not log(m+n)",
+        "log(m - n) ≠ log(m) - log(n) — quotient law applies to log(m/n)",
+        "Forgetting log_a(1) = 0 and log_a(a) = 1",
+        "Change of base direction error: log_a(x) = log(x)/log(a) not log(a)/log(x)"
+      ],
+      "examTips": [
+        "To solve a^x = b: take log of both sides, use change of base if needed",
+        "Always check: the argument of a logarithm must be positive",
+        "Combine logs before solving: log(x) + log(y) = k → log(xy) = k → xy = 10^k"
+      ],
+      "socraticPrompts": [
+        "log₂(8) = ? Think: 2 to the power of what equals 8?",
+        "Why is log(m + n) ≠ log(m) + log(n)? Try m = 10, n = 10 to test.",
+        "Simplify log₃(27) - log₃(9). Which law applies?",
+        "Solve 3^x = 20. How would you isolate x?"
+      ],
+      "workedExampleTemplate": {
+        "type": "logarithm",
+        "steps": ["Identify which log law applies", "Apply the law step by step", "Use change of base if different bases appear", "Check that all log arguments are positive", "Verify the solution satisfies the original equation"]
+      },
+      "relatedDotPoints": ["MA-E1.2", "MA-E1.3", "MA-C2.1"]
+    },
+
+    "MA-E1.2": {
+      "code": "MA-E1.2",
+      "name": "The exponential function and natural logarithm",
+      "topic": "MA-E",
+      "subtopic": "MA-E1",
+      "year": 11,
+      "summary": "Work with the natural base e; sketch and transform y = e^x and y = ln x.",
+      "keyConcepts": [
+        "e ≈ 2.71828 (Euler's number), the natural base",
+        "y = e^x: always positive, passes through (0,1), asymptote y = 0 as x → -∞",
+        "y = ln x: inverse of e^x, passes through (1,0) and (e,1), domain x > 0, asymptote x = 0",
+        "e^(ln x) = x and ln(e^x) = x (inverse relationship)",
+        "Solve e^x = k: x = ln k",
+        "Solve ln x = k: x = e^k"
+      ],
+      "commonErrors": [
+        "Domain of ln x: forgetting that x must be positive (domain is x > 0)",
+        "Solving e^x = k: writing x = e^k instead of x = ln k",
+        "Transformations: forgetting that y = e^x has a horizontal asymptote at y = 0",
+        "Confusing the graphs of e^x and ln x — they are reflections in y = x"
+      ],
+      "examTips": [
+        "Know the key points: e^0 = 1, e^1 = e, ln(1) = 0, ln(e) = 1",
+        "When solving exponential equations: take ln of both sides",
+        "When solving log equations: exponentiate both sides with base e",
+        "Transformations of e^x follow the same rules as other function transformations"
+      ],
+      "socraticPrompts": [
+        "If e^x = 5, how do you solve for x? What operation undoes e^x?",
+        "Sketch y = e^x. What happens to the curve as x → -∞? What is the asymptote?",
+        "Why is the domain of y = ln x restricted to x > 0?",
+        "e^(ln 7) = ? How do you know without calculating?"
+      ],
+      "workedExampleTemplate": {
+        "type": "exponential-log",
+        "steps": ["Identify whether to use ln (for e^x = k) or exponentiate (for ln x = k)", "Apply the inverse operation", "Simplify using e^(ln x) = x or ln(e^x) = x", "Check domain restrictions", "Verify the solution"]
+      },
+      "relatedDotPoints": ["MA-E1.1", "MA-E1.3", "MA-C2.1", "MA-C3.1"]
+    },
+
+    "MA-S1.1": {
+      "code": "MA-S1.1",
+      "name": "Probability",
+      "topic": "MA-S",
+      "subtopic": "MA-S1",
+      "year": 11,
+      "summary": "Apply probability rules including conditional probability and independence.",
+      "keyConcepts": [
+        "P(A) = n(A)/n(S) for equally likely outcomes",
+        "Complementary: P(A') = 1 - P(A)",
+        "Addition rule: P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+        "Mutually exclusive: P(A ∩ B) = 0",
+        "Conditional probability: P(A|B) = P(A ∩ B) / P(B)",
+        "Independence: P(A ∩ B) = P(A) × P(B); equivalently P(A|B) = P(A)",
+        "Probability tree: branches multiply, alternatives add"
+      ],
+      "commonErrors": [
+        "Addition rule: forgetting to subtract P(A ∩ B) (double counting)",
+        "Conditional probability: using P(A)/P(B) instead of P(A ∩ B)/P(B)",
+        "Independence test: checking P(A|B) = P(A) but computing P(A ∩ B)/P(B) incorrectly",
+        "Tree diagrams: adding instead of multiplying along branches"
+      ],
+      "examTips": [
+        "Always check if events are mutually exclusive (no overlap) or independent (unrelated)",
+        "Use tree diagrams for multi-stage problems — they make structure clear",
+        "For conditional probability questions, identify the condition (given event) first",
+        "Independence: P(A ∩ B) = P(A) × P(B) is the quickest test"
+      ],
+      "socraticPrompts": [
+        "P(A) = 0.4, P(B) = 0.3, P(A ∩ B) = 0.1. Are A and B independent? How do you test?",
+        "What's the difference between P(A|B) and P(A ∩ B)?",
+        "You roll two dice. What's the probability the second shows 6 given the first showed 6?",
+        "Draw a tree diagram for: draw two cards without replacement. Find P(both red)."
+      ],
+      "workedExampleTemplate": {
+        "type": "probability",
+        "steps": ["Identify the events and sample space", "Determine whether events are mutually exclusive or independent", "Apply appropriate probability rule", "Use tree diagram for multi-stage problems", "Verify: probabilities should be between 0 and 1"]
+      },
+      "relatedDotPoints": ["MA-S1.2"]
+    },
+
+    "MA-S1.2": {
+      "code": "MA-S1.2",
+      "name": "Discrete probability distributions",
+      "topic": "MA-S",
+      "subtopic": "MA-S1",
+      "year": 11,
+      "summary": "Construct and use probability distributions; calculate E(X), Var(X); apply binomial distribution.",
+      "keyConcepts": [
+        "Discrete random variable X takes specific countable values",
+        "Probability distribution: table of P(X = x) for each value x",
+        "Validity: all probabilities ≥ 0 and sum to 1",
+        "Expected value: E(X) = Σ x·P(X = x)",
+        "Variance: Var(X) = E(X²) - [E(X)]² = Σ x²·P(X=x) - [E(X)]²",
+        "Binomial distribution: X ~ B(n, p), n trials, probability p of success",
+        "P(X = x) = C(n,x)·p^x·(1-p)^(n-x); E(X) = np; Var(X) = np(1-p)"
+      ],
+      "commonErrors": [
+        "E(X²) ≠ [E(X)]² — a very common confusion when computing variance",
+        "Var(X) = E(X²) - [E(X)]²: subtracting in wrong order",
+        "Binomial: using wrong value of p (using probability of failure instead of success)",
+        "Binomial: forgetting the binomial coefficient C(n,x) in the probability formula",
+        "Not checking that all probabilities sum to 1 in a given distribution"
+      ],
+      "examTips": [
+        "E(X) is the long-run average — interpret it in context",
+        "For variance: always compute E(X²) first, then subtract [E(X)]²",
+        "Binomial conditions: fixed n, constant p, independent trials, binary outcomes",
+        "Use CDF for P(X ≤ k) — don't forget to include the endpoint"
+      ],
+      "socraticPrompts": [
+        "If X = 1, 2, 3 with equal probability 1/3 each, what is E(X)? Does it equal 2?",
+        "Var(X) = E(X²) - [E(X)]². What is E(X²)? How does it differ from [E(X)]²?",
+        "For X ~ B(10, 0.3), what is E(X)? What does that mean in context?",
+        "What are the four conditions for a binomial distribution to apply?"
+      ],
+      "workedExampleTemplate": {
+        "type": "probability-distribution",
+        "steps": ["Set up the probability distribution table", "Verify probabilities sum to 1", "Calculate E(X) = Σ x·P(X=x)", "Calculate E(X²) = Σ x²·P(X=x)", "Calculate Var(X) = E(X²) - [E(X)]²", "Interpret E(X) in context if required"]
+      },
+      "relatedDotPoints": ["MA-S1.1", "MA-S3.1", "MA-S3.2"]
+    },
+
+    "MA-S2.2": {
+      "code": "MA-S2.2",
+      "name": "Bivariate data analysis",
+      "topic": "MA-S",
+      "subtopic": "MA-S2",
+      "year": 12,
+      "summary": "Analyse bivariate data using scatter plots, regression and Pearson's correlation.",
+      "keyConcepts": [
+        "Scatter plot: x = explanatory variable, y = response variable",
+        "Association: direction (positive/negative), form (linear/non-linear), strength (strong/moderate/weak)",
+        "Pearson's r: -1 ≤ r ≤ 1; r = 1 perfect positive, r = -1 perfect negative, r ≈ 0 no linear association",
+        "Least-squares regression line: ŷ = a + bx where b = r × (s_y/s_x) and a = ȳ - b·x̄",
+        "Interpolation (within data range) vs extrapolation (outside data range — unreliable)",
+        "Correlation ≠ causation"
+      ],
+      "commonErrors": [
+        "Reversing explanatory and response variables on the scatter plot",
+        "Using the regression line to extrapolate far beyond the data range",
+        "Concluding causation from correlation",
+        "Misinterpreting r: r = 0.3 does not mean 30% association — it means weak positive linear association",
+        "Using the wrong regression equation (y on x vs x on y)"
+      ],
+      "examTips": [
+        "Describe association using direction, form AND strength",
+        "The regression line always passes through (x̄, ȳ)",
+        "For prediction: substitute into ŷ = a + bx — note this is an estimate",
+        "Mention limitations of the model: extrapolation, outliers, correlation vs causation"
+      ],
+      "socraticPrompts": [
+        "r = -0.85. What does this tell you about the association between x and y?",
+        "Two variables have r = 0.95. Does this mean one causes the other? Give a counterexample.",
+        "Your regression line gives a prediction of ŷ = 75 for x = 100. Is this interpolation or extrapolation? Does that matter?",
+        "Why does the least-squares line always pass through the point (x̄, ȳ)?"
+      ],
+      "workedExampleTemplate": {
+        "type": "bivariate",
+        "steps": ["Construct or interpret the scatter plot", "Describe the association: direction, form, strength", "Calculate or use r to quantify strength", "Write and interpret the regression equation", "Use equation for prediction, noting whether interpolating or extrapolating", "State any limitations"]
+      },
+      "relatedDotPoints": ["MA-S2.1", "MA-S3.2"]
+    },
+
+    "MA-S3.2": {
+      "code": "MA-S3.2",
+      "name": "The normal distribution",
+      "topic": "MA-S",
+      "subtopic": "MA-S3",
+      "year": 12,
+      "summary": "Apply the normal distribution including z-scores and the empirical rule.",
+      "keyConcepts": [
+        "Normal distribution: symmetric, bell-shaped, defined by μ (mean) and σ (standard deviation)",
+        "68-95-99.7 empirical rule: 68% within 1σ, 95% within 2σ, 99.7% within 3σ of mean",
+        "Standard normal: Z ~ N(0, 1)",
+        "Standardising: z = (x - μ) / σ",
+        "z-score interpretation: number of standard deviations from the mean",
+        "P(X < a) = P(Z < z) where z = (a - μ)/σ",
+        "Symmetry: P(Z < -z) = P(Z > z) = 1 - P(Z < z)"
+      ],
+      "commonErrors": [
+        "Z-score formula: dividing by σ² (variance) instead of σ (standard deviation)",
+        "Empirical rule: saying 95% is within 1σ instead of 2σ",
+        "Symmetry: P(Z < -1.5) ≠ P(Z < 1.5) — they are complementary",
+        "Not converting to z-score before using tables",
+        "P(a < X < b): finding P(X < a) + P(X < b) instead of P(X < b) - P(X < a)"
+      ],
+      "examTips": [
+        "Always standardise using z = (x - μ)/σ before using tables",
+        "Draw a normal distribution diagram and shade the required area — prevents errors",
+        "For P(a < X < b): P(X < b) - P(X < a)",
+        "Symmetry: P(Z < -z) = 1 - P(Z < z)"
+      ],
+      "socraticPrompts": [
+        "Heights are normally distributed with μ = 170 cm, σ = 10 cm. What z-score is 185 cm?",
+        "What does a z-score of -2 mean in plain English?",
+        "Using the empirical rule: what percentage of data falls more than 2σ above the mean?",
+        "P(Z < 1.5) = 0.933. What is P(Z > 1.5)? What about P(Z < -1.5)?"
+      ],
+      "workedExampleTemplate": {
+        "type": "normal-distribution",
+        "steps": ["Identify μ and σ from the problem", "Draw and shade the normal distribution curve", "Standardise: z = (x - μ)/σ", "Use z-table to find the probability", "Apply symmetry rule if needed for negative z or complementary region", "Interpret the probability in context"]
+      },
+      "relatedDotPoints": ["MA-S3.1", "MA-S1.2", "MA-S2.2"]
+    },
+
+    "MA-M1.1": {
+      "code": "MA-M1.1",
+      "name": "Modelling investments and loans",
+      "topic": "MA-M",
+      "subtopic": "MA-M1",
+      "year": 12,
+      "summary": "Apply compound interest and geometric sequences to model financial situations.",
+      "keyConcepts": [
+        "Simple interest: I = Prn; A = P(1 + rn)",
+        "Compound interest: A = P(1 + r)^n where r is rate per period",
+        "Converting rates: monthly rate = annual rate / 12",
+        "Each compound period forms a geometric sequence",
+        "Effective annual rate: compares investments with different compounding frequencies"
+      ],
+      "commonErrors": [
+        "Using annual rate when period is monthly or quarterly — must divide by number of periods",
+        "Confusing n (number of periods) with number of years when compounding more than annually",
+        "Simple vs compound: applying simple interest formula to a compound situation",
+        "Finding interest only vs total amount: I = A - P"
+      ],
+      "examTips": [
+        "Always match the interest rate to the compounding period",
+        "State what A, P, r, n represent in context",
+        "For 'how long until...': solve P(1+r)^n = A for n using logarithms"
+      ],
+      "socraticPrompts": [
+        "A = P(1 + r)^n. If compounding monthly at 6% p.a., what is r per period?",
+        "After 3 years of monthly compounding, what is n?",
+        "How would you find how many years it takes for an investment to double?"
+      ],
+      "workedExampleTemplate": {
+        "type": "compound-interest",
+        "steps": ["Identify P, annual rate, compounding frequency, time", "Calculate rate per period r and number of periods n", "Apply A = P(1+r)^n", "Find interest I = A - P if required", "Interpret answer in financial context"]
+      },
+      "relatedDotPoints": ["MA-M1.2", "MA-E1.2"]
+    },
+
+    "MA-M1.2": {
+      "code": "MA-M1.2",
+      "name": "Annuities and loan repayments",
+      "topic": "MA-M",
+      "subtopic": "MA-M1",
+      "year": 12,
+      "summary": "Model annuities and loan repayments as geometric series; use future and present value formulas.",
+      "keyConcepts": [
+        "Annuity: series of equal payments made at regular intervals",
+        "Future value of annuity: FV = M[(1+r)^n - 1]/r where M is payment per period",
+        "Present value of annuity: PV = M[1 - (1+r)^(-n)]/r",
+        "Loan repayment: PV is the loan amount, solve for M (monthly repayment)",
+        "Total repaid = M × n; Total interest = Total repaid - Principal"
+      ],
+      "commonErrors": [
+        "FV formula: using wrong sign in numerator [(1+r)^n - 1] not [(1+r)^n + 1]",
+        "PV vs FV: using the future value formula when present value is needed",
+        "Not converting annual rate to period rate before substituting",
+        "Total interest: subtracting principal from one repayment instead of total repayments"
+      ],
+      "examTips": [
+        "Write out the formula explicitly before substituting values",
+        "Check: does your monthly repayment make intuitive sense for the loan size?",
+        "Total interest paid = n × M - Principal (a common final part of loan questions)"
+      ],
+      "socraticPrompts": [
+        "What is the difference between a future value and a present value of an annuity?",
+        "You borrow $300,000 at 6% p.a. monthly. What is r per period? What is n for a 25-year loan?",
+        "The formula gives M = $1,933. How much total interest do you pay over 25 years?"
+      ],
+      "workedExampleTemplate": {
+        "type": "annuity",
+        "steps": ["Identify whether finding FV, PV or repayment M", "Convert annual rate to period rate", "Identify number of periods n", "Apply appropriate formula (FV or PV annuity)", "Calculate total interest if required", "Interpret in financial context"]
+      },
+      "relatedDotPoints": ["MA-M1.1", "MA-E1.1"]
+    }
+
+  },
+
+  "meta": {
+    "totalDotPoints": 30,
+    "lastUpdated": "2025-03-06",
+    "buildNote": "Verify all descriptions against the official NESA Mathematics Advanced Stage 6 Syllabus (2017) PDF before production use. Expand keywords and commonErrors arrays based on HSC past paper question analysis."
+  }
+}

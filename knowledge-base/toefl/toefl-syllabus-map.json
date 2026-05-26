@@ -1,0 +1,211 @@
+{
+  "subject": "TOEFL iBT",
+  "version": "2024",
+  "description": "Complete structure of TOEFL test sections with question types and scoring",
+  "totalScore": 120,
+  "sections": [
+    {
+      "code": "TOEFL-R",
+      "name": "Reading",
+      "scoreRange": "0-30",
+      "time": "54-72 minutes",
+      "questions": "30-40 questions",
+      "passages": 3,
+      "questionTypes": [
+        {
+          "code": "TOEFL-R.1",
+          "name": "Vocabulary and Reference",
+          "frequency": "high",
+          "difficulty": "easy",
+          "approxPerTest": "4-6"
+        },
+        {
+          "code": "TOEFL-R.2",
+          "name": "Factual Information",
+          "frequency": "high",
+          "difficulty": "easy",
+          "approxPerTest": "3-5"
+        },
+        {
+          "code": "TOEFL-R.3",
+          "name": "Negative Factual Information",
+          "frequency": "medium",
+          "difficulty": "medium",
+          "approxPerTest": "1-2"
+        },
+        {
+          "code": "TOEFL-R.4",
+          "name": "Inference",
+          "frequency": "medium",
+          "difficulty": "medium",
+          "approxPerTest": "2-3"
+        },
+        {
+          "code": "TOEFL-R.5",
+          "name": "Rhetorical Purpose",
+          "frequency": "medium",
+          "difficulty": "medium",
+          "approxPerTest": "2-3"
+        },
+        {
+          "code": "TOEFL-R.6",
+          "name": "Sentence Simplification",
+          "frequency": "low",
+          "difficulty": "medium",
+          "approxPerTest": "0-1"
+        },
+        {
+          "code": "TOEFL-R.7",
+          "name": "Insert Text",
+          "frequency": "medium",
+          "difficulty": "hard",
+          "approxPerTest": "1-2"
+        },
+        {
+          "code": "TOEFL-R.8",
+          "name": "Prose Summary",
+          "frequency": "high",
+          "difficulty": "hard",
+          "approxPerTest": "1"
+        },
+        {
+          "code": "TOEFL-R.9",
+          "name": "Fill in a Table",
+          "frequency": "low",
+          "difficulty": "hard",
+          "approxPerTest": "0-1"
+        }
+      ],
+      "skills": ["TOEFL-R.1", "TOEFL-R.2", "TOEFL-R.3", "TOEFL-R.4", "TOEFL-R.5", "TOEFL-R.6", "TOEFL-R.7", "TOEFL-R.8", "TOEFL-R.9"]
+    },
+    {
+      "code": "TOEFL-L",
+      "name": "Listening",
+      "scoreRange": "0-30",
+      "time": "41-57 minutes",
+      "lectures": "3-4",
+      "conversations": "2-3",
+      "totalQuestions": "28-39",
+      "questionTypes": [
+        {
+          "code": "TOEFL-L.1",
+          "name": "Gist-Content (Main Idea)",
+          "frequency": "high",
+          "approxPerTest": "4-6"
+        },
+        {
+          "code": "TOEFL-L.2",
+          "name": "Gist-Purpose",
+          "frequency": "medium",
+          "approxPerTest": "2-3"
+        },
+        {
+          "code": "TOEFL-L.3",
+          "name": "Detail",
+          "frequency": "high",
+          "approxPerTest": "8-12"
+        },
+        {
+          "code": "TOEFL-L.4",
+          "name": "Understanding the Function of What Is Said",
+          "frequency": "medium",
+          "approxPerTest": "3-5"
+        },
+        {
+          "code": "TOEFL-L.5",
+          "name": "Understanding the Speaker's Attitude",
+          "frequency": "medium",
+          "approxPerTest": "3-5"
+        },
+        {
+          "code": "TOEFL-L.6",
+          "name": "Understanding Organization",
+          "frequency": "low",
+          "approxPerTest": "1-2"
+        },
+        {
+          "code": "TOEFL-L.7",
+          "name": "Connecting Content",
+          "frequency": "medium",
+          "approxPerTest": "2-4"
+        },
+        {
+          "code": "TOEFL-L.8",
+          "name": "Making Inferences",
+          "frequency": "medium",
+          "approxPerTest": "3-5"
+        }
+      ],
+      "skills": ["TOEFL-L.1", "TOEFL-L.2", "TOEFL-L.3", "TOEFL-L.4", "TOEFL-L.5", "TOEFL-L.6", "TOEFL-L.7", "TOEFL-L.8"]
+    },
+    {
+      "code": "TOEFL-S",
+      "name": "Speaking",
+      "scoreRange": "0-30",
+      "time": "17 minutes",
+      "tasks": 4,
+      "taskTypes": [
+        {
+          "code": "TOEFL-S.1",
+          "name": "Independent: Personal Preference",
+          "prepTime": "15 seconds",
+          "responseTime": "45 seconds",
+          "difficulty": "easy",
+          "description": "Express a personal choice and explain reasons"
+        },
+        {
+          "code": "TOEFL-S.2",
+          "name": "Independent: Choice Between Two",
+          "prepTime": "15 seconds",
+          "responseTime": "45 seconds",
+          "difficulty": "easy",
+          "description": "Choose between two options and explain"
+        },
+        {
+          "code": "TOEFL-S.3",
+          "name": "Integrated: Campus Announcement",
+          "prepTime": "30 seconds",
+          "responseTime": "60 seconds",
+          "difficulty": "medium",
+          "description": "Read announcement, listen to conversation, summarize opinion"
+        },
+        {
+          "code": "TOEFL-S.4",
+          "name": "Integrated: Academic Lecture",
+          "prepTime": "30 seconds",
+          "responseTime": "60 seconds",
+          "difficulty": "hard",
+          "description": "Read passage, listen to lecture, summarize key points"
+        }
+      ],
+      "skills": ["TOEFL-S.1", "TOEFL-S.2", "TOEFL-S.3", "TOEFL-S.4"]
+    },
+    {
+      "code": "TOEFL-W",
+      "name": "Writing",
+      "scoreRange": "0-30",
+      "time": "50 minutes",
+      "tasks": 2,
+      "taskTypes": [
+        {
+          "code": "TOEFL-W.1",
+          "name": "Integrated Writing",
+          "time": "20 minutes",
+          "readingTime": "3 minutes",
+          "listeningTime": "2 minutes",
+          "writingTime": "15 minutes",
+          "recommendedLength": "150-225 words",
+          "description": "Read passage, listen to lecture, summarize relationship"
+        },
+        {
+          "code": "TOEFL-W.2",
+          "name": "Independent Writing",
+          "time": "30 minutes",
+          "recommendedLength": "300-350 words",
+          "description": "Write essay expressing and supporting an opinion"
+        }
+      ],
+      "skills": ["TOEFL-W.1", "TOEFL-W.2"]
+    }
+  ]
+}

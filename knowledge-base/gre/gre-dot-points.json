@@ -1,0 +1,467 @@
+{
+    "subject": "GRE Exam Preparation",
+    "syllabusVersion": "GRE General Test 2024-2025",
+    "description": "Comprehensive GRE learning resource with key concepts, common errors, learning tips, and examples for all Verbal, Quantitative, and Analytical Writing topics.",
+    "dotPoints": {
+        "GRE-TST-1.1": {
+            "code": "GRE-TST-1.1",
+            "name": "Test Structure Overview",
+            "topic": "Test Structure and Strategy",
+            "subtopic": "GRE Format and Scoring",
+            "level": "foundation",
+            "summary": "The GRE General Test consists of three scored sections: Verbal Reasoning, Quantitative Reasoning, and Analytical Writing. Understanding the format, timing, and adaptive structure is essential for effective preparation and test-day strategy.",
+            "keyConcepts": [
+                "Verbal Reasoning: Two sections, 27 questions each, 41 minutes per section (Text Completion, Sentence Equivalence, Reading Comprehension)",
+                "Quantitative Reasoning: Two sections, 27 questions each, 47 minutes per section (Arithmetic, Algebra, Geometry, Data Analysis)",
+                "Analytical Writing: One section with two tasks — Issue essay (30 min) and Argument essay (30 min)",
+                "Section-Level Adaptive: The difficulty of your second Verbal and Quant sections adapts based on first-section performance",
+                "Score Range: Verbal 130-170 in 1-point increments; Quant 130-170 in 1-point increments; Writing 0-6 in half-point increments",
+                "Total testing time: Approximately 3 hours 45 minutes including breaks",
+                "On-screen calculator: Available for all Quantitative questions",
+                "Mark and Review: Questions within a section can be flagged and returned to"
+            ],
+            "commonErrors": [
+                "Underestimating the Verbal section difficulty — high-level vocabulary is essential",
+                "Not practising with a real on-screen calculator — it's basic and different from a scientific calculator",
+                "Spending too long on hard questions in the first section — adaptive scoring rewards breadth over depth",
+                "Ignoring Analytical Writing — a score below 4.0 can concern graduate programmes",
+                "Confusing GRE with GMAT — the tests are quite different in structure and focus"
+            ],
+            "learningTips": [
+                "Take a full-length diagnostic test first to establish your baseline score",
+                "Use official ETS materials — PowerPrep tests are the most accurate simulation",
+                "Study all three sections, but weight your time toward your weakest area",
+                "Learn the test format so thoroughly that navigation is automatic on test day",
+                "Practise using the GRE's on-screen calculator from early in your preparation"
+            ],
+            "socraticPrompts": [
+                "Why does the adaptive nature of the GRE mean you should never give up on the first section even if it feels hard?",
+                "How should your strategy differ for the first vs second Verbal section?",
+                "Why is the Analytical Writing score sometimes used as a separate threshold by graduate programmes?",
+                "If you have 41 minutes for 27 Verbal questions, how long per question does that allow, and what does that mean for your pacing?",
+                "What is the advantage of the 'Mark and Review' feature and when should you use it?"
+            ],
+            "codeExample": {
+                "description": "GRE General Test Structure at a Glance",
+                "code": "GRE GENERAL TEST STRUCTURE\n===========================\n\nSection              | Questions | Time\n---------------------|-----------|-------\nAnalytical Writing   | 2 tasks   | 60 min\n  - Issue Essay      | 1         | 30 min\n  - Argument Essay   | 1         | 30 min\n                     |           |\nVerbal Reasoning 1   | 27        | 41 min\nVerbal Reasoning 2   | 27        | 41 min\n                     |           |\nQuant Reasoning 1    | 27        | 47 min\nQuant Reasoning 2    | 27        | 47 min\n                     |           |\nTotal (approx.)      | 110 Q     | ~3h45m\n\nSCORE RANGES\n============\nVerbal:   130 - 170 (1-point increments)\nQuant:    130 - 170 (1-point increments)\nWriting:  0.0 - 6.0 (0.5-point increments)\n\nCOMPETITIVE BENCHMARKS (approximate)\n=====================================\n>= 160 Verbal:  ~80th percentile\n>= 160 Quant:   ~60th percentile\n>= 5.0 Writing: ~93rd percentile",
+                "output": "Key insight: A 160/160 total is approximately the 70-80th percentile overall.\nTarget scores vary greatly by programme — always research your specific target schools."
+            },
+            "relatedDotPoints": ["GRE-TST-1.2", "GRE-TST-2.1", "GRE-TST-2.2"]
+        },
+
+        "GRE-TST-2.1": {
+            "code": "GRE-TST-2.1",
+            "name": "Time Management and Pacing",
+            "topic": "Test Structure and Strategy",
+            "subtopic": "General Test-Taking Strategies",
+            "level": "foundation",
+            "summary": "Effective time management is one of the highest-leverage skills on the GRE. With approximately 90 seconds per Verbal question and 105 seconds per Quant question, disciplined pacing prevents the most common score-limiting mistake: spending too long on a single question.",
+            "keyConcepts": [
+                "Verbal pacing: ~90 seconds per question (41 min ÷ 27 questions)",
+                "Quant pacing: ~105 seconds per question (47 min ÷ 27 questions)",
+                "Reading Comp passages: Budget extra time for the passage read (2-3 min) then faster for questions",
+                "Two-pass strategy: Answer easy/medium questions first, skip and flag hard ones, then return",
+                "Never leave a question blank: No penalty for wrong answers — always guess before time expires",
+                "Time checkpoints: At question 10, you should have ~25 minutes left in Verbal; ~30 minutes in Quant",
+                "Hard questions equal points: Hard questions count the same as easy ones — don't over-invest",
+                "Section order: The Writing section always comes first on the GRE"
+            ],
+            "commonErrors": [
+                "Spending 4+ minutes on a single difficult question — this kills overall pacing",
+                "Not using the Mark and Review feature — leads to second-guessing already answered questions",
+                "Reading every passage word-for-word before looking at the questions",
+                "Leaving questions blank — there is no guessing penalty on the GRE",
+                "Not practising under timed conditions — real test timing is much more stressful than untimed"
+            ],
+            "learningTips": [
+                "Always practise with a timer from the beginning of your preparation",
+                "Develop a sense of '90 seconds' so you can self-monitor without constantly checking",
+                "Create a personal decision rule: if still unsure after 2 minutes on Quant, mark and move",
+                "On Reading Comp, read the question before the long passage to know what to look for",
+                "Take at least three full-length, fully timed practice tests before the real exam"
+            ],
+            "socraticPrompts": [
+                "If you spend 5 minutes on one hard Quant question, how many easier questions might you not have time to attempt?",
+                "Why does the GRE have no penalty for guessing, and how does that change your strategy?",
+                "At what point in the section should you start worrying about time, and what should you do?",
+                "How does the two-pass strategy help maximise your score compared to doing questions in order?",
+                "Why might a student who finishes with 10 minutes to spare actually be losing points?"
+            ],
+            "codeExample": {
+                "description": "Pacing guide and two-pass strategy",
+                "code": "PACING GUIDE\n============\n\nVerbal Section (41 min, 27 questions)\n  TC / SE questions:   Target ~1.0 min each\n  Short RC passages:   2 min read + 1 min per question\n  Long RC passages:    3 min read + 1.5 min per question\n\nQuant Section (47 min, 27 questions)\n  Easy questions:      ~1.0 min\n  Medium questions:    ~1.5 min\n  Hard questions:      ~2.0 min max, then GUESS AND MOVE\n\nTWO-PASS STRATEGY\n=================\nPass 1: Answer questions you know confidently\n  → Mark (flag) anything that needs more thought\n  → Do NOT skip Reading Comp passages mid-passage\n\nPass 2: Return to flagged questions\n  → Use remaining time wisely\n  → If still unsure, make best educated guess\n  → NEVER leave blank — guess if time is almost up\n\nCHECKPOINTS (Verbal)\n  After Q9:   Should have ~28 min remaining\n  After Q18:  Should have ~14 min remaining",
+                "output": "Critical rule: A wild guess scores the same as leaving blank (0 points average),\nbut an educated guess from 4 choices eliminates and can yield expected value > 0."
+            },
+            "relatedDotPoints": ["GRE-TST-1.1", "GRE-TST-2.2", "GRE-VTC-1.1", "GRE-QQC-1.1"]
+        },
+
+        "GRE-VRF-1.1": {
+            "code": "GRE-VRF-1.1",
+            "name": "High-Frequency GRE Vocabulary",
+            "topic": "Verbal Reasoning Fundamentals",
+            "subtopic": "Vocabulary Essentials",
+            "level": "foundation",
+            "summary": "A strong GRE vocabulary is the foundation of the entire Verbal section. The GRE consistently tests a specific set of high-level academic and literary words. Systematic vocabulary learning using context, roots, and spaced repetition is the most efficient approach.",
+            "keyConcepts": [
+                "High-frequency list: ~300-500 words appear repeatedly across GRE tests (e.g., abstruse, laconic, recondite, sycophantic, truculent)",
+                "Context learning: Always learn words in context, not just isolated definitions",
+                "Word roots: Latin/Greek roots unlock dozens of words per root (e.g., 'bene-' = good: benevolent, benefactor, benign)",
+                "Spaced repetition: Review new words at increasing intervals for long-term retention (Anki, Magoosh vocabulary app)",
+                "Nuanced meanings: GRE words often have multiple meanings — learn the GRE-specific usage",
+                "Tone words: Learn positive/negative/neutral tone vocabulary (laudatory, vitriolic, sanguine, melancholy, equivocal)",
+                "Word families: Learn adjective, noun, verb forms together (verbose, verbosity; ambiguous, ambiguity, ambiguously)",
+                "Avoid rote memorisation: Understanding a word's feel and connotation beats pure definition recall"
+            ],
+            "commonErrors": [
+                "Trying to learn thousands of words with no prioritisation — focus on high-frequency lists",
+                "Learning only definitions without context — fails on nuanced GRE questions",
+                "Not reviewing words repeatedly — vocabulary fades without spaced repetition",
+                "Confusing similar-sounding words (e.g., averse vs adverse, elicit vs illicit, affect vs effect)",
+                "Assuming you know a word's GRE meaning — many words have surprising secondary meanings"
+            ],
+            "learningTips": [
+                "Study 10-15 new words per day with example sentences — consistency beats cramming",
+                "Use Magoosh GRE Vocabulary, Barron's 333, or the Manhattan 500 word list",
+                "When you encounter an unknown word in a practice passage, always look it up immediately",
+                "Group words by root to learn efficiently (vis/vid = see: visible, vision, evidence, video)",
+                "Create personal sentences using new words — encoding in memory is stronger with self-generated examples"
+            ],
+            "socraticPrompts": [
+                "Why does learning word roots multiply your vocabulary more efficiently than learning individual words?",
+                "A word you 'know' appears in a GRE question and you get it wrong — what does that suggest about your learning method?",
+                "How would you distinguish between 'diffident' and 'indifferent' in a Text Completion context?",
+                "Why might a word's secondary or archaic meaning be the one the GRE is testing?",
+                "What does it mean to understand a word's connotation, and why does the GRE care about this?"
+            ],
+            "codeExample": {
+                "description": "Sample high-frequency GRE words by tone and category",
+                "code": "HIGH-FREQUENCY GRE VOCABULARY SAMPLE\n======================================\n\nPOSITIVE TONE\n  laudatory    = expressing praise\n  sanguine     = optimistic, positive\n  magnanimous  = very generous, noble\n  perspicacious = having insight, shrewd\n  sagacious    = wise, having good judgment\n\nNEGATIVE TONE\n  vitriolic    = bitter, scathing criticism\n  truculent    = eager to fight, aggressive\n  obsequious   = excessively compliant, sycophantic\n  mendacious   = lying, dishonest\n  perfidious   = treacherous, untrustworthy\n\nNEUTRAL / ACADEMIC\n  equivocal    = ambiguous, open to multiple interpretations\n  laconic      = using very few words\n  abstruse     = obscure, difficult to understand\n  quotidian    = occurring daily, mundane\n  recondite    = obscure, known to few\n\nUSEFUL ROOTS\n  bene- (good):  benevolent, benefactor, benign, beneficent\n  mal- (bad):    malevolent, malicious, malign, malodorous\n  loqui (speak): eloquent, loquacious, circumlocution, soliloquy\n  cap/cip (take): captivate, incipient, anticipate, receptive",
+                "output": "Study tip: For each word, note: 1) Definition, 2) Positive/Negative/Neutral tone,\n3) A sentence using it, 4) Words it could be confused with."
+            },
+            "relatedDotPoints": ["GRE-VRF-1.2", "GRE-VRF-1.3", "GRE-VTC-1.1", "GRE-VSE-1.2"]
+        },
+
+        "GRE-VTC-1.1": {
+            "code": "GRE-VTC-1.1",
+            "name": "Single-Blank Text Completion Strategy",
+            "topic": "Text Completion",
+            "subtopic": "Single-Blank Text Completion",
+            "level": "intermediate",
+            "summary": "Single-blank Text Completion questions test your ability to determine what word logically fits a sentence based on context clues. The predict-then-match strategy — forming your own word before looking at the choices — is far more effective than reading the answer choices first.",
+            "keyConcepts": [
+                "Predict first: Before reading answer choices, predict what type of word should fill the blank (positive/negative/neutral, a synonym for a key term in the sentence)",
+                "Clue words: Every TC sentence contains a clue that tells you what the blank means",
+                "Direction words (continuation): 'and', 'similarly', 'likewise', 'also', 'in fact' — blank reinforces the clue",
+                "Direction words (contrast): 'but', 'however', 'despite', 'although', 'yet', 'even though' — blank opposes the clue",
+                "Predict the charge: Determine if the blank is positive or negative before considering specific words",
+                "Match the prediction: Find the answer choice closest to your prediction in meaning and tone",
+                "Eliminate clearly wrong: Remove choices that are opposite or unrelated to your prediction"
+            ],
+            "commonErrors": [
+                "Reading answer choices before making a prediction — gets seduced by plausible-sounding but wrong options",
+                "Missing the direction word — reverses the correct charge of the blank",
+                "Choosing a word that's 'related to' the topic but doesn't logically fit the blank",
+                "Ignoring register — selecting a word that's too informal or too extreme for the sentence's tone",
+                "Second-guessing a correct prediction by overthinking unfamiliar answer choices"
+            ],
+            "learningTips": [
+                "Cover the answer choices with your hand or a piece of paper while forming your prediction",
+                "If you can't predict a specific word, at minimum decide: is this blank positive or negative?",
+                "The correct answer often isn't the 'most impressive-sounding' word — it's the best fit",
+                "After selecting, plug the answer back into the sentence and read it aloud — does it sound right?",
+                "Practise with 5-10 single-blank questions daily with deliberate prediction discipline"
+            ],
+            "socraticPrompts": [
+                "Why is predicting before reading the choices more effective than reading choices first?",
+                "A sentence says: 'Despite his reputation for honesty, his testimony was ____.' What does 'despite' tell you about the blank?",
+                "How does knowing a word's charge (positive/negative) help even if you don't know the exact word?",
+                "When two answer choices both seem plausible, what additional feature of the sentence should you examine?",
+                "A student gets TC questions wrong even with strong vocabulary. What is the most likely strategic error?"
+            ],
+            "codeExample": {
+                "description": "Single-blank TC walkthrough with predict-then-match strategy",
+                "code": "EXAMPLE: Single-Blank Text Completion\n======================================\n\nQuestion:\n  Despite the professor's reputation for _____ lectures,\n  students were surprised to find the seminar engaging\n  and dynamic.\n\nSTEP 1 — Identify the direction word:\n  'Despite' → CONTRAST signal\n  The blank must OPPOSE 'engaging and dynamic'\n\nSTEP 2 — Predict the blank:\n  The blank = something like 'boring' or 'dull'\n  Charge: NEGATIVE\n\nSTEP 3 — Evaluate answer choices:\n  (A) provocative    → positive, stimulating       ✗ wrong charge\n  (B) soporific      → causing sleep, boring       ✓ matches prediction\n  (C) enlightening   → positive, informative       ✗ wrong charge\n  (D) methodical     → systematic (neutral/mild)   ✗ doesn't fit contrast\n  (E) contentious    → causing controversy         ✗ wrong type of negative\n\nAnswer: (B) soporific\n\nVERIFICATION:\n  'Despite the professor's reputation for SOPORIFIC lectures,\n   students were surprised to find the seminar engaging\n   and dynamic.' ✓ The contrast makes logical sense.",
+                "output": "Key rule: The direction word tells you the RELATIONSHIP between the clue and the blank.\n'Despite/Although/However' = opposite direction.\n'Because/Since/And/Also' = same direction."
+            },
+            "relatedDotPoints": ["GRE-VTC-1.2", "GRE-VTC-2.1", "GRE-VRF-1.1", "GRE-VSE-1.2"]
+        },
+
+        "GRE-VRC-2.1": {
+            "code": "GRE-VRC-2.1",
+            "name": "Detail and Inference Questions",
+            "topic": "Reading Comprehension",
+            "subtopic": "Reading Comprehension Question Types",
+            "level": "intermediate",
+            "summary": "Detail questions ask you to locate specific information stated in the passage, while inference questions ask you to draw a logical conclusion supported by — but not explicitly stated in — the passage. Both require careful, evidence-based reasoning rather than outside knowledge.",
+            "keyConcepts": [
+                "Detail questions: Answer is directly stated in the passage — find and verify the exact location",
+                "Inference questions: Answer must be true based on the passage — one small logical step beyond what is stated",
+                "Not inference: Wild speculation, using outside knowledge, or requiring multiple logical leaps",
+                "Answer choices on inference: The correct answer is often cautiously worded (may, some, suggests, can) rather than absolute",
+                "Trap answer types: True but not stated; stated in the passage but not answering the question; extreme absolute claims (all, never, always)",
+                "Line reference questions: Use the referenced lines as a starting point but read 5 lines before and after for context",
+                "Evidence check: Before selecting an answer, ask 'Where in the passage does this come from?'"
+            ],
+            "commonErrors": [
+                "Using outside knowledge rather than passage evidence — this is the most common RC error",
+                "Selecting an answer that is true in real life but not supported by the passage",
+                "Choosing an answer that goes too far beyond what the passage supports (over-inference)",
+                "Missing the scope — selecting an answer about all X when the passage only discusses some X",
+                "Confusing the author's stated view with a view the author merely describes or reports"
+            ],
+            "learningTips": [
+                "Always be able to point to specific text that supports your answer",
+                "On inference questions, prefer answers with hedging language (may, might, can suggest) over absolutes",
+                "The correct answer to an inference question is the minimum logical conclusion — not a bold new claim",
+                "For long passages, read actively: note what each paragraph does (introduces, contrasts, qualifies, concludes)",
+                "Process of elimination is powerful: often 3-4 choices can be clearly ruled out"
+            ],
+            "socraticPrompts": [
+                "What is the difference between something that is 'implied' and something that is 'explicitly stated'?",
+                "An answer choice says 'All scientists agree that...' — why is this almost always wrong on the GRE?",
+                "You find information in the passage that supports an answer, but the question says 'according to the author's argument' — what additional check do you need to make?",
+                "Why does reading 5 lines beyond a referenced line often reveal the correct answer context?",
+                "A student always picks the most interesting or profound answer on inference questions — why is this a flawed strategy?"
+            ],
+            "codeExample": {
+                "description": "Sample passage with detail and inference question walkthrough",
+                "code": "SAMPLE PASSAGE (abbreviated):\n================================\n  Historians have long debated the causes of the\n  decline of the Roman Empire, yet few have given\n  adequate weight to climate change. Recent\n  dendrochronological data suggests that a prolonged\n  cooling period in the 5th and 6th centuries CE\n  destabilised agricultural production across the\n  Mediterranean, contributing to political instability.\n  While this does not represent a complete explanation,\n  it is a factor that demands greater scholarly attention.\n\nDETAIL QUESTION:\n  'According to the passage, dendrochronological data'\n  (A) proves that climate caused Rome's decline\n  (B) provides evidence of a prolonged cooling period\n  (C) is used by most historians of Rome\n  (D) directly contradicts earlier scholarship\n\n  → Answer: (B) — directly stated in passage ✓\n  → (A) wrong — passage says 'not a complete explanation'\n  → (C) wrong — passage says historians have IGNORED this\n  → (D) wrong — passage says historians underweighted it\n\nINFERENCE QUESTION:\n  'The author would most likely agree that'\n  (A) climate is the only cause of Rome's decline\n  (B) current scholarship on Rome is incomplete\n  (C) agricultural data is unreliable\n  (D) Rome's decline was inevitable\n\n  → Answer: (B) — passage implies scholarship needs expansion ✓\n  → (A) extreme — passage explicitly rejects 'complete explanation'\n  → (C) opposite — author relies on the data\n  → (D) not supported — no discussion of inevitability",
+                "output": "Rule: Detail questions need a direct quote. Inference questions need a logical step.\nBoth still require passage evidence — never use outside knowledge."
+            },
+            "relatedDotPoints": ["GRE-VRC-1.1", "GRE-VRC-1.2", "GRE-VRC-2.2", "GRE-VRC-3.1"]
+        },
+
+        "GRE-QAR-2.3": {
+            "code": "GRE-QAR-2.3",
+            "name": "Percentages and Percent Change",
+            "topic": "Arithmetic and Number Theory",
+            "subtopic": "Fractions, Decimals, and Percentages",
+            "level": "intermediate",
+            "summary": "Percentage problems are among the most common and most frequently missed quantitative question types on the GRE. Mastering percent change, successive percents, and working backwards from a percentage are high-yield skills.",
+            "keyConcepts": [
+                "Percent of a number: x% of y = (x/100) × y",
+                "Percent change formula: (New - Old) / Old × 100%",
+                "Percent increase: Always use the ORIGINAL (smaller) value as the denominator",
+                "Percent decrease: Always use the ORIGINAL (larger) value as the denominator",
+                "Successive percent changes: Multiply multipliers, not add percentages (20% off then 30% off ≠ 50% off)",
+                "Multiplier method: 20% increase → multiply by 1.20; 20% decrease → multiply by 0.80",
+                "Working backwards: If 120 is 40% more than x, then 1.40x = 120, so x = 120 ÷ 1.40",
+                "Percentage points vs percent: '10 percentage points higher' is different from '10% higher'"
+            ],
+            "commonErrors": [
+                "Using the new value instead of the original as the denominator in percent change",
+                "Adding successive percentages (e.g., 20% + 30% = 50%) instead of multiplying multipliers",
+                "Confusing 'percent more than' with 'percent of' — 50% more than 100 is 150, not 50",
+                "Misreading 'x is what percent of y' vs 'x is what percent more than y'",
+                "Not converting percent to decimal before multiplying (forgetting to divide by 100)"
+            ],
+            "learningTips": [
+                "Always identify: What is the ORIGINAL (base) value? That goes in the denominator",
+                "Use the multiplier method for successive changes — it's faster and less error-prone",
+                "For complex problems, assign a convenient base (e.g., start with 100 for percent problems)",
+                "Write out the percent change formula before plugging in values",
+                "Double-check: does your answer make sense? A small percent change should give a small difference"
+            ],
+            "socraticPrompts": [
+                "A price increases from $80 to $100. A student calculates the percent change as (80-100)/100 × 100 = -20%. What went wrong?",
+                "A jacket is discounted 25% and then an additional 20%. Why is the total discount NOT 45%?",
+                "If a salary is increased by 30% and then decreased by 30%, is the final salary the same as the original? Why not?",
+                "The number of students increased by 50%. If there are now 300 students, how many were there originally?",
+                "What is the difference between '30 is 20% of x' and '30 is 20% more than x'?"
+            ],
+            "codeExample": {
+                "description": "Percent change and successive percent calculations",
+                "code": "PERCENT CHANGE FORMULA\n======================\nPercent Change = (New - Old) / Old × 100\n\nExample: Price rises from $60 to $75\n  = (75 - 60) / 60 × 100\n  = 15 / 60 × 100\n  = 25% increase ✓\n\nMULTIPLIER METHOD\n==================\n20% increase → multiply by 1.20\n15% decrease → multiply by 0.85\n\nSUCCESSIVE PERCENT CHANGES\n===========================\nExample: 30% increase then 20% decrease\n  Multipliers: 1.30 × 0.80 = 1.04\n  Net effect: 4% INCREASE (not 10% increase)\n\nWORKING BACKWARDS\n==================\nExample: After a 40% increase, the price is $210.\n  What was the original price?\n  1.40 × original = 210\n  original = 210 ÷ 1.40 = $150 ✓\n\nBASE VALUE TRICK\n================\nWhen a problem involves % of unknown quantity:\n  Set the original = 100 (arbitrary base)\n  Work forward, then scale to actual numbers\n  Example: A increased by 20%, B decreased by 10%\n  A = 100 → 120; B = 100 → 90\n  Ratio A:B = 120:90 = 4:3",
+                "output": "Critical insight: ALWAYS use the ORIGINAL value as the denominator.\nThe original is the 'base' — it's what the percentage is RELATIVE TO."
+            },
+            "relatedDotPoints": ["GRE-QAR-2.1", "GRE-QAR-2.4", "GRE-QAL-4.1", "GRE-QDA-1.1"]
+        },
+
+        "GRE-QQC-1.2": {
+            "code": "GRE-QQC-1.2",
+            "name": "QC Strategy: Simplify and Plug In",
+            "topic": "Quantitative Comparison",
+            "subtopic": "Quantitative Comparison Strategy",
+            "level": "advanced",
+            "summary": "Quantitative Comparison (QC) questions ask you to compare two quantities. Rather than computing exact values, the most efficient strategy is to simplify both sides algebraically or to plug in strategic test numbers to determine the relationship.",
+            "keyConcepts": [
+                "Answer choices are fixed: (A) Quantity A always greater, (B) Quantity B always greater, (C) always equal, (D) relationship cannot be determined",
+                "Cannot be determined (D): Choose only when different numbers make DIFFERENT answers — not when you can't immediately compute",
+                "Simplify both sides: Perform the same operation to both sides (add, subtract, multiply by positive, divide by positive)",
+                "Never multiply or divide both sides by a negative — this would flip the comparison",
+                "Plug in FROZEN numbers: Fractions (1/2), zero (0), one (1), extreme large numbers, negatives",
+                "One set makes A>B, another makes B>A → Answer is (D)",
+                "Geometry QC: Do not assume from the figure — only use what is explicitly stated",
+                "If a variable has no restriction, always test positive, negative, zero, and fraction"
+            ],
+            "commonErrors": [
+                "Choosing (D) just because the problem looks complicated — try simplifying first",
+                "Only plugging in positive integers — missing that fractions or negatives change the comparison",
+                "Assuming geometric diagrams are drawn to scale — they may be deliberately misleading",
+                "Multiplying both sides by a variable without checking if it could be negative",
+                "Computing exact values when simplification would be faster and more reliable"
+            ],
+            "learningTips": [
+                "Think of QC as a balance scale — what operation maintains the balance?",
+                "FROZEN is your plug-in set: Fractions, Repeats (same number twice), One, Zero, Extremes, Negatives",
+                "If you find that A > B for two different values of x, try very hard to find a case where B ≥ A before choosing (A)",
+                "QC questions get easier with practice — recognise common patterns (e.g., comparing expressions with x²)",
+                "Budget about 90 seconds for QC questions — they're often faster than other Quant question types"
+            ],
+            "socraticPrompts": [
+                "Quantity A: x². Quantity B: x. If x can be any real number, what is the answer and why?",
+                "You simplify a QC and both sides reduce to the same expression. What is the answer?",
+                "Why is it dangerous to multiply both sides of a QC by an unknown variable?",
+                "A student plugs in x = 1 and gets A > B, then plugs in x = 2 and still gets A > B. Can they conclude (A)? What should they do next?",
+                "Quantity A: The average of 5 consecutive even integers. Quantity B: The middle integer. What is the relationship and why?"
+            ],
+            "codeExample": {
+                "description": "QC strategy walkthrough with simplification and plug-in",
+                "code": "QUANTITATIVE COMPARISON STRATEGIES\n====================================\n\nEXAMPLE 1 — Simplify Both Sides:\n  x > 0\n  Quantity A: (x + 3)²\n  Quantity B: x² + 9\n\n  Expand A: x² + 6x + 9\n  Since x > 0, the term 6x > 0\n  So A = x² + 6x + 9 > x² + 9 = B\n  Answer: (A) ✓ — algebraic simplification\n\nEXAMPLE 2 — Must Plug In:\n  Quantity A: x/y\n  Quantity B: x²/y²\n  (no restrictions on x, y)\n\n  Try x=2, y=1: A=2, B=4 → B > A\n  Try x=4, y=2: A=2, B=4 → B > A\n  Try x=1/2, y=1: A=0.5, B=0.25 → A > B\n  Different results → Answer: (D)\n\nEXAMPLE 3 — Watch for Restrictions:\n  x is a positive integer\n  Quantity A: x²\n  Quantity B: x³\n\n  Try x=1: A=1, B=1 → Equal\n  Try x=2: A=4, B=8 → B > A\n  Different results → Answer: (D)\n  (x=1 gives equality; x=2 gives B > A)\n\nFROZEN PLUG-IN CHECKLIST:\n  F = Fraction (e.g., 1/2)\n  R = Repeat (same number in both)\n  O = One (x=1)\n  Z = Zero (x=0)\n  E = Extreme large (x=100)\n  N = Negative (x=-1 or x=-1/2)",
+                "output": "Golden rule: If two different values give different comparisons → Answer is ALWAYS (D).\nIf 10 different values all give the same comparison → Answer is probably (A), (B), or (C)."
+            },
+            "relatedDotPoints": ["GRE-QQC-1.1", "GRE-QQC-1.3", "GRE-QAL-1.1", "GRE-QAR-3.1"]
+        },
+
+        "GRE-AWT-1.2": {
+            "code": "GRE-AWT-1.2",
+            "name": "Issue Essay Structure",
+            "topic": "Analytical Writing",
+            "subtopic": "Analyse an Issue Task",
+            "level": "intermediate",
+            "summary": "A high-scoring GRE Issue essay (5-6) takes a clear, nuanced position on the prompt, supports it with well-developed examples, and acknowledges counterarguments. The structure should guide the reader effortlessly through your reasoning.",
+            "keyConcepts": [
+                "Introduction (1 paragraph): Provide context, state your thesis — a clear position with a 'because' clause",
+                "Body paragraph 1 (strongest support): Your best reason/example supporting your position, fully developed",
+                "Body paragraph 2 (second support): Another distinct reason or example, connected to thesis",
+                "Counterargument paragraph: Acknowledge the other side, then explain why your position still holds",
+                "Conclusion (1 paragraph): Restate thesis in new words, summarise logic, optionally note complexity",
+                "Thesis quality: Must be specific and defensible — 'It depends on X and Y' is weak; 'X should be prioritised over Y because...' is strong",
+                "Examples: Use specific, concrete examples (historical events, studies, real cases) not vague generalities",
+                "Length: Target 450-600 words — under 350 words rarely scores above 4"
+            ],
+            "commonErrors": [
+                "No clear thesis — essay meanders without taking a position",
+                "Using only vague, general examples ('some scientists believe...' 'in many cases...')",
+                "Failing to acknowledge or rebut the counterargument",
+                "Introduction that merely restates the prompt without taking a position",
+                "Conclusion that only summarises without adding perspective or resonance",
+                "Running out of time — the essay is incomplete and loses major points"
+            ],
+            "learningTips": [
+                "Spend the first 2-3 minutes brainstorming examples before writing",
+                "Write your thesis first, then check that every paragraph proves that thesis",
+                "Use specific proper nouns: 'the French Revolution' beats 'a historical revolution'",
+                "Pre-plan a counterargument for any position — graders reward intellectual honesty",
+                "Save 1-2 minutes at the end to proofread for major errors"
+            ],
+            "socraticPrompts": [
+                "Why is a nuanced thesis (that acknowledges exceptions) stronger than an absolute one?",
+                "What is the difference between a counterargument and an example that supports your thesis?",
+                "A student writes 700 words but every body paragraph just restates the thesis. What score would you expect?",
+                "How do specific, named examples demonstrate analytical skill that vague examples do not?",
+                "Why does the Issue essay reward taking a clear side rather than presenting 'both sides equally'?"
+            ],
+            "codeExample": {
+                "description": "Issue Essay structure template and thesis examples",
+                "code": "GRE ISSUE ESSAY STRUCTURE\n==========================\n\nPrompt example:\n  'Governments should prioritise economic development\n   over environmental protection.'\n\nWEAK thesis (avoid):\n  'This is a complex issue with arguments on both sides.'\n  → No clear position, no direction for the essay\n\nSTRONG thesis:\n  'While short-term economic growth may appear to\n   conflict with environmental protection, governments\n   should ultimately prioritise environmental policy\n   because long-term prosperity depends on ecological\n   stability — as the economic collapse of previously\n   over-farmed agricultural regions demonstrates.'\n\nESSAY OUTLINE (~500 words)\n===========================\n¶1 Introduction (50-80 words)\n   → Context + THESIS STATEMENT\n\n¶2 Body — Strongest Support (120-150 words)\n   → Topic sentence → Evidence (specific example)\n   → Analysis linking evidence to thesis\n\n¶3 Body — Second Support (120-150 words)\n   → Different angle or example\n   → Analysis\n\n¶4 Counterargument + Rebuttal (100-120 words)\n   → 'One might argue that...'\n   → 'However, this objection fails to account for...'\n\n¶5 Conclusion (50-70 words)\n   → Restate thesis (new phrasing)\n   → Broader implication or call for nuance",
+                "output": "Scoring insight: A 6.0 essay takes a CLEAR position and DEVELOPS it with specific,\nwell-analysed examples. Fence-sitting and vague generalities cap your score at 4.0."
+            },
+            "relatedDotPoints": ["GRE-AWT-1.1", "GRE-AWT-1.3", "GRE-AWT-2.1", "GRE-AWT-3.1"]
+        },
+
+        "GRE-AWT-2.2": {
+            "code": "GRE-AWT-2.2",
+            "name": "Common Logical Fallacies",
+            "topic": "Analytical Writing",
+            "subtopic": "Analyse an Argument Task",
+            "level": "advanced",
+            "summary": "The GRE Argument essay requires you to identify flaws in a given argument. Knowing the most common logical fallacies allows you to critique arguments precisely and systematically, which is exactly what high-scoring essays do.",
+            "keyConcepts": [
+                "Hasty generalisation: Drawing a broad conclusion from an insufficient or unrepresentative sample",
+                "False analogy: Assuming two things are similar enough that what's true of one is true of the other",
+                "Post hoc ergo propter hoc: X followed Y, therefore X caused Y (correlation ≠ causation)",
+                "Unrepresentative sample: The data comes from a group that doesn't reflect the broader population",
+                "Either-or (false dilemma): Presenting only two options when more exist",
+                "Ad hominem: Attacking the person making the argument rather than the argument itself",
+                "Circular reasoning: The conclusion is assumed in one of the premises",
+                "Straw man: Misrepresenting someone's position to make it easier to attack",
+                "Appeal to authority: Citing an authority in an unrelated field as evidence",
+                "Slippery slope: Claiming one event will inevitably lead to a chain of extreme consequences"
+            ],
+            "commonErrors": [
+                "Identifying fallacies by name without explaining how they apply to this specific argument",
+                "Agreeing or disagreeing with the argument's conclusion — the task is to critique its logic",
+                "Finding only one flaw when high-scoring essays identify three or more",
+                "Using overly vague language: 'this is a weak argument' without specifying the logical error",
+                "Forgetting to suggest what additional evidence would strengthen (or be needed for) the argument"
+            ],
+            "learningTips": [
+                "Identify 3-4 distinct flaws before writing — do not start writing until you have your critique plan",
+                "For each flaw, follow the formula: Name the flaw → Explain why it's a flaw in this argument → State what is needed",
+                "The prompt often asks you to 'discuss what specific evidence could strengthen or refute the argument' — address this explicitly",
+                "Learn the six most common GRE argument flaws: unrepresentative sample, post hoc, false analogy, hasty generalisation, either-or, unsupported assumption",
+                "Practise by identifying flaws in newspaper opinion columns or advertisements"
+            ],
+            "socraticPrompts": [
+                "An argument says: 'Our town switched to LED streetlights and crime fell 20%. Therefore LED lights deter crime.' What fallacy is this?",
+                "Why is it wrong to give your own opinion on the argument's topic in the Argument essay?",
+                "An argument uses data from one city to conclude that all cities will have the same outcome. What two distinct fallacies might apply?",
+                "What is the difference between saying an argument is 'weak' and explaining the specific assumption it relies on?",
+                "How does asking 'what information would I need to evaluate this claim?' help you identify missing evidence?"
+            ],
+            "codeExample": {
+                "description": "Argument essay flaw identification walkthrough",
+                "code": "SAMPLE ARGUMENT PROMPT:\n========================\n  'The Millbrook Community Centre introduced free\n   yoga classes last year. Since then, membership\n   at the centre has increased by 35%. To increase\n   revenue, the centre should expand its yoga\n   programme and eliminate its swimming facilities.'\n\nIDENTIFY THE FLAWS:\n====================\n\nFlaw 1 — Post Hoc Causation:\n  Membership rose AFTER yoga was introduced, but\n  this does not prove yoga CAUSED the increase.\n  Other factors (new marketing, population growth,\n  competitor closures) may explain the rise.\n\nFlaw 2 — Hasty Generalisation / Unrepresentative Data:\n  35% increase in membership does not establish\n  that yoga is what members VALUE. Survey data\n  on member preferences is missing.\n\nFlaw 3 — False Dilemma:\n  The argument presents only two options: expand\n  yoga OR eliminate swimming. A third option\n  (expand both, or add yoga while reducing but\n  not eliminating swimming) is ignored.\n\nFlaw 4 — Unsupported Revenue Assumption:\n  More members does not necessarily equal more\n  revenue. If free yoga attracted members who\n  don't use paid services, revenue may stagnate.\n\nESSAY STRUCTURE:\n  ¶1: Intro — argument relies on several unfounded assumptions\n  ¶2: Flaw 1 (post hoc causation) + what evidence needed\n  ¶3: Flaw 2 (missing preference data)\n  ¶4: Flaw 3 (false dilemma) + Flaw 4 (revenue assumption)\n  ¶5: Conclusion — argument is unpersuasive as written",
+                "output": "High-scoring tip: Don't just NAME the flaw — explain WHY it matters\nand WHAT specific evidence would be needed to address it."
+            },
+            "relatedDotPoints": ["GRE-AWT-2.1", "GRE-AWT-2.3", "GRE-VRC-3.1", "GRE-AWT-1.2"]
+        },
+
+        "GRE-QDA-2.1": {
+            "code": "GRE-QDA-2.1",
+            "name": "Basic Probability",
+            "topic": "Data Analysis and Statistics",
+            "subtopic": "Probability",
+            "level": "intermediate",
+            "summary": "Probability measures how likely an event is to occur. GRE probability questions typically involve basic probability rules, complement probability, and sometimes compound events. Clear understanding of the sample space is essential.",
+            "keyConcepts": [
+                "Probability formula: P(event) = number of favourable outcomes ÷ total possible outcomes",
+                "Range: 0 ≤ P(A) ≤ 1 (0 = impossible, 1 = certain)",
+                "Complement rule: P(A does NOT occur) = 1 − P(A occurs)",
+                "'At least one' problems: Use complement — P(at least one) = 1 − P(none)",
+                "Mutually exclusive events: Cannot both occur; P(A or B) = P(A) + P(B)",
+                "Equally likely outcomes: Each outcome has the same probability (e.g., fair coin, fair die)",
+                "Probability as a fraction, decimal, or percent: All equivalent representations",
+                "Listing outcomes: For small sample spaces, list all outcomes systematically"
+            ],
+            "commonErrors": [
+                "Forgetting to account for all outcomes in the denominator (incomplete sample space)",
+                "Adding probabilities when events are NOT mutually exclusive (double-counting overlap)",
+                "Not using the complement for 'at least one' problems — direct calculation is much harder",
+                "Confusing P(A and B) with P(A or B)",
+                "Not reducing fraction answers — GRE answer choices may be in lowest terms"
+            ],
+            "learningTips": [
+                "Always define the sample space first — what are all the possible outcomes?",
+                "For 'at least one' problems, ALWAYS use the complement rule — it's almost always easier",
+                "Draw a tree diagram or list outcomes systematically for small problems",
+                "Probability answers must be between 0 and 1 — if you get something outside this range, you've made an error",
+                "Practise converting between fractions, decimals, and percentages for probabilities"
+            ],
+            "socraticPrompts": [
+                "A bag has 3 red and 5 blue balls. What is P(red)? What is P(not red)?",
+                "Why is 'at least one' almost always easier to solve with the complement rule?",
+                "You roll a die twice. What is P(getting a 6 both times)? What rule does this use?",
+                "If P(A) = 0.4 and P(B) = 0.5, and A and B are mutually exclusive, what is P(A or B)?",
+                "A student calculates P(event) = 7/5. What must have gone wrong?"
+            ],
+            "codeExample": {
+                "description": "Probability problems with complement and sample space",
+                "code": "BASIC PROBABILITY\n==================\nP(event) = Favourable outcomes / Total outcomes\n\nExample: Drawing a heart from a standard deck\n  P(heart) = 13/52 = 1/4 = 0.25 = 25%\n\nCOMPLEMENT RULE\n================\nP(A does NOT happen) = 1 - P(A happens)\n\nExample: P(not drawing a heart) = 1 - 1/4 = 3/4\n\n'AT LEAST ONE' PROBLEMS\n========================\nExample: Two coins flipped — P(at least one head)?\n\n  DIRECT method (harder):\n    P(1 head) + P(2 heads) = 2/4 + 1/4 = 3/4\n\n  COMPLEMENT method (easier):\n    P(at least one head) = 1 - P(NO heads)\n    P(no heads) = P(TT) = 1/4\n    P(at least one head) = 1 - 1/4 = 3/4 ✓\n\nSAMPLE PROBLEM:\n================\nA box has 4 red, 6 blue, and 2 green marbles.\nOne marble is drawn randomly.\n\n  P(red)   = 4/12 = 1/3\n  P(blue)  = 6/12 = 1/2\n  P(green) = 2/12 = 1/6\n  P(red or green) = 6/12 = 1/2  [mutually exclusive → add]\n  P(not blue) = 1 - 1/2 = 1/2   [complement]",
+                "output": "Key tip: Always verify that all probabilities sum to 1.0.\nFor equally likely outcomes: count favourables, count total, divide."
+            },
+            "relatedDotPoints": ["GRE-QDA-1.1", "GRE-QDA-2.2", "GRE-QAR-2.1", "GRE-QDA-3.1"]
+        }
+    }
+}

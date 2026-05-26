@@ -1,0 +1,228 @@
+{
+    "subject": "GRE Exam Preparation",
+    "description": "Practice questions for GRE preparation across Verbal Reasoning, Quantitative Reasoning, and Analytical Writing.",
+    "questions": {
+        "GRE-Q-VTC-001": {
+            "id": "GRE-Q-VTC-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 6,
+            "type": "verbal",
+            "dotPoints": ["GRE-VTC-1.1", "GRE-VTC-1.2", "GRE-VRF-1.1"],
+            "topic": "GRE-VTC",
+            "difficulty": "medium",
+            "title": "Text Completion — Single and Double Blank",
+            "description": "Practice the predict-then-match strategy across single-blank and two-blank Text Completion questions.",
+            "question": "Answer all three Text Completion questions. For each, first identify the direction word(s), predict the blank(s), then select the best answer.\n\nQ1 (Single Blank): Although the critic's review was largely _____, it contained a few observations so incisive that even the author grudgingly admitted their validity.\n(A) laudatory  (B) captious  (C) temperate  (D) effusive  (E) superficial\n\nQ2 (Single Blank): The scientist's theory, once considered _____ by mainstream researchers, has gained remarkable acceptance following the publication of corroborating studies.\n(A) prescient  (B) apposite  (C) heretical  (D) seminal  (E) germane\n\nQ3 (Two Blanks): The committee's report was remarkable for its _____ (i): rather than adopting the _____ (ii) tone expected of official documents, it spoke directly and forcefully about the failures of oversight.\n  Blank (i): (A) prolixity  (B) candour  (C) circumspection\n  Blank (ii): (D) measured  (E) inflammatory  (F) obtuse",
+            "solution": {
+                "steps": [
+                    "Q1: 'Although' = contrast. Review was mostly _____ BUT some observations were incisive. Blank opposes 'incisive/valid' → negative, 'not very insightful'. Answer: (B) captious (fault-finding, overly critical) — not entirely without merit but mostly critical; the contrast is between general negativity and occasional valid insight.",
+                    "Q2: 'once considered ___ BUT now gained acceptance' → contrast, blank = negative (rejected/dismissed). Answer: (C) heretical (contrary to accepted belief, unorthodox).",
+                    "Q3 Blank (i): 'remarkable for its ___' in context of speaking 'directly and forcefully' → positive noun meaning directness/openness. Answer: (B) candour.",
+                    "Q3 Blank (ii): The committee did NOT adopt the _____ tone expected of official documents. Official documents are expected to be careful and measured. Answer: (D) measured."
+                ],
+                "code": "ANSWER KEY AND EXPLANATIONS\n============================\n\nQ1 Answer: (B) captious\n  Direction word: 'Although' → CONTRAST\n  Clue: 'a few observations so incisive... grudgingly admitted'\n  Prediction: mostly negative/fault-finding\n  captious = fault-finding, overly critical ✓\n  laudatory (A) = praising → wrong direction\n  temperate (C) = moderate → possible but doesn't explain grudging\n  effusive (D) = excessively enthusiastic → wrong direction\n  superficial (E) = shallow → possible but 'captious' is more precise\n\nQ2 Answer: (C) heretical\n  Direction words: 'once... has gained' → past to present contrast\n  Clue: rejected then → accepted now\n  Prediction: dismissed, unorthodox, controversial\n  heretical = contrary to established belief ✓\n  prescient (A) = far-sighted → positive, wrong direction\n  apposite (B) = appropriate → wrong direction  \n  seminal (D) = highly influential → positive\n  germane (E) = relevant → positive/neutral\n\nQ3 Answer: (B) candour + (D) measured\n  Blank (i): 'spoke directly and forcefully' defines the remarkable quality\n  candour = frankness, openness ✓\n  Blank (ii): what tone is EXPECTED of official documents?\n  measured = careful and restrained ✓ (what was NOT adopted)\n  inflammatory = provocative → that's what they DID do\n  obtuse = unclear → wrong meaning entirely",
+                "output": "Q1: (B) captious\nQ2: (C) heretical\nQ3: (B) candour + (D) measured"
+            },
+            "testCases": [
+                { "input": "Q1", "expectedOutput": "B" },
+                { "input": "Q2", "expectedOutput": "C" },
+                { "input": "Q3", "expectedOutput": "B and D" }
+            ],
+            "hints": [
+                "Always identify the direction word first — it tells you whether the blank continues or contrasts with the clue",
+                "For two-blank questions, tackle the easier blank first using its own clues",
+                "Predict the charge (positive/negative) before looking at answer choices",
+                "Eliminate clearly wrong choices by checking if they match your prediction's charge"
+            ],
+            "tags": ["text completion", "direction words", "vocabulary", "predict-first", "single blank", "two blank"]
+        },
+
+        "GRE-Q-VSE-001": {
+            "id": "GRE-Q-VSE-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 6,
+            "type": "verbal",
+            "dotPoints": ["GRE-VSE-1.1", "GRE-VSE-1.2", "GRE-VSE-1.3"],
+            "topic": "GRE-VSE",
+            "difficulty": "medium",
+            "title": "Sentence Equivalence — Three Practice Questions",
+            "description": "Select exactly two answer choices that complete the sentence in a way that gives both sentences the same meaning.",
+            "question": "For each question, select the TWO answer choices that best complete the sentence and produce sentences most alike in meaning.\n\nQ1: The professor's lectures were so _____ that students often left the hall more confused than when they arrived.\n(A) abstruse  (B) pellucid  (C) lucid  (D) recondite  (E) perspicuous  (F) trenchant\n\nQ2: Despite extensive media coverage, the scandal proved surprisingly _____, leaving the minister's approval ratings essentially unchanged.\n(A) consequential  (B) ephemeral  (C) transitory  (D) momentous  (E) inconsequential  (F) significant\n\nQ3: Critics accused the author of _____ in her latest novel, arguing that she repeated the same themes and techniques that had made her previous work successful.\n(A) perspicacity  (B) prolixity  (C) self-aggrandisement  (D) rehashing  (E) self-plagiarism  (F) profligacy",
+            "solution": {
+                "steps": [
+                    "Q1: Students left MORE confused → lectures were hard to understand. Need two words meaning obscure/difficult. abstruse (A) = obscure, hard to understand; recondite (D) = obscure, known to few. Both mean 'hard to understand'. Pellucid (B), lucid (C), perspicuous (E) all mean 'clear' → opposite. Trenchant (F) = sharp/incisive → different meaning.",
+                    "Q2: 'Despite coverage' and 'approval ratings unchanged' → scandal had little effect. Need two words meaning 'without lasting impact'. Ephemeral (B) = short-lived; transitory (C) = not permanent. But wait — the sentence says effect was minimal, not short-lived. Inconsequential (E) = unimportant; ephemeral/transitory describe duration not impact. Correct pair: inconsequential (E) + ephemeral (B) are closest if we read 'leaving little trace' but the best semantic match is (B) ephemeral + (C) transitory — though (E) inconsequential is the cleaner match with 'essentially unchanged'. Best pair: (B) + (E) inconsequential.",
+                    "Q3: 'Repeated same themes and techniques' from previous work → self-copying. Need two words meaning self-copying/rehashing. rehashing (D) = presenting old material as new; self-plagiarism (E) = copying one's own prior work. These match perfectly."
+                ],
+                "code": "ANSWER KEY AND EXPLANATIONS\n============================\n\nQ1 Answer: (A) abstruse + (D) recondite\n  Prediction: 'confusing to students' → obscure/hard to understand\n  abstruse = difficult to understand, obscure ✓\n  recondite = obscure, known to few ✓\n  Both give: 'lectures were so [obscure/difficult] that students left confused'\n  pellucid, lucid, perspicuous = all mean CLEAR → opposite direction ✗\n  trenchant = sharp/cutting in expression → different meaning ✗\n\nQ2 Answer: (B) ephemeral + (E) inconsequential\n  Prediction: scandal had little lasting effect\n  Note: the KEY clue is 'approval ratings essentially unchanged'\n  ephemeral = lasting a very short time → some fit (brief news cycle)\n  inconsequential = of little importance/consequence ✓\n  transitory (C) also means short-lived — (B) + (C) is possible pair\n  Best pair with same meaning + fit: (B) ephemeral + (C) transitory\n  OR (E) inconsequential alone fits better, but must pick TWO synonyms\n  Most precise pair: (B) ephemeral + (C) transitory\n  [Both mean 'fleeting/short-lived', explaining why ratings unchanged]\n\nQ3 Answer: (D) rehashing + (E) self-plagiarism\n  Prediction: 'repeated same themes and techniques from previous work'\n  rehashing = presenting old material in a new form ✓\n  self-plagiarism = copying one's own prior work ✓\n  Both give equivalent meaning to the critics' accusation\n  perspicacity (A) = insight → unrelated ✗\n  prolixity (B) = wordiness → unrelated ✗\n  self-aggrandisement (C) = boasting about oneself → wrong ✗\n  profligacy (F) = reckless extravagance → unrelated ✗",
+                "output": "Q1: (A) abstruse + (D) recondite\nQ2: (B) ephemeral + (C) transitory\nQ3: (D) rehashing + (E) self-plagiarism"
+            },
+            "testCases": [
+                { "input": "Q1", "expectedOutput": "A and D" },
+                { "input": "Q2", "expectedOutput": "B and C" },
+                { "input": "Q3", "expectedOutput": "D and E" }
+            ],
+            "hints": [
+                "Your two answers must be SYNONYMS of each other — they give the sentence the same meaning",
+                "First find the pair, then verify both fit the sentence context",
+                "Eliminate 'loners' — answer choices with no synonym partner cannot both be correct",
+                "If you find a pair that works, verify by substituting each into the sentence separately"
+            ],
+            "tags": ["sentence equivalence", "synonyms", "vocabulary", "predict-first"]
+        },
+
+        "GRE-Q-VRC-001": {
+            "id": "GRE-Q-VRC-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 8,
+            "type": "verbal",
+            "dotPoints": ["GRE-VRC-1.1", "GRE-VRC-1.2", "GRE-VRC-2.1", "GRE-VRC-2.3"],
+            "topic": "GRE-VRC",
+            "difficulty": "hard",
+            "title": "Reading Comprehension — Science Passage",
+            "description": "Answer four questions on a medium-length academic passage testing main idea, detail, inference, and author's purpose.",
+            "question": "Read the following passage and answer all four questions.\n\nPASSAGE:\nThe discovery of extremophiles — organisms that thrive in conditions previously thought inimical to life — has fundamentally revised our understanding of life's boundaries. Early biologists assumed that complex life required moderate temperatures, neutral pH, and the presence of sunlight. The discovery of hydrothermal vent communities in the late 1970s shattered this assumption: dense ecosystems of tube worms, crabs, and bacteria flourish in complete darkness at temperatures exceeding 400 degrees Celsius, sustained not by photosynthesis but by chemosynthesis — the conversion of chemical energy from hydrogen sulfide into organic matter.\n\nSubsequent research has extended the catalogue of extreme environments hospitable to life. Acidophiles thrive in pH levels below 2, comparable to battery acid. Halophiles colonise hypersaline environments such as the Dead Sea. Psychrophiles metabolise actively in sub-zero conditions beneath Antarctic ice sheets. Each discovery challenges the anthropocentric assumption that life's requirements mirror our own.\n\nThe astrobiological implications are considerable. If life can arise and persist in such varied and hostile conditions on Earth, the probability of extraterrestrial life increases substantially. Mars, whose subsurface may harbour liquid water and chemical gradients similar to those exploited by chemosynthetic organisms, has become a renewed focus of scientific interest. The discovery of extremophiles has thus transformed astrobiology from a speculative discipline into one grounded in empirical precedent.\n\nQ1 (Main Idea): The primary purpose of this passage is to\n(A) argue that extraterrestrial life almost certainly exists\n(B) describe the discovery of hydrothermal vent communities in detail\n(C) explain how the discovery of extremophiles has broadened scientific understanding of life\n(D) critique early biologists for their limited assumptions about life\n(E) compare the habitability of Mars with conditions on early Earth\n\nQ2 (Detail): According to the passage, chemosynthesis differs from photosynthesis in that it\n(A) requires the presence of tube worms to function\n(B) occurs only in sub-zero temperatures\n(C) uses sunlight as its primary energy source\n(D) converts chemical energy rather than light energy into organic matter\n(E) was discovered before photosynthesis was understood\n\nQ3 (Inference): The author's mention of the Dead Sea and Antarctic ice sheets primarily serves to\n(A) disprove the importance of hydrothermal vents\n(B) demonstrate the range of extreme environments in which life persists\n(C) suggest that these environments are the most hostile on Earth\n(D) provide evidence that Earth's oceans are becoming increasingly hostile\n(E) establish that halophiles are more resilient than psychrophiles\n\nQ4 (Purpose): The phrase 'anthropocentric assumption' (paragraph 2) refers to\n(A) the belief that humans are the most advanced life form\n(B) the assumption that all life requires conditions similar to those needed by humans\n(C) a scientific method that prioritises human welfare in research\n(D) the tendency of biologists to study only animals visible to the naked eye\n(E) the hypothesis that life cannot survive in acidic environments",
+            "solution": {
+                "steps": [
+                    "Q1: The passage describes extremophile discovery (para 1-2) and its implications for astrobiology (para 3). The central thread is how this discovery changed scientific understanding — not merely describing one discovery or claiming ETI exists.",
+                    "Q2: Chemosynthesis is directly defined in the passage: 'conversion of chemical energy from hydrogen sulfide into organic matter' vs photosynthesis which uses sunlight.",
+                    "Q3: The Dead Sea and Antarctic ice sheets are listed as ADDITIONAL examples of extreme environments after hydrothermal vents. Purpose = extend the catalogue of examples demonstrating life's range.",
+                    "Q4: 'Anthropocentric' = human-centred. 'Assumption that life's requirements mirror our own' — i.e., assuming life needs what humans need."
+                ],
+                "code": "ANSWER KEY AND EXPLANATIONS\n============================\n\nQ1 Answer: (C)\n  Main idea = how extremophile discovery revised understanding of life\n  (A) too strong — passage says 'probability increases', not certainty\n  (B) too narrow — hydrothermal vents are just one example\n  (D) too negative — passage describes evolution of understanding, not critique\n  (E) not supported — early Earth not discussed\n\nQ2 Answer: (D)\n  Direct quote: 'conversion of chemical energy from hydrogen sulfide into\n  organic matter' — contrasted with photosynthesis (sunlight-based)\n  (A) tube worms don't perform chemosynthesis, bacteria do\n  (B) sub-zero is psychrophiles, not chemosynthesis\n  (C) opposite — photosynthesis uses sunlight, chemosynthesis does not\n\nQ3 Answer: (B)\n  These are two more examples added to 'extend the catalogue'\n  The paragraph's topic sentence: 'Subsequent research has extended the\n  catalogue of extreme environments hospitable to life'\n  (A) opposite — passage builds on hydrothermal vents, not disproves\n  (C) no comparison of which is 'most hostile' is made\n  (E) no comparison between halophiles and psychrophiles\n\nQ4 Answer: (B)\n  'Anthropocentric' = centred on human perspective\n  Followed by: 'life's requirements mirror our own'\n  = assuming life needs what we (humans) need\n  (A) not discussed — not about ranking life forms\n  (C) scientific method not relevant to this phrase\n  (D) too narrow — not about visibility",
+                "output": "Q1: (C)   Q2: (D)   Q3: (B)   Q4: (B)"
+            },
+            "testCases": [
+                { "input": "Q1", "expectedOutput": "C" },
+                { "input": "Q2", "expectedOutput": "D" },
+                { "input": "Q3", "expectedOutput": "B" },
+                { "input": "Q4", "expectedOutput": "B" }
+            ],
+            "hints": [
+                "For main idea questions, look for the answer that covers the whole passage, not just one paragraph",
+                "For detail questions, find the exact lines in the passage before answering",
+                "For inference questions, your answer must be supported by evidence in the passage — never use outside knowledge",
+                "For vocabulary-in-context questions, return to the passage and re-read the sentence before answering"
+            ],
+            "tags": ["reading comprehension", "main idea", "detail", "inference", "author's purpose", "science passage"]
+        },
+
+        "GRE-Q-QAR-001": {
+            "id": "GRE-Q-QAR-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 8,
+            "type": "quantitative",
+            "dotPoints": ["GRE-QAR-2.3", "GRE-QAR-2.4", "GRE-QAL-4.1"],
+            "topic": "GRE-QAR",
+            "difficulty": "medium",
+            "title": "Quantitative — Percent Change, Ratios, and Word Problems",
+            "description": "Practice four quantitative questions covering percent change, ratios, and basic word problems — among the most common GRE Quant question types.",
+            "question": "Solve all four problems. Show your working.\n\nQ1: A laptop's price decreased from $800 to $680. What was the percent decrease?\n(A) 12%  (B) 13%  (C) 15%  (D) 17.6%  (E) 20%\n\nQ2: A store first marks up a coat by 40% and then offers a 25% discount on the new price. What is the net percent change from the original price?\n(A) 15% increase  (B) 5% increase  (C) No change  (D) 5% decrease  (E) 15% decrease\n\nQ3: The ratio of red to blue to green marbles in a bag is 3:5:2. If there are 60 marbles in total, how many blue marbles are there?\n(A) 18  (B) 24  (C) 30  (D) 36  (E) 40\n\nQ4: A car travels 120 miles at 60 mph, then 80 miles at 40 mph. What is the car's average speed for the entire trip?\n(A) 48 mph  (B) 50 mph  (C) 52 mph  (D) 54 mph  (E) 56 mph",
+            "solution": {
+                "steps": [
+                    "Q1: Percent decrease = (Old - New) / Old × 100 = (800 - 680) / 800 × 100 = 120/800 × 100 = 15%",
+                    "Q2: Multiplier method: 1.40 × 0.75 = 1.05 → 5% increase from original price",
+                    "Q3: Total ratio parts = 3+5+2 = 10. Blue = 5/10 of 60 = 30",
+                    "Q4: Average speed ≠ arithmetic mean of speeds. Total distance = 120+80=200 miles. Time1 = 120/60 = 2h. Time2 = 80/40 = 2h. Total time = 4h. Avg speed = 200/4 = 50 mph"
+                ],
+                "code": "FULL WORKED SOLUTIONS\n======================\n\nQ1: Percent Decrease\n  Formula: (Old - New) / Old × 100\n  = (800 - 680) / 800 × 100\n  = 120 / 800 × 100\n  = 0.15 × 100\n  = 15%  ✓ Answer: (C)\n\nQ2: Successive Percent Changes\n  DO NOT add 40% - 25% = 15% increase (WRONG!)\n  USE MULTIPLIER METHOD:\n  Mark up 40%:  × 1.40\n  Discount 25%: × 0.75\n  Net multiplier: 1.40 × 0.75 = 1.05\n  Result: 5% INCREASE from original ✓ Answer: (B)\n\n  Check: $100 original → $140 after markup\n  → $140 × 0.75 = $105 (5% above original ✓)\n\nQ3: Ratio and Parts\n  Ratio 3:5:2 → total 10 parts\n  Each part = 60 ÷ 10 = 6 marbles\n  Blue = 5 parts × 6 = 30 marbles ✓ Answer: (C)\n\nQ4: Average Speed (MUST use total distance / total time)\n  DO NOT average 60 and 40 = 50 directly\n  (this only works if times are equal, which they are here —\n   but the method must be verified)\n  \n  Time 1: 120 miles ÷ 60 mph = 2 hours\n  Time 2: 80 miles ÷ 40 mph = 2 hours\n  Total distance: 120 + 80 = 200 miles\n  Total time: 2 + 2 = 4 hours\n  Avg speed: 200 ÷ 4 = 50 mph ✓ Answer: (B)\n  \n  Note: Here the answer happens to be 50 (arithmetic mean)\n  because equal time was spent at each speed. This is coincidence.\n  Always use distance/time formula.",
+                "output": "Q1: (C) 15%\nQ2: (B) 5% increase\nQ3: (C) 30 blue marbles\nQ4: (B) 50 mph"
+            },
+            "testCases": [
+                { "input": "Q1", "expectedOutput": "C" },
+                { "input": "Q2", "expectedOutput": "B" },
+                { "input": "Q3", "expectedOutput": "C" },
+                { "input": "Q4", "expectedOutput": "B" }
+            ],
+            "hints": [
+                "Q1: Use (Old - New) / Old for percent decrease — the original value is always the denominator",
+                "Q2: Never add successive percentages — multiply multipliers instead",
+                "Q3: Find the value of one 'part' by dividing the total by the sum of ratio components",
+                "Q4: Average speed = total distance ÷ total time — never average the speeds directly"
+            ],
+            "tags": ["percent change", "ratios", "word problems", "average speed", "successive percents"]
+        },
+
+        "GRE-Q-QQC-001": {
+            "id": "GRE-Q-QQC-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 10,
+            "type": "quantitative",
+            "dotPoints": ["GRE-QQC-1.1", "GRE-QQC-1.2", "GRE-QQC-1.3"],
+            "topic": "GRE-QQC",
+            "difficulty": "hard",
+            "title": "Quantitative Comparison — Five QC Questions",
+            "description": "Practice the full range of Quantitative Comparison strategies including simplification, plug-in, and geometry.",
+            "question": "For each question, select:\n(A) Quantity A is greater\n(B) Quantity B is greater\n(C) The two quantities are equal\n(D) The relationship cannot be determined from the information given\n\nQ1: x > 1\n  Quantity A: x²\n  Quantity B: x³\n\nQ2: \n  Quantity A: (3 + 4)²\n  Quantity B: 3² + 4²\n\nQ3: n is a positive even integer\n  Quantity A: The remainder when n is divided by 4\n  Quantity B: 2\n\nQ4: x² = 9\n  Quantity A: x\n  Quantity B: 3\n\nQ5: A circle has radius r. A square has side length r.\n  Quantity A: Area of the circle\n  Quantity B: Area of the square",
+            "solution": {
+                "steps": [
+                    "Q1: Since x>1, x³ > x² (multiplying by x > 1 increases the value). Answer: B",
+                    "Q2: (3+4)² = 49. 3²+4² = 9+16 = 25. 49 > 25. Answer: A",
+                    "Q3: Even integers: 2,4,6,8,10... Remainders when divided by 4: 2÷4=rem2, 4÷4=rem0, 6÷4=rem2, 8÷4=rem0. Alternates between 0 and 2. Not always 2. Answer: D",
+                    "Q4: x²=9 means x=3 OR x=-3. If x=3: A=B (equal). If x=-3: A<B. Different results. Answer: D",
+                    "Q5: Circle area = πr². Square area = r². π≈3.14>1, so πr²>r². Answer: A"
+                ],
+                "code": "QUANTITATIVE COMPARISON SOLUTIONS\n====================================\n\nQ1: x > 1 | Qty A: x²  | Qty B: x³\n  Since x > 1, dividing both sides by x² (positive):\n  Compare 1 vs x → since x > 1, we get x³ > x²\n  Answer: (B) — Quantity B is greater\n\nQ2: Qty A: (3+4)² | Qty B: 3² + 4²\n  A = 7² = 49\n  B = 9 + 16 = 25\n  49 > 25\n  Answer: (A) — Quantity A is greater\n  Note: (a+b)² = a²+2ab+b² ≠ a²+b² (missing the 2ab term)\n\nQ3: n is a positive even integer\n  Qty A: remainder(n÷4) | Qty B: 2\n  Try n=2: 2÷4 = 0 remainder 2 → A = 2 = B\n  Try n=4: 4÷4 = 1 remainder 0 → A = 0 < B = 2\n  Different results → Answer: (D) cannot be determined\n\nQ4: x² = 9 | Qty A: x | Qty B: 3\n  x² = 9 means x = 3 OR x = -3 (both are solutions)\n  If x = 3:  A = 3 = B → equal\n  If x = -3: A = -3 < B = 3\n  Different results → Answer: (D) cannot be determined\n  Critical trap: Do NOT assume x = +3 from x² = 9\n\nQ5: Radius r | Qty A: πr² | Qty B: r²\n  π ≈ 3.14159... > 1\n  Therefore πr² > r² for any positive r\n  Answer: (A) — Quantity A is greater\n  Note: r must be positive (radius cannot be negative or zero)",
+                "output": "Q1: (B)\nQ2: (A)\nQ3: (D)\nQ4: (D)\nQ5: (A)\n\nKey lesson: Questions Q3 and Q4 show why you MUST test multiple values.\nQuestion Q4 is a classic GRE trap: students assume x must be positive."
+            },
+            "testCases": [
+                { "input": "Q1", "expectedOutput": "B" },
+                { "input": "Q2", "expectedOutput": "A" },
+                { "input": "Q3", "expectedOutput": "D" },
+                { "input": "Q4", "expectedOutput": "D" },
+                { "input": "Q5", "expectedOutput": "A" }
+            ],
+            "hints": [
+                "Q1: Since x>1, multiplying by x increases a positive value. Which grows faster: squaring or cubing?",
+                "Q2: Expand both sides using (a+b)² = a² + 2ab + b² and compare",
+                "Q3: Test several even integers — does the remainder always equal 2?",
+                "Q4: Be careful — x²=9 has TWO solutions. Always consider negative values.",
+                "Q5: Compare the coefficients of r² in each expression"
+            ],
+            "tags": ["quantitative comparison", "plug-in", "simplify", "trap answers", "algebra", "geometry"]
+        },
+
+        "GRE-Q-AWT-001": {
+            "id": "GRE-Q-AWT-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "essay",
+            "dotPoints": ["GRE-AWT-1.1", "GRE-AWT-1.2", "GRE-AWT-1.3", "GRE-AWT-3.1"],
+            "topic": "GRE-AWT",
+            "difficulty": "hard",
+            "title": "Analytical Writing — Issue Essay Task",
+            "description": "Write a full Issue essay response to a GRE-style prompt within 30 minutes, demonstrating a clear thesis, specific examples, counterargument, and academic writing style.",
+            "question": "ANALYTICAL WRITING — ISSUE TASK\nTime allowed: 30 minutes\n\nPrompt:\n'The most important quality a leader can possess is the ability to remain open to new ideas and willing to change course, even in the face of opposition.'\n\nWrite a response in which you discuss the extent to which you agree or disagree with the claim. In developing and supporting your position, address the most compelling reasons and/or examples that could be used to challenge your position.",
+            "solution": {
+                "steps": [
+                    "Step 1 (2-3 min): Brainstorm — what is the claim? Leadership quality = openness to change. Do you agree? Partially agree (nuanced position) is strongest. What examples support? What challenges this?",
+                    "Step 2 (1 min): Draft thesis — take a position with a 'because' clause that acknowledges complexity",
+                    "Step 3 (20-22 min): Write 4-5 paragraphs following the structure template",
+                    "Step 4 (2 min): Proofread for major errors"
+                ],
+                "code": "SAMPLE HIGH-SCORING RESPONSE (Score ~5.5)\n==========================================\n\n[INTRODUCTION]\nLeadership demands many virtues, from decisiveness to\ncommunication to strategic vision. While adaptability —\nthe willingness to reassess and change course — is\nundeniably valuable, to call it the MOST important quality\noversimplifies leadership's complexity. The most effective\nleaders balance openness to change with the conviction\nrequired to sustain a clear direction. Adaptability alone,\nwithout principled judgment about when to change course,\ncan be as damaging as rigid inflexibility.\n\n[BODY 1 — Support for openness to change]\nThe value of adaptability is well documented in both\nbusiness and political history. When Reed Hastings pivoted\nNetflix from a DVD-by-mail service to streaming in 2007,\ndespite significant internal resistance and short-term\ncosts, the decision proved transformative. Hastings'\nwillingness to challenge his own successful model when\ncircumstances changed — the rise of broadband and digital\nconsumption — saved the company from the fate of Blockbuster,\nwhich clung to its retail model until bankruptcy.\n\n[BODY 2 — Support for adaptability in science/policy]\nPublic health offers an equally compelling example.\nDuring the COVID-19 pandemic, leaders who adapted their\nguidance as new epidemiological evidence emerged —\nrevising masking protocols and vaccine rollout strategies\nin real time — demonstrably outperformed those who\ndismissed emerging data. The willingness to publicly\nrevise earlier positions, even at political cost, reflected\nan intellectual honesty that ultimately saved lives.\n\n[COUNTERARGUMENT — When adaptability becomes weakness]\nYet the claim's equation of adaptability with great\nleadership overlooks a critical danger: the leader who\nchanges course simply to avoid opposition. Abraham Lincoln's\npresidency illustrates the countervailing virtue. His\nmaintenance of the Union cause and his commitment to\nemancipation despite enormous political opposition from\nwithin his own party required precisely NOT changing course\nin the face of opposition. Had he been primarily responsive\nto opposition, the Emancipation Proclamation may never have\nbeen issued. True leadership sometimes demands conviction\nthat resists the pressure to adapt.\n\n[CONCLUSION]\nLeadership cannot be reduced to a single quality. The\nmost effective leaders are neither rigidly dogmatic nor\nreflexively accommodating; they possess the judgment to\ndistinguish between opposition born of valid new evidence\n(which warrants reconsideration) and opposition driven\nby self-interest or short-term thinking (which warrants\nresistance). Adaptability is a critical leadership virtue,\nbut only when guided by principled judgment about when\nchange is truly warranted.",
+                "output": "Target length: 450-600 words\nEstimated score for sample: 5.0-5.5 / 6.0\n\nScoring breakdown:\n  Critical thinking: Strong (nuanced thesis, counterargument addressed)\n  Organisation: Strong (clear 5-paragraph structure)\n  Development: Strong (specific examples: Netflix, COVID-19, Lincoln)\n  Language: Strong (varied sentence structure, academic vocabulary)\n  Deduction: Minor (could develop counterargument paragraph further)"
+            },
+            "testCases": [
+                { "input": "Essay length", "expectedOutput": "450-600 words" },
+                { "input": "Thesis", "expectedOutput": "Clear position with nuance and because clause" },
+                { "input": "Examples", "expectedOutput": "Minimum 2 specific named examples" },
+                { "input": "Counterargument", "expectedOutput": "Acknowledged and rebutted" }
+            ],
+            "hints": [
+                "Take a clear position in your thesis — don't say 'it depends' without then committing to a side",
+                "Use specific, named examples (historical events, studies, companies) not vague generalities",
+                "The prompt says to 'address the most compelling reasons that could challenge your position' — this means you MUST write a counterargument paragraph",
+                "Save 2 minutes to proofread — a single paragraph of serious errors can drop your score by a full point",
+                "Aim for 450-600 words — under 350 words rarely scores above 4.0"
+            ],
+            "tags": ["analytical writing", "issue essay", "thesis", "counterargument", "specific examples", "academic writing"]
+        }
+    }
+}

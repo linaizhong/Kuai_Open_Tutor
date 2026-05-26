@@ -1,0 +1,217 @@
+{
+    "subject": "GRE Exam Preparation",
+    "description": "Marking guidelines for GRE practice questions across Verbal Reasoning, Quantitative Reasoning, and Analytical Writing.",
+    "lastUpdated": "2026-03-30",
+    "importantNote": "GRE questions are scored on correctness and reasoning quality. Verbal and Quantitative questions are right or wrong. Analytical Writing essays are scored holistically on a 0-6 scale by trained raters.",
+    "assessmentCriteria": {
+        "general": [
+            "Verbal Reasoning: Correctness of answer selection based on passage evidence or sentence logic",
+            "Quantitative Reasoning: Correct numerical answer with sound mathematical reasoning and setup",
+            "Analytical Writing: Holistic evaluation of critical thinking, organisation, development of ideas, and facility with language",
+            "Strategy Application: Evidence that test-taking strategies (predict-first, plug-in, POE) are being applied correctly",
+            "Error Analysis: Identification of whether errors are conceptual, strategic, or due to careless mistakes",
+            "Time Efficiency: Ability to arrive at correct answers within GRE time constraints"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "GRE practice scoring principles for tutor feedback",
+        "rules": [
+            { "condition": "Correct answer with clear correct reasoning shown", "marksAwarded": "Full marks" },
+            { "condition": "Correct answer but flawed or missing reasoning (lucky guess)", "marksAwarded": "50-75% — correct answer scores but reasoning must be developed" },
+            { "condition": "Wrong answer but correct setup with arithmetic error only", "marksAwarded": "60-70% — concept understood; execution needs attention" },
+            { "condition": "Wrong answer due to strategic error (e.g., not predicting in TC, not using complement in probability)", "marksAwarded": "20-40% — flag strategy for review" },
+            { "condition": "Wrong answer due to conceptual misunderstanding (e.g., using New instead of Old in percent change)", "marksAwarded": "0-20% — requires concept reteaching" },
+            { "condition": "Sentence Equivalence: one of two correct answers selected", "marksAwarded": "0% — GRE awards no credit for partial SE answers; coach to always find the pair" },
+            { "condition": "Essay: complete response with all required elements", "marksAwarded": "As per holistic rubric below" }
+        ]
+    },
+    "levelDescriptors": {
+        "foundation": {
+            "expectations": [
+                "Understand the GRE test format, sections, and timing",
+                "Identify direction words (although, because, despite) in TC and SE sentences",
+                "Correctly apply the percent change formula with original value as denominator",
+                "Know basic arithmetic: fractions, decimals, percentages, order of operations",
+                "Distinguish between detail and inference questions in Reading Comprehension"
+            ],
+            "commonErrors": [
+                "Not identifying direction words — reverses the blank's charge in TC/SE",
+                "Using the new value as denominator in percent change",
+                "Leaving GRE questions blank (no guessing penalty — always guess)",
+                "Spending too long on a single question and running out of time",
+                "Confusing 'main idea' with 'detail' in Reading Comprehension"
+            ]
+        },
+        "intermediate": {
+            "expectations": [
+                "Apply predict-first strategy consistently in Text Completion and Sentence Equivalence",
+                "Distinguish between the two correct SE answers using synonym pair recognition",
+                "Set up and solve word problems involving rates, ratios, and percent change",
+                "Identify the main idea, author's purpose, and tone in RC passages",
+                "Apply basic probability formula and complement rule correctly",
+                "Use QC simplification strategy and understand the four fixed answer choices"
+            ],
+            "commonErrors": [
+                "Reading TC/SE answer choices before forming a prediction",
+                "Adding successive percentages instead of multiplying multipliers",
+                "Using outside knowledge instead of passage evidence in RC",
+                "Averaging speeds directly instead of using total distance/total time",
+                "Assuming positive values for variables in QC without checking negative/fraction cases"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Identify and articulate specific logical fallacies in Argument essay prompts",
+                "Write a GRE Issue essay with a nuanced thesis, two specific supporting examples, counterargument, and rebuttal",
+                "Apply FROZEN plug-in technique correctly to determine QC answer choice (D)",
+                "Solve complex word problems involving combined rates, mixtures, and sequences",
+                "Correctly apply compound probability rules (multiplication rule for independent events)",
+                "Recognise three-blank TC structure and prioritise the easiest blank first"
+            ],
+            "commonErrors": [
+                "Writing an Argument essay that agrees/disagrees with the topic rather than critiquing the argument's logic",
+                "Issue essay with vague examples ('in many cases', 'some scientists believe') instead of specific named examples",
+                "QC: choosing D without testing enough values to confirm different outcomes",
+                "Not using complement rule for 'at least one' probability problems",
+                "Assumption that geometric diagrams in QC are drawn to scale"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "GRE-Q-VTC-001": {
+            "totalMarks": 6,
+            "criteria": [
+                { "marks": 6, "description": "All 3 TC questions correct with clear direction word identification and prediction documented for each" },
+                { "marks": "4-5", "description": "2 of 3 correct; error in remaining question is strategic (forgot to predict) or near-miss (chose related but wrong word)" },
+                { "marks": "2-3", "description": "1-2 correct; consistent strategic errors (reading choices before predicting) or vocabulary gaps causing wrong charge selection" },
+                { "marks": "1", "description": "1 correct by chance; no evidence of predict-first strategy applied" },
+                { "marks": 0, "description": "0 correct; systematic reversal of direction or random selection" }
+            ]
+        },
+        "GRE-Q-VSE-001": {
+            "totalMarks": 6,
+            "criteria": [
+                { "marks": 6, "description": "All 3 SE questions correct; both words of pair identified correctly; reasoning shows synonym pair logic" },
+                { "marks": "4-5", "description": "2 of 3 fully correct (both words); one question with one correct word — near miss on synonym identification" },
+                { "marks": "2-3", "description": "1-2 fully correct; errors show vocabulary gaps or failure to find the synonym pair (choosing two non-synonymous answers)" },
+                { "marks": "1", "description": "One partial (one correct word only) or one fully correct by chance; no evidence of predict-first or synonym-pair strategy" },
+                { "marks": 0, "description": "No correct pairs; random selection or misunderstanding of SE format (selecting only one answer)" }
+            ]
+        },
+        "GRE-Q-VRC-001": {
+            "totalMarks": 8,
+            "criteria": [
+                { "marks": 8, "description": "All 4 RC questions correct; reasoning is passage-based throughout; no use of outside knowledge" },
+                { "marks": "6-7", "description": "3 of 4 correct; one error is over-inference or scope error (choosing too broad or too narrow an answer)" },
+                { "marks": "4-5", "description": "2 of 4 correct; systematic use of outside knowledge or confusion between main idea and detail questions" },
+                { "marks": "2-3", "description": "1 of 4 correct; passage not read carefully; answers based on general knowledge of the topic" },
+                { "marks": "0-1", "description": "0-1 correct; fundamental misreading of passage or questions" }
+            ]
+        },
+        "GRE-Q-QAR-001": {
+            "totalMarks": 8,
+            "criteria": [
+                { "marks": 8, "description": "All 4 correct with correct setup and working shown; multiplier method used for Q2; distance/time formula used for Q4" },
+                { "marks": "6-7", "description": "3 of 4 correct; one arithmetic error or one strategic error (e.g., adding successive percentages in Q2)" },
+                { "marks": "4-5", "description": "2 of 4 correct; systematic conceptual error in percent change (wrong denominator) or ratio setup" },
+                { "marks": "2-3", "description": "1-2 correct; mostly incorrect setup; significant conceptual gaps in percent and ratio topics" },
+                { "marks": "0-1", "description": "0-1 correct; fundamental arithmetic or formula errors across multiple question types" }
+            ]
+        },
+        "GRE-Q-QQC-001": {
+            "totalMarks": 10,
+            "criteria": [
+                { "marks": 10, "description": "All 5 QC questions correct; correct reasoning documented (algebraic simplification for Q1-2, Q5; FROZEN plug-in for Q3-4); Q4 negative value considered" },
+                { "marks": "8-9", "description": "4 of 5 correct; Q4 error (forgot negative value for x) is most common miss — deduct 2 marks" },
+                { "marks": "6-7", "description": "3 of 5 correct; Q3 and Q4 both wrong (failure to test multiple values for D); or Q2 correct by computation without understanding (a+b)² expansion" },
+                { "marks": "4-5", "description": "2 of 5 correct; systematic errors in variable testing; no evidence of FROZEN technique" },
+                { "marks": "2-3", "description": "1 of 5 correct; QC format misunderstood or significant conceptual gaps in algebra and number properties" },
+                { "marks": "0-1", "description": "0-1 correct; fundamental misunderstanding of QC question type or answer choices" }
+            ]
+        },
+        "GRE-Q-AWT-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "13-15", "description": "Score equivalent 5.5-6.0: Nuanced, well-argued thesis; 2+ specific named examples fully developed; counterargument addressed and rebutted; varied sentence structure; minimal errors; 450-600 words" },
+                { "marks": "10-12", "description": "Score equivalent 4.5-5.0: Clear thesis; at least 2 examples (possibly somewhat vague); counterargument present but underdeveloped; generally correct grammar; adequate length" },
+                { "marks": "7-9", "description": "Score equivalent 3.5-4.0: Thesis present but simple or without nuance; examples present but general ('many people', 'studies show'); counterargument missing or only nodded at; some grammar/structure issues" },
+                { "marks": "4-6", "description": "Score equivalent 2.5-3.0: Position unclear or inconsistent; no specific examples; no counterargument; noticeable grammar and organisation errors; response too short (<350 words)" },
+                { "marks": "1-3", "description": "Score equivalent 1.0-2.0: Minimal response; does not address the prompt appropriately; fundamental writing deficiencies" },
+                { "marks": 0, "description": "Score equivalent 0: No response, off-topic, or plagiarised" }
+            ]
+        }
+    },
+    "essayScoringRubric": {
+        "description": "ETS GRE Analytical Writing holistic scoring guide (adapted for tutoring feedback)",
+        "scores": {
+            "6": {
+                "label": "Outstanding",
+                "characteristics": [
+                    "Insightful, nuanced position on the issue",
+                    "Compelling, well-developed examples and reasons",
+                    "Counterargument thoughtfully considered and effectively rebutted",
+                    "Clearly organised, easy to follow",
+                    "Varied, precise, and sophisticated language",
+                    "Virtually free of errors in grammar and mechanics"
+                ]
+            },
+            "5": {
+                "label": "Strong",
+                "characteristics": [
+                    "Clear, well-considered position",
+                    "Generally relevant and developed examples",
+                    "Counterargument acknowledged",
+                    "Logical organisation with clear transitions",
+                    "Mostly precise language with some variety",
+                    "Minor errors that do not obscure meaning"
+                ]
+            },
+            "4": {
+                "label": "Competent",
+                "characteristics": [
+                    "Clear but unelaborated position",
+                    "Adequate examples but may be somewhat vague",
+                    "Counterargument may be absent or superficial",
+                    "Organisation mostly clear",
+                    "Adequate language control with occasional imprecision",
+                    "Some errors that may distract but do not seriously confuse"
+                ]
+            },
+            "3": {
+                "label": "Limited",
+                "characteristics": [
+                    "Position may be unclear or inconsistent",
+                    "Examples are thin, underdeveloped, or only partially relevant",
+                    "Little to no engagement with the counterargument",
+                    "Organisation may be disjointed",
+                    "Language imprecise, with repetitive or weak vocabulary",
+                    "Errors may occasionally interfere with meaning"
+                ]
+            },
+            "2": {
+                "label": "Seriously Flawed",
+                "characteristics": [
+                    "Position difficult to identify",
+                    "Minimal support, little development",
+                    "Poor organisation",
+                    "Frequent language errors that seriously impede comprehension",
+                    "Very short or incomplete response"
+                ]
+            },
+            "1": {
+                "label": "Fundamentally Deficient",
+                "characteristics": [
+                    "Does not address the prompt",
+                    "Incoherent argument",
+                    "Pervasive errors throughout",
+                    "Response is off-topic or incomprehensible"
+                ]
+            }
+        }
+    },
+    "feedbackTemplate": {
+        "verbal": "Score: {score}/{totalMarks}\n\nStrategy Application: {strategy}\nVocabulary: {vocabulary}\nPassage Analysis: {analysis}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nPractice Focus:\n{practice}",
+        "quantitative": "Score: {score}/{totalMarks}\n\nConceptual Understanding: {concept}\nSetup and Method: {method}\nArithmetic Accuracy: {arithmetic}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nCommon Traps to Watch:\n{traps}",
+        "essay": "Score: {score}/6.0 (equivalent to {marks}/{totalMarks})\n\nThesis Clarity: {thesis}\nEvidence Quality: {evidence}\nCounterargument: {counter}\nOrganisation: {organisation}\nLanguage: {language}\n\nStrengths:\n{strengths}\n\nTo Score Higher:\n{improvements}"
+    }
+}

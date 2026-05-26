@@ -1,0 +1,286 @@
+{
+  "subject": "HSC Mathematics Extension 2",
+  "subjectId": "maths-ext2",
+  "syllabusVersion": "2017",
+  "appliesTo": "HSC examinations 2020–2026",
+  "topics": [
+    {
+      "code": "MEX-P",
+      "name": "Proof",
+      "year": "12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "MEX-P1",
+          "name": "The Nature of Proof",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-P1.1",
+              "name": "Proof by contradiction",
+              "keywords": ["proof by contradiction", "reductio ad absurdum", "assume false", "contradiction", "irrational", "negation", "suppose for contradiction", "derive contradiction"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-P1"]
+            },
+            {
+              "code": "MEX-P1.2",
+              "name": "Proof by contrapositive",
+              "keywords": ["contrapositive", "proof by contrapositive", "not Q implies not P", "converse", "logically equivalent", "if not then not"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-P1.1"]
+            },
+            {
+              "code": "MEX-P1.3",
+              "name": "Proof by mathematical induction — harder cases",
+              "keywords": ["strong induction", "induction divisibility", "induction inequality", "induction series", "Fibonacci induction", "induction product", "harder induction", "recursive sequence induction"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-P1", "MEX-P1.1"]
+            },
+            {
+              "code": "MEX-P1.4",
+              "name": "Inequality proofs",
+              "keywords": ["AM-GM inequality", "Cauchy-Schwarz", "triangle inequality", "prove inequality", "arithmetic mean", "geometric mean", "AM-GM", "difference of squares", "inequality proof", "squaring both sides"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-P1.1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MEX-N",
+      "name": "Complex Numbers",
+      "year": "12",
+      "examWeightPercent": 20,
+      "subtopics": [
+        {
+          "code": "MEX-N1",
+          "name": "Introduction to Complex Numbers",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-N1.1",
+              "name": "Arithmetic of complex numbers",
+              "keywords": ["complex number", "imaginary unit", "i squared", "i² = -1", "real part", "imaginary part", "complex conjugate", "z bar", "modulus", "rationalise", "Cartesian form", "a + ib"],
+              "difficulty": "intermediate",
+              "prerequisites": []
+            },
+            {
+              "code": "MEX-N1.2",
+              "name": "The Argand diagram",
+              "keywords": ["Argand diagram", "complex plane", "modulus", "|z|", "argument", "arg(z)", "principal argument", "Re(z)", "Im(z)", "geometric interpretation", "locus", "complex vector"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MEX-N1.1"]
+            },
+            {
+              "code": "MEX-N1.3",
+              "name": "Modulus-argument (polar) form",
+              "keywords": ["polar form", "modulus-argument form", "cis theta", "r cis θ", "multiply polar", "divide polar", "rotation", "argument addition", "convert polar Cartesian", "modulus multiplication"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-N1.2"]
+            },
+            {
+              "code": "MEX-N1.4",
+              "name": "De Moivre's theorem and applications",
+              "keywords": ["De Moivre's theorem", "nth roots", "roots of unity", "powers of complex", "(r cis θ)^n", "multiple angle formula", "cos nθ", "sin nθ", "nth root of unity", "unit circle roots"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-N1.3"]
+            }
+          ]
+        },
+        {
+          "code": "MEX-N2",
+          "name": "Using Complex Numbers",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-N2.1",
+              "name": "Curves and regions in the complex plane",
+              "keywords": ["locus", "circle complex plane", "|z - a| = r", "perpendicular bisector", "arg(z - a)", "ray", "half-plane", "region complex", "curve Argand diagram", "complex locus"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-N1.2", "MEX-N1.3"]
+            },
+            {
+              "code": "MEX-N2.2",
+              "name": "Complex numbers and polynomials",
+              "keywords": ["conjugate root theorem", "complex roots", "conjugate pairs", "factorise over complex", "polynomial complex roots", "fundamental theorem of algebra", "real polynomial", "factorisation over C"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-N1.1", "ME-F2.1", "ME-F2.2"]
+            },
+            {
+              "code": "MEX-N2.3",
+              "name": "Geometry using complex numbers",
+              "keywords": ["rotation complex number", "dilation", "translation complex", "geometric proof complex", "multiply by i", "90 degree rotation", "complex transformation", "parallelogram proof", "square proof complex"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-N1.3", "MEX-N1.4"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MEX-V",
+      "name": "Vectors",
+      "year": "12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "MEX-V1",
+          "name": "Further Work with Vectors",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-V1.1",
+              "name": "3D vectors — representations and operations",
+              "keywords": ["3D vector", "three dimensional", "i j k", "component form 3D", "magnitude 3D", "|v| 3D", "unit vector 3D", "R³", "position vector 3D", "vector operations 3D"],
+              "difficulty": "intermediate",
+              "prerequisites": ["ME-V1.1"]
+            },
+            {
+              "code": "MEX-V1.2",
+              "name": "Dot product in 3D and applications",
+              "keywords": ["dot product 3D", "angle 3D vectors", "perpendicular 3D", "projection 3D", "scalar resolute 3D", "vector resolute 3D", "3D geometry", "planes 3D"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-V1.2", "MEX-V1.1"]
+            },
+            {
+              "code": "MEX-V1.3",
+              "name": "Vector equations of lines and planes",
+              "keywords": ["vector equation line 3D", "Cartesian line 3D", "equation of plane", "normal vector", "plane equation", "r dot n", "ax + by + cz", "parallel planes", "line plane intersection", "normal to plane"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-V1.2", "ME-V1.3"]
+            },
+            {
+              "code": "MEX-V1.4",
+              "name": "Cross product and geometric applications",
+              "keywords": ["cross product", "vector product", "a × b", "determinant formula", "perpendicular vector", "normal vector cross", "|a × b|", "area parallelogram", "area triangle vectors", "right-hand rule"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-V1.2", "MEX-V1.3"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MEX-C",
+      "name": "Calculus",
+      "year": "12",
+      "examWeightPercent": 35,
+      "subtopics": [
+        {
+          "code": "MEX-C1",
+          "name": "Further Integration",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-C1.1",
+              "name": "Integration by parts",
+              "keywords": ["integration by parts", "u dv", "LIATE", "uv minus v du", "repeated integration by parts", "integral recurs", "integrate x e^x", "integrate ln x", "integrate x sin x", "integrate x^2 cos x"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C4.1", "MA-C4.2"]
+            },
+            {
+              "code": "MEX-C1.2",
+              "name": "Integration using substitution — harder cases",
+              "keywords": ["trig substitution", "trigonometric substitution", "Weierstrass substitution", "t-substitution", "t = tan(theta/2)", "half-angle substitution", "sqrt(a^2 - x^2)", "sqrt(a^2 + x^2)", "harder substitution", "rational trig integral"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-C1.2", "MA-C4.1"]
+            },
+            {
+              "code": "MEX-C1.3",
+              "name": "Partial fractions",
+              "keywords": ["partial fractions", "partial fraction decomposition", "distinct linear factors", "repeated factors", "irreducible quadratic", "rational function integral", "decompose fraction", "cover-up method", "polynomial division partial fractions"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C1.1", "ME-F2.1"]
+            },
+            {
+              "code": "MEX-C1.4",
+              "name": "Further volumes of solids of revolution",
+              "keywords": ["volume revolution", "solid of revolution", "disk method", "shell method", "washer method", "rotate x-axis", "rotate y-axis", "V = pi integral", "bounded region volume", "volume between curves"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C4.2", "MEX-C1.1"]
+            }
+          ]
+        },
+        {
+          "code": "MEX-C2",
+          "name": "Differential Equations",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-C2.1",
+              "name": "First-order differential equations — separation of variables",
+              "keywords": ["separable differential equation", "separation of variables", "dy/dx", "f(y) dy = g(x) dx", "general solution", "particular solution", "initial condition", "growth and decay", "Newton's law of cooling", "population model"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C4.1", "MA-C4.2"]
+            },
+            {
+              "code": "MEX-C2.2",
+              "name": "Slope fields and qualitative analysis",
+              "keywords": ["slope field", "direction field", "solution curve", "equilibrium solution", "stable equilibrium", "unstable equilibrium", "qualitative analysis", "long-term behaviour", "sketch solution curve"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C2.1"]
+            },
+            {
+              "code": "MEX-C2.3",
+              "name": "Further applications of differential equations",
+              "keywords": ["motion with resistance", "resisted motion", "v dv/dx", "m dv/dt", "air resistance", "logistic growth", "mixing problem", "terminal velocity", "dv/dt = g - kv", "physical application DE"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C2.1", "ME-C1.1"]
+            }
+          ]
+        },
+        {
+          "code": "MEX-C3",
+          "name": "Further Mechanics",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-C3.1",
+              "name": "Simple harmonic motion",
+              "keywords": ["simple harmonic motion", "SHM", "x double dot = -n^2 x", "amplitude", "period", "T = 2pi/n", "v^2 = n^2(a^2 - x^2)", "displacement SHM", "centre of motion", "angular frequency"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C2.3", "ME-C1.1"]
+            },
+            {
+              "code": "MEX-C3.2",
+              "name": "Harder resisted motion",
+              "keywords": ["resisted motion", "resistance v squared", "terminal velocity", "v dv/dx", "motion equation", "upward motion", "downward motion", "m dv/dt = mg - kv^2", "phase of motion", "resistance proportional"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C2.3", "MEX-C3.1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MEX-M",
+      "name": "Mechanics",
+      "year": "12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "MEX-M1",
+          "name": "Applications of Calculus to Mechanics",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MEX-M1.1",
+              "name": "Circular motion",
+              "keywords": ["circular motion", "angular velocity", "centripetal acceleration", "centripetal force", "omega", "v^2/r", "omega^2 r", "conical pendulum", "banked curve", "period circular"],
+              "difficulty": "advanced",
+              "prerequisites": ["MEX-C2.3"]
+            },
+            {
+              "code": "MEX-M1.2",
+              "name": "Harder projectile motion",
+              "keywords": ["projectile air resistance", "projectile harder", "range with resistance", "Cartesian trajectory resistance", "projectile calculus", "maximum range", "optimal angle", "resistance projectile", "vector projectile"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-V1.4", "MEX-C2.3"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

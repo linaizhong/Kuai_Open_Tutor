@@ -1,0 +1,308 @@
+{
+    "subject": "中国高考语文",
+    "subjectId": "chinese-gaokao",
+    "syllabusVersion": "2020",
+    "appliesTo": "全国卷及各省市自主命题参考",
+    "examStructure": {
+        "totalMarks": 150,
+        "duration": "150分钟",
+        "sections": [
+            {
+                "section": "一",
+                "name": "现代文阅读",
+                "totalMarks": 35,
+                "parts": [
+                    { "part": "（一）", "description": "论述类文本阅读", "marks": 9, "questionTypes": ["选择题"], "suggestedTime": "15分钟" },
+                    { "part": "（二）", "description": "实用类文本阅读", "marks": 12, "questionTypes": ["选择题", "简答题"], "suggestedTime": "20分钟" },
+                    { "part": "（三）", "description": "文学类文本阅读", "marks": 14, "questionTypes": ["选择题", "简答题"], "suggestedTime": "25分钟" }
+                ]
+            },
+            {
+                "section": "二",
+                "name": "古代诗文阅读",
+                "totalMarks": 35,
+                "parts": [
+                    { "part": "（一）", "description": "文言文阅读", "marks": 19, "questionTypes": ["选择题", "翻译题", "简答题"], "suggestedTime": "25分钟" },
+                    { "part": "（二）", "description": "古代诗歌阅读", "marks": 9, "questionTypes": ["选择题", "简答题"], "suggestedTime": "15分钟" },
+                    { "part": "（三）", "description": "名篇名句默写", "marks": 7, "questionTypes": ["填空题"], "suggestedTime": "5分钟" }
+                ]
+            },
+            {
+                "section": "三",
+                "name": "语言文字运用",
+                "totalMarks": 20,
+                "parts": [
+                    { "part": "（一）", "description": "词语运用", "marks": 3, "questionTypes": ["选择题"], "suggestedTime": "5分钟" },
+                    { "part": "（二）", "description": "病句修改", "marks": 3, "questionTypes": ["选择题"], "suggestedTime": "5分钟" },
+                    { "part": "（三）", "description": "语言表达连贯", "marks": 3, "questionTypes": ["选择题", "填空题"], "suggestedTime": "5分钟" },
+                    { "part": "（四）", "description": "修辞手法", "marks": 3, "questionTypes": ["选择题", "简答题"], "suggestedTime": "5分钟" },
+                    { "part": "（五）", "description": "综合运用", "marks": 8, "questionTypes": ["简答题", "修改题"], "suggestedTime": "10分钟" }
+                ]
+            },
+            {
+                "section": "四",
+                "name": "写作",
+                "totalMarks": 60,
+                "parts": [
+                    { "part": "作文", "description": "材料作文或命题作文", "marks": 60, "suggestedTime": "60分钟" }
+                ]
+            }
+        ]
+    },
+    "topics": [
+        {
+            "code": "YW-XD",
+            "name": "现代文阅读",
+            "year": "12",
+            "examWeightPercent": 23.3,
+            "subtopics": [
+                {
+                    "code": "YW-XD-1",
+                    "name": "论述类文本阅读",
+                    "dotPoints": [
+                        {
+                            "code": "YW-XD-1.1",
+                            "name": "论述类文本理解",
+                            "keywords": ["概念理解", "关键句子", "文章主旨", "论述结构", "论证方法"],
+                            "difficulty": "中等"
+                        },
+                        {
+                            "code": "YW-XD-1.2",
+                            "name": "论述类文本推断",
+                            "keywords": ["隐含信息", "因果关系", "态度倾向", "言外之意", "推断合理性"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-XD-2",
+                    "name": "实用类文本阅读",
+                    "dotPoints": [
+                        {
+                            "code": "YW-XD-2.1",
+                            "name": "实用类文本信息整合",
+                            "keywords": ["信息筛选", "信息整合", "图文转换", "多文本比较", "非连续性文本"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-XD-3",
+                    "name": "文学类文本阅读",
+                    "dotPoints": [
+                        {
+                            "code": "YW-XD-3.1",
+                            "name": "文学类文本人物形象分析",
+                            "keywords": ["人物描写", "人物性格", "人物关系", "典型人物", "人物作用"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-XD-3.2",
+                            "name": "文学类文本环境描写分析",
+                            "keywords": ["自然环境", "社会环境", "环境作用", "环境象征"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-XD-3.3",
+                            "name": "文学类文本情节结构分析",
+                            "keywords": ["情节要素", "情节安排", "线索", "伏笔照应", "悬念"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-XD-3.4",
+                            "name": "文学类文本主题把握",
+                            "keywords": ["主题类型", "主题表现", "主题层次", "作者意图", "多元解读"],
+                            "difficulty": "较难"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "YW-GD",
+            "name": "古代诗文阅读",
+            "year": "12",
+            "examWeightPercent": 23.3,
+            "subtopics": [
+                {
+                    "code": "YW-GD-1",
+                    "name": "文言文阅读",
+                    "dotPoints": [
+                        {
+                            "code": "YW-GD-1.1",
+                            "name": "文言文实词理解",
+                            "keywords": ["古今异义", "一词多义", "通假字", "词类活用", "偏义复词"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-1.2",
+                            "name": "文言文虚词理解",
+                            "keywords": ["18个虚词", "多功能性", "语法功能", "位置特征"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-1.3",
+                            "name": "文言文句式理解",
+                            "keywords": ["判断句", "被动句", "倒装句", "省略句", "固定句式"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-2.1",
+                            "name": "文言文翻译",
+                            "keywords": ["信达雅", "直译意译", "留删补调换", "采分点"],
+                            "difficulty": "较难"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-GD-3",
+                    "name": "古代诗歌阅读",
+                    "dotPoints": [
+                        {
+                            "code": "YW-GD-3.1",
+                            "name": "古诗词形象鉴赏",
+                            "keywords": ["人物形象", "景物形象", "事物形象", "意象", "意境"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-3.2",
+                            "name": "古诗词语言鉴赏",
+                            "keywords": ["炼字", "诗眼", "语言风格", "修辞手法", "叠词"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-3.3",
+                            "name": "古诗词表达技巧鉴赏",
+                            "keywords": ["抒情方式", "描写手法", "表现手法", "结构技巧"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-GD-3.4",
+                            "name": "古诗词思想情感把握",
+                            "keywords": ["情感类型", "情感层次", "情感变化", "思想内容", "主旨把握"],
+                            "difficulty": "较难"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-GD-4",
+                    "name": "名篇名句默写",
+                    "dotPoints": [
+                        {
+                            "code": "YW-GD-4.1",
+                            "name": "名篇名句默写",
+                            "keywords": ["必背篇目", "准确记忆", "理解记忆", "易错字"],
+                            "difficulty": "容易"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "YW-YY",
+            "name": "语言文字运用",
+            "year": "12",
+            "examWeightPercent": 13.3,
+            "subtopics": [
+                {
+                    "code": "YW-YY-1",
+                    "name": "词语运用",
+                    "dotPoints": [
+                        {
+                            "code": "YW-YY-1.1",
+                            "name": "成语辨析与运用",
+                            "keywords": ["成语含义", "使用对象", "感情色彩", "近义辨析", "常见误用"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-YY-2",
+                    "name": "病句修改",
+                    "dotPoints": [
+                        {
+                            "code": "YW-YY-2.1",
+                            "name": "病句辨析与修改",
+                            "keywords": ["语序不当", "搭配不当", "成分残缺", "成分赘余", "结构混乱", "表意不明", "不合逻辑"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-YY-3",
+                    "name": "语言表达",
+                    "dotPoints": [
+                        {
+                            "code": "YW-YY-3.1",
+                            "name": "语言表达连贯",
+                            "keywords": ["话题一致", "逻辑顺序", "照应词语", "句式一致", "上下文衔接"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-YY-4",
+                    "name": "修辞手法",
+                    "dotPoints": [
+                        {
+                            "code": "YW-YY-4.1",
+                            "name": "修辞手法辨析",
+                            "keywords": ["比喻", "拟人", "夸张", "对偶", "排比", "设问", "反问", "借代", "反复"],
+                            "difficulty": "容易"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "YW-XZ",
+            "name": "写作",
+            "year": "12",
+            "examWeightPercent": 40,
+            "subtopics": [
+                {
+                    "code": "YW-XZ-1",
+                    "name": "写作基础",
+                    "dotPoints": [
+                        {
+                            "code": "YW-XZ-1.1",
+                            "name": "作文审题立意",
+                            "keywords": ["审题要点", "材料作文", "命题作文", "话题作文", "立意要求", "角度选择"],
+                            "difficulty": "中等"
+                        },
+                        {
+                            "code": "YW-XZ-1.2",
+                            "name": "作文素材运用",
+                            "keywords": ["素材类型", "素材积累", "素材选择", "素材运用", "一材多用"],
+                            "difficulty": "中等"
+                        }
+                    ]
+                },
+                {
+                    "code": "YW-XZ-2",
+                    "name": "文体写作",
+                    "dotPoints": [
+                        {
+                            "code": "YW-XZ-2.1",
+                            "name": "议论文写作",
+                            "keywords": ["基本结构", "论点", "论据", "论证方法", "论证逻辑"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-XZ-2.2",
+                            "name": "记叙文写作",
+                            "keywords": ["六要素", "叙述顺序", "描写方法", "抒情方式", "线索", "主题"],
+                            "difficulty": "较难"
+                        },
+                        {
+                            "code": "YW-XZ-2.3",
+                            "name": "散文写作",
+                            "keywords": ["形散神聚", "真情实感", "语言优美", "意境营造", "联想丰富", "以小见大"],
+                            "difficulty": "较难"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": "maths-advanced",
+    "name": "HSC Maths Advanced",
+    "shortName": "Advanced",
+    "icon": "📐",
+    "categories": ["math", "assessment", "exam-prep"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "📐", "label": "Worked example", "text": "Show me a worked example of differentiation using the product rule." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question on integration." },
+        { "icon": "❓", "label": "Explain", "text": "Explain the normal distribution and z-scores in simple terms." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC-style question on calculus optimisation." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my working: [paste your answer here]" },
+        { "icon": "🗺️", "label": "What to study", "text": "Based on my progress, what should I focus on today?" }
+    ],
+    "quickActions": [
+        { "icon": "📐", "label": "Worked example", "text": "Show me a worked example." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question." },
+        { "icon": "❓", "label": "Explain", "text": "Explain this concept." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC past paper question." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my answer." },
+        { "icon": "🗺️", "label": "What to study", "text": "What should I study today?" }
+    ],
+    "filenames": {
+        "syllabusMap": "syllabus-map.json",
+        "dotPoints": "dot-points.json",
+        "questionIndex": "index.json",
+        "questions": "questions.json",
+        "markingGuidelinesIndex": "marking-guidelines-index.json"
+    }
+}

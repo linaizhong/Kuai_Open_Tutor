@@ -1,0 +1,417 @@
+{
+    "subject": "Advanced Java Programming",
+    "subjectId": "java-advanced",
+    "syllabusVersion": "Java 21 LTS",
+    "appliesTo": "Intermediate to Advanced Java developers",
+    "learningPath": {
+        "totalDuration": "220 hours",
+        "levels": [
+            { "level": "Foundation", "estimatedHours": 50, "topics": ["Java Basics", "Control Flow", "OOP Fundamentals"] },
+            { "level": "Intermediate", "estimatedHours": 80, "topics": ["Inheritance & Interfaces", "Collections Framework", "Generics", "Exception Handling", "File I/O"] },
+            { "level": "Advanced", "estimatedHours": 90, "topics": ["Streams & Lambdas", "Concurrency", "Design Patterns", "Testing", "Spring Boot & Frameworks"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "JV-BAS",
+            "name": "Java Basics",
+            "level": "Foundation",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "JV-BAS-1",
+                    "name": "Getting Started with Java",
+                    "dotPoints": [
+                        { "code": "JV-BAS-1.1", "name": "Java Installation and Environment Setup", "keywords": ["JDK", "JRE", "JVM", "IntelliJ IDEA", "Eclipse", "VS Code", "Maven", "Gradle", "PATH variable"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-1.2", "name": "Your First Java Program", "keywords": ["Hello World", "public static void main", "System.out.println", "class definition", "compilation", "javac", "java command"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-1.3", "name": "Java Syntax and Basic Rules", "keywords": ["semicolons", "braces", "case sensitivity", "comments", "//", "/* */", "/** */", "whitespace"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "JV-BAS-2",
+                    "name": "Variables and Data Types",
+                    "dotPoints": [
+                        { "code": "JV-BAS-2.1", "name": "Primitive Data Types", "keywords": ["int", "long", "short", "byte", "float", "double", "char", "boolean", "size", "range"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-2.2", "name": "Variables and Declaration", "keywords": ["variable declaration", "initialization", "final", "var (Java 10+)", "naming conventions", "camelCase"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-2.3", "name": "Type Casting and Conversion", "keywords": ["widening", "narrowing", "implicit casting", "explicit casting", "autoboxing", "unboxing", "wrapper classes"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-2.4", "name": "String Class", "keywords": ["String", "String literals", "String pool", "immutability", "String methods", "StringBuilder", "StringBuffer", "String.format"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "JV-BAS-3",
+                    "name": "Operators",
+                    "dotPoints": [
+                        { "code": "JV-BAS-3.1", "name": "Arithmetic and Assignment Operators", "keywords": ["+", "-", "*", "/", "%", "++", "--", "+=", "-=", "operator precedence"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-3.2", "name": "Relational and Logical Operators", "keywords": ["==", "!=", ">", "<", ">=", "<=", "&&", "||", "!", "short-circuit evaluation"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-3.3", "name": "Bitwise and Shift Operators", "keywords": ["&", "|", "^", "~", "<<", ">>", ">>>", "bitwise operations"], "difficulty": "intermediate" },
+                        { "code": "JV-BAS-3.4", "name": "Ternary and instanceof Operators", "keywords": ["?:", "ternary", "instanceof", "pattern matching instanceof (Java 16+)"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "JV-BAS-4",
+                    "name": "Input and Output",
+                    "dotPoints": [
+                        { "code": "JV-BAS-4.1", "name": "Console Output", "keywords": ["System.out.println", "System.out.print", "System.out.printf", "format specifiers", "System.err"], "difficulty": "foundation" },
+                        { "code": "JV-BAS-4.2", "name": "Console Input with Scanner", "keywords": ["Scanner", "System.in", "nextInt()", "nextDouble()", "nextLine()", "next()", "hasNext()"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-CFL",
+            "name": "Control Flow",
+            "level": "Foundation",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "JV-CFL-1",
+                    "name": "Conditional Statements",
+                    "dotPoints": [
+                        { "code": "JV-CFL-1.1", "name": "if-else Statements", "keywords": ["if", "else if", "else", "nested if", "conditional block"], "difficulty": "foundation" },
+                        { "code": "JV-CFL-1.2", "name": "switch Statement", "keywords": ["switch", "case", "default", "break", "fall-through", "switch expression (Java 14+)", "arrow case"], "difficulty": "foundation" },
+                        { "code": "JV-CFL-1.3", "name": "Ternary Operator", "keywords": ["?:", "conditional expression", "inline condition"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "JV-CFL-2",
+                    "name": "Loops",
+                    "dotPoints": [
+                        { "code": "JV-CFL-2.1", "name": "for Loop", "keywords": ["for", "initialization", "condition", "update", "loop variable", "nested loops"], "difficulty": "foundation" },
+                        { "code": "JV-CFL-2.2", "name": "Enhanced for Loop (for-each)", "keywords": ["for-each", "Iterable", "array iteration", "collection iteration"], "difficulty": "foundation" },
+                        { "code": "JV-CFL-2.3", "name": "while and do-while Loops", "keywords": ["while", "do-while", "loop condition", "infinite loop", "at-least-once execution"], "difficulty": "foundation" },
+                        { "code": "JV-CFL-2.4", "name": "break, continue, and Labels", "keywords": ["break", "continue", "labeled break", "labeled continue", "nested loop control"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-OOP",
+            "name": "OOP Fundamentals",
+            "level": "Foundation",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "JV-OOP-1",
+                    "name": "Classes and Objects",
+                    "dotPoints": [
+                        { "code": "JV-OOP-1.1", "name": "Class Definition and Object Creation", "keywords": ["class", "object", "new", "instance", "reference", "null", "heap memory"], "difficulty": "foundation" },
+                        { "code": "JV-OOP-1.2", "name": "Fields and Methods", "keywords": ["instance fields", "instance methods", "return type", "parameters", "void", "this keyword"], "difficulty": "foundation" },
+                        { "code": "JV-OOP-1.3", "name": "Constructors", "keywords": ["constructor", "default constructor", "parameterized constructor", "constructor overloading", "this()", "constructor chaining"], "difficulty": "foundation" },
+                        { "code": "JV-OOP-1.4", "name": "Access Modifiers", "keywords": ["public", "private", "protected", "package-private", "encapsulation", "getters", "setters"], "difficulty": "foundation" },
+                        { "code": "JV-OOP-1.5", "name": "Static Members", "keywords": ["static fields", "static methods", "static blocks", "class-level", "Math class", "utility methods"], "difficulty": "foundation" },
+                        { "code": "JV-OOP-1.6", "name": "toString, equals, and hashCode", "keywords": ["toString()", "equals()", "hashCode()", "Object class", "@Override", "contract"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-OOP-2",
+                    "name": "Inheritance",
+                    "dotPoints": [
+                        { "code": "JV-OOP-2.1", "name": "extends Keyword and Method Overriding", "keywords": ["extends", "superclass", "subclass", "method overriding", "@Override", "super keyword", "IS-A relationship"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-2.2", "name": "Abstract Classes", "keywords": ["abstract class", "abstract method", "concrete method", "template method pattern", "cannot instantiate"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-2.3", "name": "Interfaces", "keywords": ["interface", "implements", "default method", "static method", "functional interface", "multiple implementation"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-2.4", "name": "Polymorphism", "keywords": ["polymorphism", "dynamic dispatch", "runtime polymorphism", "compile-time polymorphism", "method overloading", "Liskov substitution"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-2.5", "name": "final Keyword", "keywords": ["final class", "final method", "final variable", "immutability", "cannot override", "cannot extend"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-OOP-3",
+                    "name": "Advanced OOP",
+                    "dotPoints": [
+                        { "code": "JV-OOP-3.1", "name": "Nested and Inner Classes", "keywords": ["inner class", "static nested class", "anonymous class", "local class", "outer class reference"], "difficulty": "advanced" },
+                        { "code": "JV-OOP-3.2", "name": "Enums", "keywords": ["enum", "enum constants", "enum methods", "enum fields", "ordinal()", "name()", "values()", "EnumSet", "EnumMap"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-3.3", "name": "Records (Java 16+)", "keywords": ["record", "immutable data class", "compact constructor", "record components", "equals/hashCode/toString auto-generated"], "difficulty": "intermediate" },
+                        { "code": "JV-OOP-3.4", "name": "Sealed Classes (Java 17+)", "keywords": ["sealed class", "permits", "sealed interface", "pattern matching", "exhaustive switch"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-COL",
+            "name": "Collections Framework",
+            "level": "Intermediate",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "JV-COL-1",
+                    "name": "Core Collection Interfaces",
+                    "dotPoints": [
+                        { "code": "JV-COL-1.1", "name": "Collection Hierarchy Overview", "keywords": ["Collection", "List", "Set", "Queue", "Deque", "Map", "Iterable", "iterator pattern"], "difficulty": "intermediate" },
+                        { "code": "JV-COL-1.2", "name": "List Implementations", "keywords": ["ArrayList", "LinkedList", "Vector", "Stack", "random access", "index-based", "get()", "add()", "remove()"], "difficulty": "intermediate" },
+                        { "code": "JV-COL-1.3", "name": "Set Implementations", "keywords": ["HashSet", "LinkedHashSet", "TreeSet", "unique elements", "natural ordering", "Comparable", "Comparator"], "difficulty": "intermediate" },
+                        { "code": "JV-COL-1.4", "name": "Map Implementations", "keywords": ["HashMap", "LinkedHashMap", "TreeMap", "Hashtable", "key-value", "put()", "get()", "containsKey()", "entrySet()"], "difficulty": "intermediate" },
+                        { "code": "JV-COL-1.5", "name": "Queue and Deque", "keywords": ["Queue", "Deque", "ArrayDeque", "PriorityQueue", "offer()", "poll()", "peek()", "FIFO", "LIFO"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-COL-2",
+                    "name": "Collections Utility Class",
+                    "dotPoints": [
+                        { "code": "JV-COL-2.1", "name": "Sorting and Searching", "keywords": ["Collections.sort()", "Collections.binarySearch()", "Comparator.comparing()", "natural order", "reverse order"], "difficulty": "intermediate" },
+                        { "code": "JV-COL-2.2", "name": "Unmodifiable and Synchronized Collections", "keywords": ["Collections.unmodifiableList()", "Collections.synchronizedList()", "List.of()", "Map.of()", "immutable collections (Java 9+)"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-COL-3",
+                    "name": "Arrays",
+                    "dotPoints": [
+                        { "code": "JV-COL-3.1", "name": "Array Basics and Multidimensional Arrays", "keywords": ["array declaration", "array initialization", "array length", "2D array", "jagged array", "ArrayIndexOutOfBoundsException"], "difficulty": "foundation" },
+                        { "code": "JV-COL-3.2", "name": "Arrays Utility Class", "keywords": ["Arrays.sort()", "Arrays.binarySearch()", "Arrays.copyOf()", "Arrays.fill()", "Arrays.equals()", "Arrays.stream()"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-GEN",
+            "name": "Generics",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "JV-GEN-1",
+                    "name": "Generic Classes and Methods",
+                    "dotPoints": [
+                        { "code": "JV-GEN-1.1", "name": "Generic Classes", "keywords": ["type parameter", "<T>", "generic class definition", "type safety", "raw types", "erasure"], "difficulty": "intermediate" },
+                        { "code": "JV-GEN-1.2", "name": "Generic Methods", "keywords": ["generic method", "type inference", "bounded type parameter", "<T extends>", "multiple bounds"], "difficulty": "intermediate" },
+                        { "code": "JV-GEN-1.3", "name": "Wildcards", "keywords": ["?", "upper bounded wildcard", "<? extends T>", "lower bounded wildcard", "<? super T>", "unbounded wildcard", "PECS"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-EXC",
+            "name": "Exception Handling",
+            "level": "Intermediate",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "JV-EXC-1",
+                    "name": "Exception Hierarchy",
+                    "dotPoints": [
+                        { "code": "JV-EXC-1.1", "name": "Checked vs Unchecked Exceptions", "keywords": ["Throwable", "Exception", "Error", "RuntimeException", "checked exception", "unchecked exception", "throws declaration"], "difficulty": "intermediate" },
+                        { "code": "JV-EXC-1.2", "name": "Common Built-in Exceptions", "keywords": ["NullPointerException", "ArrayIndexOutOfBoundsException", "ClassCastException", "IllegalArgumentException", "IOException", "NumberFormatException"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "JV-EXC-2",
+                    "name": "Exception Handling Constructs",
+                    "dotPoints": [
+                        { "code": "JV-EXC-2.1", "name": "try-catch-finally", "keywords": ["try", "catch", "finally", "multiple catch", "catch order", "always executed"], "difficulty": "intermediate" },
+                        { "code": "JV-EXC-2.2", "name": "try-with-resources", "keywords": ["try-with-resources", "AutoCloseable", "Closeable", "resource management", "suppressed exceptions"], "difficulty": "intermediate" },
+                        { "code": "JV-EXC-2.3", "name": "throw and throws", "keywords": ["throw", "throws", "re-throwing", "exception chaining", "getCause()", "initCause()"], "difficulty": "intermediate" },
+                        { "code": "JV-EXC-2.4", "name": "Custom Exceptions", "keywords": ["custom exception class", "extends Exception", "extends RuntimeException", "serialVersionUID", "constructors"], "difficulty": "intermediate" },
+                        { "code": "JV-EXC-2.5", "name": "Multi-catch and Exception Handling Best Practices", "keywords": ["multi-catch |", "catch broad vs narrow", "logging exceptions", "exception anti-patterns", "swallowing exceptions"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-FIO",
+            "name": "File I/O and NIO",
+            "level": "Intermediate",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "JV-FIO-1",
+                    "name": "Classic Java I/O",
+                    "dotPoints": [
+                        { "code": "JV-FIO-1.1", "name": "File Class and Streams", "keywords": ["File", "FileInputStream", "FileOutputStream", "FileReader", "FileWriter", "BufferedReader", "BufferedWriter"], "difficulty": "intermediate" },
+                        { "code": "JV-FIO-1.2", "name": "Serialization", "keywords": ["Serializable", "ObjectInputStream", "ObjectOutputStream", "serialVersionUID", "transient", "Externalizable"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-FIO-2",
+                    "name": "Java NIO (New I/O)",
+                    "dotPoints": [
+                        { "code": "JV-FIO-2.1", "name": "Path and Files (java.nio.file)", "keywords": ["Path", "Paths.get()", "Files.readAllLines()", "Files.write()", "Files.copy()", "Files.move()", "Files.exists()"], "difficulty": "intermediate" },
+                        { "code": "JV-FIO-2.2", "name": "Walking Directory Trees", "keywords": ["Files.walk()", "Files.list()", "DirectoryStream", "FileVisitor", "Files.walkFileTree()"], "difficulty": "advanced" },
+                        { "code": "JV-FIO-2.3", "name": "NIO Channels and Buffers", "keywords": ["Channel", "Buffer", "ByteBuffer", "FileChannel", "selector", "non-blocking I/O"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-STR",
+            "name": "Streams and Functional Programming",
+            "level": "Advanced",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "JV-STR-1",
+                    "name": "Lambda Expressions and Functional Interfaces",
+                    "dotPoints": [
+                        { "code": "JV-STR-1.1", "name": "Lambda Expressions", "keywords": ["lambda", "->", "functional interface", "@FunctionalInterface", "method reference", "::", "closure"], "difficulty": "intermediate" },
+                        { "code": "JV-STR-1.2", "name": "Built-in Functional Interfaces", "keywords": ["Function<T,R>", "Predicate<T>", "Consumer<T>", "Supplier<T>", "BiFunction", "UnaryOperator", "BinaryOperator"], "difficulty": "intermediate" },
+                        { "code": "JV-STR-1.3", "name": "Method References", "keywords": ["static method reference", "instance method reference", "constructor reference", "Class::method", "object::method"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-STR-2",
+                    "name": "Stream API",
+                    "dotPoints": [
+                        { "code": "JV-STR-2.1", "name": "Creating Streams", "keywords": ["Stream.of()", "collection.stream()", "Arrays.stream()", "Stream.generate()", "Stream.iterate()", "IntStream", "LongStream", "DoubleStream"], "difficulty": "intermediate" },
+                        { "code": "JV-STR-2.2", "name": "Intermediate Operations", "keywords": ["filter()", "map()", "flatMap()", "distinct()", "sorted()", "peek()", "limit()", "skip()", "mapToInt()"], "difficulty": "intermediate" },
+                        { "code": "JV-STR-2.3", "name": "Terminal Operations", "keywords": ["collect()", "forEach()", "reduce()", "count()", "findFirst()", "findAny()", "anyMatch()", "allMatch()", "noneMatch()", "min()", "max()"], "difficulty": "intermediate" },
+                        { "code": "JV-STR-2.4", "name": "Collectors", "keywords": ["Collectors.toList()", "Collectors.toSet()", "Collectors.toMap()", "Collectors.groupingBy()", "Collectors.joining()", "Collectors.counting()", "toUnmodifiableList()"], "difficulty": "advanced" },
+                        { "code": "JV-STR-2.5", "name": "Parallel Streams", "keywords": ["parallelStream()", "parallel()", "sequential()", "ForkJoinPool", "thread safety", "performance considerations"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-STR-3",
+                    "name": "Optional",
+                    "dotPoints": [
+                        { "code": "JV-STR-3.1", "name": "Optional Class", "keywords": ["Optional<T>", "Optional.of()", "Optional.ofNullable()", "Optional.empty()", "isPresent()", "ifPresent()", "orElse()", "orElseGet()", "map()", "flatMap()", "filter()"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-CON",
+            "name": "Concurrency and Multithreading",
+            "level": "Advanced",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "JV-CON-1",
+                    "name": "Thread Basics",
+                    "dotPoints": [
+                        { "code": "JV-CON-1.1", "name": "Creating Threads", "keywords": ["Thread class", "Runnable interface", "Callable interface", "Thread.start()", "Thread.run()", "thread lifecycle"], "difficulty": "intermediate" },
+                        { "code": "JV-CON-1.2", "name": "Thread Lifecycle and Management", "keywords": ["NEW", "RUNNABLE", "BLOCKED", "WAITING", "TIMED_WAITING", "TERMINATED", "sleep()", "join()", "interrupt()", "daemon threads"], "difficulty": "intermediate" },
+                        { "code": "JV-CON-1.3", "name": "Synchronization", "keywords": ["synchronized method", "synchronized block", "monitor", "intrinsic lock", "race condition", "mutual exclusion", "volatile"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-CON-2",
+                    "name": "java.util.concurrent Package",
+                    "dotPoints": [
+                        { "code": "JV-CON-2.1", "name": "Executor Framework", "keywords": ["ExecutorService", "Executors", "ThreadPoolExecutor", "FixedThreadPool", "CachedThreadPool", "SingleThreadExecutor", "shutdown()", "awaitTermination()"], "difficulty": "advanced" },
+                        { "code": "JV-CON-2.2", "name": "Future and CompletableFuture", "keywords": ["Future<T>", "get()", "isDone()", "CompletableFuture", "thenApply()", "thenAccept()", "thenCompose()", "allOf()", "anyOf()", "exceptionally()"], "difficulty": "advanced" },
+                        { "code": "JV-CON-2.3", "name": "Concurrent Collections", "keywords": ["ConcurrentHashMap", "CopyOnWriteArrayList", "BlockingQueue", "ArrayBlockingQueue", "LinkedBlockingQueue", "ConcurrentLinkedQueue"], "difficulty": "advanced" },
+                        { "code": "JV-CON-2.4", "name": "Locks and Synchronizers", "keywords": ["ReentrantLock", "ReadWriteLock", "StampedLock", "CountDownLatch", "CyclicBarrier", "Semaphore", "Phaser", "Exchanger"], "difficulty": "advanced" },
+                        { "code": "JV-CON-2.5", "name": "Atomic Variables", "keywords": ["AtomicInteger", "AtomicLong", "AtomicBoolean", "AtomicReference", "compareAndSet()", "getAndIncrement()", "lock-free programming"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-CON-3",
+                    "name": "Virtual Threads (Java 21)",
+                    "dotPoints": [
+                        { "code": "JV-CON-3.1", "name": "Project Loom and Virtual Threads", "keywords": ["virtual thread", "Thread.ofVirtual()", "structured concurrency", "platform thread", "carrier thread", "millions of threads"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-DSG",
+            "name": "Design Patterns",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "JV-DSG-1",
+                    "name": "Creational Patterns",
+                    "dotPoints": [
+                        { "code": "JV-DSG-1.1", "name": "Singleton Pattern", "keywords": ["singleton", "private constructor", "static instance", "double-checked locking", "enum singleton", "thread-safe singleton"], "difficulty": "intermediate" },
+                        { "code": "JV-DSG-1.2", "name": "Factory and Abstract Factory", "keywords": ["factory method", "abstract factory", "object creation", "decoupling", "polymorphic creation"], "difficulty": "intermediate" },
+                        { "code": "JV-DSG-1.3", "name": "Builder Pattern", "keywords": ["builder", "fluent API", "method chaining", "immutable objects", "complex construction"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-DSG-2",
+                    "name": "Structural Patterns",
+                    "dotPoints": [
+                        { "code": "JV-DSG-2.1", "name": "Decorator Pattern", "keywords": ["decorator", "component interface", "wrapping", "open/closed principle", "java.io streams"], "difficulty": "advanced" },
+                        { "code": "JV-DSG-2.2", "name": "Adapter and Proxy Patterns", "keywords": ["adapter", "proxy", "target interface", "dynamic proxy", "java.lang.reflect.Proxy", "structural wrapping"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-DSG-3",
+                    "name": "Behavioural Patterns",
+                    "dotPoints": [
+                        { "code": "JV-DSG-3.1", "name": "Observer Pattern", "keywords": ["observer", "subject", "event listener", "publish-subscribe", "EventListener", "decoupled notification"], "difficulty": "advanced" },
+                        { "code": "JV-DSG-3.2", "name": "Strategy and Command Patterns", "keywords": ["strategy", "algorithm family", "Comparator as strategy", "command", "encapsulate action", "undo/redo"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-TST",
+            "name": "Testing",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "JV-TST-1",
+                    "name": "JUnit 5",
+                    "dotPoints": [
+                        { "code": "JV-TST-1.1", "name": "JUnit 5 Basics", "keywords": ["@Test", "@BeforeEach", "@AfterEach", "@BeforeAll", "@AfterAll", "Assertions", "assertEquals", "assertThrows", "assertAll"], "difficulty": "intermediate" },
+                        { "code": "JV-TST-1.2", "name": "Parameterized Tests and Extensions", "keywords": ["@ParameterizedTest", "@ValueSource", "@CsvSource", "@MethodSource", "@ExtendWith", "TestInfo", "TempDir"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-TST-2",
+                    "name": "Mockito",
+                    "dotPoints": [
+                        { "code": "JV-TST-2.1", "name": "Mocking with Mockito", "keywords": ["mock()", "@Mock", "@InjectMocks", "when()", "thenReturn()", "thenThrow()", "verify()", "any()", "ArgumentCaptor"], "difficulty": "advanced" },
+                        { "code": "JV-TST-2.2", "name": "Mockito Advanced", "keywords": ["spy()", "doReturn()", "doThrow()", "InOrder", "BDDMockito", "given()", "willReturn()", "MockitoExtension"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-TST-3",
+                    "name": "Test Practices",
+                    "dotPoints": [
+                        { "code": "JV-TST-3.1", "name": "TDD and Test Principles", "keywords": ["TDD", "red-green-refactor", "AAA pattern", "arrange-act-assert", "FIRST principles", "test pyramid", "code coverage"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-SPR",
+            "name": "Spring Boot and Frameworks",
+            "level": "Advanced",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "JV-SPR-1",
+                    "name": "Spring Core Concepts",
+                    "dotPoints": [
+                        { "code": "JV-SPR-1.1", "name": "Dependency Injection and IoC", "keywords": ["IoC", "dependency injection", "@Component", "@Service", "@Repository", "@Controller", "@Bean", "@Configuration", "ApplicationContext"], "difficulty": "advanced" },
+                        { "code": "JV-SPR-1.2", "name": "Spring Annotations", "keywords": ["@Autowired", "@Value", "@Qualifier", "@Primary", "@Scope", "@Lazy", "@Profile", "@Conditional"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "JV-SPR-2",
+                    "name": "Spring Boot",
+                    "dotPoints": [
+                        { "code": "JV-SPR-2.1", "name": "Spring Boot Basics", "keywords": ["@SpringBootApplication", "auto-configuration", "starter dependencies", "application.properties", "application.yml", "embedded server", "Actuator"], "difficulty": "advanced" },
+                        { "code": "JV-SPR-2.2", "name": "Building REST APIs", "keywords": ["@RestController", "@GetMapping", "@PostMapping", "@PutMapping", "@DeleteMapping", "@RequestBody", "@PathVariable", "@RequestParam", "ResponseEntity"], "difficulty": "advanced" },
+                        { "code": "JV-SPR-2.3", "name": "Spring Data JPA", "keywords": ["JpaRepository", "CrudRepository", "@Entity", "@Id", "@GeneratedValue", "JPQL", "derived queries", "@Query", "Hibernate"], "difficulty": "advanced" },
+                        { "code": "JV-SPR-2.4", "name": "Spring Security Basics", "keywords": ["SecurityFilterChain", "UserDetailsService", "PasswordEncoder", "JWT", "OAuth2", "CSRF", "CORS", "@PreAuthorize"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "JV-BP",
+            "name": "Best Practices and Tools",
+            "level": "Intermediate",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "JV-BP-1",
+                    "name": "Code Quality",
+                    "dotPoints": [
+                        { "code": "JV-BP-1.1", "name": "Java Coding Conventions", "keywords": ["naming conventions", "CamelCase", "UPPER_SNAKE_CASE", "Javadoc", "code style", "Google Java Style", "Checkstyle"], "difficulty": "foundation" },
+                        { "code": "JV-BP-1.2", "name": "Static Analysis Tools", "keywords": ["SpotBugs", "PMD", "SonarQube", "Checkstyle", "code smells", "technical debt"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "JV-BP-2",
+                    "name": "Build Tools",
+                    "dotPoints": [
+                        { "code": "JV-BP-2.1", "name": "Maven", "keywords": ["pom.xml", "groupId", "artifactId", "dependencies", "plugins", "lifecycle", "goals", "repositories"], "difficulty": "intermediate" },
+                        { "code": "JV-BP-2.2", "name": "Gradle", "keywords": ["build.gradle", "Groovy DSL", "Kotlin DSL", "tasks", "plugins", "dependencies block", "configurations"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

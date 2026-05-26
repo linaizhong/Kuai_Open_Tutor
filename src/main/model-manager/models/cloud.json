@@ -1,0 +1,67 @@
+﻿{
+  "models": [
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "adapter": "deepseek",
+      "description": "DeepSeek V3 — strong reasoning, cost-effective",
+      "contextWindow": 65536,
+      "requiresApiKey": true,
+      "recommended": true
+    },
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek Reasoner (R1)",
+      "adapter": "deepseek",
+      "description": "DeepSeek R1 — advanced chain-of-thought reasoning for hard maths problems",
+      "contextWindow": 65536,
+      "requiresApiKey": true,
+      "recommended": false
+    },
+    {
+      "id": "qwen-plus",
+      "name": "Qwen Plus",
+      "adapter": "qwen",
+      "description": "Alibaba Qwen — strong multilingual and maths capability",
+      "contextWindow": 32768,
+      "requiresApiKey": true,
+      "recommended": false
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o Mini",
+      "adapter": "openai",
+      "description": "OpenAI fast and affordable model",
+      "contextWindow": 128000,
+      "requiresApiKey": true,
+      "recommended": false
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "adapter": "openai",
+      "description": "OpenAI flagship model — best quality, higher cost",
+      "contextWindow": 128000,
+      "requiresApiKey": true,
+      "recommended": false
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku",
+      "adapter": "claude",
+      "description": "Anthropic Claude Haiku — fast and affordable",
+      "contextWindow": 200000,
+      "requiresApiKey": true,
+      "recommended": false
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet",
+      "adapter": "claude",
+      "description": "Anthropic Claude Sonnet — high quality reasoning",
+      "contextWindow": 200000,
+      "requiresApiKey": true,
+      "recommended": false
+    }
+  ]
+}

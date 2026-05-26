@@ -1,0 +1,176 @@
+{
+    "subject": "Python Programming Language",
+    "description": "Practice questions for Python learning across all levels.",
+    "questions": {
+        "PY-Q-BAS-001": {
+            "id": "PY-Q-BAS-001",
+            "source": "practice",
+            "level": "foundation",
+            "marks": 5,
+            "type": "coding",
+            "dotPoints": ["PY-BAS-2.1", "PY-BAS-4.1"],
+            "topic": "PY-BAS",
+            "difficulty": "easy",
+            "title": "Variable Assignment and Basic Arithmetic",
+            "description": "Create variables to store two numbers and perform basic arithmetic operations.",
+            "question": "Write a Python program that:\n1. Assigns the value 15 to a variable called 'a' and 4 to a variable called 'b'\n2. Calculates and prints: a + b, a - b, a * b, a / b, a // b, a % b, a ** b\n3. Uses meaningful print statements to show what each result represents",
+            "solution": {
+                "steps": [
+                    "Assign values to variables a and b",
+                    "Perform each arithmetic operation",
+                    "Store results in variables or print directly",
+                    "Use f-strings for clear output"
+                ],
+                "code": "a = 15\nb = 4\n\nprint(f\"a + b = {a + b}\")\nprint(f\"a - b = {a - b}\")\nprint(f\"a * b = {a * b}\")\nprint(f\"a / b = {a / b}\")\nprint(f\"a // b = {a // b}\")\nprint(f\"a % b = {a % b}\")\nprint(f\"a ** b = {a ** b}\")",
+                "output": "a + b = 19\na - b = 11\na * b = 60\na / b = 3.75\na // b = 3\na % b = 3\na ** b = 50625"
+            },
+            "testCases": [
+                {"input": "", "expectedOutput": "a + b = 19\na - b = 11\na * b = 60\na / b = 3.75\na // b = 3\na % b = 3\na ** b = 50625"}
+            ],
+            "hints": [
+                "Remember that // is floor division (integer division)",
+                "% is the modulo operator (remainder)",
+                "** is exponentiation"
+            ],
+            "tags": ["variables", "arithmetic", "operators"]
+        },
+        "PY-Q-CFL-001": {
+            "id": "PY-Q-CFL-001",
+            "source": "practice",
+            "level": "foundation",
+            "marks": 8,
+            "type": "coding",
+            "dotPoints": ["PY-CFL-1.3", "PY-CFL-2.2"],
+            "topic": "PY-CFL",
+            "difficulty": "easy",
+            "title": "FizzBuzz",
+            "description": "Implement the classic FizzBuzz problem using conditionals and loops.",
+            "question": "Write a program that prints numbers from 1 to 50. But:\n- For multiples of 3, print \"Fizz\" instead of the number\n- For multiples of 5, print \"Buzz\" instead of the number\n- For multiples of both 3 and 5, print \"FizzBuzz\"\n- Otherwise, print the number itself",
+            "solution": {
+                "steps": [
+                    "Use a for loop to iterate from 1 to 50",
+                    "Check if number is divisible by both 3 and 5 first (use % operator)",
+                    "Then check for multiples of 3 only",
+                    "Then check for multiples of 5 only",
+                    "Otherwise print the number"
+                ],
+                "code": "for i in range(1, 51):\n    if i % 3 == 0 and i % 5 == 0:\n        print(\"FizzBuzz\")\n    elif i % 3 == 0:\n        print(\"Fizz\")\n    elif i % 5 == 0:\n        print(\"Buzz\")\n    else:\n        print(i)",
+                "output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n... (continues)"
+            },
+            "hints": [
+                "Check the most specific condition first (divisible by both)",
+                "Use the modulo operator % to check divisibility",
+                "range(1, 51) gives numbers 1 through 50"
+            ],
+            "tags": ["loops", "conditionals", "fizzbuzz"]
+        },
+        "PY-Q-DST-001": {
+            "id": "PY-Q-DST-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 10,
+            "type": "coding",
+            "dotPoints": ["PY-DST-1.4", "PY-DST-3.2"],
+            "topic": "PY-DST",
+            "difficulty": "medium",
+            "title": "Word Frequency Counter",
+            "description": "Count the frequency of words in a given text using dictionaries and list comprehensions.",
+            "question": "Write a function `word_frequency(text)` that:\n1. Takes a string as input\n2. Splits it into words (split on whitespace)\n3. Removes punctuation (.,!?;:) from the ends of words\n4. Converts all words to lowercase\n5. Returns a dictionary with words as keys and their frequency counts as values\n\nThen write code to test it with the sample text: \"Hello, world! Hello, Python. Python is great, isn't it?\"",
+            "solution": {
+                "steps": [
+                    "Define function word_frequency(text)",
+                    "Split text into words using .split()",
+                    "Clean each word: strip punctuation, convert to lowercase",
+                    "Use dictionary to count frequencies",
+                    "Return the dictionary"
+                ],
+                "code": "def word_frequency(text):\n    # Split into words\n    words = text.split()\n    \n    # Clean words and count\n    freq = {}\n    for word in words:\n        # Remove punctuation from ends\n        clean_word = word.strip('.,!?;:').lower()\n        if clean_word:  # Skip empty strings\n            freq[clean_word] = freq.get(clean_word, 0) + 1\n    \n    return freq\n\n# Test\ntext = \"Hello, world! Hello, Python. Python is great, isn't it?\"\nresult = word_frequency(text)\nprint(result)\n\n# Alternative using collections.Counter\nfrom collections import Counter\ndef word_frequency_counter(text):\n    words = [word.strip('.,!?;:').lower() for word in text.split()]\n    return dict(Counter(words))\n\nprint(word_frequency_counter(text))",
+                "output": "{'hello': 2, 'world': 1, 'python': 2, 'is': 1, \"isn't\": 1, 'it': 1}"
+            },
+            "testCases": [
+                {
+                    "input": "Hello, world! Hello, Python. Python is great, isn't it?",
+                    "expectedOutput": "{'hello': 2, 'world': 1, 'python': 2, 'is': 1, \"isn't\": 1, 'it': 1}"
+                }
+            ],
+            "hints": [
+                "Use .strip('.,!?;:') to remove punctuation",
+                "Dictionary get() method with default value is useful: freq.get(word, 0) + 1",
+                "List comprehensions can make the cleaning step more concise"
+            ],
+            "tags": ["dictionaries", "strings", "counting", "list comprehension"]
+        },
+        "PY-Q-OOP-001": {
+            "id": "PY-Q-OOP-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 12,
+            "type": "coding",
+            "dotPoints": ["PY-OOP-1.1", "PY-OOP-1.2", "PY-OOP-2.1"],
+            "topic": "PY-OOP",
+            "difficulty": "medium",
+            "title": "Bank Account System",
+            "description": "Create a simple bank account system using classes and inheritance.",
+            "question": "Create a class hierarchy:\n\n1. Create a base class `BankAccount` with:\n   - Attributes: account_number, holder_name, balance\n   - Methods: deposit(amount), withdraw(amount), display_balance()\n   - withdraw should check if sufficient balance exists\n\n2. Create a subclass `SavingsAccount` that inherits from `BankAccount` with:\n   - Additional attribute: interest_rate\n   - Method: apply_interest() that adds interest to balance\n   - Override withdraw to charge a $5 fee if balance falls below $500 after withdrawal\n\n3. Create a subclass `CheckingAccount` that inherits from `BankAccount` with:\n   - Additional attribute: overdraft_limit\n   - Override withdraw to allow overdraft up to the limit\n\nWrite test code demonstrating all features.",
+            "solution": {
+                "steps": [
+                    "Create BankAccount base class with __init__, deposit, withdraw, display_balance",
+                    "Add validation in withdraw method",
+                    "Create SavingsAccount subclass with __init__ calling super()",
+                    "Add apply_interest method",
+                    "Override withdraw with fee logic",
+                    "Create CheckingAccount subclass with overdraft logic"
+                ],
+                "code": "class BankAccount:\n    def __init__(self, account_number, holder_name, balance=0):\n        self.account_number = account_number\n        self.holder_name = holder_name\n        self.balance = balance\n    \n    def deposit(self, amount):\n        if amount > 0:\n            self.balance += amount\n            print(f\"Deposited ${amount}. New balance: ${self.balance}\")\n        else:\n            print(\"Deposit amount must be positive\")\n    \n    def withdraw(self, amount):\n        if amount <= 0:\n            print(\"Withdrawal amount must be positive\")\n        elif amount > self.balance:\n            print(f\"Insufficient funds. Balance: ${self.balance}\")\n        else:\n            self.balance -= amount\n            print(f\"Withdrew ${amount}. New balance: ${self.balance}\")\n    \n    def display_balance(self):\n        print(f\"Account {self.account_number} - {self.holder_name}: ${self.balance}\")\n\nclass SavingsAccount(BankAccount):\n    def __init__(self, account_number, holder_name, balance=0, interest_rate=0.02):\n        super().__init__(account_number, holder_name, balance)\n        self.interest_rate = interest_rate\n    \n    def apply_interest(self):\n        interest = self.balance * self.interest_rate\n        self.balance += interest\n        print(f\"Applied interest: ${interest:.2f}. New balance: ${self.balance:.2f}\")\n    \n    def withdraw(self, amount):\n        if amount <= 0:\n            print(\"Withdrawal amount must be positive\")\n        elif amount > self.balance:\n            print(f\"Insufficient funds. Balance: ${self.balance}\")\n        else:\n            self.balance -= amount\n            print(f\"Withdrew ${amount}. New balance: ${self.balance}\")\n            if self.balance < 500:\n                fee = 5\n                self.balance -= fee\n                print(f\"Balance below $500. Charged ${fee} fee. New balance: ${self.balance}\")\n\nclass CheckingAccount(BankAccount):\n    def __init__(self, account_number, holder_name, balance=0, overdraft_limit=100):\n        super().__init__(account_number, holder_name, balance)\n        self.overdraft_limit = overdraft_limit\n    \n    def withdraw(self, amount):\n        if amount <= 0:\n            print(\"Withdrawal amount must be positive\")\n        elif amount > self.balance + self.overdraft_limit:\n            print(f\"Withdrawal exceeds overdraft limit. Available: ${self.balance + self.overdraft_limit}\")\n        else:\n            self.balance -= amount\n            print(f\"Withdrew ${amount}. New balance: ${self.balance}\")\n            if self.balance < 0:\n                print(f\"Using overdraft. Overdraft remaining: ${self.overdraft_limit + self.balance}\")\n\n# Test code\nprint(\"=== Bank Account ===\")\nacc1 = BankAccount(\"ACC001\", \"Alice\", 1000)\nacc1.deposit(500)\nacc1.withdraw(200)\nacc1.display_balance()\n\nprint(\"\\n=== Savings Account ===\")\nsavings = SavingsAccount(\"SAV001\", \"Bob\", 800, 0.03)\nsavings.withdraw(350)  # This will trigger fee\nsavings.apply_interest()\nsavings.display_balance()\n\nprint(\"\\n=== Checking Account ===\")\nchecking = CheckingAccount(\"CHK001\", \"Charlie\", 200, 150)\nchecking.withdraw(300)  # Uses overdraft\nchecking.withdraw(100)  # Should exceed limit\nchecking.display_balance()",
+                "output": "=== Bank Account ===\nDeposited $500. New balance: $1500\nWithdrew $200. New balance: $1300\nAccount ACC001 - Alice: $1300\n\n=== Savings Account ===\nWithdrew $350. New balance: $450\nBalance below $500. Charged $5 fee. New balance: $445\nApplied interest: $13.35. New balance: $458.35\nAccount SAV001 - Bob: $458.35\n\n=== Checking Account ===\nWithdrew $300. New balance: $-100\nUsing overdraft. Overdraft remaining: $50\nWithdrawal exceeds overdraft limit. Available: $50\nAccount CHK001 - Charlie: $-100"
+            },
+            "hints": [
+                "Use super().__init__() to call parent constructor",
+                "Override methods by defining them with the same name",
+                "Check balance before allowing withdrawals",
+                "Consider edge cases like negative amounts"
+            ],
+            "tags": ["OOP", "classes", "inheritance", "banking"]
+        },
+        "PY-Q-ADV-001": {
+            "id": "PY-Q-ADV-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "coding",
+            "dotPoints": ["PY-ADV-2.1", "PY-ADV-2.4"],
+            "topic": "PY-ADV",
+            "difficulty": "hard",
+            "title": "Fibonacci Generator and itertools",
+            "description": "Create generators and use itertools for efficient Fibonacci sequence generation.",
+            "question": "1. Write a generator function `fibonacci_generator(n)` that yields the first n Fibonacci numbers.\n2. Write another generator `fibonacci_infinite()` that yields Fibonacci numbers indefinitely.\n3. Use itertools.islice() to get the first 20 numbers from the infinite generator.\n4. Create a function `fibonacci_with_index()` that yields tuples of (index, value) using enumerate.\n5. Use itertools.takewhile() to get all Fibonacci numbers less than 1000.\n\nInclude performance comparison for different approaches.",
+            "solution": {
+                "steps": [
+                    "Create fibonacci_generator with for loop and yield",
+                    "Create fibonacci_infinite with while True loop",
+                    "Use itertools.islice to take first n items",
+                    "Use enumerate with generator",
+                    "Use itertools.takewhile with condition"
+                ],
+                "code": "import itertools\nimport time\n\ndef fibonacci_generator(n):\n    \"\"\"Generate first n Fibonacci numbers\"\"\"\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\ndef fibonacci_infinite():\n    \"\"\"Generate Fibonacci numbers indefinitely\"\"\"\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\ndef fibonacci_with_index():\n    \"\"\"Generate tuples of (index, value)\"\"\"\n    a, b = 0, 1\n    index = 0\n    while True:\n        yield (index, a)\n        a, b = b, a + b\n        index += 1\n\n# Get first 10 numbers using finite generator\nprint(\"First 10 Fibonacci numbers:\")\nfor num in fibonacci_generator(10):\n    print(num, end=' ')\nprint()\n\n# Use itertools.islice to get first 15 from infinite generator\nprint(\"\\nFirst 15 from infinite generator:\")\nfirst_15 = list(itertools.islice(fibonacci_infinite(), 15))\nprint(first_15)\n\n# Use enumerate with generator\nprint(\"\\nFibonacci numbers with indices:\")\nfib_with_index = fibonacci_with_index()\nfor i in itertools.islice(fib_with_index, 10):\n    print(f\"F({i[0]}) = {i[1]}\")\n\n# Use takewhile to get all Fibonacci numbers less than 1000\nprint(\"\\nFibonacci numbers less than 1000:\")\nfib_less_than_1000 = list(itertools.takewhile(\n    lambda x: x < 1000, \n    fibonacci_infinite()\n))\nprint(fib_less_than_1000)\n\n# Performance comparison\ndef fibonacci_list(n):\n    \"\"\"Traditional list-based approach\"\"\"\n    fib = [0, 1]\n    for i in range(2, n):\n        fib.append(fib[i-1] + fib[i-2])\n    return fib[:n]\n\n# Compare performance for large n\nn = 100000\nprint(\"\\nPerformance comparison for n=100,000:\")\n\nstart = time.time()\nlist(fibonacci_generator(n))\ngen_time = time.time() - start\nprint(f\"Generator time: {gen_time:.4f} seconds\")\n\nstart = time.time()\nfibonacci_list(n)\nlist_time = time.time() - start\nprint(f\"List time: {list_time:.4f} seconds\")\n\n# Memory comparison (conceptual)\nprint(\"\\nMemory: Generator uses O(1) memory, list uses O(n) memory\")",
+                "output": "First 10 Fibonacci numbers:\n0 1 1 2 3 5 8 13 21 34 \n\nFirst 15 from infinite generator:\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]\n\nFibonacci numbers with indices:\nF(0) = 0\nF(1) = 1\nF(2) = 1\nF(3) = 2\nF(4) = 3\nF(5) = 5\nF(6) = 8\nF(7) = 13\nF(8) = 21\nF(9) = 34\n\nFibonacci numbers less than 1000:\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]\n\nPerformance comparison for n=100,000:\nGenerator time: 0.0234 seconds\nList time: 0.0456 seconds\n\nMemory: Generator uses O(1) memory, list uses O(n) memory"
+            },
+            "hints": [
+                "Generators use yield instead of return",
+                "itertools.islice(iterator, n) takes first n items",
+                "itertools.takewhile(predicate, iterator) takes while condition is true",
+                "Generators are memory efficient for large sequences"
+            ],
+            "tags": ["generators", "itertools", "fibonacci", "performance"]
+        }
+    },
+    "meta": {
+        "totalQuestions": 5,
+        "levels": {
+            "foundation": 2,
+            "intermediate": 2,
+            "advanced": 1
+        },
+        "lastUpdated": "2025-03-17"
+    }
+}

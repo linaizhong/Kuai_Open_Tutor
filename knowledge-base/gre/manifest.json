@@ -1,0 +1,49 @@
+{
+    "id": "gre",
+    "name": "GRE Exam Preparation",
+    "shortName": "GRE",
+    "icon": "🎓",
+    "categories": ["exam preparation", "graduate school", "verbal reasoning", "quantitative reasoning", "analytical writing", "standardised test"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "📖", "label": "Text Completion", "text": "Teach me strategies for GRE Text Completion questions with one, two, and three blanks." },
+        { "icon": "🔄", "label": "Sentence Equivalence", "text": "Explain GRE Sentence Equivalence question strategy and give me practice examples." },
+        { "icon": "📝", "label": "Reading Comprehension", "text": "What strategies should I use for GRE Reading Comprehension passages?" },
+        { "icon": "🔢", "label": "Arithmetic & Number Theory", "text": "Review GRE arithmetic: integers, fractions, decimals, percentages, and number properties." },
+        { "icon": "📐", "label": "Algebra", "text": "Explain GRE algebra topics: equations, inequalities, functions, and word problems." },
+        { "icon": "📏", "label": "Geometry", "text": "Review GRE geometry: lines, angles, triangles, circles, and coordinate geometry." },
+        { "icon": "📊", "label": "Data Analysis", "text": "Teach me GRE data analysis: statistics, probability, and data interpretation." },
+        { "icon": "⚖️", "label": "Quantitative Comparison", "text": "What is the best strategy for GRE Quantitative Comparison questions?" },
+        { "icon": "✍️", "label": "Issue Essay", "text": "How do I write a high-scoring GRE Analytical Writing Issue essay?" },
+        { "icon": "🔍", "label": "Argument Essay", "text": "Teach me how to analyse and write the GRE Analytical Writing Argument essay." },
+        { "icon": "📚", "label": "Vocabulary", "text": "What vocabulary strategies and high-frequency words should I learn for the GRE?" },
+        { "icon": "🧮", "label": "Word Problems", "text": "Help me solve GRE word problems involving rates, work, mixtures, and ratios." },
+        { "icon": "🏃", "label": "Test Strategy", "text": "What are the best overall strategies for timing and approach on the GRE?" },
+        { "icon": "📈", "label": "Score Improvement", "text": "My target score is 320+. What should I focus on to improve my GRE score?" },
+        { "icon": "📝", "label": "Practice", "text": "Give me a mixed GRE practice set with verbal and quantitative questions." }
+    ],
+    "quickActions": [
+        { "icon": "📖", "label": "Text Completion", "text": "Help with Text Completion." },
+        { "icon": "🔄", "label": "Sentence Equiv.", "text": "Help with Sentence Equivalence." },
+        { "icon": "📝", "label": "Reading Comp.", "text": "Help with Reading Comprehension." },
+        { "icon": "🔢", "label": "Arithmetic", "text": "Review arithmetic fundamentals." },
+        { "icon": "📐", "label": "Algebra", "text": "Help with algebra." },
+        { "icon": "📏", "label": "Geometry", "text": "Review geometry." },
+        { "icon": "📊", "label": "Data Analysis", "text": "Help with data analysis." },
+        { "icon": "⚖️", "label": "Quant Comparison", "text": "Quant Comparison strategy." },
+        { "icon": "✍️", "label": "Issue Essay", "text": "Help with Issue essay." },
+        { "icon": "🔍", "label": "Argument Essay", "text": "Help with Argument essay." },
+        { "icon": "📚", "label": "Vocabulary", "text": "GRE vocabulary strategies." },
+        { "icon": "🧮", "label": "Word Problems", "text": "Help with word problems." },
+        { "icon": "🏃", "label": "Test Strategy", "text": "Overall test strategy." },
+        { "icon": "📈", "label": "Score Boost", "text": "Score improvement plan." },
+        { "icon": "📝", "label": "Practice Set", "text": "Give me a practice set." }
+    ],
+    "filenames": {
+        "syllabusMap": "gre-syllabus-map.json",
+        "dotPoints": "gre-dot-points.json",
+        "questionIndex": "gre-index.json",
+        "questions": "gre-questions.json",
+        "markingGuidelinesIndex": "gre-marking-guidelines-index.json"
+    }
+}

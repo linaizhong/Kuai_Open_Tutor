@@ -1,0 +1,55 @@
+{
+    "subject": "中国高考数学",
+    "description": "高考数学评分标准索引，包含各题型评分原则和评分细则。",
+    "lastUpdated": "2025-03-17",
+    "importantNote": "数学评分严格按照步骤给分，关键步骤正确即可得分，计算错误适当扣分。",
+    "partialCreditPolicy": {
+        "description": "数学主观题评分原则",
+        "rules": [
+            { "condition": "解答题：思路正确，关键步骤完整，但最终计算错误", "marksAwarded": "扣结果分1-2分" },
+            { "condition": "解答题：关键步骤缺失或错误", "marksAwarded": "该步骤不得分，后续步骤若正确可得分" },
+            { "condition": "解答题：只写出部分正确步骤", "marksAwarded": "按步骤给分" },
+            { "condition": "填空题：答案正确", "marksAwarded": "满分" },
+            { "condition": "填空题：答案错误", "marksAwarded": "0分" },
+            { "condition": "选择题：选对", "marksAwarded": "满分" },
+            { "condition": "选择题：选错", "marksAwarded": "0分" },
+            { "condition": "多选题：全部选对", "marksAwarded": "满分" },
+            { "condition": "多选题：部分选对", "marksAwarded": "部分分（通常为一半）" },
+            { "condition": "多选题：有选错", "marksAwarded": "0分" }
+        ]
+    },
+    "scoringPrinciples": {
+        "选择题": [
+            "客观题，严格按标准答案给分",
+            "答对给满分，答错0分"
+        ],
+        "多选题": [
+            "全部选对得满分",
+            "部分选对得部分分（通常为满分的一半）",
+            "有选错得0分"
+        ],
+        "填空题": [
+            "答案正确得满分",
+            "答案错误0分",
+            "答案形式必须与标准答案一致（如最简分数、化简形式等）"
+        ],
+        "解答题": [
+            "按步骤给分，关键步骤正确即可得分",
+            "最终结果错误但过程正确，扣1-2分",
+            "证明题逻辑完整得满分，逻辑跳跃扣分",
+            "分类讨论问题，每类讨论正确给相应分数"
+        ]
+    },
+    "stepScoringExample": {
+        "12分解答题常见分配": {
+            "第(1)问4分": "关键步骤1得2分，关键步骤2得2分",
+            "第(2)问8分": "关键步骤1得3分，关键步骤2得3分，结果正确得2分"
+        }
+    },
+    "feedbackTemplate": {
+        "选择题": "您选择了{answer}，正确答案是{correctAnswer}。{explanation}",
+        "多选题": "您选择了{answer}，正确答案是{correctAnswer}，得分{score}/{totalMarks}分。{explanation}",
+        "填空题": "您的答案是{answer}，正确答案是{correctAnswer}，得分{score}/{totalMarks}分。{explanation}",
+        "解答题": "得分：{score}/{totalMarks}\n步骤得分：\n{stepScores}\n正确步骤：{correctSteps}\n错误/缺失步骤：{wrongSteps}\n最终答案：{finalAnswer}{correctOrNot}\n建议：{suggestions}"
+    }
+}

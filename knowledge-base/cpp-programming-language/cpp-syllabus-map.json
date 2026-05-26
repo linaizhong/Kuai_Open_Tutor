@@ -1,0 +1,342 @@
+{
+    "subject": "Advanced C++ Programming",
+    "subjectId": "cpp-advanced",
+    "syllabusVersion": "C++20",
+    "appliesTo": "Intermediate to Advanced C++ developers",
+    "learningPath": {
+        "totalDuration": "220 hours",
+        "levels": [
+            { "level": "Intermediate", "estimatedHours": 70, "topics": ["Core Language", "Classes and OOP", "Memory Management", "STL Containers"] },
+            { "level": "Advanced", "estimatedHours": 80, "topics": ["Templates", "Move Semantics", "STL Algorithms", "Smart Pointers"] },
+            { "level": "Expert", "estimatedHours": 70, "topics": ["Concurrency", "Modern C++20", "Design Patterns", "Performance Tuning"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "CPP-CORE",
+            "name": "Core C++ Language",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "CPP-CORE-1",
+                    "name": "Compilation and Build System",
+                    "dotPoints": [
+                        { "code": "CPP-CORE-1.1", "name": "Compilation Pipeline", "keywords": ["preprocessor", "compiler", "linker", "object files", "translation units", "compilation units", "one definition rule"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-1.2", "name": "Headers and Source Files", "keywords": ["header guards", "#pragma once", "#include", "forward declarations", "declaration vs definition", "header-only libraries"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-1.3", "name": "Namespaces", "keywords": ["namespace", "using namespace", "using declaration", "anonymous namespace", "inline namespace", "namespace alias", "ADL"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-1.4", "name": "Build Systems", "keywords": ["CMake", "Makefile", "build targets", "CMakeLists.txt", "add_executable", "target_link_libraries", "Ninja", "vcpkg", "Conan"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "CPP-CORE-2",
+                    "name": "Types and Type System",
+                    "dotPoints": [
+                        { "code": "CPP-CORE-2.1", "name": "Fundamental Types and Literals", "keywords": ["int", "long", "short", "char", "bool", "float", "double", "nullptr", "size_t", "ptrdiff_t", "integer literals", "floating-point literals"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-2.2", "name": "auto and Type Deduction", "keywords": ["auto", "decltype", "decltype(auto)", "AAA style", "type deduction rules", "trailing return type"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-2.3", "name": "const, constexpr, and consteval", "keywords": ["const", "constexpr", "consteval", "constinit", "compile-time evaluation", "const correctness", "mutable"], "difficulty": "advanced" },
+                        { "code": "CPP-CORE-2.4", "name": "References and Pointers", "keywords": ["lvalue reference", "rvalue reference", "pointer arithmetic", "raw pointer", "nullptr", "const pointer", "pointer to const", "dangling reference"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-2.5", "name": "Casts and Type Conversions", "keywords": ["static_cast", "dynamic_cast", "const_cast", "reinterpret_cast", "implicit conversion", "explicit keyword", "narrowing conversion"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-CORE-3",
+                    "name": "Control Flow and Functions",
+                    "dotPoints": [
+                        { "code": "CPP-CORE-3.1", "name": "Range-based for and Structured Bindings", "keywords": ["range-based for", "structured bindings", "auto&", "auto&&", "tie()", "std::pair", "std::tuple"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-3.2", "name": "Function Overloading and Default Arguments", "keywords": ["function overloading", "overload resolution", "default arguments", "ambiguous call", "name mangling"], "difficulty": "intermediate" },
+                        { "code": "CPP-CORE-3.3", "name": "Inline Functions and ODR", "keywords": ["inline", "ODR", "one definition rule", "link-time optimization", "inlining", "constexpr function"], "difficulty": "advanced" },
+                        { "code": "CPP-CORE-3.4", "name": "Lambda Expressions", "keywords": ["lambda", "capture list", "[&]", "[=]", "[this]", "mutable lambda", "generic lambda", "lambda in algorithms", "std::function"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-OOP",
+            "name": "Classes and Object-Oriented Programming",
+            "level": "Intermediate",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "CPP-OOP-1",
+                    "name": "Class Fundamentals",
+                    "dotPoints": [
+                        { "code": "CPP-OOP-1.1", "name": "Class Design and Access Control", "keywords": ["class", "struct", "public", "private", "protected", "friend", "access specifiers", "encapsulation"], "difficulty": "intermediate" },
+                        { "code": "CPP-OOP-1.2", "name": "Constructors and Destructors", "keywords": ["constructor", "destructor", "default constructor", "parameterised constructor", "constructor initialiser list", "delegating constructor", "explicit"], "difficulty": "intermediate" },
+                        { "code": "CPP-OOP-1.3", "name": "Rule of Zero, Three, and Five", "keywords": ["rule of three", "rule of five", "rule of zero", "copy constructor", "copy assignment", "move constructor", "move assignment", "destructor"], "difficulty": "advanced" },
+                        { "code": "CPP-OOP-1.4", "name": "Member Functions and const-correctness", "keywords": ["const member function", "mutable", "this pointer", "static member function", "static data member", "const overloading"], "difficulty": "intermediate" },
+                        { "code": "CPP-OOP-1.5", "name": "Operator Overloading", "keywords": ["operator overloading", "operator+", "operator<<", "operator>>", "comparison operators", "operator[]", "operator()", "user-defined literals"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-OOP-2",
+                    "name": "Inheritance and Polymorphism",
+                    "dotPoints": [
+                        { "code": "CPP-OOP-2.1", "name": "Inheritance and Access", "keywords": ["public inheritance", "protected inheritance", "private inheritance", "is-a relationship", "has-a relationship", "using declaration in derived class"], "difficulty": "intermediate" },
+                        { "code": "CPP-OOP-2.2", "name": "Virtual Functions and Dynamic Dispatch", "keywords": ["virtual", "override", "final", "vtable", "vptr", "dynamic dispatch", "runtime polymorphism", "virtual destructor"], "difficulty": "advanced" },
+                        { "code": "CPP-OOP-2.3", "name": "Abstract Classes and Interfaces", "keywords": ["pure virtual", "abstract class", "interface", "= 0", "cannot instantiate abstract class"], "difficulty": "advanced" },
+                        { "code": "CPP-OOP-2.4", "name": "Multiple Inheritance and Virtual Base Classes", "keywords": ["multiple inheritance", "diamond problem", "virtual base class", "virtual inheritance", "dominance rule", "MRO"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-OOP-3",
+                    "name": "Advanced Class Techniques",
+                    "dotPoints": [
+                        { "code": "CPP-OOP-3.1", "name": "CRTP (Curiously Recurring Template Pattern)", "keywords": ["CRTP", "static polymorphism", "mixin", "base class template", "compile-time polymorphism", "no vtable overhead"], "difficulty": "expert" },
+                        { "code": "CPP-OOP-3.2", "name": "PIMPL Idiom", "keywords": ["PIMPL", "pointer to implementation", "ABI stability", "compilation firewall", "unique_ptr PIMPL", "opaque pointer"], "difficulty": "advanced" },
+                        { "code": "CPP-OOP-3.3", "name": "Type Erasure", "keywords": ["type erasure", "std::any", "std::function", "std::variant", "concept-based polymorphism", "duck typing in C++"], "difficulty": "expert" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-MEM",
+            "name": "Memory Management",
+            "level": "Advanced",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "CPP-MEM-1",
+                    "name": "Manual Memory Management",
+                    "dotPoints": [
+                        { "code": "CPP-MEM-1.1", "name": "Stack vs Heap Allocation", "keywords": ["stack allocation", "heap allocation", "new", "delete", "new[]", "delete[]", "placement new", "automatic storage", "dynamic storage"], "difficulty": "intermediate" },
+                        { "code": "CPP-MEM-1.2", "name": "Memory Layout and Alignment", "keywords": ["memory layout", "struct padding", "alignas", "alignof", "alignment requirements", "cache line", "false sharing"], "difficulty": "advanced" },
+                        { "code": "CPP-MEM-1.3", "name": "Custom Allocators", "keywords": ["custom allocator", "std::allocator", "allocator_traits", "pmr", "std::pmr::memory_resource", "pool allocator", "arena allocator"], "difficulty": "expert" }
+                    ]
+                },
+                {
+                    "code": "CPP-MEM-2",
+                    "name": "RAII and Resource Management",
+                    "dotPoints": [
+                        { "code": "CPP-MEM-2.1", "name": "RAII Principle", "keywords": ["RAII", "resource acquisition is initialization", "scope-bound", "destructor guarantee", "exception safety", "basic guarantee", "strong guarantee", "nothrow guarantee"], "difficulty": "advanced" },
+                        { "code": "CPP-MEM-2.2", "name": "Smart Pointers — unique_ptr", "keywords": ["unique_ptr", "exclusive ownership", "make_unique", "release()", "reset()", "get()", "move-only", "custom deleter"], "difficulty": "advanced" },
+                        { "code": "CPP-MEM-2.3", "name": "Smart Pointers — shared_ptr and weak_ptr", "keywords": ["shared_ptr", "weak_ptr", "reference counting", "make_shared", "use_count()", "cyclic reference", "lock()", "expired()"], "difficulty": "advanced" },
+                        { "code": "CPP-MEM-2.4", "name": "Memory Safety and Debugging", "keywords": ["Valgrind", "AddressSanitizer", "memory leak", "use-after-free", "double free", "buffer overflow", "UndefinedBehaviorSanitizer"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-TPL",
+            "name": "Templates and Generic Programming",
+            "level": "Advanced",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "CPP-TPL-1",
+                    "name": "Function and Class Templates",
+                    "dotPoints": [
+                        { "code": "CPP-TPL-1.1", "name": "Function Templates", "keywords": ["function template", "template parameter", "template argument deduction", "explicit instantiation", "template specialisation"], "difficulty": "advanced" },
+                        { "code": "CPP-TPL-1.2", "name": "Class Templates", "keywords": ["class template", "template class", "member function template", "template non-type parameter", "template template parameter"], "difficulty": "advanced" },
+                        { "code": "CPP-TPL-1.3", "name": "Template Specialisation", "keywords": ["full specialisation", "partial specialisation", "template specialisation", "explicit specialisation", "SFINAE"], "difficulty": "expert" },
+                        { "code": "CPP-TPL-1.4", "name": "Variadic Templates", "keywords": ["variadic template", "parameter pack", "pack expansion", "sizeof...", "fold expression", "recursive variadic", "std::forward"], "difficulty": "expert" }
+                    ]
+                },
+                {
+                    "code": "CPP-TPL-2",
+                    "name": "Template Metaprogramming and Concepts",
+                    "dotPoints": [
+                        { "code": "CPP-TPL-2.1", "name": "Type Traits", "keywords": ["type_traits", "std::is_integral", "std::is_same", "std::enable_if", "std::conditional", "std::remove_reference", "std::decay"], "difficulty": "advanced" },
+                        { "code": "CPP-TPL-2.2", "name": "SFINAE and std::enable_if", "keywords": ["SFINAE", "substitution failure is not an error", "enable_if", "void_t", "detection idiom", "conditional overloading"], "difficulty": "expert" },
+                        { "code": "CPP-TPL-2.3", "name": "Concepts (C++20)", "keywords": ["concept", "requires clause", "requires expression", "constraint", "std::integral", "std::floating_point", "std::ranges::range", "abbreviated function template"], "difficulty": "expert" },
+                        { "code": "CPP-TPL-2.4", "name": "Compile-time Computation", "keywords": ["constexpr", "if constexpr", "consteval", "template metaprogramming", "compile-time recursion", "std::integral_constant"], "difficulty": "expert" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-MOV",
+            "name": "Move Semantics and Value Categories",
+            "level": "Advanced",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "CPP-MOV-1",
+                    "name": "Value Categories",
+                    "dotPoints": [
+                        { "code": "CPP-MOV-1.1", "name": "lvalues, rvalues, and xvalues", "keywords": ["lvalue", "rvalue", "xvalue", "glvalue", "prvalue", "value category", "materialization", "identity", "movability"], "difficulty": "advanced" },
+                        { "code": "CPP-MOV-1.2", "name": "Move Constructor and Move Assignment", "keywords": ["move constructor", "move assignment", "std::move", "noexcept move", "stolen resources", "moved-from state"], "difficulty": "advanced" },
+                        { "code": "CPP-MOV-1.3", "name": "Perfect Forwarding", "keywords": ["perfect forwarding", "std::forward", "forwarding reference", "universal reference", "reference collapsing", "emplace_back"], "difficulty": "expert" },
+                        { "code": "CPP-MOV-1.4", "name": "Copy Elision and RVO", "keywords": ["copy elision", "RVO", "NRVO", "named return value optimisation", "guaranteed elision", "prvalue materialisation"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-STL",
+            "name": "Standard Template Library",
+            "level": "Intermediate",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "CPP-STL-1",
+                    "name": "Sequence Containers",
+                    "dotPoints": [
+                        { "code": "CPP-STL-1.1", "name": "std::vector", "keywords": ["vector", "push_back", "emplace_back", "reserve", "capacity", "size", "shrink_to_fit", "iterator invalidation", "data()"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-1.2", "name": "std::array and std::deque", "keywords": ["std::array", "fixed-size array", "std::deque", "push_front", "pop_front", "double-ended queue", "random access"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-1.3", "name": "std::list and std::forward_list", "keywords": ["std::list", "doubly linked list", "std::forward_list", "singly linked list", "splice", "merge", "iterator stability"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "CPP-STL-2",
+                    "name": "Associative Containers",
+                    "dotPoints": [
+                        { "code": "CPP-STL-2.1", "name": "std::map and std::set", "keywords": ["std::map", "std::set", "std::multimap", "std::multiset", "red-black tree", "ordered", "lower_bound", "upper_bound", "equal_range"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-2.2", "name": "std::unordered_map and std::unordered_set", "keywords": ["unordered_map", "unordered_set", "hash function", "bucket", "load factor", "rehashing", "std::hash", "custom hash"], "difficulty": "advanced" },
+                        { "code": "CPP-STL-2.3", "name": "Container Adaptors", "keywords": ["std::stack", "std::queue", "std::priority_queue", "min-heap", "max-heap", "compare functor"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "CPP-STL-3",
+                    "name": "Algorithms and Ranges",
+                    "dotPoints": [
+                        { "code": "CPP-STL-3.1", "name": "Non-modifying Algorithms", "keywords": ["std::find", "std::find_if", "std::count", "std::count_if", "std::all_of", "std::any_of", "std::none_of", "std::equal", "std::mismatch"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-3.2", "name": "Modifying Algorithms", "keywords": ["std::transform", "std::copy", "std::copy_if", "std::fill", "std::replace", "std::remove", "std::reverse", "std::rotate", "std::partition"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-3.3", "name": "Sorting and Searching", "keywords": ["std::sort", "std::stable_sort", "std::nth_element", "std::binary_search", "std::lower_bound", "std::upper_bound", "std::merge"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-3.4", "name": "Ranges and Views (C++20)", "keywords": ["std::ranges", "std::views", "range adaptor", "view composition", "pipe operator", "lazy evaluation", "std::views::filter", "std::views::transform"], "difficulty": "expert" }
+                    ]
+                },
+                {
+                    "code": "CPP-STL-4",
+                    "name": "Utilities",
+                    "dotPoints": [
+                        { "code": "CPP-STL-4.1", "name": "std::optional, std::variant, std::any", "keywords": ["std::optional", "std::nullopt", "std::variant", "std::get", "std::visit", "std::any", "std::any_cast", "monadic operations"], "difficulty": "advanced" },
+                        { "code": "CPP-STL-4.2", "name": "std::string and std::string_view", "keywords": ["std::string", "std::string_view", "substr", "find", "rfind", "compare", "string literals", "SSO", "small string optimisation"], "difficulty": "intermediate" },
+                        { "code": "CPP-STL-4.3", "name": "std::tuple and std::pair", "keywords": ["std::tuple", "std::pair", "std::get", "std::tie", "std::make_tuple", "std::apply", "structured bindings", "std::ignore"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-CON",
+            "name": "Concurrency and Parallelism",
+            "level": "Advanced",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "CPP-CON-1",
+                    "name": "Threading",
+                    "dotPoints": [
+                        { "code": "CPP-CON-1.1", "name": "std::thread", "keywords": ["std::thread", "join()", "detach()", "joinable()", "thread id", "hardware_concurrency", "thread local storage", "std::jthread"], "difficulty": "advanced" },
+                        { "code": "CPP-CON-1.2", "name": "Mutual Exclusion", "keywords": ["std::mutex", "std::lock_guard", "std::unique_lock", "std::scoped_lock", "deadlock", "std::timed_mutex", "std::recursive_mutex"], "difficulty": "advanced" },
+                        { "code": "CPP-CON-1.3", "name": "Condition Variables", "keywords": ["std::condition_variable", "wait()", "notify_one()", "notify_all()", "spurious wakeup", "predicate wait", "producer-consumer"], "difficulty": "advanced" },
+                        { "code": "CPP-CON-1.4", "name": "Futures and Promises", "keywords": ["std::future", "std::promise", "std::async", "std::packaged_task", "std::launch", "future.get()", "shared_future"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-CON-2",
+                    "name": "Atomic Operations and Memory Model",
+                    "dotPoints": [
+                        { "code": "CPP-CON-2.1", "name": "std::atomic", "keywords": ["std::atomic", "load()", "store()", "fetch_add()", "compare_exchange", "atomic_flag", "lock-free", "wait-free"], "difficulty": "expert" },
+                        { "code": "CPP-CON-2.2", "name": "Memory Ordering", "keywords": ["memory_order_seq_cst", "memory_order_acquire", "memory_order_release", "memory_order_relaxed", "happens-before", "synchronises-with", "data race"], "difficulty": "expert" },
+                        { "code": "CPP-CON-2.3", "name": "Parallel Algorithms (C++17)", "keywords": ["execution policy", "std::execution::par", "std::execution::par_unseq", "std::execution::seq", "parallel sort", "parallel for_each"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-MOD20",
+            "name": "Modern C++17/20/23 Features",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "CPP-MOD20-1",
+                    "name": "C++17 Features",
+                    "dotPoints": [
+                        { "code": "CPP-MOD20-1.1", "name": "if constexpr and Compile-time Branching", "keywords": ["if constexpr", "compile-time if", "constexpr branch", "discarded statement", "template simplification"], "difficulty": "advanced" },
+                        { "code": "CPP-MOD20-1.2", "name": "Structured Bindings and Deduction Guides", "keywords": ["structured bindings", "auto [a, b]", "class template argument deduction", "CTAD", "deduction guide"], "difficulty": "advanced" },
+                        { "code": "CPP-MOD20-1.3", "name": "std::filesystem", "keywords": ["std::filesystem", "path", "directory_iterator", "recursive_directory_iterator", "file_status", "copy", "rename", "remove_all"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "CPP-MOD20-2",
+                    "name": "C++20 Features",
+                    "dotPoints": [
+                        { "code": "CPP-MOD20-2.1", "name": "Modules", "keywords": ["module", "export module", "import", "module partition", "module interface unit", "module implementation unit", "global module fragment"], "difficulty": "expert" },
+                        { "code": "CPP-MOD20-2.2", "name": "Coroutines", "keywords": ["coroutine", "co_await", "co_yield", "co_return", "promise_type", "awaitable", "lazy generator", "asynchronous coroutine"], "difficulty": "expert" },
+                        { "code": "CPP-MOD20-2.3", "name": "std::format and std::print", "keywords": ["std::format", "std::print", "format string", "format specifiers", "{}", "std::vformat", "std::format_to"], "difficulty": "intermediate" },
+                        { "code": "CPP-MOD20-2.4", "name": "Three-Way Comparison (Spaceship Operator)", "keywords": ["operator<=>", "spaceship operator", "strong_ordering", "weak_ordering", "partial_ordering", "default comparison", "std::compare_three_way"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-PERF",
+            "name": "Performance and Optimisation",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "CPP-PERF-1",
+                    "name": "Cache-Friendly Programming",
+                    "dotPoints": [
+                        { "code": "CPP-PERF-1.1", "name": "Cache and Memory Hierarchy", "keywords": ["CPU cache", "L1/L2/L3 cache", "cache line", "cache miss", "spatial locality", "temporal locality", "false sharing", "NUMA"], "difficulty": "advanced" },
+                        { "code": "CPP-PERF-1.2", "name": "Data-Oriented Design", "keywords": ["data-oriented design", "SoA vs AoS", "struct of arrays", "array of structs", "SIMD", "vectorisation", "hot/cold data"], "difficulty": "expert" }
+                    ]
+                },
+                {
+                    "code": "CPP-PERF-2",
+                    "name": "Profiling and Benchmarking",
+                    "dotPoints": [
+                        { "code": "CPP-PERF-2.1", "name": "Profiling Tools", "keywords": ["gprof", "perf", "VTune", "callgrind", "Valgrind", "Tracy", "Heaptrack", "sampling profiler", "instrumentation profiler"], "difficulty": "advanced" },
+                        { "code": "CPP-PERF-2.2", "name": "Benchmarking with Google Benchmark", "keywords": ["Google Benchmark", "BENCHMARK()", "benchmark::State", "DoNotOptimize()", "micro-benchmark", "benchmark fixture", "benchmark output"], "difficulty": "advanced" },
+                        { "code": "CPP-PERF-2.3", "name": "Compiler Optimisation", "keywords": ["O0", "O1", "O2", "O3", "Ofast", "LTO", "PGO", "intrinsics", "__builtin_expect", "likely/unlikely", "restrict"], "difficulty": "expert" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-PAT",
+            "name": "Design Patterns in C++",
+            "level": "Advanced",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "CPP-PAT-1",
+                    "name": "Creational Patterns",
+                    "dotPoints": [
+                        { "code": "CPP-PAT-1.1", "name": "Factory Pattern", "keywords": ["factory method", "abstract factory", "virtual constructor", "object creation", "factory function", "make_unique factory"], "difficulty": "advanced" },
+                        { "code": "CPP-PAT-1.2", "name": "Singleton and Monostate", "keywords": ["singleton", "Meyers singleton", "thread-safe singleton", "monostate", "static local variable", "static initialisation order fiasco"], "difficulty": "advanced" },
+                        { "code": "CPP-PAT-1.3", "name": "Builder Pattern", "keywords": ["builder", "fluent interface", "method chaining", "telescoping constructor", "step builder", "variadic builder"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-PAT-2",
+                    "name": "Structural and Behavioural Patterns",
+                    "dotPoints": [
+                        { "code": "CPP-PAT-2.1", "name": "Observer Pattern", "keywords": ["observer", "subject", "event", "callback", "signal-slot", "std::function callback", "event dispatcher"], "difficulty": "advanced" },
+                        { "code": "CPP-PAT-2.2", "name": "Strategy and Policy Pattern", "keywords": ["strategy", "policy-based design", "template policy", "runtime strategy", "std::function strategy", "algorithm selection"], "difficulty": "advanced" },
+                        { "code": "CPP-PAT-2.3", "name": "Command Pattern and Undo/Redo", "keywords": ["command", "undo", "redo", "command queue", "macro command", "std::function command"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CPP-TST",
+            "name": "Testing and Debugging",
+            "level": "Intermediate",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "CPP-TST-1",
+                    "name": "Unit Testing Frameworks",
+                    "dotPoints": [
+                        { "code": "CPP-TST-1.1", "name": "Google Test (GTest)", "keywords": ["gtest", "EXPECT_EQ", "ASSERT_EQ", "TEST()", "TEST_F()", "test fixture", "SetUp", "TearDown", "EXPECT_THROW", "EXPECT_CALL"], "difficulty": "advanced" },
+                        { "code": "CPP-TST-1.2", "name": "Catch2 Framework", "keywords": ["Catch2", "REQUIRE", "CHECK", "SECTION", "SCENARIO", "BDD", "TEST_CASE", "GENERATE", "property-based testing"], "difficulty": "advanced" },
+                        { "code": "CPP-TST-1.3", "name": "Mocking with Google Mock", "keywords": ["Google Mock", "MOCK_METHOD", "EXPECT_CALL", "ON_CALL", "Times()", "InSequence", "matchers", "mock object"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "CPP-TST-2",
+                    "name": "Debugging and Sanitisers",
+                    "dotPoints": [
+                        { "code": "CPP-TST-2.1", "name": "GDB Debugger", "keywords": ["gdb", "breakpoint", "watchpoint", "backtrace", "step", "next", "continue", "print", "info locals", "core dump"], "difficulty": "intermediate" },
+                        { "code": "CPP-TST-2.2", "name": "Sanitisers", "keywords": ["AddressSanitizer", "UndefinedBehaviorSanitizer", "ThreadSanitizer", "MemorySanitizer", "LeakSanitizer", "-fsanitize=address"], "difficulty": "advanced" },
+                        { "code": "CPP-TST-2.3", "name": "Static Analysis", "keywords": ["clang-tidy", "cppcheck", "clang static analyser", "PVS-Studio", "SonarQube", "MISRA", "cert-c++"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

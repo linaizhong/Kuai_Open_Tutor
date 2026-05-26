@@ -1,0 +1,129 @@
+{
+    "subject": "AI Agent Development",
+    "description": "Marking guidelines for AI Agent coding challenges covering correctness, agent design, safety, code quality, and framework usage.",
+    "lastUpdated": "2025-03-17",
+    "importantNote": "AI agent exercises are assessed on functional correctness, sound architectural design, safety considerations, code quality, and effective use of frameworks. Agents must be tested with multiple inputs to verify robustness.",
+    "assessmentCriteria": {
+        "general": [
+            "Functional Correctness: Does the agent produce correct, grounded output for the given task?",
+            "Architectural Design: Are the correct patterns used (ReAct, RAG, supervisor) for the problem?",
+            "Safety and Reliability: Are max_iterations set? Are tool inputs validated? Are failure modes handled?",
+            "Framework Usage: Are LangChain/LlamaIndex/LangGraph abstractions used correctly and idiomatically?",
+            "Code Quality: Clear naming, appropriate logging, Pydantic schemas for tool inputs, type hints used",
+            "Observability: Is verbose mode / LangSmith tracing enabled to allow inspection of agent behaviour?"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "AI Agent challenge partial credit principles",
+        "rules": [
+            { "condition": "Agent runs but produces hallucinated output (not grounded in tools/retrieval)", "marksAwarded": "Deduct 20-30% — grounding is fundamental to agent quality" },
+            { "condition": "No max_iterations or timeout — agent can loop indefinitely",                  "marksAwarded": "Deduct 15% — safety valve is mandatory in production agents" },
+            { "condition": "Tool schemas have vague or missing descriptions",                             "marksAwarded": "Deduct 10% — poor descriptions cause tool misuse" },
+            { "condition": "Tool inputs not validated (no Pydantic schema, no path validation etc.)",    "marksAwarded": "Deduct 15% — unvalidated tool inputs are a security risk" },
+            { "condition": "RAG index rebuilt on every run (not persisted)",                             "marksAwarded": "Deduct 10% — inefficient and costly in production" },
+            { "condition": "LangGraph state mutated in-place instead of returned as dict",              "marksAwarded": "Deduct 10% — breaks LangGraph's immutable state model" },
+            { "condition": "Correct architecture but fails on edge cases (empty results, API errors)",  "marksAwarded": "Deduct 10-15% — robust error handling is expected at intermediate level" }
+        ]
+    },
+    "levelDescriptors": {
+        "intermediate": {
+            "expectations": [
+                "Correctly implements single-agent with tools using AgentExecutor or LangGraph",
+                "Builds functional RAG pipeline with chunking, embedding, retrieval, and grounded generation",
+                "Uses Pydantic schemas for tool inputs",
+                "Sets appropriate safety limits (max_iterations, timeouts)",
+                "Understands LCEL chain composition with | operator",
+                "Can debug agent with verbose=True and intermediate_steps"
+            ],
+            "commonErrors": [
+                "Missing agent_scratchpad in prompt template — agent has no memory of previous steps",
+                "Not returning tool results to the model — model fabricates outcomes",
+                "RAG answers not grounded — model ignores context and uses training knowledge",
+                "Using string concatenation instead of PromptTemplate for dynamic prompts",
+                "Not persisting vector index between runs"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Builds multi-node LangGraph with conditional routing",
+                "Implements reflection/self-correction loops in agent workflow",
+                "Uses Command objects for dynamic node routing",
+                "Implements multi-agent supervisor with task delegation",
+                "Evaluates agent output quality with LLM-as-judge or RAGAS",
+                "Handles prompt injection and validates tool inputs for security",
+                "Uses checkpointing for persistent stateful agents"
+            ],
+            "commonErrors": [
+                "LangGraph state returned as mutated dict rather than partial updates",
+                "Supervisor routing to wrong worker due to vague worker descriptions in prompt",
+                "No stopping condition in reflection loop — infinite refinement",
+                "MCP server without path validation — directory traversal vulnerability",
+                "Thread IDs reused across different users — state bleeds between conversations"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "AGT-Q-CORE-001": {
+            "totalMarks": 10,
+            "criteria": [
+                { "marks": "9-10", "description": "Both tools correctly defined with Pydantic schemas; safe calculator with ast; agent handles multi-step questions; proper prompt with agent_scratchpad; max_iterations set" },
+                { "marks": "7-8",  "description": "Both tools functional; minor schema issues or missing safe eval; agent works for most inputs" },
+                { "marks": "5-6",  "description": "One tool fully correct; agent runs but fails on multi-step problems or edge cases" },
+                { "marks": "3-4",  "description": "Tools defined but without proper schemas or validation; agent produces some correct output" },
+                { "marks": "1-2",  "description": "Minimal correct elements; agent does not run or produces incorrect output" },
+                { "marks": 0,      "description": "No meaningful attempt or code does not run" }
+            ]
+        },
+        "AGT-Q-RAG-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "Complete LangChain + LlamaIndex pipelines; index persisted; source attribution working; refuses out-of-scope questions; faithfulness evaluator functional and accurate" },
+                { "marks": "9-10",  "description": "Both pipelines work; persistence implemented; one of source attribution or faithfulness evaluator has minor issues" },
+                { "marks": "7-8",   "description": "One pipeline fully correct; second pipeline has issues; persistence may be missing" },
+                { "marks": "5-6",   "description": "Basic RAG chain works for one framework; chunking/embedding correct; no persistence or attribution" },
+                { "marks": "3-4",   "description": "Documents loaded and indexed; retrieval attempted but generation has significant issues" },
+                { "marks": "1-2",   "description": "Only document loading or embedding implemented" },
+                { "marks": 0,       "description": "No meaningful attempt" }
+            ]
+        },
+        "AGT-Q-GRAPH-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Full LangGraph with all four nodes; correct state with add reducer; conditional routing on quality_score; SqliteSaver checkpointing; Mermaid diagram generated; structured output in researcher" },
+                { "marks": "12-13", "description": "All nodes present and functional; routing mostly correct; checkpointing works; minor state management issues" },
+                { "marks": "9-11",  "description": "Three of four nodes correct; state management has some issues; routing logic present but may not enforce quality threshold correctly" },
+                { "marks": "6-8",   "description": "Basic two-node graph (researcher + writer) working; reflection loop missing or incorrect" },
+                { "marks": "3-5",   "description": "StateGraph structure correct but nodes have significant logic errors" },
+                { "marks": "1-2",   "description": "Minimal LangGraph code present but does not run" },
+                { "marks": 0,       "description": "No meaningful attempt" }
+            ]
+        },
+        "AGT-Q-MCP-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "MCP server with all three tools; path validation prevents traversal; LangChain agent connects via MultiServerMCPClient; agent can explore and read files; async correctly implemented" },
+                { "marks": "9-10",  "description": "All three tools work; agent connects; path validation present but may have edge cases; async handling mostly correct" },
+                { "marks": "7-8",   "description": "Two tools working; MCP server runs; agent connects but has limited functionality" },
+                { "marks": "5-6",   "description": "MCP server runs with at least one tool; no path validation or async issues" },
+                { "marks": "3-4",   "description": "MCP server structure correct but tools have significant errors" },
+                { "marks": "1-2",   "description": "Basic server structure only; tools not functional" },
+                { "marks": 0,       "description": "No meaningful attempt" }
+            ]
+        },
+        "AGT-Q-MULTI-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Full supervisor pattern with all four nodes; Command-based routing; worker_outputs dict reducer; compiler node synthesises correctly; handles multi-step task delegation" },
+                { "marks": "12-13", "description": "Three workers and supervisor functional; routing mostly correct; Command usage correct; compilation present" },
+                { "marks": "9-11",  "description": "Two workers + supervisor; basic routing works; some state management issues" },
+                { "marks": "6-8",   "description": "Single worker with basic supervisor; multi-agent delegation not fully implemented" },
+                { "marks": "3-5",   "description": "LangGraph structure present; supervisor node exists but routing logic is hardcoded or incorrect" },
+                { "marks": "1-2",   "description": "Minimal multi-agent attempt; no functional routing" },
+                { "marks": 0,       "description": "No meaningful attempt" }
+            ]
+        }
+    },
+    "feedbackTemplate": {
+        "coding": "Score: {score}/{totalMarks}\n\nFunctional Correctness: {correctness}\nArchitectural Design: {design}\nSafety and Reliability: {safety}\nFramework Usage: {framework}\nCode Quality: {quality}\nObservability: {observability}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nKey Resources:\n- LangChain docs: https://python.langchain.com\n- LangGraph docs: https://langchain-ai.github.io/langgraph\n- LlamaIndex docs: https://docs.llamaindex.ai\n- ReAct paper: https://arxiv.org/abs/2210.03629\n- LangSmith: https://smith.langchain.com"
+    }
+}

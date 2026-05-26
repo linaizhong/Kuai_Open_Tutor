@@ -1,0 +1,469 @@
+{
+  "topics": {
+    "english-advanced": {
+      "label": "English Advanced",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T04:19:59.185Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T04:33:34.216Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T04:51:41.972Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T05:02:40.439Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T05:19:33.091Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T05:20:12.595Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T05:32:19.706Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T08:32:34.374Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T21:58:07.850Z"
+        },
+        {
+          "delta": 0,
+          "timestamp": "2026-03-12T22:20:42.315Z"
+        }
+      ],
+      "avgAttemptsToConsolidate": null
+    },
+    "MA-F1": {
+      "label": "MA-F1",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-17T05:36:30.970Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T02:06:31.585Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T03:20:20.824Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T03:23:40.993Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T03:41:32.925Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T03:46:21.813Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-19T03:50:38.691Z"
+        }
+      ]
+    },
+    "MA-F": {
+      "label": "MA-F",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:44:04.788Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:58:04.656Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-21T02:36:38.262Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-21T02:53:21.380Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-21T03:02:28.797Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-21T03:11:38.501Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:50:22.144Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T03:59:57.736Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:14:52.330Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:42:35.910Z"
+        }
+      ]
+    },
+    "MA-T": {
+      "label": "MA-T",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T02:43:23.544Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T03:13:02.829Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:13:33.592Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:35:03.665Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:44:50.914Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:58:18.749Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:30:57.398Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:03:01.405Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:16:36.521Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:46:48.515Z"
+        }
+      ]
+    },
+    "MA-C": {
+      "label": "MA-C",
+      "velocityPerSession": -0.0561,
+      "trend": "declining",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": -0.35000000000000003,
+          "attempts": 1,
+          "timestamp": "2026-03-20T01:54:45.759Z"
+        },
+        {
+          "delta": 0.1050000000000001,
+          "attempts": 1,
+          "timestamp": "2026-03-20T02:44:01.298Z"
+        },
+        {
+          "delta": 0.07350000000000001,
+          "attempts": 1,
+          "timestamp": "2026-03-20T03:13:32.967Z"
+        },
+        {
+          "delta": 0.05149999999999999,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:22:54.061Z"
+        },
+        {
+          "delta": 0.03600000000000003,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:37:56.970Z"
+        },
+        {
+          "delta": 0.0252,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:45:36.623Z"
+        },
+        {
+          "delta": 0.01760000000000006,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:58:58.984Z"
+        },
+        {
+          "delta": 0.012300000000000089,
+          "attempts": 1,
+          "timestamp": "2026-03-21T03:03:14.749Z"
+        },
+        {
+          "delta": 0.008600000000000052,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:15:25.005Z"
+        },
+        {
+          "delta": -0.34400000000000003,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:44:32.689Z"
+        }
+      ]
+    },
+    "MA-E": {
+      "label": "MA-E",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T01:57:12.739Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T02:44:43.138Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T03:13:53.515Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:23:59.405Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:39:37.529Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:46:22.675Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:59:39.145Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:03:42.960Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:17:18.950Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:47:15.879Z"
+        }
+      ]
+    },
+    "MA-S": {
+      "label": "MA-S",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T02:36:30.444Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T02:45:32.185Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T03:14:24.316Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:24:42.932Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:40:09.195Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T04:47:12.485Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-20T05:00:46.240Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:04:42.480Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:18:15.916Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:50:46.708Z"
+        }
+      ]
+    },
+    "MA-M": {
+      "label": "MA-M",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:06:56.121Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:08:10.945Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:18:05.793Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:19:01.167Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:45:03.997Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:46:23.383Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:47:59.319Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-22T09:48:33.677Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:27:31.191Z"
+        },
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-23T04:51:27.788Z"
+        }
+      ]
+    },
+    "english": {
+      "label": "english",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-26T20:44:37.572Z"
+        }
+      ]
+    },
+    "GRE-A": {
+      "label": "GRE-A",
+      "velocityPerSession": 0,
+      "trend": "stalling",
+      "avgAttemptsToConsolidate": 1,
+      "sessionHistory": [
+        {
+          "delta": 0,
+          "attempts": 1,
+          "timestamp": "2026-03-30T21:54:56.722Z"
+        }
+      ]
+    }
+  }
+}

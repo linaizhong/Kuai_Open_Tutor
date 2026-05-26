@@ -1,0 +1,477 @@
+{
+  "subject": "HSC Chemistry",
+  "subjectId": "hsc-chemistry",
+  "syllabusVersion": "2023",
+  "appliesTo": "Year 11 and Year 12 students",
+  "topics": [
+    {
+      "code": "CH-A",
+      "name": "Atomic Structure",
+      "year": "11-12",
+      "examWeightPercent": 25,
+      "subtopics": [
+        {
+          "code": "CH-A1",
+          "name": "Fundamentals of Atomic Theory",
+          "year": "11",
+          "dotPoints": [
+            {
+              "code": "CH-A1.1",
+              "name": "Atomic number, mass number and atomic structure",
+              "keywords": [
+                "atomic number",
+                "mass number",
+                "protons",
+                "neutrons",
+                "electrons"
+              ],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-A1.2",
+              "name": "Isotopes and isotopic notation",
+              "keywords": [
+                "isotopes",
+                "atomic mass",
+                "mass number",
+                "nuclide"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": [
+                "CH-A1.1"
+              ]
+            },
+            {
+              "code": "CH-A1.3",
+              "name": "Atomic radii and ionization energy",
+              "keywords": [
+                "atomic radius",
+                "ionization energy",
+                "periodic trends"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-A1.1"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH-A2",
+          "name": "Periodic Table and Periodicity",
+          "year": "12",
+          "dotPoints": [
+            {
+              "code": "CH-A2.1",
+              "name": "Group 1 elements (alkali metals)",
+              "keywords": [
+                "alkali metals",
+                "reactivity",
+                "cation formation"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": [
+                "CH-A1.1"
+              ]
+            },
+            {
+              "code": "CH-A2.2",
+              "name": "Group 7 elements (halogens)",
+              "keywords": [
+                "halogens",
+                "reactivity",
+                "anion formation"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-A1.1"
+              ]
+            },
+            {
+              "code": "CH-A2.3",
+              "name": "Periodic trends in atomic radius and ionization energy",
+              "keywords": [
+                "periodic trends",
+                "atomic radius",
+                "ionization energy"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-A1.1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CH-B",
+      "name": "Chemical Bonding",
+      "year": "11-12",
+      "examWeightPercent": 20,
+      "subtopics": [
+        {
+          "code": "CH-B1",
+          "name": "Ionic Bonding",
+          "year": "11",
+          "dotPoints": [
+            {
+              "code": "CH-B1.1",
+              "name": "Formation of ionic bonds",
+              "keywords": [
+                "ionic bond",
+                "cation",
+                "anion"
+              ],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-B1.2",
+              "name": "Electronegativity and polarity in ionic compounds",
+              "keywords": [
+                "electronegativity",
+                "polarity",
+                "ionic compound"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-B1.1"
+              ]
+            },
+            {
+              "code": "CH-B1.3",
+              "name": "Ionic bonding in metals and non-metals",
+              "keywords": [
+                "metallic bond",
+                "non-metallic bond"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-B1.1"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH-B2",
+          "name": "Covalent Bonding",
+          "year": "12",
+          "dotPoints": [
+            {
+              "code": "CH-B2.1",
+              "name": "Formation of covalent bonds",
+              "keywords": [
+                "covalent bond",
+                "shared electrons"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-B2.2",
+              "name": "Types of covalent bonds (single, double, triple)",
+              "keywords": [
+                "single bond",
+                "double bond",
+                "triple bond"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-B2.1"
+              ]
+            },
+            {
+              "code": "CH-B2.3",
+              "name": "Hybridization and molecular geometry",
+              "keywords": [
+                "hybridization",
+                "molecular geometry",
+                "sp, sp², sp³"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-B2.1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CH-C",
+      "name": "Chemical Equations and Stoichiometry",
+      "year": "11-12",
+      "examWeightPercent": 25,
+      "subtopics": [
+        {
+          "code": "CH-C1",
+          "name": "Balancing Chemical Equations",
+          "year": "11",
+          "dotPoints": [
+            {
+              "code": "CH-C1.1",
+              "name": "Writing balanced chemical equations",
+              "keywords": [
+                "balanced equation",
+                "reactants",
+                "products"
+              ],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-C1.2",
+              "name": "Balancing equations using coefficients",
+              "keywords": [
+                "coefficients",
+                "balancing equation"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-C1.1"
+              ]
+            },
+            {
+              "code": "CH-C1.3",
+              "name": "Balancing equations with subscripts",
+              "keywords": [
+                "subscript",
+                "balancing equation"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-C1.1"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH-C2",
+          "name": "Stoichiometry",
+          "year": "12",
+          "dotPoints": [
+            {
+              "code": "CH-C2.1",
+              "name": "Mole concept and Avogadro's number",
+              "keywords": [
+                "mole",
+                "Avogadro's number"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-C2.2",
+              "name": "Calculating moles from mass",
+              "keywords": [
+                "mass",
+                "moles",
+                "molar mass"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-C2.1"
+              ]
+            },
+            {
+              "code": "CH-C2.3",
+              "name": "Calculating mass from moles",
+              "keywords": [
+                "mass",
+                "moles",
+                "molar mass"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-C2.1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CH-D",
+      "name": "Thermodynamics and Kinetics",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "CH-D1",
+          "name": "Thermodynamic Processes",
+          "year": "11",
+          "dotPoints": [
+            {
+              "code": "CH-D1.1",
+              "name": "Types of thermodynamic processes (endothermic, exothermic)",
+              "keywords": [
+                "endothermic",
+                "exothermic"
+              ],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-D1.2",
+              "name": "Heat transfer and temperature changes",
+              "keywords": [
+                "heat transfer",
+                "temperature change"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-D1.1"
+              ]
+            },
+            {
+              "code": "CH-D1.3",
+              "name": "Thermodynamic equations (q = mcΔT)",
+              "keywords": [
+                "thermodynamic equation",
+                "heat capacity"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-D1.1"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH-D2",
+          "name": "Kinetics of Chemical Reactions",
+          "year": "12",
+          "dotPoints": [
+            {
+              "code": "CH-D2.1",
+              "name": "Rate of reaction and rate law",
+              "keywords": [
+                "rate of reaction",
+                "rate law"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-D2.2",
+              "name": "Factors affecting reaction rates (temperature, concentration)",
+              "keywords": [
+                "temperature",
+                "concentration"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-D2.1"
+              ]
+            },
+            {
+              "code": "CH-D2.3",
+              "name": "Zeroth-order and first-order reactions",
+              "keywords": [
+                "zeroth-order reaction",
+                "first-order reaction"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-D2.1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CH-E",
+      "name": "Acids, Bases, and Salts",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "CH-E1",
+          "name": "Acid-Base Concepts",
+          "year": "11",
+          "dotPoints": [
+            {
+              "code": "CH-E1.1",
+              "name": "Definition of acids and bases",
+              "keywords": [
+                "acid",
+                "base"
+              ],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-E1.2",
+              "name": "Types of acids (monoprotic, diprotic, triprotic)",
+              "keywords": [
+                "monoprotic acid",
+                "diprotic acid",
+                "triprotic acid"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-E1.1"
+              ]
+            },
+            {
+              "code": "CH-E1.3",
+              "name": "Types of bases (alkali, amine)",
+              "keywords": [
+                "alkali",
+                "amine"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-E1.1"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH-E2",
+          "name": "Salts and Their Properties",
+          "year": "12",
+          "dotPoints": [
+            {
+              "code": "CH-E2.1",
+              "name": "Formation of salts from acids and bases",
+              "keywords": [
+                "salt",
+                "acid-base reaction"
+              ],
+              "difficulty": "beginner",
+              "prerequisites": []
+            },
+            {
+              "code": "CH-E2.2",
+              "name": "Properties of salts (ionic, neutral)",
+              "keywords": [
+                "ionic salt",
+                "neutral salt"
+              ],
+              "difficulty": "intermediate",
+              "prerequisites": [
+                "CH-E2.1"
+              ]
+            },
+            {
+              "code": "CH-E2.3",
+              "name": "Acid-base reactions and their effects on pH",
+              "keywords": [
+                "pH",
+                "acid-base reaction"
+              ],
+              "difficulty": "advanced",
+              "prerequisites": [
+                "CH-E2.1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

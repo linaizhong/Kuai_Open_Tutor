@@ -1,0 +1,753 @@
+{
+  "subject": "HSC English Advanced",
+  "syllabusVersion": "2015",
+  "description": "Deep detail for each syllabus dot-point, supporting error analysis, Socratic questioning, worked examples and marking feedback skills. Adapted for English: 'keyConcepts' covers content knowledge; 'commonErrors' covers typical student writing weaknesses; 'examTips' covers exam craft; 'socraticPrompts' drives discussion; 'workedExampleTemplate' describes the response structure.",
+  "dotPoints": {
+
+    "EA-CM1.1": {
+      "code": "EA-CM1.1",
+      "name": "Analysing how texts represent human experiences",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM1",
+      "year": 12,
+      "summary": "Understand that texts construct — rather than simply reflect — human experiences, and that composers make deliberate choices to shape those representations.",
+      "keyConcepts": [
+        "Representation: texts do not simply show reality — they construct and shape it through deliberate language choices",
+        "Individual experience: a specific person's encounter with an event, emotion or situation",
+        "Collective experience: shared experiences across groups, communities or humanity — grief, joy, injustice, love",
+        "Anomalous experience: experiences outside the norm — trauma, illness, exile, the extraordinary",
+        "Contradictory/paradoxical: texts often capture the complexity and tension within human experience (e.g. love that wounds, freedom that imprisons)",
+        "Perspective shapes representation: a text's viewpoint (first person, omniscient, unreliable narrator) influences how experience is portrayed"
+      ],
+      "commonErrors": [
+        "Retelling the plot instead of analysing how the text represents experience — always ask 'how' not 'what'",
+        "Using vague language like 'shows us' or 'tells us about' — replace with precise metalanguage: 'constructs', 'positions', 'challenges', 'subverts'",
+        "Treating the narrator or speaker as identical to the composer — distinguish between 'the composer' and 'the speaker/narrator'",
+        "Missing the paradoxical or contradictory layer — HSC markers reward responses that explore complexity, not just surface meaning",
+        "Weak integration of evidence — quote must be embedded in the sentence and immediately analysed"
+      ],
+      "examTips": [
+        "Use the verb 'represents' rather than 'shows' — it signals awareness that texts are constructed",
+        "When analysing: name the technique → quote the evidence → explain the effect on meaning → connect to the human experience concept",
+        "Look for where the text complicates or subverts its own representation — that's where the best analysis lives",
+        "In Paper 1 Section II, link your analysis of the prescribed text explicitly back to the module concept of 'human experiences'"
+      ],
+      "socraticPrompts": [
+        "How does the text you've chosen represent the difference between individual and collective experience?",
+        "Where in your text does human experience seem contradictory or paradoxical? What technique creates this tension?",
+        "What does the composer's choice of perspective (first person, third person, etc.) suggest about how we should understand this human experience?",
+        "Is the experience represented as universal or specific to a particular cultural/historical context? What's the effect of that choice?"
+      ],
+      "workedExampleTemplate": {
+        "type": "analytical-paragraph",
+        "steps": ["Open with a topic sentence that names the human experience and the textual representation being analysed", "Name the specific technique", "Embed a precise quote", "Analyse the language choices within the quote (word level)", "Explain the effect: how does this construct the human experience?", "Link back to the module concept or broader idea"]
+      },
+      "relatedDotPoints": ["EA-CM1.2", "EA-CM1.3", "EA-CM3.1"]
+    },
+
+    "EA-CM1.2": {
+      "code": "EA-CM1.2",
+      "name": "The impact of texts on audiences and composers",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM1",
+      "year": 12,
+      "summary": "Texts are not passive — they act on audiences and reflect back on composers; understanding how texts position readers is central to Advanced English analysis.",
+      "keyConcepts": [
+        "Texts affirm: reinforce existing values, beliefs or worldviews — giving the reader comfort or validation",
+        "Texts challenge: question or disturb assumptions — making the reader uncomfortable, confused or provoked",
+        "Texts transform: fundamentally shift how a reader thinks, feels or understands the world",
+        "Positioning: the language techniques a composer uses to guide the audience toward a particular reading or emotional response",
+        "Cultural assumptions: the unexamined beliefs embedded in a text's context that shaped the composer's choices",
+        "Context shapes meaning: a text's historical, cultural, social and personal context influences what it means to different audiences"
+      ],
+      "commonErrors": [
+        "Writing 'the composer wants the reader to feel...' — instead, analyse HOW the text positions the audience through specific techniques",
+        "Treating audience response as fixed — good responses acknowledge that different audiences may respond differently",
+        "Ignoring context entirely — marks are lost when responses treat a text as existing outside time and culture",
+        "Confusing the composer's values with the values represented in the text — maintain critical distance"
+      ],
+      "examTips": [
+        "Use phrases like 'positions the reader to', 'invites the audience to', 'challenges assumptions about' — these signal analytical sophistication",
+        "When discussing impact, consider: intellectual impact (what we think), emotional impact (what we feel), and ethical impact (how we act or judge)",
+        "Relate the text's impact to its broader cultural moment — when was it written? What was happening then?"
+      ],
+      "socraticPrompts": [
+        "Does your prescribed text affirm, challenge or transform the reader's assumptions? What evidence supports your view?",
+        "What cultural assumptions does the text reflect about its historical moment? Do those assumptions feel comfortable or uncomfortable to a modern audience?",
+        "Identify a moment where the text positions you to sympathise with a character you might otherwise judge. How does it do this?",
+        "Has your understanding of this text changed as you've studied it? What caused that shift?"
+      ],
+      "workedExampleTemplate": {
+        "type": "analytical-paragraph",
+        "steps": ["Open with a claim about how the text positions the audience", "Identify the technique and quote the evidence", "Analyse the effect on a specific type of reader (sympathetic, resistant, historical, contemporary)", "Connect to context — what cultural value or assumption is being reinforced or challenged?", "Link to the broader module concept"]
+      },
+      "relatedDotPoints": ["EA-CM1.1", "EA-CM1.3", "EA-CM3.1"]
+    },
+
+    "EA-CM1.3": {
+      "code": "EA-CM1.3",
+      "name": "Language, form and features for analytical response",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM1",
+      "year": 12,
+      "summary": "Sophisticated analytical writing requires precise metalanguage, well-integrated evidence, and the ability to connect technique to meaning.",
+      "keyConcepts": [
+        "Metalanguage: specific technical vocabulary used to discuss texts — 'juxtaposition', 'motif', 'irony', 'free indirect discourse', 'enjambment', 'polysyndeton'",
+        "Technique → effect → meaning: the chain of analysis — name what the composer does, describe how it works, explain what it means",
+        "Well-integrated evidence: a quote should be woven into the sentence grammatically, not dropped in as a block",
+        "Form: the genre/type of text (novel, poem, play, essay) and how formal conventions shape meaning",
+        "Structure: how a text is organised — chapters, stanzas, acts, narrative arc — and how this creates meaning"
+      ],
+      "commonErrors": [
+        "Identifying a technique without explaining its effect — 'The composer uses imagery' is a zero-mark observation without analysis",
+        "Using imprecise metalanguage: 'language techniques' or 'literary devices' — be specific",
+        "Block-quoting: copying three lines of text without analysis — embed and select precisely",
+        "Confusing form and structure — form is the type of text; structure is how it is organised internally",
+        "Writing a list of techniques without developing any single idea in depth — depth beats breadth in HSC English"
+      ],
+      "examTips": [
+        "PETAL or TEE structure is a minimum — the best responses go beyond formula to develop sustained argument",
+        "Vary your metalanguage across an essay — don't repeat the same technique word every paragraph",
+        "A short, precise quote (even a phrase or a single word) that is deeply analysed is more impressive than a long quote",
+        "When in doubt: always ask 'so what does this mean about [concept]?' after any technique identification"
+      ],
+      "socraticPrompts": [
+        "Pick a single sentence from your prescribed text. What is the most precise metalanguage term for the dominant technique in that sentence?",
+        "You've identified an example of irony. What does the irony achieve that a direct statement would not?",
+        "How does the form of your prescribed text (poem, novel, play) shape the way its ideas can be expressed?",
+        "Could you make the same argument about your text using different evidence? What does that tell you about your thesis?"
+      ],
+      "workedExampleTemplate": {
+        "type": "analytical-paragraph",
+        "steps": ["Topic sentence: state the argument/idea", "Introduce the technique with precise metalanguage", "Embed a precise, short quote", "Unpack the language at word level — why this word, this image, this structure?", "Explain the effect: what does the reader feel/think/understand?", "Link to the broader concept or thesis"]
+      },
+      "relatedDotPoints": ["EA-CM1.1", "EA-CM1.2", "EA-CM3.1"]
+    },
+
+    "EA-CM2.1": {
+      "code": "EA-CM2.1",
+      "name": "Reading and interpreting unseen texts",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM2",
+      "year": 12,
+      "summary": "Apply analytical skills to unfamiliar texts under exam conditions; read strategically and respond to what is actually in the text.",
+      "keyConcepts": [
+        "Close reading: attending to specific language choices, not general impressions",
+        "Literary texts: poems, short stories, extracts from novels — look for imagery, voice, form, tone",
+        "Non-literary texts: speeches, opinion pieces, advertisements, letters — look for rhetorical devices, audience, purpose",
+        "Synthesising across texts: in multi-text questions, find connections in theme, technique or perspective",
+        "Reading time: use the 5-minute reading time to annotate mentally — identify tone, purpose, key techniques, and the human experience at the centre"
+      ],
+      "commonErrors": [
+        "Writing a personal response ('I felt sad') instead of an analytical one — always ground response in textual evidence",
+        "Paraphrasing the text's content rather than analysing its language",
+        "Applying generic techniques from a prepared text to the unseen material without evidence — respond to what is actually there",
+        "Ignoring the form of the unseen text — a poem should be analysed as a poem (stanza, line break, rhythm), not prose"
+      ],
+      "examTips": [
+        "In reading time: identify the subject, tone, purpose, and one or two dominant techniques — this gives you a skeleton before writing",
+        "Short-answer questions: read the mark allocation — a 2-mark question needs a technique + effect; a 4-mark question needs developed analysis",
+        "For extended response on unseen texts: make a clear argument about how the text represents a human experience, then support with close analysis",
+        "Don't paraphrase — every sentence must contain analysis, not retelling"
+      ],
+      "socraticPrompts": [
+        "You have an unseen poem in front of you. What do you look at first — the title, the first line, the last line, or the overall structure? Why?",
+        "What is the difference between identifying a technique and analysing its effect on meaning?",
+        "How would you approach an unseen non-literary text differently from a poem?",
+        "If two unseen texts have opposite tones on the same topic, how do you write a response that compares them?"
+      ],
+      "workedExampleTemplate": {
+        "type": "unseen-response",
+        "steps": ["Identify the type of text and its subject", "Determine the dominant tone and purpose", "Select 2–3 specific techniques with precise evidence", "For each: technique → quote → effect on meaning → connection to human experience concept", "For extended response: construct an argument that synthesises across the text(s)"]
+      },
+      "relatedDotPoints": ["EA-CM2.2", "EA-CM1.3"]
+    },
+
+    "EA-CM2.2": {
+      "code": "EA-CM2.2",
+      "name": "Short answer comprehension strategies",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM2",
+      "year": 12,
+      "summary": "Respond to short-answer questions with precision and efficiency; tailor depth of response to mark allocation.",
+      "keyConcepts": [
+        "1-mark question: identify one specific technique or feature — a single accurate statement",
+        "2-mark question: identify a technique AND explain its effect — technique + effect",
+        "3–4 mark question: identify technique, embed a precise quote, analyse the effect in depth, connect to the human experience concept",
+        "Avoid padding: every sentence must earn its place — do not repeat the question or define terms unnecessarily",
+        "Precision over quantity: a precise, focused answer outperforms a long, rambling one every time"
+      ],
+      "commonErrors": [
+        "Over-writing for low-mark questions — a 1-mark question needs one sentence, not a paragraph",
+        "Under-writing for high-mark questions — a 4-mark question requires depth and developed analysis",
+        "Beginning the answer with 'The author...' then paraphrasing — start with the technique",
+        "Restating the question as an introduction — unnecessary and wastes time",
+        "Identifying multiple techniques without developing any — breadth is penalised over depth in short answers"
+      ],
+      "examTips": [
+        "A reliable structure for 2–4 mark questions: '[Technique] is used in [quote], which [effect on meaning/reader]'",
+        "Read the question verb carefully: 'identify' requires naming; 'explain' requires analysis; 'discuss' requires extended response",
+        "Allocate roughly 1.5–2 minutes per mark in short-answer responses",
+        "Check: does your response actually answer the specific question asked, or a question you prepared for?"
+      ],
+      "socraticPrompts": [
+        "A question asks: 'How does the composer use language to convey the speaker's grief? (3 marks)' — what must your answer contain?",
+        "What is the difference between 'identifying' a technique and 'explaining' its effect?",
+        "You've written five lines for a 2-mark question. What would you cut?",
+        "The question asks about 'language features' — what specific metalanguage words will you use?"
+      ],
+      "workedExampleTemplate": {
+        "type": "short-answer",
+        "steps": ["Identify the technique using precise metalanguage", "Embed a brief, accurate quote from the text", "Explain the effect: what does this make the reader feel/understand?", "For 3–4 marks: extend to connect to the broader concept or purpose of the text"]
+      },
+      "relatedDotPoints": ["EA-CM2.1", "EA-CM1.3"]
+    },
+
+    "EA-CM3.1": {
+      "code": "EA-CM3.1",
+      "name": "Extended response — prescribed text",
+      "topic": "EA-CM",
+      "subtopic": "EA-CM3",
+      "year": 12,
+      "summary": "Write a 20-mark analytical essay about the prescribed text that is thesis-driven, analytically sustained, and conceptually sophisticated.",
+      "keyConcepts": [
+        "Thesis: a clear, specific, arguable claim that responds directly to the question — not a broad statement about the text",
+        "Sustained argument: every paragraph must advance the thesis, not merely describe the text",
+        "Conceptual engagement: responses must engage with the module concept (human experiences) throughout, not only in the introduction",
+        "Textual integrity: integrate close analysis of language features throughout — don't save quotes for one paragraph",
+        "Essay structure: introduction (thesis + roadmap) → body paragraphs (each developing one aspect of thesis) → conclusion (synthesis)"
+      ],
+      "commonErrors": [
+        "A thesis that merely states 'This text explores human experiences' — too vague; a strong thesis makes a specific, arguable claim",
+        "Narrative paragraphs: retelling what happens rather than analysing how language creates meaning",
+        "Undeveloped body paragraphs: one technique per paragraph with no sustained development of the idea",
+        "Forgetting to connect back to the question — each paragraph should demonstrate relevance to what was asked",
+        "Conclusion that merely repeats the introduction — a good conclusion synthesises and extends the argument"
+      ],
+      "examTips": [
+        "Spend 5 minutes planning before writing — a clear plan prevents structural drift",
+        "A strong thesis: '[Text] represents [aspect of human experience] through [technique/approach], revealing [specific insight about humanity]'",
+        "Aim for 3–4 developed body paragraphs — one complex, well-supported idea per paragraph",
+        "In the exam, write legibly and leave a blank line between paragraphs — markers read hundreds of scripts",
+        "Read the question carefully — a response to a different question, no matter how good, will score poorly"
+      ],
+      "socraticPrompts": [
+        "Read your thesis statement aloud. Could someone argue the opposite? If not, it is likely too obvious — sharpen it.",
+        "Take your first body paragraph. Does every sentence advance the argument, or does any sentence just describe what happens?",
+        "How many times have you used the phrase 'human experience' or referred back to the question in your essay? Is it enough?",
+        "What would your essay's argument be if you only had one paragraph to make it?"
+      ],
+      "workedExampleTemplate": {
+        "type": "essay-structure",
+        "steps": ["Introduction: context + thesis + roadmap (2–3 sentences each)", "Body paragraph 1: topic sentence → technique + evidence → analysis → link to thesis/concept", "Body paragraph 2: topic sentence → technique + evidence → analysis → link to thesis/concept", "Body paragraph 3: topic sentence → technique + evidence → analysis → link to thesis/concept", "Optional paragraph 4: counter-argument or complexity", "Conclusion: synthesise the argument — don't just repeat the introduction"]
+      },
+      "relatedDotPoints": ["EA-CM1.1", "EA-CM1.2", "EA-CM1.3"]
+    },
+
+    "EA-A1.1": {
+      "code": "EA-A1.1",
+      "name": "How texts in conversation respond to each other",
+      "topic": "EA-A",
+      "subtopic": "EA-A1",
+      "year": 12,
+      "summary": "Analyse how a later text engages with, reimagines or responds to an earlier text — the 'conversation' is about ideas, values, form and representation.",
+      "keyConcepts": [
+        "Textual conversation: the way a later text responds to, reimagines, subverts or extends an earlier text",
+        "Reimagining: a later composer takes characters, settings, themes or structures from an earlier text and transforms them for a new context",
+        "Intertextuality: the relationship between texts — direct allusion, structural echo, thematic parallel, or deliberate contrast",
+        "Companion text: the more recent text (e.g. Hag-Seed) that is 'in conversation' with the precursor text (e.g. The Tempest)",
+        "The conversation reveals: what each composer valued, questioned, or challenged about their own cultural moment",
+        "Allusion: a deliberate reference to another text — can affirm or subvert the original"
+      ],
+      "commonErrors": [
+        "Writing about the two texts separately in alternate paragraphs — a comparative essay must integrate both texts in every paragraph",
+        "Treating the conversation as one-directional — it is a dialogue; consider what both texts do with shared ideas",
+        "Identifying a similarity or difference without explaining WHY it is significant — 'Both texts explore power' is not analysis",
+        "Forgetting the effect of reimagining: what does Atwood's version of The Tempest achieve that Shakespeare's could not?"
+      ],
+      "examTips": [
+        "The word 'conversation' implies exchange — your essay must show ideas travelling between both texts",
+        "Useful comparative phrases: 'While Shakespeare... Atwood...', 'In contrast to...', 'Both composers...', 'Where The Tempest... Hag-Seed...'",
+        "Focus on what CHANGES in the reimagining — that change is where meaning is made",
+        "In the thesis, name the relationship between the texts, not just the theme they share"
+      ],
+      "socraticPrompts": [
+        "Choose one moment in Hag-Seed that directly echoes The Tempest. What does Atwood keep the same, and what does she change? Why?",
+        "What does Atwood's choice to set Hag-Seed in a prison do to Shakespeare's themes of imprisonment and power?",
+        "If The Tempest was written in Atwood's time, how might it look different? What does that tell you about context?",
+        "In what ways does the later text challenge the values of the earlier text? Give a specific example."
+      ],
+      "workedExampleTemplate": {
+        "type": "comparative-paragraph",
+        "steps": ["Topic sentence: state the comparative argument (how both texts engage with the same idea differently)", "Text 1 (Shakespeare): technique + quote + analysis", "Transition to Text 2 (Atwood): 'In contrast/Similarly/In response...'", "Text 2: technique + quote + analysis", "Synthesise: what does the difference/similarity reveal about the conversation between the texts?", "Link to thesis"]
+      },
+      "relatedDotPoints": ["EA-A1.2", "EA-A1.3"]
+    },
+
+    "EA-A1.2": {
+      "code": "EA-A1.2",
+      "name": "How context shapes meaning in paired texts",
+      "topic": "EA-A",
+      "subtopic": "EA-A1",
+      "year": 12,
+      "summary": "Context is not background information — it is a shaping force on what composers can imagine, say, and mean.",
+      "keyConcepts": [
+        "Historical context: the political, social and cultural events surrounding a text's production",
+        "The Tempest (c.1611): Jacobean England — colonial expansion, patriarchal power, divine right of kings, theatrical convention",
+        "Hag-Seed (2016): contemporary — feminist consciousness, prison reform, questions of rehabilitation vs punishment, metafiction",
+        "Changing contexts create new meanings: what was natural in Elizabethan England (Prospero's patriarchal power) is questioned in Atwood's feminist context",
+        "Context shapes what is silenced as much as what is said — whose voices are absent from The Tempest? How does Atwood respond to those silences?"
+      ],
+      "commonErrors": [
+        "Listing historical facts without connecting them to specific textual choices — context analysis must be tethered to the text",
+        "Treating context as an introduction rather than integrating it throughout",
+        "Assuming the composer is always a passive product of their context — composers can also resist, critique or transcend their moment",
+        "Equating Atwood's critique of Shakespeare with a claim that The Tempest is 'wrong' — assess both on their own terms"
+      ],
+      "examTips": [
+        "Connect context to a specific scene, image or language choice — 'The Jacobean context of colonial expansion is reflected in Prospero's language of possession: he refers to Caliban as 'my slave'...'",
+        "Show that you understand the texts' different moments — use dates if helpful",
+        "'Recontextualise' is a key Module A word — explain what Atwood does with Shakespeare's material in a new context"
+      ],
+      "socraticPrompts": [
+        "What does Prospero's treatment of Caliban suggest about Jacobean attitudes to colonialism? How does Atwood respond to this?",
+        "How does the shift from a 16th-century island to a 21st-century prison change the meaning of imprisonment and freedom?",
+        "What could Margaret Atwood say about power in 2016 that Shakespeare could not — or would not — say in 1611?",
+        "Choose one character from The Tempest. How does Atwood reinterpret them through a contemporary lens, and why?"
+      ],
+      "workedExampleTemplate": {
+        "type": "contextual-analysis",
+        "steps": ["Identify the contextual force (historical, cultural, social)", "Connect it to a specific textual choice (language, structure, character)", "Explain how the same context is handled differently in the paired text", "Analyse the effect of this contextual shift on meaning", "Link to the comparative argument"]
+      },
+      "relatedDotPoints": ["EA-A1.1", "EA-A1.3"]
+    },
+
+    "EA-A1.3": {
+      "code": "EA-A1.3",
+      "name": "Comparative essay writing for Module A",
+      "topic": "EA-A",
+      "subtopic": "EA-A1",
+      "year": 12,
+      "summary": "A Module A essay must integrate both texts throughout — not treat them in separate halves — and argue a clear comparative thesis.",
+      "keyConcepts": [
+        "Integrated comparison: both texts appear in every body paragraph — not 'first Shakespeare, then Atwood'",
+        "Comparative thesis: makes a claim about the RELATIONSHIP between the texts, not just about each separately",
+        "Linking words: 'whereas', 'similarly', 'in contrast', 'while', 'both composers', 'unlike Shakespeare', 'Atwood extends this by...'",
+        "Balance: roughly equal analysis of both texts — markers penalise imbalance",
+        "The comparison itself creates meaning: the ACT of comparing reveals what each text uniquely achieves"
+      ],
+      "commonErrors": [
+        "The 'tennis match' approach: one paragraph on Text 1, next paragraph on Text 2, alternating — this is not integrated comparison",
+        "A thesis that names both texts and a theme but makes no comparative claim: 'Both The Tempest and Hag-Seed explore power' — add the HOW and the SIGNIFICANCE",
+        "Imbalance: six quotes from Shakespeare, two from Atwood — both texts must be equally evidenced",
+        "Using comparative linking words without actually comparing — 'Similarly, Atwood also uses...' followed by unrelated analysis"
+      ],
+      "examTips": [
+        "Test your essay: cover either text's name — if the paragraph still makes sense without it, you are not comparing",
+        "A strong comparative thesis: 'While [Text 1] represents [concept] through [technique], [Text 2] recontextualises this to reveal [new insight]'",
+        "In each paragraph: sentence 1 = topic sentence (comparative), sentence 2–3 = Text 1 analysis, sentence 4 = pivot ('In contrast/Similarly, Atwood...'), sentence 5–6 = Text 2 analysis, sentence 7 = synthesis"
+      ],
+      "socraticPrompts": [
+        "Read your comparative thesis. Does it tell me what each text does differently, or just that they both explore the same theme?",
+        "In your last body paragraph, how many sentences mention both texts? If fewer than half, how can you integrate more?",
+        "What linking phrase did you use to connect the two texts? Is it accurate — are the texts actually similar, or are they different?",
+        "What is the single most important thing the 'conversation' between these texts reveals about the theme they share?"
+      ],
+      "workedExampleTemplate": {
+        "type": "comparative-essay",
+        "steps": ["Introduction: comparative thesis that makes a claim about the relationship between texts", "Body paragraphs (each integrated): topic sentence (comparative claim) → Text 1 analysis → pivot phrase → Text 2 analysis → synthesis", "Ensure each paragraph contains roughly equal treatment of both texts", "Conclusion: synthesise the significance of the textual conversation — what does the conversation between the texts illuminate?"]
+      },
+      "relatedDotPoints": ["EA-A1.1", "EA-A1.2"]
+    },
+
+    "EA-B1.1": {
+      "code": "EA-B1.1",
+      "name": "Literary value and textual integrity",
+      "topic": "EA-B",
+      "subtopic": "EA-B1",
+      "year": 12,
+      "summary": "Module B requires you to evaluate a text's literary value and understand how all its parts work together as a coherent whole — this is textual integrity.",
+      "keyConcepts": [
+        "Literary value: the qualities that make a text enduring, complex, and meaningful across time and culture",
+        "Textual integrity: the unity and internal consistency of a text — its language, structure, imagery and ideas form a coherent whole",
+        "Aesthetic qualities: the beauty or craft of language — rhythm, imagery, voice, tone — considered as meaningful in themselves",
+        "Personal response: what you genuinely think and feel about the text — Module B rewards authentic engagement",
+        "Critical evaluation: going beyond personal response to assess the text's worth, complexity and effectiveness",
+        "Hamlet: its literary value lies in its psychological depth, linguistic brilliance, structural complexity and philosophical ambiguity"
+      ],
+      "commonErrors": [
+        "Describing plot rather than evaluating literary value — 'Hamlet kills Claudius at the end' is not analysis",
+        "Treating every element of the text as equally important — part of evaluation is prioritising what matters most",
+        "Confusing textual integrity with 'the text is good' — integrity means coherence and unity, not quality",
+        "A purely personal response without critical distance — 'I found Hamlet annoying' needs to become 'Hamlet's irresolute characterisation achieves...'"
+      ],
+      "examTips": [
+        "Use the phrase 'textual integrity' at least once in your Module B essay — and define it in relation to your text",
+        "Show that you have a genuine, specific view — not just agreement with the most common reading",
+        "Literary value can be evaluated through: sustained imagery, structural precision, thematic depth, enduring relevance",
+        "When you argue that the text has literary value, prove it — show HOW the language achieves something remarkable"
+      ],
+      "socraticPrompts": [
+        "What do you genuinely find most remarkable about Hamlet? Start from that authentic response and build your essay from it.",
+        "What makes Hamlet a text with enduring literary value — why do people still read it 400 years later?",
+        "Identify one moment in Hamlet where the language and the meaning are perfectly unified. That is textual integrity.",
+        "Has your view of Hamlet changed during your study of it? What caused that change, and what does it tell you about the text?"
+      ],
+      "workedExampleTemplate": {
+        "type": "module-b-essay",
+        "steps": ["Introduction: establish your evaluative thesis — what specific literary value does the text possess?", "Body paragraphs: each develops one aspect of literary value through close language analysis", "Show how micro-level language choices (word, image, rhythm) connect to macro-level meaning", "Conclusion: synthesise your evaluation — why does this text endure? What does its textual integrity reveal?"]
+      },
+      "relatedDotPoints": ["EA-B1.2", "EA-B1.3"]
+    },
+
+    "EA-B1.2": {
+      "code": "EA-B1.2",
+      "name": "Critical perspectives and interpretations",
+      "topic": "EA-B",
+      "subtopic": "EA-B1",
+      "year": 12,
+      "summary": "Engage with multiple ways of reading a text; understand how different frameworks illuminate different aspects of meaning.",
+      "keyConcepts": [
+        "Plurality of meaning: a literary text can sustain multiple valid interpretations — this is a sign of its depth",
+        "Critical frameworks: different theoretical lenses produce different readings (feminist, Marxist, postcolonial, psychoanalytic, etc.) — students do not need to name these frameworks but should be aware readings are shaped by values",
+        "Feminist reading of Hamlet: examines Ophelia's and Gertrude's marginalisation and what their treatment reveals about patriarchal power",
+        "Psychoanalytic reading: Hamlet's delay as Oedipal conflict, the Ghost as projection of unconscious desire",
+        "Personal reading: what YOU make of the text, grounded in evidence — not 'right or wrong' but defensible",
+        "Critical disagreement: Shakespeare scholars have disagreed about Hamlet for centuries — acknowledging this is sophisticated"
+      ],
+      "commonErrors": [
+        "Presenting only one 'correct' interpretation — Module B rewards awareness of interpretive complexity",
+        "Naming a critical lens without using it: 'A feminist reading...' followed by plot summary",
+        "Abandoning your own reading entirely to describe what critics say — your voice must be present",
+        "Treating alternate readings as wrong rather than as producing different valid insights"
+      ],
+      "examTips": [
+        "You don't need to name critics or frameworks explicitly — demonstrate sophisticated understanding through your analysis",
+        "Show that the text is complex: 'While some readings interpret Hamlet's delay as cowardice, the language of Act III suggests a more nuanced psychological paralysis...'",
+        "Acknowledging a counter-reading and then demonstrating why your reading is more compelling is very sophisticated",
+        "The phrase 'a reading that...' signals awareness of interpretive plurality"
+      ],
+      "socraticPrompts": [
+        "Is Hamlet a tragedy about one man's psychological paralysis, or a social critique of a corrupt court? Can it be both?",
+        "How does a feminist reading of Ophelia change your understanding of the play's representation of power?",
+        "What is the most common interpretation of 'To be or not to be'? Do you agree with it? What else might it mean?",
+        "Which character in Hamlet do you find most difficult to interpret? Why might Shakespeare have made them ambiguous?"
+      ],
+      "workedExampleTemplate": {
+        "type": "critical-interpretation",
+        "steps": ["State your interpretive position clearly", "Provide close textual evidence for your reading", "Acknowledge an alternative reading briefly", "Demonstrate why your evidence better supports your interpretation", "Connect to the text's broader literary value and textual integrity"]
+      },
+      "relatedDotPoints": ["EA-B1.1", "EA-B1.3"]
+    },
+
+    "EA-B1.3": {
+      "code": "EA-B1.3",
+      "name": "Language, form and aesthetic qualities",
+      "topic": "EA-B",
+      "subtopic": "EA-B1",
+      "year": 12,
+      "summary": "Module B demands close attention to the specific language of the text — the aesthetic qualities are not decoration but the substance of meaning.",
+      "keyConcepts": [
+        "Aesthetic qualities: the beauty, craft and precision of specific language choices — rhythm, imagery, tone, diction, syntax",
+        "Micro to macro: a precise word choice (micro) contributes to a thematic idea (macro) — the best analysis shows this chain",
+        "In Hamlet: soliloquies demonstrate free indirect thought; the language of corruption (disease, decay, rotting) permeates the play as an extended motif; iambic pentameter and its interruptions are meaningful",
+        "Form reinforces meaning: the play within the play ('The Mousetrap') is both a structural device and a meta-commentary on theatre and truth",
+        "Dramatic technique: soliloquy, aside, folio stage direction, dramatic irony — these are forms of meaning unique to drama"
+      ],
+      "commonErrors": [
+        "Analysing Hamlet as if it were a novel — it is a play written to be performed; staging, audience knowledge, and dramatic irony matter",
+        "Quoting long passages and then writing one sentence of analysis — short, precise quotes with sustained analysis are better",
+        "Describing imagery without explaining what it means: 'Shakespeare uses imagery of disease' without explaining what that reveals",
+        "Missing the sound and rhythm of the language — in a play by Shakespeare, the music of the language is part of the meaning"
+      ],
+      "examTips": [
+        "Show awareness that Hamlet is a play: 'Shakespeare positions the audience' not 'Shakespeare shows the reader'",
+        "The soliloquy is Hamlet's most important formal feature — analyse at least one in depth",
+        "The disease/corruption motif is ubiquitous — trace it through the play to show sustained thematic coherence (textual integrity)",
+        "Specific language: the word 'rotten' in 'Something is rotten in the state of Denmark' does enormous symbolic work — analyse at word level"
+      ],
+      "socraticPrompts": [
+        "Choose a single line from Hamlet's 'To be or not to be' soliloquy. What does the specific word choice reveal about his psychological state?",
+        "How does Shakespeare's use of the disease motif throughout Hamlet contribute to the play's textual integrity?",
+        "What is the effect of Hamlet switching between verse and prose in different scenes?",
+        "How does the 'play within a play' (Act III, Scene 2) work as both a dramatic device and a comment on the nature of truth?"
+      ],
+      "workedExampleTemplate": {
+        "type": "close-language-analysis",
+        "steps": ["Identify the specific language feature — be as precise as possible (not just 'metaphor' but what kind and what it depicts)", "Quote precisely — as short as possible while retaining the key language", "Analyse at word level: why THIS word, THIS image, THIS rhythm?", "Connect to the effect on an audience watching the play", "Show how this specific choice contributes to the text's textual integrity and literary value"]
+      },
+      "relatedDotPoints": ["EA-B1.1", "EA-B1.2"]
+    },
+
+    "EA-C1.1": {
+      "code": "EA-C1.1",
+      "name": "The craft of effective writing",
+      "topic": "EA-C",
+      "subtopic": "EA-C1",
+      "year": 12,
+      "summary": "Skilled writing is defined by intentional choices — understanding WHY you make each decision is the metacognitive heart of Module C.",
+      "keyConcepts": [
+        "Intentional choice: every decision a writer makes — word, sentence length, punctuation, perspective — should be deliberate and purposeful",
+        "Voice: the distinctive personality, tone and manner of a piece of writing — intimate, ironic, authoritative, vulnerable",
+        "Perspective: the point of view from which a story is told — first person (intimate), second person (confrontational), third person (distanced or omniscient)",
+        "Syntax for effect: long, flowing sentences create immersion; short, fragmented sentences create urgency or shock",
+        "Structural choices: in media res (beginning in the middle), circular structure, non-linear timeline — these are craft decisions, not accidents"
+      ],
+      "commonErrors": [
+        "Using a technique because it sounds impressive rather than because it serves the writing — craft is purposeful, not decorative",
+        "Inconsistent voice: shifting from formal to casual without intention disrupts the reader",
+        "Over-describing at the expense of pacing — beginning writers often 'over-write'; skilled writers know when to be spare",
+        "Explaining the meaning of the story to the reader — show, don't tell",
+        "Purple prose: excessive adjectives and adverbs signal lack of craft; precise nouns and verbs are stronger"
+      ],
+      "examTips": [
+        "In your creative writing, every technique you use should be one you can explain in your reflective statement",
+        "Strong first lines: begin with an image, a fragment, an action, a question — never with 'It was a dark and stormy night' or 'My name is...'",
+        "Sentence variation creates rhythm — read your work aloud to hear if it flows",
+        "The most memorable creative writing usually has a distinctive voice — find yours before the exam"
+      ],
+      "socraticPrompts": [
+        "Read your opening paragraph aloud. What impression does the voice create? Is that the impression you intended?",
+        "Choose one sentence from your creative piece. Why is it that length? What would change if it were longer? Shorter?",
+        "What perspective did you choose and why? What can this perspective show that others couldn't?",
+        "What is the single most important craft choice in your piece? Could you explain it in your reflective statement?"
+      ],
+      "workedExampleTemplate": {
+        "type": "craft-analysis",
+        "steps": ["Identify a specific craft element (sentence structure, perspective, voice, pacing)", "Explain the deliberate choice: why was this chosen?", "Demonstrate its effect on the reader", "Connect to the overall purpose or meaning of the piece"]
+      },
+      "relatedDotPoints": ["EA-C1.2", "EA-C1.3", "EA-C2.1"]
+    },
+
+    "EA-C1.2": {
+      "code": "EA-C1.2",
+      "name": "Writing for specific forms and purposes",
+      "topic": "EA-C",
+      "subtopic": "EA-C1",
+      "year": 12,
+      "summary": "Different forms have different conventions and possibilities — understanding and working within (or deliberately breaking) those conventions demonstrates craft.",
+      "keyConcepts": [
+        "Narrative: driven by character, conflict and resolution — may be linear, non-linear, fragmented; uses scene-setting, dialogue, interior monologue",
+        "Persuasive: driven by argument and evidence — uses logos (logic), pathos (emotion), ethos (credibility); rhetorical questions, anaphora, rule of three",
+        "Reflective: first-person exploration of an experience or idea — uses present tense reflection alongside past tense narration; mixes personal with universal",
+        "Hybrid forms: creative non-fiction, lyric essay, prose poetry — combine features of multiple forms for deliberate effect",
+        "Register: formal/informal; intimate/distant — must be appropriate for the audience and purpose"
+      ],
+      "commonErrors": [
+        "Writing a 'story' that is just a scene without narrative arc — even a short piece needs some form of tension and resolution",
+        "Mixing register accidentally — a reflective piece that suddenly uses formal academic language loses its intimacy",
+        "Ignoring the form's conventions entirely — free experimentation without craft awareness is not 'creative'",
+        "Choosing a form you are unfamiliar with in the exam — practise your chosen form before the exam"
+      ],
+      "examTips": [
+        "Know at least two forms well and practise them — narrative and reflective are most reliably manageable in exam conditions",
+        "The stimulus is not the topic — it is a springboard; respond to it imaginatively, not literally",
+        "A clear genre/form signals to the marker that you are in control",
+        "In a hybrid piece, the transitions between modes must be purposeful — explain them in your reflective statement"
+      ],
+      "socraticPrompts": [
+        "Is your piece a narrative, a reflective essay, or a hybrid? What are the conventions of that form that you are working with?",
+        "Read your piece's opening. What form does it signal to the reader in the first sentence?",
+        "If you were to rewrite your piece in a different form — say, as a letter rather than a narrative — what would change?",
+        "What is the purpose of your piece? What do you want the reader to think, feel or understand by the end?"
+      ],
+      "workedExampleTemplate": {
+        "type": "form-analysis",
+        "steps": ["Identify the form and its conventions", "Demonstrate how your piece engages with those conventions", "Identify one place where you deliberately subvert or extend the convention", "Explain the effect of that choice in your reflective statement"]
+      },
+      "relatedDotPoints": ["EA-C1.1", "EA-C1.3", "EA-C2.1", "EA-C2.2"]
+    },
+
+    "EA-C1.3": {
+      "code": "EA-C1.3",
+      "name": "The reflective statement",
+      "topic": "EA-C",
+      "subtopic": "EA-C1",
+      "year": 12,
+      "summary": "The reflective statement articulates your compositional choices — it is not a summary of your story but a metacognitive account of your craft decisions.",
+      "keyConcepts": [
+        "Metacognition: thinking about your own thinking/writing — explaining WHY you made choices, not just WHAT they are",
+        "The reflective statement is NOT a retelling of the story — it analyses the writing, not the story",
+        "Key structure: what choice did I make? → why did I make it? → what effect was I aiming for? → how does it connect to the module/stimulus?",
+        "Tone of the reflective statement: analytical but personal — use 'I' and discuss your intentions honestly",
+        "Connect to Module C concepts: discuss how your piece demonstrates your understanding of the craft of writing"
+      ],
+      "commonErrors": [
+        "Retelling the plot of the creative piece in the reflective — the examiner has just read it; don't summarise it",
+        "Generic claims: 'I used imagery to create vivid description' — be specific about WHICH imagery and WHAT effect",
+        "Reflection that is entirely about inspiration or personal connection rather than craft",
+        "Not connecting the reflection to the module's concept of craft — the reflection must show that you understand writing as a deliberate act"
+      ],
+      "examTips": [
+        "The reflective statement is typically 150–200 words — be concise and precise",
+        "Structure: paragraph 1 — the key craft choices and their intended effects; paragraph 2 — how the piece engages with the module concept or stimulus",
+        "Use metalanguage: 'I employed a fragmented syntax to mirror my narrator's psychological unravelling'",
+        "Read the reflective statement after your creative piece — they must be coherent with each other"
+      ],
+      "socraticPrompts": [
+        "In one sentence, what is the most important craft decision you made in your creative piece? Can you say why?",
+        "If someone read your reflective statement without reading the creative piece, would they understand what kind of writing it is?",
+        "Does your reflective statement use metalanguage? Name three precise terms you could use to describe your choices.",
+        "How does your creative piece demonstrate your understanding of the craft of writing — not just that you have ideas, but that you can control language?"
+      ],
+      "workedExampleTemplate": {
+        "type": "reflective-statement",
+        "steps": ["Sentence 1: name the form and central purpose of the piece", "Paragraph 1: 2–3 specific craft choices with metalanguage — explain why each was made and what effect was intended", "Paragraph 2: connect to the module concept (craft of writing) and/or the stimulus — what understanding of writing does this piece embody?"]
+      },
+      "relatedDotPoints": ["EA-C1.1", "EA-C1.2", "EA-C2.1"]
+    },
+
+    "EA-C2.1": {
+      "code": "EA-C2.1",
+      "name": "Responding to stimulus in imaginative/creative writing",
+      "topic": "EA-C",
+      "subtopic": "EA-C2",
+      "year": 12,
+      "summary": "The Module C creative task requires a purposeful, sophisticated piece that responds to a stimulus with genuine craft — not a formulaic or predictable response.",
+      "keyConcepts": [
+        "Stimulus interpretation: a stimulus (image, phrase, idea) is a starting point, not a constraint — the best responses find unexpected, oblique angles",
+        "Sustained piece: a complete, coherent piece with a clear arc, not a fragment or an underdeveloped sketch",
+        "Sophistication: demonstrated through control of voice, precise language, unexpected structure, and complexity of idea",
+        "Avoiding the predictable: common mistakes are literal responses (a story about exactly what the stimulus shows) or genre defaults (the zombie apocalypse story, the bullying narrative)",
+        "Narrative arc: even a short piece needs tension, development and some form of resolution or irresolution"
+      ],
+      "commonErrors": [
+        "A literal response to the stimulus — if the stimulus is an image of a bridge, writing a story about a bridge is the least creative interpretation",
+        "No narrative arc — beginning with an interesting idea but going nowhere",
+        "Starting the story with waking up, looking in a mirror, or describing the weather",
+        "Uncontrolled length — Module C creative pieces should be 600–800 words; don't write 200 or 1500",
+        "Grammatical or spelling errors that undermine an otherwise strong piece — proofread in the last 2 minutes"
+      ],
+      "examTips": [
+        "Spend 5 minutes planning: What is the stimulus actually about, underneath its surface? What unexpected angle can I take?",
+        "Your strongest asset is a distinctive, controlled voice — establish it in the first sentence",
+        "A strong ending: don't resolve everything neatly; leave the reader with an image, a question, or a resonant ambiguity",
+        "Know your genre: if you write a reflective piece, a poem, or a hybrid form, signal this clearly to the marker"
+      ],
+      "socraticPrompts": [
+        "What is the most obvious response to this stimulus? Now what is the least obvious? Which makes a more interesting piece?",
+        "What is the emotional truth at the centre of your piece? Does every sentence serve that truth?",
+        "Read your first line. Would a marker remember it after reading 200 other pieces? How could you make it more distinctive?",
+        "Where is the tension in your piece? What creates it, and is it resolved, unresolved, or complicated?"
+      ],
+      "workedExampleTemplate": {
+        "type": "creative-writing",
+        "steps": ["Interpret the stimulus obliquely — find the unexpected angle", "Establish voice and perspective in the first sentence", "Create tension: introduce a conflict, question, or ambiguity early", "Develop with deliberate craft choices — vary sentence length, use imagery purposefully", "End with resonance: an image, a turn, an irresolution that stays with the reader", "Write 600–800 words"]
+      },
+      "relatedDotPoints": ["EA-C1.1", "EA-C1.2", "EA-C1.3", "EA-C2.2"]
+    },
+
+    "EA-C2.2": {
+      "code": "EA-C2.2",
+      "name": "Analytical response about writing craft",
+      "topic": "EA-C",
+      "subtopic": "EA-C2",
+      "year": 12,
+      "summary": "An analytical Module C response examines how a composer uses specific craft elements to create meaning — it is a precise, argument-driven essay.",
+      "keyConcepts": [
+        "The craft analytical essay is distinct from other module essays — the focus is HOW something is written, not just WHAT it means",
+        "Argument: a clear thesis about the composer's craft choices and their effect",
+        "Precision: the best analytical responses zoom in to single lines, single words, single structural choices",
+        "Effect on the reader: always connect the analysis to what the reader experiences as a result of the craft choice",
+        "Awareness of intention: 'The composer deliberately...' — part of Module C is recognising writing as a purposeful act"
+      ],
+      "commonErrors": [
+        "Writing about themes and ideas without connecting them to specific craft decisions",
+        "Treating the analytical response as identical to Module A or B essays — Module C is specifically about HOW texts are crafted",
+        "Vague claims: 'The writer uses good language' — be specific about which technique, which line, which effect",
+        "Ignoring the reader: craft choices are made to produce effects on an audience — always include this dimension"
+      ],
+      "examTips": [
+        "Use the word 'craft' or 'crafts' in your thesis — signal that you understand what the module is asking",
+        "Structure each paragraph around a single craft choice, developed in depth",
+        "Connect each analysis back to the writer's larger purpose — why does this craft choice serve the overall piece?",
+        "Show range: analyse at least three different levels of craft (word choice, sentence structure, structural/form choice)"
+      ],
+      "socraticPrompts": [
+        "What is the single most brilliant craft decision in the text you are writing about? Why is it brilliant?",
+        "How does the composer's choice of form affect what can be expressed? Would the meaning change in a different form?",
+        "Pick a single word from the text. Why that word and not a synonym? What does the specific choice achieve?",
+        "What effect does the composer's structural choice (how the text begins and ends) create for the reader?"
+      ],
+      "workedExampleTemplate": {
+        "type": "craft-analytical-essay",
+        "steps": ["Thesis: make a specific claim about the composer's craft and its effect", "Body paragraphs: each focuses on one craft decision — word level, sentence level, or structural level", "For each: name the craft choice → quote the example → analyse the effect on the reader → connect to purpose", "Conclusion: synthesise — what does this analysis reveal about the composer's mastery of craft?"]
+      },
+      "relatedDotPoints": ["EA-C1.1", "EA-C1.2", "EA-C2.1"]
+    },
+
+    "EA-AOS1.1": {
+      "code": "EA-AOS1.1",
+      "name": "Exploring the concept of discovery",
+      "topic": "EA-AOS",
+      "subtopic": "EA-AOS1",
+      "year": 11,
+      "summary": "Discovery encompasses physical, emotional, intellectual and spiritual experiences — texts represent it as transformative, uncomfortable, or revelatory.",
+      "keyConcepts": [
+        "Types of discovery: physical (finding a place, object, person), intellectual (new understanding), emotional (self-discovery), spiritual (transcendent experience)",
+        "Fresh and intensely meaningful: a discovery that is completely new and changes the discoverer",
+        "Re-discovery: recovering something lost — a memory, a relationship, a belief",
+        "Disturbing discovery: unsettling realisations — about oneself, others, or the world",
+        "Discovery as process and product: texts explore both the act of discovering and its aftermath",
+        "Context of discovery: the same discovery may have different significance depending on the discoverer's context and values"
+      ],
+      "commonErrors": [
+        "Treating discovery as always positive — discoveries can be devastating, unwanted, or morally complex",
+        "Not connecting the discovery to the text's language choices — always analyse HOW discovery is represented",
+        "A related text that is tangentially connected — the related text must centrally engage with the concept"
+      ],
+      "examTips": [
+        "Use the language of discovery in your essay: 'profound discovery', 'unsettling realisation', 'transformative experience'",
+        "Ensure your related text is genuinely about discovery — not just a text you like",
+        "Analyse both what is discovered AND the effect of the discovery on the discoverer and the reader"
+      ],
+      "socraticPrompts": [
+        "What kinds of discovery does your prescribed text represent? Are they positive, negative, or complex?",
+        "How does the language of your text signal that a discovery is occurring?",
+        "What related text have you chosen? What type of discovery does it represent, and how does it connect to your prescribed text?"
+      ],
+      "workedExampleTemplate": {
+        "type": "discovery-paragraph",
+        "steps": ["Identify the type of discovery being represented", "Name the technique and embed a precise quote", "Analyse how the language represents the experience of discovery", "Discuss the significance of the discovery — how does it change the character, reader, or understanding?", "Connect to the concept of discovery"]
+      },
+      "relatedDotPoints": ["EA-AOS1.2"]
+    },
+
+    "EA-AOS1.2": {
+      "code": "EA-AOS1.2",
+      "name": "How discovery is represented in prescribed and related texts",
+      "topic": "EA-AOS",
+      "subtopic": "EA-AOS1",
+      "year": 11,
+      "summary": "The Area of Study requires both the prescribed text and a student-chosen related text; together they develop a richer understanding of discovery.",
+      "keyConcepts": [
+        "Related text: chosen by the student — must be a different form from the prescribed text and must genuinely engage with the concept of discovery",
+        "Connections: texts may represent similar or contrasting aspects of discovery — either approach is valid",
+        "Personal response: the Area of Study invites genuine personal engagement with the concept",
+        "Range of forms: related texts can be poems, films, songs, speeches, artwork — the form should be distinct from the prescribed text",
+        "Synthesis: a strong response shows how studying both texts together deepens understanding of discovery"
+      ],
+      "commonErrors": [
+        "A related text that is not genuinely about discovery — it must be central, not peripheral",
+        "Treating the related text as more important than the prescribed text — balance is required",
+        "Not varying the form of the related text from the prescribed text"
+      ],
+      "examTips": [
+        "Choose a related text that offers a different perspective on discovery from your prescribed text — contrast is useful",
+        "Have 2–3 specific quotes or moments from your related text ready to use in the exam",
+        "The related text analysis should be shorter than the prescribed text analysis — roughly 30% of the essay"
+      ],
+      "socraticPrompts": [
+        "What related text have you selected? Why does it represent discovery more genuinely than an alternative you considered?",
+        "How does your related text represent discovery differently from your prescribed text? What does the comparison reveal?",
+        "Can you use a specific moment from your related text to support a point you're making about the concept of discovery?"
+      ],
+      "workedExampleTemplate": {
+        "type": "related-text-analysis",
+        "steps": ["Briefly introduce the related text and its form", "Identify the type and representation of discovery", "Provide specific evidence (quote, scene, image)", "Analyse how the technique represents discovery", "Connect to the prescribed text — what does the comparison reveal?"]
+      },
+      "relatedDotPoints": ["EA-AOS1.1"]
+    }
+
+  }
+}

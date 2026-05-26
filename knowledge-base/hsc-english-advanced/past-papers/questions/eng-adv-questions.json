@@ -1,0 +1,465 @@
+{
+  "subject": "HSC English Advanced",
+  "description": "Representative question bank for HSC English Advanced. Questions are modelled on authentic NESA exam formats across all modules. Essay questions are open-ended by design — responses are assessed against NESA marking criteria. Verify NESA-sourced questions against official exam papers before production use.",
+  "note": "English Advanced questions cannot be marked algorithmically. The marking-guideline-feedback skill should use the criteria in each question's markingGuideline to assess student responses holistically, aligned with NESA band descriptors.",
+  "questions": {
+
+    "2023-EA-P1-Q1a": {
+      "id": "2023-EA-P1-Q1a",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 1",
+      "section": "I",
+      "questionNumber": "1a",
+      "marks": 3,
+      "module": "Common Module",
+      "type": "short-answer",
+      "dotPoints": ["EA-CM2.2"],
+      "topic": "EA-CM",
+      "difficulty": "easy",
+      "workingRequired": true,
+      "stimulus": "Unseen literary text — short prose extract (approximately 300 words) describing a character's return to a childhood home.",
+      "stem": "Identify ONE language technique used in the extract and explain how it contributes to the representation of the character's experience. (3 marks)",
+      "solution": {
+        "steps": [
+          "Identify one precise language technique with metalanguage (e.g. sensory imagery, metaphor, motif, retrospective narration, second-person address)",
+          "Quote a specific, short example from the extract",
+          "Explain the effect: how does this technique represent the character's emotional or psychological experience?",
+          "Connect to the concept of human experience (e.g. memory, nostalgia, loss, transformation)"
+        ],
+        "modelResponse": "The composer employs olfactory imagery in the phrase '[example from text]', positioning the reader to understand how sensory memory anchors the character's experience of returning home. This technique represents the universally human experience of how the senses unlock buried emotion, suggesting that the past is never fully escaped.",
+        "finalAnswer": "1 mark: Correct identification of technique with metalanguage. 1 mark: Accurate, embedded quote. 1 mark: Developed explanation of effect on meaning or representation of human experience."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 3, "description": "Identifies a precise technique using metalanguage, provides a specific embedded quote, and offers a developed explanation connecting the technique to the representation of human experience"},
+          {"marks": 2, "description": "Identifies technique and provides quote with some explanation of effect, but connection to human experience concept is underdeveloped"},
+          {"marks": 1, "description": "Identifies a technique with minimal or no explanation of effect"}
+        ],
+        "commonErrors": [
+          "Identifying a technique without naming it ('The composer uses description...')",
+          "Providing a long block quote without analysis",
+          "Explaining the technique's general meaning rather than its specific effect in this text",
+          "Describing plot or content rather than analysing language"
+        ]
+      },
+      "tags": ["unseen text", "language technique", "metalanguage", "short answer", "human experience", "Common Module"]
+    },
+
+    "2023-EA-P1-Q1b": {
+      "id": "2023-EA-P1-Q1b",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 1",
+      "section": "I",
+      "questionNumber": "1b",
+      "marks": 4,
+      "module": "Common Module",
+      "type": "short-answer",
+      "dotPoints": ["EA-CM2.1"],
+      "topic": "EA-CM",
+      "difficulty": "medium",
+      "workingRequired": true,
+      "stimulus": "Unseen non-literary text — a personal essay (approximately 400 words) about the experience of growing up speaking a language different from your peers.",
+      "stem": "Analyse how the composer uses language and structure to convey the collective dimension of the human experience represented in the text. (4 marks)",
+      "solution": {
+        "steps": [
+          "Identify the collective human experience represented (e.g. linguistic identity, cultural displacement, belonging/not belonging)",
+          "Analyse at least two specific language or structural techniques",
+          "For each: name the technique, embed a precise quote, explain how it conveys the collective (shared/universal) dimension",
+          "Demonstrate how the text moves from individual experience to collective resonance"
+        ],
+        "modelResponse": "The composer employs anaphora through the repeated phrase '[example]', creating a rhythmic insistence that generalises the narrator's individual experience into a universally familiar pattern of exclusion. This structural choice positions the reader to recognise the collective experience of linguistic otherness. Furthermore, the shift from first-person singular to the inclusive 'we' in the essay's final paragraph formally enacts the movement from individual to collective, suggesting that such experiences of cultural dislocation are shared across communities rather than isolated.",
+        "finalAnswer": "Two techniques with evidence, analysis and connection to collective human experience."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 4, "description": "Sustained analysis of how language and/or structural choices construct the collective dimension of the experience; integrates at least two techniques with precise evidence; demonstrates sophisticated understanding of how individual becomes collective"},
+          {"marks": 3, "description": "Analyses language/structure with evidence; connection to collective experience is made but not fully developed"},
+          {"marks": 2, "description": "Identifies techniques with some evidence; analysis remains at surface level or focuses only on individual rather than collective"},
+          {"marks": 1, "description": "Minimal analysis; identifies a feature without meaningful explanation of effect"}
+        ],
+        "commonErrors": [
+          "Analysing only the individual experience and not addressing the 'collective' dimension of the question",
+          "Paraphrasing the content of the text rather than analysing language",
+          "Identifying techniques without quoting evidence",
+          "Writing in a general way about the topic rather than analysing this specific text"
+        ]
+      },
+      "tags": ["unseen text", "non-literary", "collective experience", "structure", "anaphora", "Common Module"]
+    },
+
+    "2023-EA-P1-Q2": {
+      "id": "2023-EA-P1-Q2",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 1",
+      "section": "I",
+      "questionNumber": "2",
+      "marks": 8,
+      "module": "Common Module",
+      "type": "extended-response",
+      "dotPoints": ["EA-CM2.1", "EA-CM1.1"],
+      "topic": "EA-CM",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stimulus": "A poem and a photograph are presented together. The poem is a contemporary lyric about grief and public memorial. The photograph shows a candlelit vigil.",
+      "stem": "Both the poem and the photograph represent aspects of collective human experience. Analyse how EACH text uses its form to represent this experience. In your response, refer to BOTH texts. (8 marks)",
+      "solution": {
+        "steps": [
+          "Identify the collective human experience in each text (grief, community, memorial, solidarity)",
+          "For the poem: analyse poetic techniques (imagery, tone, line structure, enjambment, address) and how they represent the collective",
+          "For the photograph: analyse visual techniques (composition, lighting, focal point, perspective, colour) and how they represent the collective",
+          "Address how the FORM of each text (poem vs photograph) shapes what can be expressed about collective experience",
+          "Structure as a developed response with a clear argument about how form and collective experience intersect"
+        ],
+        "modelResponse": "Both the poem and the photograph construct collective human experience through their respective forms, but differ significantly in how they achieve intimacy between the individual and the group... [developed comparative analysis of both texts]",
+        "finalAnswer": "A developed extended response (approximately 300–350 words) that analyses both texts with textual evidence, addresses form, and makes a sustained argument about collective human experience."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": "7–8", "description": "Sustained, sophisticated analysis of both texts; insightful understanding of how form shapes meaning; precise evidence from both texts; articulate, well-structured response with a clear argument"},
+          {"marks": "5–6", "description": "Competent analysis of both texts with relevant evidence; understanding of form evident; argument present but not fully sustained"},
+          {"marks": "3–4", "description": "Some analysis of both texts; evidence used but analysis may be uneven; limited engagement with form; argument underdeveloped"},
+          {"marks": "1–2", "description": "Minimal analysis; may describe rather than analyse; limited or no reference to form; one text may be ignored"}
+        ],
+        "commonErrors": [
+          "Treating both texts in separate, disconnected sections rather than weaving comparison throughout",
+          "Analysing only one text and neglecting the other",
+          "Describing what is shown in the photograph rather than analysing how visual techniques create meaning",
+          "Writing about collective experience in general terms rather than in relation to the specific texts"
+        ]
+      },
+      "tags": ["unseen text", "multi-modal", "poem", "photograph", "collective experience", "form", "extended response", "Common Module"]
+    },
+
+    "2023-EA-P1-Q3": {
+      "id": "2023-EA-P1-Q3",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 1",
+      "section": "II",
+      "questionNumber": "3",
+      "marks": 20,
+      "module": "Common Module",
+      "type": "extended-response",
+      "dotPoints": ["EA-CM3.1", "EA-CM1.2"],
+      "topic": "EA-CM",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stem": "How does your prescribed text represent the ways human experiences can both affirm and challenge the values of a society or culture? In your response, make close reference to your prescribed text.",
+      "solution": {
+        "steps": [
+          "Develop a clear thesis: a specific claim about HOW the text represents experiences that affirm AND challenge social/cultural values",
+          "Introduction: contextualise the text; establish the tension between affirmation and challenge; state thesis",
+          "Body paragraph 1: one experience the text affirms — technique, evidence, analysis, link to thesis",
+          "Body paragraph 2: one experience that challenges values — technique, evidence, analysis, link to thesis",
+          "Body paragraph 3: complexity — where affirmation and challenge coexist, or where the text is ambivalent",
+          "Conclusion: synthesise — what does this tension reveal about the human experience the text explores?"
+        ],
+        "modelResponse": "A well-structured essay of approximately 800–1000 words with a clear thesis, 3–4 developed body paragraphs integrating close textual analysis, and a synthesising conclusion.",
+        "finalAnswer": "Essay assessed against NESA band descriptors for Common Module."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": "17–20", "description": "Sophisticated, sustained argument with a precise, arguable thesis; insightful analysis of how language, form and structure construct representations; nuanced engagement with the tension between affirmation and challenge; well-integrated evidence; fluent, controlled expression"},
+          {"marks": "13–16", "description": "Well-developed argument with clear thesis; competent analysis of techniques with evidence; engagement with both affirming and challenging aspects; generally fluent expression"},
+          {"marks": "9–12", "description": "Some analytical development; thesis present but may be broad; evidence used but analysis surface-level; may address affirm or challenge but not both adequately"},
+          {"marks": "5–8",  "description": "Limited analysis; may retell rather than analyse; thin or absent thesis; limited evidence; engaging with the question but not demonstrating sustained analytical skill"},
+          {"marks": "1–4",  "description": "Minimal response; largely descriptive; little evidence; limited engagement with the question or module concept"}
+        ],
+        "commonErrors": [
+          "A thesis that merely states 'This text explores human experiences' without making a specific claim",
+          "Narrative paragraphs that retell plot events without analysis",
+          "Addressing only 'affirm' or only 'challenge' — the question requires both",
+          "Long quotations without analysis",
+          "A conclusion that simply repeats the introduction rather than synthesising"
+        ]
+      },
+      "tags": ["prescribed text", "Section II", "extended essay", "affirm challenge", "values", "Common Module", "20 marks"]
+    },
+
+    "2023-EA-P2-Q4": {
+      "id": "2023-EA-P2-Q4",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 2",
+      "section": "I",
+      "questionNumber": "4",
+      "marks": 20,
+      "module": "Module A",
+      "type": "extended-response",
+      "dotPoints": ["EA-A1.1", "EA-A1.2", "EA-A1.3"],
+      "topic": "EA-A",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stem": "The conversation between texts is most powerfully revealed in the moments of greatest difference. To what extent do you agree with this view? In your response, refer to your TWO prescribed texts for Module A.",
+      "solution": {
+        "steps": [
+          "Develop a comparative thesis that takes a clear position on the statement — agree, partially agree, or complicate it",
+          "Plan: identify 3–4 moments of significant difference between the texts (and possibly 1–2 of similarity for nuance)",
+          "Each body paragraph: comparative topic sentence → Text 1 analysis with evidence → pivot → Text 2 analysis with evidence → synthesis of what this difference reveals",
+          "Ensure both texts receive roughly equal treatment",
+          "Conclusion: synthesise — what does the conversation between the texts ultimately reveal?"
+        ],
+        "modelResponse": "A fully integrated comparative essay of approximately 800–1000 words in which both texts appear in every body paragraph.",
+        "finalAnswer": "Essay assessed against NESA band descriptors for Module A."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": "17–20", "description": "Sophisticated, sustained comparative argument; texts are fully integrated throughout; insightful analysis of how differences (and similarities) create meaning in the textual conversation; context well-integrated; precise evidence from both texts; fluent expression"},
+          {"marks": "13–16", "description": "Clear comparative argument; both texts addressed throughout with relevant evidence; some engagement with context; competent analysis"},
+          {"marks": "9–12", "description": "Some comparison present but texts may be addressed separately; evidence from both texts but analysis uneven; limited engagement with context"},
+          {"marks": "5–8",  "description": "Limited comparison; may treat one text more than the other; analysis surface-level; context minimal"},
+          {"marks": "1–4",  "description": "Minimal comparative engagement; largely descriptive; may address only one text"}
+        ],
+        "commonErrors": [
+          "The 'tennis match' structure — alternating paragraphs on Text 1 and Text 2 without integration",
+          "A thesis that names both texts and a theme but makes no comparative claim",
+          "Significant imbalance between treatment of the two texts",
+          "Discussing context as separate background information rather than integrating it into analysis"
+        ]
+      },
+      "tags": ["Module A", "comparative essay", "Textual Conversations", "The Tempest", "Hag-Seed", "integrated comparison", "20 marks"]
+    },
+
+    "2023-EA-P2-Q5": {
+      "id": "2023-EA-P2-Q5",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 2",
+      "section": "II",
+      "questionNumber": "5",
+      "marks": 20,
+      "module": "Module B",
+      "type": "extended-response",
+      "dotPoints": ["EA-B1.1", "EA-B1.2", "EA-B1.3"],
+      "topic": "EA-B",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stem": "'The enduring power of [your prescribed text] lies not in what it says but in how it says it.' Evaluate this statement with close reference to your prescribed text.",
+      "solution": {
+        "steps": [
+          "Evaluate the statement — agree, disagree, or complicate it. A sophisticated response will qualify the binary",
+          "Thesis: make a specific claim about why the text's aesthetic qualities (HOW) are central to its literary value — and/or why content and form cannot be separated",
+          "Body paragraphs: each develops one aspect of the text's formal/aesthetic quality and evaluates its contribution to literary value",
+          "Demonstrate textual integrity: show how specific language choices connect to macro-level meaning",
+          "Integrate critical perspective: show awareness that the text can sustain multiple readings"
+        ],
+        "modelResponse": "A critical evaluation essay of approximately 800–1000 words arguing a specific position on the text's literary value, with close language analysis demonstrating the connection between aesthetic form and meaning.",
+        "finalAnswer": "Essay assessed against NESA band descriptors for Module B."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": "17–20", "description": "Sophisticated evaluative thesis; insightful close analysis of language demonstrating how form and meaning are unified; genuine critical voice; nuanced engagement with the concept of textual integrity; precise evidence; fluent, controlled writing"},
+          {"marks": "13–16", "description": "Clear evaluative position; competent close analysis; some engagement with how language creates meaning; textual integrity evident; generally fluent"},
+          {"marks": "9–12", "description": "Some evaluation attempted; analysis present but may be more thematic than language-focused; limited engagement with textual integrity"},
+          {"marks": "5–8",  "description": "Limited evaluation; largely thematic or narrative in approach; surface-level analysis"},
+          {"marks": "1–4",  "description": "Minimal evaluative engagement; largely descriptive or plot-based"}
+        ],
+        "commonErrors": [
+          "Treating Module B like a Common Module essay — Module B demands genuine critical evaluation, not just analysis",
+          "Analysing themes without connecting them to specific language and form choices",
+          "A purely personal response without critical distance or evaluation",
+          "Ignoring the 'evaluate' instruction — the response must take and defend a position"
+        ]
+      },
+      "tags": ["Module B", "Critical Study", "Hamlet", "textual integrity", "literary value", "evaluate", "20 marks"]
+    },
+
+    "2023-EA-P2-Q6": {
+      "id": "2023-EA-P2-Q6",
+      "source": "representative",
+      "year": 2023,
+      "paper": "Paper 2",
+      "section": "III",
+      "questionNumber": "6",
+      "marks": 20,
+      "module": "Module C",
+      "type": "creative-and-reflection",
+      "dotPoints": ["EA-C2.1", "EA-C1.3"],
+      "topic": "EA-C",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stimulus": "An image of an empty chair at a window, with soft light coming through, and a single object on the windowsill.",
+      "stem": "Using the image as a stimulus, compose a sustained piece of imaginative writing. (17 marks for the creative piece + 3 marks for the reflective statement = 20 marks total)\n\nYour piece should:\n- Demonstrate sophisticated control of language, form and structure\n- Show deliberate craft choices that create particular effects\n- Be accompanied by a reflective statement (approximately 150–200 words) explaining the key craft choices you made and their intended effects",
+      "solution": {
+        "steps": [
+          "CREATIVE PIECE (17 marks): Find an unexpected angle on the stimulus — the chair, the light, the absence could all suggest waiting, memory, loss, threshold moments, or transformation",
+          "Establish a distinctive voice in the first sentence",
+          "Create tension or complexity: a narrative arc, an emotional shift, an irresolution",
+          "Demonstrate control of form: vary sentence length, use imagery purposefully, control pacing",
+          "End with resonance — an image, an ambiguity, a turn",
+          "REFLECTIVE STATEMENT (3 marks): Explain 2–3 specific craft choices with metalanguage; connect to Module C concept; do not retell the story"
+        ],
+        "modelResponse": "Creative piece: 600–800 words of sustained, purposeful imaginative writing. Reflective statement: 150–200 words of metacognitive craft commentary.",
+        "finalAnswer": "Creative piece + reflective statement assessed against NESA band descriptors for Module C."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": "15–17", "description": "Creative: highly crafted, purposeful and original; distinctive voice; sophisticated control of language, form and structure; creates resonant, complex effects; clear connection to stimulus. Reflective: precise, metacognitive; identifies specific choices with metalanguage; explains intended effects; connects to Module C"},
+          {"marks": "11–14", "description": "Creative: well-crafted with clear intent; controlled voice; competent use of techniques; connects to stimulus. Reflective: explains choices with some metalanguage; mostly clear"},
+          {"marks": "7–10",  "description": "Creative: some craft evident; voice and form less controlled; connection to stimulus present. Reflective: identifies choices but explanation limited"},
+          {"marks": "3–6",   "description": "Creative: limited craft; may be formulaic or underdeveloped. Reflective: minimal or unclear"},
+          {"marks": "1–2",   "description": "Minimal creative or reflective engagement"}
+        ],
+        "commonErrors": [
+          "A literal response to the stimulus (a story about sitting in a chair at a window)",
+          "A predictable narrative (beginning with waking up; ending with a moral lesson)",
+          "A reflective statement that summarises the story rather than analysing craft choices",
+          "Purple prose — excessive adjectives replacing precise, purposeful language",
+          "A creative piece with no tension, arc or purposeful development"
+        ]
+      },
+      "tags": ["Module C", "creative writing", "imaginative writing", "reflective statement", "stimulus", "craft", "20 marks"]
+    },
+
+    "practice-EA-CM-para-technique": {
+      "id": "practice-EA-CM-para-technique",
+      "source": "representative",
+      "year": null,
+      "paper": "Practice",
+      "section": "Practice",
+      "questionNumber": "practice-1",
+      "marks": 4,
+      "module": "Common Module",
+      "type": "short-answer",
+      "dotPoints": ["EA-CM1.3"],
+      "topic": "EA-CM",
+      "difficulty": "medium",
+      "workingRequired": true,
+      "stem": "Write ONE analytical paragraph about your prescribed text that demonstrates how a specific language technique is used to represent a human experience. Your paragraph should include: a topic sentence, a precise embedded quote, close language analysis using metalanguage, and a link to the module concept. (4 marks)",
+      "solution": {
+        "steps": [
+          "Topic sentence: state the technique and the human experience being analysed (not a plot statement)",
+          "Introduce and embed a precise short quote using metalanguage",
+          "Analyse at word level: why this specific word/image/structure?",
+          "Explain the effect on the reader",
+          "Link back to the human experience concept"
+        ],
+        "modelResponse": "[Topic sentence: e.g.] Salinger employs the motif of phoniness to represent Holden Caulfield's alienated experience of adolescence as an encounter with collective hypocrisy. The recurring noun '[phony]' accumulates across the novel as a signifier of adult failure, positioning the reader to understand Holden's experience not as individual pathology but as a symptomatic response to a world that has abandoned authenticity. This motif ultimately represents the paradoxically universal experience of feeling alone in one's genuine perception of the world.",
+        "finalAnswer": "Developed analytical paragraph demonstrating technique → evidence → analysis → effect → concept link."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 4, "description": "Precise metalanguage; embedded short quote; developed word-level analysis; clear explanation of effect; explicit link to human experience concept; fluent, analytical sentences"},
+          {"marks": 3, "description": "Metalanguage and quote present; analysis developed but link to concept underdeveloped"},
+          {"marks": 2, "description": "Technique identified with some evidence; analysis surface-level"},
+          {"marks": 1, "description": "Minimal analysis; may identify technique without evidence or effect"}
+        ],
+        "commonErrors": [
+          "A topic sentence that describes plot ('In Chapter 3, Holden goes to a nightclub...')",
+          "A block quote that fills most of the paragraph",
+          "Analysis that explains what the text means rather than how language creates meaning",
+          "No metalanguage — just 'The author uses language to...'"
+        ]
+      },
+      "tags": ["practice", "paragraph writing", "metalanguage", "analytical paragraph", "Common Module"]
+    },
+
+    "practice-EA-A-comparative-para": {
+      "id": "practice-EA-A-comparative-para",
+      "source": "representative",
+      "year": null,
+      "paper": "Practice",
+      "section": "Practice",
+      "questionNumber": "practice-2",
+      "marks": 5,
+      "module": "Module A",
+      "type": "short-answer",
+      "dotPoints": ["EA-A1.3"],
+      "topic": "EA-A",
+      "difficulty": "hard",
+      "workingRequired": true,
+      "stem": "Write ONE fully integrated comparative paragraph analysing how BOTH your Module A texts represent the concept of power. Your paragraph must refer to both texts throughout — not in separate halves. (5 marks)",
+      "solution": {
+        "steps": [
+          "Comparative topic sentence: state how BOTH texts engage with power differently (not 'Both texts explore power')",
+          "Text 1: technique + embedded quote + analysis",
+          "Pivot phrase: 'In contrast/Similarly/Whereas Shakespeare... Atwood...'",
+          "Text 2: technique + embedded quote + analysis",
+          "Synthesis sentence: what does comparing these representations of power reveal about the textual conversation?"
+        ],
+        "modelResponse": "While Shakespeare constructs Prospero's power as a natural extension of patriarchal and colonial authority through the imperative syntax of '[Be not afeard; the isle is full of noises]', Atwood recontextualises this power as psychologically fragile and institutionally contingent, positioning Felix's control in Hag-Seed as perpetually at risk of administrative revocation. Where Shakespeare's Prospero commands a seemingly limitless power over nature and persons, Atwood's Felix operates within a bureaucratic system that ultimately limits and shapes the exercise of power — reflecting a contemporary scepticism toward unquestioned authority. The textual conversation reveals that what The Tempest presents as natural, Hag-Seed exposes as constructed.",
+        "finalAnswer": "An integrated comparative paragraph in which both texts appear throughout, not in separate sections."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 5, "description": "Fully integrated comparison throughout; precise evidence from both texts; sophisticated analysis of how both texts engage with power; clear pivot; synthesising final sentence; fluent expression"},
+          {"marks": 4, "description": "Mostly integrated; evidence from both texts; analysis clear; pivot used; minor imbalance"},
+          {"marks": 3, "description": "Some comparison attempted but may be in separate halves; evidence from both; analysis present"},
+          {"marks": 2, "description": "Limited integration; one text dominates; analysis surface"},
+          {"marks": 1, "description": "Minimal comparison; largely descriptive or addresses only one text"}
+        ],
+        "commonErrors": [
+          "Text 1 in sentences 1–4, Text 2 in sentences 5–8 — this is not integration",
+          "A topic sentence that names both texts but makes no comparative claim",
+          "Using 'similarly' when the texts are actually doing something different",
+          "No synthesis sentence to draw meaning from the comparison"
+        ]
+      },
+      "tags": ["practice", "Module A", "comparative paragraph", "integrated comparison", "power", "The Tempest", "Hag-Seed"]
+    },
+
+    "practice-EA-C-reflective": {
+      "id": "practice-EA-C-reflective",
+      "source": "representative",
+      "year": null,
+      "paper": "Practice",
+      "section": "Practice",
+      "questionNumber": "practice-3",
+      "marks": 3,
+      "module": "Module C",
+      "type": "short-answer",
+      "dotPoints": ["EA-C1.3"],
+      "topic": "EA-C",
+      "difficulty": "medium",
+      "workingRequired": true,
+      "stem": "Write a reflective statement (approximately 150–200 words) for a creative piece you have written or are preparing. Your reflective statement should explain specific craft choices using metalanguage and connect your piece to Module C concepts. (3 marks)",
+      "solution": {
+        "steps": [
+          "Sentence 1: name the form and central purpose/idea of the piece",
+          "Paragraph 1: explain 2–3 specific craft choices with metalanguage (e.g. 'I employed second-person address to...', 'The fragmented syntax of the final paragraph mirrors...')",
+          "Paragraph 2: connect to Module C — how does your piece demonstrate understanding of writing as a craft?"
+        ],
+        "modelResponse": "My piece is a lyric essay that explores the experience of cultural displacement through the perspective of a narrator returning to a childhood home. I employed a non-linear structure, juxtaposing present-tense observation with past-tense memory through italicised fragments, to enact the psychological experience of how the past intrudes into the present. The second-person address in the opening paragraph was chosen deliberately to implicate the reader in the narrator's disorientation, creating an immediate intimacy. My use of the sensory image of '[specific image]' in the closing paragraph was intended as a resonant, unresolved image rather than a tidy conclusion — reflecting my understanding that the most powerful endings in literary writing create productive ambiguity rather than closure.",
+        "finalAnswer": "A concise, metacognitive reflective statement that uses metalanguage, explains craft choices and their intended effects, and connects to Module C."
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 3, "description": "Uses precise metalanguage to name and explain specific craft choices; clearly explains intended effects; connects to Module C concept of intentional craft; does NOT retell the story"},
+          {"marks": 2, "description": "Explains some choices with some metalanguage; partial connection to Module C; may briefly retell"},
+          {"marks": 1, "description": "Names choices without metalanguage or explanation; largely a plot summary"}
+        ],
+        "commonErrors": [
+          "A reflective statement that summarises the plot ('My story is about a girl who...')",
+          "Generic claims without metalanguage ('I used descriptive language to paint a picture')",
+          "No connection to Module C or the concept of craft as intentional choice",
+          "A statement that is too long — more than 250 words suggests lack of precision"
+        ]
+      },
+      "tags": ["practice", "Module C", "reflective statement", "metacognitive", "metalanguage", "craft"]
+    }
+
+  },
+
+  "meta": {
+    "totalQuestions": 9,
+    "shortAnswerQuestions": 5,
+    "extendedResponseQuestions": 3,
+    "creativeAndReflectionQuestions": 1,
+    "moduleCoverage": {
+      "Common Module": 4,
+      "Module A": 2,
+      "Module B": 1,
+      "Module C": 2
+    },
+    "difficultyCoverage": {
+      "easy": 1,
+      "medium": 3,
+      "hard": 5
+    },
+    "lastUpdated": "2025-03-09",
+    "buildNote": "This bank provides representative questions modelled on authentic NESA HSC English Advanced exam structure and style. English Advanced questions require holistic assessment — use the markingGuideline criteria bands in each question entry. The marking-guideline-feedback skill should assess student responses against the band descriptors provided. Expand with actual NESA past paper questions (2019–2024) sourced directly from NESA publications, noting that English paper questions vary significantly year to year in their specific phrasing."
+  }
+}

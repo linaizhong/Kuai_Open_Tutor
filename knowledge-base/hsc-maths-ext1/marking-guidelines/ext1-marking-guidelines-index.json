@@ -1,0 +1,473 @@
+{
+  "subject": "HSC Mathematics Extension 1",
+  "description": "Index of marking guidelines by year. Each entry references the full marking guideline data embedded in the question bank. This file provides a quick lookup for the marking-guideline-feedback skill.",
+  "lastUpdated": "2026-03-08",
+  "partialCreditPolicy": {
+    "description": "OpenTutor partial credit assessment policy, aligned with NESA principles",
+    "rules": [
+      {
+        "condition": "Correct method but arithmetic error",
+        "marksAwarded": "full marks minus 1"
+      },
+      {
+        "condition": "Correct first step but incorrect subsequent steps",
+        "marksAwarded": "1 mark"
+      },
+      {
+        "condition": "Correct answer without required working shown",
+        "marksAwarded": "0 to 1 depending on question"
+      },
+      {
+        "condition": "Follow-through error: error from part (a) carried correctly into part (b)",
+        "marksAwarded": "full marks for part (b) working"
+      },
+      {
+        "condition": "'Show that' question: answer is given, so full working is mandatory",
+        "marksAwarded": "0 if working absent, even if conclusion is stated"
+      },
+      {
+        "condition": "Proof question: working both sides simultaneously",
+        "marksAwarded": "0 \u2014 must work from one side only"
+      }
+    ]
+  },
+  "ext1SpecificPolicies": {
+    "description": "Additional marking policies specific to Extension 1 question types",
+    "policies": [
+      {
+        "questionType": "Proof / 'Show that'",
+        "policy": "Full stepwise working required. Conclusion must follow logically from working. No marks for stating the result alone."
+      },
+      {
+        "questionType": "Differential equations",
+        "policy": "General solution must include arbitrary constant C. Particular solution requires explicit application of initial conditions."
+      },
+      {
+        "questionType": "Vectors",
+        "policy": "Answers must clearly distinguish between scalars and vectors. Vector answers must include direction (e.g., component form or magnitude + direction)."
+      },
+      {
+        "questionType": "Parametric equations",
+        "policy": "Cartesian equation must include any restrictions on domain/range arising from the parameter range."
+      },
+      {
+        "questionType": "Combinatorics",
+        "policy": "Working must clearly show whether permutations or combinations are used. Casework must list all cases."
+      },
+      {
+        "questionType": "Inverse trigonometric",
+        "policy": "Answers must lie within the principal range of the relevant inverse trig function. Out-of-range answers receive 0."
+      },
+      {
+        "questionType": "Projectile motion",
+        "policy": "Both horizontal and vertical components must be set up separately. Units (m, s) must be stated."
+      },
+      {
+        "questionType": "Normal approximation",
+        "policy": "Continuity correction must be applied and shown explicitly. Conditions np \u2265 5 and nq \u2265 5 must be verified."
+      }
+    ]
+  },
+  "guidelines": {
+    "2023": {
+      "year": 2023,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 1 HSC Marking Guidelines 2023",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown \u2014 the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "General solutions to trig equations must include 'n \u2208 \u2124' to receive full marks",
+        "Arbitrary constants in differential equation solutions must be shown"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 44,
+        "marking": "Criteria-based marking. See individual question entries in ext1-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For vector questions, clearly distinguish between scalar and vector quantities",
+          "For proofs, begin from one side only and work to the other"
+        ]
+      },
+      "questionGuidelines": {
+        "2023-ME1-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "binomial theorem general term and coefficient extraction"
+        },
+        "2023-ME1-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "inverse function \u2014 swap x and y, state domain"
+        },
+        "2023-ME1-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "related rates using chain rule \u2014 sphere volume"
+        },
+        "2023-ME1-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "compound angle proof \u2014 cos(A\u00b1B) expansion"
+        },
+        "2023-ME1-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "dot product and angle between vectors"
+        },
+        "2023-ME1-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "inverse trig integration \u2014 arctan and arcsin with substitution"
+        },
+        "2023-ME1-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "Vieta's formulas \u2014 sum/product of roots of cubic"
+        },
+        "2023-ME1-Q17": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "binomial mean and standard deviation"
+        },
+        "2023-ME1-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "volume of revolution about x-axis \u2014 disc method"
+        },
+        "2023-ME1-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "projectile motion \u2014 max height, range, position vector"
+        },
+        "2023-ME1-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "separable ODE \u2014 logistic growth with partial fractions"
+        },
+        "2023-ME1-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "normal approximation to binomial with continuity correction"
+        },
+        "2023-ME1-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "parametric to Cartesian, reciprocal graph sketch, inequality"
+        }
+      }
+    },
+    "2022": {
+      "year": 2022,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 1 HSC Marking Guidelines 2022",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown \u2014 the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "General solutions to trig equations must include 'n \u2208 \u2124' to receive full marks",
+        "Arbitrary constants in differential equation solutions must be shown"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 45,
+        "marking": "Criteria-based marking. See individual question entries in ext1-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For vector questions, clearly distinguish between scalar and vector quantities",
+          "For proofs, begin from one side only and work to the other"
+        ]
+      },
+      "questionGuidelines": {
+        "2022-ME1-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "rational inequality using sign diagram"
+        },
+        "2022-ME1-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "combinations \u2014 nCr selection"
+        },
+        "2022-ME1-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "inverse trig exact values and principal range"
+        },
+        "2022-ME1-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "vector geometry \u2014 position vectors and collinearity"
+        },
+        "2022-ME1-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "inverse trig integration \u2014 standard forms"
+        },
+        "2022-ME1-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "Vieta's formulas applied to quartic or cubic"
+        },
+        "2022-ME1-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "binomial mean and variance \u2014 interpretation"
+        },
+        "2022-ME1-Q17": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "related rates \u2014 chain rule application"
+        },
+        "2022-ME1-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "projectile motion \u2014 component equations and trajectory"
+        },
+        "2022-ME1-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "separable differential equation with initial conditions"
+        },
+        "2022-ME1-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "compound and double angle \u2014 equation solving over domain"
+        },
+        "2022-ME1-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "volume of revolution \u2014 washer method or y-axis rotation"
+        },
+        "2022-ME1-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "normal approximation to binomial \u2014 conditions and correction"
+        }
+      }
+    },
+    "2021": {
+      "year": 2021,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 1 HSC Marking Guidelines 2021",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown \u2014 the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "General solutions to trig equations must include 'n \u2208 \u2124' to receive full marks",
+        "Arbitrary constants in differential equation solutions must be shown"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 45,
+        "marking": "Criteria-based marking. See individual question entries in ext1-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For vector questions, clearly distinguish between scalar and vector quantities",
+          "For proofs, begin from one side only and work to the other"
+        ]
+      },
+      "questionGuidelines": {
+        "2021-ME1-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "graphical transformation \u2014 1/f(x) from given graph"
+        },
+        "2021-ME1-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "permutations \u2014 linear arrangement with restriction"
+        },
+        "2021-ME1-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "vector operations \u2014 magnitude, unit vector, addition"
+        },
+        "2021-ME1-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "related rates \u2014 chain rule, conical or cylindrical tank"
+        },
+        "2021-ME1-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "Vieta's formulas \u2014 derived expressions from roots"
+        },
+        "2021-ME1-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "double angle identities and equation solving"
+        },
+        "2021-ME1-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "parametric differentiation \u2014 dy/dx and tangent"
+        },
+        "2021-ME1-Q17": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "binomial probability \u2014 P(X=r) and P(X\u2265r)"
+        },
+        "2021-ME1-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "parametric to Cartesian \u2014 curve identification and sketching"
+        },
+        "2021-ME1-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "separable ODE \u2014 exponential growth with initial condition"
+        },
+        "2021-ME1-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "projectile motion \u2014 full analysis, range and maximum height"
+        },
+        "2021-ME1-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "volume of revolution \u2014 substitution and definite integral"
+        },
+        "2021-ME1-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "normal approximation to binomial with continuity correction"
+        }
+      }
+    },
+    "2020": {
+      "year": 2020,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 1 HSC Marking Guidelines 2020",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown \u2014 the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "General solutions to trig equations must include 'n \u2208 \u2124' to receive full marks",
+        "Arbitrary constants in differential equation solutions must be shown"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 45,
+        "marking": "Criteria-based marking. See individual question entries in ext1-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For vector questions, clearly distinguish between scalar and vector quantities",
+          "For proofs, begin from one side only and work to the other"
+        ]
+      },
+      "questionGuidelines": {
+        "2020-ME1-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "inverse function of rational expression \u2014 domain restriction"
+        },
+        "2020-ME1-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "combinations with restriction \u2014 complement method"
+        },
+        "2020-ME1-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "related rates \u2014 conical tank, V in terms of h"
+        },
+        "2020-ME1-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "compound angle identity and exact value"
+        },
+        "2020-ME1-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "dot product \u2014 angle, perpendicularity and projection"
+        },
+        "2020-ME1-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "inverse trig integration with substitution"
+        },
+        "2020-ME1-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "remainder and factor theorem \u2014 polynomial factorisation"
+        },
+        "2020-ME1-Q17": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "binomial distribution \u2014 P(X=r), E(X), Var(X)"
+        },
+        "2020-ME1-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "parametric curve \u2014 Cartesian form, gradient and tangent"
+        },
+        "2020-ME1-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "volume of revolution about y-axis"
+        },
+        "2020-ME1-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "Newton's cooling \u2014 ODE solution and k determination"
+        },
+        "2020-ME1-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "vector geometry \u2014 AB, midpoint, parametric line"
+        },
+        "2020-ME1-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "triple angle formula proof and trig equation solving"
+        }
+      }
+    }
+  }
+}

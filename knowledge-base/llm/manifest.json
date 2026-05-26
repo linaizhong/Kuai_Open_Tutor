@@ -1,0 +1,49 @@
+{
+    "id": "llm-engineering",
+    "name": "Large Language Models",
+    "shortName": "LLM",
+    "icon": "🤖",
+    "categories": ["artificial intelligence", "machine learning", "deep learning", "NLP", "transformers", "generative AI", "prompt engineering"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🧠", "label": "Transformer basics", "text": "Explain the Transformer architecture: attention mechanisms, encoders, and decoders." },
+        { "icon": "🔍", "label": "Attention mechanism", "text": "How does self-attention work in Transformers? Explain queries, keys, and values." },
+        { "icon": "📊", "label": "Tokenisation", "text": "Explain tokenisation methods: BPE, WordPiece, and SentencePiece with examples." },
+        { "icon": "🏋️", "label": "Pre-training", "text": "How are LLMs pre-trained? Explain causal language modelling and masked LM objectives." },
+        { "icon": "🎯", "label": "Fine-tuning", "text": "What is fine-tuning? Explain full fine-tuning, LoRA, and instruction tuning." },
+        { "icon": "💬", "label": "Prompt engineering", "text": "Teach me prompt engineering techniques: zero-shot, few-shot, chain-of-thought, and ReAct." },
+        { "icon": "⚖️", "label": "RLHF", "text": "Explain Reinforcement Learning from Human Feedback (RLHF) and how it aligns LLMs." },
+        { "icon": "🏗️", "label": "RAG", "text": "What is Retrieval-Augmented Generation? How does it work and when should I use it?" },
+        { "icon": "🔧", "label": "LLM evaluation", "text": "How do you evaluate LLM performance? Explain benchmarks, metrics, and evaluation challenges." },
+        { "icon": "⚡", "label": "Inference optimisation", "text": "Explain LLM inference optimisation: quantisation, KV cache, speculative decoding." },
+        { "icon": "🛡️", "label": "Safety and alignment", "text": "What are the main LLM safety challenges? Explain hallucination, bias, and jailbreaking." },
+        { "icon": "🔗", "label": "LLM agents", "text": "What are LLM agents? Explain tool use, function calling, and multi-agent systems." },
+        { "icon": "📐", "label": "Scaling laws", "text": "Explain LLM scaling laws: how do model size, data, and compute relate to performance?" },
+        { "icon": "🌐", "label": "Multimodal LLMs", "text": "How do multimodal LLMs work? Explain vision-language models and audio-text models." },
+        { "icon": "📝", "label": "Practice", "text": "Give me a challenging LLM engineering problem to work through." }
+    ],
+    "quickActions": [
+        { "icon": "🧠", "label": "Transformers", "text": "Explain Transformer architecture." },
+        { "icon": "🔍", "label": "Attention", "text": "How does attention work?" },
+        { "icon": "📊", "label": "Tokenisation", "text": "Explain tokenisation." },
+        { "icon": "🏋️", "label": "Pre-training", "text": "How are LLMs pre-trained?" },
+        { "icon": "🎯", "label": "Fine-tuning", "text": "Explain fine-tuning methods." },
+        { "icon": "💬", "label": "Prompting", "text": "Prompt engineering techniques." },
+        { "icon": "⚖️", "label": "RLHF", "text": "Explain RLHF." },
+        { "icon": "🏗️", "label": "RAG", "text": "How does RAG work?" },
+        { "icon": "🔧", "label": "Evaluation", "text": "LLM evaluation methods." },
+        { "icon": "⚡", "label": "Inference", "text": "Inference optimisation." },
+        { "icon": "🛡️", "label": "Safety", "text": "LLM safety and alignment." },
+        { "icon": "🔗", "label": "Agents", "text": "LLM agents and tool use." },
+        { "icon": "📐", "label": "Scaling", "text": "Scaling laws explained." },
+        { "icon": "🌐", "label": "Multimodal", "text": "Multimodal LLMs." },
+        { "icon": "📝", "label": "Practice", "text": "Give me a challenge." }
+    ],
+    "filenames": {
+        "syllabusMap": "llm-syllabus-map.json",
+        "dotPoints": "llm-dot-points.json",
+        "questionIndex": "llm-index.json",
+        "questions": "llm-questions.json",
+        "markingGuidelinesIndex": "llm-marking-guidelines-index.json"
+    }
+}

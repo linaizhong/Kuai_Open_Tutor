@@ -1,0 +1,29 @@
+{
+    "id": "toefl",
+    "name": "TOEFL iBT",
+    "shortName": "TOEFL",
+    "icon": "🌎",
+    "categories": ["toefl", "writing", "reading", "listening", "speaking"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🗣️", "label": "Speaking practice", "text": "Give me a TOEFL speaking task." },
+        { "icon": "📝", "label": "Writing practice", "text": "Give me an independent writing task." },
+        { "icon": "📖", "label": "Reading practice", "text": "Give me a reading comprehension passage." },
+        { "icon": "🎧", "label": "Listening practice", "text": "Give me a listening comprehension exercise." },
+        { "icon": "🔍", "label": "Check my response", "text": "Check my speaking/writing response." },
+        { "icon": "🗺️", "label": "What to study", "text": "Based on my progress, what should I focus on today?" }
+    ],
+    "quickActions": [
+        { "icon": "🗣️", "label": "Speaking", "text": "Give me a speaking task." },
+        { "icon": "📝", "label": "Writing", "text": "Give me a writing task." },
+        { "icon": "📖", "label": "Reading", "text": "Give me a reading passage." },
+        { "icon": "🎧", "label": "Listening", "text": "Give me a listening exercise." }
+    ],
+    "filenames": {
+        "syllabusMap": "toefl-syllabus-map.json",
+        "dotPoints": "toefl-dot-points.json",
+        "questionIndex": "toefl-index.json",
+        "questions": "toefl-questions.json",
+        "markingGuidelinesIndex": "toefl-marking-guidelines-index.json"
+    }
+}

@@ -1,0 +1,15 @@
+[
+    { "id": "2023-GK-XD-1", "year": 2023, "paper": "全国甲卷", "section": "一（一）", "marks": 3, "dotPoints": ["YW-XD-1.1"], "topic": "YW-XD", "difficulty": "中等", "type": "选择题", "module": "现代文阅读" },
+    { "id": "2023-GK-XD-2", "year": 2023, "paper": "全国甲卷", "section": "一（三）", "marks": 4, "dotPoints": ["YW-XD-3.1"], "topic": "YW-XD", "difficulty": "较难", "type": "简答题", "module": "现代文阅读" },
+    { "id": "2023-GK-XD-3", "year": 2023, "paper": "全国甲卷", "section": "一（三）", "marks": 6, "dotPoints": ["YW-XD-3.2", "YW-XD-3.4"], "topic": "YW-XD", "difficulty": "较难", "type": "简答题", "module": "现代文阅读" },
+    { "id": "2023-GK-GD-1", "year": 2023, "paper": "全国甲卷", "section": "二（一）", "marks": 3, "dotPoints": ["YW-GD-1.1"], "topic": "YW-GD", "difficulty": "中等", "type": "选择题", "module": "古代诗文阅读" },
+    { "id": "2023-GK-GD-2", "year": 2023, "paper": "全国甲卷", "section": "二（一）", "marks": 10, "dotPoints": ["YW-GD-2.1"], "topic": "YW-GD", "difficulty": "较难", "type": "翻译题", "module": "古代诗文阅读" },
+    { "id": "2023-GK-GD-3", "year": 2023, "paper": "全国甲卷", "section": "二（二）", "marks": 6, "dotPoints": ["YW-GD-3.1", "YW-GD-3.4"], "topic": "YW-GD", "difficulty": "较难", "type": "简答题", "module": "古代诗文阅读" },
+    { "id": "2023-GK-GD-4", "year": 2023, "paper": "全国甲卷", "section": "二（三）", "marks": 7, "dotPoints": ["YW-GD-4.1"], "topic": "YW-GD", "difficulty": "容易", "type": "填空题", "module": "古代诗文阅读" },
+    { "id": "2023-GK-YY-1", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 3, "dotPoints": ["YW-YY-1.1"], "topic": "YW-YY", "difficulty": "中等", "type": "选择题", "module": "语言文字运用" },
+    { "id": "2023-GK-YY-2", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 3, "dotPoints": ["YW-YY-2.1"], "topic": "YW-YY", "difficulty": "中等", "type": "选择题", "module": "语言文字运用" },
+    { "id": "2023-GK-YY-3", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 4, "dotPoints": ["YW-YY-3.1", "YW-YY-4.1"], "topic": "YW-YY", "difficulty": "中等", "type": "简答题", "module": "语言文字运用" },
+    { "id": "2023-GK-XZ-1", "year": 2023, "paper": "全国甲卷", "section": "四", "marks": 60, "dotPoints": ["YW-XZ-1.1", "YW-XZ-2.1", "YW-XZ-2.2"], "topic": "YW-XZ", "difficulty": "较难", "type": "作文", "module": "写作" },
+    { "id": "practice-XZ-lianxi-1", "year": null, "paper": "模拟题", "section": "四", "marks": 60, "dotPoints": ["YW-XZ-1.1", "YW-XZ-2.1"], "topic": "YW-XZ", "difficulty": "较难", "type": "作文", "module": "写作" },
+    { "id": "practice-XD-duanlian-1", "year": null, "paper": "模拟题", "section": "练习", "marks": 4, "dotPoints": ["YW-XD-3.3"], "topic": "YW-XD", "difficulty": "中等", "type": "简答题", "module": "现代文阅读" }
+]

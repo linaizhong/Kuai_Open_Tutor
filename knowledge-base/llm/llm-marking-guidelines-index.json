@@ -1,0 +1,138 @@
+{
+    "subject": "Large Language Models",
+    "description": "Marking guidelines for LLM engineering questions covering architecture, training, fine-tuning, inference, and deployment.",
+    "lastUpdated": "2026-03-30",
+    "importantNote": "LLM questions are assessed on conceptual accuracy, mathematical correctness, implementation quality, and depth of engineering understanding. Partial credit is awarded for correct reasoning even with minor errors.",
+    "assessmentCriteria": {
+        "general": [
+            "Conceptual Accuracy: Are the LLM concepts, mechanisms, and terminology used correctly?",
+            "Mathematical Correctness: Are formulas, derivations, and numerical calculations accurate?",
+            "Implementation Quality: Is code correct, clean, and following ML engineering conventions?",
+            "Engineering Depth: Does the answer demonstrate practical understanding beyond surface-level definitions?",
+            "Clarity: Are explanations clear, precise, and well-structured?",
+            "Critical Thinking: Does the answer address trade-offs, limitations, and real-world considerations?"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "LLM assessment partial credit principles",
+        "rules": [
+            { "condition": "Correct concept with minor mathematical error (e.g. off-by-one in formula)", "marksAwarded": "75-85% — concept awarded, computation deducted" },
+            { "condition": "Correct formula but wrong numerical answer due to arithmetic error", "marksAwarded": "60-70% — method marks awarded" },
+            { "condition": "Partially correct explanation missing one key component", "marksAwarded": "50-70% depending on which component is missing" },
+            { "condition": "Code that is conceptually correct but has a minor bug (e.g. wrong dimension)", "marksAwarded": "70-80% — algorithm logic awarded" },
+            { "condition": "Correct answer without justification or explanation", "marksAwarded": "40-60% — marks require reasoning, not just the answer" },
+            { "condition": "Demonstrates understanding of trade-offs and limitations", "marksAwarded": "Full marks possible even if minor factual error present" },
+            { "condition": "Answer for a different but related concept (e.g. MQA instead of GQA)", "marksAwarded": "20-40% — shows engagement with the area" }
+        ]
+    },
+    "levelDescriptors": {
+        "foundation": {
+            "expectations": [
+                "Correctly define Q, K, V in attention and explain the scaled dot-product formula",
+                "Distinguish encoder-only, decoder-only, and encoder-decoder architectures with examples",
+                "Explain causal vs masked language modelling objectives",
+                "Calculate perplexity from cross-entropy loss",
+                "Describe BPE tokenisation at an algorithmic level",
+                "Understand residual connections and layer normalisation roles in Transformer blocks"
+            ],
+            "commonErrors": [
+                "Confusing Q, K, V roles — especially in cross-attention vs self-attention",
+                "Omitting the sqrt(d_k) scaling factor from the attention formula",
+                "Confusing perplexity with cross-entropy (perplexity = exp(cross-entropy))",
+                "Stating that encoder-only models are autoregressive (they are not)",
+                "Mixing up GPT (decoder-only) with BERT (encoder-only) capabilities"
+            ]
+        },
+        "intermediate": {
+            "expectations": [
+                "Implement scaled dot-product attention and multi-head attention from scratch",
+                "Correctly implement LoRA with proper initialisation (B=0) and scaling",
+                "Explain RLHF three-phase pipeline and why KL penalty is necessary",
+                "Design and implement a basic RAG retrieval pipeline with cosine similarity",
+                "Calculate KV cache memory for a given model configuration",
+                "Apply chain-of-thought and compare zero-shot vs few-shot prompting strategies"
+            ],
+            "commonErrors": [
+                "Initialising LoRA's B matrix with random values instead of zeros",
+                "Forgetting the output projection W_O in multi-head attention",
+                "Treating reward model score as ground truth in RLHF discussion",
+                "Not normalising embeddings before cosine similarity computation",
+                "Confusing training FLOPs with inference FLOPs in scaling law calculations"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Derive Chinchilla compute-optimal N and D from a given FLOP budget with correct formula",
+                "Implement DPO loss with correct log-ratio computation and beta scaling",
+                "Design a multi-step LLM agent loop with tool schemas, execution, and result injection",
+                "Explain GQA/MQA and their impact on KV cache memory at inference time",
+                "Analyse hallucination causes and propose targeted pipeline fixes",
+                "Compare quantisation methods (INT4, INT8, fp16) with accuracy-efficiency trade-offs"
+            ],
+            "commonErrors": [
+                "Using N = C/6 instead of N = C/120 in Chinchilla formula (forgetting the 20 tokens per param factor)",
+                "DPO loss: applying beta to only one ratio term instead of the difference",
+                "Agent implementation: not returning tool results back to LLM for final response generation",
+                "Confusing quantisation of weights vs activations in INT4/GPTQ discussion",
+                "Over-simplifying hallucination: treating it as a single phenomenon rather than distinguishing intrinsic/extrinsic/sycophantic"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "LLM-Q-TRF-001": {
+            "totalMarks": 8,
+            "criteria": [
+                { "marks": 8, "description": "All 4 parts fully correct: exact attention formula with Q/K/V definitions, correct scaling justification, correct d_head=64 and tensor shapes, correct two sub-layers with pre/post-norm explained, correct architecture comparison with appropriate examples" },
+                { "marks": "6-7", "description": "3 of 4 parts fully correct; one part has minor omission (e.g. forgets output projection W_O, or misses exposure bias in part (a))" },
+                { "marks": "4-5", "description": "2 of 4 parts correct; common gap: attention formula correct but missing scaling justification; or architecture types named correctly but without examples or clear capability distinction" },
+                { "marks": "2-3", "description": "1-2 parts partially correct; demonstrates basic familiarity but significant conceptual gaps (e.g. confuses encoder and decoder capabilities)" },
+                { "marks": "0-1", "description": "Fundamental misunderstanding of attention mechanism or Transformer architecture" }
+            ]
+        },
+        "LLM-Q-PRE-001": {
+            "totalMarks": 8,
+            "criteria": [
+                { "marks": 8, "description": "All 4 parts fully correct: CLM objective maximisation stated, teacher forcing and exposure bias correctly described, CE=-log(0.02)≈3.91 and PPL=50 calculated, BPE algorithm and byte-level distinction correct, tokenisation efficiency implications (quadratic attention, context utilisation) clearly explained" },
+                { "marks": "6-7", "description": "3 of 4 parts correct; common error: perplexity = cross-entropy (not exp), or missing exposure bias in part (a)" },
+                { "marks": "4-5", "description": "2 of 4 correct; may have CE/PPL calculation error, or BPE described only at high level without byte-level distinction" },
+                { "marks": "2-3", "description": "1-2 partially correct; CLM objective stated informally without mathematical notation; byte-level BPE confused with standard BPE" },
+                { "marks": "0-1", "description": "Fundamental misunderstanding of training objectives or tokenisation" }
+            ]
+        },
+        "LLM-Q-FTN-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "LoRA: correct implementation with B=0 init, correct scaling, merge_weights(), correct param count (131,072). RLHF: all 3 phases with correct input/objective/output, KL penalty explained as anti-reward-hacking. DPO: correct loss formula, insightful one-sentence explanation linking to implicit reward model" },
+                { "marks": "9-10", "description": "LoRA mostly correct but missing merge_weights() or incorrect scaling. RLHF phases described but one phase's objective imprecise. DPO formula correct but explanation superficial" },
+                { "marks": "7-8", "description": "LoRA works but B initialised randomly (significant error). RLHF 2 of 3 phases correctly described. DPO formula has minor error but understanding shown" },
+                { "marks": "4-6", "description": "LoRA: general idea but not implementable. RLHF: only SFT and RM described, PPO/KL missing. DPO: formula attempted but incorrect" },
+                { "marks": "1-3", "description": "Minimal correct content; significant conceptual errors in fine-tuning fundamentals" },
+                { "marks": 0, "description": "No meaningful attempt" }
+            ]
+        },
+        "LLM-Q-RAG-001": {
+            "totalMarks": 10,
+            "criteria": [
+                { "marks": "9-10", "description": "Chunking calculation correct with overlap reasoning. Retriever: normalisation, cosine similarity via dot product, correct top-k logic. Dense vs sparse comparison: all 3 dimensions with accurate characterisation. Hybrid: meaningful score combination formula. Hallucination: 3 distinct causes with specific, actionable fixes (not vague 'improve the model')" },
+                { "marks": "7-8", "description": "3 of 4 parts fully correct; common gap: retriever missing normalisation, or hallucination causes identified but fixes too vague" },
+                { "marks": "5-6", "description": "2 of 4 parts correct; retriever implemented but uses Euclidean distance instead of cosine; OR chunking formula correct but overlap rationale missing" },
+                { "marks": "3-4", "description": "Chunking calculation attempt; basic retriever without normalisation; dense vs sparse superficially compared" },
+                { "marks": "0-2", "description": "Minimal understanding of RAG pipeline components" }
+            ]
+        },
+        "LLM-Q-ADV-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "All 4 parts excellent: KV cache formula correct with all factors (2×layers×kv_heads×d_head×seq×bytes), correct ≈5GB result. INT4: clear weight/activation distinction, 4x compression, appropriate accuracy vs memory trade-off analysis. Chinchilla: correct N*=C/120≈833M, D*≈16.7B, GPT-3 correctly identified as 67x over-sized relative to compute-optimal. Agent: working tool schemas, correct tool selection logic, result injection into message history" },
+                { "marks": "12-13", "description": "3 of 4 parts fully correct; KV cache may have minor arithmetic error; OR Chinchilla uses C/6 instead of C/120 (missing 20 tokens factor); OR agent missing result-injection step" },
+                { "marks": "9-11", "description": "2-3 parts correct; Chinchilla formula wrong (using N=C/6); KV cache formula missing one factor; agent missing tool execution or final response generation" },
+                { "marks": "5-8", "description": "Partial credit across multiple parts; general understanding of concepts but significant execution errors" },
+                { "marks": "1-4", "description": "One part partially correct; fundamental gaps in inference optimisation or scaling law understanding" },
+                { "marks": 0, "description": "No meaningful attempt" }
+            ]
+        }
+    },
+    "feedbackTemplate": {
+        "coding": "Score: {score}/{totalMarks}\n\nConceptual Accuracy: {concept}\nMathematical Correctness: {math}\nImplementation Quality: {code}\nEngineering Depth: {depth}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nKey References:\n{references}"
+    }
+}

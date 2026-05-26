@@ -1,0 +1,154 @@
+{
+    "subject": "Advanced Java Programming",
+    "description": "Marking guidelines for Java coding exercises and assessments.",
+    "lastUpdated": "2026-03-30",
+    "importantNote": "Java exercises are assessed on correctness, code quality, OOP design, and adherence to Java conventions.",
+    "assessmentCriteria": {
+        "general": [
+            "Correctness: Does the code compile and produce the expected output for all test cases?",
+            "Code Quality: Is the code readable, well-structured, and following Java naming conventions?",
+            "OOP Design: Are classes, interfaces, and inheritance used appropriately?",
+            "Efficiency: Is the algorithm and data structure choice appropriate for the problem?",
+            "Error Handling: Are exceptions handled correctly with appropriate types?",
+            "Java Idioms: Does the code use Java idioms (streams, Optional, generics) where appropriate?"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "Java coding assessment scoring principles",
+        "rules": [
+            { "condition": "Code compiles but produces incorrect output for some test cases", "marksAwarded": "Partial credit based on passing test cases (typically 50-70%)" },
+            { "condition": "Correct logic but compilation errors (e.g. missing semicolons, wrong types)", "marksAwarded": "Deduct 15-25% for compilation errors" },
+            { "condition": "Correct solution but uses raw types instead of generics", "marksAwarded": "Deduct 5-10% for unchecked type warnings" },
+            { "condition": "Correct but ignores exceptions or swallows errors silently", "marksAwarded": "Deduct 10-15% for poor exception handling" },
+            { "condition": "Does not follow Java naming conventions (e.g. camelCase for methods)", "marksAwarded": "Deduct up to 10% for convention violations" },
+            { "condition": "Missing Javadoc or meaningful comments for complex logic", "marksAwarded": "Deduct 5% for missing documentation" },
+            { "condition": "Thread-safety issues in concurrent code", "marksAwarded": "Deduct 20-30% for race conditions or missing synchronisation" }
+        ]
+    },
+    "levelDescriptors": {
+        "foundation": {
+            "expectations": [
+                "Basic Java syntax correct (semicolons, braces, type declarations)",
+                "Correct primitive and String types used",
+                "Simple control flow (if-else, for, while) works correctly",
+                "Variables named using camelCase convention",
+                "System.out.println() used appropriately for output"
+            ],
+            "commonErrors": [
+                "Missing semicolons at end of statements",
+                "Using == to compare String values instead of .equals()",
+                "Incorrect variable scope (using variable outside its block)",
+                "Integer overflow when using int for large numbers",
+                "Off-by-one errors in loops"
+            ]
+        },
+        "intermediate": {
+            "expectations": [
+                "OOP design with appropriate use of classes, constructors, and access modifiers",
+                "Correct use of Collections Framework (List, Map, Set)",
+                "Generics used correctly (no raw types)",
+                "Checked exceptions declared or handled",
+                "toString(), equals(), hashCode() overridden where appropriate",
+                "Code follows SOLID principles at a basic level"
+            ],
+            "commonErrors": [
+                "Mutable fields exposed without defensive copying",
+                "NullPointerException due to missing null checks",
+                "Using ArrayList where a Set would prevent duplicates",
+                "Catching Exception broadly instead of specific exceptions",
+                "Forgetting to close resources (use try-with-resources)"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Stream API and lambda expressions used for data processing",
+                "CompletableFuture or ExecutorService for concurrent tasks",
+                "Design patterns applied correctly where appropriate",
+                "Optional used instead of null returns",
+                "Thread-safety ensured with appropriate mechanisms",
+                "Clean architecture with separation of concerns"
+            ],
+            "commonErrors": [
+                "Race conditions in concurrent code without proper synchronisation",
+                "Stream reuse (stream can only be consumed once)",
+                "Blocking the main thread unnecessarily in async code",
+                "Over-engineering with unnecessary design patterns",
+                "Memory leaks from non-terminated ExecutorService"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "JV-Q-BAS-001": {
+            "totalMarks": 5,
+            "criteria": [
+                { "marks": 5,   "description": "All arithmetic operations correct, printf used with %.2f, integer division demonstrated, compiles cleanly" },
+                { "marks": 4,   "description": "All operations correct but printf formatting minor issues, or integer division missing" },
+                { "marks": 3,   "description": "Most operations correct, 1-2 errors in calculation or output format" },
+                { "marks": 2,   "description": "Some operations correct, significant formatting issues or multiple errors" },
+                { "marks": 1,   "description": "Basic structure present, compiles, but mostly incorrect" },
+                { "marks": 0,   "description": "Does not compile or completely incorrect" }
+            ]
+        },
+        "JV-Q-CFL-001": {
+            "totalMarks": 8,
+            "criteria": [
+                { "marks": "7-8", "description": "Both if-else and switch expression correct, condition order correct (15 first), clean code" },
+                { "marks": "5-6", "description": "if-else correct, switch expression missing or minor issues" },
+                { "marks": "3-4", "description": "One approach correct but condition order wrong (e.g. checks 3 before 15), some numbers misclassified" },
+                { "marks": "1-2", "description": "Basic loop structure present but logic significantly flawed" },
+                { "marks": 0,    "description": "Does not compile or no meaningful attempt" }
+            ]
+        },
+        "JV-Q-OOP-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "All classes/interfaces correct, polymorphism demonstrated, area formulas correct, max algorithm works, clean OOP design" },
+                { "marks": "9-10",  "description": "All features work but minor design issues (e.g. missing @Override, fields not final)" },
+                { "marks": "7-8",   "description": "Most features work, but interface default method or polymorphism not fully demonstrated" },
+                { "marks": "5-6",   "description": "Basic class structure present, formulas correct, but inheritance or interface not used correctly" },
+                { "marks": "3-4",   "description": "Attempt at OOP structure, significant design issues" },
+                { "marks": "1-2",   "description": "Minimal OOP elements, mostly procedural" },
+                { "marks": 0,       "description": "Does not compile or no meaningful attempt" }
+            ]
+        },
+        "JV-Q-STR-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "All 5 stream queries correct, Collectors.groupingBy() used correctly, Optional handled, method references used" },
+                { "marks": "9-10",  "description": "All queries produce correct results, minor style issues (lambdas instead of method references)" },
+                { "marks": "7-8",   "description": "4 of 5 queries correct, groupingBy or max() missing or incorrect" },
+                { "marks": "5-6",   "description": "Basic filter and map work, but groupingBy or Collectors not used correctly" },
+                { "marks": "3-4",   "description": "Streams used but most queries incorrect or missing" },
+                { "marks": "1-2",   "description": "Minimal stream usage, mostly loop-based" },
+                { "marks": 0,       "description": "Does not compile or no meaningful attempt" }
+            ]
+        },
+        "JV-Q-CON-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Thread-safe BankAccount with AtomicLong CAS loop correct, CompletableFuture used properly, allOf() waits correctly, exception handling present" },
+                { "marks": "12-13", "description": "All features work correctly, minor issues (e.g. not using AutoCloseable for pool shutdown)" },
+                { "marks": "10-11", "description": "BankAccount thread-safe, CompletableFuture used but allOf() or exceptionally() missing" },
+                { "marks": "7-9",   "description": "Concurrent code present but race conditions possible, or CompletableFuture not used" },
+                { "marks": "4-6",   "description": "Some concurrency attempted, significant thread-safety issues" },
+                { "marks": "1-3",   "description": "Basic BankAccount without thread-safety, no CompletableFuture" },
+                { "marks": 0,       "description": "Does not compile or no meaningful attempt" }
+            ]
+        },
+        "JV-Q-DSG-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Immutable HttpRequest, fluent Builder with validation, Optional for body, unmodifiable headers map, demonstration of all three cases" },
+                { "marks": "12-13", "description": "Builder pattern correct, immutability mostly enforced, validation present" },
+                { "marks": "10-11", "description": "Builder works but immutability not fully enforced, or validation missing" },
+                { "marks": "7-9",   "description": "Builder pattern attempted, fluent API present, but significant design issues" },
+                { "marks": "4-6",   "description": "Some Builder structure present, but not following the pattern correctly" },
+                { "marks": "1-3",   "description": "Minimal attempt, essentially a constructor not a Builder" },
+                { "marks": 0,       "description": "Does not compile or no meaningful attempt" }
+            ]
+        }
+    },
+    "feedbackTemplate": {
+        "coding": "Score: {score}/{totalMarks}\n\nCorrectness: {correctness}\nOOP Design: {design}\nCode Quality: {quality}\nError Handling: {errorHandling}\nJava Idioms: {idioms}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nSuggested Fixes:\n{suggestions}"
+    }
+}

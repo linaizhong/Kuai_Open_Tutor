@@ -1,0 +1,342 @@
+{
+    "subject": "Large Language Models",
+    "subjectId": "llm-engineering",
+    "syllabusVersion": "2024-2025",
+    "appliesTo": "ML engineers, AI researchers, and practitioners building with or studying LLMs",
+    "learningPath": {
+        "totalDuration": "240 hours",
+        "levels": [
+            { "level": "Foundation", "estimatedHours": 60, "topics": ["NLP Fundamentals", "Neural Network Basics", "Tokenisation", "Transformer Architecture"] },
+            { "level": "Intermediate", "estimatedHours": 90, "topics": ["Pre-training Objectives", "Fine-tuning and Alignment", "Prompt Engineering", "Retrieval-Augmented Generation", "LLM Evaluation"] },
+            { "level": "Advanced", "estimatedHours": 90, "topics": ["RLHF and Alignment", "Inference Optimisation", "LLM Agents", "Scaling Laws", "Multimodal LLMs", "Safety and Robustness"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "LLM-NLP",
+            "name": "NLP Fundamentals",
+            "level": "Foundation",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "LLM-NLP-1",
+                    "name": "Language and Text Representation",
+                    "dotPoints": [
+                        { "code": "LLM-NLP-1.1", "name": "Text as Data: Challenges in NLP", "keywords": ["ambiguity", "context dependence", "compositionality", "discrete symbols", "sparse representation", "word meaning", "distributional hypothesis"], "difficulty": "foundation" },
+                        { "code": "LLM-NLP-1.2", "name": "Word Embeddings and Distributed Representations", "keywords": ["word2vec", "GloVe", "FastText", "embedding space", "semantic similarity", "cosine similarity", "word analogy", "distributional semantics"], "difficulty": "foundation" },
+                        { "code": "LLM-NLP-1.3", "name": "Sequence Modelling: RNNs and LSTMs", "keywords": ["RNN", "LSTM", "GRU", "vanishing gradient", "sequential processing", "hidden state", "seq2seq", "encoder-decoder"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "LLM-NLP-2",
+                    "name": "NLP Tasks Overview",
+                    "dotPoints": [
+                        { "code": "LLM-NLP-2.1", "name": "Core NLP Tasks", "keywords": ["text classification", "named entity recognition", "question answering", "text generation", "summarisation", "translation", "sentiment analysis", "parsing"], "difficulty": "foundation" },
+                        { "code": "LLM-NLP-2.2", "name": "From Task-Specific to General-Purpose Models", "keywords": ["pre-trained models", "transfer learning", "fine-tuning", "BERT", "GPT", "task-specific head", "zero-shot", "few-shot"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-TOK",
+            "name": "Tokenisation",
+            "level": "Foundation",
+            "learningWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "LLM-TOK-1",
+                    "name": "Tokenisation Algorithms",
+                    "dotPoints": [
+                        { "code": "LLM-TOK-1.1", "name": "Byte-Pair Encoding (BPE)", "keywords": ["BPE", "subword tokenisation", "merge rules", "vocabulary size", "GPT-2", "GPT-4", "byte-level BPE", "tokenisation training"], "difficulty": "foundation" },
+                        { "code": "LLM-TOK-1.2", "name": "WordPiece and SentencePiece", "keywords": ["WordPiece", "SentencePiece", "BERT tokeniser", "unigram model", "language-agnostic", "multilingual tokenisation", "T5", "##prefix"], "difficulty": "foundation" },
+                        { "code": "LLM-TOK-1.3", "name": "Vocabulary Design and Token Efficiency", "keywords": ["vocabulary size", "token fertility", "unknown tokens", "special tokens", "CLS", "SEP", "PAD", "EOS", "BOS", "token count", "context length"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-TOK-2",
+                    "name": "Tokenisation Properties and Implications",
+                    "dotPoints": [
+                        { "code": "LLM-TOK-2.1", "name": "Tokenisation and Model Behaviour", "keywords": ["tokenisation artefacts", "number tokenisation", "multilingual bias", "out-of-vocabulary", "character-level fallback", "tokenisation debugging", "token splitting"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-TRF",
+            "name": "Transformer Architecture",
+            "level": "Foundation",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "LLM-TRF-1",
+                    "name": "Attention Mechanisms",
+                    "dotPoints": [
+                        { "code": "LLM-TRF-1.1", "name": "Scaled Dot-Product Attention", "keywords": ["query", "key", "value", "QKV", "dot product", "softmax", "scaling factor", "sqrt(d_k)", "attention weights", "attention score"], "difficulty": "foundation" },
+                        { "code": "LLM-TRF-1.2", "name": "Multi-Head Attention", "keywords": ["multi-head attention", "attention heads", "head dimension", "parallel attention", "concatenation", "projection matrix", "different subspaces", "d_model"], "difficulty": "foundation" },
+                        { "code": "LLM-TRF-1.3", "name": "Self-Attention vs Cross-Attention", "keywords": ["self-attention", "cross-attention", "encoder-decoder attention", "causal mask", "look-ahead mask", "padding mask", "Q from decoder K V from encoder"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-TRF-2",
+                    "name": "Transformer Block Components",
+                    "dotPoints": [
+                        { "code": "LLM-TRF-2.1", "name": "Feed-Forward Networks and Residual Connections", "keywords": ["FFN", "feed-forward network", "two linear layers", "GELU", "ReLU", "SwiGLU", "residual connection", "skip connection", "layer normalisation", "pre-norm", "post-norm"], "difficulty": "foundation" },
+                        { "code": "LLM-TRF-2.2", "name": "Positional Encoding", "keywords": ["positional encoding", "sinusoidal encoding", "absolute position", "relative position", "RoPE", "ALiBi", "position bias", "context length extrapolation", "learned positional"], "difficulty": "intermediate" },
+                        { "code": "LLM-TRF-2.3", "name": "Encoder, Decoder, and Encoder-Decoder Architectures", "keywords": ["encoder-only", "BERT", "decoder-only", "GPT", "encoder-decoder", "T5", "causal LM", "masked LM", "prefix LM", "bidirectional", "autoregressive"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "LLM-TRF-3",
+                    "name": "Modern Architecture Variants",
+                    "dotPoints": [
+                        { "code": "LLM-TRF-3.1", "name": "Grouped-Query Attention and Multi-Query Attention", "keywords": ["GQA", "MQA", "grouped query attention", "multi-query attention", "KV cache sharing", "inference memory", "Llama 2", "Mistral", "head groups"], "difficulty": "advanced" },
+                        { "code": "LLM-TRF-3.2", "name": "Mixture of Experts (MoE)", "keywords": ["MoE", "mixture of experts", "expert networks", "router", "sparse activation", "top-k routing", "Mixtral", "GShard", "Switch Transformer", "conditional compute"], "difficulty": "advanced" },
+                        { "code": "LLM-TRF-3.3", "name": "Sliding Window and Long-Context Attention", "keywords": ["sliding window attention", "Longformer", "BigBird", "FlashAttention", "sparse attention", "linear attention", "long context", "Mistral", "ring attention"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-PRE",
+            "name": "Pre-training",
+            "level": "Foundation",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "LLM-PRE-1",
+                    "name": "Pre-training Objectives",
+                    "dotPoints": [
+                        { "code": "LLM-PRE-1.1", "name": "Causal Language Modelling (CLM)", "keywords": ["next token prediction", "autoregressive", "causal LM", "cross-entropy loss", "negative log-likelihood", "perplexity", "GPT", "left-to-right"], "difficulty": "foundation" },
+                        { "code": "LLM-PRE-1.2", "name": "Masked Language Modelling (MLM)", "keywords": ["masked LM", "BERT", "MASK token", "15% masking", "bidirectional context", "whole word masking", "span masking", "replaced token detection"], "difficulty": "foundation" },
+                        { "code": "LLM-PRE-1.3", "name": "Other Pre-training Objectives", "keywords": ["prefix LM", "span corruption", "T5", "denoising", "next sentence prediction", "NSP", "sentence order prediction", "contrastive learning"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-PRE-2",
+                    "name": "Training Data and Infrastructure",
+                    "dotPoints": [
+                        { "code": "LLM-PRE-2.1", "name": "Pre-training Data: Sources, Curation, and Quality", "keywords": ["Common Crawl", "C4", "The Pile", "data deduplication", "quality filtering", "toxicity filtering", "domain mix", "data curriculum", "web scraping"], "difficulty": "intermediate" },
+                        { "code": "LLM-PRE-2.2", "name": "Distributed Training and Parallelism", "keywords": ["data parallelism", "model parallelism", "tensor parallelism", "pipeline parallelism", "ZeRO", "DeepSpeed", "Megatron-LM", "gradient accumulation", "mixed precision", "bf16", "fp16"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-FTN",
+            "name": "Fine-tuning and Alignment",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "LLM-FTN-1",
+                    "name": "Full Fine-tuning",
+                    "dotPoints": [
+                        { "code": "LLM-FTN-1.1", "name": "Supervised Fine-tuning (SFT)", "keywords": ["supervised fine-tuning", "SFT", "instruction tuning", "demonstration data", "chat templates", "system prompt", "human-assistant format", "learning rate warmup", "catastrophic forgetting"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-FTN-2",
+                    "name": "Parameter-Efficient Fine-tuning (PEFT)",
+                    "dotPoints": [
+                        { "code": "LLM-FTN-2.1", "name": "Low-Rank Adaptation (LoRA)", "keywords": ["LoRA", "low-rank adaptation", "rank decomposition", "A and B matrices", "trainable parameters", "adapter", "rank r", "alpha scaling", "QLoRA", "4-bit quantisation"], "difficulty": "intermediate" },
+                        { "code": "LLM-FTN-2.2", "name": "Other PEFT Methods", "keywords": ["prefix tuning", "prompt tuning", "adapter layers", "IA3", "soft prompts", "P-tuning", "BitFit", "freeze base model", "task-specific adapters"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-FTN-3",
+                    "name": "Alignment Techniques",
+                    "dotPoints": [
+                        { "code": "LLM-FTN-3.1", "name": "Reinforcement Learning from Human Feedback (RLHF)", "keywords": ["RLHF", "reward model", "PPO", "proximal policy optimisation", "preference data", "human raters", "InstructGPT", "ChatGPT", "KL divergence penalty"], "difficulty": "advanced" },
+                        { "code": "LLM-FTN-3.2", "name": "Direct Preference Optimisation (DPO) and Alternatives", "keywords": ["DPO", "direct preference optimisation", "chosen rejected pairs", "RAFT", "RLAIF", "Constitutional AI", "CAI", "reward-free alignment", "implicit reward model"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-PRM",
+            "name": "Prompt Engineering",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "LLM-PRM-1",
+                    "name": "Core Prompting Techniques",
+                    "dotPoints": [
+                        { "code": "LLM-PRM-1.1", "name": "Zero-Shot and Few-Shot Prompting", "keywords": ["zero-shot", "few-shot", "in-context learning", "ICL", "demonstration examples", "k-shot", "prompt format", "example selection", "order sensitivity"], "difficulty": "foundation" },
+                        { "code": "LLM-PRM-1.2", "name": "Chain-of-Thought Prompting", "keywords": ["chain-of-thought", "CoT", "step-by-step reasoning", "intermediate steps", "zero-shot CoT", "let's think step by step", "rationale", "multi-step"], "difficulty": "intermediate" },
+                        { "code": "LLM-PRM-1.3", "name": "Advanced Prompting: ReAct, Tree-of-Thought, and Self-Consistency", "keywords": ["ReAct", "reason and act", "tree of thought", "ToT", "self-consistency", "majority voting", "multiple reasoning paths", "plan and solve", "generated knowledge"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "LLM-PRM-2",
+                    "name": "Prompt Design and Optimisation",
+                    "dotPoints": [
+                        { "code": "LLM-PRM-2.1", "name": "System Prompts and Instruction Design", "keywords": ["system prompt", "instruction", "persona", "role", "constraints", "output format", "JSON mode", "structured output", "prompt injection", "delimiter"], "difficulty": "intermediate" },
+                        { "code": "LLM-PRM-2.2", "name": "Automatic Prompt Optimisation", "keywords": ["APO", "automatic prompt engineer", "APE", "DSPy", "prompt tuning", "gradient-free optimisation", "LLM-as-optimiser", "prompt compression", "LLMLingua"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-RAG",
+            "name": "Retrieval-Augmented Generation",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "LLM-RAG-1",
+                    "name": "RAG Fundamentals",
+                    "dotPoints": [
+                        { "code": "LLM-RAG-1.1", "name": "RAG Architecture Overview", "keywords": ["RAG", "retrieval augmented generation", "dense retrieval", "sparse retrieval", "BM25", "DPR", "query encoder", "document encoder", "vector store", "top-k retrieval"], "difficulty": "intermediate" },
+                        { "code": "LLM-RAG-1.2", "name": "Chunking Strategies and Embedding Models", "keywords": ["chunking", "chunk size", "overlap", "recursive splitting", "semantic chunking", "embedding model", "bi-encoder", "sentence transformers", "OpenAI embeddings"], "difficulty": "intermediate" },
+                        { "code": "LLM-RAG-1.3", "name": "Vector Databases and Indexing", "keywords": ["vector database", "FAISS", "Pinecone", "Weaviate", "Chroma", "Qdrant", "ANN", "HNSW", "IVF", "cosine similarity", "dot product", "Euclidean distance"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-RAG-2",
+                    "name": "Advanced RAG Techniques",
+                    "dotPoints": [
+                        { "code": "LLM-RAG-2.1", "name": "Query Transformation and Hybrid Search", "keywords": ["query expansion", "HyDE", "hypothetical document embedding", "multi-query retrieval", "hybrid search", "BM25 + dense", "reranking", "cross-encoder", "MMR"], "difficulty": "advanced" },
+                        { "code": "LLM-RAG-2.2", "name": "Agentic RAG and Self-RAG", "keywords": ["agentic RAG", "self-RAG", "CRAG", "corrective RAG", "adaptive retrieval", "retrieval on demand", "reflection tokens", "iterative retrieval", "FLARE"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-EVL",
+            "name": "LLM Evaluation",
+            "level": "Intermediate",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "LLM-EVL-1",
+                    "name": "Evaluation Benchmarks and Metrics",
+                    "dotPoints": [
+                        { "code": "LLM-EVL-1.1", "name": "Intrinsic Metrics: Perplexity and Token-Level Measures", "keywords": ["perplexity", "cross-entropy", "bits per character", "BLEU", "ROUGE", "METEOR", "BERTScore", "intrinsic evaluation", "reference-based"], "difficulty": "intermediate" },
+                        { "code": "LLM-EVL-1.2", "name": "Capability Benchmarks", "keywords": ["MMLU", "HellaSwag", "ARC", "TruthfulQA", "HumanEval", "GSM8K", "MATH", "BigBench", "LMSYS Chatbot Arena", "Elo rating", "leaderboard"], "difficulty": "intermediate" },
+                        { "code": "LLM-EVL-1.3", "name": "LLM-as-Judge and Human Evaluation", "keywords": ["LLM judge", "GPT-4 evaluator", "MT-Bench", "pairwise evaluation", "win rate", "human preference", "annotation guidelines", "inter-annotator agreement", "AlpacaEval"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "LLM-EVL-2",
+                    "name": "Evaluation Challenges",
+                    "dotPoints": [
+                        { "code": "LLM-EVL-2.1", "name": "Benchmark Contamination and Evaluation Pitfalls", "keywords": ["data contamination", "benchmark leakage", "overfitting to benchmarks", "Goodhart's law", "evaluation generalisability", "held-out test sets", "dynamic benchmarks", "contamination detection"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-INF",
+            "name": "Inference Optimisation",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "LLM-INF-1",
+                    "name": "Quantisation and Compression",
+                    "dotPoints": [
+                        { "code": "LLM-INF-1.1", "name": "Model Quantisation: INT8, INT4, and GPTQ", "keywords": ["quantisation", "INT8", "INT4", "GPTQ", "AWQ", "bitsandbytes", "weight quantisation", "activation quantisation", "calibration", "post-training quantisation", "QAT"], "difficulty": "advanced" },
+                        { "code": "LLM-INF-1.2", "name": "Pruning and Distillation", "keywords": ["model pruning", "structured pruning", "unstructured pruning", "knowledge distillation", "teacher-student", "soft labels", "TinyBERT", "DistilBERT", "sparsity", "attention pruning"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "LLM-INF-2",
+                    "name": "Inference Acceleration",
+                    "dotPoints": [
+                        { "code": "LLM-INF-2.1", "name": "KV Cache and Memory Management", "keywords": ["KV cache", "key-value cache", "memory bandwidth", "cache eviction", "PagedAttention", "vLLM", "continuous batching", "dynamic batching", "memory efficiency"], "difficulty": "advanced" },
+                        { "code": "LLM-INF-2.2", "name": "Speculative Decoding and FlashAttention", "keywords": ["speculative decoding", "draft model", "target model", "token verification", "FlashAttention", "IO-aware", "memory tiling", "fused kernel", "CUDA", "Triton"], "difficulty": "advanced" },
+                        { "code": "LLM-INF-2.3", "name": "Serving Frameworks and Deployment", "keywords": ["vLLM", "TGI", "text-generation-inference", "TensorRT-LLM", "Triton inference server", "ONNX", "llama.cpp", "gguf", "batching", "throughput", "latency", "cost per token"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-AGT",
+            "name": "LLM Agents",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "LLM-AGT-1",
+                    "name": "Agent Fundamentals",
+                    "dotPoints": [
+                        { "code": "LLM-AGT-1.1", "name": "Agent Architecture: Planning, Memory, and Tools", "keywords": ["agent", "planning", "memory", "tools", "perception", "action", "ReAct", "MRKL", "task decomposition", "subgoals", "agent loop"], "difficulty": "advanced" },
+                        { "code": "LLM-AGT-1.2", "name": "Tool Use and Function Calling", "keywords": ["function calling", "tool use", "JSON schema", "OpenAI function calling", "tool description", "structured output", "code interpreter", "web search", "API integration"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "LLM-AGT-2",
+                    "name": "Multi-Agent and Advanced Agent Patterns",
+                    "dotPoints": [
+                        { "code": "LLM-AGT-2.1", "name": "Multi-Agent Systems", "keywords": ["multi-agent", "agent orchestration", "AutoGen", "CrewAI", "LangGraph", "supervisor agent", "worker agent", "message passing", "collaboration", "competition"], "difficulty": "advanced" },
+                        { "code": "LLM-AGT-2.2", "name": "Long-Horizon Planning and Memory Systems", "keywords": ["long-horizon", "memory module", "episodic memory", "semantic memory", "procedural memory", "external memory", "vector store memory", "reflection", "Voyager", "Generative Agents"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-SCL",
+            "name": "Scaling Laws and Emergent Abilities",
+            "level": "Advanced",
+            "learningWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "LLM-SCL-1",
+                    "name": "Scaling Laws",
+                    "dotPoints": [
+                        { "code": "LLM-SCL-1.1", "name": "Chinchilla Scaling Laws", "keywords": ["scaling laws", "Chinchilla", "compute-optimal", "model size", "dataset size", "FLOPs", "Kaplan et al", "Hoffmann et al", "training tokens", "20 tokens per parameter"], "difficulty": "advanced" },
+                        { "code": "LLM-SCL-2.1", "name": "Emergent Abilities and Phase Transitions", "keywords": ["emergent abilities", "phase transition", "in-context learning emergence", "chain-of-thought emergence", "few-shot emergent", "unpredictable", "benchmark threshold", "capability jump"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-MUL",
+            "name": "Multimodal LLMs",
+            "level": "Advanced",
+            "learningWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "LLM-MUL-1",
+                    "name": "Vision-Language Models",
+                    "dotPoints": [
+                        { "code": "LLM-MUL-1.1", "name": "Image Encoding and Cross-Modal Fusion", "keywords": ["vision encoder", "ViT", "CLIP", "visual tokens", "patch embeddings", "Q-Former", "cross-attention fusion", "LLaVA", "GPT-4V", "Flamingo", "projection layer"], "difficulty": "advanced" },
+                        { "code": "LLM-MUL-1.2", "name": "Multimodal Training and Evaluation", "keywords": ["image-text pairs", "LAION", "visual instruction tuning", "VQA", "image captioning", "visual reasoning", "OCR", "chart understanding", "multimodal benchmark", "MMBench"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "LLM-MUL-2",
+                    "name": "Audio, Video, and Any-to-Any Models",
+                    "dotPoints": [
+                        { "code": "LLM-MUL-2.1", "name": "Audio-Language and Video-Language Models", "keywords": ["speech tokens", "Whisper", "audio spectrogram", "video frames", "temporal understanding", "Video-LLaVA", "Gemini", "unified tokenisation", "any-to-any model"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "LLM-SAF",
+            "name": "Safety, Alignment, and Robustness",
+            "level": "Advanced",
+            "learningWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "LLM-SAF-1",
+                    "name": "Hallucination and Factuality",
+                    "dotPoints": [
+                        { "code": "LLM-SAF-1.1", "name": "Hallucination: Types, Causes, and Mitigation", "keywords": ["hallucination", "factual error", "intrinsic hallucination", "extrinsic hallucination", "closed-book generation", "faithfulness", "grounding", "retrieval augmentation", "uncertainty estimation", "calibration"], "difficulty": "advanced" },
+                        { "code": "LLM-SAF-1.2", "name": "Bias and Fairness in LLMs", "keywords": ["bias", "stereotypes", "demographic bias", "social bias", "representation harm", "allocational harm", "debiasing", "toxicity", "WinoBias", "BBQ"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "LLM-SAF-2",
+                    "name": "Adversarial Robustness and Security",
+                    "dotPoints": [
+                        { "code": "LLM-SAF-2.1", "name": "Prompt Injection and Jailbreaking", "keywords": ["prompt injection", "jailbreak", "adversarial prompt", "DAN", "many-shot jailbreak", "role-play attack", "indirect injection", "defence strategies", "content filters", "guardrails"], "difficulty": "advanced" },
+                        { "code": "LLM-SAF-2.2", "name": "Copyright, Privacy, and Memorisation", "keywords": ["memorisation", "training data extraction", "verbatim memorisation", "PII leakage", "copyright", "model inversion", "differential privacy", "unlearning", "right to be forgotten"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

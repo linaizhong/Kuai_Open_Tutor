@@ -1,0 +1,127 @@
+{
+  "name": "opentutor",
+  "version": "9.0.0",
+  "description": "AI-powered desktop tutoring app for HSC Mathematics Advanced students",
+  "author": "OpenTutor",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "npm run build && electron .",
+    "dev": "electron . --dev",
+    "build:win": "electron-builder build --win",
+    "build:mac": "electron-builder build --mac",
+    "build:linux": "electron-builder build --linux",
+    "test": "node src/main/memory/test-memory-manager.js && node src/main/model-manager/test-model-manager.js && node src/main/skill-manager/test-skill-manager.js",
+    "test:memory": "node src/main/memory/test-memory-manager.js",
+    "test:model": "node src/main/model-manager/test-model-manager.js",
+    "test:skills": "node src/main/skill-manager/test-skill-manager.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "fs-extra": "^11.3.4",
+    "katex": "^0.16.38",
+    "marked": "^13.0.3",
+    "pdf-parse": "^2.4.5",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^10.1.0",
+    "css-loader": "^7.1.4",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.opentutor.app",
+    "productName": "OpenTutor",
+    "copyright": "Copyright © 2025 OpenTutor",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "knowledge-base/**/*",
+      "!src/renderer/node_modules/**/*",
+      "!**/*.test.js",
+      "!**/test-*.js",
+      "!**/.DS_Store"
+    ],
+    "asarUnpack": [
+      "src/service/ollama/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "knowledge-base/",
+        "to": "knowledge-base/",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "category": "Education"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "OpenTutor"
+    },
+    "publish": null
+  }
+}

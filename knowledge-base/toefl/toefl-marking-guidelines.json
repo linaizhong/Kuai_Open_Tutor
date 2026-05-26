@@ -1,0 +1,348 @@
+{
+  "subject": "TOEFL iBT",
+  "version": "2024",
+  "description": "Marking guidelines and scoring rubrics for TOEFL iBT sections.",
+  "lastUpdated": "2026-03-09",
+  "scoringOverview": {
+    "total": "0-120 (in 1-point increments)",
+    "sections": {
+      "reading": "0-30",
+      "listening": "0-30",
+      "speaking": "0-30 (converted from 0-4 per task)",
+      "writing": "0-30 (converted from 0-5 per task)"
+    }
+  },
+  
+  "reading": {
+    "totalQuestions": "30-40",
+    "rawScore": "Number correct",
+    "conversion": "Raw to scaled score varies by test difficulty",
+    "typicalScale": {
+      "30": "30",
+      "29": "29-30",
+      "28": "28-30",
+      "27": "27-29",
+      "26": "26-29",
+      "25": "25-28"
+    },
+    "questionTypes": {
+      "vocabulary": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Choosing dictionary definition instead of context meaning",
+          "Selecting word with similar sound but different meaning"
+        ]
+      },
+      "factual-information": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Selecting information not in passage",
+          "Choosing true statement that doesn't answer the question"
+        ]
+      },
+      "negative-fact": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Missing the 'EXCEPT' and selecting a true statement",
+          "Overlooking that three options are mentioned, one is not"
+        ]
+      },
+      "inference": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Choosing something that might be true but isn't required",
+          "Using outside knowledge instead of passage content"
+        ]
+      },
+      "rhetorical-purpose": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Describing what the text says rather than why",
+          "Missing the author's intent"
+        ]
+      },
+      "sentence-simplification": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Omitting key information",
+          "Changing the meaning"
+        ]
+      },
+      "insert-text": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Breaking pronoun reference chains",
+          "Ignoring logical connectors"
+        ]
+      },
+      "prose-summary": {
+        "scoring": "2-3 points (partial credit available)",
+        "criteria": [
+          {"points": 3, "description": "All three correct answers selected"},
+          {"points": 2, "description": "Two correct answers selected"},
+          {"points": 1, "description": "One correct answer selected"},
+          {"points": 0, "description": "No correct answers or all incorrect"}
+        ],
+        "commonErrors": [
+          "Selecting minor details instead of main ideas",
+          "Choosing statements not in the passage"
+        ]
+      }
+    }
+  },
+  
+  "listening": {
+    "totalQuestions": "28-39",
+    "rawScore": "Number correct",
+    "conversion": "Raw to scaled score varies by test difficulty",
+    "questionTypes": {
+      "main-idea": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Choosing a detail instead of main idea",
+          "Confusing topic with purpose"
+        ]
+      },
+      "detail": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Mishearing numbers or names",
+          "Selecting plausible but unmentioned information"
+        ]
+      },
+      "attitude": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Missing subtle tone indicators",
+          "Confusing the speaker's opinion with reported views"
+        ]
+      },
+      "organization": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Not recognizing why an example is given",
+          "Missing the relationship between ideas"
+        ]
+      },
+      "inference": {
+        "scoring": "1 point for correct answer",
+        "commonErrors": [
+          "Making leaps beyond what's implied",
+          "Using outside knowledge"
+        ]
+      }
+    }
+  },
+  
+  "speaking": {
+    "totalTasks": 4,
+    "scorePerTask": "0-4 (in 0.5 increments)",
+    "finalScore": "Average of 4 tasks converted to 0-30 scale",
+    "conversionTable": {
+      "4.00": "30",
+      "3.75": "29",
+      "3.50": "27",
+      "3.25": "26",
+      "3.00": "24",
+      "2.75": "22",
+      "2.50": "20",
+      "2.25": "18",
+      "2.00": "17",
+      "1.75": "15",
+      "1.50": "14",
+      "1.25": "12",
+      "1.00": "10",
+      "0.75": "8",
+      "0.50": "6",
+      "0.25": "4",
+      "0.00": "0"
+    },
+    "rubrics": {
+      "independent": {
+        "4": {
+          "delivery": "Generally well-paced, clear pronunciation, fluid expression",
+          "language": "Effective use of grammar and vocabulary, good control",
+          "development": "Well-developed with clear progression, specific examples"
+        },
+        "3": {
+          "delivery": "Some minor lapses in pace or clarity, generally understandable",
+          "language": "Some errors but meaning clear, adequate vocabulary",
+          "development": "Adequate development with some specifics, mostly coherent"
+        },
+        "2": {
+          "delivery": "Noticeable lapses, some effort for listener",
+          "language": "Limited range, errors obscure meaning at times",
+          "development": "Limited development, vague, some disconnection"
+        },
+        "1": {
+          "delivery": "Significant problems, very difficult to understand",
+          "language": "Severe errors, very limited vocabulary",
+          "development": "Little or no development, disconnected ideas"
+        },
+        "0": "No response or response unrelated to topic"
+      },
+      "integrated": {
+        "4": {
+          "delivery": "Clear, fluid, good pace",
+          "language": "Good control, appropriate vocabulary",
+          "development": "Accurately represents source material, shows relationships clearly"
+        },
+        "3": {
+          "delivery": "Generally clear, minor lapses",
+          "language": "Some errors, meaning clear",
+          "development": "Adequate representation, some connections shown"
+        },
+        "2": {
+          "delivery": "Noticeable effort required",
+          "language": "Limited, errors obscure meaning",
+          "development": "Omits key points, unclear relationships"
+        },
+        "1": {
+          "delivery": "Very difficult to understand",
+          "language": "Severe limitations",
+          "development": "Minimal source material, seriously distorted"
+        },
+        "0": "No response or unrelated"
+      }
+    },
+    "questionTypeGuidelines": {
+      "TOEFL-S.1": {
+        "scoring": "See independent rubric",
+        "keyElements": [
+          "State preference clearly",
+          "Give at least two reasons",
+          "Provide specific examples",
+          "Stay on topic"
+        ]
+      },
+      "TOEFL-S.2": {
+        "scoring": "See independent rubric",
+        "keyElements": [
+          "Make clear choice",
+          "Explain why chosen option is better",
+          "Use comparison language",
+          "Provide specific examples"
+        ]
+      },
+      "TOEFL-S.3": {
+        "scoring": "See integrated rubric",
+        "keyElements": [
+          "State speaker's opinion",
+          "Report reasons accurately",
+          "Connect to reading context",
+          "Complete within time"
+        ]
+      },
+      "TOEFL-S.4": {
+        "scoring": "See integrated rubric",
+        "keyElements": [
+          "State concept from reading",
+          "Explain each example from lecture",
+          "Connect examples to concept",
+          "Complete within time"
+        ]
+      }
+    }
+  },
+  
+  "writing": {
+    "totalTasks": 2,
+    "scorePerTask": "0-5 (in 0.5 increments)",
+    "finalScore": "Average of 2 tasks converted to 0-30 scale",
+    "conversionTable": {
+      "5.0": "30",
+      "4.5": "28",
+      "4.0": "25",
+      "3.5": "22",
+      "3.0": "20",
+      "2.5": "18",
+      "2.0": "15",
+      "1.5": "12",
+      "1.0": "10",
+      "0.5": "7",
+      "0.0": "0"
+    },
+    "rubrics": {
+      "integrated": {
+        "5": {
+          "content": "Accurately represents all three points from both reading and lecture, clearly shows relationships",
+          "organization": "Well-organized, each point clearly addressed, smooth transitions",
+          "language": "Effective sentence variety, precise vocabulary, few errors"
+        },
+        "4": {
+          "content": "Good representation of points, minor omission or inaccuracy",
+          "organization": "Generally well-organized, some minor lapses",
+          "language": "Some errors but meaning clear, adequate range"
+        },
+        "3": {
+          "content": "Misses one point or misrepresents relationship",
+          "organization": "Some organization, but may be repetitive or unclear",
+          "language": "Noticeable errors, limited range"
+        },
+        "2": {
+          "content": "Seriously misrepresents sources, omits key points",
+          "organization": "Poor organization, difficult to follow",
+          "language": "Frequent errors obscure meaning"
+        },
+        "1": {
+          "content": "Minimal relevant content",
+          "organization": "Lacks organization",
+          "language": "Severe and persistent errors"
+        },
+        "0": "Blank, off-topic, or not in English"
+      },
+      "independent": {
+        "5": {
+          "development": "Well-developed, specific examples, insightful ideas",
+          "organization": "Clear progression, effective transitions",
+          "language": "Varied sentence structure, precise vocabulary, few errors"
+        },
+        "4": {
+          "development": "Adequate development, some specifics",
+          "organization": "Generally clear, minor lapses",
+          "language": "Some variety, occasional errors"
+        },
+        "3": {
+          "development": "Limited development, vague examples",
+          "organization": "Some organization but may be repetitive",
+          "language": "Limited range, noticeable errors"
+        },
+        "2": {
+          "development": "Underdeveloped, lacks specifics",
+          "organization": "Poor organization, hard to follow",
+          "language": "Frequent errors obscure meaning"
+        },
+        "1": {
+          "development": "Minimal or no development",
+          "organization": "No discernible organization",
+          "language": "Severe errors"
+        },
+        "0": "Blank, off-topic, or not in English"
+      }
+    },
+    "questionTypeGuidelines": {
+      "TOEFL-W.1": {
+        "scoring": "See integrated rubric",
+        "wordCount": "150-225 words recommended",
+        "keyElements": [
+          "Introduction stating reading's claim and lecture's response",
+          "Three body paragraphs, each addressing one point",
+          "Clear contrast between reading and lecture",
+          "No personal opinion",
+          "Accurate representation of both sources"
+        ]
+      },
+      "TOEFL-W.2": {
+        "scoring": "See independent rubric",
+        "wordCount": "300-350 words recommended",
+        "keyElements": [
+          "Clear thesis statement",
+          "Well-developed reasons",
+          "Specific examples",
+          "Logical organization",
+          "Acknowledgment of complexity (optional but good)"
+        ]
+      }
+    }
+  }
+}

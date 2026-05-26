@@ -1,0 +1,456 @@
+{
+    "subject": "HSC Physics",
+    "subjectId": "hsc-physics",
+    "syllabusVersion": "2017",
+    "appliesTo": "HSC examinations 2019–2026",
+    "topics": [
+        {
+            "code": "PH-K",
+            "name": "Kinematics",
+            "year": 11,
+            "examWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "PH-K1",
+                    "name": "Motion in a Straight Line",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-K1.1",
+                            "name": "Scalars and vectors",
+                            "keywords": ["scalar", "vector", "displacement", "distance", "velocity", "speed", "acceleration", "magnitude", "direction"],
+                            "difficulty": "foundation",
+                            "prerequisites": []
+                        },
+                        {
+                            "code": "PH-K1.2",
+                            "name": "Uniform and non-uniform motion",
+                            "keywords": ["uniform motion", "non-uniform motion", "constant velocity", "acceleration", "displacement-time graph", "velocity-time graph", "gradient", "area under graph"],
+                            "difficulty": "foundation",
+                            "prerequisites": ["PH-K1.1"]
+                        },
+                        {
+                            "code": "PH-K1.3",
+                            "name": "Equations of motion (SUVAT)",
+                            "keywords": ["SUVAT", "v = u + at", "s = ut + ½at²", "v² = u² + 2as", "s = ½(u+v)t", "uniform acceleration", "kinematics equations"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-K1.2"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-K2",
+                    "name": "Motion on a Plane",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-K2.1",
+                            "name": "Vector addition and resolution",
+                            "keywords": ["vector addition", "vector resolution", "components", "horizontal component", "vertical component", "resultant", "Pythagoras", "trigonometry", "angle"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-K1.1"]
+                        },
+                        {
+                            "code": "PH-K2.2",
+                            "name": "Projectile motion",
+                            "keywords": ["projectile", "projectile motion", "horizontal velocity", "vertical velocity", "trajectory", "range", "maximum height", "time of flight", "parabola", "independent axes"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-K1.3", "PH-K2.1"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-D",
+            "name": "Dynamics",
+            "year": 11,
+            "examWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PH-D1",
+                    "name": "Forces",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-D1.1",
+                            "name": "Newton's laws of motion",
+                            "keywords": ["Newton's first law", "Newton's second law", "Newton's third law", "inertia", "net force", "F = ma", "action-reaction", "equilibrium"],
+                            "difficulty": "foundation",
+                            "prerequisites": ["PH-K1.3"]
+                        },
+                        {
+                            "code": "PH-D1.2",
+                            "name": "Forces in contact and at a distance",
+                            "keywords": ["normal force", "friction", "tension", "weight", "gravity", "applied force", "free body diagram", "contact force", "non-contact force"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-D1.1"]
+                        },
+                        {
+                            "code": "PH-D1.3",
+                            "name": "Work, energy and power",
+                            "keywords": ["work", "W = Fs cosθ", "kinetic energy", "KE = ½mv²", "potential energy", "GPE = mgh", "conservation of energy", "power", "P = W/t", "P = Fv", "efficiency"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-D1.1"]
+                        },
+                        {
+                            "code": "PH-D1.4",
+                            "name": "Momentum and impulse",
+                            "keywords": ["momentum", "p = mv", "impulse", "J = FΔt", "conservation of momentum", "elastic collision", "inelastic collision", "Newton's third law", "change in momentum"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-D1.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-D2",
+                    "name": "Circular Motion",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-D2.1",
+                            "name": "Uniform circular motion",
+                            "keywords": ["centripetal acceleration", "centripetal force", "period", "frequency", "angular velocity", "v = 2πr/T", "a = v²/r", "F = mv²/r", "tangential velocity"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-D1.1", "PH-K2.1"]
+                        },
+                        {
+                            "code": "PH-D2.2",
+                            "name": "Applications of circular motion",
+                            "keywords": ["banked track", "vertical circle", "satellite orbit", "apparent weight", "normal force", "tension in circular motion", "conical pendulum"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-D2.1"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-W",
+            "name": "Waves and Thermodynamics",
+            "year": 11,
+            "examWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PH-W1",
+                    "name": "Wave Model",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-W1.1",
+                            "name": "Properties of waves",
+                            "keywords": ["transverse wave", "longitudinal wave", "amplitude", "wavelength", "frequency", "period", "wave speed", "v = fλ", "crest", "trough", "compression", "rarefaction"],
+                            "difficulty": "foundation",
+                            "prerequisites": []
+                        },
+                        {
+                            "code": "PH-W1.2",
+                            "name": "Wave behaviour",
+                            "keywords": ["reflection", "refraction", "diffraction", "superposition", "interference", "constructive interference", "destructive interference", "standing wave", "node", "antinode"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-W1.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-W2",
+                    "name": "Sound Waves",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-W2.1",
+                            "name": "Sound and resonance",
+                            "keywords": ["sound wave", "longitudinal", "resonance", "standing wave", "open pipe", "closed pipe", "harmonic", "fundamental frequency", "overtone", "pitch", "loudness"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-W1.2"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-W3",
+                    "name": "Ray Model of Light",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-W3.1",
+                            "name": "Reflection and refraction of light",
+                            "keywords": ["reflection", "angle of incidence", "angle of reflection", "refraction", "Snell's law", "n₁sinθ₁ = n₂sinθ₂", "refractive index", "normal", "optical density"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-W1.1"]
+                        },
+                        {
+                            "code": "PH-W3.2",
+                            "name": "Total internal reflection",
+                            "keywords": ["total internal reflection", "critical angle", "sinC = n₂/n₁", "optical fibre", "less dense medium", "denser medium"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-W3.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-W4",
+                    "name": "Thermodynamics",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-W4.1",
+                            "name": "Thermal energy and specific heat",
+                            "keywords": ["thermal energy", "heat", "temperature", "specific heat capacity", "Q = mcΔT", "latent heat", "Q = mL", "phase change", "thermal equilibrium"],
+                            "difficulty": "intermediate",
+                            "prerequisites": []
+                        },
+                        {
+                            "code": "PH-W4.2",
+                            "name": "Laws of thermodynamics",
+                            "keywords": ["first law of thermodynamics", "internal energy", "ΔU = Q - W", "heat engine", "efficiency", "entropy", "second law of thermodynamics", "irreversible process"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-W4.1"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-E",
+            "name": "Electricity and Magnetism",
+            "year": "11-12",
+            "examWeightPercent": 20,
+            "subtopics": [
+                {
+                    "code": "PH-E1",
+                    "name": "Electrostatics",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-E1.1",
+                            "name": "Electric charge and Coulomb's law",
+                            "keywords": ["electric charge", "Coulomb's law", "F = kq₁q₂/r²", "k = 9×10⁹", "attractive force", "repulsive force", "conservation of charge", "point charge", "inverse square law"],
+                            "difficulty": "intermediate",
+                            "prerequisites": []
+                        },
+                        {
+                            "code": "PH-E1.2",
+                            "name": "Electric fields",
+                            "keywords": ["electric field", "E = F/q", "field lines", "uniform field", "E = V/d", "field strength", "field direction", "positive charge", "negative charge", "superposition"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-E1.1"]
+                        },
+                        {
+                            "code": "PH-E1.3",
+                            "name": "Electric potential energy and voltage",
+                            "keywords": ["electric potential energy", "voltage", "potential difference", "W = qV", "electron volt", "eV", "equipotential", "work done by electric field"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-E1.2"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-E2",
+                    "name": "Electric Circuits",
+                    "year": 11,
+                    "dotPoints": [
+                        {
+                            "code": "PH-E2.1",
+                            "name": "Current, resistance and Ohm's law",
+                            "keywords": ["current", "I = Q/t", "resistance", "Ohm's law", "V = IR", "resistivity", "ohmic conductor", "non-ohmic", "voltage divider"],
+                            "difficulty": "foundation",
+                            "prerequisites": ["PH-E1.3"]
+                        },
+                        {
+                            "code": "PH-E2.2",
+                            "name": "Series and parallel circuits",
+                            "keywords": ["series circuit", "parallel circuit", "equivalent resistance", "voltage drop", "current divider", "Kirchhoff's laws", "total resistance", "R = R₁ + R₂", "1/R = 1/R₁ + 1/R₂"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-E2.1"]
+                        },
+                        {
+                            "code": "PH-E2.3",
+                            "name": "Power in circuits",
+                            "keywords": ["electrical power", "P = VI", "P = I²R", "P = V²/R", "energy", "E = Pt", "kilowatt-hour", "heat dissipation"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-E2.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-E3",
+                    "name": "Magnetism and Electromagnetic Induction",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-E3.1",
+                            "name": "Magnetic fields and force on conductors",
+                            "keywords": ["magnetic field", "magnetic flux density", "B", "force on conductor", "F = BIl sinθ", "right-hand rule", "motor effect", "magnetic field lines", "tesla"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-E2.1"]
+                        },
+                        {
+                            "code": "PH-E3.2",
+                            "name": "Force on moving charges",
+                            "keywords": ["force on moving charge", "F = qvB sinθ", "right-hand rule", "charged particle", "circular motion in magnetic field", "velocity selector", "radius r = mv/qB"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-E3.1", "PH-D2.1"]
+                        },
+                        {
+                            "code": "PH-E3.3",
+                            "name": "Electromagnetic induction",
+                            "keywords": ["Faraday's law", "Lenz's law", "magnetic flux", "Φ = BA cosθ", "EMF", "ε = -ΔΦ/Δt", "induced current", "changing flux", "generator", "alternating current"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-E3.1"]
+                        },
+                        {
+                            "code": "PH-E3.4",
+                            "name": "Transformers and AC circuits",
+                            "keywords": ["transformer", "primary coil", "secondary coil", "turns ratio", "Vp/Vs = Np/Ns", "step-up", "step-down", "AC generator", "RMS voltage", "peak voltage", "V_rms = V_peak/√2"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-E3.3"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-A",
+            "name": "Advanced Mechanics",
+            "year": 12,
+            "examWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PH-A1",
+                    "name": "Projectile and Circular Motion (Advanced)",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-A1.1",
+                            "name": "Gravitational field and orbital motion",
+                            "keywords": ["gravitational field", "g = GM/r²", "universal gravitation", "F = GMm/r²", "G = 6.67×10⁻¹¹", "orbital velocity", "orbital period", "Kepler's third law", "T² ∝ r³", "geostationary orbit"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-D2.1", "PH-D1.2"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-N",
+            "name": "The Nature of Light",
+            "year": 12,
+            "examWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PH-N1",
+                    "name": "Wave Model of Light",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-N1.1",
+                            "name": "Electromagnetic spectrum and light",
+                            "keywords": ["electromagnetic spectrum", "electromagnetic wave", "speed of light", "c = 3×10⁸ m/s", "radio waves", "microwaves", "infrared", "visible light", "ultraviolet", "X-rays", "gamma rays", "wavelength and frequency"],
+                            "difficulty": "foundation",
+                            "prerequisites": ["PH-W1.1"]
+                        },
+                        {
+                            "code": "PH-N1.2",
+                            "name": "Interference and diffraction of light",
+                            "keywords": ["Young's double slit", "interference", "diffraction", "path difference", "bright fringe", "dark fringe", "λ = dx/L", "coherent light", "monochromatic", "constructive", "destructive"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-W1.2", "PH-N1.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-N2",
+                    "name": "Quantum Model of Light",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-N2.1",
+                            "name": "Photoelectric effect",
+                            "keywords": ["photoelectric effect", "photon", "E = hf", "Planck's constant", "h = 6.626×10⁻³⁴", "work function", "threshold frequency", "kinetic energy", "Einstein", "wave-particle duality"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-N1.1"]
+                        },
+                        {
+                            "code": "PH-N2.2",
+                            "name": "Wave-particle duality and de Broglie",
+                            "keywords": ["de Broglie wavelength", "λ = h/mv", "wave-particle duality", "matter wave", "electron diffraction", "complementarity", "quantum nature"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-N2.1"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-N3",
+                    "name": "Special Relativity",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-N3.1",
+                            "name": "Postulates and consequences of special relativity",
+                            "keywords": ["special relativity", "Einstein", "postulates", "speed of light constant", "inertial frame", "time dilation", "length contraction", "t = t₀/√(1-v²/c²)", "L = L₀√(1-v²/c²)", "proper time", "proper length"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-N1.1"]
+                        },
+                        {
+                            "code": "PH-N3.2",
+                            "name": "Mass-energy equivalence",
+                            "keywords": ["mass-energy equivalence", "E = mc²", "rest energy", "relativistic mass", "nuclear energy", "binding energy", "mass defect"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-N3.1"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PH-M",
+            "name": "From the Universe to the Atom",
+            "year": 12,
+            "examWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "PH-M1",
+                    "name": "Origins of the Elements",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-M1.1",
+                            "name": "Stars, nuclear fusion and the Big Bang",
+                            "keywords": ["Big Bang", "cosmic microwave background", "nucleosynthesis", "stellar fusion", "proton-proton chain", "main sequence", "red giant", "supernova", "neutron star", "black hole", "Hertzsprung-Russell diagram"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-N3.2"]
+                        }
+                    ]
+                },
+                {
+                    "code": "PH-M2",
+                    "name": "Structure of the Atom",
+                    "year": 12,
+                    "dotPoints": [
+                        {
+                            "code": "PH-M2.1",
+                            "name": "Atomic models and spectra",
+                            "keywords": ["Rutherford model", "Bohr model", "atomic spectrum", "emission spectrum", "absorption spectrum", "energy levels", "photon emission", "ΔE = hf", "ground state", "excited state", "hydrogen spectrum"],
+                            "difficulty": "intermediate",
+                            "prerequisites": ["PH-N2.1"]
+                        },
+                        {
+                            "code": "PH-M2.2",
+                            "name": "Radioactivity and nuclear reactions",
+                            "keywords": ["radioactivity", "alpha decay", "beta decay", "gamma decay", "half-life", "decay constant", "N = N₀e^(-λt)", "nuclear equation", "mass number", "atomic number", "conservation laws", "fission", "fusion"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-M2.1", "PH-N3.2"]
+                        },
+                        {
+                            "code": "PH-M2.3",
+                            "name": "Standard model of matter",
+                            "keywords": ["standard model", "quark", "lepton", "hadron", "baryon", "meson", "fermion", "boson", "fundamental forces", "gluon", "W boson", "Z boson", "photon", "proton", "neutron", "up quark", "down quark"],
+                            "difficulty": "advanced",
+                            "prerequisites": ["PH-M2.1"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

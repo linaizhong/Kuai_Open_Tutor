@@ -1,0 +1,146 @@
+{
+    "subject": "Advanced C++ Programming",
+    "description": "Marking guidelines for Advanced C++ coding exercises and assessments, covering correctness, memory safety, modern C++ idioms, and code quality.",
+    "lastUpdated": "2025-03-17",
+    "importantNote": "C++ exercises are assessed on correctness, memory safety, use of modern C++ idioms, exception safety, and adherence to C++ Core Guidelines.",
+    "assessmentCriteria": {
+        "general": [
+            "Correctness: Does the code compile without warnings and produce the expected output for all test cases?",
+            "Memory Safety: No leaks (verified with Valgrind/ASan), no use-after-free, no double-free, no undefined behaviour",
+            "Modern Idioms: Prefers RAII, smart pointers, STL algorithms, and move semantics over raw new/delete and C-style code",
+            "Exception Safety: Functions provide at least the basic guarantee; critical operations provide the strong guarantee",
+            "Const Correctness: Member functions that do not modify state are marked const; getters return const references where appropriate",
+            "Code Quality: Clear naming, minimal duplication, appropriate comments, and adherence to C++ Core Guidelines"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "C++ coding assessment partial credit principles",
+        "rules": [
+            { "condition": "Code compiles but produces incorrect output for some test cases", "marksAwarded": "Partial credit based on passing test cases — typically 50-70%" },
+            { "condition": "Correct logic but undefined behaviour (e.g., missing noexcept on move)", "marksAwarded": "Deduct 10-20% — UB is a serious defect in C++" },
+            { "condition": "Memory leak detected by Valgrind or ASan", "marksAwarded": "Deduct 20-30% — resource safety is fundamental in C++" },
+            { "condition": "Uses raw new/delete where smart pointers are appropriate", "marksAwarded": "Deduct 10-15% per instance — modern C++ avoids manual memory management" },
+            { "condition": "Correct but misses noexcept on move constructor/assignment", "marksAwarded": "Deduct 5-10% — noexcept on moves is essential for STL compatibility" },
+            { "condition": "Missing const on member functions that do not modify state", "marksAwarded": "Deduct 5-10% — const correctness is a core C++ contract" },
+            { "condition": "Data race detected by ThreadSanitizer in concurrent code", "marksAwarded": "Deduct 20-30% — thread safety is non-negotiable in concurrent programs" },
+            { "condition": "Correct but uses C-style casts instead of static_cast/dynamic_cast", "marksAwarded": "Deduct 5% — C-style casts bypass type safety" }
+        ]
+    },
+    "levelDescriptors": {
+        "intermediate": {
+            "expectations": [
+                "Correct use of classes, constructors, and destructors",
+                "Basic RAII with std::unique_ptr and std::vector",
+                "Understands copy vs move semantics at a conceptual level",
+                "Uses STL containers and iterators correctly",
+                "Handles exceptions with try-catch blocks"
+            ],
+            "commonErrors": [
+                "Missing virtual destructor in base class",
+                "Not checking for self-assignment in copy assignment operator",
+                "Using raw arrays instead of std::vector or std::array",
+                "Forgetting to #include required headers",
+                "Using C-style casts instead of static_cast"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Correct Rule of Five implementation with noexcept move operations",
+                "Proficient use of templates and type traits",
+                "Understands value categories and perfect forwarding",
+                "Thread-safe code using RAII locks and condition variables",
+                "Uses std::optional, std::variant, and structured bindings",
+                "Applies CRTP or PIMPL where appropriate"
+            ],
+            "commonErrors": [
+                "Move constructor not marked noexcept — prevents STL optimisations",
+                "Accessing a moved-from object's value",
+                "Deadlock from locking mutexes in inconsistent order",
+                "Not passing predicate to condition_variable::wait() — spurious wakeup risk",
+                "Template definitions not in headers",
+                "SFINAE errors producing cryptic compiler messages"
+            ]
+        },
+        "expert": {
+            "expectations": [
+                "Mastery of template metaprogramming and concepts",
+                "Correct use of memory_order in lock-free atomic operations",
+                "Implements custom allocators or memory pools when appropriate",
+                "Writes coroutines and range adaptors",
+                "Profiles and optimises for cache efficiency and vectorisation",
+                "Understands ABI stability and PIMPL tradeoffs"
+            ],
+            "commonErrors": [
+                "Incorrect memory_order leading to data races in lock-free code",
+                "Memory ordering too conservative (seq_cst everywhere) causing unnecessary performance loss",
+                "Coroutine lifetime errors — frame outlives coroutine handle",
+                "Over-engineering with templates when a simple virtual dispatch is clearer",
+                "Premature optimisation obscuring code intent"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "CPP-Q-OOP-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "Perfect Rule of Five: all five operations correct, noexcept on moves, copy-and-swap assignment, demonstrated with vector reallocation" },
+                { "marks": "9-10",  "description": "All five operations correct but missing noexcept on moves, or copy assignment does not handle self-assignment via swap" },
+                { "marks": "7-8",   "description": "Copy and move constructors correct; assignment operator has self-assignment bug or memory leak" },
+                { "marks": "5-6",   "description": "Destructor and copy constructor correct; move operations missing or incorrect" },
+                { "marks": "3-4",   "description": "Destructor correct; copy constructor has shallow copy — memory leak or double free" },
+                { "marks": "1-2",   "description": "Class structure present but significant correctness issues in most operations" },
+                { "marks": 0,       "description": "No meaningful attempt or code does not compile" }
+            ]
+        },
+        "CPP-Q-TPL-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Stack<T> complete and correct; static_assert present; sum_stack correctly constrained with enable_if or concept; all edge cases handled" },
+                { "marks": "12-13", "description": "Stack correct and functional; sum_stack works but constraint could be tighter or error message clearer" },
+                { "marks": "9-11",  "description": "Stack mostly correct; sum_stack compiles but constraint missing or sum_stack has logic error" },
+                { "marks": "6-8",   "description": "Stack implementation has 1-2 significant issues (e.g., missing move push); sum_stack present but incorrect" },
+                { "marks": "3-5",   "description": "Basic template structure present but significant functionality missing" },
+                { "marks": "1-2",   "description": "Minimal correct elements" },
+                { "marks": 0,       "description": "No meaningful attempt or does not compile" }
+            ]
+        },
+        "CPP-Q-CON-001": {
+            "totalMarks": 15,
+            "criteria": [
+                { "marks": "14-15", "description": "Thread-safe queue correct; both blocking and non-blocking operations work; no data races (ThreadSanitizer clean); demonstrated with producer-consumer" },
+                { "marks": "12-13", "description": "Blocking operations correct; try_push/try_pop have a minor issue; no data races" },
+                { "marks": "9-11",  "description": "push/pop mostly correct but spurious wakeup not guarded (no predicate in wait()); or try_push/try_pop missing" },
+                { "marks": "6-8",   "description": "Mutex used correctly but condition variables used improperly or not at all — busy-waiting instead" },
+                { "marks": "3-5",   "description": "Mutex present but queue not correctly thread-safe" },
+                { "marks": "1-2",   "description": "Minimal attempt — queue without any synchronisation" },
+                { "marks": 0,       "description": "No meaningful attempt or does not compile" }
+            ]
+        },
+        "CPP-Q-MEM-001": {
+            "totalMarks": 10,
+            "criteria": [
+                { "marks": "9-10", "description": "All nodes destroyed (no leak); weak_ptr used correctly for prev; forward and backward traversal correct; cycle avoidance explained in comment" },
+                { "marks": "7-8",  "description": "Correct but comment on why weak_ptr is needed is missing or incomplete" },
+                { "marks": "5-6",  "description": "shared_ptr used for prev — memory leak; or backward traversal via lock() missing" },
+                { "marks": "3-4",  "description": "Basic linked list with smart pointers but cycle not avoided" },
+                { "marks": "1-2",  "description": "Raw pointers used; destructors not called" },
+                { "marks": 0,      "description": "No meaningful attempt" }
+            ]
+        },
+        "CPP-Q-MOD-001": {
+            "totalMarks": 12,
+            "criteria": [
+                { "marks": "11-12", "description": "Concept correctly defined; print_all constrained and using std::format; operator<=> = default generates all comparisons; sorting and output correct" },
+                { "marks": "9-10",  "description": "All features present but if constexpr check for empty is incorrect, or std::format usage has minor issue" },
+                { "marks": "7-8",   "description": "Concept defined; operator<=> present; one of the three features has a significant issue" },
+                { "marks": "5-6",   "description": "Two of three features (concept, format, spaceship) correctly implemented" },
+                { "marks": "3-4",   "description": "One feature correctly implemented; others have significant issues" },
+                { "marks": "1-2",   "description": "Some modern syntax present but major compilation errors" },
+                { "marks": 0,       "description": "No meaningful attempt" }
+            ]
+        }
+    },
+    "feedbackTemplate": {
+        "coding": "Score: {score}/{totalMarks}\n\nCorrectness: {correctness}\nMemory Safety: {memory_safety}\nModern Idioms: {idioms}\nException Safety: {exception_safety}\nConst Correctness: {const_correctness}\nCode Quality: {quality}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nKey C++ Resources:\n- C++ Core Guidelines: https://isocpp.github.io/CppCoreGuidelines/\n- cppreference.com: https://en.cppreference.com/\n- Godbolt Compiler Explorer: https://godbolt.org/"
+    }
+}

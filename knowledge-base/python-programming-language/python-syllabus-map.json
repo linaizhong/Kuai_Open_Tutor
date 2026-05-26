@@ -1,0 +1,600 @@
+{
+    "subject": "Python Programming Language",
+    "subjectId": "python-learning",
+    "syllabusVersion": "3.12",
+    "appliesTo": "Beginners to Advanced Python developers",
+    "learningPath": {
+        "totalDuration": "200 hours",
+        "levels": [
+            { "level": "Beginner", "estimatedHours": 60, "topics": ["Basics", "Control Flow", "Data Structures", "Functions"] },
+            { "level": "Intermediate", "estimatedHours": 70, "topics": ["OOP", "Modules", "File I/O", "Error Handling"] },
+            { "level": "Advanced", "estimatedHours": 70, "topics": ["Advanced Features", "Performance", "Testing", "Frameworks"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "PY-BAS",
+            "name": "Python Basics",
+            "level": "Beginner",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PY-BAS-1",
+                    "name": "Getting Started",
+                    "dotPoints": [
+                        { "code": "PY-BAS-1.1", "name": "Python Installation and Environment Setup", "keywords": ["installation", "IDLE", "VS Code", "PyCharm", "Jupyter", "virtual environment", "pip", "conda"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-1.2", "name": "Your First Python Program", "keywords": ["hello world", "print()", "comments", "indentation", "REPL", "script execution"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-1.3", "name": "Python Syntax and Basic Rules", "keywords": ["indentation", "case sensitivity", "statements", "line continuation", "multiple statements"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-BAS-2",
+                    "name": "Variables and Data Types",
+                    "dotPoints": [
+                        { "code": "PY-BAS-2.1", "name": "Variables and Assignment", "keywords": ["variable naming", "dynamic typing", "multiple assignment", "type() function", "id() function"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-2.2", "name": "Numeric Types (int, float, complex)", "keywords": ["integers", "floating point", "complex numbers", "type conversion", "math operations", "floor division", "modulo"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-2.3", "name": "Strings", "keywords": ["string creation", "quotes", "escape sequences", "string concatenation", "string repetition", "string indexing", "string slicing"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-2.4", "name": "Boolean Type", "keywords": ["True", "False", "bool()", "truthiness", "boolean operations"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-2.5", "name": "Type Conversion", "keywords": ["int()", "float()", "str()", "bool()", "implicit conversion", "explicit conversion"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-2.6", "name": "None Type", "keywords": ["None", "null", "absence of value"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-BAS-3",
+                    "name": "Basic Input/Output",
+                    "dotPoints": [
+                        { "code": "PY-BAS-3.1", "name": "Output with print()", "keywords": ["print()", "sep parameter", "end parameter", "file parameter", "flush parameter"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-3.2", "name": "Input with input()", "keywords": ["input()", "prompt", "string input", "numeric input conversion"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-3.3", "name": "String Formatting", "keywords": ["f-strings", "format()", "% formatting", "string templates", "format specifiers"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-BAS-4",
+                    "name": "Operators",
+                    "dotPoints": [
+                        { "code": "PY-BAS-4.1", "name": "Arithmetic Operators", "keywords": ["+", "-", "*", "/", "//", "%", "**", "operator precedence", "associativity"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.2", "name": "Comparison Operators", "keywords": ["==", "!=", ">", "<", ">=", "<=", "chained comparisons"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.3", "name": "Logical Operators", "keywords": ["and", "or", "not", "short-circuit evaluation"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.4", "name": "Assignment Operators", "keywords": ["=", "+=", "-=", "*=", "/=", "//=", "%=", "**="], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.5", "name": "Identity Operators", "keywords": ["is", "is not", "object identity", "vs =="], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.6", "name": "Membership Operators", "keywords": ["in", "not in", "sequence membership"], "difficulty": "foundation" },
+                        { "code": "PY-BAS-4.7", "name": "Bitwise Operators", "keywords": ["&", "|", "^", "~", "<<", ">>", "binary operations"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-CFL",
+            "name": "Control Flow",
+            "level": "Beginner",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "PY-CFL-1",
+                    "name": "Conditional Statements",
+                    "dotPoints": [
+                        { "code": "PY-CFL-1.1", "name": "if Statement", "keywords": ["if", "conditional expression", "indentation", "block structure"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-1.2", "name": "if-else Statement", "keywords": ["else", "two-way branching", "alternative execution"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-1.3", "name": "if-elif-else Statement", "keywords": ["elif", "multi-way branching", "chain conditions"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-1.4", "name": "Nested Conditionals", "keywords": ["nested if", "deep branching", "logical structure"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-1.5", "name": "Conditional Expressions (Ternary)", "keywords": ["x if condition else y", "ternary operator", "inline conditional"], "difficulty": "intermediate" },
+                        { "code": "PY-CFL-1.6", "name": "match Statement (Python 3.10+)", "keywords": ["match", "case", "pattern matching", "wildcard", "structural pattern matching"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-CFL-2",
+                    "name": "Loops",
+                    "dotPoints": [
+                        { "code": "PY-CFL-2.1", "name": "while Loop", "keywords": ["while", "loop condition", "infinite loop", "loop variable"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-2.2", "name": "for Loop", "keywords": ["for", "iteration", "range()", "sequence iteration"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-2.3", "name": "break Statement", "keywords": ["break", "loop exit", "early termination"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-2.4", "name": "continue Statement", "keywords": ["continue", "skip iteration", "next iteration"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-2.5", "name": "else Clause with Loops", "keywords": ["loop else", "no break executed"], "difficulty": "intermediate" },
+                        { "code": "PY-CFL-2.6", "name": "Nested Loops", "keywords": ["nested loops", "inner loop", "outer loop", "multi-dimensional iteration"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-2.7", "name": "Loop Control with pass", "keywords": ["pass", "null operation", "placeholder"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-CFL-3",
+                    "name": "Iterables and Iterators",
+                    "dotPoints": [
+                        { "code": "PY-CFL-3.1", "name": "range() Function", "keywords": ["range", "start", "stop", "step", "immutable sequence"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-3.2", "name": "enumerate() Function", "keywords": ["enumerate", "index", "counter", "parallel iteration"], "difficulty": "foundation" },
+                        { "code": "PY-CFL-3.3", "name": "zip() Function", "keywords": ["zip", "parallel iteration", "multiple sequences", "unzip"], "difficulty": "intermediate" },
+                        { "code": "PY-CFL-3.4", "name": "Iterators and Iterables", "keywords": ["iter()", "next()", "StopIteration", "iterator protocol"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-DST",
+            "name": "Data Structures",
+            "level": "Beginner",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PY-DST-1",
+                    "name": "Lists",
+                    "dotPoints": [
+                        { "code": "PY-DST-1.1", "name": "List Creation and Basics", "keywords": ["list", "square brackets", "heterogeneous", "mutable", "empty list"], "difficulty": "foundation" },
+                        { "code": "PY-DST-1.2", "name": "List Indexing and Slicing", "keywords": ["index", "negative indexing", "slice [start:stop:step]", "slice assignment"], "difficulty": "foundation" },
+                        { "code": "PY-DST-1.3", "name": "List Methods", "keywords": ["append()", "extend()", "insert()", "remove()", "pop()", "clear()", "index()", "count()", "sort()", "reverse()", "copy()"], "difficulty": "foundation" },
+                        { "code": "PY-DST-1.4", "name": "List Comprehension", "keywords": ["list comprehension", "condition", "nested comprehension", "vs for loop"], "difficulty": "intermediate" },
+                        { "code": "PY-DST-1.5", "name": "Nested Lists", "keywords": ["matrix", "2D list", "nested indexing", "flattening"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-DST-2",
+                    "name": "Tuples",
+                    "dotPoints": [
+                        { "code": "PY-DST-2.1", "name": "Tuple Creation and Basics", "keywords": ["tuple", "parentheses", "immutable", "heterogeneous", "singleton tuple"], "difficulty": "foundation" },
+                        { "code": "PY-DST-2.2", "name": "Tuple Operations", "keywords": ["indexing", "slicing", "concatenation", "repetition", "membership"], "difficulty": "foundation" },
+                        { "code": "PY-DST-2.3", "name": "Tuple Packing and Unpacking", "keywords": ["packing", "unpacking", "swap variables", "multiple return values"], "difficulty": "foundation" },
+                        { "code": "PY-DST-2.4", "name": "Named Tuples", "keywords": ["namedtuple", "collections", "field names", "readable code"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-DST-3",
+                    "name": "Dictionaries",
+                    "dotPoints": [
+                        { "code": "PY-DST-3.1", "name": "Dictionary Creation and Basics", "keywords": ["dict", "key-value pairs", "curly braces", "hashable keys", "mutable"], "difficulty": "foundation" },
+                        { "code": "PY-DST-3.2", "name": "Dictionary Operations", "keywords": ["access value", "get()", "keys()", "values()", "items()", "update()", "del", "pop()", "popitem()", "clear()"], "difficulty": "foundation" },
+                        { "code": "PY-DST-3.3", "name": "Dictionary Comprehensions", "keywords": ["dict comprehension", "key:value", "conditional dict"], "difficulty": "intermediate" },
+                        { "code": "PY-DST-3.4", "name": "DefaultDict", "keywords": ["defaultdict", "collections", "default factory", "missing keys"], "difficulty": "intermediate" },
+                        { "code": "PY-DST-3.5", "name": "Nested Dictionaries", "keywords": ["nested dict", "JSON-like", "deep access"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-DST-4",
+                    "name": "Sets",
+                    "dotPoints": [
+                        { "code": "PY-DST-4.1", "name": "Set Creation and Basics", "keywords": ["set", "curly braces", "unique elements", "unordered", "mutable"], "difficulty": "foundation" },
+                        { "code": "PY-DST-4.2", "name": "Set Operations", "keywords": ["add()", "remove()", "discard()", "pop()", "clear()", "union()", "intersection()", "difference()", "symmetric_difference()", "issubset()", "issuperset()"], "difficulty": "foundation" },
+                        { "code": "PY-DST-4.3", "name": "Set Comprehensions", "keywords": ["set comprehension"], "difficulty": "intermediate" },
+                        { "code": "PY-DST-4.4", "name": "FrozenSet", "keywords": ["frozenset", "immutable set", "hashable"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-DST-5",
+                    "name": "Strings Advanced",
+                    "dotPoints": [
+                        { "code": "PY-DST-5.1", "name": "String Methods", "keywords": ["upper()", "lower()", "strip()", "split()", "join()", "replace()", "find()", "startswith()", "endswith()", "isalpha()", "isdigit()", "isalnum()"], "difficulty": "foundation" },
+                        { "code": "PY-DST-5.2", "name": "String Immutability", "keywords": ["immutable", "string modification", "new string creation"], "difficulty": "foundation" },
+                        { "code": "PY-DST-5.3", "name": "Raw Strings", "keywords": ["r''", "escape sequences ignored", "regex patterns", "Windows paths"], "difficulty": "intermediate" },
+                        { "code": "PY-DST-5.4", "name": "Unicode and Encoding", "keywords": ["Unicode", "UTF-8", "encode()", "decode()", "bytes", "bytearray"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-FUN",
+            "name": "Functions",
+            "level": "Beginner",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "PY-FUN-1",
+                    "name": "Function Basics",
+                    "dotPoints": [
+                        { "code": "PY-FUN-1.1", "name": "Function Definition and Calling", "keywords": ["def", "function name", "parameters", "body", "return", "function call"], "difficulty": "foundation" },
+                        { "code": "PY-FUN-1.2", "name": "Return Values", "keywords": ["return", "multiple return values", "None", "early return"], "difficulty": "foundation" },
+                        { "code": "PY-FUN-1.3", "name": "Parameters and Arguments", "keywords": ["positional arguments", "keyword arguments", "default parameters"], "difficulty": "foundation" },
+                        { "code": "PY-FUN-1.4", "name": "Docstrings", "keywords": ["docstring", "__doc__", "help()", "function documentation"], "difficulty": "foundation" },
+                        { "code": "PY-FUN-1.5", "name": "Function Annotations (Type Hints)", "keywords": [": type", "-> return type", "type hints", "typing module"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-FUN-2",
+                    "name": "Advanced Function Concepts",
+                    "dotPoints": [
+                        { "code": "PY-FUN-2.1", "name": "Variable Scope", "keywords": ["local scope", "global scope", "global keyword", "nonlocal", "LEGB rule"], "difficulty": "intermediate" },
+                        { "code": "PY-FUN-2.2", "name": "*args and **kwargs", "keywords": ["*args", "**kwargs", "variable-length arguments", "unpacking"], "difficulty": "intermediate" },
+                        { "code": "PY-FUN-2.3", "name": "Lambda Functions", "keywords": ["lambda", "anonymous function", "inline function", "functional programming"], "difficulty": "intermediate" },
+                        { "code": "PY-FUN-2.4", "name": "Recursion", "keywords": ["recursion", "base case", "recursive case", "stack overflow", "tail recursion"], "difficulty": "intermediate" },
+                        { "code": "PY-FUN-2.5", "name": "Higher-Order Functions", "keywords": ["map()", "filter()", "reduce()", "functools", "function as argument"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-MOD",
+            "name": "Modules and Packages",
+            "level": "Beginner",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "PY-MOD-1",
+                    "name": "Modules",
+                    "dotPoints": [
+                        { "code": "PY-MOD-1.1", "name": "Importing Modules", "keywords": ["import", "from...import", "import...as", "dir()", "__name__"], "difficulty": "foundation" },
+                        { "code": "PY-MOD-1.2", "name": "Creating Modules", "keywords": [".py file", "module creation", "reusable code"], "difficulty": "foundation" },
+                        { "code": "PY-MOD-1.3", "name": "Module Search Path", "keywords": ["sys.path", "PYTHONPATH", "site-packages", "module location"], "difficulty": "intermediate" },
+                        { "code": "PY-MOD-1.4", "name": "if __name__ == '__main__'", "keywords": ["__name__", "__main__", "script vs module", "execution guard"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-MOD-2",
+                    "name": "Packages",
+                    "dotPoints": [
+                        { "code": "PY-MOD-2.1", "name": "Package Structure", "keywords": ["__init__.py", "package", "subpackage", "directory structure"], "difficulty": "intermediate" },
+                        { "code": "PY-MOD-2.2", "name": "Importing from Packages", "keywords": ["relative imports", "absolute imports", "from . import", "from .. import"], "difficulty": "intermediate" },
+                        { "code": "PY-MOD-2.3", "name": "__all__ Variable", "keywords": ["__all__", "from package import *", "export control"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-MOD-3",
+                    "name": "Standard Library Overview",
+                    "dotPoints": [
+                        { "code": "PY-MOD-3.1", "name": "Common Built-in Modules", "keywords": ["math", "random", "datetime", "os", "sys", "json", "re", "collections", "itertools"], "difficulty": "foundation" },
+                        { "code": "PY-MOD-3.2", "name": "Third-Party Packages with pip", "keywords": ["pip install", "PyPI", "requirements.txt", "virtual environments"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-FIO",
+            "name": "File Input/Output",
+            "level": "Beginner",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "PY-FIO-1",
+                    "name": "File Operations",
+                    "dotPoints": [
+                        { "code": "PY-FIO-1.1", "name": "Opening and Closing Files", "keywords": ["open()", "close()", "file modes", "r", "w", "a", "x", "b", "t", "+"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-1.2", "name": "Reading Files", "keywords": ["read()", "readline()", "readlines()", "for line in file", "seek()", "tell()"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-1.3", "name": "Writing to Files", "keywords": ["write()", "writelines()", "append mode", "newline handling"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-1.4", "name": "with Statement (Context Managers)", "keywords": ["with", "context manager", "__enter__", "__exit__", "auto close"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-FIO-2",
+                    "name": "Working with Different File Types",
+                    "dotPoints": [
+                        { "code": "PY-FIO-2.1", "name": "CSV Files", "keywords": ["csv module", "reader", "writer", "DictReader", "DictWriter"], "difficulty": "intermediate" },
+                        { "code": "PY-FIO-2.2", "name": "JSON Files", "keywords": ["json module", "dump()", "load()", "dumps()", "loads()", "pretty print"], "difficulty": "intermediate" },
+                        { "code": "PY-FIO-2.3", "name": "Text Files Encoding", "keywords": ["encoding parameter", "UTF-8", "encoding errors"], "difficulty": "intermediate" },
+                        { "code": "PY-FIO-2.4", "name": "Binary Files", "keywords": ["binary mode", "bytes", "bytearray", "struct module"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-FIO-3",
+                    "name": "File System Operations",
+                    "dotPoints": [
+                        { "code": "PY-FIO-3.1", "name": "os.path Operations", "keywords": ["os.path.join()", "os.path.exists()", "os.path.isfile()", "os.path.isdir()", "os.path.basename()", "os.path.dirname()", "os.path.splitext()"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-3.2", "name": "Directory Operations", "keywords": ["os.listdir()", "os.mkdir()", "os.makedirs()", "os.rmdir()", "shutil.rmtree()"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-3.3", "name": "File Operations", "keywords": ["os.rename()", "os.remove()", "shutil.copy()", "shutil.move()"], "difficulty": "foundation" },
+                        { "code": "PY-FIO-3.4", "name": "pathlib Module (Modern Approach)", "keywords": ["Path", "Path()", "PurePath", "glob()", "read_text()", "write_text()", "mkdir()"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-ERR",
+            "name": "Error Handling",
+            "level": "Beginner",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "PY-ERR-1",
+                    "name": "Exceptions",
+                    "dotPoints": [
+                        { "code": "PY-ERR-1.1", "name": "Understanding Exceptions", "keywords": ["exception", "error", "traceback", "built-in exceptions"], "difficulty": "foundation" },
+                        { "code": "PY-ERR-1.2", "name": "Common Exception Types", "keywords": ["SyntaxError", "NameError", "TypeError", "ValueError", "IndexError", "KeyError", "FileNotFoundError", "ZeroDivisionError", "AttributeError"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-ERR-2",
+                    "name": "Exception Handling",
+                    "dotPoints": [
+                        { "code": "PY-ERR-2.1", "name": "try-except Blocks", "keywords": ["try", "except", "catching exceptions", "multiple except"], "difficulty": "foundation" },
+                        { "code": "PY-ERR-2.2", "name": "Catching Specific Exceptions", "keywords": ["exception type", "as e", "exception hierarchy"], "difficulty": "foundation" },
+                        { "code": "PY-ERR-2.3", "name": "else Clause", "keywords": ["else", "no exception occurred"], "difficulty": "foundation" },
+                        { "code": "PY-ERR-2.4", "name": "finally Clause", "keywords": ["finally", "cleanup", "always executed"], "difficulty": "foundation" },
+                        { "code": "PY-ERR-2.5", "name": "Raising Exceptions", "keywords": ["raise", "raise Exception", "raise from", "custom exceptions"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-ERR-3",
+                    "name": "Advanced Error Handling",
+                    "dotPoints": [
+                        { "code": "PY-ERR-3.1", "name": "Creating Custom Exceptions", "keywords": ["class Exception", "custom exception", "inheritance from Exception"], "difficulty": "intermediate" },
+                        { "code": "PY-ERR-3.2", "name": "Exception Chaining", "keywords": ["raise from", "exception context", "__cause__", "__context__"], "difficulty": "advanced" },
+                        { "code": "PY-ERR-3.3", "name": "Assertions", "keywords": ["assert", "debugging", "AssertionError"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-OOP",
+            "name": "Object-Oriented Programming",
+            "level": "Intermediate",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "PY-OOP-1",
+                    "name": "Classes and Objects",
+                    "dotPoints": [
+                        { "code": "PY-OOP-1.1", "name": "Class Definition", "keywords": ["class", "object", "instance", "__init__", "self"], "difficulty": "foundation" },
+                        { "code": "PY-OOP-1.2", "name": "Instance Attributes", "keywords": ["instance variable", "self.attribute", "setattr", "getattr"], "difficulty": "foundation" },
+                        { "code": "PY-OOP-1.3", "name": "Class Attributes", "keywords": ["class variable", "shared attribute", "access via class"], "difficulty": "foundation" },
+                        { "code": "PY-OOP-1.4", "name": "Instance Methods", "keywords": ["method", "self parameter", "method call"], "difficulty": "foundation" },
+                        { "code": "PY-OOP-1.5", "name": "__str__ and __repr__", "keywords": ["__str__", "__repr__", "string representation", "print object"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-OOP-2",
+                    "name": "Inheritance",
+                    "dotPoints": [
+                        { "code": "PY-OOP-2.1", "name": "Basic Inheritance", "keywords": ["inheritance", "parent class", "child class", "super()", "method overriding"], "difficulty": "intermediate" },
+                        { "code": "PY-OOP-2.2", "name": "Multiple Inheritance", "keywords": ["multiple inheritance", "MRO", "method resolution order", "__mro__", "diamond problem"], "difficulty": "advanced" },
+                        { "code": "PY-OOP-2.3", "name": "isinstance() and issubclass()", "keywords": ["isinstance()", "issubclass()", "type checking"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-OOP-3",
+                    "name": "Encapsulation and Properties",
+                    "dotPoints": [
+                        { "code": "PY-OOP-3.1", "name": "Name Mangling (Private Attributes)", "keywords": ["__attribute", "name mangling", "private", "protected"], "difficulty": "intermediate" },
+                        { "code": "PY-OOP-3.2", "name": "Properties with @property", "keywords": ["@property", "@setter", "@deleter", "getter", "setter", "computed attributes"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-OOP-4",
+                    "name": "Polymorphism",
+                    "dotPoints": [
+                        { "code": "PY-OOP-4.1", "name": "Duck Typing", "keywords": ["duck typing", "if it walks like a duck", "polymorphism without inheritance"], "difficulty": "intermediate" },
+                        { "code": "PY-OOP-4.2", "name": "Method Overloading", "keywords": ["method overloading", "default parameters", "multiple dispatch"], "difficulty": "intermediate" },
+                        { "code": "PY-OOP-4.3", "name": "Operator Overloading", "keywords": ["__add__", "__sub__", "__mul__", "__eq__", "__lt__", "magic methods"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-OOP-5",
+                    "name": "Advanced OOP Concepts",
+                    "dotPoints": [
+                        { "code": "PY-OOP-5.1", "name": "Class Methods and Static Methods", "keywords": ["@classmethod", "@staticmethod", "cls parameter", "factory methods"], "difficulty": "intermediate" },
+                        { "code": "PY-OOP-5.2", "name": "Abstract Base Classes", "keywords": ["ABC", "abstractmethod", "abc module", "interfaces"], "difficulty": "advanced" },
+                        { "code": "PY-OOP-5.3", "name": "Metaclasses", "keywords": ["metaclass", "type", "class creation", "__new__"], "difficulty": "advanced" },
+                        { "code": "PY-OOP-5.4", "name": "Slots", "keywords": ["__slots__", "memory optimization", "attribute restriction"], "difficulty": "advanced" },
+                        { "code": "PY-OOP-5.5", "name": "Dataclasses (Python 3.7+)", "keywords": ["@dataclass", "field", "__post_init__", "frozen", "asdict"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-ADV",
+            "name": "Advanced Python Features",
+            "level": "Advanced",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "PY-ADV-1",
+                    "name": "Decorators",
+                    "dotPoints": [
+                        { "code": "PY-ADV-1.1", "name": "Function Decorators", "keywords": ["@decorator", "wrapper function", "@functools.wraps", "decorator with arguments"], "difficulty": "advanced" },
+                        { "code": "PY-ADV-1.2", "name": "Class Decorators", "keywords": ["class decorator", "modify class"], "difficulty": "advanced" },
+                        { "code": "PY-ADV-1.3", "name": "Built-in Decorators", "keywords": ["@staticmethod", "@classmethod", "@property", "@functools.lru_cache"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-ADV-2",
+                    "name": "Generators and Iterators",
+                    "dotPoints": [
+                        { "code": "PY-ADV-2.1", "name": "Generator Functions (yield)", "keywords": ["yield", "generator function", "generator object", "yield from"], "difficulty": "intermediate" },
+                        { "code": "PY-ADV-2.2", "name": "Generator Expressions", "keywords": ["generator expression", "() comprehension", "lazy evaluation"], "difficulty": "intermediate" },
+                        { "code": "PY-ADV-2.3", "name": "Iterator Protocol", "keywords": ["__iter__", "__next__", "StopIteration", "custom iterator"], "difficulty": "intermediate" },
+                        { "code": "PY-ADV-2.4", "name": "itertools Module", "keywords": ["count", "cycle", "repeat", "accumulate", "chain", "compress", "dropwhile", "takewhile"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-ADV-3",
+                    "name": "Context Managers",
+                    "dotPoints": [
+                        { "code": "PY-ADV-3.1", "name": "with Statement", "keywords": ["with", "context manager", "file handling", "resource management"], "difficulty": "intermediate" },
+                        { "code": "PY-ADV-3.2", "name": "Creating Context Managers", "keywords": ["__enter__", "__exit__", "contextlib.contextmanager", "@contextmanager"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-ADV-4",
+                    "name": "Functional Programming Tools",
+                    "dotPoints": [
+                        { "code": "PY-ADV-4.1", "name": "functools Module", "keywords": ["partial", "reduce", "lru_cache", "wraps", "singledispatch"], "difficulty": "advanced" },
+                        { "code": "PY-ADV-4.2", "name": "Lambda and Map/Filter/Reduce", "keywords": ["lambda", "map", "filter", "reduce", "functional paradigm"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-CON",
+            "name": "Concurrency and Parallelism",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "PY-CON-1",
+                    "name": "Threading",
+                    "dotPoints": [
+                        { "code": "PY-CON-1.1", "name": "threading Module", "keywords": ["Thread", "start()", "join()", "daemon", "active_count()"], "difficulty": "advanced" },
+                        { "code": "PY-CON-1.2", "name": "Thread Synchronization", "keywords": ["Lock", "RLock", "Semaphore", "Event", "Condition", "race condition"], "difficulty": "advanced" },
+                        { "code": "PY-CON-1.3", "name": "GIL (Global Interpreter Lock)", "keywords": ["GIL", "CPython", "multi-threading limitations", "I/O vs CPU bound"], "difficulty": "advanced" },
+                        { "code": "PY-CON-1.4", "name": "Thread Pools", "keywords": ["concurrent.futures", "ThreadPoolExecutor", "submit()", "as_completed()"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-CON-2",
+                    "name": "Multiprocessing",
+                    "dotPoints": [
+                        { "code": "PY-CON-2.1", "name": "multiprocessing Module", "keywords": ["Process", "Pool", "Queue", "Pipe", "Value", "Array"], "difficulty": "advanced" },
+                        { "code": "PY-CON-2.2", "name": "Process Pools", "keywords": ["Pool", "map()", "apply_async()", "starmap()"], "difficulty": "advanced" },
+                        { "code": "PY-CON-2.3", "name": "Inter-Process Communication", "keywords": ["Queue", "Pipe", "shared memory", "Manager"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-CON-3",
+                    "name": "Asynchronous Programming",
+                    "dotPoints": [
+                        { "code": "PY-CON-3.1", "name": "asyncio Basics", "keywords": ["async", "await", "coroutine", "event loop", "asyncio.run()"], "difficulty": "advanced" },
+                        { "code": "PY-CON-3.2", "name": "Tasks and Futures", "keywords": ["create_task()", "gather()", "wait()", "as_completed()"], "difficulty": "advanced" },
+                        { "code": "PY-CON-3.3", "name": "Async I/O Operations", "keywords": ["aiohttp", "async file I/O", "async database"], "difficulty": "advanced" },
+                        { "code": "PY-CON-3.4", "name": "Synchronization Primitives", "keywords": ["Lock", "Event", "Semaphore", "Queue", "async with"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-TST",
+            "name": "Testing and Debugging",
+            "level": "Intermediate",
+            "learningWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "PY-TST-1",
+                    "name": "Debugging",
+                    "dotPoints": [
+                        { "code": "PY-TST-1.1", "name": "print() Debugging", "keywords": ["print debugging", "f-strings for debug"], "difficulty": "foundation" },
+                        { "code": "PY-TST-1.2", "name": "pdb Debugger", "keywords": ["pdb", "breakpoint()", "set_trace()", "next", "step", "continue", "list", "print"], "difficulty": "intermediate" },
+                        { "code": "PY-TST-1.3", "name": "Logging", "keywords": ["logging module", "debug()", "info()", "warning()", "error()", "critical()", "log levels", "handlers", "formatters"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-TST-2",
+                    "name": "Unit Testing",
+                    "dotPoints": [
+                        { "code": "PY-TST-2.1", "name": "unittest Module", "keywords": ["unittest", "TestCase", "setUp()", "tearDown()", "assertEqual()", "assertTrue()", "assertRaises()"], "difficulty": "intermediate" },
+                        { "code": "PY-TST-2.2", "name": "pytest Framework", "keywords": ["pytest", "assert", "fixtures", "parametrize", "markers", "conftest.py"], "difficulty": "intermediate" },
+                        { "code": "PY-TST-2.3", "name": "Mocking", "keywords": ["unittest.mock", "Mock", "patch()", "side_effect", "return_value"], "difficulty": "advanced" },
+                        { "code": "PY-TST-2.4", "name": "Test Coverage", "keywords": ["coverage.py", "pytest-cov", "coverage report", "branch coverage"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-TST-3",
+                    "name": "Profiling and Optimization",
+                    "dotPoints": [
+                        { "code": "PY-TST-3.1", "name": "Profiling", "keywords": ["cProfile", "profile", "snakeviz", "line_profiler", "timeit"], "difficulty": "advanced" },
+                        { "code": "PY-TST-3.2", "name": "Memory Profiling", "keywords": ["memory_profiler", "tracemalloc", "objgraph", "memory leaks"], "difficulty": "advanced" },
+                        { "code": "PY-TST-3.3", "name": "Performance Optimization", "keywords": ["optimization techniques", "cython", "numba", "PyPy"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-DS",
+            "name": "Data Science and Numerical Computing",
+            "level": "Intermediate",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "PY-DS-1",
+                    "name": "NumPy",
+                    "dotPoints": [
+                        { "code": "PY-DS-1.1", "name": "NumPy Arrays", "keywords": ["np.array()", "ndarray", "shape", "dtype", "reshape()", "indexing", "slicing", "boolean indexing"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-1.2", "name": "Array Operations", "keywords": ["vectorization", "broadcasting", "universal functions", "aggregations", "dot product"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-1.3", "name": "Linear Algebra with NumPy", "keywords": ["np.linalg", "matrix multiplication", "eigenvalues", "SVD", "solving linear systems"], "difficulty": "advanced" },
+                        { "code": "PY-DS-1.4", "name": "Random Number Generation", "keywords": ["np.random", "random distributions", "seed", "permutation"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-DS-2",
+                    "name": "Pandas",
+                    "dotPoints": [
+                        { "code": "PY-DS-2.1", "name": "Series and DataFrame", "keywords": ["pd.Series()", "pd.DataFrame()", "index", "columns", "head()", "info()", "describe()"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-2.2", "name": "Data Selection and Filtering", "keywords": ["loc", "iloc", "boolean indexing", "query()", "isin()"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-2.3", "name": "Handling Missing Data", "keywords": ["isna()", "dropna()", "fillna()", "interpolate()"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-2.4", "name": "Data Aggregation and GroupBy", "keywords": ["groupby()", "aggregate()", "transform()", "filter()", "pivot_table()", "crosstab()"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-2.5", "name": "Merging and Joining", "keywords": ["merge()", "join()", "concat()", "append()"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-2.6", "name": "Time Series Analysis", "keywords": ["DatetimeIndex", "resample()", "shift()", "rolling()", "ewm()"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-DS-3",
+                    "name": "Data Visualization",
+                    "dotPoints": [
+                        { "code": "PY-DS-3.1", "name": "Matplotlib", "keywords": ["plt.plot()", "plt.scatter()", "plt.bar()", "plt.hist()", "plt.figure()", "subplots()", "axes", "labels", "legend"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-3.2", "name": "Seaborn", "keywords": ["sns.barplot()", "sns.boxplot()", "sns.heatmap()", "sns.pairplot()", "sns.distplot()", "statistical plots"], "difficulty": "intermediate" },
+                        { "code": "PY-DS-3.3", "name": "Plotly and Interactive Plots", "keywords": ["plotly.express", "plotly.graph_objects", "interactive visualization", "dash"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-WEB",
+            "name": "Web Development",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "PY-WEB-1",
+                    "name": "HTTP and Web Basics",
+                    "dotPoints": [
+                        { "code": "PY-WEB-1.1", "name": "HTTP Requests with requests", "keywords": ["requests.get()", "requests.post()", "headers", "params", "json()", "status_code"], "difficulty": "intermediate" },
+                        { "code": "PY-WEB-1.2", "name": "URL Parsing and Building", "keywords": ["urllib.parse", "urljoin", "urlencode", "quote"], "difficulty": "intermediate" },
+                        { "code": "PY-WEB-1.3", "name": "Working with APIs", "keywords": ["REST API", "JSON", "authentication", "API keys", "rate limiting"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-WEB-2",
+                    "name": "Web Frameworks",
+                    "dotPoints": [
+                        { "code": "PY-WEB-2.1", "name": "Flask Framework", "keywords": ["Flask", "route()", "render_template()", "request", "session", "url_for()", "blueprints"], "difficulty": "intermediate" },
+                        { "code": "PY-WEB-2.2", "name": "Django Framework", "keywords": ["Django", "MTV pattern", "models", "views", "templates", "URLs", "ORM", "admin", "migrations"], "difficulty": "advanced" },
+                        { "code": "PY-WEB-2.3", "name": "FastAPI", "keywords": ["FastAPI", "async", "Pydantic models", "OpenAPI", "automatic docs", "type hints"], "difficulty": "advanced" },
+                        { "code": "PY-WEB-2.4", "name": "REST API Development", "keywords": ["RESTful", "CRUD", "serialization", "Flask-RESTful", "Django REST Framework"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "PY-WEB-3",
+                    "name": "Database Integration",
+                    "dotPoints": [
+                        { "code": "PY-WEB-3.1", "name": "SQL Databases", "keywords": ["SQLite", "sqlite3 module", "psycopg2", "MySQLdb", "connection", "cursor", "execute()"], "difficulty": "intermediate" },
+                        { "code": "PY-WEB-3.2", "name": "ORM (Object Relational Mapping)", "keywords": ["SQLAlchemy", "declarative base", "session", "query", "relationships"], "difficulty": "advanced" },
+                        { "code": "PY-WEB-3.3", "name": "NoSQL Databases", "keywords": ["PyMongo", "MongoDB", "document store", "Redis", "redis-py"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PY-BP",
+            "name": "Best Practices and Tools",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "PY-BP-1",
+                    "name": "Code Style and Formatting",
+                    "dotPoints": [
+                        { "code": "PY-BP-1.1", "name": "PEP 8 Style Guide", "keywords": ["PEP 8", "indentation", "naming conventions", "line length", "imports"], "difficulty": "foundation" },
+                        { "code": "PY-BP-1.2", "name": "Linting Tools", "keywords": ["pylint", "flake8", "ruff", "code analysis"], "difficulty": "intermediate" },
+                        { "code": "PY-BP-1.3", "name": "Code Formatting", "keywords": ["black", "autopep8", "yapf", "auto-formatting"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-BP-2",
+                    "name": "Virtual Environments and Package Management",
+                    "dotPoints": [
+                        { "code": "PY-BP-2.1", "name": "Virtual Environments", "keywords": ["venv", "virtualenv", "conda env", "environment isolation"], "difficulty": "foundation" },
+                        { "code": "PY-BP-2.2", "name": "pip and requirements.txt", "keywords": ["pip install", "freeze", "requirements.txt", "constraints.txt"], "difficulty": "foundation" },
+                        { "code": "PY-BP-2.3", "name": "poetry and pipenv", "keywords": ["poetry", "pyproject.toml", "poetry.lock", "pipenv", "Pipfile"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "PY-BP-3",
+                    "name": "Version Control with Git",
+                    "dotPoints": [
+                        { "code": "PY-BP-3.1", "name": "Git Basics", "keywords": ["init", "clone", "add", "commit", "push", "pull", "status", "log"], "difficulty": "foundation" },
+                        { "code": "PY-BP-3.2", "name": "Branching and Merging", "keywords": ["branch", "checkout", "merge", "rebase", "conflict resolution"], "difficulty": "intermediate" },
+                        { "code": "PY-BP-3.3", "name": ".gitignore for Python", "keywords": [".gitignore", "virtual envs", "pyc files", "__pycache__"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "PY-BP-4",
+                    "name": "Documentation",
+                    "dotPoints": [
+                        { "code": "PY-BP-4.1", "name": "Docstrings", "keywords": ["__doc__", "help()", "Google style", "NumPy style", "Sphinx style"], "difficulty": "foundation" },
+                        { "code": "PY-BP-4.2", "name": "Sphinx Documentation", "keywords": ["Sphinx", "reStructuredText", "autodoc", "Read the Docs"], "difficulty": "advanced" },
+                        { "code": "PY-BP-4.3", "name": "README and Project Documentation", "keywords": ["README.md", "Markdown", "project description", "installation", "usage"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

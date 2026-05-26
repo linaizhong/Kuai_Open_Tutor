@@ -1,0 +1,1636 @@
+{
+    "subject": "HSC Physics",
+    "syllabusVersion": "2017",
+    "description": "Deep detail for each syllabus dot-point, supporting error analysis, Socratic questioning, worked examples and marking feedback skills.",
+    "dotPoints": {
+
+        "PH-K1.1": {
+            "code": "PH-K1.1",
+            "name": "Scalars and vectors",
+            "topic": "PH-K",
+            "subtopic": "PH-K1",
+            "year": 11,
+            "summary": "Distinguish scalar and vector quantities; represent vectors with magnitude and direction.",
+            "keyConcepts": [
+                "Scalar: quantity with magnitude only (e.g. speed, distance, mass, energy, temperature)",
+                "Vector: quantity with magnitude AND direction (e.g. velocity, displacement, force, acceleration, momentum)",
+                "Displacement: vector from start to finish position; distance: total path length (scalar)",
+                "Velocity: rate of change of displacement (vector); speed: rate of change of distance (scalar)",
+                "Vectors are represented by arrows: length = magnitude, arrowhead = direction",
+                "Negative vector: same magnitude, opposite direction"
+            ],
+            "commonErrors": [
+                "Confusing distance (scalar) with displacement (vector) — displacement depends on start and end only",
+                "Confusing speed (scalar) with velocity (vector) — an object moving in a circle has constant speed but changing velocity",
+                "Forgetting to state direction when giving a vector answer",
+                "Treating acceleration as always in the direction of motion — a decelerating object has acceleration opposite to velocity"
+            ],
+            "examTips": [
+                "Always include direction when stating a vector quantity in HSC answers",
+                "If a question asks for velocity, a numerical answer without direction is incomplete",
+                "Common HSC trap: 'find the speed' vs 'find the velocity' — check which is asked"
+            ],
+            "socraticPrompts": [
+                "A car drives 4 km east then 3 km north. What is the distance travelled? What is the displacement?",
+                "Can an object have zero displacement but non-zero distance? Give an example.",
+                "Is temperature a vector or scalar? What about force? How do you decide?",
+                "If a ball is thrown upward, what is the direction of its acceleration at the top of its path?"
+            ],
+            "workedExampleTemplate": {
+                "type": "scalar-vector-classification",
+                "steps": ["Identify whether the quantity has direction", "Classify as scalar or vector", "If vector, state both magnitude and direction", "Check units are appropriate for the quantity"]
+            },
+            "relatedDotPoints": ["PH-K1.2", "PH-K2.1"]
+        },
+
+        "PH-K1.2": {
+            "code": "PH-K1.2",
+            "name": "Uniform and non-uniform motion",
+            "topic": "PH-K",
+            "subtopic": "PH-K1",
+            "year": 11,
+            "summary": "Interpret and construct displacement-time and velocity-time graphs; calculate using gradients and areas.",
+            "keyConcepts": [
+                "Uniform motion: constant velocity — displacement-time graph is a straight line",
+                "Non-uniform motion: changing velocity — displacement-time graph is curved",
+                "Gradient of displacement-time graph = velocity",
+                "Gradient of velocity-time graph = acceleration",
+                "Area under velocity-time graph = displacement",
+                "Area under acceleration-time graph = change in velocity",
+                "Positive gradient on v-t graph = acceleration in positive direction; negative gradient = deceleration (or acceleration in negative direction)"
+            ],
+            "commonErrors": [
+                "Confusing gradient with area — gradient of v-t gives acceleration; area of v-t gives displacement",
+                "Ignoring sign of area: area below the x-axis on a v-t graph represents negative displacement (moving backward)",
+                "Confusing a steep line with fast speed vs gradual line with slow speed on displacement-time graphs",
+                "Thinking a horizontal line on a v-t graph means the object is stopped — it means constant velocity"
+            ],
+            "examTips": [
+                "Always label axes with quantity AND units when drawing graphs",
+                "For area under v-t graph, split into triangles and rectangles",
+                "A horizontal line on a displacement-time graph means the object is stationary",
+                "A horizontal line on a velocity-time graph means constant velocity (zero acceleration)"
+            ],
+            "socraticPrompts": [
+                "The gradient of a v-t graph is negative but the object is moving in the positive direction. What is happening?",
+                "Two cars have the same speed but one is accelerating. How would their v-t graphs differ?",
+                "A v-t graph has a section below the x-axis. What does the area of that section represent?",
+                "How can you tell from a displacement-time graph when an object has reversed direction?"
+            ],
+            "workedExampleTemplate": {
+                "type": "graph-interpretation",
+                "steps": ["Identify the type of graph (x-t, v-t, or a-t)", "Calculate gradient to find the next quantity", "Calculate area to find the integral quantity", "Identify key features: where object is stationary, reversing, accelerating", "Describe motion in words with reference to graph features"]
+            },
+            "relatedDotPoints": ["PH-K1.1", "PH-K1.3"]
+        },
+
+        "PH-K1.3": {
+            "code": "PH-K1.3",
+            "name": "Equations of motion (SUVAT)",
+            "topic": "PH-K",
+            "subtopic": "PH-K1",
+            "year": 11,
+            "summary": "Apply the four kinematic equations to solve problems involving uniform acceleration.",
+            "keyConcepts": [
+                "Variables: s = displacement, u = initial velocity, v = final velocity, a = acceleration, t = time",
+                "v = u + at (no s)",
+                "s = ut + ½at² (no v)",
+                "v² = u² + 2as (no t)",
+                "s = ½(u + v)t (no a)",
+                "Only valid for UNIFORM (constant) acceleration",
+                "Sign convention: choose positive direction at start and be consistent throughout"
+            ],
+            "commonErrors": [
+                "Using SUVAT when acceleration is not constant — these equations only apply to uniform acceleration",
+                "Sign errors: forgetting that displacement, velocity and acceleration can be negative (opposite to chosen positive direction)",
+                "Using total distance instead of displacement for s",
+                "Not identifying which variable is unknown before choosing an equation",
+                "Forgetting to include both solutions when solving v² = u² + 2as (positive and negative square root)"
+            ],
+            "examTips": [
+                "List s, u, v, a, t at the start of every SUVAT problem — identify knowns and the one unknown",
+                "Choose positive direction (usually direction of initial motion or downward for falling objects) and stick to it",
+                "For objects thrown upward: a = -9.8 m/s² (if up is positive), v = 0 at highest point",
+                "For free fall: a = g = 9.8 m/s² downward"
+            ],
+            "socraticPrompts": [
+                "A car decelerates from 20 m/s to rest in 4 s. Which SUVAT equation gives acceleration directly? What is a?",
+                "A ball is dropped from rest. After 3 s, what is its speed? What SUVAT equation did you use?",
+                "Why can't you use SUVAT for a car going around a bend at constant speed?",
+                "If up is positive and a ball is thrown upward at 15 m/s, what are u, a, and v at the highest point?"
+            ],
+            "workedExampleTemplate": {
+                "type": "suvat-problem",
+                "steps": ["Define positive direction", "List all known variables (s, u, v, a, t)", "Identify the unknown", "Choose the SUVAT equation that contains the unknown and all knowns", "Substitute values with correct signs", "Solve and check sign/direction of answer is physically sensible"]
+            },
+            "relatedDotPoints": ["PH-K1.2", "PH-K2.2", "PH-D1.1"]
+        },
+
+        "PH-K2.1": {
+            "code": "PH-K2.1",
+            "name": "Vector addition and resolution",
+            "topic": "PH-K",
+            "subtopic": "PH-K2",
+            "year": 11,
+            "summary": "Add vectors geometrically and algebraically; resolve vectors into horizontal and vertical components.",
+            "keyConcepts": [
+                "Vector resolution: any vector can be split into two perpendicular components",
+                "Horizontal component: Vₓ = V cosθ (θ measured from horizontal)",
+                "Vertical component: Vᵧ = V sinθ (θ measured from horizontal)",
+                "Vector addition: add components separately (Rₓ = ΣVₓ, Rᵧ = ΣVᵧ)",
+                "Resultant magnitude: R = √(Rₓ² + Rᵧ²)",
+                "Resultant direction: θ = arctan(Rᵧ/Rₓ)",
+                "Graphical addition: tip-to-tail method"
+            ],
+            "commonErrors": [
+                "Mixing up sin and cos depending on which angle is given (always draw a diagram)",
+                "Forgetting to assign correct signs to components based on direction (left/down = negative)",
+                "Using Pythagoras for non-perpendicular vectors — only works after resolving into perpendicular components",
+                "Finding resultant direction: arctan gives angle from x-axis, but check which quadrant the resultant is in"
+            ],
+            "examTips": [
+                "Always draw a diagram and label the angle clearly before resolving",
+                "If θ is from vertical, components swap: horizontal = V sinθ, vertical = V cosθ",
+                "State the direction of the resultant as an angle from a reference direction (e.g. 'east' or 'horizontal')",
+                "For relative velocity problems, use vector subtraction: v_AB = v_A - v_B"
+            ],
+            "socraticPrompts": [
+                "A force of 50 N acts at 30° above the horizontal. What are the horizontal and vertical components?",
+                "You add two vectors at right angles: 3 N east and 4 N north. What is the magnitude and direction of the resultant?",
+                "If a ball is launched at 40° to the horizontal at 20 m/s, what is the initial vertical velocity?",
+                "Two forces of equal magnitude act in opposite directions. What is the resultant?"
+            ],
+            "workedExampleTemplate": {
+                "type": "vector-addition",
+                "steps": ["Draw a clear diagram with the vector and angle labelled", "Resolve into horizontal and vertical components using sin and cos", "Add components algebraically (with sign convention)", "Find resultant magnitude using Pythagoras", "Find resultant direction using arctan", "State answer with magnitude and direction"]
+            },
+            "relatedDotPoints": ["PH-K1.1", "PH-K2.2", "PH-D1.2"]
+        },
+
+        "PH-K2.2": {
+            "code": "PH-K2.2",
+            "name": "Projectile motion",
+            "topic": "PH-K",
+            "subtopic": "PH-K2",
+            "year": 11,
+            "summary": "Analyse projectile motion by treating horizontal and vertical motion as independent.",
+            "keyConcepts": [
+                "Horizontal motion: uniform (no air resistance), aₓ = 0, x = uₓt",
+                "Vertical motion: uniformly accelerated by gravity, aᵧ = -g = -9.8 m/s²",
+                "Initial horizontal velocity: uₓ = u cosθ",
+                "Initial vertical velocity: uᵧ = u sinθ",
+                "At maximum height: vertical velocity = 0",
+                "Time of flight determined by vertical motion",
+                "Horizontal range: R = uₓ × t_total",
+                "Trajectory is parabolic"
+            ],
+            "commonErrors": [
+                "Using 9.8 m/s² for both axes — gravity only acts vertically",
+                "Forgetting that horizontal velocity is constant throughout (no horizontal acceleration)",
+                "Sign errors: if up is positive, g = -9.8 m/s², so aᵧ = -9.8",
+                "Finding maximum height: using total time instead of half time for symmetric launches",
+                "Range formula R = u²sin2θ/g only applies when launch and landing heights are equal"
+            ],
+            "examTips": [
+                "Always set up two separate columns: horizontal and vertical",
+                "Time is the link between horizontal and vertical — find t from vertical, use it in horizontal",
+                "At maximum height, vᵧ = 0 (but vₓ ≠ 0)",
+                "For objects launched horizontally (θ = 0): uᵧ = 0, uₓ = u"
+            ],
+            "socraticPrompts": [
+                "A ball is launched horizontally at 15 m/s from a 20 m cliff. How long does it take to hit the ground?",
+                "At the peak of a projectile's path, is the object accelerating? What is its acceleration?",
+                "Two balls are dropped simultaneously — one horizontally launched, one dropped straight down. Which hits first? Why?",
+                "How does doubling the launch speed affect the horizontal range (at the same angle)?"
+            ],
+            "workedExampleTemplate": {
+                "type": "projectile-motion",
+                "steps": ["Define positive directions (usually right = positive x, up = positive y)", "Resolve initial velocity into horizontal and vertical components", "Set up horizontal column: aₓ = 0, x = uₓt", "Set up vertical column: aᵧ = -9.8 m/s², apply SUVAT", "Use vertical motion to find time", "Substitute time into horizontal equation for range", "Answer specific question (height, speed, angle at landing)"]
+            },
+            "relatedDotPoints": ["PH-K1.3", "PH-K2.1"]
+        },
+
+        "PH-D1.1": {
+            "code": "PH-D1.1",
+            "name": "Newton's laws of motion",
+            "topic": "PH-D",
+            "subtopic": "PH-D1",
+            "year": 11,
+            "summary": "State and apply Newton's three laws of motion to analyse forces and predict motion.",
+            "keyConcepts": [
+                "Newton's First Law (inertia): an object remains at rest or constant velocity unless acted on by a net external force",
+                "Newton's Second Law: F_net = ma (net force equals mass times acceleration)",
+                "Newton's Third Law: for every action force there is an equal and opposite reaction force acting on a different object",
+                "Inertia: resistance to change in motion; proportional to mass",
+                "Equilibrium: F_net = 0, so acceleration = 0 (object at rest or constant velocity)",
+                "Weight: W = mg (force of gravity on an object, g = 9.8 m/s²)"
+            ],
+            "commonErrors": [
+                "Newton's Third Law pairs act on DIFFERENT objects — they never cancel each other out",
+                "Confusing mass (kg, scalar) with weight (N, vector force)",
+                "Applying F = ma with total force instead of net force",
+                "Thinking a moving object requires a force to keep it moving — once moving, zero net force maintains constant velocity",
+                "Newton's Third Law pairs: must be same type of force, same magnitude, opposite direction, on different objects"
+            ],
+            "examTips": [
+                "Always draw a free body diagram before applying Newton's Second Law",
+                "Net force = ma means ΣF = ma — sum ALL forces including weight, normal, friction, tension",
+                "For Newton's Third Law questions: identify the two objects and name the force pair",
+                "In HSC, 'state Newton's First Law' requires the complete statement including both rest and constant velocity cases"
+            ],
+            "socraticPrompts": [
+                "A book sits on a table. The table pushes up on the book. What is the Newton's Third Law reaction to this force?",
+                "If F_net = 0, does that mean the object must be stationary? Give a counterexample.",
+                "A 2 kg object accelerates at 3 m/s². What is the net force? If friction is 2 N, what is the applied force?",
+                "Why does a heavy truck take longer to stop than a small car at the same speed, even with the same braking force?"
+            ],
+            "workedExampleTemplate": {
+                "type": "newton-second-law",
+                "steps": ["Draw a free body diagram showing all forces", "Choose a positive direction", "Write F_net = ma", "Substitute all known forces (with correct signs)", "Solve for the unknown (force or acceleration)", "Check the direction of the answer is physically sensible"]
+            },
+            "relatedDotPoints": ["PH-K1.3", "PH-D1.2", "PH-D1.4"]
+        },
+
+        "PH-D1.2": {
+            "code": "PH-D1.2",
+            "name": "Forces in contact and at a distance",
+            "topic": "PH-D",
+            "subtopic": "PH-D1",
+            "year": 11,
+            "summary": "Identify and analyse contact and non-contact forces; construct and interpret free body diagrams.",
+            "keyConcepts": [
+                "Contact forces: normal force (perpendicular to surface), friction (parallel to surface, opposes motion), tension (pulling through string/rope), applied force",
+                "Non-contact forces: gravity, electric force, magnetic force (act at a distance)",
+                "Normal force: always perpendicular to the surface — NOT always equal to weight",
+                "Friction: f = μN where μ is the coefficient of friction and N is the normal force",
+                "Static friction (maximum) ≥ kinetic friction for most surfaces",
+                "Free body diagram: shows all forces on ONE object as arrows from the centre"
+            ],
+            "commonErrors": [
+                "Normal force equals weight only on a horizontal surface with no vertical acceleration — not always true",
+                "On an incline: weight component along the slope = mg sinθ, normal force = mg cosθ",
+                "Friction always opposes RELATIVE MOTION or tendency of motion — not always opposite to applied force",
+                "Including internal forces in a free body diagram (a FBD shows only external forces on the chosen object)",
+                "Tension in a string is the same throughout if string is massless and frictionless"
+            ],
+            "examTips": [
+                "On inclined planes: always resolve weight into components parallel and perpendicular to the slope",
+                "For connected objects (Atwood machine, trains): treat as one system OR apply F = ma to each separately",
+                "Label each force with its type and the object causing it (e.g. 'Normal force from floor')",
+                "If acceleration is zero in one direction, forces in that direction are balanced"
+            ],
+            "socraticPrompts": [
+                "A 5 kg block sits on a 30° incline. What is the normal force? Is it equal to mg?",
+                "What is the friction force on a stationary block when the applied force is less than maximum static friction?",
+                "A lift accelerates upward. Is your apparent weight greater than, less than, or equal to mg? Why?",
+                "Draw the free body diagram for a car travelling at constant speed on a flat road. What forces are present?"
+            ],
+            "workedExampleTemplate": {
+                "type": "free-body-diagram",
+                "steps": ["Identify the object to analyse", "Draw the object as a dot or box", "Draw all external forces as arrows (weight, normal, friction, tension, applied)", "Label each force with magnitude and direction", "Resolve forces into components if on an incline", "Apply F_net = ma in each direction"]
+            },
+            "relatedDotPoints": ["PH-D1.1", "PH-D1.3", "PH-D2.1"]
+        },
+
+        "PH-D1.3": {
+            "code": "PH-D1.3",
+            "name": "Work, energy and power",
+            "topic": "PH-D",
+            "subtopic": "PH-D1",
+            "year": 11,
+            "summary": "Apply work-energy theorem and conservation of energy; calculate power.",
+            "keyConcepts": [
+                "Work: W = Fs cosθ, where θ is angle between force and displacement (unit: Joule, J)",
+                "Work done by perpendicular force = 0 (e.g. normal force, centripetal force)",
+                "Kinetic energy: KE = ½mv²",
+                "Gravitational potential energy: GPE = mgh (measured from a reference level)",
+                "Work-energy theorem: W_net = ΔKE",
+                "Conservation of mechanical energy: KE + GPE = constant (when no friction)",
+                "Power: P = W/t = Fv (unit: Watt, W)",
+                "Efficiency: η = useful output energy / total input energy × 100%"
+            ],
+            "commonErrors": [
+                "W = Fs only when force is parallel to displacement — must use cosθ for angled forces",
+                "GPE depends on height chosen as reference — always define and state your reference level",
+                "Conservation of energy only applies when non-conservative forces (friction) do no work",
+                "Power = Fv applies only when force and velocity are in the same direction",
+                "Efficiency: using wrong values for 'useful' vs 'total' energy"
+            ],
+            "examTips": [
+                "When friction is present, use W_net = ΔKE (work-energy theorem) rather than conservation of energy",
+                "For objects falling: GPE lost = KE gained (if no friction), check with ½mv² = mgh",
+                "Power questions often ask for average power: P = total work / total time",
+                "Include units in all energy calculations — marks can be lost for missing units"
+            ],
+            "socraticPrompts": [
+                "A 2 kg ball falls 5 m from rest. What is its speed just before hitting the ground? (Use energy methods)",
+                "A force of 30 N acts at 60° to the displacement of 10 m. How much work is done?",
+                "A car engine exerts 4000 N at 20 m/s. What is its power output?",
+                "Why does a centripetal force do no work on a circular orbit?"
+            ],
+            "workedExampleTemplate": {
+                "type": "work-energy",
+                "steps": ["Identify the system and all forces doing work", "Apply W = Fs cosθ for each force", "Use work-energy theorem: W_net = ΔKE, OR", "Use conservation of energy: KE₁ + GPE₁ = KE₂ + GPE₂ (+ W_friction if applicable)", "Solve for the unknown quantity", "Check units and physical reasonableness of answer"]
+            },
+            "relatedDotPoints": ["PH-D1.1", "PH-D1.4", "PH-D2.1"]
+        },
+
+        "PH-D1.4": {
+            "code": "PH-D1.4",
+            "name": "Momentum and impulse",
+            "topic": "PH-D",
+            "subtopic": "PH-D1",
+            "year": 11,
+            "summary": "Apply conservation of momentum and impulse-momentum theorem to collision and explosion problems.",
+            "keyConcepts": [
+                "Momentum: p = mv (vector, unit: kg m/s)",
+                "Impulse: J = FΔt = Δp (impulse equals change in momentum)",
+                "Conservation of momentum: total momentum before = total momentum after (in an isolated system)",
+                "Elastic collision: both momentum AND kinetic energy are conserved",
+                "Inelastic collision: only momentum is conserved; kinetic energy is NOT conserved",
+                "Perfectly inelastic collision: objects stick together after collision",
+                "Explosion: objects start at rest (p_total = 0), move apart with equal and opposite momenta"
+            ],
+            "commonErrors": [
+                "Forgetting momentum is a VECTOR — direction matters; assign signs before calculating",
+                "Applying conservation of momentum when system is not isolated (external forces present)",
+                "Confusing elastic (KE conserved) with inelastic (KE not conserved)",
+                "Impulse-momentum: using change in speed instead of change in velocity (must include direction change)",
+                "Explosion problems: total momentum is zero before AND after — momenta of fragments are equal and opposite"
+            ],
+            "examTips": [
+                "Define positive direction at the start of every momentum problem",
+                "Conservation of momentum: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂",
+                "For perfectly inelastic: (m₁ + m₂)v = m₁u₁ + m₂u₂",
+                "Impulse = area under a force-time graph",
+                "In HSC, always check if the question says 'elastic' — if not stated, assume inelastic"
+            ],
+            "socraticPrompts": [
+                "A 3 kg ball at 4 m/s east collides with a 2 kg ball at rest. They stick together. What is their final velocity?",
+                "A 1000 kg car at 20 m/s north hits a 1500 kg stationary truck. What is the combined velocity?",
+                "How does increasing the time of impact reduce the force in a collision? (Relate to impulse)",
+                "In an explosion, a 2 kg fragment moves at 6 m/s east. A 3 kg fragment moves west. What is its speed?"
+            ],
+            "workedExampleTemplate": {
+                "type": "momentum-conservation",
+                "steps": ["Define positive direction", "List all masses and initial velocities with signs", "Apply conservation of momentum: Σp_before = Σp_after", "Solve for unknown velocity", "Check if elastic by comparing KE before and after if required", "State answer with magnitude and direction"]
+            },
+            "relatedDotPoints": ["PH-D1.1", "PH-D1.3"]
+        },
+
+        "PH-D2.1": {
+            "code": "PH-D2.1",
+            "name": "Uniform circular motion",
+            "topic": "PH-D",
+            "subtopic": "PH-D2",
+            "year": 12,
+            "summary": "Analyse uniform circular motion; calculate centripetal acceleration and force.",
+            "keyConcepts": [
+                "Uniform circular motion: constant speed, but direction (and therefore velocity) constantly changing",
+                "Centripetal acceleration: directed toward the centre, a_c = v²/r",
+                "Centripetal force: F_c = mv²/r = mω²r (not a new force — it is the net force toward the centre)",
+                "Period T: time for one complete revolution; frequency f = 1/T",
+                "Speed: v = 2πr/T",
+                "Angular velocity: ω = 2π/T = 2πf",
+                "Centripetal force is provided by: tension (conical pendulum), normal force (banked track), gravity (orbit), friction (flat turn)"
+            ],
+            "commonErrors": [
+                "Centripetal force is not a separate force — it is provided by one or more real forces (gravity, tension, friction)",
+                "Centrifugal force does not exist in an inertial frame — do NOT include it in free body diagrams",
+                "Constant speed does NOT mean constant velocity in circular motion",
+                "Using T (period) instead of t (time) in SUVAT equations when solving circular motion problems",
+                "Forgetting that centripetal force always points toward the centre, not in the direction of motion"
+            ],
+            "examTips": [
+                "Identify which real force(s) provide the centripetal force in each situation",
+                "Set up: F_net(toward centre) = mv²/r and solve",
+                "For vertical circles, the net inward force changes at top and bottom",
+                "At the top of a loop: F_net = mg + N = mv²/r (both mg and N point toward centre)"
+            ],
+            "socraticPrompts": [
+                "A car goes around a flat circular track. What provides the centripetal force?",
+                "If you double the speed of an object in circular motion, how does the centripetal force change?",
+                "At the top of a roller coaster loop, what is the minimum speed for the passenger to maintain contact?",
+                "A conical pendulum has a string at 30° to the vertical. What provides the centripetal force?"
+            ],
+            "workedExampleTemplate": {
+                "type": "circular-motion",
+                "steps": ["Identify the object and describe the circular path", "Draw a free body diagram", "Identify which force(s) provide the centripetal force", "Write F_net(toward centre) = mv²/r", "Substitute known values and solve", "Check if the required centripetal force is physically achievable"]
+            },
+            "relatedDotPoints": ["PH-D1.1", "PH-D2.2", "PH-A1.1"]
+        },
+
+        "PH-D2.2": {
+            "code": "PH-D2.2",
+            "name": "Applications of circular motion",
+            "topic": "PH-D",
+            "subtopic": "PH-D2",
+            "year": 12,
+            "summary": "Apply circular motion principles to banked tracks, vertical circles and orbital motion.",
+            "keyConcepts": [
+                "Banked track (no friction): N sinθ = mv²/r (horizontal), N cosθ = mg (vertical), tan θ = v²/rg",
+                "Vertical circle — top: F_net = mg + N = mv²/r, minimum speed when N = 0 so v_min = √(rg)",
+                "Vertical circle — bottom: N - mg = mv²/r, so N = mg + mv²/r (apparent weight > actual weight)",
+                "Conical pendulum: T sinθ = mv²/r, T cosθ = mg",
+                "Apparent weight = Normal force from scale",
+                "Weightlessness: apparent weight = 0, when N = 0 (free fall)"
+            ],
+            "commonErrors": [
+                "At the top of a loop: both weight and normal force point toward the centre — do not subtract them",
+                "Minimum speed at top of loop: setting N = 0, not N = mg",
+                "Banked track with no friction: normal force is NOT vertical — must resolve N into components",
+                "Confusing apparent weight (N) with true weight (mg)"
+            ],
+            "examTips": [
+                "Always draw a diagram showing the direction toward the centre for circular motion problems",
+                "For banked tracks without friction: the two equations give tan θ = v²/rg — a very useful result",
+                "Apparent weight in a lift: greater when accelerating upward, less when accelerating downward",
+                "Minimum orbital speed at Earth's surface: gravity provides centripetal force, g = v²/r"
+            ],
+            "socraticPrompts": [
+                "At the bottom of a roller coaster loop, a 70 kg passenger moves at 12 m/s. The radius is 8 m. What is the normal force?",
+                "What is the minimum speed at the top of a loop of radius 5 m so the passenger stays in contact?",
+                "A road is banked at 15° for a curve of radius 100 m. What is the ideal (no friction) speed?",
+                "Why do astronauts feel 'weightless' in the International Space Station even though gravity acts on them?"
+            ],
+            "workedExampleTemplate": {
+                "type": "circular-application",
+                "steps": ["Draw diagram identifying direction toward centre", "Draw free body diagram at the specific point in question", "Write equations for both radial (centripetal) and tangential directions", "Solve the system of equations", "Interpret the result physically (e.g. apparent weight, minimum speed)"]
+            },
+            "relatedDotPoints": ["PH-D2.1", "PH-A1.1"]
+        },
+
+        "PH-W1.1": {
+            "code": "PH-W1.1",
+            "name": "Properties of waves",
+            "topic": "PH-W",
+            "subtopic": "PH-W1",
+            "year": 11,
+            "summary": "Describe wave properties and apply the wave speed equation v = fλ.",
+            "keyConcepts": [
+                "Transverse wave: displacement perpendicular to direction of propagation (e.g. light, water waves)",
+                "Longitudinal wave: displacement parallel to direction of propagation (e.g. sound)",
+                "Amplitude (A): maximum displacement from equilibrium",
+                "Wavelength (λ): distance between two successive identical points (e.g. crest to crest)",
+                "Period (T): time for one complete oscillation",
+                "Frequency (f): number of oscillations per second; f = 1/T",
+                "Wave speed: v = fλ",
+                "Wave speed depends on the medium, NOT the frequency"
+            ],
+            "commonErrors": [
+                "Confusing period and frequency: T = 1/f, not T = f",
+                "Wave speed depends on the medium, not frequency — doubling frequency halves wavelength, speed stays constant",
+                "Confusing amplitude with wavelength on a wave diagram",
+                "Longitudinal waves: the displacement is parallel to propagation, not perpendicular",
+                "Measuring wavelength from crest to trough (that is half a wavelength)"
+            ],
+            "examTips": [
+                "v = fλ is the most used wave equation — know it well",
+                "Speed of sound in air ≈ 340 m/s; speed of light = 3 × 10⁸ m/s",
+                "When a wave enters a new medium: frequency stays constant, wavelength and speed change",
+                "For wave diagrams: wavelength is crest to crest (or trough to trough or any point to the next identical point)"
+            ],
+            "socraticPrompts": [
+                "A sound wave has frequency 440 Hz and speed 340 m/s. What is its wavelength?",
+                "A wave's frequency doubles. If the wave is in the same medium, what happens to its speed? Its wavelength?",
+                "What is the difference between a transverse and longitudinal wave? Give an example of each.",
+                "A water wave has a period of 0.5 s. What is its frequency? If its speed is 2 m/s, what is its wavelength?"
+            ],
+            "workedExampleTemplate": {
+                "type": "wave-properties",
+                "steps": ["Identify the wave property asked for", "List known quantities (v, f, λ, T)", "Apply v = fλ or f = 1/T as appropriate", "Solve for the unknown", "Check units (Hz for frequency, m for wavelength, m/s for speed, s for period)"]
+            },
+            "relatedDotPoints": ["PH-W1.2", "PH-W2.1", "PH-N1.1"]
+        },
+
+        "PH-W1.2": {
+            "code": "PH-W1.2",
+            "name": "Wave behaviour",
+            "topic": "PH-W",
+            "subtopic": "PH-W1",
+            "year": 11,
+            "summary": "Describe reflection, refraction, diffraction, superposition and interference of waves.",
+            "keyConcepts": [
+                "Reflection: wave bounces off a boundary; angle of incidence = angle of reflection",
+                "Refraction: wave changes speed (and wavelength) when entering new medium, causing change in direction",
+                "Diffraction: wave bends around obstacles or through gaps; most significant when gap ≈ wavelength",
+                "Superposition principle: when two waves overlap, resultant displacement = algebraic sum of individual displacements",
+                "Constructive interference: waves in phase, amplitudes add (path difference = nλ)",
+                "Destructive interference: waves out of phase by half wavelength, amplitudes cancel (path difference = (n+½)λ)",
+                "Standing wave: formed by two identical waves travelling in opposite directions"
+            ],
+            "commonErrors": [
+                "Refraction: confusing which direction the ray bends — bends toward normal when slowing down",
+                "Diffraction: more pronounced when wavelength is LARGER relative to the gap",
+                "Constructive interference: path difference = whole number of wavelengths (0, λ, 2λ...)",
+                "Destructive interference: path difference = half-integer wavelengths (λ/2, 3λ/2...)",
+                "Standing waves: the wave does not travel — it appears stationary"
+            ],
+            "examTips": [
+                "For interference: path difference = d sinθ ≈ dx/L for small angles (Young's double slit)",
+                "Node: zero amplitude (destructive); antinode: maximum amplitude (constructive)",
+                "Diffraction is why you can hear around corners but barely see around them (sound has much longer wavelength)",
+                "In HSC, wave behaviour questions often include diagrams — describe what happens in terms of wavelength, direction, speed"
+            ],
+            "socraticPrompts": [
+                "Two speakers emit the same frequency. A student walks along a line parallel to them and hears alternating loud and quiet regions. Explain why.",
+                "Why does a wave bend toward the normal when it slows down entering a denser medium?",
+                "A wave passes through a gap equal to its wavelength. What pattern do you expect?",
+                "At a node in a standing wave, what is the displacement at all times?"
+            ],
+            "workedExampleTemplate": {
+                "type": "wave-behaviour",
+                "steps": ["Identify which wave behaviour is being described", "State the relevant principle (superposition, Snell's law, etc.)", "Draw a diagram if applicable", "Apply the appropriate equation or rule", "Describe the result qualitatively and quantitatively"]
+            },
+            "relatedDotPoints": ["PH-W1.1", "PH-W2.1", "PH-W3.1", "PH-N1.2"]
+        },
+
+        "PH-W2.1": {
+            "code": "PH-W2.1",
+            "name": "Sound and resonance",
+            "topic": "PH-W",
+            "subtopic": "PH-W2",
+            "year": 11,
+            "summary": "Describe sound as a longitudinal wave; explain resonance in open and closed pipes.",
+            "keyConcepts": [
+                "Sound: longitudinal mechanical wave — compressions and rarefactions in the direction of propagation",
+                "Speed of sound in air ≈ 340 m/s at room temperature (varies with temperature and medium)",
+                "Resonance: large amplitude oscillation when driving frequency equals natural frequency",
+                "Standing waves in pipes form when pipe length is a whole or half multiple of wavelength",
+                "Closed pipe (one end closed): only odd harmonics; L = nλ/4 (n = 1, 3, 5, ...); fundamental L = λ/4",
+                "Open pipe (both ends open): all harmonics; L = nλ/2 (n = 1, 2, 3, ...); fundamental L = λ/2",
+                "Closed end = node (zero displacement); Open end = antinode (maximum displacement)",
+                "Harmonic: integer multiple of fundamental frequency; overtone: harmonics above the fundamental"
+            ],
+            "commonErrors": [
+                "Closed pipe: ONLY odd harmonics (1st, 3rd, 5th...) — not all harmonics",
+                "Open pipe: ALL harmonics (1st, 2nd, 3rd...)",
+                "Node at closed end, antinode at open end — not the other way around",
+                "Fundamental frequency: L = λ/4 (closed) or L = λ/2 (open) — different for each type",
+                "Confusing overtone number with harmonic number: 1st overtone of a closed pipe is the 3rd harmonic"
+            ],
+            "examTips": [
+                "For closed pipe: f_n = nv/4L for n = 1, 3, 5 only (odd harmonics)",
+                "For open pipe: f_n = nv/2L for n = 1, 2, 3 ... (all harmonics)",
+                "Resonance length experiment: find pipe lengths where resonance occurs and use Δl = λ/2 (open) or λ/2 (between resonances in closed pipe)",
+                "Draw the standing wave pattern — nodes at closed ends, antinodes at open ends — to determine the harmonic"
+            ],
+            "socraticPrompts": [
+                "A closed pipe is 0.85 m long. The speed of sound is 340 m/s. What is the fundamental frequency?",
+                "Why does a closed pipe only produce odd harmonics?",
+                "An open pipe and a closed pipe have the same length. Which has the lower fundamental frequency?",
+                "A resonance tube experiment finds resonance at 25 cm and 75 cm. What is the wavelength?"
+            ],
+            "workedExampleTemplate": {
+                "type": "resonance-pipes",
+                "steps": ["Identify whether pipe is open or closed (one or two open ends)", "Draw the standing wave pattern for the required harmonic", "Determine the relationship between pipe length L and wavelength λ", "Apply f = v/λ with v = 340 m/s (or given value)", "Calculate the required frequency or length", "Check: closed pipe = odd harmonics only; open pipe = all harmonics"]
+            },
+            "relatedDotPoints": ["PH-W1.1", "PH-W1.2"]
+        },
+
+        "PH-W3.1": {
+            "code": "PH-W3.1",
+            "name": "Reflection and refraction of light",
+            "topic": "PH-W",
+            "subtopic": "PH-W3",
+            "year": 11,
+            "summary": "Apply the law of reflection and Snell's law to analyse the behaviour of light at boundaries.",
+            "keyConcepts": [
+                "Law of reflection: angle of incidence = angle of reflection (measured from normal)",
+                "Refraction: light bends at a boundary due to change in speed",
+                "Refractive index: n = c/v (ratio of speed of light in vacuum to speed in medium)",
+                "Snell's law: n₁ sinθ₁ = n₂ sinθ₂",
+                "Light bends toward normal when entering a denser (higher n) medium",
+                "Light bends away from normal when entering a less dense (lower n) medium",
+                "Optical density: higher n = optically denser"
+            ],
+            "commonErrors": [
+                "Measuring angles from the surface instead of from the normal",
+                "Snell's law: using n₁ sinθ₂ = n₂ sinθ₁ (wrong side) — n₁ goes with θ₁",
+                "Bending direction: light going from water (n=1.33) to air (n=1.00) bends AWAY from normal (not toward)",
+                "Confusing optical density with physical density — glass is optically denser than water but physically similar"
+            ],
+            "examTips": [
+                "Always measure angles from the normal, not the surface",
+                "n = 1.00 for air/vacuum, n = 1.33 for water, n ≈ 1.5 for glass",
+                "Snell's law: n₁sinθ₁ = n₂sinθ₂ — the side with larger n always has smaller angle",
+                "In HSC, draw the normal and measure angles from it — marks depend on correct diagram"
+            ],
+            "socraticPrompts": [
+                "Light travels from air (n=1) into glass (n=1.5) at 30° to the normal. What is the angle of refraction?",
+                "Why does a straw appear bent in a glass of water?",
+                "Light hits a mirror at 40° to the surface. What is the angle of reflection from the normal?",
+                "When light goes from glass to air, does it bend toward or away from the normal? Why?"
+            ],
+            "workedExampleTemplate": {
+                "type": "snells-law",
+                "steps": ["Draw a diagram with the boundary, normal, and incident ray", "Label n₁, n₂, θ₁", "Apply Snell's law: n₁ sinθ₁ = n₂ sinθ₂", "Solve for θ₂", "Draw the refracted ray on the correct side of the normal", "Check: ray bends toward normal if entering denser medium"]
+            },
+            "relatedDotPoints": ["PH-W1.1", "PH-W3.2", "PH-N1.1"]
+        },
+
+        "PH-W3.2": {
+            "code": "PH-W3.2",
+            "name": "Total internal reflection",
+            "topic": "PH-W",
+            "subtopic": "PH-W3",
+            "year": 11,
+            "summary": "Explain total internal reflection and calculate the critical angle; apply to optical fibres.",
+            "keyConcepts": [
+                "Total internal reflection (TIR): occurs when light travels from a denser to a less dense medium at an angle greater than the critical angle",
+                "Critical angle C: angle of incidence at which the refracted ray travels along the boundary (θ₂ = 90°)",
+                "Critical angle formula: sinC = n₂/n₁ (where n₁ > n₂)",
+                "For glass-air: sinC = 1/n_glass",
+                "Optical fibre: light travels along the fibre by repeated TIR at the glass-cladding boundary",
+                "Two conditions for TIR: (1) light must be in the denser medium, (2) angle of incidence > critical angle"
+            ],
+            "commonErrors": [
+                "TIR only occurs when going from denser to LESS dense medium — not the other way",
+                "Critical angle formula: sin C = n₂/n₁, where n₁ is the denser medium (n₁ > n₂)",
+                "Using sin C = n₁/n₂ (inverted fraction)",
+                "Forgetting the second condition: angle must EXCEED the critical angle (not just equal it)"
+            ],
+            "examTips": [
+                "If asked 'what is the critical angle for glass (n=1.5)?': sin C = 1/1.5, C = 41.8°",
+                "Optical fibre applications: telecommunications, endoscopes, decorative lighting",
+                "Diamonds have a very small critical angle (≈24°) — that is why they sparkle (TIR from many faces)",
+                "In HSC: state BOTH conditions for TIR in explanation questions"
+            ],
+            "socraticPrompts": [
+                "Glass has n = 1.5. What is the critical angle for a glass-air boundary?",
+                "Why does TIR only occur when going from a denser to a less dense medium?",
+                "Light hits the glass-air boundary at exactly the critical angle. What happens to the refracted ray?",
+                "How does an optical fibre use TIR to transmit light along its length?"
+            ],
+            "workedExampleTemplate": {
+                "type": "total-internal-reflection",
+                "steps": ["Confirm light is travelling from denser (n₁) to less dense (n₂) medium", "Apply sin C = n₂/n₁ to find critical angle", "Compare given angle of incidence with critical angle", "If θ > C: TIR occurs, apply law of reflection", "If θ < C: refraction occurs, apply Snell's law", "Draw accurate diagram showing reflected and/or refracted ray"]
+            },
+            "relatedDotPoints": ["PH-W3.1", "PH-N1.1"]
+        },
+
+        "PH-W4.1": {
+            "code": "PH-W4.1",
+            "name": "Thermal energy and specific heat",
+            "topic": "PH-W",
+            "subtopic": "PH-W4",
+            "year": 11,
+            "summary": "Apply Q = mcΔT and Q = mL to calculate heat transfer and phase changes.",
+            "keyConcepts": [
+                "Thermal energy (heat): energy transferred due to temperature difference",
+                "Specific heat capacity (c): energy required to raise 1 kg of substance by 1°C; unit: J kg⁻¹ K⁻¹",
+                "Q = mcΔT: heat transferred = mass × specific heat × temperature change",
+                "Latent heat (L): energy absorbed/released during phase change at constant temperature",
+                "Q = mL: heat for phase change = mass × specific latent heat",
+                "Latent heat of fusion: solid ↔ liquid; latent heat of vaporisation: liquid ↔ gas",
+                "Thermal equilibrium: net heat transfer = 0; temperature of objects equalises"
+            ],
+            "commonErrors": [
+                "Using ΔT in Celsius is fine (same magnitude as Kelvin change), but absolute temperature T requires Kelvin",
+                "During a phase change, temperature does NOT change — forgetting this when reading heating curves",
+                "Mixing up latent heat of fusion and vaporisation — vaporisation is much larger",
+                "Heat gained by one object = heat lost by other (calorimetry): m₁c₁ΔT₁ = m₂c₂ΔT₂ (with opposite signs)"
+            ],
+            "examTips": [
+                "c for water = 4186 J kg⁻¹ K⁻¹ (given in HSC formula sheet)",
+                "In calorimetry: heat lost by hot object = heat gained by cold object",
+                "On a heating curve: horizontal sections are phase changes (Q = mL), sloped sections are temperature changes (Q = mcΔT)",
+                "Always check if the question asks for heat added or temperature change — they use different equations"
+            ],
+            "socraticPrompts": [
+                "How much energy is needed to heat 2 kg of water from 20°C to 100°C? (c = 4186 J/kgK)",
+                "Why does the temperature stay constant while ice melts even though heat is being added?",
+                "100 g of copper at 200°C is dropped into 500 g of water at 20°C. What is the final temperature?",
+                "Which requires more energy: melting 1 kg of ice or boiling 1 kg of water at 100°C? Why?"
+            ],
+            "workedExampleTemplate": {
+                "type": "heat-transfer",
+                "steps": ["Identify whether the process involves temperature change (use Q = mcΔT) or phase change (use Q = mL)", "Identify m, c, ΔT or m, L from the problem", "Calculate Q", "For calorimetry: set heat gained = heat lost and solve for unknown temperature", "Check answer is physically reasonable (final T between initial temperatures)"]
+            },
+            "relatedDotPoints": ["PH-W4.2"]
+        },
+
+        "PH-W4.2": {
+            "code": "PH-W4.2",
+            "name": "Laws of thermodynamics",
+            "topic": "PH-W",
+            "subtopic": "PH-W4",
+            "year": 11,
+            "summary": "Apply the first law of thermodynamics; describe heat engines and the second law.",
+            "keyConcepts": [
+                "First law of thermodynamics: ΔU = Q - W (change in internal energy = heat added − work done by system)",
+                "Internal energy: total kinetic and potential energy of particles in the system",
+                "Work done BY the system: positive W (e.g. gas expanding pushes piston)",
+                "Work done ON the system: negative W (energy added to system)",
+                "Heat engine: converts thermal energy to work; efficiency η = W_out / Q_in × 100%",
+                "Second law: heat flows spontaneously from hot to cold; entropy of an isolated system cannot decrease",
+                "No heat engine can be 100% efficient (Kelvin-Planck statement)"
+            ],
+            "commonErrors": [
+                "Sign convention: Q is positive when heat flows INTO the system; W is positive when system does work (pushes outward)",
+                "Confusing ΔU = Q - W (physics convention) with ΔU = Q + W (chemistry convention) — HSC uses Q - W",
+                "Efficiency: using Q_out instead of W_out in the numerator",
+                "Second law: entropy can decrease locally if compensated by increase elsewhere"
+            ],
+            "examTips": [
+                "ΔU = Q - W: memorise the sign convention — W is work done BY the gas",
+                "Heat engine efficiency = 1 - T_cold/T_hot (Carnot efficiency, maximum possible)",
+                "If Q = 0 (adiabatic process): ΔU = -W",
+                "If W = 0 (constant volume): ΔU = Q"
+            ],
+            "socraticPrompts": [
+                "A gas absorbs 500 J of heat and does 200 J of work. What is the change in internal energy?",
+                "A heat engine takes in 1000 J and does 400 J of work. What is its efficiency? How much heat is released?",
+                "Why is a 100% efficient heat engine impossible?",
+                "An ideal gas is compressed adiabatically. Does its temperature increase or decrease? Explain using the first law."
+            ],
+            "workedExampleTemplate": {
+                "type": "thermodynamics",
+                "steps": ["Identify the process type (isothermal, adiabatic, isobaric, isochoric)", "Apply ΔU = Q - W with correct signs", "Calculate the unknown quantity", "For heat engines: calculate efficiency = W/Q_in × 100%", "Apply second law check: is the process physically possible?"]
+            },
+            "relatedDotPoints": ["PH-W4.1"]
+        },
+
+        "PH-E1.1": {
+            "code": "PH-E1.1",
+            "name": "Electric charge and Coulomb's law",
+            "topic": "PH-E",
+            "subtopic": "PH-E1",
+            "year": 11,
+            "summary": "Apply Coulomb's law to calculate electrostatic force between point charges.",
+            "keyConcepts": [
+                "Electric charge: fundamental property of matter; unit: Coulomb (C)",
+                "Like charges repel; unlike charges attract",
+                "Conservation of charge: total charge in a closed system is constant",
+                "Coulomb's law: F = kq₁q₂/r² where k = 9.0 × 10⁹ N m² C⁻²",
+                "Inverse square law: force halves when separation doubles",
+                "Charge is quantised: Q = ne where e = 1.6 × 10⁻¹⁹ C"
+            ],
+            "commonErrors": [
+                "Forgetting to square the separation distance in F = kq₁q₂/r²",
+                "Using centimetres instead of metres for r",
+                "Coulomb's law gives magnitude — determine direction separately (attract or repel)",
+                "r is the distance between centres of the charges, not their radii",
+                "Forgetting that k = 9.0 × 10⁹ N m² C⁻² (not 9 × 10⁶ or other values)"
+            ],
+            "examTips": [
+                "k = 9.0 × 10⁹ N m² C⁻² — this is given on the HSC formula sheet",
+                "e = 1.6 × 10⁻¹⁹ C — also on the formula sheet",
+                "For multiple charges: use superposition — calculate force from each charge separately, then add as vectors",
+                "Always state direction of force: attractive or repulsive, and toward/away from which charge"
+            ],
+            "socraticPrompts": [
+                "Two charges of +3 μC and -2 μC are 0.1 m apart. Calculate the force. Is it attractive or repulsive?",
+                "If the separation between two charges is halved, how does the electrostatic force change?",
+                "Coulomb's law looks like Newton's law of gravitation. What are the key differences?",
+                "How many electrons must be removed from an object to give it a charge of +1.6 × 10⁻¹⁷ C?"
+            ],
+            "workedExampleTemplate": {
+                "type": "coulombs-law",
+                "steps": ["Identify q₁, q₂ (in Coulombs), and r (in metres)", "Apply F = kq₁q₂/r²", "Calculate the magnitude", "Determine direction: like charges repel, unlike attract", "For multiple charges: repeat for each pair and add forces as vectors", "State final answer with units (Newtons) and direction"]
+            },
+            "relatedDotPoints": ["PH-E1.2", "PH-E1.3"]
+        },
+
+        "PH-E1.2": {
+            "code": "PH-E1.2",
+            "name": "Electric fields",
+            "topic": "PH-E",
+            "subtopic": "PH-E1",
+            "year": 11,
+            "summary": "Define electric field; calculate field strength; draw and interpret field line diagrams.",
+            "keyConcepts": [
+                "Electric field E: force per unit positive charge; E = F/q (unit: N C⁻¹ or V m⁻¹)",
+                "Direction of E: direction a positive test charge would move",
+                "Field due to point charge: E = kq/r²",
+                "Uniform field between parallel plates: E = V/d",
+                "Field lines: point from positive to negative; closer lines = stronger field",
+                "Field lines never cross",
+                "Superposition: total field = vector sum of individual fields"
+            ],
+            "commonErrors": [
+                "Electric field direction: it is the direction a POSITIVE charge would move (not negative)",
+                "E = F/q: q is the TEST charge, not the source charge",
+                "E = kq/r²: use the source charge here; sign determines direction",
+                "Field lines between parallel plates are uniform (equally spaced and parallel) — only near the edges do they curve",
+                "Confusing E (field strength, N/C) with V (potential, Volts)"
+            ],
+            "examTips": [
+                "E = V/d applies ONLY to uniform field between parallel plates",
+                "For point charges: E = kq/r² — magnitude only; direction by inspection",
+                "In field line diagrams: density of lines = strength of field",
+                "Field is zero inside a conductor in electrostatic equilibrium",
+                "A positive charge in an electric field: force in same direction as E; negative charge: force opposite to E"
+            ],
+            "socraticPrompts": [
+                "A positive charge of 2 μC experiences a force of 0.01 N. What is the electric field strength at that point?",
+                "Two parallel plates are separated by 0.05 m with a potential difference of 100 V. What is the electric field?",
+                "Draw the electric field between a positive and negative charge. Where is it strongest?",
+                "Why do electric field lines never cross?"
+            ],
+            "workedExampleTemplate": {
+                "type": "electric-field",
+                "steps": ["Identify the type of field (point charge or uniform plate)", "Apply E = F/q or E = kq/r² or E = V/d as appropriate", "Calculate the magnitude of E", "Determine the direction (toward negative charge or from positive)", "For multiple charges: apply superposition — add field vectors", "State answer with units (N C⁻¹) and direction"]
+            },
+            "relatedDotPoints": ["PH-E1.1", "PH-E1.3", "PH-E3.2"]
+        },
+
+        "PH-E1.3": {
+            "code": "PH-E1.3",
+            "name": "Electric potential energy and voltage",
+            "topic": "PH-E",
+            "subtopic": "PH-E1",
+            "year": 11,
+            "summary": "Relate electric potential energy to work done by electric fields; apply W = qV.",
+            "keyConcepts": [
+                "Electric potential difference (voltage): V = W/q — work done per unit charge (unit: Volt = J C⁻¹)",
+                "Work done by electric field: W = qV (q in Coulombs, V in Volts, W in Joules)",
+                "Positive charge moves from high to low potential — loses potential energy, gains kinetic energy",
+                "Negative charge moves from low to high potential spontaneously",
+                "Electron volt (eV): energy gained by one electron through 1 V potential difference; 1 eV = 1.6 × 10⁻¹⁹ J",
+                "Equipotential surface: same potential everywhere on it; electric field is perpendicular to equipotentials"
+            ],
+            "commonErrors": [
+                "W = qV: q must be in Coulombs, not microcoulombs, unless accounting for the micro prefix",
+                "Electron charge is negative: an electron moving from low to high potential GAINS energy (counter-intuitive)",
+                "Confusing potential (V, scalar) with electric field (E, vector)",
+                "Equipotential lines are perpendicular to field lines — not parallel"
+            ],
+            "examTips": [
+                "W = qV: simple and powerful — know it",
+                "eV to Joules: multiply by 1.6 × 10⁻¹⁹",
+                "Joules to eV: divide by 1.6 × 10⁻¹⁹",
+                "In accelerating voltage problems: qV = ½mv² (all electrical PE converts to KE)"
+            ],
+            "socraticPrompts": [
+                "An electron is accelerated through 500 V. What kinetic energy does it gain in eV? In Joules?",
+                "What work is done moving a charge of 3 μC through a potential difference of 12 V?",
+                "Why do equipotential lines always meet field lines at right angles?",
+                "A proton and electron are accelerated through the same voltage. Which one moves faster? Why?"
+            ],
+            "workedExampleTemplate": {
+                "type": "electric-potential",
+                "steps": ["Identify q (charge in Coulombs) and V (potential difference in Volts)", "Apply W = qV to find work/energy", "For accelerating particles: set qV = ½mv² and solve for v", "Convert between J and eV if required", "State answer with correct units"]
+            },
+            "relatedDotPoints": ["PH-E1.2", "PH-E2.1", "PH-E3.2"]
+        },
+
+        "PH-E2.1": {
+            "code": "PH-E2.1",
+            "name": "Current, resistance and Ohm's law",
+            "topic": "PH-E",
+            "subtopic": "PH-E2",
+            "year": 11,
+            "summary": "Define current and resistance; apply Ohm's law V = IR to circuit problems.",
+            "keyConcepts": [
+                "Electric current: rate of flow of charge; I = Q/t (unit: Ampere = C s⁻¹)",
+                "Conventional current flows from positive to negative terminal (opposite to electron flow)",
+                "Resistance: opposition to current flow; unit: Ohm (Ω)",
+                "Ohm's law: V = IR (applies to ohmic conductors at constant temperature)",
+                "Ohmic conductor: resistance is constant (graph of V vs I is a straight line through origin)",
+                "Non-ohmic conductor: resistance varies (e.g. light globe filament, diode)",
+                "Resistivity: ρ (material property); R = ρL/A"
+            ],
+            "commonErrors": [
+                "Conventional current (positive charge flow) is opposite to electron flow — be clear which is meant",
+                "Ohm's law V = IR: V is the voltage ACROSS the resistor (not the EMF of the battery)",
+                "Non-ohmic devices: Ohm's law does not apply — R = V/I still gives resistance at a specific point but it is not constant",
+                "Using I = Q/t with time in minutes instead of seconds"
+            ],
+            "examTips": [
+                "V = IR can be rearranged: I = V/R, R = V/I",
+                "For ohmic conductors, V-I graph is a straight line through origin with gradient = R",
+                "Resistance increases with temperature for metals (increased lattice vibrations)",
+                "Ammeter: low resistance, connected in series; Voltmeter: high resistance, connected in parallel"
+            ],
+            "socraticPrompts": [
+                "A 12 V battery drives a current of 0.5 A through a resistor. What is the resistance?",
+                "How does the resistance of a metal change as temperature increases? What does this mean for Ohm's law?",
+                "What charge flows through a 2 A circuit in 5 minutes?",
+                "Sketch the V-I graph for an ohmic resistor and for a light globe filament. How do they differ?"
+            ],
+            "workedExampleTemplate": {
+                "type": "ohms-law",
+                "steps": ["Identify V, I, R from the problem (find which is unknown)", "Apply V = IR in the appropriate form", "Calculate the unknown", "Check units: V in Volts, I in Amps, R in Ohms", "State answer with correct units"]
+            },
+            "relatedDotPoints": ["PH-E1.3", "PH-E2.2", "PH-E2.3"]
+        },
+
+        "PH-E2.2": {
+            "code": "PH-E2.2",
+            "name": "Series and parallel circuits",
+            "topic": "PH-E",
+            "subtopic": "PH-E2",
+            "year": 11,
+            "summary": "Calculate equivalent resistance and analyse current and voltage in series and parallel circuits.",
+            "keyConcepts": [
+                "Series circuit: same current through all components; voltages add: V_total = V₁ + V₂ + ...",
+                "Series resistance: R_total = R₁ + R₂ + R₃ + ...",
+                "Parallel circuit: same voltage across all components; currents add: I_total = I₁ + I₂ + ...",
+                "Parallel resistance: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃ + ...",
+                "Two resistors in parallel: R_total = R₁R₂/(R₁+R₂)",
+                "Kirchhoff's Voltage Law (KVL): sum of voltages around a closed loop = 0",
+                "Kirchhoff's Current Law (KCL): current into a junction = current out of junction"
+            ],
+            "commonErrors": [
+                "Parallel resistance: using R_total = R₁ + R₂ instead of the reciprocal formula — parallel always gives LESS than any individual resistor",
+                "Forgetting that adding a resistor in parallel reduces total resistance",
+                "Series: voltage splits across resistors in proportion to their resistance",
+                "Parallel: current splits inversely proportional to resistance (more current through lower R)",
+                "Internal resistance: V_terminal = EMF - Ir (voltage drops across internal resistance)"
+            ],
+            "examTips": [
+                "In a series circuit, the largest resistor has the largest voltage drop",
+                "In a parallel circuit, the smallest resistor carries the largest current",
+                "Equivalent resistance of two equal resistors in parallel = R/2",
+                "For complex circuits: simplify step by step — combine parallel groups first, then series"
+            ],
+            "socraticPrompts": [
+                "Three resistors of 6Ω, 3Ω and 2Ω are connected in parallel. What is the total resistance?",
+                "A 12 V battery is connected to two resistors in series: 4Ω and 8Ω. What is the voltage across each?",
+                "Why does adding a bulb in parallel make the other bulbs brighter (total resistance decreases)?",
+                "In a parallel circuit, which branch has the most current? Why?"
+            ],
+            "workedExampleTemplate": {
+                "type": "circuit-analysis",
+                "steps": ["Identify series and parallel connections", "Calculate equivalent resistance for parallel groups: 1/R = 1/R₁ + 1/R₂", "Combine with series resistances: R_total = R_series + R_parallel", "Find total current: I = V/R_total", "Work backward: find voltage across each group, then current through each branch", "Verify using Kirchhoff's laws"]
+            },
+            "relatedDotPoints": ["PH-E2.1", "PH-E2.3"]
+        },
+
+        "PH-E2.3": {
+            "code": "PH-E2.3",
+            "name": "Power in circuits",
+            "topic": "PH-E",
+            "subtopic": "PH-E2",
+            "year": 11,
+            "summary": "Calculate electrical power and energy dissipated in circuit components.",
+            "keyConcepts": [
+                "Electrical power: P = VI = I²R = V²/R (unit: Watt)",
+                "Energy dissipated: E = Pt (unit: Joule)",
+                "Kilowatt-hour: 1 kWh = 3.6 × 10⁶ J (used for electricity billing)",
+                "In series: component with largest R dissipates most power (same I, P = I²R)",
+                "In parallel: component with smallest R dissipates most power (same V, P = V²/R)",
+                "Maximum power transfer occurs when load resistance = internal resistance"
+            ],
+            "commonErrors": [
+                "Using the wrong power formula for the given variables: if you know I and R, use P = I²R (not P = VI without finding V first)",
+                "Energy vs power: power is the rate (W), energy is power × time (J)",
+                "kWh confusion: 1 kWh ≠ 1000 W; it is 1000 W × 3600 s = 3.6 × 10⁶ J",
+                "Series vs parallel power: larger R in series = more power; smaller R in parallel = more power"
+            ],
+            "examTips": [
+                "Three forms of power: P = VI, P = I²R, P = V²/R — choose based on what is given",
+                "For a complete circuit: total power from source = sum of power dissipated in all components",
+                "Electricity cost = energy in kWh × rate per kWh",
+                "HSC often asks: 'which resistor dissipates more power?' — identify series or parallel first"
+            ],
+            "socraticPrompts": [
+                "A 60 W light globe operates at 240 V. What current flows through it? What is its resistance?",
+                "Two resistors 3Ω and 6Ω are in series with a 9 V battery. Which dissipates more power?",
+                "The same two resistors are now in parallel. Which dissipates more power now?",
+                "How many kWh does a 2000 W heater use in 3 hours? What is the cost at $0.30/kWh?"
+            ],
+            "workedExampleTemplate": {
+                "type": "electrical-power",
+                "steps": ["Identify the known quantities (V, I, R, P, t)", "Choose the power formula that uses the two known quantities: P = VI, P = I²R, or P = V²/R", "Calculate power", "If energy is required: E = Pt", "Convert units if required (J to kWh: divide by 3.6 × 10⁶)", "Interpret result in context"]
+            },
+            "relatedDotPoints": ["PH-E2.1", "PH-E2.2", "PH-D1.3"]
+        },
+
+        "PH-E3.1": {
+            "code": "PH-E3.1",
+            "name": "Magnetic fields and force on conductors",
+            "topic": "PH-E",
+            "subtopic": "PH-E3",
+            "year": 12,
+            "summary": "Describe magnetic fields; calculate and determine direction of force on current-carrying conductors.",
+            "keyConcepts": [
+                "Magnetic field B: vector field that exerts force on moving charges and current-carrying conductors (unit: Tesla)",
+                "Force on conductor: F = BIl sinθ, where θ is angle between current direction and B",
+                "Maximum force when current is perpendicular to B (θ = 90°): F = BIl",
+                "Zero force when current is parallel to B (θ = 0°)",
+                "Direction: use right-hand rule (flat hand) — fingers point in current direction, curl toward B, thumb gives force direction",
+                "Magnetic field lines: closed loops from N to S outside, S to N inside magnet; never start or end",
+                "The motor effect: interaction between current and magnetic field produces force (basis of electric motors)"
+            ],
+            "commonErrors": [
+                "Right-hand rule: must point fingers along current (I), curl toward B — thumb gives force direction",
+                "Force is zero when current and B are parallel — sin(0°) = 0",
+                "B is in Tesla (T), not other units",
+                "F = BIl only when current is perpendicular to B; use F = BIl sinθ for angles",
+                "Forgetting l is the length of conductor inside the magnetic field, not the total length"
+            ],
+            "examTips": [
+                "Right-hand rule for force: fingers = current direction, bend toward B field, thumb = force direction",
+                "For × (into page) B field and current to the right: use right-hand rule to find force direction",
+                "The motor effect is the basis of all DC motors — know the principle",
+                "Parallel wires with currents in the same direction attract; opposite directions repel"
+            ],
+            "socraticPrompts": [
+                "A 0.5 m wire carries 2 A in a 0.3 T magnetic field perpendicular to the wire. What is the force?",
+                "Using the right-hand rule, determine the force direction on a wire carrying current to the right in a field directed upward.",
+                "What happens to the force if the current is reversed?",
+                "Why does a current-carrying conductor experience no force when parallel to the magnetic field?"
+            ],
+            "workedExampleTemplate": {
+                "type": "magnetic-force-conductor",
+                "steps": ["Identify B (Tesla), I (Amps), l (metres), and angle θ between current and B", "Apply F = BIl sinθ", "Calculate the magnitude of force", "Use right-hand rule to determine direction", "State answer with magnitude (Newtons) and direction"]
+            },
+            "relatedDotPoints": ["PH-E3.2", "PH-E3.3", "PH-E2.1"]
+        },
+
+        "PH-E3.2": {
+            "code": "PH-E3.2",
+            "name": "Force on moving charges",
+            "topic": "PH-E",
+            "subtopic": "PH-E3",
+            "year": 12,
+            "summary": "Calculate magnetic force on moving charges; analyse circular motion of charged particles.",
+            "keyConcepts": [
+                "Force on moving charge: F = qvB sinθ",
+                "Maximum force when velocity is perpendicular to B",
+                "Direction: use right-hand rule for positive charges; reverse for negative charges",
+                "Circular motion: magnetic force provides centripetal force when v ⊥ B: qvB = mv²/r → r = mv/qB",
+                "Magnetic force does no work (always perpendicular to velocity) — speed unchanged",
+                "Velocity selector: electric force balances magnetic force when qE = qvB, so v = E/B"
+            ],
+            "commonErrors": [
+                "For negative charges (electrons): use right-hand rule then reverse the direction",
+                "Magnetic force does NO work: it changes direction, not speed, so KE does not change",
+                "Radius of circular orbit: r = mv/qB — larger mass or speed → larger radius; larger B or q → smaller radius",
+                "Velocity selector: only charges with v = E/B pass through undeflected (balance of forces)"
+            ],
+            "examTips": [
+                "q is the MAGNITUDE of charge in F = qvB for calculations; determine direction separately",
+                "For electrons: same right-hand rule result, then reverse (electrons travel opposite to conventional current)",
+                "Circular motion in magnetic field: constant speed (magnetic force does no work), changing direction",
+                "Mass spectrometer concept: same q, different m → different r; separates isotopes"
+            ],
+            "socraticPrompts": [
+                "An electron moves at 3 × 10⁶ m/s perpendicular to a 0.2 T field. What force acts on it?",
+                "Why does the magnetic force never change the speed of a charged particle?",
+                "A proton enters a magnetic field and moves in a circle of radius 0.1 m. The field is 0.5 T. What is its speed?",
+                "How does a velocity selector separate particles by speed?"
+            ],
+            "workedExampleTemplate": {
+                "type": "magnetic-force-charge",
+                "steps": ["Identify q, v, B, and angle θ", "Apply F = qvB sinθ for magnitude", "Use right-hand rule for direction (reverse for negative charges)", "If circular motion: set qvB = mv²/r and solve for r or v", "State answer with units and direction"]
+            },
+            "relatedDotPoints": ["PH-E3.1", "PH-E1.2", "PH-D2.1"]
+        },
+
+        "PH-E3.3": {
+            "code": "PH-E3.3",
+            "name": "Electromagnetic induction",
+            "topic": "PH-E",
+            "subtopic": "PH-E3",
+            "year": 12,
+            "summary": "Apply Faraday's and Lenz's laws to calculate induced EMF and determine its direction.",
+            "keyConcepts": [
+                "Magnetic flux: Φ = BA cosθ, where θ is angle between B and normal to area (unit: Weber, Wb)",
+                "Faraday's law: induced EMF ε = -ΔΦ/Δt = -NΔΦ/Δt for N turns",
+                "Lenz's law: induced current opposes the change in flux that caused it",
+                "EMF is induced by: changing B, changing A, changing θ (rotating coil), or moving conductor",
+                "Moving conductor in field: ε = Blv (conductor of length l moving at speed v perpendicular to B)",
+                "Generator: mechanical energy converted to electrical energy via induction"
+            ],
+            "commonErrors": [
+                "Flux Φ = BA cosθ where θ is between B and the NORMAL to the surface (not the surface itself)",
+                "Lenz's law: induced current OPPOSES the change, not the original flux",
+                "If flux is increasing, induced current creates B opposing the increase (into page if original B is out of page)",
+                "ε = Blv applies when v is perpendicular to both B and l",
+                "Faraday's law gives magnitude; Lenz's law gives direction"
+            ],
+            "examTips": [
+                "For Lenz's law questions: (1) determine change in flux (increasing/decreasing), (2) find direction of B needed to oppose change, (3) use right-hand rule to find current direction",
+                "ε = -NΔΦ/Δt: the negative sign comes from Lenz's law",
+                "A coil rotating in a uniform field produces alternating EMF (basis of AC generator)",
+                "HSC often asks: 'state Lenz's law' — include both 'opposes' and 'change in flux'"
+            ],
+            "socraticPrompts": [
+                "A coil of 50 turns has flux changing from 0.02 Wb to 0.08 Wb in 0.1 s. What is the induced EMF?",
+                "A magnet is pushed toward a coil. Using Lenz's law, which way does the induced current flow?",
+                "A 0.4 m conductor moves at 3 m/s perpendicular to a 0.5 T field. What EMF is induced?",
+                "Why does a generator slow down when connected to a load? (Use Lenz's law)"
+            ],
+            "workedExampleTemplate": {
+                "type": "electromagnetic-induction",
+                "steps": ["Calculate magnetic flux: Φ = BA cosθ (if needed)", "Find the change in flux: ΔΦ = Φ_final - Φ_initial", "Apply Faraday's law: ε = -NΔΦ/Δt (use magnitude for size, Lenz's law for direction)", "Apply Lenz's law: determine the direction of induced current to oppose the change", "State answer with magnitude (Volts) and direction of current"]
+            },
+            "relatedDotPoints": ["PH-E3.1", "PH-E3.4"]
+        },
+
+        "PH-E3.4": {
+            "code": "PH-E3.4",
+            "name": "Transformers and AC circuits",
+            "topic": "PH-E",
+            "subtopic": "PH-E3",
+            "year": 12,
+            "summary": "Apply the transformer equation; analyse AC circuits using RMS values.",
+            "keyConcepts": [
+                "Transformer: transfers electrical energy between circuits via electromagnetic induction",
+                "Turns ratio: Vp/Vs = Np/Ns",
+                "Ideal transformer (100% efficient): Vp × Ip = Vs × Is (power in = power out)",
+                "Step-up transformer: Ns > Np, so Vs > Vp",
+                "Step-down transformer: Ns < Np, so Vs < Vp",
+                "AC generator: rotating coil in magnetic field produces sinusoidal alternating voltage",
+                "RMS (root mean square) voltage: V_rms = V_peak/√2 ≈ 0.707 × V_peak",
+                "RMS current: I_rms = I_peak/√2",
+                "AC power: P = V_rms × I_rms"
+            ],
+            "commonErrors": [
+                "Turns ratio: Vp/Vs = Np/Ns — primary and secondary must be on the same side (Vp with Np)",
+                "Ideal transformer power: if voltage steps up, current steps DOWN by the same factor",
+                "RMS values: V_rms ≠ V_peak — Australian household voltage is 230 V RMS (peak ≈ 325 V)",
+                "Transformers only work with AC — a DC input produces no changing flux so no output voltage"
+            ],
+            "examTips": [
+                "Memorise: V_rms = V_peak/√2 and I_rms = I_peak/√2",
+                "For ideal transformer efficiency problems: P_primary = P_secondary, so Vp × Ip = Vs × Is",
+                "High voltage transmission lines: step up voltage (step down current) to reduce power loss (P = I²R)",
+                "This is a key HSC application — always link transformers to energy-efficient power transmission"
+            ],
+            "socraticPrompts": [
+                "A transformer has 200 primary turns and 1000 secondary turns. The input is 240 V. What is the output voltage?",
+                "Why do power companies transmit electricity at high voltage? (Use P = I²R)",
+                "Australian mains voltage is 230 V RMS. What is the peak voltage?",
+                "An ideal transformer steps voltage from 240 V to 12 V. The secondary current is 5 A. What is the primary current?"
+            ],
+            "workedExampleTemplate": {
+                "type": "transformer",
+                "steps": ["Identify primary and secondary quantities (V, I, N)", "Apply turns ratio: Vp/Vs = Np/Ns", "For ideal transformer: apply Vp × Ip = Vs × Is to find current", "Convert between RMS and peak if required: V_rms = V_peak/√2", "Calculate power if required: P = V_rms × I_rms", "State answer with correct units"]
+            },
+            "relatedDotPoints": ["PH-E3.3", "PH-E2.3"]
+        },
+
+        "PH-A1.1": {
+            "code": "PH-A1.1",
+            "name": "Gravitational field and orbital motion",
+            "topic": "PH-A",
+            "subtopic": "PH-A1",
+            "year": 12,
+            "summary": "Apply Newton's law of universal gravitation and Kepler's third law to analyse orbital motion.",
+            "keyConcepts": [
+                "Newton's law of universal gravitation: F = GMm/r² (G = 6.67 × 10⁻¹¹ N m² kg⁻²)",
+                "Gravitational field strength: g = GM/r² (directed toward the mass)",
+                "Orbital motion: gravity provides centripetal force — GMm/r² = mv²/r",
+                "Orbital speed: v = √(GM/r)",
+                "Orbital period: T = 2πr/v = 2πr√(r/GM)",
+                "Kepler's third law: T² ∝ r³, or T²/r³ = constant = 4π²/GM",
+                "Geostationary orbit: T = 24 h, orbit above equator, satellite appears stationary"
+            ],
+            "commonErrors": [
+                "r is measured from the CENTRE of the Earth (or planet), not its surface",
+                "Kepler's third law: T² ∝ r³, not T ∝ r or T² ∝ r²",
+                "Orbital speed: larger orbit → slower speed (counter-intuitive)",
+                "g varies with altitude: g = GM/r² — g is NOT constant away from Earth's surface",
+                "Geostationary: not just any 24-hour orbit — must be equatorial AND circular"
+            ],
+            "examTips": [
+                "G = 6.67 × 10⁻¹¹ N m² kg⁻², M_Earth = 5.97 × 10²⁴ kg, R_Earth = 6.37 × 10⁶ m — on formula sheet",
+                "For orbital problems: GMm/r² = mv²/r → m cancels, giving v = √(GM/r)",
+                "Kepler's third law ratio: (T₁/T₂)² = (r₁/r₂)³ — useful for comparing orbits",
+                "Energy in orbit: total energy = KE + GPE = -GMm/2r (negative means bound orbit)"
+            ],
+            "socraticPrompts": [
+                "The ISS orbits at 400 km above Earth. Calculate its orbital speed. (R_Earth = 6.37 × 10⁶ m, M_Earth = 5.97 × 10²⁴ kg)",
+                "A satellite has an orbital radius twice that of another. How do their periods compare?",
+                "Why does a satellite in a higher orbit move more slowly?",
+                "Calculate the gravitational field strength at the ISS altitude of 400 km above Earth's surface."
+            ],
+            "workedExampleTemplate": {
+                "type": "orbital-motion",
+                "steps": ["Identify r (total distance from centre of planet), M (mass of planet)", "For orbital speed: set GMm/r² = mv²/r → solve for v = √(GM/r)", "For orbital period: T = 2πr/v", "For Kepler's third law comparisons: (T₁/T₂)² = (r₁/r₂)³", "Check r includes planet radius + altitude above surface", "State answer with units"]
+            },
+            "relatedDotPoints": ["PH-D2.1", "PH-D2.2", "PH-D1.2"]
+        },
+
+        "PH-N1.1": {
+            "code": "PH-N1.1",
+            "name": "Electromagnetic spectrum and light",
+            "topic": "PH-N",
+            "subtopic": "PH-N1",
+            "year": 12,
+            "summary": "Describe the electromagnetic spectrum; apply c = fλ to electromagnetic waves.",
+            "keyConcepts": [
+                "All electromagnetic waves travel at c = 3 × 10⁸ m/s in a vacuum",
+                "EM spectrum (increasing frequency/energy): radio → microwave → infrared → visible → UV → X-ray → gamma",
+                "EM waves are transverse waves — electric and magnetic fields oscillate perpendicular to propagation",
+                "c = fλ (same relation as v = fλ for waves)",
+                "Energy of photon: E = hf = hc/λ (h = 6.626 × 10⁻³⁴ J s)",
+                "Higher frequency = higher energy = shorter wavelength",
+                "Visible light: approximately 400 nm (violet) to 700 nm (red)"
+            ],
+            "commonErrors": [
+                "All EM waves travel at c in vacuum — NOT just visible light",
+                "Frequency increases as wavelength decreases (inverse relationship)",
+                "Confusing the order of the EM spectrum — radio has lowest frequency, gamma has highest",
+                "Photon energy E = hf: higher frequency photons (e.g. gamma) have MORE energy than lower frequency (radio)"
+            ],
+            "examTips": [
+                "c = 3 × 10⁸ m/s and h = 6.626 × 10⁻³⁴ J s are on the HSC formula sheet",
+                "For wavelength/frequency conversions: c = fλ → f = c/λ",
+                "Visible light wavelengths in nm: 400 nm (violet) to 700 nm (red) — memorise",
+                "Photon energy: E = hf = hc/λ — can use either form depending on what is given"
+            ],
+            "socraticPrompts": [
+                "What is the frequency of green light with wavelength 550 nm?",
+                "Order these from lowest to highest frequency: X-ray, radio wave, UV, visible light.",
+                "Why do X-rays penetrate tissue but visible light does not? (Think about energy)",
+                "Calculate the energy of a photon of wavelength 600 nm."
+            ],
+            "workedExampleTemplate": {
+                "type": "em-spectrum",
+                "steps": ["Identify whether wavelength or frequency is given", "Convert units if necessary (nm to m: × 10⁻⁹)", "Apply c = fλ to find the other quantity", "Apply E = hf or E = hc/λ if energy is required", "State answer with correct units and scientific notation"]
+            },
+            "relatedDotPoints": ["PH-W1.1", "PH-N1.2", "PH-N2.1"]
+        },
+
+        "PH-N1.2": {
+            "code": "PH-N1.2",
+            "name": "Interference and diffraction of light",
+            "topic": "PH-N",
+            "subtopic": "PH-N1",
+            "year": 12,
+            "summary": "Apply the double slit equation to calculate wavelength; explain diffraction patterns.",
+            "keyConcepts": [
+                "Young's double slit experiment: demonstrates wave nature of light through interference",
+                "Constructive interference (bright fringe): path difference = nλ (n = 0, 1, 2, ...)",
+                "Destructive interference (dark fringe): path difference = (n + ½)λ",
+                "Double slit equation: λ = dx/L (where d = slit separation, x = fringe spacing, L = screen distance)",
+                "Single slit diffraction: central bright maximum flanked by dark minima",
+                "Diffraction increases as wavelength increases or gap decreases",
+                "Central maximum width increases as slit narrows"
+            ],
+            "commonErrors": [
+                "Double slit equation: d is slit SEPARATION (centre to centre), not slit width",
+                "x is the FRINGE SPACING (distance between adjacent bright fringes), not total width",
+                "λ = dx/L gives wavelength in the same units as d, x, L — must be consistent (all in metres)",
+                "Confusing double slit (interference between two sources) with single slit (diffraction from one opening)"
+            ],
+            "examTips": [
+                "λ = dx/L: also written as x = λL/d — know both arrangements",
+                "Larger fringe spacing x: either larger λ, larger L, or smaller d",
+                "In HSC, Young's experiment is a classic — know it proves light has wave nature",
+                "The central bright fringe is called the zeroth order maximum (n = 0)"
+            ],
+            "socraticPrompts": [
+                "In a double slit experiment, d = 0.5 mm, L = 1.0 m, fringe spacing = 1.2 mm. What is the wavelength?",
+                "If the slit separation is halved, what happens to the fringe spacing?",
+                "Why must the light be coherent (same frequency and phase relationship) for clear fringes?",
+                "How does the diffraction pattern from a single narrow slit differ from the double slit pattern?"
+            ],
+            "workedExampleTemplate": {
+                "type": "double-slit",
+                "steps": ["Identify d (slit separation in metres), x (fringe spacing in metres), L (screen distance in metres)", "Apply λ = dx/L", "Calculate wavelength", "Convert to nm if required (× 10⁹)", "State answer and compare to visible spectrum range if relevant"]
+            },
+            "relatedDotPoints": ["PH-W1.2", "PH-N1.1", "PH-N2.1"]
+        },
+
+        "PH-N2.1": {
+            "code": "PH-N2.1",
+            "name": "Photoelectric effect",
+            "topic": "PH-N",
+            "subtopic": "PH-N2",
+            "year": 12,
+            "summary": "Explain the photoelectric effect using the photon model; apply Einstein's photoelectric equation.",
+            "keyConcepts": [
+                "Photoelectric effect: light shining on a metal surface causes emission of electrons",
+                "Classical wave model FAILS to explain: why there is a threshold frequency and why emission is instantaneous",
+                "Einstein's explanation: light consists of photons, each with energy E = hf",
+                "Work function (φ): minimum energy to release an electron from the metal surface",
+                "Threshold frequency: f₀ = φ/h — below this, no electrons are emitted regardless of intensity",
+                "Einstein's photoelectric equation: KE_max = hf - φ",
+                "Increasing intensity: more photons per second → more electrons emitted, NOT higher KE",
+                "Stopping voltage: V_s = KE_max/e (voltage needed to stop fastest electrons)"
+            ],
+            "commonErrors": [
+                "Intensity affects NUMBER of electrons (photocurrent), not their maximum kinetic energy",
+                "Frequency determines KE_max — higher frequency above threshold → higher KE",
+                "Below threshold frequency: NO emission regardless of how intense the light is",
+                "Work function is a property of the METAL surface (not the light)",
+                "KE_max is the MAXIMUM kinetic energy — most electrons have less due to deeper binding"
+            ],
+            "examTips": [
+                "The photoelectric effect proves light behaves as particles (photons) — key historical significance",
+                "Stopping voltage experiment: eV_s = KE_max = hf - φ → V_s = hf/e - φ/e",
+                "Graph of KE_max vs frequency: straight line, gradient = h, x-intercept = threshold frequency",
+                "φ is often given in eV — convert: 1 eV = 1.6 × 10⁻¹⁹ J"
+            ],
+            "socraticPrompts": [
+                "UV light of frequency 1.5 × 10¹⁵ Hz hits a metal with work function 4.0 eV. Is emission possible? What is KE_max?",
+                "Why did the classical wave model fail to explain the threshold frequency?",
+                "If light intensity doubles, how does the number of emitted electrons change? How does KE_max change?",
+                "A graph of KE_max vs frequency has gradient 6.6 × 10⁻³⁴. What physical constant does this represent?"
+            ],
+            "workedExampleTemplate": {
+                "type": "photoelectric-effect",
+                "steps": ["Calculate photon energy: E = hf (convert φ to J if given in eV: × 1.6 × 10⁻¹⁹)", "Check if E > φ (if not, no emission)", "Apply KE_max = hf - φ", "If stopping voltage asked: V_s = KE_max / e", "Interpret result in context of wave vs particle model"]
+            },
+            "relatedDotPoints": ["PH-N1.1", "PH-N2.2", "PH-M2.1"]
+        },
+
+        "PH-N2.2": {
+            "code": "PH-N2.2",
+            "name": "Wave-particle duality and de Broglie",
+            "topic": "PH-N",
+            "subtopic": "PH-N2",
+            "year": 12,
+            "summary": "Explain wave-particle duality; calculate the de Broglie wavelength of matter.",
+            "keyConcepts": [
+                "Wave-particle duality: both light and matter exhibit both wave and particle properties",
+                "Light: particle properties shown by photoelectric effect; wave properties by interference and diffraction",
+                "de Broglie hypothesis: matter has a wavelength λ = h/mv = h/p",
+                "Larger momentum → shorter wavelength (harder to observe wave nature)",
+                "Electron diffraction: confirms matter has wave properties",
+                "Bohr model connection: electron orbits stable when circumference = nλ (standing wave)"
+            ],
+            "commonErrors": [
+                "de Broglie wavelength: λ = h/mv — use h = 6.626 × 10⁻³⁴, m in kg, v in m/s",
+                "Electrons are much lighter than protons — at same speed, electrons have much smaller λ",
+                "Wave nature becomes observable when λ is comparable to the size of the obstacle/gap",
+                "Duality is not a contradiction — it depends on which experiment you do"
+            ],
+            "examTips": [
+                "λ = h/mv = h/p — p is momentum",
+                "Heavier objects (baseballs) have negligible de Broglie wavelength — quantum effects unobservable",
+                "Electron microscopes use de Broglie wavelength of electrons (much shorter than visible light) for higher resolution",
+                "HSC: explain why wave nature of everyday objects is not observed (very short wavelength)"
+            ],
+            "socraticPrompts": [
+                "Calculate the de Broglie wavelength of an electron moving at 1 × 10⁶ m/s.",
+                "Why can't we observe the wave nature of a cricket ball?",
+                "What evidence do we have that electrons have wave properties?",
+                "If an electron and a proton move at the same speed, which has the shorter de Broglie wavelength?"
+            ],
+            "workedExampleTemplate": {
+                "type": "de-broglie",
+                "steps": ["Identify mass m (kg) and velocity v (m/s), or momentum p = mv", "Apply λ = h/mv (h = 6.626 × 10⁻³⁴ J s)", "Calculate wavelength in metres", "Convert to appropriate units if needed (nm or pm)", "Comment on whether this wavelength is observable"]
+            },
+            "relatedDotPoints": ["PH-N2.1", "PH-N1.2", "PH-M2.1"]
+        },
+
+        "PH-N3.1": {
+            "code": "PH-N3.1",
+            "name": "Postulates and consequences of special relativity",
+            "topic": "PH-N",
+            "subtopic": "PH-N3",
+            "year": 12,
+            "summary": "State Einstein's postulates; apply time dilation and length contraction formulas.",
+            "keyConcepts": [
+                "Postulate 1: laws of physics are the same in all inertial (non-accelerating) reference frames",
+                "Postulate 2: speed of light in a vacuum is constant (c = 3 × 10⁸ m/s) for all observers",
+                "Time dilation: moving clocks run slow; t = t₀/√(1-v²/c²) = γt₀",
+                "Proper time t₀: time measured in the frame where the clock is at rest (shortest time)",
+                "Length contraction: moving objects are shorter in direction of motion; L = L₀√(1-v²/c²)",
+                "Proper length L₀: length in the rest frame of the object (longest length)",
+                "Lorentz factor: γ = 1/√(1-v²/c²) ≥ 1"
+            ],
+            "commonErrors": [
+                "Time dilation: t > t₀ — the moving frame has MORE time (dilated), proper time is SHORTEST",
+                "Length contraction: L < L₀ — the moving object is SHORTER; proper length is LONGEST",
+                "Proper time: measured in the frame where the two events occur at the SAME location",
+                "Proper length: measured in the frame where the object is AT REST",
+                "Effects only significant at speeds close to c — negligible at everyday speeds"
+            ],
+            "examTips": [
+                "γ = 1/√(1-v²/c²): always ≥ 1; at v = 0.8c, γ = 5/3 ≈ 1.67",
+                "Time dilation: t = γt₀ (observer at rest measures longer time)",
+                "Length contraction: L = L₀/γ (observer at rest measures shorter length)",
+                "Muon decay is a classic experimental confirmation of time dilation — know the argument"
+            ],
+            "socraticPrompts": [
+                "A spaceship travels at 0.6c. Its proper length is 100 m. What length does a stationary observer measure?",
+                "A muon has a proper lifetime of 2.2 μs and travels at 0.98c. What is its lifetime as measured by Earth observers?",
+                "Why is it impossible for an object with mass to reach the speed of light?",
+                "Both postulates of special relativity seem obvious separately — why is their combination revolutionary?"
+            ],
+            "workedExampleTemplate": {
+                "type": "special-relativity",
+                "steps": ["Identify which quantity is the proper value (t₀ or L₀) — rest frame measurement", "Calculate γ = 1/√(1-v²/c²)", "Apply t = γt₀ for time dilation OR L = L₀/γ for length contraction", "Check: dilated time > proper time; contracted length < proper length", "State answer with correct units"]
+            },
+            "relatedDotPoints": ["PH-N1.1", "PH-N3.2"]
+        },
+
+        "PH-N3.2": {
+            "code": "PH-N3.2",
+            "name": "Mass-energy equivalence",
+            "topic": "PH-N",
+            "subtopic": "PH-N3",
+            "year": 12,
+            "summary": "Apply E = mc² to calculate rest energy and mass-energy conversions in nuclear reactions.",
+            "keyConcepts": [
+                "Mass-energy equivalence: E = mc² (rest energy)",
+                "Small mass ↔ enormous energy (c² = 9 × 10¹⁶ m² s⁻²)",
+                "Mass defect: mass of nucleus < sum of masses of individual nucleons — this difference is the binding energy",
+                "Binding energy: energy released when nucleons bind; BE = Δm × c²",
+                "Nuclear fission: heavy nucleus splits → products have less mass → energy released",
+                "Nuclear fusion: light nuclei combine → product has less mass → energy released",
+                "Annihilation: matter + antimatter → photons (E = 2mc² for electron-positron pair)"
+            ],
+            "commonErrors": [
+                "Mass defect Δm must be in kg for E = mc² to give Joules (convert from atomic mass units: 1 u = 1.66 × 10⁻²⁷ kg)",
+                "Binding energy is the energy RELEASED when nucleus forms (not required to hold it together)",
+                "Higher binding energy per nucleon = more stable nucleus (iron-56 is most stable)",
+                "E = mc² is for REST energy — total relativistic energy is E = γmc²"
+            ],
+            "examTips": [
+                "c² = 9 × 10¹⁶ m² s⁻² (use c = 3 × 10⁸ m/s)",
+                "1 u = 1.66 × 10⁻²⁷ kg; 1 u = 931.5 MeV/c² — useful for nuclear mass calculations",
+                "For nuclear equation problems: check conservation of mass number AND atomic number",
+                "In HSC: express energy in MeV for nuclear physics (1 MeV = 1.6 × 10⁻¹³ J)"
+            ],
+            "socraticPrompts": [
+                "The mass defect of a nucleus is 0.05 u. What is the binding energy in Joules? In MeV?",
+                "Why does nuclear fission release energy? What happens to the mass?",
+                "An electron and positron annihilate. What is the total energy of the photons produced?",
+                "Why is fusion of light nuclei (like hydrogen) energetically favourable?"
+            ],
+            "workedExampleTemplate": {
+                "type": "mass-energy",
+                "steps": ["Identify the mass or mass defect (convert to kg if in atomic mass units: × 1.66 × 10⁻²⁷)", "Apply E = mc² or E = Δm × c²", "Calculate energy in Joules", "Convert to MeV if required: divide by 1.6 × 10⁻¹³", "Interpret physically: what process releases/requires this energy?"]
+            },
+            "relatedDotPoints": ["PH-N3.1", "PH-M1.1", "PH-M2.2"]
+        },
+
+        "PH-M2.1": {
+            "code": "PH-M2.1",
+            "name": "Atomic models and spectra",
+            "topic": "PH-M",
+            "subtopic": "PH-M2",
+            "year": 12,
+            "summary": "Describe the development of atomic models; explain atomic spectra using energy levels.",
+            "keyConcepts": [
+                "Thomson model: 'plum pudding' — electrons embedded in positive charge",
+                "Rutherford model: small dense positive nucleus, electrons orbiting (from gold foil experiment)",
+                "Bohr model: electrons occupy fixed energy levels (orbits); cannot exist between levels",
+                "Energy level transitions: electron emits photon when dropping to lower level (ΔE = hf)",
+                "Emission spectrum: bright lines at specific frequencies (hot gas or discharge tube)",
+                "Absorption spectrum: dark lines at same frequencies (cool gas absorbs from continuous spectrum)",
+                "Hydrogen energy levels: E_n = -13.6/n² eV"
+            ],
+            "commonErrors": [
+                "Emission vs absorption: emission gives bright lines on dark background; absorption gives dark lines on continuous spectrum — same frequencies",
+                "Energy of emitted photon: ΔE = E_higher - E_lower = hf (always positive for emission)",
+                "Bohr model: electrons do NOT emit radiation while in a stable orbit — only during transitions",
+                "Higher n = higher (less negative) energy = further from nucleus = less tightly bound"
+            ],
+            "examTips": [
+                "ΔE = hf — if given wavelength: ΔE = hc/λ",
+                "Hydrogen energy levels: E_n = -13.6/n² eV — n = 1 is ground state (most negative energy = most tightly bound)",
+                "Ionisation energy: energy needed to remove electron from ground state = 13.6 eV for hydrogen",
+                "The line spectrum of hydrogen provides the evidence for quantised energy levels"
+            ],
+            "socraticPrompts": [
+                "An electron in hydrogen drops from n = 3 to n = 1. Calculate the energy and wavelength of the emitted photon.",
+                "Why does Rutherford's gold foil experiment disprove the Thomson model?",
+                "What is the difference between an emission and an absorption spectrum?",
+                "Why can't an electron exist between the allowed energy levels in Bohr's model?"
+            ],
+            "workedExampleTemplate": {
+                "type": "atomic-spectra",
+                "steps": ["Identify the initial and final energy levels (n values)", "Calculate energy of each level: E_n = -13.6/n² eV", "Find energy of photon: ΔE = E_higher - E_lower (in eV, then convert to J: × 1.6 × 10⁻¹⁹)", "Apply E = hf to find frequency, or E = hc/λ to find wavelength", "State whether emission or absorption"]
+            },
+            "relatedDotPoints": ["PH-N2.1", "PH-N2.2", "PH-M2.2"]
+        },
+
+        "PH-M2.2": {
+            "code": "PH-M2.2",
+            "name": "Radioactivity and nuclear reactions",
+            "topic": "PH-M",
+            "subtopic": "PH-M2",
+            "year": 12,
+            "summary": "Describe alpha, beta and gamma decay; apply half-life and conservation laws to nuclear equations.",
+            "keyConcepts": [
+                "Alpha decay (α): emission of ⁴₂He nucleus; A decreases by 4, Z decreases by 2",
+                "Beta-minus decay (β⁻): neutron → proton + electron + antineutrino; Z increases by 1",
+                "Beta-plus decay (β⁺): proton → neutron + positron + neutrino; Z decreases by 1",
+                "Gamma decay (γ): emission of high-energy photon; no change in A or Z",
+                "Conservation in nuclear reactions: mass number A, atomic number Z, energy, momentum",
+                "Half-life (t½): time for half the nuclei to decay",
+                "Decay equation: N = N₀(½)^(t/t½) or N = N₀e^(-λt) where λ = ln2/t½",
+                "Activity: A = λN (decays per second)"
+            ],
+            "commonErrors": [
+                "Alpha decay: Z decreases by 2 AND A decreases by 4 (both change)",
+                "Beta decay: the electron (or positron) comes from the NUCLEUS (neutron or proton changes), not from electron shells",
+                "Gamma decay: does not change A or Z — only releases excess nuclear energy as a photon",
+                "Half-life: after n half-lives, N = N₀ × (½)ⁿ — not N₀ - n × (N₀/2)",
+                "N₀ is the INITIAL number of undecayed nuclei (not total nuclei or daughter nuclei)"
+            ],
+            "examTips": [
+                "Balance nuclear equations: top numbers (A) and bottom numbers (Z) must balance on each side",
+                "After 3 half-lives: N = N₀ × (½)³ = N₀/8",
+                "Penetrating power: α least (stopped by paper), β intermediate (stopped by aluminium), γ most (requires lead)",
+                "Ionising power: α most, β intermediate, γ least"
+            ],
+            "socraticPrompts": [
+                "Uranium-238 undergoes alpha decay. Write the nuclear equation and identify the daughter nucleus.",
+                "A sample has 800 g of a radioactive isotope with half-life 4 days. How much remains after 12 days?",
+                "How does beta-minus decay change the proton number of the nucleus?",
+                "Why is gamma radiation the most penetrating but least ionising?"
+            ],
+            "workedExampleTemplate": {
+                "type": "radioactive-decay",
+                "steps": ["Identify the decay type from the context or question", "Write the nuclear equation, balancing A and Z on both sides", "For half-life problems: calculate number of half-lives n = t/t½", "Apply N = N₀ × (½)ⁿ", "If using exponential form: N = N₀e^(-λt) with λ = ln2/t½", "State answer with appropriate units (mass, number of nuclei, or activity in Bq)"]
+            },
+            "relatedDotPoints": ["PH-M2.1", "PH-N3.2", "PH-M2.3"]
+        },
+
+        "PH-M2.3": {
+            "code": "PH-M2.3",
+            "name": "Standard model of matter",
+            "topic": "PH-M",
+            "subtopic": "PH-M2",
+            "year": 12,
+            "summary": "Describe the standard model of matter including quarks, leptons and fundamental forces.",
+            "keyConcepts": [
+                "Fermions (matter particles): quarks and leptons (spin ½)",
+                "Quarks: up (u), down (d), charm (c), strange (s), top (t), bottom (b); fractional charges (+2/3 or -1/3)",
+                "Proton: uud (charge +1); Neutron: udd (charge 0)",
+                "Leptons: electron (e⁻), muon (μ⁻), tau (τ⁻), and corresponding neutrinos; integer charges",
+                "Hadrons: particles made of quarks (baryons = 3 quarks, mesons = quark + antiquark)",
+                "Bosons (force carriers): photon (EM), gluon (strong), W and Z bosons (weak), graviton (gravity, not yet confirmed)",
+                "Fundamental forces: gravitational, electromagnetic, strong nuclear, weak nuclear",
+                "Antimatter: every particle has an antiparticle with opposite charge"
+            ],
+            "commonErrors": [
+                "Proton = uud (two up, one down), NOT udd (that is the neutron)",
+                "Quarks are NEVER observed in isolation (confinement) — they are always bound in hadrons",
+                "Electrons are leptons, NOT made of quarks",
+                "Mesons are not stable — they decay quickly (pion, kaon, etc.)",
+                "The strong force acts on quarks (via gluons), not directly on electrons"
+            ],
+            "examTips": [
+                "Proton: uud (charge = 2/3 + 2/3 - 1/3 = +1); Neutron: udd (charge = 2/3 - 1/3 - 1/3 = 0)",
+                "Leptons do not feel the strong force — electrons interact via EM and weak forces only",
+                "HSC standard model questions often ask to identify particles from descriptions or to verify charges",
+                "The standard model does not include gravity (no confirmed graviton)"
+            ],
+            "socraticPrompts": [
+                "What is the quark composition of a proton? Calculate the total charge to verify it is +1.",
+                "An electron and a neutrino are both leptons. What is the key difference between them?",
+                "What force holds quarks together inside a proton? What is the force carrier called?",
+                "Is a pion (π⁺) a baryon or meson? How many quarks does it contain?"
+            ],
+            "workedExampleTemplate": {
+                "type": "standard-model",
+                "steps": ["Identify whether the particle is a quark, lepton, or boson", "For hadrons: identify if baryon (3 quarks) or meson (quark-antiquark)", "Calculate total charge from quark composition (up quark = +2/3, down quark = -1/3)", "Identify which fundamental force(s) act on the particle", "State the force carrier (boson) for each relevant force"]
+            },
+            "relatedDotPoints": ["PH-M2.1", "PH-M2.2"]
+        },
+
+        "PH-M1.1": {
+            "code": "PH-M1.1",
+            "name": "Stars, nuclear fusion and the Big Bang",
+            "topic": "PH-M",
+            "subtopic": "PH-M1",
+            "year": 12,
+            "summary": "Describe stellar nucleosynthesis, the Big Bang model and the Hertzsprung-Russell diagram.",
+            "keyConcepts": [
+                "Big Bang: origin of the universe (~13.8 billion years ago); supported by CMB and Hubble's law",
+                "Cosmic Microwave Background (CMB): thermal radiation left over from the early universe",
+                "Stellar nucleosynthesis: elements heavier than hydrogen formed by fusion in stars",
+                "Proton-proton chain: main sequence stars fuse hydrogen → helium (releases energy via E = mc²)",
+                "Hertzsprung-Russell (HR) diagram: plots luminosity vs surface temperature; shows stellar evolution",
+                "Main sequence: stable hydrogen-burning phase (most stars, including the Sun)",
+                "Red giant: core hydrogen exhausted, outer layers expand; shell hydrogen burning",
+                "Supernova: explosive death of massive stars; produces elements heavier than iron",
+                "Neutron star / Black hole: remnants of massive star supernova",
+                "Elements heavier than iron: only formed in supernova explosions (require energy input)"
+            ],
+            "commonErrors": [
+                "HR diagram: temperature axis runs RIGHT to LEFT (hot stars on left, cool on right)",
+                "Main sequence runs from top-left (hot, luminous, massive) to bottom-right (cool, dim, low mass)",
+                "Elements heavier than iron cannot be made in main sequence stars — only in supernovae",
+                "Fusion releases energy for elements UP TO iron; beyond iron, fusion requires energy input",
+                "CMB is NOT a star — it is the thermal echo of the Big Bang"
+            ],
+            "examTips": [
+                "HR diagram: know where to find main sequence, red giants, white dwarfs, supergiants",
+                "The Sun: G-type main sequence star, surface temperature ≈ 5800 K",
+                "Hubble's law: galaxies recede at speed proportional to distance — evidence for Big Bang",
+                "Stellar fusion: mass of helium nucleus < mass of 4 hydrogen nuclei → mass defect → energy (E = mc²)"
+            ],
+            "socraticPrompts": [
+                "Where does the Sun sit on the HR diagram? What process powers it?",
+                "Why can't main sequence stars produce elements heavier than iron?",
+                "What is the cosmic microwave background radiation and why is it evidence for the Big Bang?",
+                "Trace the life cycle of a star 10 times more massive than the Sun from formation to remnant."
+            ],
+            "workedExampleTemplate": {
+                "type": "stellar-astrophysics",
+                "steps": ["Identify the stellar evolutionary stage being described", "Place the star on the HR diagram (temperature and luminosity)", "Describe the nuclear process occurring at that stage", "Apply E = mc² if energy released by fusion is required", "Trace the evolutionary path: main sequence → red giant → supernova/white dwarf/neutron star"]
+            },
+            "relatedDotPoints": ["PH-N3.2", "PH-M2.2"]
+        }
+
+    },
+
+    "meta": {
+        "totalDotPoints": 35,
+        "lastUpdated": "2026-03-14",
+        "buildNote": "Verify all descriptions against the official NESA Physics Stage 6 Syllabus (2017) PDF before production use. Expand keywords and commonErrors arrays based on HSC past paper question analysis."
+    }
+}

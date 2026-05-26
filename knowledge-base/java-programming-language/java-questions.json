@@ -1,0 +1,202 @@
+{
+    "subject": "Advanced Java Programming",
+    "description": "Practice questions for Java learning across all levels.",
+    "questions": {
+        "JV-Q-BAS-001": {
+            "id": "JV-Q-BAS-001",
+            "source": "practice",
+            "level": "foundation",
+            "marks": 5,
+            "type": "coding",
+            "dotPoints": ["JV-BAS-2.1", "JV-BAS-3.1"],
+            "topic": "JV-BAS",
+            "difficulty": "easy",
+            "title": "Variable Declaration and Basic Arithmetic",
+            "description": "Practise declaring variables of different types and performing arithmetic operations in Java.",
+            "question": "Write a Java program that:\n1. Declares an int variable 'a' with value 15 and a double variable 'b' with value 4.0\n2. Calculates and prints: a + b, a - b, a * b, a / b, a % b (cast appropriately)\n3. Demonstrates integer vs floating-point division\n4. Uses System.out.printf() for formatted output showing 2 decimal places",
+            "solution": {
+                "steps": [
+                    "Declare int a = 15 and double b = 4.0",
+                    "Perform mixed-type arithmetic (int + double = double)",
+                    "Show integer division using (int) cast",
+                    "Use printf with %.2f format specifier"
+                ],
+                "code": "public class ArithmeticDemo {\n    public static void main(String[] args) {\n        int a = 15;\n        double b = 4.0;\n\n        System.out.printf(\"a + b  = %.2f%n\", a + b);\n        System.out.printf(\"a - b  = %.2f%n\", a - b);\n        System.out.printf(\"a * b  = %.2f%n\", a * b);\n        System.out.printf(\"a / b  = %.2f%n\", a / b);\n        System.out.printf(\"a %% b = %.2f%n\", a % b);\n\n        // Integer division\n        int intDiv = a / (int) b;\n        System.out.printf(\"Integer division: %d / %d = %d%n\", a, (int) b, intDiv);\n    }\n}",
+                "output": "a + b  = 19.00\na - b  = 11.00\na * b  = 60.00\na / b  = 3.75\na % b = 3.00\nInteger division: 15 / 4 = 3"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "a + b  = 19.00\na - b  = 11.00\na * b  = 60.00\na / b  = 3.75\na % b = 3.00\nInteger division: 15 / 4 = 3" }
+            ],
+            "hints": [
+                "Java promotes int to double in mixed arithmetic automatically",
+                "Use %% to print a literal % in printf format strings",
+                "Integer division truncates the decimal part"
+            ],
+            "tags": ["variables", "arithmetic", "operators", "printf"]
+        },
+
+        "JV-Q-CFL-001": {
+            "id": "JV-Q-CFL-001",
+            "source": "practice",
+            "level": "foundation",
+            "marks": 8,
+            "type": "coding",
+            "dotPoints": ["JV-CFL-1.2", "JV-CFL-2.1"],
+            "topic": "JV-CFL",
+            "difficulty": "easy",
+            "title": "FizzBuzz with Switch Expression",
+            "description": "Implement FizzBuzz using both classic if-else and the modern switch expression (Java 14+).",
+            "question": "Write a Java program that prints numbers 1 to 50 with FizzBuzz rules:\n- Multiples of 3: print 'Fizz'\n- Multiples of 5: print 'Buzz'\n- Multiples of both: print 'FizzBuzz'\n- Otherwise: print the number\n\nImplement it twice:\n1. Using if-else\n2. Using Java 14+ switch expression with arrow syntax",
+            "solution": {
+                "steps": [
+                    "Use for loop from 1 to 50",
+                    "Check divisibility by 15 first (both 3 and 5)",
+                    "Then check 3, then 5, then else",
+                    "Rewrite using switch expression on a String key"
+                ],
+                "code": "public class FizzBuzz {\n    public static void main(String[] args) {\n\n        System.out.println(\"=== if-else approach ===\");\n        for (int i = 1; i <= 50; i++) {\n            if (i % 15 == 0) {\n                System.out.println(\"FizzBuzz\");\n            } else if (i % 3 == 0) {\n                System.out.println(\"Fizz\");\n            } else if (i % 5 == 0) {\n                System.out.println(\"Buzz\");\n            } else {\n                System.out.println(i);\n            }\n        }\n\n        System.out.println(\"=== switch expression approach ===\");\n        for (int i = 1; i <= 50; i++) {\n            // Compute a key based on divisibility\n            String key = (i % 15 == 0) ? \"fb\" :\n                         (i % 3 == 0)  ? \"f\"  :\n                         (i % 5 == 0)  ? \"b\"  : \"n\";\n\n            String output = switch (key) {\n                case \"fb\" -> \"FizzBuzz\";\n                case \"f\"  -> \"Fizz\";\n                case \"b\"  -> \"Buzz\";\n                default   -> String.valueOf(i);\n            };\n            System.out.println(output);\n        }\n    }\n}",
+                "output": "=== if-else approach ===\n1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n... (continues to 50)"
+            },
+            "hints": [
+                "Check the most specific condition (divisible by both 3 and 5) first",
+                "Switch expressions use -> and don't need break",
+                "String.valueOf(i) converts an int to String"
+            ],
+            "tags": ["loops", "conditionals", "switch expression", "fizzbuzz"]
+        },
+
+        "JV-Q-OOP-001": {
+            "id": "JV-Q-OOP-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 12,
+            "type": "coding",
+            "dotPoints": ["JV-OOP-1.1", "JV-OOP-1.3", "JV-OOP-2.1", "JV-OOP-2.3"],
+            "topic": "JV-OOP",
+            "difficulty": "medium",
+            "title": "Shape Hierarchy with Interfaces",
+            "description": "Design a shape hierarchy using interfaces, abstract classes, and inheritance demonstrating core OOP principles.",
+            "question": "Build a shape class hierarchy:\n\n1. Create interface 'Shape' with:\n   - double area() — abstract\n   - double perimeter() — abstract\n   - default String describe() — returns 'Shape[area=X, perimeter=Y]'\n\n2. Create abstract class 'AbstractShape' implementing Shape with:\n   - String colour field\n   - Constructor setting colour\n   - @Override toString() using describe()\n\n3. Create concrete classes 'Circle' and 'Rectangle' extending AbstractShape:\n   - Circle: radius field, correct area (πr²) and perimeter (2πr)\n   - Rectangle: width and height fields, correct area and perimeter\n\n4. Write main() to:\n   - Create a Shape[] array with mixed types\n   - Print each shape using polymorphism\n   - Find and print the shape with the largest area using a loop",
+            "solution": {
+                "steps": [
+                    "Define Shape interface with abstract and default methods",
+                    "Define AbstractShape with colour and toString()",
+                    "Implement Circle with radius constructor and formulas",
+                    "Implement Rectangle with width/height and formulas",
+                    "Use Shape[] to demonstrate polymorphism",
+                    "Loop to find max area"
+                ],
+                "code": "public interface Shape {\n    double area();\n    double perimeter();\n\n    default String describe() {\n        return String.format(\"Shape[area=%.2f, perimeter=%.2f]\", area(), perimeter());\n    }\n}\n\npublic abstract class AbstractShape implements Shape {\n    protected final String colour;\n\n    public AbstractShape(String colour) {\n        this.colour = colour;\n    }\n\n    @Override\n    public String toString() {\n        return colour + \" \" + describe();\n    }\n}\n\npublic class Circle extends AbstractShape {\n    private final double radius;\n\n    public Circle(String colour, double radius) {\n        super(colour);\n        this.radius = radius;\n    }\n\n    @Override\n    public double area() { return Math.PI * radius * radius; }\n\n    @Override\n    public double perimeter() { return 2 * Math.PI * radius; }\n}\n\npublic class Rectangle extends AbstractShape {\n    private final double width, height;\n\n    public Rectangle(String colour, double width, double height) {\n        super(colour);\n        this.width = width;\n        this.height = height;\n    }\n\n    @Override\n    public double area() { return width * height; }\n\n    @Override\n    public double perimeter() { return 2 * (width + height); }\n}\n\n// Main class\npublic class ShapeDemo {\n    public static void main(String[] args) {\n        Shape[] shapes = {\n            new Circle(\"Red\", 5.0),\n            new Rectangle(\"Blue\", 4.0, 6.0),\n            new Circle(\"Green\", 3.0),\n            new Rectangle(\"Yellow\", 8.0, 2.0)\n        };\n\n        for (Shape s : shapes) {\n            System.out.println(s); // polymorphic toString()\n        }\n\n        // Find largest area\n        Shape largest = shapes[0];\n        for (Shape s : shapes) {\n            if (s.area() > largest.area()) largest = s;\n        }\n        System.out.println(\"\\nLargest: \" + largest);\n    }\n}",
+                "output": "Red Shape[area=78.54, perimeter=31.42]\nBlue Shape[area=24.00, perimeter=20.00]\nGreen Shape[area=28.27, perimeter=18.85]\nYellow Shape[area=16.00, perimeter=20.00]\n\nLargest: Red Shape[area=78.54, perimeter=31.42]"
+            },
+            "hints": [
+                "Use Math.PI for π",
+                "The interface default method can call abstract methods (area() and perimeter())",
+                "Declare the array as Shape[] not Circle[] to enable polymorphism",
+                "super(colour) calls the parent constructor from the child"
+            ],
+            "tags": ["OOP", "inheritance", "interfaces", "polymorphism", "abstract class"]
+        },
+
+        "JV-Q-STR-001": {
+            "id": "JV-Q-STR-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 12,
+            "type": "coding",
+            "dotPoints": ["JV-STR-1.1", "JV-STR-2.2", "JV-STR-2.3", "JV-STR-2.4"],
+            "topic": "JV-STR",
+            "difficulty": "medium",
+            "title": "Employee Analytics with Stream API",
+            "description": "Use Java 8+ Stream API with lambdas and Collectors to analyse an employee dataset.",
+            "question": "Given a list of Employee objects (id, name, department, salary), use the Stream API to:\n1. Filter employees earning more than $70,000\n2. Find the average salary per department using groupingBy\n3. Get the top 3 highest-paid employees\n4. Collect all names of employees in 'Engineering' sorted alphabetically\n5. Find the employee with the maximum salary using max()\n\nDefine the Employee record and write all queries using streams.",
+            "solution": {
+                "steps": [
+                    "Define Employee as a record",
+                    "Create sample data list",
+                    "Use filter() for salary > 70000",
+                    "Use Collectors.groupingBy() with Collectors.averagingDouble()",
+                    "Use sorted() + limit(3) for top 3",
+                    "Use filter() + map() + sorted() + collect() for Engineering names",
+                    "Use max(Comparator.comparingDouble()) for highest paid"
+                ],
+                "code": "import java.util.*;\nimport java.util.stream.*;\n\npublic record Employee(int id, String name, String department, double salary) {}\n\npublic class EmployeeAnalytics {\n    public static void main(String[] args) {\n        List<Employee> employees = List.of(\n            new Employee(1, \"Alice\",   \"Engineering\", 95000),\n            new Employee(2, \"Bob\",     \"Marketing\",   65000),\n            new Employee(3, \"Charlie\", \"Engineering\", 85000),\n            new Employee(4, \"Diana\",   \"HR\",           55000),\n            new Employee(5, \"Eve\",     \"Engineering\", 105000),\n            new Employee(6, \"Frank\",   \"Marketing\",   72000),\n            new Employee(7, \"Grace\",   \"HR\",           60000),\n            new Employee(8, \"Henry\",   \"Engineering\", 78000)\n        );\n\n        // 1. Employees earning > $70,000\n        System.out.println(\"=== Earning > $70,000 ===\");\n        employees.stream()\n            .filter(e -> e.salary() > 70_000)\n            .map(e -> e.name() + \" ($\" + e.salary() + \")\")\n            .forEach(System.out::println);\n\n        // 2. Average salary by department\n        System.out.println(\"\\n=== Average salary by department ===\");\n        Map<String, Double> avgByDept = employees.stream()\n            .collect(Collectors.groupingBy(\n                Employee::department,\n                Collectors.averagingDouble(Employee::salary)\n            ));\n        avgByDept.forEach((dept, avg) ->\n            System.out.printf(\"%s: $%.2f%n\", dept, avg));\n\n        // 3. Top 3 highest paid\n        System.out.println(\"\\n=== Top 3 highest paid ===\");\n        employees.stream()\n            .sorted(Comparator.comparingDouble(Employee::salary).reversed())\n            .limit(3)\n            .forEach(e -> System.out.println(e.name() + \" - $\" + e.salary()));\n\n        // 4. Engineering names sorted\n        System.out.println(\"\\n=== Engineering (sorted) ===\");\n        List<String> engNames = employees.stream()\n            .filter(e -> e.department().equals(\"Engineering\"))\n            .map(Employee::name)\n            .sorted()\n            .collect(Collectors.toList());\n        System.out.println(engNames);\n\n        // 5. Highest paid employee\n        System.out.println(\"\\n=== Highest paid ===\");\n        employees.stream()\n            .max(Comparator.comparingDouble(Employee::salary))\n            .ifPresent(e -> System.out.println(e.name() + \" - $\" + e.salary()));\n    }\n}",
+                "output": "=== Earning > $70,000 ===\nAlice ($95000.0)\nCharlie ($85000.0)\nEve ($105000.0)\nFrank ($72000.0)\nHenry ($78000.0)\n\n=== Average salary by department ===\nEngineering: $90750.00\nMarketing: $68500.00\nHR: $57500.00\n\n=== Top 3 highest paid ===\nEve - $105000.0\nAlice - $95000.0\nCharlie - $85000.0\n\n=== Engineering (sorted) ===\n[Alice, Charlie, Eve, Henry]\n\n=== Highest paid ===\nEve - $105000.0"
+            },
+            "hints": [
+                "Use record (Java 16+) for a concise Employee data class",
+                "Collectors.groupingBy() is the stream equivalent of SQL GROUP BY",
+                "Comparator.comparingDouble().reversed() sorts descending",
+                "Use max() which returns Optional — use ifPresent() to handle it safely",
+                "Method references (Employee::salary) are cleaner than lambdas (e -> e.salary())"
+            ],
+            "tags": ["streams", "lambdas", "collectors", "groupingBy", "records"]
+        },
+
+        "JV-Q-CON-001": {
+            "id": "JV-Q-CON-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "coding",
+            "dotPoints": ["JV-CON-2.1", "JV-CON-2.2", "JV-CON-1.3"],
+            "topic": "JV-CON",
+            "difficulty": "hard",
+            "title": "Thread-Safe Bank Account with CompletableFuture",
+            "description": "Implement a thread-safe bank account and demonstrate concurrent operations using CompletableFuture.",
+            "question": "1. Create a thread-safe 'BankAccount' class:\n   - Uses AtomicLong for the balance (no explicit synchronization needed)\n   - Methods: deposit(long amount), withdraw(long amount) returns boolean, getBalance()\n   - withdrawal fails (returns false) if insufficient funds\n\n2. Create a 'TransactionService' that:\n   - Uses a fixed thread pool of 4 threads\n   - processDeposit(account, amount) — async via CompletableFuture\n   - processWithdrawal(account, amount) — async via CompletableFuture\n   - Both return CompletableFuture<String> with a result message\n\n3. Write main() that:\n   - Creates an account with $1000 balance\n   - Submits 5 concurrent deposits of $200 each\n   - Submits 3 concurrent withdrawals of $400 each\n   - Uses CompletableFuture.allOf() to wait for all, then prints final balance\n   - Handles exceptions gracefully",
+            "solution": {
+                "steps": [
+                    "Use AtomicLong for balance — CAS operations are thread-safe",
+                    "compareAndSet loop for withdrawal to prevent race conditions",
+                    "TransactionService wraps operations in CompletableFuture.supplyAsync()",
+                    "allOf() + thenRun() to act after all futures complete",
+                    "exceptionally() for error handling"
+                ],
+                "code": "import java.util.concurrent.*;\nimport java.util.concurrent.atomic.*;\nimport java.util.*;\n\npublic class BankAccount {\n    private final AtomicLong balance;\n    private final String accountId;\n\n    public BankAccount(String accountId, long initialBalance) {\n        this.accountId = accountId;\n        this.balance = new AtomicLong(initialBalance);\n    }\n\n    public void deposit(long amount) {\n        if (amount <= 0) throw new IllegalArgumentException(\"Deposit must be positive\");\n        balance.addAndGet(amount);\n    }\n\n    // Thread-safe withdrawal using compare-and-set loop\n    public boolean withdraw(long amount) {\n        if (amount <= 0) throw new IllegalArgumentException(\"Withdrawal must be positive\");\n        long current;\n        do {\n            current = balance.get();\n            if (current < amount) return false;  // insufficient funds\n        } while (!balance.compareAndSet(current, current - amount));\n        return true;\n    }\n\n    public long getBalance() { return balance.get(); }\n    public String getAccountId() { return accountId; }\n}\n\npublic class TransactionService implements AutoCloseable {\n    private final ExecutorService pool;\n\n    public TransactionService(int threads) {\n        this.pool = Executors.newFixedThreadPool(threads);\n    }\n\n    public CompletableFuture<String> processDeposit(BankAccount account, long amount) {\n        return CompletableFuture.supplyAsync(() -> {\n            account.deposit(amount);\n            return String.format(\"Deposited $%d → balance $%d [%s]\",\n                amount, account.getBalance(), Thread.currentThread().getName());\n        }, pool).exceptionally(ex -> \"Deposit failed: \" + ex.getMessage());\n    }\n\n    public CompletableFuture<String> processWithdrawal(BankAccount account, long amount) {\n        return CompletableFuture.supplyAsync(() -> {\n            boolean success = account.withdraw(amount);\n            return success\n                ? String.format(\"Withdrew $%d → balance $%d [%s]\",\n                    amount, account.getBalance(), Thread.currentThread().getName())\n                : String.format(\"Withdrawal of $%d FAILED — insufficient funds\", amount);\n        }, pool).exceptionally(ex -> \"Withdrawal failed: \" + ex.getMessage());\n    }\n\n    @Override\n    public void close() throws Exception {\n        pool.shutdown();\n        pool.awaitTermination(10, TimeUnit.SECONDS);\n    }\n}\n\npublic class BankDemo {\n    public static void main(String[] args) throws Exception {\n        BankAccount account = new BankAccount(\"ACC-001\", 1000L);\n        System.out.println(\"Starting balance: $\" + account.getBalance());\n\n        try (TransactionService service = new TransactionService(4)) {\n            List<CompletableFuture<String>> futures = new ArrayList<>();\n\n            // 5 concurrent deposits of $200\n            for (int i = 0; i < 5; i++) {\n                futures.add(service.processDeposit(account, 200));\n            }\n            // 3 concurrent withdrawals of $400\n            for (int i = 0; i < 3; i++) {\n                futures.add(service.processWithdrawal(account, 400));\n            }\n\n            // Wait for all and collect results\n            CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))\n                .thenRun(() -> {\n                    futures.forEach(f -> System.out.println(f.join()));\n                    System.out.println(\"Final balance: $\" + account.getBalance());\n                })\n                .get(); // block main thread\n        }\n    }\n}",
+                "output": "Starting balance: $1000\nDeposited $200 → balance $1200 [pool-1-thread-1]\nDeposited $200 → balance $1400 [pool-1-thread-2]\nWithdrew $400 → balance $1400 [pool-1-thread-3]\nDeposited $200 → balance $1600 [pool-1-thread-4]\nDeposited $200 → balance $1800 [pool-1-thread-1]\nWithdrew $400 → balance $2000 [pool-1-thread-2]\nWithdrew $400 → balance $2000 [pool-1-thread-3]\nDeposited $200 → balance $2000 [pool-1-thread-4]\nWithdrawal of $400 FAILED — insufficient funds\nFinal balance: $2000\n(Note: exact order and balance may vary by run due to concurrency)"
+            },
+            "hints": [
+                "AtomicLong.addAndGet() is atomic — no synchronization needed for deposits",
+                "Use a compareAndSet loop for withdrawal to prevent TOCTOU race conditions",
+                "CompletableFuture.supplyAsync() with an executor runs on the pool's threads",
+                "allOf() returns a CompletableFuture<Void> that completes when all complete",
+                "try-with-resources works with AutoCloseable — useful for shutting down the pool"
+            ],
+            "tags": ["concurrency", "atomic", "CompletableFuture", "thread-safe", "ExecutorService"]
+        },
+
+        "JV-Q-DSG-001": {
+            "id": "JV-Q-DSG-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "coding",
+            "dotPoints": ["JV-DSG-1.3", "JV-OOP-2.3", "JV-STR-1.1"],
+            "topic": "JV-DSG",
+            "difficulty": "hard",
+            "title": "Builder Pattern for Immutable HTTP Request",
+            "description": "Implement the Builder design pattern for constructing a complex, immutable HTTP request object.",
+            "question": "Implement a Builder pattern for an 'HttpRequest' class:\n\n1. 'HttpRequest' must be:\n   - Immutable (all fields final, no setters)\n   - Fields: url (required), method (default GET), headers (Map), body (Optional<String>), timeoutMs (default 5000)\n   - toString() showing all fields\n\n2. 'HttpRequest.Builder' (inner static class) must:\n   - Validate that url is not null/empty in build()\n   - Validate method is one of GET, POST, PUT, DELETE, PATCH\n   - addHeader(key, value) — accumulate headers\n   - body(String) — sets body (converts to Optional)\n   - build() — returns the immutable HttpRequest\n\n3. Demonstrate in main() with:\n   - A minimal GET request (url only)\n   - A full POST request with headers, body, and custom timeout\n   - Show that IllegalArgumentException is thrown for invalid method",
+            "solution": {
+                "steps": [
+                    "Create HttpRequest with all final fields and private constructor",
+                    "Create static inner Builder class mirroring HttpRequest fields",
+                    "Add fluent setter methods returning 'this' (method chaining)",
+                    "Validate in build() and construct the immutable HttpRequest",
+                    "Demonstrate usage in main()"
+                ],
+                "code": "import java.util.*;\n\npublic final class HttpRequest {\n\n    private static final Set<String> VALID_METHODS =\n        Set.of(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\");\n\n    // All fields are final — immutable\n    private final String url;\n    private final String method;\n    private final Map<String, String> headers;\n    private final Optional<String> body;\n    private final int timeoutMs;\n\n    // Private constructor — only Builder can create instances\n    private HttpRequest(Builder builder) {\n        this.url       = builder.url;\n        this.method    = builder.method;\n        this.headers   = Collections.unmodifiableMap(new HashMap<>(builder.headers));\n        this.body      = Optional.ofNullable(builder.body);\n        this.timeoutMs = builder.timeoutMs;\n    }\n\n    // Getters only — no setters\n    public String getUrl()            { return url; }\n    public String getMethod()         { return method; }\n    public Map<String, String> getHeaders() { return headers; }\n    public Optional<String> getBody() { return body; }\n    public int getTimeoutMs()         { return timeoutMs; }\n\n    @Override\n    public String toString() {\n        return String.format(\n            \"HttpRequest{url='%s', method=%s, headers=%s, body=%s, timeout=%dms}\",\n            url, method, headers, body.orElse(\"(none)\"), timeoutMs\n        );\n    }\n\n    // Static inner Builder class\n    public static class Builder {\n        // Required\n        private final String url;\n\n        // Optional with defaults\n        private String method  = \"GET\";\n        private Map<String, String> headers = new HashMap<>();\n        private String body    = null;\n        private int timeoutMs  = 5000;\n\n        public Builder(String url) {\n            this.url = url;\n        }\n\n        public Builder method(String method) {\n            this.method = method.toUpperCase();\n            return this; // fluent — enables method chaining\n        }\n\n        public Builder addHeader(String key, String value) {\n            this.headers.put(key, value);\n            return this;\n        }\n\n        public Builder body(String body) {\n            this.body = body;\n            return this;\n        }\n\n        public Builder timeout(int timeoutMs) {\n            this.timeoutMs = timeoutMs;\n            return this;\n        }\n\n        public HttpRequest build() {\n            // Validation\n            if (url == null || url.isBlank()) {\n                throw new IllegalArgumentException(\"URL must not be null or blank\");\n            }\n            if (!VALID_METHODS.contains(method)) {\n                throw new IllegalArgumentException(\n                    \"Invalid HTTP method: \" + method +\n                    \". Must be one of \" + VALID_METHODS);\n            }\n            return new HttpRequest(this);\n        }\n    }\n\n    // Demo\n    public static void main(String[] args) {\n        // Minimal GET request\n        HttpRequest get = new HttpRequest.Builder(\"https://api.example.com/users\")\n            .build();\n        System.out.println(\"GET Request:\");\n        System.out.println(get);\n\n        // Full POST request\n        HttpRequest post = new HttpRequest.Builder(\"https://api.example.com/users\")\n            .method(\"POST\")\n            .addHeader(\"Content-Type\", \"application/json\")\n            .addHeader(\"Authorization\", \"Bearer abc123\")\n            .body(\"{\\\"name\\\": \\\"Alice\\\", \\\"email\\\": \\\"alice@example.com\\\"}\")\n            .timeout(10000)\n            .build();\n        System.out.println(\"\\nPOST Request:\");\n        System.out.println(post);\n\n        // Invalid method — should throw\n        try {\n            HttpRequest invalid = new HttpRequest.Builder(\"https://api.example.com\")\n                .method(\"FETCH\")\n                .build();\n        } catch (IllegalArgumentException e) {\n            System.out.println(\"\\nCaught expected: \" + e.getMessage());\n        }\n    }\n}",
+                "output": "GET Request:\nHttpRequest{url='https://api.example.com/users', method=GET, headers={}, body=(none), timeout=5000ms}\n\nPOST Request:\nHttpRequest{url='https://api.example.com/users', method=POST, headers={Authorization=Bearer abc123, Content-Type=application/json}, body={\"name\": \"Alice\", \"email\": \"alice@example.com\"}, timeout=10000ms}\n\nCaught expected: Invalid HTTP method: FETCH. Must be one of [GET, POST, PUT, DELETE, PATCH]"
+            },
+            "hints": [
+                "The Builder constructor takes required fields — optional fields have defaults",
+                "Return 'this' from each Builder setter to enable fluent method chaining",
+                "Use Collections.unmodifiableMap() to prevent callers modifying the headers",
+                "Optional.ofNullable() wraps a nullable body nicely",
+                "Validate all constraints in build(), not in individual setter methods"
+            ],
+            "tags": ["design patterns", "Builder", "immutability", "Optional", "fluent API"]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+[
+    { "id": "2023-GK-SX-1", "year": 2023, "paper": "全国甲卷", "section": "一", "marks": 5, "dotPoints": ["SX-HS-1.2"], "topic": "SX-HS", "difficulty": "容易", "type": "选择题", "module": "函数与导数" },
+    { "id": "2023-GK-SX-2", "year": 2023, "paper": "全国甲卷", "section": "一", "marks": 5, "dotPoints": ["SX-HS-2.2"], "topic": "SX-HS", "difficulty": "中等", "type": "选择题", "module": "函数与导数" },
+    { "id": "2023-GK-SX-3", "year": 2023, "paper": "全国甲卷", "section": "一", "marks": 5, "dotPoints": ["SX-SL-1.2", "SX-SL-1.3"], "topic": "SX-SL", "difficulty": "中等", "type": "多选题", "module": "数列" },
+    { "id": "2023-GK-SX-4", "year": 2023, "paper": "全国甲卷", "section": "二", "marks": 5, "dotPoints": ["SX-JX-1.2"], "topic": "SX-JX", "difficulty": "容易", "type": "填空题", "module": "解析几何" },
+    { "id": "2023-GK-SX-5", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 10, "dotPoints": ["SX-SJ-2.2"], "topic": "SX-SJ", "difficulty": "中等", "type": "解答题", "module": "三角函数" },
+    { "id": "2023-GK-SX-6", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 12, "dotPoints": ["SX-TJ-2.2"], "topic": "SX-TJ", "difficulty": "中等", "type": "解答题", "module": "概率统计" },
+    { "id": "2023-GK-SX-7", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 12, "dotPoints": ["SX-KJ-2.2"], "topic": "SX-KJ", "difficulty": "较难", "type": "解答题", "module": "立体几何" },
+    { "id": "2023-GK-SX-8", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 12, "dotPoints": ["SX-JX-2.1"], "topic": "SX-JX", "difficulty": "较难", "type": "解答题", "module": "解析几何" },
+    { "id": "2023-GK-SX-9", "year": 2023, "paper": "全国甲卷", "section": "三", "marks": 12, "dotPoints": ["SX-HS-2.4"], "topic": "SX-HS", "difficulty": "较难", "type": "解答题", "module": "函数与导数" },
+    { "id": "practice-SX-lianxi-1", "year": null, "paper": "模拟题", "section": "三", "marks": 12, "dotPoints": ["SX-SL-2.1"], "topic": "SX-SL", "difficulty": "较难", "type": "解答题", "module": "数列" }
+]

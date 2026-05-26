@@ -1,0 +1,453 @@
+{
+    "subject": "IELTS Exam Preparation",
+    "syllabusVersion": "IELTS 2024",
+    "description": "Comprehensive IELTS learning resource with key concepts, common errors, learning tips, model answers, and examiner insights for all four skills.",
+    "dotPoints": {
+        "IELTS-OVR-1.1": {
+            "code": "IELTS-OVR-1.1",
+            "name": "Academic vs General Training",
+            "topic": "IELTS Exam Overview",
+            "subtopic": "Exam Structure and Format",
+            "level": "foundation",
+            "summary": "IELTS has two versions: Academic (for university admission and professional registration) and General Training (for migration and secondary education). Listening and Speaking are identical; Reading and Writing differ significantly.",
+            "keyConcepts": [
+                "Academic IELTS: Required for university undergraduate and postgraduate entry worldwide",
+                "General Training IELTS: Required for Australian, Canadian, UK, NZ migration and some work visas",
+                "Listening: Identical for both versions — 4 sections, 40 questions, 40 minutes",
+                "Speaking: Identical for both versions — 3 parts, 11-14 minutes",
+                "Academic Reading: 3 long passages from journals, books, newspapers — complex academic texts",
+                "GT Reading: Shorter texts from advertisements, notices, workplace documents, longer general passage",
+                "Academic Writing Task 1: Describe a graph, chart, table, process, or map — factual, no opinion",
+                "GT Writing Task 1: Write a letter (formal, semi-formal, or informal) addressing 3 bullet points",
+                "Writing Task 2: Identical topic type but Academic expects more formal, academic register"
+            ],
+            "commonErrors": [
+                "Registering for Academic when visa requires General Training (or vice versa) — check requirements first",
+                "GT candidates studying Academic Reading materials — different strategies needed",
+                "Assuming Task 2 is completely different between versions — topics and structure are very similar",
+                "Not confirming the required minimum band score per section for your specific institution or visa"
+            ],
+            "learningTips": [
+                "Confirm whether you need Academic or GT with your institution or visa authority before booking",
+                "Use official Cambridge IELTS practice books (1-18) which have both Academic and GT tests",
+                "Listening and Speaking practice materials are universal — use the same resources for both",
+                "Check whether computer-delivered IELTS is accepted by your institution — results come faster (3-5 days)"
+            ],
+            "socraticPrompts": [
+                "If you plan to apply to both a UK university and for a UK work visa, which IELTS version do you need?",
+                "Why do you think Reading and Writing differ between Academic and GT but Listening and Speaking do not?",
+                "What would happen to your application if you sat the wrong version of IELTS?"
+            ],
+            "writingExample": {
+                "description": "Key differences at a glance",
+                "content": "ACADEMIC vs GENERAL TRAINING:\n\nReading:\n  Academic — 3 long passages, complex academic texts (e.g. science journal)\n  GT       — Short functional texts + 1 longer general passage\n\nWriting Task 1:\n  Academic — Describe graph/chart/process/map (minimum 150 words, factual)\n  GT       — Write a letter: formal/semi-formal/informal (minimum 150 words)\n\nWriting Task 2:\n  Both     — Essay (minimum 250 words), but Academic expects more formal register\n\nListening & Speaking: IDENTICAL for both versions"
+            },
+            "relatedDotPoints": ["IELTS-OVR-1.2", "IELTS-OVR-1.3", "IELTS-WRT-1.1", "IELTS-WRT-2.1"]
+        },
+        "IELTS-OVR-1.3": {
+            "code": "IELTS-OVR-1.3",
+            "name": "Band Score System",
+            "topic": "IELTS Exam Overview",
+            "subtopic": "Exam Structure and Format",
+            "level": "foundation",
+            "summary": "IELTS uses a 9-band scale. Each section (Listening, Reading, Writing, Speaking) receives a band from 1-9 in 0.5 increments. The Overall Band Score is the average of the four, rounded to the nearest 0.5.",
+            "keyConcepts": [
+                "Band 9: Expert user — complete operational command",
+                "Band 8: Very good user — fully operational with occasional unsystematic inaccuracies",
+                "Band 7: Good user — operational command with occasional inaccuracies — most university minimum",
+                "Band 6: Competent user — generally effective command despite inaccuracies",
+                "Band 5: Modest user — partial command, coping with overall meaning in familiar situations",
+                "Overall Band Score: Average of L + R + W + S, rounded to nearest 0.5",
+                "Example: L=7.5, R=7.0, W=6.5, S=7.0 → Total=28/4=7.0 Overall",
+                "Listening/Reading: Raw scores out of 40 converted to band (e.g., 30/40 = Band 7)",
+                "Writing/Speaking: Holistic assessment against 4 criteria, each equally weighted",
+                "Score validity: IELTS scores are valid for 2 years from test date"
+            ],
+            "commonErrors": [
+                "Confusing the overall band with individual section bands — universities often require minimums per section",
+                "Not knowing that Overall Band rounds to nearest 0.5 — 6.75 rounds to 7.0, not 6.5",
+                "Assuming a high Listening score will compensate for low Writing — many institutions require minimums",
+                "Not checking whether the institution accepts an IELTS score from more than 2 years ago"
+            ],
+            "learningTips": [
+                "Look up the exact band requirements for your target institution — per-section minimums vary widely",
+                "For Listening/Reading, know the approximate raw score needed: Band 7 ≈ 30/40, Band 8 ≈ 35/40",
+                "For Writing/Speaking, ask for detailed examiner feedback if possible after mock tests",
+                "Use the official IELTS band descriptors on ielts.org as your scoring benchmark"
+            ],
+            "socraticPrompts": [
+                "If you score L=8, R=8, W=6, S=6, what is your overall band? Does this meet a requirement of 7.0 overall with no band below 6.5?",
+                "Why do you think IELTS uses a 9-band scale rather than a percentage score?",
+                "What strategies would you prioritise if you needed to raise your Writing band from 6 to 7?"
+            ],
+            "writingExample": {
+                "description": "Listening/Reading band score conversion (approximate)",
+                "content": "LISTENING — approximate raw scores per band:\n  Band 5:  16-22 correct / 40\n  Band 6:  23-28 correct / 40\n  Band 7:  30-31 correct / 40\n  Band 8:  35-36 correct / 40\n  Band 9:  39-40 correct / 40\n\nREADING — approximate (Academic):\n  Band 5:  15-21 correct / 40\n  Band 6:  23-26 correct / 40\n  Band 7:  30-32 correct / 40\n  Band 8:  35-36 correct / 40\n  Band 9:  39-40 correct / 40\n\nNote: Exact conversions may vary slightly by test version."
+            },
+            "relatedDotPoints": ["IELTS-OVR-1.1", "IELTS-STR-2.1", "IELTS-WRT-1.1", "IELTS-WRT-3.1"]
+        },
+        "IELTS-LIS-2.1": {
+            "code": "IELTS-LIS-2.1",
+            "name": "Prediction and Pre-reading Questions",
+            "topic": "Listening",
+            "subtopic": "Listening Strategies",
+            "level": "intermediate",
+            "summary": "Using the preparation time before each section to predict the type of answer expected dramatically improves accuracy. Pre-reading questions and underlining keywords primes your brain to catch the answer.",
+            "keyConcepts": [
+                "Use all given preparation time: Read questions before audio begins — you are always given time",
+                "Identify the answer type: Is it a name? A number? A place? An adjective? Predict the form",
+                "Underline key content words in questions: These are your 'triggers' to listen for",
+                "Predict the context: Section 1 is often a booking/enquiry — predict likely vocabulary",
+                "Listen for paraphrasing: The audio often uses different words from the question",
+                "Distractors: Speakers may mention then reject an answer — wait for the final confirmed answer",
+                "Word limits: 'No more than TWO words and/or a number' — never write three words"
+            ],
+            "commonErrors": [
+                "Not reading questions before the audio starts — wasting valuable prediction time",
+                "Writing the first thing heard rather than the confirmed answer — distractors are common",
+                "Exceeding the word limit (e.g., writing 'the London Bridge' when limit is 2 words — lose the mark)",
+                "Missing an answer and panicking — move on immediately and refocus on the next question",
+                "Confusing similar-sounding words: 'fifteen' vs 'fifty', 'ship' vs 'sheep'"
+            ],
+            "learningTips": [
+                "During practice, always read ALL questions for a section before pressing play",
+                "Circle the word-limit instruction in each task — check it every time",
+                "Practise identifying answer types from questions: Q: 'What time does it close?' → Answer type: TIME",
+                "For numbers, write digits quickly: '15' is faster to write than 'fifteen' and equally correct"
+            ],
+            "socraticPrompts": [
+                "Why do you think the audio often paraphrases the question rather than using the exact words?",
+                "What would you do if you missed question 14 while the audio moved on to question 15?",
+                "How does predicting the answer type help you listen more efficiently?"
+            ],
+            "writingExample": {
+                "description": "Pre-reading and prediction in action",
+                "content": "QUESTION: 'The library closes at _____ on Sundays.'\n\nPRE-READING ANALYSIS:\n  → Answer type: TIME (e.g., 5pm, 17:00, five o'clock)\n  → Key trigger words to listen for: 'library', 'Sunday', 'close/closes/closing'\n  → Predict paraphrases: 'shuts', 'opens until', 'last entry'\n\nAUDIO SCRIPT EXTRACT:\n  'Our branch is open Monday through Saturday until eight, but on weekends\n  we tend to wind down a bit earlier — we close at five on both Saturday and Sunday.'\n\nANSWER: 5pm (or 5 o'clock, or 17:00)\nNOTE: 'Wind down earlier' and 'close at five' — you needed to listen for the paraphrase."
+            },
+            "relatedDotPoints": ["IELTS-LIS-1.1", "IELTS-LIS-2.2", "IELTS-LIS-1.2"]
+        },
+        "IELTS-RDG-2.3": {
+            "code": "IELTS-RDG-2.3",
+            "name": "True/False/Not Given Strategy",
+            "topic": "Reading",
+            "subtopic": "Reading Strategies",
+            "level": "intermediate",
+            "summary": "True/False/Not Given (TFNG) and Yes/No/Not Given (YNGNG) are among the most misunderstood question types. The key distinction is between 'False/No' (the text contradicts the statement) and 'Not Given' (the information simply is not in the text).",
+            "keyConcepts": [
+                "TRUE / YES: The statement agrees with the information or writer's views in the passage",
+                "FALSE / NO: The statement contradicts the information or the writer's views — there is evidence against it",
+                "NOT GIVEN: The information is not mentioned at all in the passage — you cannot find it",
+                "Critical distinction: NOT GIVEN ≠ FALSE. NOT GIVEN means absent, not wrong",
+                "Do not use prior knowledge: Answer only based on what the text says, not what you know",
+                "Questions are in order: The answers appear in the same order in the passage",
+                "TFNG: Tests factual information; YNGNG: Tests the writer's opinion or views",
+                "Common trap: Partial truth — statement is partly true but contains one detail that makes it FALSE"
+            ],
+            "commonErrors": [
+                "Choosing FALSE when the information is simply not mentioned — should be NOT GIVEN",
+                "Choosing NOT GIVEN when the text clearly contradicts the statement — should be FALSE",
+                "Using general knowledge about the topic instead of evidence from the text",
+                "Spending too long searching for NOT GIVEN answers — if you cannot find it after 2-3 minutes, choose NOT GIVEN",
+                "Ignoring qualifying words like 'all', 'always', 'never', 'some' — these change the truth value"
+            ],
+            "learningTips": [
+                "Ask: 'Is there evidence in the text that contradicts this?' → If yes: FALSE. If no: Is it mentioned? If not: NOT GIVEN",
+                "Underline the key claim in the question, then locate the relevant part of the text",
+                "Watch for absolute words: 'all countries' in the question but text says 'most countries' → FALSE",
+                "Practice with a time limit — do not re-read the whole passage for each question"
+            ],
+            "socraticPrompts": [
+                "The text says 'Some studies suggest coffee is beneficial.' The question says 'Coffee is beneficial to health.' Is this TRUE, FALSE, or NOT GIVEN? Why?",
+                "How would you decide between NOT GIVEN and FALSE if you cannot find information about a topic?",
+                "Why is using your general knowledge about a topic dangerous in TFNG questions?"
+            ],
+            "writingExample": {
+                "description": "TFNG decision framework",
+                "content": "PASSAGE: 'The Eiffel Tower, completed in 1889, was originally intended\nto be a temporary structure. Most historians believe Gustave Eiffel\ndesigned it as an entrance arch for the 1889 World's Fair.'\n\nQ1: 'The Eiffel Tower was built to be a permanent structure.'\n→ The text says it was intended to be TEMPORARY → Contradicts → FALSE\n\nQ2: 'Gustave Eiffel designed the Eiffel Tower.'\n→ Text says 'most historians BELIEVE Eiffel designed it' — not confirmed fact\n→ But the statement is presented as accepted fact in the question\n→ However, passage does attribute design to Eiffel (via historians)\n→ Answer: TRUE (the passage supports this, even via historians)\n\nQ3: 'The Eiffel Tower was the tallest structure in the world in 1889.'\n→ Not mentioned anywhere in the passage → NOT GIVEN\n→ (You may KNOW this is true, but you cannot use outside knowledge!)"
+            },
+            "relatedDotPoints": ["IELTS-RDG-1.3", "IELTS-RDG-2.1", "IELTS-RDG-2.5"]
+        },
+        "IELTS-WRT-1.2": {
+            "code": "IELTS-WRT-1.2",
+            "name": "Describing Graphs and Charts",
+            "topic": "Writing",
+            "subtopic": "Writing Task 1 — Academic",
+            "level": "intermediate",
+            "summary": "Task 1 Academic requires summarising visual data objectively. A high-scoring response selects and compares key features, includes a clear overview of overall trends, uses accurate data language, and avoids personal opinion.",
+            "keyConcepts": [
+                "Introduction: Paraphrase the graph title — do NOT copy the question verbatim",
+                "Overview (essential for Band 6+): Identify 2-3 most significant overall trends without specific data",
+                "Body paragraphs: Group and compare related data; include specific figures to support",
+                "Tense: Use past simple for past data, present simple for no time frame, future for projections",
+                "No opinion or conclusion: Do not say 'This shows that the government should...' — just describe",
+                "Select key features: Do not try to describe every data point — select and compare",
+                "Comparisons: 'X was significantly higher than Y', 'twice as many', 'three times more'"
+            ],
+            "commonErrors": [
+                "Missing the overview — examiners specifically check for this; missing it caps your TA score at Band 5",
+                "Listing every single data point without grouping or comparing — mechanical description loses marks",
+                "Copying the question word for word as the introduction — penalised under Task Achievement",
+                "Writing personal opinion ('I think this is interesting') — inappropriate register",
+                "Confusing tense: Using present simple for a historical graph (1990-2010)",
+                "Not including any data figures — vague descriptions ('it went up') without numbers"
+            ],
+            "learningTips": [
+                "Always write your overview as the second paragraph, not the last — it is not a conclusion",
+                "Use the PEEL structure: Point (trend) → Evidence (figures) → Explain/Compare → Link",
+                "Practise 10 different chart types: line, bar, pie, table, process, map, before the exam",
+                "For the overview, ask: 'What would I tell someone who has not seen this graph, in one sentence?'"
+            ],
+            "socraticPrompts": [
+                "Why should the overview not contain specific data figures?",
+                "How do you decide which features to include and which to leave out?",
+                "What is the difference between an overview and a conclusion in Task 1?"
+            ],
+            "writingExample": {
+                "description": "Band 7+ Task 1 response structure for a line graph",
+                "content": "TASK: The graph below shows the percentage of households with internet access in three countries from 2005 to 2020.\n\n--- INTRODUCTION (paraphrase the title) ---\nThe line graph illustrates the proportion of homes that had internet access in three nations over a 15-year period from 2005 to 2020.\n\n--- OVERVIEW (2 main trends, no specific data) ---\nOverall, internet access grew significantly in all three countries across the period. Country A consistently maintained the highest levels of connectivity, while Country C showed the most dramatic increase.\n\n--- BODY PARAGRAPH 1 (Countries A and B — compare and contrast) ---\nIn 2005, approximately 60% of households in Country A had internet access, compared to around 40% in Country B. Both figures rose steadily over the 15 years, reaching 90% and 75% respectively by 2020, though the gap between the two narrowed considerably in the latter half of the period.\n\n--- BODY PARAGRAPH 2 (Country C — dramatic change) ---\nBy contrast, Country C began with a much lower rate of only 15% in 2005. However, it experienced the steepest growth of all three nations, climbing rapidly to 65% by 2020, nearly matching Country B by the end of the period.\n\nWord count: ~170 words ✓  |  No opinion ✓  |  Overview present ✓  |  Data cited ✓"
+            },
+            "relatedDotPoints": ["IELTS-WRT-1.1", "IELTS-WRT-1.4", "IELTS-WRT-1.5", "IELTS-WRT-4.1"]
+        },
+        "IELTS-WRT-3.3": {
+            "code": "IELTS-WRT-3.3",
+            "name": "Essay Introduction Writing",
+            "topic": "Writing",
+            "subtopic": "Writing Task 2 — Essay",
+            "level": "intermediate",
+            "summary": "A strong Task 2 introduction paraphrases the question, presents a clear thesis statement, and optionally outlines the main points. It sets the direction for the entire essay and signals your position clearly.",
+            "keyConcepts": [
+                "Two components: (1) Paraphrase of the question/topic (2) Thesis statement (your position)",
+                "Optional third component: Outline statement — briefly signal what the essay will discuss",
+                "Paraphrase: Change vocabulary and sentence structure — do NOT copy the question",
+                "Thesis: One clear, direct statement of your position or the essay's approach",
+                "Length: 2-3 sentences is ideal — do not write a long introduction",
+                "Do NOT: Start with 'Nowadays' or 'In today's modern society' — overused and penalised",
+                "Do NOT: Write a dictionary definition ('The word 'technology' means...')",
+                "Opinion essays: State your position clearly — avoid 'I will discuss both sides'"
+            ],
+            "commonErrors": [
+                "Copying the question verbatim — examiners penalise this and the marks are not counted",
+                "Being vague about position ('There are many opinions on this topic') — not a thesis statement",
+                "Writing too long an introduction and running out of time for body paragraphs",
+                "Starting every essay with 'Nowadays' — very common and marks you as a formulaic writer",
+                "Promising something in the introduction that the essay does not deliver"
+            ],
+            "learningTips": [
+                "Practise paraphrasing: Take any Task 2 question and rewrite it using synonyms and different grammar",
+                "Write your introduction AFTER you plan the body — you then know exactly what you are introducing",
+                "For opinion essays: your thesis must take a clear side. 'I agree/disagree' must be explicit",
+                "Keep a list of 5 strong introduction openers that avoid clichés"
+            ],
+            "socraticPrompts": [
+                "Why do examiners penalise introductions that copy the question directly?",
+                "What is the difference between a thesis statement and an outline statement?",
+                "How would you paraphrase: 'Some people believe that social media has had a negative impact on society'?"
+            ],
+            "writingExample": {
+                "description": "Weak vs strong introduction comparison",
+                "content": "QUESTION: 'Some people believe that children should be taught to be competitive at school. Others believe that this is harmful. Discuss both views and give your own opinion.'\n\n--- WEAK INTRODUCTION (Band 5) ---\nNowadays, some people believe that children should be taught to be competitive at school. Others believe that this is harmful. This essay will discuss both sides.\n\nProblems: Copied question, clichéd opener, no thesis, no paraphrase.\n\n--- STRONG INTRODUCTION (Band 7+) ---\nWhether fostering a competitive spirit in children is beneficial or detrimental is a topic of considerable debate in educational circles. While proponents argue that healthy competition prepares young people for adult life, critics contend that it can damage self-esteem and undermine cooperation. This essay will examine both perspectives before arguing that a balanced approach — one that encourages effort rather than ranking — is most conducive to children's overall development.\n\nStrengths: Paraphrased ✓  |  Both views signalled ✓  |  Clear thesis ✓  |  Academic register ✓"
+            },
+            "relatedDotPoints": ["IELTS-WRT-3.2", "IELTS-WRT-3.4", "IELTS-WRT-3.5", "IELTS-WRT-4.1"]
+        },
+        "IELTS-WRT-3.4": {
+            "code": "IELTS-WRT-3.4",
+            "name": "Body Paragraph Structure (PEEL)",
+            "topic": "Writing",
+            "subtopic": "Writing Task 2 — Essay",
+            "level": "intermediate",
+            "summary": "Each body paragraph must develop one central idea clearly and logically. The PEEL structure (Point, Explain, Example, Link) ensures coherence and adequate development — both essential for Band 7+.",
+            "keyConcepts": [
+                "P — Point: Topic sentence stating the main idea of the paragraph clearly",
+                "E — Explain: Develop and elaborate on the point — why/how is this true?",
+                "E — Example: Concrete example, evidence, or illustration to support the point",
+                "L — Link: Closing sentence that connects back to the essay question or transitions forward",
+                "One idea per paragraph: Do not mix multiple unrelated ideas in one paragraph",
+                "Word count guidance: Each body paragraph should be approximately 90-120 words",
+                "Two body paragraphs is the minimum for Task 2 — three is acceptable for some question types"
+            ],
+            "commonErrors": [
+                "Starting with the example without stating the point first — examiner does not know what you are arguing",
+                "Providing a point without any explanation or development — too short and underdeveloped",
+                "Using vague examples ('For example, in some countries...') — be specific where possible",
+                "Mixing two different ideas in one paragraph — creates confusion and damages Coherence score",
+                "No topic sentence — examiner cannot identify the paragraph's main idea"
+            ],
+            "learningTips": [
+                "Write the topic sentence first, then ask 'Why is this true?' — that is your explanation",
+                "Then ask 'What proves this?' — that is your example",
+                "Aim for at least 3-4 sentences per paragraph — short paragraphs suggest underdevelopment",
+                "Your example does not need to be a verified statistic — 'In countries such as Japan...' is acceptable"
+            ],
+            "socraticPrompts": [
+                "How do you decide whether to use two or three body paragraphs for a given question type?",
+                "What makes an example 'concrete' rather than 'vague' in academic writing?",
+                "Can a paragraph have two topic sentences? Why or why not?"
+            ],
+            "writingExample": {
+                "description": "PEEL paragraph — Band 7+ example on technology in education",
+                "content": "ESSAY QUESTION: 'Technology has more positive than negative effects on education. To what extent do you agree?'\n\n--- BODY PARAGRAPH (PEEL) ---\n\n[P — Point / Topic sentence]\nOne significant benefit of technology in education is that it enables personalised learning at a pace suited to each individual student.\n\n[E — Explain]\nTraditional classroom instruction is necessarily delivered at a uniform pace, which can leave some students bored while others struggle to keep up. Digital platforms, by contrast, allow learners to revisit content, skip material they have already mastered, and receive instant feedback tailored to their specific weaknesses.\n\n[E — Example]\nFor instance, adaptive learning software such as Khan Academy adjusts the difficulty of exercises based on a student's previous responses, ensuring that each learner is consistently challenged without becoming overwhelmed.\n\n[L — Link]\nThis capacity to accommodate diverse learning needs represents a clear educational advantage that traditional methods struggle to replicate.\n\n--- Analysis: ~110 words ✓  |  One idea ✓  |  Specific example ✓  |  Academic vocabulary ✓"
+            },
+            "relatedDotPoints": ["IELTS-WRT-3.3", "IELTS-WRT-3.5", "IELTS-WRT-4.1", "IELTS-WRT-4.2"]
+        },
+        "IELTS-SPK-2.1": {
+            "code": "IELTS-SPK-2.1",
+            "name": "Cue Card Structure and Preparation",
+            "topic": "Speaking",
+            "subtopic": "Speaking Part 2 — Long Turn",
+            "level": "intermediate",
+            "summary": "Part 2 requires a 2-minute talk on a given topic (the cue card). Candidates have 1 minute to prepare notes. A structured response covering all bullet points, delivered fluently with vivid language, scores well.",
+            "keyConcepts": [
+                "Cue card format: A topic + 4 bullet points you should address + 'You should say:'",
+                "Preparation: 1 full minute — use it all; jot 3-4 content words per bullet, not full sentences",
+                "Speaking time: Exactly 2 minutes — examiner will stop you; aim to fill the full time",
+                "Cover all 4 bullets: Address each point, even briefly — missing bullets affects Task Achievement",
+                "Personal experience: Where possible, use real memories — authentic stories sound natural",
+                "Narrative tenses: Past simple, past continuous ('I was studying when...'), past perfect",
+                "Sensory and emotive language: Describe feelings, sounds, sights — adds vividness and vocabulary range",
+                "Do NOT memorise: Examiners can detect scripted responses; keep notes as triggers only"
+            ],
+            "commonErrors": [
+                "Running out of things to say before 2 minutes — under-preparing or being too brief on each point",
+                "Reading notes instead of speaking naturally — notes are reminders, not a script",
+                "Speaking for only 30-60 seconds — insufficient development of the topic",
+                "Changing topics or going off the cue card completely — stay on topic",
+                "Using only simple past tense — no grammatical range demonstrated"
+            ],
+            "learningTips": [
+                "Structure: Introduction (who/what/when/where) → Bullet 1 → Bullet 2 → Bullet 3 → Bullet 4 → How you felt/Why it was important",
+                "During the preparation minute, number your bullets and jot one keyword each",
+                "If you run out of content on a bullet, use connectives to expand: 'I remember that...', 'What really struck me was...'",
+                "Record yourself and listen back — did you fill 2 minutes? Did you cover all bullets?"
+            ],
+            "socraticPrompts": [
+                "What techniques can you use to extend your answer if you run out of things to say after 60 seconds?",
+                "Why might using only present tense in Part 2 lower your grammatical range score?",
+                "How can you make an unfamiliar cue card topic feel personal and authentic?"
+            ],
+            "writingExample": {
+                "description": "Cue card and model response structure",
+                "content": "CUE CARD:\nDescribe a book you have read that had a significant effect on you.\nYou should say:\n  • what the book was about\n  • when and why you read it\n  • what effect it had on you\n  • and explain why this book was important to you\n\n--- PREPARATION NOTES (1 minute) ---\n  1. About: dystopian future, government control, privacy\n  2. When/why: university, recommended by professor, exam prep\n  3. Effect: changed my view on freedom of speech, surveillance\n  4. Why important: made me think critically, still influences my views\n\n--- MODEL RESPONSE OPENING ---\nThe book I would like to talk about is George Orwell's 1984, which I first read during my first year at university. I had been recommended it by my professor as part of a wider reading list, and I must admit I was not expecting it to have such a profound impact on me.\n\nThe novel is set in a totalitarian future where a government known as 'Big Brother' exercises absolute control over its citizens, monitoring their every move and suppressing any form of independent thought. [continues for 90+ more seconds...]"
+            },
+            "relatedDotPoints": ["IELTS-SPK-2.2", "IELTS-SPK-1.2", "IELTS-SPK-4.1", "IELTS-SPK-4.2"]
+        },
+        "IELTS-SPK-3.2": {
+            "code": "IELTS-SPK-3.2",
+            "name": "Giving Opinions and Justifying",
+            "topic": "Speaking",
+            "subtopic": "Speaking Part 3 — Discussion",
+            "level": "advanced",
+            "summary": "Part 3 requires extended, justified opinions on abstract societal topics. Examiners want to hear sophisticated language for expressing, hedging, and justifying opinions — not just short answers.",
+            "keyConcepts": [
+                "Opinion starters: 'In my view...', 'I would argue that...', 'It seems to me that...', 'Personally, I think...'",
+                "Hedging: 'I suppose', 'I imagine', 'It could be argued', 'I tend to think' — shows nuance",
+                "Justification: 'because', 'since', 'the reason being', 'this is due to the fact that'",
+                "Exemplification: 'For instance', 'Take the example of', 'A good illustration of this would be'",
+                "Concession: 'Although I believe X, I acknowledge that Y', 'That said', 'On the other hand'",
+                "Speculative language: 'I would imagine', 'It is likely that', 'This may well have led to'",
+                "Referencing trends: 'In recent years', 'There has been a growing trend towards', 'Increasingly'"
+            ],
+            "commonErrors": [
+                "Giving one-sentence answers ('Yes, I think it is good.') — no justification or development",
+                "Sounding rehearsed — using the same 3 memorised phrases for every answer",
+                "Avoiding the question by being too vague ('It depends on many things.') without elaborating",
+                "Losing fluency by pausing too long when formulating an opinion"
+            ],
+            "learningTips": [
+                "Learn 3-4 different opinion openers and rotate them — variety shows lexical resource",
+                "Use the PR+E+E formula: Position → Reason → Example → Extra comment",
+                "It is fine to change your mind during Part 3: 'Actually, thinking about it more, I would say...' — this shows flexibility and natural speech",
+                "Record your Part 3 answers and time them — aim for 40-60 seconds per response"
+            ],
+            "socraticPrompts": [
+                "How is giving an opinion in Part 3 different from Part 1? What does the examiner expect more of?",
+                "What is the risk of using hedging language too much?",
+                "How can you disagree with the examiner's implied point without being impolite?"
+            ],
+            "writingExample": {
+                "description": "Weak vs strong Part 3 response comparison",
+                "content": "EXAMINER QUESTION: 'Do you think social media has had a positive or negative effect on society?'\n\n--- WEAK RESPONSE (Band 5) ---\n'I think social media has both positive and negative effects. It helps people communicate but it also has many problems. So I think it depends.'\n\nProblems: Too short, no development, vague ('many problems'), no examples.\n\n--- STRONG RESPONSE (Band 7-8) ---\n'That is a really interesting question. I would say that, on balance, the negative effects of social media are beginning to outweigh the positives — at least in terms of mental health and social cohesion. While it is undeniable that platforms like Twitter and Instagram have made it easier for people to stay connected across distances, there is growing evidence to suggest that heavy use — particularly among adolescents — is linked to increased rates of anxiety and depression. Take, for example, the wave of legislation in several countries aimed at restricting children's access to these platforms; this would not be happening unless governments were genuinely concerned. That said, I do think social media retains enormous value as a tool for political organising and spreading information in repressive societies, so I would not want to dismiss it entirely.'\n\nStrengths: Extended ✓  |  Justified ✓  |  Concession ✓  |  Example ✓  |  Hedging ✓  |  ~90 seconds ✓"
+            },
+            "relatedDotPoints": ["IELTS-SPK-3.1", "IELTS-SPK-4.1", "IELTS-SPK-4.2", "IELTS-VOC-1.1"]
+        },
+        "IELTS-VOC-2.4": {
+            "code": "IELTS-VOC-2.4",
+            "name": "Cohesive Devices and Discourse Markers",
+            "topic": "Vocabulary and Grammar",
+            "subtopic": "Grammar for IELTS",
+            "level": "intermediate",
+            "summary": "Cohesive devices link ideas within and between sentences and paragraphs. Their accurate use is assessed under 'Coherence and Cohesion' in Writing and 'Fluency and Coherence' in Speaking.",
+            "keyConcepts": [
+                "Addition: furthermore, moreover, in addition, additionally, not only...but also",
+                "Contrast: however, nevertheless, on the other hand, conversely, whereas, while, despite",
+                "Cause/Effect: because, since, as a result, consequently, therefore, thus, hence, owing to",
+                "Concession: although, even though, despite, in spite of, admittedly, granted that",
+                "Exemplification: for example, for instance, such as, a case in point is, to illustrate",
+                "Sequence: firstly, secondly, subsequently, then, finally, following this, prior to",
+                "Emphasis: indeed, in fact, particularly, especially, notably, above all",
+                "Conclusion: in conclusion, to summarise, overall, on balance, in short",
+                "Pronoun reference: Use it/they/this/these to refer back — avoids repetition",
+                "Lexical chains: Using synonyms to refer to the same concept: 'children' → 'youngsters' → 'the younger generation'"
+            ],
+            "commonErrors": [
+                "Overusing 'Furthermore' and 'However' — repetitive use drops Lexical Resource score",
+                "Using discourse markers incorrectly: 'Despite of' (incorrect) vs 'Despite' (correct)",
+                "Starting every sentence with a discourse marker — unnatural and sounds mechanical",
+                "Using 'In conclusion' in Task 1 — inappropriate for a report/description",
+                "Using informal markers in academic writing: 'Plus', 'Also' — prefer 'Furthermore', 'In addition'"
+            ],
+            "learningTips": [
+                "Categorise your discourse markers by function — learn 3 alternatives for each category",
+                "In Speaking, use shorter natural connectors: 'but', 'and', 'so', 'you know' — long markers sound unnatural in speech",
+                "In Writing, place discourse markers after a semicolon or at the start of a new sentence: 'X; however, Y'",
+                "Test yourself: Write a paragraph using only pronouns and synonyms for cohesion — no discourse markers"
+            ],
+            "socraticPrompts": [
+                "What is the difference between 'although' and 'however' in terms of sentence structure?",
+                "Why is it important not to overuse the same cohesive device in a single paragraph?",
+                "How does lexical cohesion (using synonyms) differ from grammatical cohesion (using discourse markers)?"
+            ],
+            "writingExample": {
+                "description": "Cohesion devices in a Task 2 body paragraph",
+                "content": "TOPIC: Remote working and productivity\n\n--- PARAGRAPH WITH STRONG COHESION ---\nOne of the most frequently cited advantages of remote working is the increase in productivity it often brings. This improvement stems primarily from the elimination of the daily commute, which not only saves time but also significantly reduces stress levels. Furthermore, employees working from home tend to face fewer interruptions than those in open-plan offices. To illustrate, a 2021 Stanford study found that remote workers completed 13% more tasks per hour than their in-office counterparts. Nevertheless, it would be simplistic to conclude that remote working universally boosts output, since some individuals find the home environment difficult to concentrate in, particularly those with young children or limited space.\n\n--- COHESION ANALYSIS ---\n'This improvement' → pronoun + synonym for productivity ✓\n'not only...but also' → addition with emphasis ✓\n'Furthermore' → addition ✓\n'To illustrate' → exemplification ✓\n'Nevertheless' → contrast/concession ✓\n'since' → cause/reason ✓\n'particularly' → emphasis ✓"
+            },
+            "relatedDotPoints": ["IELTS-WRT-4.1", "IELTS-WRT-3.4", "IELTS-SPK-4.1", "IELTS-VOC-1.1"]
+        },
+        "IELTS-STR-2.1": {
+            "code": "IELTS-STR-2.1",
+            "name": "What Band 7 Looks Like Across Sections",
+            "topic": "Exam Strategy and Test-Taking Skills",
+            "subtopic": "Band 7+ Target Strategies",
+            "level": "advanced",
+            "summary": "Band 7 in IELTS is described as a 'good user' with 'operational command of the language'. Understanding precisely what Band 7 looks like in each section allows candidates to target their preparation accurately.",
+            "keyConcepts": [
+                "Listening Band 7: 30-31 correct answers out of 40; able to follow complex academic content",
+                "Reading Band 7 (Academic): 30-32 correct answers; understands complex texts with occasional difficulty",
+                "Writing Task 1 Band 7: Covers all key features; clear overview; well-organised; flexible vocabulary; some errors in complex structures",
+                "Writing Task 2 Band 7: Clear position; well-developed ideas; variety of vocabulary; mostly accurate complex grammar; minor errors",
+                "Speaking Band 7: Speaks at length without noticeable effort; uses paraphrase effectively; wide range of vocabulary with some awareness of style; wide range of structures with occasional errors"
+            ],
+            "commonErrors": [
+                "Targeting 'no errors' — Band 7 permits occasional inaccuracies; aiming for perfection wastes time",
+                "Confusing Band 7 with native-speaker level — it is 'operationally effective', not perfect",
+                "Neglecting the overview in Task 1 — this alone can drop TA from Band 7 to Band 5",
+                "Using only simple grammatical structures in Speaking — limits Grammatical Range score"
+            ],
+            "learningTips": [
+                "Download the official IELTS Writing and Speaking band descriptors from ielts.org — read them carefully",
+                "Use these descriptors to self-assess your practice writing and speaking",
+                "For Writing, focus on Task Response and Coherence first — these have the most impact at Band 6→7",
+                "For Speaking, record yourself and count how many complex structures you use naturally"
+            ],
+            "socraticPrompts": [
+                "Based on the Band 7 descriptor for Writing, what is the single most important thing to improve if your current band is 6?",
+                "Why do you think 'paraphrase' is specifically mentioned in the Band 7 Speaking descriptor?",
+                "What is the difference between Band 7 and Band 8 in Writing Task 2 in terms of Task Response?"
+            ],
+            "writingExample": {
+                "description": "Band 7 vs Band 6 Writing Task 2 comparison on the same criteria",
+                "content": "CRITERIA: Task Response\n\n--- BAND 6 ---\nAddresses the task only partially. Main ideas are present but not fully developed. Position may be unclear at times. Examples are vague.\n\n--- BAND 7 ---\nAddresses all parts of the task. Main ideas are extended and supported. Position is clear throughout. Relevant examples provided, though some could be more specific.\n\n--- HOW TO MOVE FROM BAND 6 TO 7 (Task Response) ---\n  ✓ Ensure EVERY part of the question is addressed\n  ✓ Each body paragraph = one fully developed idea (not just stated)\n  ✓ Clear position in introduction AND conclusion\n  ✓ At least one specific example per paragraph\n  ✗ Avoid 'wishy-washy' statements that commit to nothing\n  ✗ Avoid discussing 3+ ideas superficially — better to discuss 2 ideas deeply"
+            },
+            "relatedDotPoints": ["IELTS-OVR-1.3", "IELTS-STR-2.2", "IELTS-WRT-3.1", "IELTS-SPK-4.1"]
+        }
+    }
+}

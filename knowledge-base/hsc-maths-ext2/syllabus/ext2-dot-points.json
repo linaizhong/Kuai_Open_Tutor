@@ -1,0 +1,1054 @@
+{
+  "subject": "HSC Mathematics Extension 2",
+  "syllabusVersion": "2017",
+  "description": "Deep detail for each syllabus dot-point, supporting error analysis, Socratic questioning, worked examples and marking feedback skills.",
+  "dotPoints": {
+
+    "MEX-P1.1": {
+      "code": "MEX-P1.1",
+      "name": "Proof by contradiction",
+      "topic": "MEX-P",
+      "subtopic": "MEX-P1",
+      "year": 12,
+      "summary": "Assume the negation of the statement, derive a logical contradiction, and conclude the original statement is true.",
+      "keyConcepts": [
+        "Structure: Assume ¬P (the negation of what you want to prove), then derive a contradiction",
+        "The contradiction can be: a known mathematical fact is false, a given condition is violated, or the assumption contradicts itself",
+        "Classic application: prove √2 is irrational by assuming √2 = p/q in lowest terms, then showing both p and q are even — contradicting the lowest terms assumption",
+        "Classic application: prove there are infinitely many primes by assuming finitely many",
+        "The conclusion must explicitly state: 'This contradicts [state what], therefore our assumption was false, and [original statement] is true'"
+      ],
+      "commonErrors": [
+        "Not clearly stating the assumption at the start — always write 'Assume for contradiction that...'",
+        "Deriving something unusual but not identifying it explicitly as a contradiction",
+        "Confusing proof by contradiction with direct proof — the structure must begin with the negation",
+        "Forgetting to write the final conclusion restating the original result",
+        "Using circular reasoning — the contradiction must follow from the assumption, not from the result itself"
+      ],
+      "examTips": [
+        "Open with: 'Suppose for contradiction that [negation of claim].'",
+        "Identify the contradiction explicitly: 'But this contradicts [known fact / given condition].'",
+        "Close with: 'Therefore our assumption was false. Hence [original statement] is true.'",
+        "Useful for: irrationality proofs, infinitely many primes, divisibility results"
+      ],
+      "socraticPrompts": [
+        "To prove √2 is irrational, what assumption should you start with?",
+        "After writing √2 = p/q in lowest terms, what does p² = 2q² tell you about p? Then about q?",
+        "Why does it matter that p/q is in lowest terms?",
+        "Can you construct a proof by contradiction that there is no largest even integer?"
+      ],
+      "workedExampleTemplate": {
+        "type": "proof-contradiction",
+        "steps": ["State: 'Assume for contradiction that [negation]'", "Derive algebraic/logical consequences of the assumption", "Identify the contradiction and state it explicitly", "Conclude: 'This contradicts [X], so our assumption was false. Hence [result].'"]
+      },
+      "relatedDotPoints": ["MEX-P1.2", "MEX-P1.3", "MEX-P1.4"]
+    },
+
+    "MEX-P1.2": {
+      "code": "MEX-P1.2",
+      "name": "Proof by contrapositive",
+      "topic": "MEX-P",
+      "subtopic": "MEX-P1",
+      "year": 12,
+      "summary": "Prove P ⟹ Q by instead proving ¬Q ⟹ ¬P, which is logically equivalent.",
+      "keyConcepts": [
+        "Logical equivalence: P ⟹ Q is equivalent to ¬Q ⟹ ¬P",
+        "The converse (Q ⟹ P) is NOT equivalent to P ⟹ Q — do not confuse them",
+        "The contrapositive is: if Q is false, then P must be false",
+        "Choose contrapositive proof when the negations ¬Q and ¬P are easier to work with than P and Q directly",
+        "Structure: 'We prove the contrapositive: assume ¬Q, then show ¬P'"
+      ],
+      "commonErrors": [
+        "Proving the converse (Q ⟹ P) instead of the contrapositive (¬Q ⟹ ¬P) — these are different",
+        "Not clearly stating that you are switching to the contrapositive at the start",
+        "Incorrect negation — the negation of 'n is even' is 'n is odd', not 'n is not divisible by 4'",
+        "Forgetting to conclude by relating the contrapositive back to the original statement"
+      ],
+      "examTips": [
+        "State at the start: 'We instead prove the contrapositive: if [¬Q], then [¬P].'",
+        "Conclude: 'Since the contrapositive is true, the original statement P ⟹ Q is true.'",
+        "Useful when the negation gives you something concrete to work with (e.g. 'n is odd' is easier than 'n is not even')"
+      ],
+      "socraticPrompts": [
+        "What is the contrapositive of: 'If n² is even, then n is even'?",
+        "Is the contrapositive logically equivalent to the original? Why?",
+        "Why might proving the contrapositive be easier than proving the original directly?",
+        "What is the difference between the contrapositive and the converse?"
+      ],
+      "workedExampleTemplate": {
+        "type": "proof-contrapositive",
+        "steps": ["State the contrapositive explicitly: 'We prove: if ¬Q, then ¬P'", "Assume ¬Q", "Derive ¬P through valid logical steps", "Conclude: 'The contrapositive is proved, so the original statement holds'"]
+      },
+      "relatedDotPoints": ["MEX-P1.1", "MEX-P1.3"]
+    },
+
+    "MEX-P1.3": {
+      "code": "MEX-P1.3",
+      "name": "Proof by mathematical induction — harder cases",
+      "topic": "MEX-P",
+      "subtopic": "MEX-P1",
+      "year": 12,
+      "summary": "Apply induction to harder statements: divisibility, inequalities, recursive sequences, and products.",
+      "keyConcepts": [
+        "Standard induction structure: Base case → Inductive assumption → Inductive step → Conclusion",
+        "Divisibility induction: show n(n+1)(n+2) is divisible by 6 by expressing the k+1 case in terms of the k case and a known multiple",
+        "Inequality induction: show f(k+1) > g(k+1) by using f(k) > g(k) and algebraic manipulation — be careful not to assume what you're proving",
+        "Strong induction: assume the result for ALL values up to k, not just k — useful for Fibonacci-type sequences",
+        "Product induction: for ∏ formulas, multiply both sides by the next term and simplify"
+      ],
+      "commonErrors": [
+        "In divisibility proofs: forgetting to factor out the required divisor clearly — the divisibility must be explicit",
+        "In inequality proofs: using the inductive assumption incorrectly, e.g. replacing f(k) with g(k) without justification",
+        "Skipping the conclusion — HSC markers specifically award a mark for the conclusion statement",
+        "Base case: testing n = 0 when the statement says 'for all positive integers' — match the base case to the domain",
+        "Circular reasoning in the inductive step — the assumption is P(k), you must derive P(k+1) from it"
+      ],
+      "examTips": [
+        "Always write out all four stages — base case, assumption, step, conclusion — even if brief",
+        "For divisibility: write the k+1 expression = [k expression] + [new term], then use the assumption on the k part",
+        "For inequalities: clearly invoke the inductive assumption — write 'By the inductive assumption, f(k) > g(k), so...'",
+        "The conclusion must mention 'by the principle of mathematical induction' explicitly"
+      ],
+      "socraticPrompts": [
+        "Prove by induction that 3^n > 2n + 1 for all n ≥ 2. What is your base case?",
+        "For a divisibility proof by induction, how do you use P(k) to prove P(k+1)?",
+        "In strong induction, why do we assume P(1), P(2), ..., P(k) all hold instead of just P(k)?",
+        "Prove by induction that n(n+1) is always even. Where does the inductive assumption come in?"
+      ],
+      "workedExampleTemplate": {
+        "type": "proof-induction-harder",
+        "steps": ["Base case: verify for the starting value", "Assume true for n = k (state explicitly what this means)", "Prove for n = k+1 using the assumption — show the algebra step by step", "Invoke the assumption clearly by labelling it", "Write the conclusion: 'By the principle of mathematical induction, the result holds for all n ≥ [start]'"]
+      },
+      "relatedDotPoints": ["MEX-P1.1", "MEX-P1.4"]
+    },
+
+    "MEX-P1.4": {
+      "code": "MEX-P1.4",
+      "name": "Inequality proofs",
+      "topic": "MEX-P",
+      "subtopic": "MEX-P1",
+      "year": 12,
+      "summary": "Prove inequalities using AM-GM, Cauchy-Schwarz, squaring, and sign-of-difference arguments.",
+      "keyConcepts": [
+        "AM-GM inequality: (a + b)/2 ≥ √(ab) for a, b ≥ 0, with equality iff a = b",
+        "Extended AM-GM: (a + b + c)/3 ≥ (abc)^(1/3) for a, b, c ≥ 0",
+        "Sign-of-difference: to prove A ≥ B, show A − B ≥ 0 by factorising or completing the square",
+        "Squaring method: to prove √A ≥ √B (when A, B ≥ 0), it suffices to prove A ≥ B",
+        "Triangle inequality: |a + b| ≤ |a| + |b| — applies to real numbers and complex numbers",
+        "Cauchy-Schwarz: (a₁b₁ + a₂b₂)² ≤ (a₁² + a₂²)(b₁² + b₂²) — equality iff a₁/b₁ = a₂/b₂"
+      ],
+      "commonErrors": [
+        "Using AM-GM without verifying that all terms are non-negative",
+        "Not stating when equality holds — this is often a separate mark in HSC questions",
+        "Incorrectly manipulating inequalities — multiplying/dividing by a negative flips the sign",
+        "In sign-of-difference proofs: factorising incorrectly or missing factors",
+        "Confusing AM-GM (for non-negatives) with other mean inequalities"
+      ],
+      "examTips": [
+        "For AM-GM: write the statement explicitly first, then identify what a and b are in your problem",
+        "Always state the equality condition: 'Equality holds when a = b'",
+        "Sign-of-difference is often the safest method: compute LHS − RHS and show it's ≥ 0",
+        "Complete the square when you see a quadratic expression in an inequality"
+      ],
+      "socraticPrompts": [
+        "Use AM-GM to prove that x + 1/x ≥ 2 for x > 0. When does equality hold?",
+        "To prove a² + b² ≥ 2ab, what expression would you compute: LHS − RHS?",
+        "How does the Cauchy-Schwarz inequality help prove (a + b)² ≤ 2(a² + b²)?",
+        "Why must you check that all terms are positive before applying AM-GM?"
+      ],
+      "workedExampleTemplate": {
+        "type": "proof-inequality",
+        "steps": ["Choose the method: AM-GM, sign-of-difference, squaring, or Cauchy-Schwarz", "Apply the method — show full algebraic working", "Justify each inequality sign: state which theorem or property is being used", "State when equality holds", "Conclude that the inequality is proved"]
+      },
+      "relatedDotPoints": ["MEX-P1.1", "MEX-P1.3"]
+    },
+
+    "MEX-N1.1": {
+      "code": "MEX-N1.1",
+      "name": "Arithmetic of complex numbers",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N1",
+      "year": 12,
+      "summary": "Perform arithmetic with complex numbers in Cartesian form a + ib; use the conjugate to divide.",
+      "keyConcepts": [
+        "i² = −1 by definition; i³ = −i; i⁴ = 1 — powers of i cycle with period 4",
+        "Addition: (a + ib) + (c + id) = (a+c) + i(b+d)",
+        "Multiplication: (a + ib)(c + id) = (ac − bd) + i(ad + bc) using FOIL and i² = −1",
+        "Complex conjugate: if z = a + ib then z̄ = a − ib",
+        "Division: multiply numerator and denominator by the conjugate of the denominator",
+        "z · z̄ = a² + b² = |z|² — always real and non-negative",
+        "Re(z) = a, Im(z) = b (the imaginary part is the real number b, not ib)"
+      ],
+      "commonErrors": [
+        "Writing Im(z) = ib instead of Im(z) = b — the imaginary part is a real number",
+        "Forgetting to apply i² = −1 when expanding products, leading to incorrect real/imaginary parts",
+        "Division errors: not multiplying both numerator and denominator by the conjugate",
+        "Sign error in conjugate: z̄ = a − ib not a + ib",
+        "Thinking z · z̄ = 0 — it equals |z|², which is zero only if z = 0"
+      ],
+      "examTips": [
+        "For division: write z₁/z₂ = z₁·z̄₂ / (z₂·z̄₂) and simplify — the denominator becomes |z₂|² which is real",
+        "Check your answer: Re and Im parts should both be real numbers",
+        "For powers of i: use i⁴ = 1, so i^n depends on n mod 4",
+        "Always expand products using FOIL then replace i² with −1 at the end"
+      ],
+      "socraticPrompts": [
+        "Multiply (2 + 3i)(1 − i). What is i² in the expansion?",
+        "If z = 3 + 4i, what is z̄? What is z · z̄?",
+        "Divide (1 + 2i) by (3 − i) by multiplying top and bottom by the conjugate of the denominator.",
+        "What is i^47? (Hint: what is 47 mod 4?)"
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-arithmetic",
+        "steps": ["Write out the operation", "Apply FOIL if multiplying; multiply by conjugate if dividing", "Replace i² = −1 throughout", "Collect real and imaginary parts separately", "State Re(z) and Im(z) if required"]
+      },
+      "relatedDotPoints": ["MEX-N1.2", "MEX-N1.3", "MEX-N2.2"]
+    },
+
+    "MEX-N1.2": {
+      "code": "MEX-N1.2",
+      "name": "The Argand diagram",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N1",
+      "year": 12,
+      "summary": "Represent and interpret complex numbers geometrically on the Argand diagram; find modulus and argument.",
+      "keyConcepts": [
+        "The Argand diagram is the complex plane: horizontal axis = real part, vertical axis = imaginary part",
+        "Modulus: |z| = √(a² + b²) — the distance from the origin",
+        "|z₁ − z₂| is the distance between z₁ and z₂ on the Argand diagram",
+        "Argument: arg(z) = θ where tanθ = b/a — measure the angle from positive real axis, anticlockwise positive",
+        "Principal argument: arg(z) ∈ (−π, π] — must adjust using the quadrant of (a, b)",
+        "z + z̄ = 2a = 2Re(z); z − z̄ = 2ib = 2i·Im(z)"
+      ],
+      "commonErrors": [
+        "Using arg(z) = tan⁻¹(b/a) without adjusting for the correct quadrant — this only gives the correct angle in the first and fourth quadrants",
+        "Stating arg(z) ∈ [0, 2π] — the principal argument is in (−π, π], not [0, 2π]",
+        "Confusing |z₁ − z₂| with |z₁| − |z₂|",
+        "Plotting imaginary part on horizontal axis instead of vertical",
+        "Not including the point itself when describing a locus (e.g. ≤ vs <)"
+      ],
+      "examTips": [
+        "Always draw a diagram — the quadrant of (a, b) determines the correct argument",
+        "arg(z) for the 2nd quadrant: θ = π − tan⁻¹(|b/a|); 3rd quadrant: θ = −π + tan⁻¹(|b/a|)",
+        "For locus problems: |z − (a + ib)| = r is a circle centred at (a, b) with radius r",
+        "Geometric interpretation: addition is vector addition; conjugate is reflection in real axis"
+      ],
+      "socraticPrompts": [
+        "Find |z| and arg(z) for z = −1 + i. Draw it on the Argand diagram.",
+        "What does |z − 3| = 2 look like on the Argand diagram?",
+        "If z = 2 cis(π/3), what are Re(z) and Im(z)?",
+        "Why can't you just use tan⁻¹(b/a) for all arguments without checking the quadrant?"
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-argand",
+        "steps": ["Plot z = a + ib on the Argand diagram", "Calculate |z| = √(a² + b²)", "Find the reference angle: α = tan⁻¹(|b/a|)", "Adjust for the quadrant to find the principal argument θ ∈ (−π, π]", "State arg(z) = θ"]
+      },
+      "relatedDotPoints": ["MEX-N1.1", "MEX-N1.3", "MEX-N2.1"]
+    },
+
+    "MEX-N1.3": {
+      "code": "MEX-N1.3",
+      "name": "Modulus-argument (polar) form",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N1",
+      "year": 12,
+      "summary": "Convert between Cartesian and polar form; multiply and divide in polar form.",
+      "keyConcepts": [
+        "Polar form: z = r(cosθ + i sinθ) = r cis θ where r = |z| and θ = arg(z)",
+        "Converting to polar: find r = √(a² + b²) and θ = arg(z) (with quadrant check)",
+        "Converting from polar: a = r cosθ, b = r sinθ",
+        "Multiplication: z₁z₂ = r₁r₂ cis(θ₁ + θ₂) — multiply moduli, add arguments",
+        "Division: z₁/z₂ = (r₁/r₂) cis(θ₁ − θ₂) — divide moduli, subtract arguments",
+        "Geometric interpretation: multiplying by r cis θ scales by r and rotates by θ"
+      ],
+      "commonErrors": [
+        "Adding arguments outside (−π, π] without adjusting — always reduce the argument to the principal range",
+        "Multiplying arguments instead of adding them during multiplication",
+        "Converting from polar incorrectly — a = r cosθ (real part), b = r sinθ (imaginary part)",
+        "Using degrees instead of radians in polar form without being instructed to",
+        "Forgetting that division subtracts the argument: θ₁ − θ₂, not θ₁ + θ₂"
+      ],
+      "examTips": [
+        "After multiplying or dividing, always check if the result's argument needs to be adjusted to (−π, π]",
+        "Multiplication in polar form is much faster than expanding in Cartesian form",
+        "Know the exact values: cis(π/6), cis(π/4), cis(π/3), cis(π/2), cis(π) etc.",
+        "Geometric meaning: |z₁z₂| = |z₁||z₂| and arg(z₁z₂) = arg(z₁) + arg(z₂)"
+      ],
+      "socraticPrompts": [
+        "Write z = −√3 + i in polar form. What is r? What is θ?",
+        "Multiply 2 cis(π/3) by 3 cis(π/4). What is the result in polar form?",
+        "What is the geometric effect of multiplying z by i? What does i equal in polar form?",
+        "Divide 4 cis(π/2) by 2 cis(π/6). State the result in polar and Cartesian form."
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-polar",
+        "steps": ["Find r = |z| and θ = arg(z) with quadrant adjustment", "Write z = r cis θ", "For multiplication/division: apply the rules for moduli and arguments", "Convert back to Cartesian form if required", "Adjust argument to principal range (−π, π] if needed"]
+      },
+      "relatedDotPoints": ["MEX-N1.2", "MEX-N1.4", "MEX-N2.1"]
+    },
+
+    "MEX-N1.4": {
+      "code": "MEX-N1.4",
+      "name": "De Moivre's theorem and applications",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N1",
+      "year": 12,
+      "summary": "Apply De Moivre's theorem to find powers, roots, and multiple-angle identities.",
+      "keyConcepts": [
+        "De Moivre's theorem: (r cis θ)ⁿ = rⁿ cis(nθ) for any integer n",
+        "Application to multiple angles: (cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ)",
+        "Use binomial expansion of (cosθ + i sinθ)ⁿ and equate real/imaginary parts to get cos(nθ) and sin(nθ) in terms of powers of cosθ and sinθ",
+        "n-th roots: the n solutions of zⁿ = r cis α are z_k = r^(1/n) cis((α + 2kπ)/n) for k = 0, 1, ..., n−1",
+        "Roots of unity: solutions of zⁿ = 1 are z_k = cis(2kπ/n) — equally spaced on the unit circle"
+      ],
+      "commonErrors": [
+        "Forgetting to include ALL n roots — always generate k = 0, 1, 2, ..., n−1",
+        "Using the wrong step for roots: arguments must differ by 2π/n, not π/n",
+        "In multiple-angle proofs: expanding (cosθ + i sinθ)ⁿ using Pascal's triangle but making sign errors with i² = −1, i³ = −i etc.",
+        "Leaving arguments outside (−π, π] — adjust each root to the principal range",
+        "Confusing De Moivre for fractional n (roots) with integer n (powers)"
+      ],
+      "examTips": [
+        "For roots: always draw the solutions on the Argand diagram — they are equally spaced on a circle",
+        "For multiple-angle formulas: expand using binomial theorem, then collect real and imaginary parts separately",
+        "Check your roots by substituting back: each root zₖ should satisfy zₖⁿ = original number",
+        "The sum of all n-th roots of unity equals zero — useful shortcut"
+      ],
+      "socraticPrompts": [
+        "Use De Moivre's theorem to find (1 + i)^8. First write (1+i) in polar form.",
+        "Find all cube roots of 8 cis(π). How many are there? What is the argument spacing?",
+        "Expand (cosθ + i sinθ)³ using the binomial theorem to find cos(3θ) in terms of cosθ.",
+        "Why are the n-th roots of unity equally spaced on the unit circle?"
+      ],
+      "workedExampleTemplate": {
+        "type": "de-moivre",
+        "steps": ["Write the complex number in polar form r cis θ", "Apply De Moivre: (r cis θ)^n = r^n cis(nθ)", "For roots: use z_k = r^(1/n) cis((θ + 2kπ)/n) for k = 0, 1, ..., n−1", "Adjust each argument to principal range", "Convert to Cartesian form if required"]
+      },
+      "relatedDotPoints": ["MEX-N1.3", "MEX-N2.2", "MEX-N2.3"]
+    },
+
+    "MEX-N2.1": {
+      "code": "MEX-N2.1",
+      "name": "Curves and regions in the complex plane",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N2",
+      "year": 12,
+      "summary": "Describe and sketch curves and regions defined by modulus and argument conditions.",
+      "keyConcepts": [
+        "|z − a| = r: circle with centre a and radius r",
+        "|z − a| ≤ r: closed disk (including boundary) centred at a",
+        "|z − a| = |z − b|: perpendicular bisector of the segment from a to b",
+        "arg(z − a) = θ: ray starting at a (not including a) in direction θ",
+        "Re(z) = c: vertical line x = c; Im(z) = c: horizontal line y = c",
+        "Composite loci: intersect or union of basic shapes — sketch both and identify the required region"
+      ],
+      "commonErrors": [
+        "Circle: using the wrong centre — |z − (2 + 3i)| = 4 has centre (2, 3), not (−2, −3)",
+        "Ray: forgetting that arg(z − a) = θ is a ray from a, not through the origin",
+        "Perpendicular bisector: computing the midpoint of a and b correctly but drawing the bisector in the wrong direction",
+        "Including or excluding endpoints incorrectly — a strict inequality excludes the boundary",
+        "Not simplifying the condition before sketching — rewrite z in terms of Re(z) = x, Im(z) = y"
+      ],
+      "examTips": [
+        "For every locus: write out what it means in (x, y) form to double-check before sketching",
+        "|z − z₁| = |z − z₂| → perpendicular bisector: find it by solving (x−x₁)² + (y−y₁)² = (x−x₂)² + (y−y₂)²",
+        "For arg conditions: identify the starting point and direction of the ray, mark it clearly with an arrow",
+        "Shade regions carefully — use a test point to confirm which side of a boundary is included"
+      ],
+      "socraticPrompts": [
+        "What curve is described by |z − (1 + 2i)| = 3? What are its centre and radius?",
+        "Describe the locus arg(z + 1) = π/4 geometrically. Where does the ray start? In which direction?",
+        "What does |z − 2i| = |z + 2i| represent? Find the Cartesian equation.",
+        "Sketch the region where |z| ≤ 2 and 0 ≤ arg(z) ≤ π/2. What shape is it?"
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-locus",
+        "steps": ["Write z = x + iy and substitute into the condition", "Simplify to find the Cartesian equation", "Identify the geometric shape (circle, line, ray, region)", "Sketch on the Argand diagram with labelled key points", "Indicate whether boundaries are included (solid) or excluded (dashed)"]
+      },
+      "relatedDotPoints": ["MEX-N1.2", "MEX-N1.3", "MEX-N2.3"]
+    },
+
+    "MEX-N2.2": {
+      "code": "MEX-N2.2",
+      "name": "Complex numbers and polynomials",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N2",
+      "year": 12,
+      "summary": "Apply the conjugate root theorem; factorise polynomials over ℂ; solve polynomial equations.",
+      "keyConcepts": [
+        "Conjugate root theorem: if P(x) is a polynomial with real coefficients and α = a + ib is a root, then ᾱ = a − ib is also a root",
+        "Complex roots always come in conjugate pairs for real polynomials",
+        "Fundamental theorem of algebra: every non-constant polynomial has at least one complex root; a degree-n polynomial has exactly n roots (counting multiplicity) over ℂ",
+        "To factorise: if α and ᾱ are roots, then (x − α)(x − ᾱ) = x² − 2ax + (a² + b²) is a real quadratic factor",
+        "Over ℝ: polynomials factorise into linear and irreducible quadratic factors"
+      ],
+      "commonErrors": [
+        "Applying the conjugate root theorem to polynomials with complex coefficients — it only applies when coefficients are real",
+        "Finding one complex root but forgetting its conjugate is also a root",
+        "Incorrect expansion of (x − α)(x − ᾱ) — use the product of conjugates: multiply out carefully",
+        "Not accounting for all n roots of a degree-n polynomial",
+        "Dividing the polynomial by the quadratic factor using long division incorrectly"
+      ],
+      "examTips": [
+        "Always state: 'Since coefficients are real, the conjugate ᾱ is also a root'",
+        "Expand (x − α)(x − ᾱ) as a real quadratic: this equals x² − 2Re(α)x + |α|²",
+        "Divide the original polynomial by this quadratic to find remaining factors",
+        "Check: the product of all factors should equal the original polynomial"
+      ],
+      "socraticPrompts": [
+        "P(x) has real coefficients. If 2 + 3i is a root, what other root must exist? Why?",
+        "Find a real quadratic factor of P(x) given that 1 + i is a root.",
+        "P(x) = x³ − 3x² + 4x − 2. Verify that x = 1 is a root, then find all complex roots.",
+        "Why does the conjugate root theorem require real coefficients?"
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-polynomial",
+        "steps": ["Identify a known complex root α", "State that ᾱ is also a root (justify with real coefficients)", "Form the real quadratic factor (x − α)(x − ᾱ) = x² − 2Re(α)x + |α|²", "Divide the polynomial by this quadratic", "Factorise or solve the remaining quotient"]
+      },
+      "relatedDotPoints": ["MEX-N1.1", "MEX-N1.4", "ME-F2.1", "ME-F2.2"]
+    },
+
+    "MEX-N2.3": {
+      "code": "MEX-N2.3",
+      "name": "Geometry using complex numbers",
+      "topic": "MEX-N",
+      "subtopic": "MEX-N2",
+      "year": 12,
+      "summary": "Use complex number operations to represent and prove geometric transformations and results.",
+      "keyConcepts": [
+        "Multiplying z by i rotates it 90° anticlockwise: i × (a + ib) = −b + ia",
+        "Multiplying z by cis θ rotates by angle θ; multiplying by r scales by factor r",
+        "Translation: adding a constant complex number c shifts every point by the vector c",
+        "Rotation about a point w: z' = (z − w) cis θ + w",
+        "To prove ABCD is a parallelogram: show AB⃗ = DC⃗ i.e. B − A = C − D",
+        "To prove a right angle: show (z₃ − z₁)/(z₂ − z₁) is purely imaginary (ratio has Re = 0)"
+      ],
+      "commonErrors": [
+        "Rotation about the origin: multiplying z by cis θ is correct; but rotation about a general point w requires the translate-rotate-translate-back formula",
+        "Proving perpendicularity: students divide and show Im ≠ 0 rather than Re = 0 — confirm the correct condition",
+        "Parallelogram proof: order of vertices matters — ABCD requires AB = DC (not AB = CD)",
+        "Sign errors when working out the effect of multiplying by i"
+      ],
+      "examTips": [
+        "Rotation of z about the origin by θ: multiply by cis θ",
+        "For 90° rotation: multiply by i (anticlockwise) or −i (clockwise)",
+        "Perpendicular vectors: if (z₂ − z₁)/(z₃ − z₁) is purely imaginary, the angle at z₁ is 90°",
+        "Collinear points: if (z₂ − z₁)/(z₃ − z₁) is real, then z₁, z₂, z₃ are collinear"
+      ],
+      "socraticPrompts": [
+        "If z = 2 + i, what is iz? Describe the geometric transformation.",
+        "The points A, B, C, D represent z₁, z₂, z₃, z₄. How can you show ABCD is a parallelogram using complex numbers?",
+        "How would you rotate the point z = 1 + i by 60° about the origin?",
+        "What condition on (z₃ − z₁)/(z₂ − z₁) would tell you that the angle at z₁ is 90°?"
+      ],
+      "workedExampleTemplate": {
+        "type": "complex-geometry",
+        "steps": ["Identify the transformation (rotation, translation, dilation)", "Apply the corresponding complex number operation", "For geometric proofs: compute differences or ratios of complex numbers", "Interpret the result: purely real → collinear; purely imaginary → perpendicular", "State the geometric conclusion clearly"]
+      },
+      "relatedDotPoints": ["MEX-N1.3", "MEX-N1.4", "MEX-N2.1"]
+    },
+
+    "MEX-V1.1": {
+      "code": "MEX-V1.1",
+      "name": "3D vectors — representations and operations",
+      "topic": "MEX-V",
+      "subtopic": "MEX-V1",
+      "year": 12,
+      "summary": "Extend vector operations to three dimensions using i, j, k components.",
+      "keyConcepts": [
+        "A 3D vector: v = xi + yj + zk or (x, y, z)",
+        "Magnitude: |v| = √(x² + y² + z²)",
+        "Unit vector: v̂ = v/|v|",
+        "Addition/subtraction: component-wise",
+        "Scalar multiplication: k(x, y, z) = (kx, ky, kz)",
+        "Position vector of P(x, y, z): OP = xi + yj + zk",
+        "Direction cosines: cos α = x/|v|, cos β = y/|v|, cos γ = z/|v| where α, β, γ are angles with x, y, z axes"
+      ],
+      "commonErrors": [
+        "Forgetting the z-component in 3D calculations — always check all three components",
+        "Magnitude: using √(x² + y²) instead of √(x² + y² + z²)",
+        "Unit vector: dividing only one component by the magnitude instead of all three",
+        "Confusing position vectors with displacement vectors"
+      ],
+      "examTips": [
+        "Write all vectors in full component form before performing operations",
+        "Check: the unit vector should have magnitude exactly 1 — verify after computing",
+        "Direction cosines: cos²α + cos²β + cos²γ = 1 — use this as a check"
+      ],
+      "socraticPrompts": [
+        "Find the magnitude of v = 2i − j + 2k. Then find the unit vector.",
+        "What is the position vector of the midpoint of A(1, 2, 3) and B(3, 0, 1)?",
+        "If |v| = 5 and v̂ = (3/5)i + (4/5)j + 0k, what is v?",
+        "Find the direction cosines of v = i + j + k."
+      ],
+      "workedExampleTemplate": {
+        "type": "vector-3d",
+        "steps": ["Write vectors in component form", "Perform the required operation component-wise", "Calculate magnitude using 3D Pythagorean theorem", "Find unit vector by dividing by magnitude", "Interpret geometrically if required"]
+      },
+      "relatedDotPoints": ["ME-V1.1", "MEX-V1.2", "MEX-V1.3"]
+    },
+
+    "MEX-V1.2": {
+      "code": "MEX-V1.2",
+      "name": "Dot product in 3D and applications",
+      "topic": "MEX-V",
+      "subtopic": "MEX-V1",
+      "year": 12,
+      "summary": "Apply the dot product in 3D to find angles, test perpendicularity, and compute projections.",
+      "keyConcepts": [
+        "Dot product: a·b = x₁x₂ + y₁y₂ + z₁z₂ = |a||b|cosθ",
+        "Perpendicularity: a·b = 0",
+        "Angle: cosθ = (a·b)/(|a||b|), where θ ∈ [0, π]",
+        "Scalar resolute of b onto a: (a·b)/|a|",
+        "Vector resolute of b onto a: [(a·b)/|a|²]a",
+        "Component of b perpendicular to a: b − [(a·b)/|a|²]a"
+      ],
+      "commonErrors": [
+        "Using only two components of a 3D dot product — must include all three",
+        "Forgetting to divide by |a||b| when finding the angle",
+        "Projection: using |b| instead of |a| in the denominator",
+        "Not distinguishing between scalar resolute (a number) and vector resolute (a vector)"
+      ],
+      "examTips": [
+        "Always show the dot product formula and substitution explicitly",
+        "For angle: if a·b < 0, the angle is obtuse — this is valid and correct",
+        "State clearly whether asked for scalar or vector resolute"
+      ],
+      "socraticPrompts": [
+        "Find the angle between a = (1, 2, 2) and b = (2, −1, 0).",
+        "Show that a = i − 2j + k and b = 2i + j are perpendicular.",
+        "Find the vector resolute of b = (3, 1, 2) in the direction of a = (1, 0, 1).",
+        "What is the component of b perpendicular to a?"
+      ],
+      "workedExampleTemplate": {
+        "type": "dot-product-3d",
+        "steps": ["Calculate a·b = x₁x₂ + y₁y₂ + z₁z₂", "Calculate |a| and |b|", "Find angle via cosθ = (a·b)/(|a||b|)", "For projection: apply scalar or vector resolute formula", "State the result with correct units/interpretation"]
+      },
+      "relatedDotPoints": ["MEX-V1.1", "MEX-V1.3", "MEX-V1.4"]
+    },
+
+    "MEX-V1.3": {
+      "code": "MEX-V1.3",
+      "name": "Vector equations of lines and planes",
+      "topic": "MEX-V",
+      "subtopic": "MEX-V1",
+      "year": 12,
+      "summary": "Find and use vector and Cartesian equations of lines and planes in 3D.",
+      "keyConcepts": [
+        "Vector equation of a line: r = a + λd where a is a point on the line and d is a direction vector",
+        "Cartesian equations of a line: (x − x₀)/l = (y − y₀)/m = (z − z₀)/n where (l, m, n) is the direction vector",
+        "Equation of a plane with normal n = (A, B, C) through point (x₀, y₀, z₀): A(x−x₀) + B(y−y₀) + C(z−z₀) = 0 or Ax + By + Cz = d",
+        "The normal vector is perpendicular to every vector in the plane",
+        "To find the equation of a plane: find two vectors in the plane, then the normal = cross product of those two vectors"
+      ],
+      "commonErrors": [
+        "Line equation: confusing the direction vector d with the position vector a",
+        "Plane equation: using a vector in the plane instead of a normal vector",
+        "Not simplifying Ax + By + Cz = d by dividing through if all coefficients share a factor",
+        "Cartesian line equation: leaving zeros in the denominator — handle the case d = 0 for a component by stating that coordinate is constant"
+      ],
+      "examTips": [
+        "To find the normal to a plane from two in-plane vectors, use the cross product (MEX-V1.4)",
+        "To find if a point is on a plane: substitute its coordinates into Ax + By + Cz and check if it equals d",
+        "Parametric form of a line is very useful — convert between vector, parametric and Cartesian forms"
+      ],
+      "socraticPrompts": [
+        "Find the vector equation of the line through (1, 2, 3) in the direction (2, −1, 1).",
+        "What is the equation of the plane through (1, 0, 0) with normal vector (1, 2, 3)?",
+        "Does the point (3, 0, 2) lie on the plane 2x + y − z = 4?",
+        "Find the Cartesian equation of the line r = (1, 1, 0) + λ(2, 3, 1)."
+      ],
+      "workedExampleTemplate": {
+        "type": "vector-line-plane",
+        "steps": ["Identify a point on the line/plane and a direction/normal vector", "Write the vector equation", "Convert to Cartesian form if required", "Verify a given point satisfies the equation", "Determine relationships between lines/planes (parallel, intersecting)"]
+      },
+      "relatedDotPoints": ["MEX-V1.2", "MEX-V1.4", "ME-V1.3"]
+    },
+
+    "MEX-V1.4": {
+      "code": "MEX-V1.4",
+      "name": "Cross product and geometric applications",
+      "topic": "MEX-V",
+      "subtopic": "MEX-V1",
+      "year": 12,
+      "summary": "Calculate and apply the cross product to find normal vectors, and areas of triangles and parallelograms.",
+      "keyConcepts": [
+        "Cross product: a × b = (a₂b₃ − a₃b₂)i − (a₁b₃ − a₃b₁)j + (a₁b₂ − a₂b₁)k (using the 3×3 determinant with i, j, k in the first row)",
+        "a × b is perpendicular to both a and b",
+        "|a × b| = |a||b|sinθ",
+        "Area of parallelogram with sides a and b: |a × b|",
+        "Area of triangle with sides a and b: (1/2)|a × b|",
+        "Anti-commutativity: b × a = −(a × b)"
+      ],
+      "commonErrors": [
+        "Sign error in the j component — the j component has a negative sign in the determinant expansion: −(a₁b₃ − a₃b₁)",
+        "Using a × b = b × a — the cross product is anti-commutative, not commutative",
+        "Area formula: using |a × b| for triangle area — must halve it for the triangle",
+        "Not checking that the result is perpendicular to both original vectors"
+      ],
+      "examTips": [
+        "Set up the 3×3 determinant with i, j, k in the first row — this is the most reliable method",
+        "Always verify: compute a·(a × b) and b·(a × b) — both should be 0",
+        "For area problems: |a × b| gives parallelogram area; (1/2)|a × b| gives triangle area",
+        "The right-hand rule gives the direction of a × b"
+      ],
+      "socraticPrompts": [
+        "Find a × b where a = (1, 2, 3) and b = (4, 5, 6). Verify it is perpendicular to a.",
+        "Find the area of the triangle with vertices A(1,0,0), B(0,1,0), C(0,0,1).",
+        "Why is a × b perpendicular to both a and b?",
+        "What is b × a if a × b = (2, −1, 3)?"
+      ],
+      "workedExampleTemplate": {
+        "type": "cross-product",
+        "steps": ["Set up the 3×3 determinant: [i j k; a₁ a₂ a₃; b₁ b₂ b₃]", "Expand along the first row: i(a₂b₃−a₃b₂) − j(a₁b₃−a₃b₁) + k(a₁b₂−a₂b₁)", "Verify perpendicularity: dot product with a and b should both be 0", "Calculate |a × b| for area applications", "State the result with correct interpretation"]
+      },
+      "relatedDotPoints": ["MEX-V1.2", "MEX-V1.3"]
+    },
+
+    "MEX-C1.1": {
+      "code": "MEX-C1.1",
+      "name": "Integration by parts",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C1",
+      "year": 12,
+      "summary": "Apply integration by parts to integrate products; handle repeated application and recurring integrals.",
+      "keyConcepts": [
+        "Formula: ∫u dv = uv − ∫v du",
+        "LIATE order for choosing u: Logarithm, Inverse trig, Algebraic, Trigonometric, Exponential",
+        "Repeated application: sometimes needed twice (e.g. ∫x² eˣ dx)",
+        "Recurring integral: when the original integral appears again in ∫v du, rearrange algebraically — never apply IBP again to the recurrence",
+        "∫ln x dx: let u = ln x, dv = dx — a standard result that comes directly from IBP",
+        "Definite integral version: [uv]ₐᵇ − ∫ₐᵇ v du"
+      ],
+      "commonErrors": [
+        "Choosing u and dv incorrectly — LIATE gives the best choice in most cases",
+        "Forgetting to differentiate u to get du or integrate dv to get v",
+        "Sign error in the formula — it is uv MINUS ∫v du, not plus",
+        "For recurring integrals: applying IBP a third time instead of rearranging — recognise when the integral recurs",
+        "Forgetting +C for indefinite integrals"
+      ],
+      "examTips": [
+        "Write out u, dv, du, v explicitly before applying the formula",
+        "For ∫x eˣ dx: u = x, dv = eˣ dx → du = dx, v = eˣ",
+        "For recurring integral I: write I = [result] − kI, then solve: I(1 + k) = [result]",
+        "Check by differentiating your answer — you should recover the original integrand"
+      ],
+      "socraticPrompts": [
+        "Integrate ∫x eˣ dx. What do you choose for u and dv? Why?",
+        "Integrate ∫x² sin x dx. How many times do you need to apply integration by parts?",
+        "Integrate ∫eˣ cos x dx. When the original integral recurs, what do you do?",
+        "Use integration by parts to integrate ∫ln x dx."
+      ],
+      "workedExampleTemplate": {
+        "type": "integration-by-parts",
+        "steps": ["Choose u and dv using LIATE", "Find du (differentiate u) and v (integrate dv)", "Apply the formula: ∫u dv = uv − ∫v du", "Evaluate the remaining integral (apply IBP again if needed)", "Add +C or apply limits for definite integral"]
+      },
+      "relatedDotPoints": ["MEX-C1.2", "MEX-C1.3", "MA-C4.1"]
+    },
+
+    "MEX-C1.2": {
+      "code": "MEX-C1.2",
+      "name": "Integration using substitution — harder cases",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C1",
+      "year": 12,
+      "summary": "Apply trigonometric and Weierstrass substitutions to evaluate harder integrals.",
+      "keyConcepts": [
+        "Trig substitution for √(a² − x²): let x = a sinθ, dx = a cosθ dθ, √(a² − x²) = a cosθ",
+        "Trig substitution for √(a² + x²): let x = a tanθ, dx = a sec²θ dθ, √(a² + x²) = a secθ",
+        "Trig substitution for √(x² − a²): let x = a secθ, dx = a secθ tanθ dθ, √(x² − a²) = a tanθ",
+        "Weierstrass (t-formula): let t = tan(θ/2), then sinθ = 2t/(1+t²), cosθ = (1−t²)/(1+t²), dθ = 2/(1+t²) dt",
+        "For definite integrals with substitution: change the limits OR back-substitute — never mix the two"
+      ],
+      "commonErrors": [
+        "Not converting limits when using a substitution for a definite integral",
+        "Forgetting to substitute dx in terms of the new variable",
+        "Back-substitution errors: forgetting to draw a right triangle to convert back to x",
+        "Weierstrass: substituting sinθ or cosθ incorrectly from the t-formulas",
+        "Not simplifying √(a² − x²) fully after the substitution — confirm it becomes a cosθ"
+      ],
+      "examTips": [
+        "For trig subs: draw the right triangle to help with back-substitution",
+        "Weierstrass works on any rational function of sinθ and cosθ — always transforms to rational in t",
+        "Change limits for definite integrals immediately after substituting — write the new limits clearly",
+        "Check: after the substitution, no original variable should appear in the integrand"
+      ],
+      "socraticPrompts": [
+        "Integrate ∫√(4 − x²) dx using the substitution x = 2sinθ. What does dx become?",
+        "Use the Weierstrass substitution to convert ∫1/(1 + sinθ) dθ. What does sinθ become?",
+        "For ∫1/√(x² + 9) dx, what trig substitution would you use? Why?",
+        "After substituting x = 3tanθ, how do you convert back to x at the end?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-substitution",
+        "steps": ["Identify the form of the integrand and choose the appropriate substitution", "Express dx in terms of the new variable", "Substitute into the integral and simplify", "Evaluate the resulting integral", "Back-substitute (for indefinite) or apply new limits (for definite)"]
+      },
+      "relatedDotPoints": ["MEX-C1.1", "MEX-C1.3", "ME-C1.2"]
+    },
+
+    "MEX-C1.3": {
+      "code": "MEX-C1.3",
+      "name": "Partial fractions",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C1",
+      "year": 12,
+      "summary": "Decompose rational functions into partial fractions and integrate them.",
+      "keyConcepts": [
+        "Distinct linear factors: A/(x−a) + B/(x−b) + ... — one constant per factor",
+        "Repeated linear factors: A/(x−a) + B/(x−a)² + ... — one term per power",
+        "Irreducible quadratic factor (x² + bx + c): (Ax + B)/(x² + bx + c) — linear numerator",
+        "If degree of numerator ≥ degree of denominator: perform polynomial long division first",
+        "Cover-up method: for distinct linear factors, cover the factor and substitute its root",
+        "After decomposition: integrate each fraction separately using standard results"
+      ],
+      "commonErrors": [
+        "Not performing polynomial long division when the rational function is improper (degree of top ≥ degree of bottom)",
+        "Using A/(x² + bx + c) instead of (Ax + B)/(x² + bx + c) for irreducible quadratic factors",
+        "Sign errors when solving for constants — systematically equate coefficients or use strategic substitution",
+        "Incorrect integration: ∫A/(x−a) dx = A ln|x−a| + C (needs the absolute value and natural log)"
+      ],
+      "examTips": [
+        "Always check: is the fraction proper? If not, divide first",
+        "Cover-up method saves time for distinct linear factors",
+        "For irreducible quadratic: complete the square in the denominator before integrating",
+        "∫1/(x² + a²) dx = (1/a) tan⁻¹(x/a) + C — a standard form to remember"
+      ],
+      "socraticPrompts": [
+        "Decompose (3x + 5)/((x+1)(x−2)) into partial fractions.",
+        "Why can't you write A/(x² + 1) for an irreducible quadratic factor?",
+        "Before decomposing (x² + x + 1)/(x² − 1), what must you do first?",
+        "Integrate ∫1/((x+1)(x+3)) dx using partial fractions."
+      ],
+      "workedExampleTemplate": {
+        "type": "partial-fractions",
+        "steps": ["Check if the fraction is proper; perform long division if not", "Factorise the denominator fully", "Set up the partial fraction decomposition with appropriate numerators", "Solve for the unknown constants", "Integrate each partial fraction separately"]
+      },
+      "relatedDotPoints": ["MEX-C1.1", "MEX-C1.2", "ME-F2.1"]
+    },
+
+    "MEX-C1.4": {
+      "code": "MEX-C1.4",
+      "name": "Further volumes of solids of revolution",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C1",
+      "year": 12,
+      "summary": "Find volumes using disk, washer, and shell methods for rotation about x and y axes.",
+      "keyConcepts": [
+        "Disk method (rotation about x-axis): V = π ∫[f(x)]² dx between the limits",
+        "Washer method (between two curves): V = π ∫([f(x)]² − [g(x)]²) dx where f is the outer curve",
+        "Shell method (rotation about y-axis): V = 2π ∫x f(x) dx",
+        "Rotation about y-axis using disk: integrate with respect to y, expressing x in terms of y",
+        "Always draw a diagram: identify inner and outer curves, and the limits of integration"
+      ],
+      "commonErrors": [
+        "Forgetting the π in the volume formula — V = π ∫[f(x)]² dx, not ∫[f(x)]² dx",
+        "Squaring the difference instead of the difference of squares: [f(x) − g(x)]² ≠ [f(x)]² − [g(x)]²",
+        "Incorrect limits: use x-values where the curves intersect as limits",
+        "Rotation about y-axis: integrating with respect to x instead of y (for disk method about y)",
+        "Not checking which curve is outer and which is inner for the washer method"
+      ],
+      "examTips": [
+        "Always sketch the region first and identify the axis of rotation clearly",
+        "For washer: V = π ∫(R² − r²) dx where R = outer radius, r = inner radius",
+        "Find intersection points algebraically to establish limits — don't rely on the graph alone",
+        "Leave π as an exact factor; only approximate if instructed"
+      ],
+      "socraticPrompts": [
+        "The region under y = x² from x = 0 to x = 2 is rotated about the x-axis. Set up the volume integral.",
+        "What is the difference between the disk and washer methods?",
+        "Find the volume when y = √x is rotated about the y-axis from y = 0 to y = 2.",
+        "The region between y = x and y = x² is rotated about the x-axis. Which is the outer curve?"
+      ],
+      "workedExampleTemplate": {
+        "type": "volume-revolution",
+        "steps": ["Sketch the region and identify the axis of rotation", "Choose the method: disk, washer, or shell", "Set up the integral with the correct formula and limits", "Expand or simplify the integrand before integrating", "Evaluate and state the answer with units³ and exact π"]
+      },
+      "relatedDotPoints": ["MEX-C1.1", "MEX-C2.1", "MA-C4.2"]
+    },
+
+    "MEX-C2.1": {
+      "code": "MEX-C2.1",
+      "name": "First-order differential equations — separation of variables",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C2",
+      "year": 12,
+      "summary": "Solve separable DEs by integrating both sides; apply initial conditions for the particular solution.",
+      "keyConcepts": [
+        "Separation: write dy/dx = f(x)g(y), then g(y)⁻¹ dy = f(x) dx, then integrate both sides",
+        "The constant of integration C appears on one side only — include it immediately after integrating",
+        "General solution: contains C; particular solution: C found from initial conditions",
+        "Growth/decay model: dP/dt = kP → P = P₀ eᵏᵗ",
+        "Newton's law of cooling: dT/dt = k(T − Tₛ) → T − Tₛ = Ae^(kt)",
+        "Logistic growth: dP/dt = kP(1 − P/L) — bounded growth with carrying capacity L"
+      ],
+      "commonErrors": [
+        "Omitting C when integrating — this is one of the most common errors and invalidates the particular solution",
+        "Separating variables incorrectly — g(y) must be on the left with dy, not mixed with f(x)",
+        "Not applying the initial condition to find C before writing the final answer",
+        "Incorrect integration of standard forms (e.g. ∫1/y dy = ln|y|, not 1/y²)",
+        "Forgetting to solve for y explicitly after integrating if an explicit form is required"
+      ],
+      "examTips": [
+        "Write the general solution first with C, then apply the initial condition to find C",
+        "For ln|y| = f(x) + C: exponentiate both sides to get |y| = eᶜ · eᶠ⁽ˣ⁾ = Ae^f(x) where A > 0",
+        "In context questions: state what the solution means — units and interpretation matter",
+        "Verify your solution by differentiating and confirming it satisfies the original DE"
+      ],
+      "socraticPrompts": [
+        "Separate and solve dy/dx = xy with y(0) = 2. What is your first step?",
+        "A population grows at rate dP/dt = 0.03P. If P(0) = 1000, find P(t).",
+        "Why must you include +C on one side before applying initial conditions?",
+        "Solve dT/dt = −0.1(T − 20) with T(0) = 80. What does T approach as t → ∞?"
+      ],
+      "workedExampleTemplate": {
+        "type": "differential-equation",
+        "steps": ["Separate variables: f(y)⁻¹ dy = g(x) dx", "Integrate both sides — include +C on one side", "Solve for y explicitly if required", "Apply initial conditions to find C", "State the particular solution and interpret in context"]
+      },
+      "relatedDotPoints": ["MEX-C2.2", "MEX-C2.3", "MA-C4.1"]
+    },
+
+    "MEX-C2.2": {
+      "code": "MEX-C2.2",
+      "name": "Slope fields and qualitative analysis",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C2",
+      "year": 12,
+      "summary": "Sketch and interpret slope fields; identify equilibrium solutions and long-term behaviour.",
+      "keyConcepts": [
+        "Slope field: at each point (x, y), draw a short line segment with gradient dy/dx = f(x, y)",
+        "Solution curves follow the slope field — they are tangent to each segment at every point",
+        "Equilibrium (constant) solutions occur where dy/dx = 0 for all x, i.e. f(x, y) = 0 as a function of y only",
+        "Stable equilibrium: nearby solutions converge toward it as x → ∞",
+        "Unstable equilibrium: nearby solutions diverge away from it"
+      ],
+      "commonErrors": [
+        "Drawing segments that cross equilibrium solutions — solution curves cannot cross each other",
+        "Identifying stability incorrectly — check whether solutions above and below converge or diverge",
+        "Not checking whether the equilibrium is actually constant — substitute into the DE to verify",
+        "Sketching solution curves that don't follow the slope field direction at each point"
+      ],
+      "examTips": [
+        "Equilibrium solutions are horizontal lines y = c where f(x, c) = 0 for all x",
+        "Stability: if solutions above the equilibrium decrease and solutions below increase → stable",
+        "Use isoclines (curves where slope is constant) to guide your sketch"
+      ],
+      "socraticPrompts": [
+        "For dy/dx = y(1 − y), where are the equilibrium solutions? Are they stable or unstable?",
+        "If the slope field shows segments pointing upward above y = 2 and downward below, what does this tell you about y = 2?",
+        "How do you sketch a solution curve on a slope field if you know the initial condition y(0) = 0.5?",
+        "For dy/dx = −y, describe the long-term behaviour of solutions."
+      ],
+      "workedExampleTemplate": {
+        "type": "slope-field",
+        "steps": ["Find equilibrium solutions: set dy/dx = 0 and solve for y", "Determine stability by checking if nearby solutions approach or retreat", "Calculate slopes at key points to guide the slope field sketch", "Sketch several solution curves following the field", "Describe long-term behaviour"]
+      },
+      "relatedDotPoints": ["MEX-C2.1", "MEX-C2.3"]
+    },
+
+    "MEX-C2.3": {
+      "code": "MEX-C2.3",
+      "name": "Further applications of differential equations",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C2",
+      "year": 12,
+      "summary": "Apply DEs to resisted motion, mixing, and logistic growth; use v dv/dx for acceleration.",
+      "keyConcepts": [
+        "Resisted motion — upward: m dv/dt = −mg − kv (gravity and resistance both act downward)",
+        "Resisted motion — downward: m dv/dt = mg − kv (gravity acts down, resistance acts up)",
+        "Terminal velocity: when dv/dt = 0, so v_T = mg/k",
+        "Using v dv/dx = a to find velocity as a function of position: ∫v dv = ∫a dx",
+        "Mixing problem: dQ/dt = (rate in) − (rate out) where Q is the quantity of substance",
+        "Logistic growth: dP/dt = kP(L − P)/L where L is the carrying capacity"
+      ],
+      "commonErrors": [
+        "Incorrect signs in the equation of motion — carefully determine the positive direction",
+        "Confusing dv/dt (acceleration wrt time) with v dv/dx (acceleration wrt position) — choose based on what is required",
+        "Terminal velocity: setting v = 0 instead of dv/dt = 0",
+        "Mixing problems: getting the rate out wrong — it depends on concentration, which changes over time",
+        "Not separating the motion into phases (upward vs downward) when resistance acts on both"
+      ],
+      "examTips": [
+        "Define the positive direction clearly at the start of every mechanics problem",
+        "For v as a function of x: use v dv/dx = a; for v as a function of t: use dv/dt = a",
+        "Terminal velocity is the limiting speed — also found from the particular solution as t → ∞",
+        "In mixing problems: write Q(t) for the total amount, work out concentration = Q/volume, then build the DE"
+      ],
+      "socraticPrompts": [
+        "A particle falls with air resistance proportional to its velocity. Write the equation of motion. What is the terminal velocity?",
+        "Why do we use v dv/dx instead of dv/dt when we want to find displacement?",
+        "A tank contains 100L of brine. Pure water enters at 2 L/min and the mixture leaves at 2 L/min. Write a DE for the amount of salt Q(t).",
+        "For logistic growth dP/dt = 0.1P(1 − P/500), what is the carrying capacity?"
+      ],
+      "workedExampleTemplate": {
+        "type": "applied-de",
+        "steps": ["Define the positive direction and list all forces/rates acting", "Write the differential equation", "Choose the appropriate form of acceleration (dv/dt or v dv/dx)", "Separate variables and integrate", "Apply initial conditions and interpret the solution physically"]
+      },
+      "relatedDotPoints": ["MEX-C2.1", "MEX-C3.1", "MEX-C3.2"]
+    },
+
+    "MEX-C3.1": {
+      "code": "MEX-C3.1",
+      "name": "Simple harmonic motion",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C3",
+      "year": 12,
+      "summary": "Define and analyse SHM; derive displacement and velocity equations from the acceleration equation.",
+      "keyConcepts": [
+        "SHM definition: ẍ = −n²x (acceleration proportional to displacement, directed toward equilibrium)",
+        "Displacement: x = a cos(nt + α) or x = a sin(nt + α) where a = amplitude, n = angular frequency",
+        "Period: T = 2π/n",
+        "Velocity: v² = n²(a² − x²), so v = ±n√(a² − x²)",
+        "Maximum speed: |v|_max = na (at the equilibrium position x = 0)",
+        "Endpoints of motion: v = 0 at x = ±a",
+        "Centre of motion: x = 0"
+      ],
+      "commonErrors": [
+        "Confusing period T = 2π/n with T = 2π/ω — ensure n is the angular frequency in ẍ = −n²x",
+        "Velocity formula: using v = n(a − x) instead of v² = n²(a² − x²)",
+        "Forgetting that velocity can be negative — the particle moves in both directions",
+        "Phase constant α: determined by initial conditions, not assumed to be 0",
+        "Centre of motion: forgetting that SHM oscillates about the equilibrium, not about x = 0 in general problems where equilibrium is displaced"
+      ],
+      "examTips": [
+        "Always verify ẍ = −n²x before applying SHM formulas — confirm n from the coefficient",
+        "For v² = n²(a² − x²): maximum speed at x = 0, zero speed at x = ±a",
+        "Period and frequency are related: f = 1/T = n/(2π)",
+        "State whether the particle starts at equilibrium or an endpoint — this determines the phase"
+      ],
+      "socraticPrompts": [
+        "A particle has equation of motion ẍ = −4x. What is n? What is the period?",
+        "If x = 3cos(2t), find the velocity at t = π/4. What is the amplitude?",
+        "Use v² = n²(a² − x²) to find the speed when x = 2 for a particle with n = 3 and a = 5.",
+        "A particle starts at x = 0 moving in the positive direction. Write x(t) for SHM with n = 2 and a = 4."
+      ],
+      "workedExampleTemplate": {
+        "type": "shm",
+        "steps": ["Verify the equation is of the form ẍ = −n²x and identify n", "Write the general displacement solution x = a cos(nt + α) or a sin(nt + α)", "Apply initial conditions to find a and α", "Find period T = 2π/n and amplitude a", "Use v² = n²(a² − x²) for velocity at a given position"]
+      },
+      "relatedDotPoints": ["MEX-C2.3", "MEX-C3.2", "ME-C1.1"]
+    },
+
+    "MEX-C3.2": {
+      "code": "MEX-C3.2",
+      "name": "Harder resisted motion",
+      "topic": "MEX-C",
+      "subtopic": "MEX-C3",
+      "year": 12,
+      "summary": "Solve resisted motion problems with resistance proportional to v²; find terminal velocity and displacement.",
+      "keyConcepts": [
+        "Upward motion with resistance ∝ v²: m dv/dt = −mg − kv² (both gravity and resistance oppose motion)",
+        "Downward motion with resistance ∝ v²: m dv/dt = mg − kv² (gravity drives, resistance opposes)",
+        "Terminal velocity from dv/dt = 0: v_T = √(mg/k)",
+        "Using v dv/dx = (mg − kv²)/m to find x as a function of v",
+        "Integration produces ln expressions — careful with signs and absolute values",
+        "Separate upward and downward phases of motion and treat each separately"
+      ],
+      "commonErrors": [
+        "Using the same equation for upward and downward motion — the sign of air resistance changes",
+        "Terminal velocity: setting v = 0 (when particle is at rest) instead of dv/dt = 0 (limiting speed)",
+        "Integration: ∫dv/(a − bv²) requires partial fractions; ∫dv/(a + bv²) gives arctan",
+        "Not clearly defining the positive direction — inconsistency in signs causes errors throughout",
+        "Forgetting to consider the restriction v > 0 when applying absolute values after integration"
+      ],
+      "examTips": [
+        "State the positive direction at the very start and keep it consistent throughout",
+        "Separate the problem into upward and downward phases — use different equations for each",
+        "∫1/(a² − v²) dv = (1/2a) ln|(a+v)/(a−v)| + C — a standard partial fractions result",
+        "Verify terminal velocity: substitute v_T back into the equation of motion and confirm dv/dt = 0"
+      ],
+      "socraticPrompts": [
+        "A body falls with resistance kv². Write the equation for downward motion. What is the terminal velocity?",
+        "Why is the equation of motion different for the upward and downward phases?",
+        "Use v dv/dx = g − kv²/m to find x as a function of v for downward motion starting from rest.",
+        "What integral do you get for downward motion with resistance proportional to v²? How do you evaluate it?"
+      ],
+      "workedExampleTemplate": {
+        "type": "resisted-motion",
+        "steps": ["Define positive direction and write the equation of motion for each phase", "Find terminal velocity by setting dv/dt = 0", "Choose between dv/dt or v dv/dx based on what is required", "Integrate using standard results or partial fractions", "Apply initial conditions and interpret results physically"]
+      },
+      "relatedDotPoints": ["MEX-C2.3", "MEX-C3.1"]
+    },
+
+    "MEX-M1.1": {
+      "code": "MEX-M1.1",
+      "name": "Circular motion",
+      "topic": "MEX-M",
+      "subtopic": "MEX-M1",
+      "year": 12,
+      "summary": "Apply Newton's second law to circular motion; solve conical pendulum and banked curve problems.",
+      "keyConcepts": [
+        "Angular velocity: ω = dθ/dt (radians per second)",
+        "Speed in circular motion: v = ωr",
+        "Centripetal acceleration: a = v²/r = ω²r directed toward the centre",
+        "Centripetal force (net inward force): F = mv²/r = mω²r",
+        "Period: T = 2π/ω",
+        "Conical pendulum: horizontal component of tension provides centripetal force; vertical component balances gravity",
+        "Banked curve: normal force has a horizontal component providing centripetal force"
+      ],
+      "commonErrors": [
+        "Treating centripetal force as an additional force — it is the net resultant force directed inward, not a separate force",
+        "Conical pendulum: resolving components incorrectly — identify T cosθ (vertical) and T sinθ (horizontal centripetal)",
+        "Using v = ωr² instead of v = ωr",
+        "Not clearly defining the angle in conical pendulum problems — θ is measured from the vertical"
+      ],
+      "examTips": [
+        "Draw a clear force diagram first — identify all forces acting (tension, weight, normal, friction)",
+        "Net force toward centre = mv²/r — this is not an extra force, it is the resultant",
+        "For conical pendulum: two equations from resolving forces, plus v = ωr — three equations for three unknowns",
+        "Period T = 2π/ω = 2πr/v"
+      ],
+      "socraticPrompts": [
+        "Draw the forces on a mass on a conical pendulum. Which component provides the centripetal force?",
+        "A car takes a circular bend of radius 50m at 20 m/s. What centripetal force is required?",
+        "Why is centripetal force not drawn as a separate arrow on a force diagram?",
+        "For a conical pendulum at angle θ from the vertical, derive an expression for the period T."
+      ],
+      "workedExampleTemplate": {
+        "type": "circular-motion",
+        "steps": ["Draw a force diagram and label all forces", "Resolve forces vertically (net = 0 for constant speed in circle)", "Resolve forces horizontally toward centre: net = mv²/r", "Solve the simultaneous equations", "Find required quantities: speed, tension, period, angle"]
+      },
+      "relatedDotPoints": ["MEX-C2.3", "MEX-M1.2"]
+    },
+
+    "MEX-M1.2": {
+      "code": "MEX-M1.2",
+      "name": "Harder projectile motion",
+      "topic": "MEX-M",
+      "subtopic": "MEX-M1",
+      "year": 12,
+      "summary": "Extend projectile analysis to include air resistance; find the Cartesian path and optimal angle.",
+      "keyConcepts": [
+        "Without resistance: x = Vt cosα, y = Vt sinα − ½gt²; trajectory: y = x tanα − gx²/(2V²cos²α)",
+        "Maximum range on flat ground: achieved at α = 45° (without air resistance)",
+        "With resistance ∝ v (per unit mass): ẍ = −kẋ, ÿ = −g − kẏ",
+        "Horizontal: ẋ = V cosα · e^(−kt) → x = (V cosα/k)(1 − e^(−kt))",
+        "Effect of resistance: reduces range and height; optimal angle is less than 45°",
+        "Vector methods: r(t) = x(t)i + y(t)j — use components throughout"
+      ],
+      "commonErrors": [
+        "Without resistance: using the wrong Cartesian trajectory formula — derive it by eliminating t",
+        "With resistance: attempting to solve without using the given equations of motion — use the form provided",
+        "Finding maximum range: assuming it is always at 45° when resistance is present — this is false",
+        "Not eliminating t correctly to find the Cartesian equation of the path"
+      ],
+      "examTips": [
+        "For Cartesian trajectory: solve x = Vt cosα for t, then substitute into y",
+        "For range: set y = 0 and solve for t (not t = 0), then substitute into x",
+        "With resistance problems: HSC usually provides the equations of motion — follow the given form",
+        "The trajectory is always a parabola without resistance; with resistance it is not parabolic"
+      ],
+      "socraticPrompts": [
+        "A projectile is fired at speed 20 m/s at 30°. Find its range on flat ground.",
+        "Derive the Cartesian equation of the trajectory y in terms of x (without resistance).",
+        "Why does air resistance reduce the optimal launch angle below 45°?",
+        "With resistance, the horizontal equation of motion is ẍ = −kẋ. Solve this to find x(t)."
+      ],
+      "workedExampleTemplate": {
+        "type": "projectile-harder",
+        "steps": ["Resolve initial velocity into horizontal and vertical components", "Write equations of motion (with or without resistance)", "Integrate twice to find position equations x(t) and y(t)", "Eliminate t to find the Cartesian trajectory if required", "Find range, max height, or optimal angle as required"]
+      },
+      "relatedDotPoints": ["ME-V1.4", "MEX-C2.3", "MEX-M1.1"]
+    }
+
+  }
+}

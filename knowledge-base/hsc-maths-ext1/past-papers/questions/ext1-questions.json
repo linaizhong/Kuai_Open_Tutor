@@ -1,0 +1,1225 @@
+{
+  "subject": "HSC Mathematics Extension 1",
+  "description": "Past paper and representative practice question bank. Questions are structured in authentic HSC Extension 1 format with full marking guidelines.",
+  "note": "Questions marked 'representative' are modelled on authentic HSC question styles and difficulty. Verify NESA-sourced questions against official exam papers before production use.",
+  "questions": {
+
+    "2023-ME1-Q1": {
+      "id": "2023-ME1-Q1",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "1",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-F1.2"],
+      "topic": "ME-F",
+      "difficulty": "easy",
+      "stem": "Which of the following is the solution to the inequality (x - 1)/(x + 3) > 0?",
+      "options": {
+        "A": "x < -3 or x > 1",
+        "B": "-3 < x < 1",
+        "C": "x < 1",
+        "D": "x > -3"
+      },
+      "answer": "A",
+      "solution": {
+        "reasoning": "The expression is positive when both factors have the same sign. Case 1: x - 1 > 0 AND x + 3 > 0 → x > 1. Case 2: x - 1 < 0 AND x + 3 < 0 → x < -3. Note x = -3 is excluded (denominator = 0). Solution: x < -3 or x > 1.",
+        "answer": "A: x < -3 or x > 1"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects A"}],
+        "commonErrors": ["Selecting B (the region between the critical values — this is where the fraction is negative)", "Not excluding x = -3 from the solution"]
+      },
+      "tags": ["inequality", "sign diagram", "rational inequality", "critical values"]
+    },
+
+    "2023-ME1-Q2": {
+      "id": "2023-ME1-Q2",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "2",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-A1.1"],
+      "topic": "ME-A",
+      "difficulty": "easy",
+      "stem": "In how many ways can 6 people be seated in a circle?",
+      "options": {
+        "A": "6",
+        "B": "120",
+        "C": "360",
+        "D": "720"
+      },
+      "answer": "B",
+      "solution": {
+        "reasoning": "For circular arrangements, fix one person to remove rotational symmetry. The remaining 5 people can be arranged in 5! = 120 ways.",
+        "answer": "B: 120"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects B"}],
+        "commonErrors": ["Selecting D (using 6! = 720 — treating it as a linear arrangement)", "Selecting C (dividing 6! by 2 — incorrectly accounting for reflections as well)"]
+      },
+      "tags": ["circular permutation", "arrangement", "factorial"]
+    },
+
+    "2023-ME1-Q3": {
+      "id": "2023-ME1-Q3",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "3",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-T1.1"],
+      "topic": "ME-T",
+      "difficulty": "easy",
+      "stem": "What is the value of sin⁻¹(-1/2)?",
+      "options": {
+        "A": "-π/6",
+        "B": "π/6",
+        "C": "5π/6",
+        "D": "-5π/6"
+      },
+      "answer": "A",
+      "solution": {
+        "reasoning": "sin⁻¹ has range [-π/2, π/2]. We need θ in this range where sin θ = -1/2. Since sin(π/6) = 1/2 and sin is odd, sin(-π/6) = -1/2. So sin⁻¹(-1/2) = -π/6.",
+        "answer": "A: -π/6"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects A"}],
+        "commonErrors": ["Selecting C (5π/6 is outside the principal range of sin⁻¹)", "Forgetting the principal range and giving a positive value"]
+      },
+      "tags": ["inverse trig", "arcsin", "principal range", "exact values"]
+    },
+
+    "2023-ME1-Q4": {
+      "id": "2023-ME1-Q4",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "4",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-C1.2"],
+      "topic": "ME-C",
+      "difficulty": "easy",
+      "stem": "A quantity N satisfies dN/dt = 0.05N. If N(0) = 200, what is N(10)?",
+      "options": {
+        "A": "200e^(0.5)",
+        "B": "200e^(0.05)",
+        "C": "200 × 0.05 × 10",
+        "D": "200 + e^(0.5)"
+      },
+      "answer": "A",
+      "solution": {
+        "reasoning": "The solution to dN/dt = kN is N = N₀eᵏᵗ. With N₀ = 200 and k = 0.05: N(10) = 200e^(0.05 × 10) = 200e^(0.5).",
+        "answer": "A: 200e^(0.5)"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects A"}],
+        "commonErrors": ["Selecting C (using a linear model instead of exponential)", "Selecting B (not multiplying k by t: using e^(0.05) instead of e^(0.5))"]
+      },
+      "tags": ["exponential growth", "differential equation", "dN/dt = kN"]
+    },
+
+    "2023-ME1-Q5": {
+      "id": "2023-ME1-Q5",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "5",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-F2.1"],
+      "topic": "ME-F",
+      "difficulty": "easy",
+      "stem": "When P(x) = x³ - 3x + 2 is divided by (x - 1), what is the remainder?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "A",
+      "solution": {
+        "reasoning": "By the remainder theorem, the remainder when P(x) is divided by (x - 1) is P(1). P(1) = 1 - 3 + 2 = 0. So the remainder is 0, which also means (x - 1) is a factor.",
+        "answer": "A: 0"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects A"}],
+        "commonErrors": ["Substituting x = -1 instead of x = 1 (confusing (x-1) with (x+1))", "Computing P(0) = 2 — substituting x = 0"]
+      },
+      "tags": ["remainder theorem", "factor theorem", "polynomial"]
+    },
+
+    "2023-ME1-Q6": {
+      "id": "2023-ME1-Q6",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "6",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-V1.1"],
+      "topic": "ME-V",
+      "difficulty": "easy",
+      "stem": "If a = 3i - 4j, what is the unit vector in the direction of a?",
+      "options": {
+        "A": "(3i - 4j)/5",
+        "B": "(3i - 4j)/7",
+        "C": "(3i + 4j)/5",
+        "D": "5i - 5j"
+      },
+      "answer": "A",
+      "solution": {
+        "reasoning": "|a| = √(3² + (-4)²) = √(9 + 16) = √25 = 5. Unit vector = a/|a| = (3i - 4j)/5.",
+        "answer": "A: (3i - 4j)/5"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects A"}],
+        "commonErrors": ["Selecting B (using |a| = 7 — adding 3 + 4 instead of using Pythagoras)", "Selecting C (dropping the negative sign on the j component)"]
+      },
+      "tags": ["unit vector", "magnitude", "vector", "i j notation"]
+    },
+
+    "2023-ME1-Q7": {
+      "id": "2023-ME1-Q7",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "7",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-A1.2"],
+      "topic": "ME-A",
+      "difficulty": "easy",
+      "stem": "How many ways can a committee of 3 be chosen from a group of 8 people?",
+      "options": {
+        "A": "24",
+        "B": "56",
+        "C": "168",
+        "D": "336"
+      },
+      "answer": "B",
+      "solution": {
+        "reasoning": "Order does not matter, so use combinations. ⁸C₃ = 8!/(3! × 5!) = (8 × 7 × 6)/(3 × 2 × 1) = 336/6 = 56.",
+        "answer": "B: 56"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects B"}],
+        "commonErrors": ["Selecting D (computing ⁸P₃ = 336 — using permutations instead of combinations)", "Selecting A (dividing by 14 instead of 6)"]
+      },
+      "tags": ["combinations", "nCr", "committee", "selection"]
+    },
+
+    "2023-ME1-Q8": {
+      "id": "2023-ME1-Q8",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "8",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-C2.1"],
+      "topic": "ME-C",
+      "difficulty": "medium",
+      "stem": "What is d/dx[tan⁻¹(2x)]?",
+      "options": {
+        "A": "1/(1 + 4x²)",
+        "B": "2/(1 + 4x²)",
+        "C": "2/(1 + 2x²)",
+        "D": "1/(1 + 2x²)"
+      },
+      "answer": "B",
+      "solution": {
+        "reasoning": "Using d/dx[tan⁻¹(u)] = u'/(1 + u²) with u = 2x, u' = 2. So d/dx[tan⁻¹(2x)] = 2/(1 + (2x)²) = 2/(1 + 4x²).",
+        "answer": "B: 2/(1 + 4x²)"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects B"}],
+        "commonErrors": ["Selecting A (forgetting to apply the chain rule — missing the factor of 2 from the derivative of 2x)", "Selecting C (squaring 2x as 2x² instead of 4x²)"]
+      },
+      "tags": ["inverse trig differentiation", "arctan", "chain rule", "d/dx"]
+    },
+
+    "2023-ME1-Q9": {
+      "id": "2023-ME1-Q9",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "9",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-T1.2"],
+      "topic": "ME-T",
+      "difficulty": "medium",
+      "stem": "Using the double angle formula, which of the following is equal to cos(2θ) when expressed in terms of sin(θ) only?",
+      "options": {
+        "A": "2sin²θ - 1",
+        "B": "1 - 2sin²θ",
+        "C": "2cos²θ - 1",
+        "D": "sin²θ - cos²θ"
+      },
+      "answer": "B",
+      "solution": {
+        "reasoning": "The double angle formula gives cos(2θ) = cos²θ - sin²θ. Replacing cos²θ with 1 - sin²θ: cos(2θ) = (1 - sin²θ) - sin²θ = 1 - 2sin²θ.",
+        "answer": "B: 1 - 2sin²θ"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects B"}],
+        "commonErrors": ["Selecting A (getting the sign wrong in the substitution)", "Selecting C (this form uses cosθ, not sinθ alone)"]
+      },
+      "tags": ["double angle formula", "cos2θ", "trigonometric identity"]
+    },
+
+    "2023-ME1-Q10": {
+      "id": "2023-ME1-Q10",
+      "source": "representative",
+      "year": 2023,
+      "section": "I",
+      "questionNumber": "10",
+      "marks": 1,
+      "type": "multiple-choice",
+      "dotPoints": ["ME-S1.1"],
+      "topic": "ME-S",
+      "difficulty": "medium",
+      "stem": "A fair coin is tossed 5 times. What is the probability of getting exactly 3 heads?",
+      "options": {
+        "A": "3/16",
+        "B": "5/16",
+        "C": "3/8",
+        "D": "1/4"
+      },
+      "answer": "B",
+      "solution": {
+        "reasoning": "X ~ B(5, 1/2). P(X = 3) = ⁵C₃ × (1/2)³ × (1/2)² = 10 × 1/8 × 1/4 = 10/32 = 5/16.",
+        "answer": "B: 5/16"
+      },
+      "markingGuideline": {
+        "criteria": [{"marks": 1, "description": "Selects B"}],
+        "commonErrors": ["Selecting A (computing ⁵C₃ × (1/2)⁵ but computing ⁵C₃ as 6 instead of 10)", "Selecting C (using 3/5 as the probability and not applying binomial formula)"]
+      },
+      "tags": ["binomial distribution", "B(n,p)", "P(X=r)", "probability"]
+    },
+
+    "2023-ME1-Q11a": {
+      "id": "2023-ME1-Q11a",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "11a",
+      "marks": 2,
+      "type": "short-answer",
+      "dotPoints": ["ME-A1.3"],
+      "topic": "ME-A",
+      "difficulty": "easy",
+      "stem": "Find the coefficient of x³ in the expansion of (2 + x)⁵.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "General term: T(r+1) = ⁵Cᵣ × 2^(5-r) × xʳ",
+          "For x³: set r = 3",
+          "T₄ = ⁵C₃ × 2² × x³",
+          "= 10 × 4 × x³",
+          "= 40x³",
+          "Coefficient = 40"
+        ],
+        "finalAnswer": "40"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "Correct coefficient 40 with working shown"},
+          {"marks": 1, "description": "Correct general term written or correct ⁵C₃ × 2² identified"}
+        ],
+        "commonErrors": [
+          "Using r = 3 for T₃ instead of T₄ (off-by-one in term numbering)",
+          "Forgetting to raise 2 to the power (5 - r): writing ⁵C₃ × x³ only",
+          "Computing ⁵C₃ = 15 instead of 10"
+        ]
+      },
+      "tags": ["binomial theorem", "general term", "T(r+1)", "coefficient", "expansion"]
+    },
+
+    "2023-ME1-Q11b": {
+      "id": "2023-ME1-Q11b",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "11b",
+      "marks": 2,
+      "type": "short-answer",
+      "dotPoints": ["ME-F1.3"],
+      "topic": "ME-F",
+      "difficulty": "easy",
+      "stem": "Find the inverse function of f(x) = 2x - 5, and state its domain.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Let y = 2x - 5",
+          "Swap x and y: x = 2y - 5",
+          "Solve for y: 2y = x + 5, so y = (x + 5)/2",
+          "f⁻¹(x) = (x + 5)/2",
+          "Domain of f⁻¹ = Range of f = all real numbers ℝ"
+        ],
+        "finalAnswer": "f⁻¹(x) = (x + 5)/2, domain: all real x"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "Correct f⁻¹(x) = (x + 5)/2 with domain stated"},
+          {"marks": 1, "description": "Correct inverse expression without domain, or domain correct but expression has minor error"}
+        ],
+        "commonErrors": [
+          "Not swapping x and y — solving for x in y = 2x - 5 to get x = (y + 5)/2 but leaving it in terms of y",
+          "Stating the domain incorrectly by confusing domain of f with domain of f⁻¹"
+        ]
+      },
+      "tags": ["inverse function", "f⁻¹(x)", "domain", "swap x and y"]
+    },
+
+    "2023-ME1-Q12": {
+      "id": "2023-ME1-Q12",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "12",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-C1.1"],
+      "topic": "ME-C",
+      "difficulty": "medium",
+      "stem": "A spherical balloon is being inflated so that its radius increases at a rate of 0.5 cm/s. At what rate is the volume increasing when the radius is 6 cm?\n(Volume of a sphere: V = (4/3)πr³)",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Given: dr/dt = 0.5 cm/s, find dV/dt when r = 6",
+          "V = (4/3)πr³",
+          "dV/dr = 4πr²",
+          "By chain rule: dV/dt = dV/dr × dr/dt",
+          "dV/dt = 4πr² × 0.5",
+          "At r = 6: dV/dt = 4π(36) × 0.5 = 72π cm³/s"
+        ],
+        "finalAnswer": "72π cm³/s ≈ 226.2 cm³/s"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 3, "description": "Correct answer 72π cm³/s with chain rule shown"},
+          {"marks": 2, "description": "Correct chain rule set-up and correct dV/dr = 4πr², minor arithmetic error"},
+          {"marks": 1, "description": "Chain rule stated or dV/dr = 4πr² correctly differentiated"}
+        ],
+        "commonErrors": [
+          "Substituting r = 6 into V before differentiating",
+          "Using dV/dt = dV/dr only (forgetting to multiply by dr/dt = 0.5)",
+          "Differentiating V = (4/3)πr³ as 4πr² ÷ 3 = (4/3)πr² (wrong power rule)"
+        ]
+      },
+      "tags": ["related rates", "chain rule", "sphere", "dV/dt", "rates of change"]
+    },
+
+    "2023-ME1-Q13": {
+      "id": "2023-ME1-Q13",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "13",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-T1.2"],
+      "topic": "ME-T",
+      "difficulty": "medium",
+      "stem": "Prove that cos(A + B) + cos(A - B) = 2cosA cosB.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Start with LHS: cos(A + B) + cos(A - B)",
+          "Expand using compound angle formulas:",
+          "cos(A + B) = cosA cosB - sinA sinB",
+          "cos(A - B) = cosA cosB + sinA sinB",
+          "Adding: cos(A+B) + cos(A-B) = (cosA cosB - sinA sinB) + (cosA cosB + sinA sinB)",
+          "= 2cosA cosB - sinA sinB + sinA sinB",
+          "= 2cosA cosB  = RHS  ∎"
+        ],
+        "finalAnswer": "LHS = 2cosA cosB = RHS ✓"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 3, "description": "Complete proof with both expansions shown and sinA sinB terms cancelled explicitly"},
+          {"marks": 2, "description": "Both expansions correct but cancellation step not clearly shown"},
+          {"marks": 1, "description": "At least one compound angle formula correctly expanded"}
+        ],
+        "commonErrors": [
+          "Working from both sides simultaneously — proofs must start from one side only",
+          "Sign error in cos(A - B): the sinA sinB term should be positive",
+          "Expanding sin(A ± B) instead of cos(A ± B)"
+        ]
+      },
+      "tags": ["compound angle", "trig proof", "cos(A+B)", "identity"]
+    },
+
+    "2023-ME1-Q14": {
+      "id": "2023-ME1-Q14",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "14",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-V1.2"],
+      "topic": "ME-V",
+      "difficulty": "medium",
+      "stem": "Two vectors are given as a = 2i + j and b = i - 3j.\n(a) Find a·b.\n(b) Find the angle between a and b, correct to the nearest degree.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) a·b = (2)(1) + (1)(-3) = 2 - 3 = -1",
+          "",
+          "(b) |a| = √(4 + 1) = √5",
+          "|b| = √(1 + 9) = √10",
+          "cosθ = a·b / (|a||b|) = -1 / (√5 × √10) = -1/√50 = -1/(5√2)",
+          "θ = cos⁻¹(-1/(5√2)) ≈ cos⁻¹(-0.1414) ≈ 98°"
+        ],
+        "finalAnswer": "(a) a·b = -1  (b) θ ≈ 98°"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct a·b = -1"},
+          {"marks": 2, "description": "(b) Correct angle ≈ 98° with |a|, |b| and formula shown"},
+          {"marks": 1, "description": "(b) Correct formula cosθ = a·b/(|a||b|) applied with their value of a·b"}
+        ],
+        "commonErrors": [
+          "(a) Computing a·b as a vector (2i - 3j) instead of a scalar",
+          "(b) Taking the acute angle (82°) instead of the obtuse angle — when cosθ < 0, θ is obtuse",
+          "(b) Using |a| + |b| in the denominator instead of |a| × |b|"
+        ]
+      },
+      "tags": ["dot product", "angle between vectors", "scalar product"]
+    },
+
+    "2023-ME1-Q15": {
+      "id": "2023-ME1-Q15",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "15",
+      "marks": 4,
+      "type": "short-answer",
+      "dotPoints": ["ME-C2.2"],
+      "topic": "ME-C",
+      "difficulty": "medium",
+      "stem": "Evaluate the following integrals:\n(a) ∫₀¹ 1/(1 + x²) dx\n(b) ∫ 2x/√(9 - x⁴) dx  [Hint: use the substitution u = x²]",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) ∫₀¹ 1/(1 + x²) dx = [tan⁻¹(x)]₀¹",
+          "= tan⁻¹(1) - tan⁻¹(0)",
+          "= π/4 - 0 = π/4",
+          "",
+          "(b) Let u = x², then du = 2x dx",
+          "∫ 2x/√(9 - x⁴) dx = ∫ 1/√(9 - u²) du",
+          "= sin⁻¹(u/3) + C",
+          "= sin⁻¹(x²/3) + C"
+        ],
+        "finalAnswer": "(a) π/4  (b) sin⁻¹(x²/3) + C"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "(a) Correct answer π/4 with antiderivative tan⁻¹(x) shown"},
+          {"marks": 1, "description": "(a) Antiderivative tan⁻¹(x) stated but evaluation error"},
+          {"marks": 2, "description": "(b) Correct answer sin⁻¹(x²/3) + C with substitution shown"},
+          {"marks": 1, "description": "(b) Correct substitution u = x², du = 2x dx performed, but integration error"}
+        ],
+        "commonErrors": [
+          "(a) Not recognising the standard form — trying to integrate 1/(1+x²) without the arctan formula",
+          "(b) Not transforming dx: forgetting du = 2x dx means the 2x in the numerator cancels nicely",
+          "(b) Writing sin⁻¹(x²) instead of sin⁻¹(x²/3) — forgetting to divide by a = 3"
+        ]
+      },
+      "tags": ["inverse trig integration", "arctan integral", "arcsin integral", "substitution", "definite integral"]
+    },
+
+    "2023-ME1-Q16": {
+      "id": "2023-ME1-Q16",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "16",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-F2.2"],
+      "topic": "ME-F",
+      "difficulty": "medium",
+      "stem": "The equation x³ - 6x² + 11x - 6 = 0 has roots α, β and γ.\n(a) Write down the values of α + β + γ and αβγ.\n(b) Find the value of α² + β² + γ².",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) By Vieta's formulas for x³ - 6x² + 11x - 6 = 0:",
+          "α + β + γ = 6  (negative of coefficient of x², divided by leading coefficient)",
+          "αβγ = 6  (negative of constant term, divided by leading coefficient, with sign: -(-6)/1 = 6)",
+          "",
+          "(b) α² + β² + γ² = (α + β + γ)² - 2(αβ + βγ + γα)",
+          "From Vieta's: αβ + βγ + γα = 11",
+          "α² + β² + γ² = 6² - 2(11) = 36 - 22 = 14"
+        ],
+        "finalAnswer": "(a) α + β + γ = 6, αβγ = 6  (b) α² + β² + γ² = 14"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Both α + β + γ = 6 and αβγ = 6 correct"},
+          {"marks": 2, "description": "(b) Correct answer 14 using the identity with αβ + βγ + γα = 11"},
+          {"marks": 1, "description": "(b) Correct identity α² + β² + γ² = (Σα)² - 2(Σαβ) written, with substitution error"}
+        ],
+        "commonErrors": [
+          "(a) Getting signs wrong: α + β + γ = -6 (forgetting the negative of -b/a)",
+          "(b) Forgetting the factor of 2: writing (α+β+γ)² - (αβ+βγ+γα) instead of - 2(αβ+βγ+γα)",
+          "(b) Not using Vieta's to find αβ + βγ + γα = 11"
+        ]
+      },
+      "tags": ["Vieta's formulas", "roots and coefficients", "sum of squares of roots", "cubic"]
+    },
+
+    "2023-ME1-Q17": {
+      "id": "2023-ME1-Q17",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "17",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-S1.2"],
+      "topic": "ME-S",
+      "difficulty": "medium",
+      "stem": "In a large population, 35% of people prefer brand A. A random sample of 80 people is taken.\n(a) State the distribution of X, the number who prefer brand A.\n(b) Find E(X) and SD(X).",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) X ~ B(80, 0.35)",
+          "",
+          "(b) E(X) = np = 80 × 0.35 = 28",
+          "Var(X) = np(1 - p) = 80 × 0.35 × 0.65 = 18.2",
+          "SD(X) = √18.2 ≈ 4.27"
+        ],
+        "finalAnswer": "(a) X ~ B(80, 0.35)  (b) E(X) = 28, SD(X) ≈ 4.27"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) X ~ B(80, 0.35) correctly stated"},
+          {"marks": 1, "description": "(b) E(X) = 28"},
+          {"marks": 1, "description": "(b) SD(X) = √18.2 ≈ 4.27 (accept exact √18.2)"}
+        ],
+        "commonErrors": [
+          "(b) Var(X) = np = 28 (forgetting to multiply by (1-p))",
+          "(b) Giving Var(X) as the answer instead of SD(X)",
+          "(a) Writing X ~ N(28, 18.2) (using normal instead of binomial)"
+        ]
+      },
+      "tags": ["binomial distribution", "expected value", "standard deviation", "E(X) = np", "Var(X) = npq"]
+    },
+
+    "2023-ME1-Q18": {
+      "id": "2023-ME1-Q18",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "18",
+      "marks": 4,
+      "type": "short-answer",
+      "dotPoints": ["ME-C2.3"],
+      "topic": "ME-C",
+      "difficulty": "hard",
+      "stem": "The region bounded by y = √x, the x-axis and the line x = 4 is rotated about the x-axis.\nFind the volume of the solid of revolution formed.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "V = π ∫[0 to 4] y² dx",
+          "= π ∫[0 to 4] (√x)² dx",
+          "= π ∫[0 to 4] x dx",
+          "= π [x²/2]₀⁴",
+          "= π [(16/2) - 0]",
+          "= 8π cubic units"
+        ],
+        "finalAnswer": "V = 8π cubic units"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 4, "description": "Correct volume 8π with full integration shown"},
+          {"marks": 3, "description": "Correct integral π∫x dx set up and integrated but evaluation error"},
+          {"marks": 2, "description": "Correct formula V = π∫y²dx written and y² = x correctly identified"},
+          {"marks": 1, "description": "Volume formula V = π∫y²dx stated with correct limits"}
+        ],
+        "commonErrors": [
+          "Forgetting the π factor: computing ∫x dx = 8 only",
+          "Not squaring y: using π∫√x dx instead of π∫x dx",
+          "Wrong limits: using x = 0 to x = √4 = 2 instead of x = 0 to x = 4"
+        ]
+      },
+      "tags": ["volume of revolution", "solid of revolution", "disc method", "V = π∫y²dx"]
+    },
+
+    "2023-ME1-Q19": {
+      "id": "2023-ME1-Q19",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "19",
+      "marks": 4,
+      "type": "short-answer",
+      "dotPoints": ["ME-V1.4"],
+      "topic": "ME-V",
+      "difficulty": "hard",
+      "stem": "A projectile is launched from the origin with speed 30 m/s at an angle of 30° above the horizontal. (Take g = 10 m/s²)\n(a) Write down the position vector r(t).\n(b) Find the maximum height reached.\n(c) Find the horizontal range.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) Horizontal component: V cosα = 30 cos30° = 30 × (√3/2) = 15√3 m/s",
+          "Vertical component: V sinα = 30 sin30° = 30 × (1/2) = 15 m/s",
+          "r(t) = (15√3 t)i + (15t - 5t²)j",
+          "",
+          "(b) Max height when vertical velocity = 0:",
+          "vy = 15 - 10t = 0 → t = 1.5 s",
+          "y(1.5) = 15(1.5) - 5(1.5)² = 22.5 - 11.25 = 11.25 m",
+          "",
+          "(c) Range: set y = 0",
+          "15t - 5t² = 0 → 5t(3 - t) = 0 → t = 0 or t = 3 s",
+          "x(3) = 15√3 × 3 = 45√3 ≈ 77.9 m"
+        ],
+        "finalAnswer": "(a) r(t) = 15√3 t i + (15t - 5t²) j  (b) 11.25 m  (c) 45√3 m"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct position vector with both components"},
+          {"marks": 1, "description": "(b) Correct maximum height 11.25 m"},
+          {"marks": 2, "description": "(c) Correct range 45√3 m with t = 3 s found"}
+        ],
+        "commonErrors": [
+          "(a) Using sin and cos the wrong way around for the components",
+          "(b) Finding max height at t = 3 (time of flight) instead of t = 1.5",
+          "(c) Substituting t = 1.5 into x (max height time) instead of t = 3"
+        ]
+      },
+      "tags": ["projectile motion", "vectors", "maximum height", "range", "time of flight"]
+    },
+
+    "2023-ME1-Q20": {
+      "id": "2023-ME1-Q20",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "20",
+      "marks": 5,
+      "type": "extended-response",
+      "dotPoints": ["ME-C3.1", "ME-C1.2"],
+      "topic": "ME-C",
+      "difficulty": "hard",
+      "stem": "A population of bacteria N satisfies the differential equation dN/dt = N(500 - N)/1000, where t is measured in hours.\n(a) Show that N = 500 is an equilibrium solution.\n(b) Separate variables and find the general solution.\n(c) If N(0) = 50, find N as a function of t.\n(d) Find the time when N = 250.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) When N = 500: dN/dt = 500(500 - 500)/1000 = 0. Since the rate of change is zero, N = 500 is a constant (equilibrium) solution. ✓",
+          "",
+          "(b) Separate variables:",
+          "1000 dN / [N(500 - N)] = dt",
+          "Use partial fractions: 1000/[N(500-N)] = (2/N) + (2/(500-N))",
+          "∫(2/N + 2/(500-N)) dN = ∫dt",
+          "2ln|N| - 2ln|500-N| = t + C",
+          "2ln|N/(500-N)| = t + C",
+          "ln|N/(500-N)| = t/2 + C₁",
+          "N/(500-N) = Ae^(t/2)  where A = ±e^C₁",
+          "",
+          "(c) At t = 0, N = 50:",
+          "50/(500-50) = A → 50/450 = A → A = 1/9",
+          "N/(500-N) = e^(t/2)/9",
+          "9N = (500-N)e^(t/2)",
+          "9N + Ne^(t/2) = 500e^(t/2)",
+          "N = 500e^(t/2) / (9 + e^(t/2))",
+          "",
+          "(d) Set N = 250:",
+          "250 = 500e^(t/2)/(9 + e^(t/2))",
+          "250(9 + e^(t/2)) = 500e^(t/2)",
+          "2250 = 250e^(t/2)",
+          "e^(t/2) = 9 → t/2 = ln9 → t = 2ln9 ≈ 4.39 hours"
+        ],
+        "finalAnswer": "(a) shown ✓  (b) N/(500-N) = Ae^(t/2)  (c) N = 500e^(t/2)/(9 + e^(t/2))  (d) t = 2ln9 ≈ 4.39 h"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Substitutes N = 500 and shows dN/dt = 0"},
+          {"marks": 2, "description": "(b) Correct separation and partial fractions with general solution"},
+          {"marks": 1, "description": "(b) Correct separation of variables written"},
+          {"marks": 1, "description": "(c) Correct particular solution using N(0) = 50"},
+          {"marks": 1, "description": "(d) Correct t = 2ln9"}
+        ],
+        "commonErrors": [
+          "(b) Attempting to integrate without partial fractions",
+          "(b) Forgetting the constant of integration",
+          "(c) Not solving explicitly for N",
+          "(d) Setting N = 500 instead of N = 250"
+        ]
+      },
+      "tags": ["separable ODE", "logistic growth", "differential equation", "partial fractions", "equilibrium"]
+    },
+
+    "2023-ME1-Q21": {
+      "id": "2023-ME1-Q21",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "21",
+      "marks": 4,
+      "type": "extended-response",
+      "dotPoints": ["ME-S1.3"],
+      "topic": "ME-S",
+      "difficulty": "hard",
+      "stem": "In a city, 45% of residents own a bicycle. A random sample of 200 residents is taken.\n(a) State the exact distribution of X, the number who own a bicycle.\n(b) Explain why a normal approximation is appropriate.\n(c) Using the normal approximation with continuity correction, find P(X ≤ 85).",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) X ~ B(200, 0.45)",
+          "",
+          "(b) np = 200 × 0.45 = 90 ≥ 5 ✓",
+          "nq = 200 × 0.55 = 110 ≥ 5 ✓",
+          "Since both np and nq are at least 5, the normal approximation is appropriate.",
+          "",
+          "(c) μ = np = 90, σ² = npq = 200 × 0.45 × 0.55 = 49.5, σ = √49.5 ≈ 7.036",
+          "Apply continuity correction: P(X ≤ 85) ≈ P(Y < 85.5) where Y ~ N(90, 49.5)",
+          "Z = (85.5 - 90)/7.036 = -4.5/7.036 ≈ -0.64",
+          "P(Z < -0.64) ≈ 0.2611"
+        ],
+        "finalAnswer": "(a) X ~ B(200, 0.45)  (b) np = 90 ≥ 5 and nq = 110 ≥ 5  (c) P(X ≤ 85) ≈ 0.261"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) X ~ B(200, 0.45)"},
+          {"marks": 1, "description": "(b) States both np = 90 ≥ 5 and nq = 110 ≥ 5"},
+          {"marks": 1, "description": "(c) Correct continuity correction P(Y < 85.5) applied"},
+          {"marks": 1, "description": "(c) Correct standardisation and probability ≈ 0.261"}
+        ],
+        "commonErrors": [
+          "(c) Forgetting the continuity correction: using P(Y < 85) instead of P(Y < 85.5)",
+          "(c) Using σ² = 49.5 as σ instead of taking the square root",
+          "(b) Only checking one condition (np ≥ 5) instead of both"
+        ]
+      },
+      "tags": ["normal approximation", "binomial", "continuity correction", "standardise", "Z-score"]
+    },
+
+    "2023-ME1-Q22": {
+      "id": "2023-ME1-Q22",
+      "source": "representative",
+      "year": 2023,
+      "section": "II",
+      "questionNumber": "22",
+      "marks": 4,
+      "type": "extended-response",
+      "dotPoints": ["ME-F1.1", "ME-F1.4"],
+      "topic": "ME-F",
+      "difficulty": "hard",
+      "stem": "The curve C is defined parametrically by x = 2t, y = t² - 1.\n(a) Find the Cartesian equation of C.\n(b) On the same diagram, sketch y = f(x) = x²/4 - 1 and y = 1/f(x), clearly showing all key features.\n(c) Solve the inequality 1/f(x) > 1.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) From x = 2t: t = x/2",
+          "Substitute into y = t² - 1: y = (x/2)² - 1 = x²/4 - 1",
+          "",
+          "(b) f(x) = x²/4 - 1 is an upward parabola with vertex (0, -1), x-intercepts at x = ±2",
+          "For y = 1/f(x) = 1/(x²/4 - 1):",
+          "Vertical asymptotes where f(x) = 0: x = ±2",
+          "Horizontal asymptote: y = 0 (as x → ±∞)",
+          "At x = 0: 1/f(0) = 1/(-1) = -1 (y-intercept)",
+          "For |x| > 2: f(x) > 0 so 1/f(x) > 0; branch approaches 0 from above",
+          "For |x| < 2: f(x) < 0 so 1/f(x) < 0; branch has maximum at (0, -1)",
+          "",
+          "(c) 1/f(x) > 1 means 1/(x²/4 - 1) > 1",
+          "Bring to one side: 1/(x²/4 - 1) - 1 > 0",
+          "[1 - (x²/4 - 1)] / (x²/4 - 1) > 0",
+          "(2 - x²/4) / (x²/4 - 1) > 0",
+          "Numerator = 0 when x²/4 = 2 → x = ±2√2",
+          "Denominator = 0 when x = ±2",
+          "Sign diagram: positive for -2√2 < x < -2 and 2 < x < 2√2",
+          "Solution: -2√2 < x < -2 or 2 < x < 2√2"
+        ],
+        "finalAnswer": "(a) y = x²/4 - 1  (b) sketch with asymptotes x = ±2, y = 0  (c) -2√2 < x < -2 or 2 < x < 2√2"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct Cartesian equation y = x²/4 - 1"},
+          {"marks": 1, "description": "(b) Correct sketch with asymptotes x = ±2 and y = 0 marked"},
+          {"marks": 2, "description": "(c) Correct solution with sign diagram shown"}
+        ],
+        "commonErrors": [
+          "(a) Not substituting t = x/2 correctly: getting y = x² - 1 (forgetting the 1/4 factor)",
+          "(b) Missing the vertical asymptotes at x = ±2",
+          "(c) Multiplying both sides by (x²/4 - 1) without considering sign"
+        ]
+      },
+      "tags": ["parametric equations", "reciprocal graph", "inequality", "sign diagram", "asymptotes"]
+    },
+
+    "2020-ME1-Q11a": {
+      "id": "2020-ME1-Q11a",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "11a",
+      "marks": 2,
+      "type": "short-answer",
+      "dotPoints": ["ME-F1.3"],
+      "topic": "ME-F",
+      "difficulty": "easy",
+      "stem": "Find the inverse function of f(x) = (x + 1)/(x - 2), stating any restrictions on its domain.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Let y = (x + 1)/(x - 2)",
+          "Swap x and y: x = (y + 1)/(y - 2)",
+          "x(y - 2) = y + 1",
+          "xy - 2x = y + 1",
+          "xy - y = 2x + 1",
+          "y(x - 1) = 2x + 1",
+          "y = (2x + 1)/(x - 1)",
+          "f⁻¹(x) = (2x + 1)/(x - 1), domain: x ≠ 1"
+        ],
+        "finalAnswer": "f⁻¹(x) = (2x + 1)/(x - 1), domain: x ≠ 1"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "Correct f⁻¹(x) = (2x+1)/(x-1) with domain x ≠ 1"},
+          {"marks": 1, "description": "Correct algebra shown but domain not stated or minor error"}
+        ],
+        "commonErrors": [
+          "Not swapping x and y before solving",
+          "Algebra errors when collecting y terms",
+          "Not stating the domain restriction x ≠ 1 (which is the range restriction of f)"
+        ]
+      },
+      "tags": ["inverse function", "rational function", "domain restriction", "swap x and y"]
+    },
+
+    "2020-ME1-Q11b": {
+      "id": "2020-ME1-Q11b",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "11b",
+      "marks": 2,
+      "type": "short-answer",
+      "dotPoints": ["ME-A1.2"],
+      "topic": "ME-A",
+      "difficulty": "easy",
+      "stem": "A team of 4 is to be chosen from 5 men and 4 women. How many teams contain at least 1 woman?",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Total teams of 4 from 9 people: ⁹C₄ = 126",
+          "Teams with NO women (all men): ⁵C₄ = 5",
+          "Teams with at least 1 woman = 126 - 5 = 121"
+        ],
+        "finalAnswer": "121 teams"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "Correct answer 121 using complement method"},
+          {"marks": 1, "description": "Correct total ⁹C₄ = 126 or correct all-male ⁵C₄ = 5 identified"}
+        ],
+        "commonErrors": [
+          "Adding up cases directly (1W + 2W + 3W + 4W) without using complement — often leads to arithmetic errors",
+          "Computing ⁴C₁ + ⁴C₂ + ... = teams with exactly k women but forgetting to combine with men selections"
+        ]
+      },
+      "tags": ["combinations", "at least one", "complement method", "selection with restriction"]
+    },
+
+    "2020-ME1-Q12": {
+      "id": "2020-ME1-Q12",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "12",
+      "marks": 3,
+      "type": "short-answer",
+      "dotPoints": ["ME-C1.1"],
+      "topic": "ME-C",
+      "difficulty": "easy",
+      "stem": "Water is draining from a conical tank at 2 m³/min. The tank has a half-angle of 30°, so the radius r and height h are related by r = h tan30° = h/√3.\n(a) Express the volume V in terms of h only.\n(b) Find the rate at which the height is decreasing when h = 3 m.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) V = (1/3)πr²h = (1/3)π(h/√3)²h = (1/3)π(h²/3)h = πh³/9",
+          "",
+          "(b) dV/dt = -2 (draining, so negative)",
+          "dV/dh = πh²/3",
+          "dh/dt = (dV/dt)/(dV/dh) = -2 / (πh²/3) = -6/(πh²)",
+          "At h = 3: dh/dt = -6/(π × 9) = -6/(9π) = -2/(3π) m/min",
+          "The height is decreasing at 2/(3π) m/min."
+        ],
+        "finalAnswer": "(a) V = πh³/9  (b) height decreasing at 2/(3π) m/min"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct V = πh³/9"},
+          {"marks": 2, "description": "(b) Correct rate 2/(3π) m/min with chain rule shown"},
+          {"marks": 1, "description": "(b) Correct dV/dh = πh²/3 and chain rule applied"}
+        ],
+        "commonErrors": [
+          "(a) Substituting r = h/√3 incorrectly — not squaring correctly",
+          "(b) Not accounting for the negative sign (draining = negative dV/dt)",
+          "(b) Inverting the chain rule: computing (dV/dh)/(dV/dt) instead of (dV/dt)/(dV/dh)"
+        ]
+      },
+      "tags": ["related rates", "chain rule", "conical tank", "dV/dt", "dh/dt"]
+    },
+
+    "2020-ME1-Q18": {
+      "id": "2020-ME1-Q18",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "18",
+      "marks": 4,
+      "type": "short-answer",
+      "dotPoints": ["ME-F1.4"],
+      "topic": "ME-F",
+      "difficulty": "hard",
+      "stem": "A curve is defined parametrically by x = 3cosθ, y = 2sinθ.\n(a) Find the Cartesian equation of the curve and identify the shape.\n(b) Find the gradient of the curve at the point where θ = π/4.\n(c) Find the equation of the tangent at this point.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) cosθ = x/3, sinθ = y/2",
+          "Using cos²θ + sin²θ = 1: (x/3)² + (y/2)² = 1 → x²/9 + y²/4 = 1",
+          "This is an ellipse with semi-axes a = 3 (x-direction) and b = 2 (y-direction).",
+          "",
+          "(b) dx/dθ = -3sinθ, dy/dθ = 2cosθ",
+          "dy/dx = (dy/dθ)/(dx/dθ) = 2cosθ/(-3sinθ) = -2cosθ/(3sinθ)",
+          "At θ = π/4: dy/dx = -2cos(π/4)/(3sin(π/4)) = -2(1/√2)/(3 × 1/√2) = -2/3",
+          "",
+          "(c) At θ = π/4: x = 3cos(π/4) = 3/√2, y = 2sin(π/4) = 2/√2 = √2",
+          "Tangent: y - √2 = -2/3(x - 3/√2)",
+          "y = -2x/3 + 2/√2 + √2 = -2x/3 + 2√2"
+        ],
+        "finalAnswer": "(a) x²/9 + y²/4 = 1 (ellipse)  (b) dy/dx = -2/3  (c) y = -2x/3 + 2√2"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct ellipse equation x²/9 + y²/4 = 1"},
+          {"marks": 1, "description": "(b) Correct gradient dy/dx = -2/3 at θ = π/4"},
+          {"marks": 2, "description": "(c) Correct tangent equation with point correctly identified"}
+        ],
+        "commonErrors": [
+          "(a) Forgetting to square the denominators: writing x/9 + y/4 = 1",
+          "(b) Dividing dx/dθ by dy/dθ instead of the other way around",
+          "(c) Using the wrong point — not substituting θ = π/4 to find (x, y)"
+        ]
+      },
+      "tags": ["parametric equations", "ellipse", "parametric differentiation", "tangent", "gradient"]
+    },
+
+    "2020-ME1-Q19": {
+      "id": "2020-ME1-Q19",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "19",
+      "marks": 4,
+      "type": "short-answer",
+      "dotPoints": ["ME-C2.3"],
+      "topic": "ME-C",
+      "difficulty": "hard",
+      "stem": "The region bounded by y = x² and y = 4 is rotated about the y-axis.\nFind the volume of the solid of revolution.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "Rotating about the y-axis, so express x in terms of y.",
+          "From y = x²: x² = y, so x = √y (taking positive root for x ≥ 0)",
+          "The region extends from y = 0 to y = 4.",
+          "V = π ∫[0 to 4] x² dy = π ∫[0 to 4] y dy",
+          "= π [y²/2]₀⁴",
+          "= π [16/2 - 0]",
+          "= 8π cubic units"
+        ],
+        "finalAnswer": "V = 8π cubic units"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 4, "description": "Correct volume 8π with rotation about y-axis set up correctly"},
+          {"marks": 3, "description": "Correct integral π∫y dy with correct limits but evaluation error"},
+          {"marks": 2, "description": "Correctly identifies need to integrate with respect to y and writes x² = y"},
+          {"marks": 1, "description": "Volume formula V = π∫x²dy stated"}
+        ],
+        "commonErrors": [
+          "Setting up rotation about x-axis instead of y-axis",
+          "Using V = π∫y²dy instead of π∫x²dy = π∫y dy",
+          "Incorrect limits: using x-limits (x = 0 to 2) instead of y-limits (y = 0 to 4)"
+        ]
+      },
+      "tags": ["volume of revolution", "rotate about y-axis", "solid of revolution", "V = π∫x²dy"]
+    },
+
+    "2020-ME1-Q20": {
+      "id": "2020-ME1-Q20",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "20",
+      "marks": 5,
+      "type": "extended-response",
+      "dotPoints": ["ME-C3.1", "ME-C1.2"],
+      "topic": "ME-C",
+      "difficulty": "hard",
+      "stem": "Newton's law of cooling states that the rate of change of temperature T of an object is proportional to the difference between T and the ambient temperature A = 20°C. This gives dT/dt = -k(T - 20), where k > 0.\n(a) Show that T = 20 + Ce^(-kt) is the general solution.\n(b) A cup of coffee initially at 90°C cools to 60°C in 10 minutes. Find k.\n(c) Find the temperature after 30 minutes, correct to 1 decimal place.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) Differentiate T = 20 + Ce^(-kt):",
+          "dT/dt = -kCe^(-kt)",
+          "T - 20 = Ce^(-kt)",
+          "So dT/dt = -k(T - 20) ✓",
+          "",
+          "(b) T(0) = 90: 90 = 20 + C → C = 70",
+          "T = 20 + 70e^(-kt)",
+          "T(10) = 60: 60 = 20 + 70e^(-10k)",
+          "40 = 70e^(-10k)",
+          "e^(-10k) = 4/7",
+          "-10k = ln(4/7)",
+          "k = -ln(4/7)/10 = ln(7/4)/10 ≈ 0.05596",
+          "",
+          "(c) T(30) = 20 + 70e^(-0.05596 × 30)",
+          "= 20 + 70e^(-1.6788)",
+          "= 20 + 70 × 0.1866...",
+          "≈ 20 + 13.07 ≈ 33.1°C"
+        ],
+        "finalAnswer": "(a) verified ✓  (b) k = ln(7/4)/10 ≈ 0.0560  (c) T ≈ 33.1°C"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Differentiates and correctly shows dT/dt = -k(T-20)"},
+          {"marks": 2, "description": "(b) Correct k = ln(7/4)/10 with full working"},
+          {"marks": 1, "description": "(b) Correct C = 70 and equation T = 20 + 70e^(-kt) set up"},
+          {"marks": 1, "description": "(c) Correct T ≈ 33.1°C using their k"}
+        ],
+        "commonErrors": [
+          "(a) Just stating the answer without differentiating to verify",
+          "(b) Not finding C first before applying the second condition",
+          "(b) Getting k = ln(4/7)/10 (negative) — k must be positive"
+        ]
+      },
+      "tags": ["Newton's cooling", "exponential decay", "differential equation", "initial conditions", "k value"]
+    },
+
+    "2020-ME1-Q21": {
+      "id": "2020-ME1-Q21",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "21",
+      "marks": 4,
+      "type": "extended-response",
+      "dotPoints": ["ME-V1.3", "ME-V1.4"],
+      "topic": "ME-V",
+      "difficulty": "hard",
+      "stem": "Points A and B have position vectors a = i + 2j and b = 5i - 2j respectively.\n(a) Find the vector AB⃗ and its magnitude.\n(b) Find the position vector of the midpoint M of AB.\n(c) A particle moves so that its position is r(t) = a + t(b - a). Show this passes through A and B, and find when it passes through M.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) AB⃗ = b - a = (5i - 2j) - (i + 2j) = 4i - 4j",
+          "|AB⃗| = √(16 + 16) = √32 = 4√2",
+          "",
+          "(b) OM = (a + b)/2 = [(i + 2j) + (5i - 2j)]/2 = (6i + 0j)/2 = 3i",
+          "Midpoint M = (3, 0)",
+          "",
+          "(c) r(t) = (i + 2j) + t(4i - 4j)",
+          "At t = 0: r(0) = i + 2j = a ✓ (passes through A)",
+          "At t = 1: r(1) = i + 2j + 4i - 4j = 5i - 2j = b ✓ (passes through B)",
+          "At M: r(t) = 3i → i + 2j + t(4i - 4j) = 3i",
+          "Equating i: 1 + 4t = 3 → t = 1/2",
+          "Check j: 2 - 4(1/2) = 0 ✓",
+          "Passes through M when t = 1/2."
+        ],
+        "finalAnswer": "(a) AB⃗ = 4i - 4j, |AB| = 4√2  (b) M = 3i  (c) passes through A at t=0, B at t=1, M at t=1/2"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 1, "description": "(a) Correct AB⃗ = 4i - 4j and |AB| = 4√2"},
+          {"marks": 1, "description": "(b) Correct midpoint M = 3i (or position (3, 0))"},
+          {"marks": 2, "description": "(c) Verifies t = 0 gives A, t = 1 gives B, and finds t = 1/2 for M with check"}
+        ],
+        "commonErrors": [
+          "(a) Computing a - b instead of b - a for AB⃗",
+          "(b) Using a - b instead of (a + b)/2 for midpoint",
+          "(c) Not verifying both i and j components when finding t for M"
+        ]
+      },
+      "tags": ["position vector", "midpoint", "vector equation of line", "AB⃗ = b - a", "geometric vectors"]
+    },
+
+    "2020-ME1-Q22": {
+      "id": "2020-ME1-Q22",
+      "source": "representative",
+      "year": 2020,
+      "section": "II",
+      "questionNumber": "22",
+      "marks": 4,
+      "type": "extended-response",
+      "dotPoints": ["ME-T1.2", "ME-T2.1"],
+      "topic": "ME-T",
+      "difficulty": "hard",
+      "stem": "(a) Using the expansion of sin(3θ) = sin(2θ + θ), show that sin(3θ) = 3sinθ - 4sin³θ.\n(b) Hence, or otherwise, solve 3sinθ - 4sin³θ = √3/2 for 0 ≤ θ ≤ 2π.",
+      "workingRequired": true,
+      "solution": {
+        "steps": [
+          "(a) sin(3θ) = sin(2θ + θ)",
+          "= sin2θ cosθ + cos2θ sinθ",
+          "= (2sinθ cosθ)cosθ + (1 - 2sin²θ)sinθ",
+          "= 2sinθ cos²θ + sinθ - 2sin³θ",
+          "= 2sinθ(1 - sin²θ) + sinθ - 2sin³θ",
+          "= 2sinθ - 2sin³θ + sinθ - 2sin³θ",
+          "= 3sinθ - 4sin³θ  ✓",
+          "",
+          "(b) 3sinθ - 4sin³θ = √3/2",
+          "From (a): sin(3θ) = √3/2",
+          "3θ = π/3, π - π/3, 2π + π/3, 3π - π/3, 4π + π/3, 6π - π/3",
+          "3θ = π/3, 2π/3, 7π/3, 8π/3, 13π/3, 17π/3",
+          "θ = π/9, 2π/9, 7π/9, 8π/9, 13π/9, 17π/9"
+        ],
+        "finalAnswer": "(a) shown ✓  (b) θ = π/9, 2π/9, 7π/9, 8π/9, 13π/9, 17π/9"
+      },
+      "markingGuideline": {
+        "criteria": [
+          {"marks": 2, "description": "(a) Complete proof using compound and double angle formulas"},
+          {"marks": 1, "description": "(a) Correct first expansion step using compound angle formula"},
+          {"marks": 2, "description": "(b) All 6 correct solutions listed"},
+          {"marks": 1, "description": "(b) Correctly converts to sin(3θ) = √3/2 and finds at least 2 solutions"}
+        ],
+        "commonErrors": [
+          "(a) Using cos²θ = 1 - sin²θ incorrectly — must substitute before collecting",
+          "(b) Only finding solutions in [0, 2π/3] — forgetting the domain for 3θ extends to [0, 6π]",
+          "(b) Finding only the first two solutions from sin(3θ) = √3/2"
+        ]
+      },
+      "tags": ["triple angle formula", "sin3θ", "compound angle", "double angle", "trig equation", "solve equation"]
+    }
+
+  },
+
+  "meta": {
+    "totalQuestions": 26,
+    "multipleChoiceQuestions": 10,
+    "shortAnswerQuestions": 11,
+    "extendedResponseQuestions": 5,
+    "topicCoverage": {
+      "ME-F": 6,
+      "ME-T": 4,
+      "ME-C": 8,
+      "ME-A": 4,
+      "ME-V": 5,
+      "ME-S": 3
+    },
+    "difficultyCoverage": {
+      "easy": 10,
+      "medium": 9,
+      "hard": 7
+    },
+    "yearsCovered": [2020, 2023],
+    "lastUpdated": "2026-03-08",
+    "buildNote": "Representative questions modelled on authentic HSC Mathematics Extension 1 exam style (2017 syllabus). All dot-point codes use the ME- prefix matching ext1-syllabus-map.json. Expand with actual NESA past paper questions (2020–2025) sourced directly from NESA publications before production use."
+  }
+}

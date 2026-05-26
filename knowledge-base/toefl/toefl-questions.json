@@ -1,0 +1,416 @@
+{
+  "subject": "TOEFL iBT",
+  "version": "2024",
+  "description": "Representative practice questions for TOEFL iBT, modeled on official ETS question styles and difficulty.",
+  "note": "Questions are representative of official TOEFL iBT format. For production use, verify against official ETS materials.",
+  "questions": {
+    "TOEFL-R-001": {
+      "id": "TOEFL-R-001",
+      "section": "reading",
+      "questionType": "vocabulary",
+      "difficulty": "medium",
+      "passageId": "passage-001",
+      "passage": "The Industrial Revolution brought about profound changes in agricultural practices. The enclosure movement, which consolidated small landholdings into larger farms, was particularly significant in Britain. This consolidation allowed for more efficient farming techniques, including crop rotation and selective breeding of livestock. Consequently, agricultural productivity increased dramatically, freeing up labor for the burgeoning factories in urban areas. However, this transition was not without social costs, as many small farmers were displaced from their ancestral lands.",
+      "stem": "The word 'consolidated' in the passage is closest in meaning to:",
+      "options": {
+        "A": "strengthened",
+        "B": "combined",
+        "C": "justified",
+        "D": "examined"
+      },
+      "answer": "B",
+      "explanation": "In context, 'consolidated' means 'combined' or 'unified.' The enclosure movement took small, separate landholdings and combined them into larger farms.",
+      "passageRef": "paragraph 1, line 2",
+      "skills": ["TOEFL-R.1"],
+      "tags": ["vocabulary", "context clues", "industrial revolution"]
+    },
+    
+    "TOEFL-R-002": {
+      "id": "TOEFL-R-002",
+      "section": "reading",
+      "questionType": "factual-information",
+      "difficulty": "easy",
+      "passageId": "passage-001",
+      "stem": "According to paragraph 1, what was one result of the enclosure movement?",
+      "options": {
+        "A": "Small farms became more numerous",
+        "B": "Agricultural techniques became more efficient",
+        "C": "Factory workers returned to farming",
+        "D": "Land prices decreased significantly"
+      },
+      "answer": "B",
+      "explanation": "The passage states that consolidation 'allowed for more efficient farming techniques, including crop rotation and selective breeding.'",
+      "skills": ["TOEFL-R.2"],
+      "tags": ["factual", "agriculture", "industrial revolution"]
+    },
+    
+    "TOEFL-R-003": {
+      "id": "TOEFL-R-003",
+      "section": "reading",
+      "questionType": "negative-fact",
+      "difficulty": "medium",
+      "passageId": "passage-001",
+      "stem": "All of the following are mentioned in paragraph 1 as consequences of the enclosure movement EXCEPT:",
+      "options": {
+        "A": "Increased agricultural productivity",
+        "B": "Displacement of small farmers",
+        "C": "Growth of urban factories",
+        "D": "Rising food prices in cities"
+      },
+      "answer": "D",
+      "explanation": "The passage mentions increased productivity (A), displacement of farmers (B), and labor for factories (C). Rising food prices (D) is not mentioned.",
+      "skills": ["TOEFL-R.3"],
+      "tags": ["negative fact", "agriculture"]
+    },
+    
+    "TOEFL-R-004": {
+      "id": "TOEFL-R-004",
+      "section": "reading",
+      "questionType": "inference",
+      "difficulty": "hard",
+      "passageId": "passage-001",
+      "stem": "What can be inferred about small farmers mentioned in paragraph 1?",
+      "options": {
+        "A": "They generally supported the enclosure movement",
+        "B": "They were forced to seek work in cities",
+        "C": "They received compensation for their land",
+        "D": "They formed cooperatives to compete with larger farms"
+      },
+      "answer": "B",
+      "explanation": "The passage states that small farmers 'were displaced from their ancestral lands' and that labor was 'freed up for the burgeoning factories.' This implies they moved to cities for factory work.",
+      "skills": ["TOEFL-R.4"],
+      "tags": ["inference", "agriculture", "social impact"]
+    },
+    
+    "TOEFL-R-005": {
+      "id": "TOEFL-R-005",
+      "section": "reading",
+      "questionType": "rhetorical-purpose",
+      "difficulty": "medium",
+      "passageId": "passage-001",
+      "stem": "Why does the author mention 'crop rotation and selective breeding' in the passage?",
+      "options": {
+        "A": "To contrast old and new farming methods",
+        "B": "To provide examples of more efficient techniques",
+        "C": "To explain why small farms were inefficient",
+        "D": "To introduce the topic of agricultural science"
+      },
+      "answer": "B",
+      "explanation": "The author states that consolidation 'allowed for more efficient farming techniques' and then gives crop rotation and selective breeding as examples of such techniques.",
+      "skills": ["TOEFL-R.5"],
+      "tags": ["rhetorical purpose", "examples"]
+    },
+    
+    "TOEFL-R-006": {
+      "id": "TOEFL-R-006",
+      "section": "reading",
+      "questionType": "sentence-simplification",
+      "difficulty": "medium",
+      "passageId": "passage-001",
+      "stem": "Which of the following best expresses the essential information in the highlighted sentence? *'The enclosure movement, which consolidated small landholdings into larger farms, was particularly significant in Britain.'*",
+      "options": {
+        "A": "In Britain, the enclosure movement was important because it created larger farms from smaller ones",
+        "B": "The enclosure movement was significant only in Britain, where small farms became large",
+        "C": "Britain's small farms became larger due to a movement that was particularly significant",
+        "D": "The enclosure movement, though significant elsewhere, was most important in Britain"
+      },
+      "answer": "A",
+      "explanation": "Option A captures the essential meaning: the enclosure movement's significance in Britain came from consolidating small farms into larger ones. Options B and D add information not present; C changes the emphasis.",
+      "skills": ["TOEFL-R.6"],
+      "tags": ["simplification", "paraphrase"]
+    },
+    
+    "TOEFL-R-007": {
+      "id": "TOEFL-R-007",
+      "section": "reading",
+      "questionType": "insert-text",
+      "difficulty": "hard",
+      "passageId": "passage-001",
+      "passage": [
+        "[1] The Industrial Revolution brought about profound changes in agricultural practices. [2] The enclosure movement, which consolidated small landholdings into larger farms, was particularly significant in Britain. [3] This consolidation allowed for more efficient farming techniques, including crop rotation and selective breeding of livestock. [4] Consequently, agricultural productivity increased dramatically, freeing up labor for the burgeoning factories in urban areas. [5] However, this transition was not without social costs, as many small farmers were displaced from their ancestral lands."
+      ],
+      "insertSentence": "These new methods spread rapidly across the countryside.",
+      "stem": "Look at the four squares [1], [2], [3], [4] that indicate where the following sentence could be added: 'These new methods spread rapidly across the countryside.' Where would the sentence best fit?",
+      "options": {
+        "A": "After square 1",
+        "B": "After square 2",
+        "C": "After square 3",
+        "D": "After square 4"
+      },
+      "answer": "C",
+      "explanation": "The sentence 'These new methods spread rapidly across the countryside' refers to 'crop rotation and selective breeding' mentioned in sentence 3. It fits best after sentence 3, before the consequence in sentence 4.",
+      "skills": ["TOEFL-R.7"],
+      "tags": ["insert text", "cohesion", "transitions"]
+    },
+    
+    "TOEFL-R-008": {
+      "id": "TOEFL-R-008",
+      "section": "reading",
+      "questionType": "prose-summary",
+      "difficulty": "hard",
+      "passageId": "passage-001",
+      "stem": "Directions: An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.",
+      "summaryIntro": "The enclosure movement transformed British agriculture during the Industrial Revolution.",
+      "options": [
+        {
+          "text": "It combined small farms into larger, more efficient units",
+          "isCorrect": true
+        },
+        {
+          "text": "It introduced crop rotation and selective breeding",
+          "isCorrect": true
+        },
+        {
+          "text": "It increased agricultural productivity and freed labor for factories",
+          "isCorrect": true
+        },
+        {
+          "text": "It was opposed by many small farmers who were displaced",
+          "isCorrect": false,
+          "reason": "This is a detail about social costs, not a main idea of the paragraph"
+        },
+        {
+          "text": "It originated in Britain before spreading to other countries",
+          "isCorrect": false,
+          "reason": "Not mentioned in the passage"
+        },
+        {
+          "text": "It required significant investment in new farming equipment",
+          "isCorrect": false,
+          "reason": "Not mentioned in the passage"
+        }
+      ],
+      "skills": ["TOEFL-R.8"],
+      "tags": ["summary", "main idea"]
+    },
+    
+    "TOEFL-R-009": {
+      "id": "TOEFL-R-009",
+      "section": "reading",
+      "questionType": "reference",
+      "difficulty": "easy",
+      "passageId": "passage-001",
+      "stem": "The word 'This' in the passage refers to:",
+      "passageSnippet": "This consolidation allowed for more efficient farming techniques...",
+      "options": {
+        "A": "The Industrial Revolution",
+        "B": "The enclosure movement",
+        "C": "The consolidation of small landholdings",
+        "D": "Agricultural productivity"
+      },
+      "answer": "C",
+      "explanation": "'This consolidation' refers directly to the consolidation of small landholdings into larger farms mentioned in the previous sentence.",
+      "skills": ["TOEFL-R.1"],
+      "tags": ["reference", "pronoun"]
+    },
+    
+    "TOEFL-L-001": {
+      "id": "TOEFL-L-001",
+      "section": "listening",
+      "questionType": "main-idea",
+      "difficulty": "easy",
+      "audioScript": {
+        "speaker": "professor",
+        "text": "Good morning, everyone. Today we're going to continue our discussion of marine biology by looking at a fascinating creature: the octopus. Now, what most people know about octopuses is that they have eight arms and can change color. But what I want to focus on today is their remarkable intelligence and problem-solving abilities, which set them apart from most other invertebrates."
+      },
+      "stem": "What is the main topic of the lecture?",
+      "options": {
+        "A": "The physical characteristics of octopuses",
+        "B": "The intelligence and problem-solving of octopuses",
+        "C": "The differences between octopuses and other marine life",
+        "D": "How octopuses change color for camouflage"
+      },
+      "answer": "B",
+      "explanation": "The professor explicitly states, 'what I want to focus on today is their remarkable intelligence and problem-solving abilities.'",
+      "skills": ["TOEFL-L.1"],
+      "tags": ["lecture", "main idea"]
+    },
+    
+    "TOEFL-L-002": {
+      "id": "TOEFL-L-002",
+      "section": "listening",
+      "questionType": "detail",
+      "difficulty": "medium",
+      "audioScript": {
+        "speaker": "professor",
+        "text": "In one remarkable experiment, researchers placed a tasty crab inside a sealed glass jar. The octopus, after examining the jar, was able to unscrew the lid by rotating it with its arms. What's particularly impressive is that the octopus had never seen a jar before - it had to figure out the mechanism entirely on its own, through trial and error."
+      },
+      "stem": "According to the professor, what did the octopus do in the experiment?",
+      "options": {
+        "A": "It broke the glass jar to reach the crab",
+        "B": "It waited for the researcher to open the jar",
+        "C": "It unscrewed the lid of the jar",
+        "D": "It gave up after failing to open the jar"
+      },
+      "answer": "C",
+      "explanation": "The professor states that the octopus 'was able to unscrew the lid by rotating it with its arms.'",
+      "skills": ["TOEFL-L.3"],
+      "tags": ["lecture", "detail"]
+    },
+    
+    "TOEFL-L-003": {
+      "id": "TOEFL-L-003",
+      "section": "listening",
+      "questionType": "attitude",
+      "difficulty": "medium",
+      "audioScript": {
+        "speaker": "professor",
+        "text": "Now, some researchers used to think that octopus behavior was purely instinctual - just pre-programmed responses to stimuli. But when you see an octopus solve a novel problem, like opening a jar it's never encountered before, well... I think it's hard to argue that there isn't some form of genuine cognition at work here."
+      },
+      "stem": "What is the professor's attitude toward the idea that octopus behavior is purely instinctual?",
+      "options": {
+        "A": "He strongly agrees with it",
+        "B": "He is skeptical of it",
+        "C": "He is completely neutral",
+        "D": "He thinks it's proven by research"
+      },
+      "answer": "B",
+      "explanation": "The professor says 'it's hard to argue that there isn't some form of genuine cognition,' indicating skepticism toward the purely instinctual view.",
+      "skills": ["TOEFL-L.4"],
+      "tags": ["lecture", "attitude", "opinion"]
+    },
+    
+    "TOEFL-L-004": {
+      "id": "TOEFL-L-004",
+      "section": "listening",
+      "questionType": "organization",
+      "difficulty": "hard",
+      "audioScript": {
+        "speaker": "professor",
+        "text": "Let me step back for a moment and give you some context. We've been talking about cephalopods - the class of animals that includes squid, cuttlefish, and octopuses. Most cephalopods have fairly simple nervous systems. But octopuses are different. They have a highly complex nervous system, with most of their neurons actually located in their arms. This distributed intelligence is unique in the animal kingdom."
+      },
+      "stem": "Why does the professor mention that most cephalopods have simple nervous systems?",
+      "options": {
+        "A": "To explain why they are less intelligent than octopuses",
+        "B": "To provide background information about the animal class",
+        "C": "To contrast them with the unique nervous system of octopuses",
+        "D": "To introduce the topic of squid and cuttlefish"
+      },
+      "answer": "C",
+      "explanation": "The professor contrasts 'most cephalopods' with octopuses to highlight what makes octopuses unique - their complex, distributed nervous system.",
+      "skills": ["TOEFL-L.6"],
+      "tags": ["lecture", "organization", "contrast"]
+    },
+    
+    "TOEFL-S-001": {
+      "id": "TOEFL-S-001",
+      "section": "speaking",
+      "taskType": "independent",
+      "difficulty": "easy",
+      "stem": "Some people prefer to study alone. Others prefer to study in groups. Which do you prefer and why? Use specific reasons and examples to support your answer.",
+      "prepTime": 15,
+      "responseTime": 45,
+      "skills": ["TOEFL-S.1"],
+      "sampleResponse": {
+        "text": "I prefer to study alone for two main reasons. First, I can focus better without distractions. When I'm alone, I can control my environment - no music, no conversations, just complete silence. For example, when I was preparing for my biology exam last semester, studying alone in the library helped me memorize all the terms much faster. Second, I can study at my own pace. With group study, you're always waiting for others or being rushed. But alone, if I understand a concept quickly, I can move on. If I'm struggling, I can spend extra time without feeling pressured. So for these reasons, independent study works best for me.",
+        "score": 4,
+        "scoringNotes": "Clear preference stated immediately, two well-developed reasons with specific personal example, good organization and fluency"
+      },
+      "scoringCriteria": {
+        "delivery": ["clear", "fluent", "natural pace"],
+        "language": ["good vocabulary", "correct grammar", "varied structures"],
+        "development": ["specific reasons", "personal example", "clear organization"]
+      }
+    },
+    
+    "TOEFL-S-002": {
+      "id": "TOEFL-S-002",
+      "section": "speaking",
+      "taskType": "independent",
+      "difficulty": "medium",
+      "stem": "Do you agree or disagree with the following statement? It is better to have a job that pays well but has long hours than a job that pays less but has more free time. Use specific reasons and examples to support your answer.",
+      "prepTime": 15,
+      "responseTime": 45,
+      "skills": ["TOEFL-S.2"],
+      "sampleResponse": {
+        "text": "I disagree - I believe a job with more free time is better, even if it pays less. My first reason is work-life balance. My uncle worked as a corporate lawyer, making great money but working 80-hour weeks. He missed all my cousin's soccer games and family dinners. Eventually, he switched to teaching law part-time. He makes less money but now has time for what matters. My second reason is health. Long hours lead to stress, lack of sleep, and health problems. No amount of money is worth sacrificing your well-being. So while good pay is important, having time to enjoy life and stay healthy is more valuable to me.",
+        "score": 4,
+        "scoringNotes": "Clear position, excellent specific example, good comparison between two options"
+      }
+    },
+    
+    "TOEFL-S-003": {
+      "id": "TOEFL-S-003",
+      "section": "speaking",
+      "taskType": "integrated-campus",
+      "difficulty": "medium",
+      "reading": {
+        "title": "Proposal to Extend Library Hours",
+        "text": "The university is considering extending library hours during final exams week. Currently, the library closes at 10 PM. The proposal would keep it open until 2 AM. The additional cost would be covered by a small increase in student fees. Supporters argue that students need more study time during exams and that the library provides a quiet environment not available in dorms."
+      },
+      "listeningScript": {
+        "speaker": "female student",
+        "text": "I totally support this proposal. Last semester during finals, I had to leave the library at 10 PM when I really needed to study more. My dorm room is impossible to concentrate in - people are always coming and going, watching videos, talking loudly. And the common room? Forget it - it's like a party. Having the library open later would be a lifesaver. About the fee increase - honestly, I'd pay a few extra dollars for this. It's worth it to have a quiet place to study when I need it most."
+      },
+      "stem": "The woman expresses her opinion about the library proposal. State her opinion and explain the reasons she gives for holding that opinion.",
+      "prepTime": 30,
+      "responseTime": 60,
+      "skills": ["TOEFL-S.3"],
+      "sampleResponse": {
+        "text": "The woman supports the proposal to extend library hours during finals. She gives two main reasons. First, she needs more study time at night. She had to leave at 10 PM last semester when she wanted to keep studying. Second, she can't study in her dorm because it's too noisy - people are always distracting her. The common room is even worse. She also addresses the fee increase, saying she'd gladly pay extra for this service because having a quiet place to study during finals is worth it.",
+        "score": 4,
+        "scoringNotes": "Clearly states opinion, accurately reports both reasons, connects listening to reading context"
+      }
+    },
+    
+    "TOEFL-W-001": {
+      "id": "TOEFL-W-001",
+      "section": "writing",
+      "taskType": "integrated",
+      "difficulty": "medium",
+      "reading": {
+        "title": "The Benefits of Urban Community Gardens",
+        "text": "Urban community gardens provide numerous benefits to cities and their residents. First, they improve food security by providing fresh produce in areas that may lack grocery stores. Residents can grow their own vegetables, reducing dependence on processed foods. Second, these gardens create social connections. Neighbors work together, share gardening tips, and build community bonds. Finally, community gardens have environmental benefits. They reduce the urban heat island effect, improve air quality, and provide habitat for pollinators like bees and butterflies."
+      },
+      "listeningScript": {
+        "speaker": "professor",
+        "text": "While community gardens sound wonderful in theory, the reality is often more complicated. Take food security, for instance. The amount of food produced in a typical community garden plot is actually quite small. It's a supplement at best, not a solution to food access problems. As for social connections, yes, some neighbors do bond. But I've also seen conflicts arise over plot assignments, water usage, and whether to use organic methods. These disagreements can actually divide communities. And environmental benefits? Well, the gardens are small and scattered. The heat island effect requires substantial green space to make a measurable difference. A few small gardens here and there won't significantly impact city temperatures."
+      },
+      "stem": "Summarize the points made in the lecture, being sure to explain how they cast doubt on the specific points made in the reading passage.",
+      "time": 20,
+      "recommendedLength": "150-225 words",
+      "skills": ["TOEFL-W.1"],
+      "sampleResponse": {
+        "text": "The reading presents three benefits of urban community gardens, but the lecture challenges each point.\n\nFirst, the reading claims gardens improve food security by providing fresh produce. However, the professor argues the food produced is minimal - just a supplement, not a real solution to food access problems.\n\nSecond, the reading says gardens create social connections. The professor acknowledges this can happen but points out gardens often cause conflicts over plots and resources, potentially dividing rather than uniting communities.\n\nThird, the reading discusses environmental benefits like reducing heat islands. The professor counters that gardens are too small and scattered to meaningfully affect city temperatures - substantial green space is needed for measurable environmental impact.\n\nIn each case, the lecture shows that the reading's claims are oversimplified and the reality is more complex.",
+        "score": 5,
+        "scoringNotes": "Excellent organization, clear point-by-point contrast, accurate representation of both sources, no personal opinion"
+      }
+    },
+    
+    "TOEFL-W-002": {
+      "id": "TOEFL-W-002",
+      "section": "writing",
+      "taskType": "independent",
+      "difficulty": "medium",
+      "stem": "Do you agree or disagree with the following statement? It is more important to be able to work with a group of people than to work independently. Use specific reasons and examples to support your answer.",
+      "time": 30,
+      "recommendedLength": "300-350 words",
+      "skills": ["TOEFL-W.2"],
+      "sampleResponse": {
+        "text": "In today's interconnected world, both teamwork and independent work are valuable skills. However, I believe the ability to work with a group is ultimately more important for two main reasons.\n\nFirst, most significant achievements in the modern workplace are collaborative. When I worked on a marketing project at my previous job, our team of five people brought different strengths - one person was creative, another was analytical, another had technical skills. Alone, none of us could have created the successful campaign we produced together. This is true across industries: scientists collaborate in labs, doctors work in teams, and even artists often collaborate. The complex problems we face today require diverse perspectives and collective effort.\n\nSecond, group work develops essential interpersonal skills that independent work cannot teach. Through teamwork, I learned how to communicate clearly, resolve conflicts, and motivate others. These skills have been invaluable in every aspect of my life, not just work. For example, when organizing a community event, I used these same collaboration skills to coordinate volunteers and manage different opinions. Independent work, while important for self-reliance, doesn't build this crucial emotional intelligence.\n\nOf course, independent work has its place - we all need to complete tasks alone and develop self-discipline. But in a world where success increasingly depends on connections and cooperation, the ability to work effectively with others is what truly sets people apart. Therefore, I firmly believe that group work skills are more important for long-term success.",
+        "score": 5,
+        "scoringNotes": "Clear thesis, well-developed reasons with specific examples, acknowledges counterargument, strong conclusion"
+      }
+    }
+  },
+  
+  "passages": {
+    "passage-001": {
+      "id": "passage-001",
+      "title": "The Agricultural Revolution",
+      "text": "The Industrial Revolution brought about profound changes in agricultural practices. The enclosure movement, which consolidated small landholdings into larger farms, was particularly significant in Britain. This consolidation allowed for more efficient farming techniques, including crop rotation and selective breeding of livestock. Consequently, agricultural productivity increased dramatically, freeing up labor for the burgeoning factories in urban areas. However, this transition was not without social costs, as many small farmers were displaced from their ancestral lands.",
+      "source": "Representative academic passage",
+      "difficulty": "medium",
+      "wordCount": 98
+    }
+  },
+  
+  "meta": {
+    "totalQuestions": 13,
+    "readingQuestions": 9,
+    "listeningQuestions": 4,
+    "speakingQuestions": 3,
+    "writingQuestions": 2,
+    "lastUpdated": "2026-03-09"
+  }
+}

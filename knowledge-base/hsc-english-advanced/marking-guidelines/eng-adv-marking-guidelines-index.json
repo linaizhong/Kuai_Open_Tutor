@@ -1,0 +1,271 @@
+{
+  "subject": "HSC English Advanced",
+  "description": "Index of marking guidelines by year and module. Each entry provides band descriptors, general marking principles, and question-level guidance aligned with NESA criteria. English Advanced is assessed holistically against performance bands — there is no single correct answer. The marking-guideline-feedback skill should use these descriptors to give criterion-referenced feedback.",
+  "lastUpdated": "2025-03-09",
+
+  "importantNote": "Unlike Mathematics, English Advanced responses cannot be marked as correct or incorrect. All marking is holistic and criterion-referenced against band descriptors. Feedback should: (1) identify which band the response is performing in and why, (2) name specific strengths, (3) give concrete, actionable advice for moving to the next band.",
+
+  "partialCreditPolicy": {
+    "description": "English Advanced partial credit and band assessment policy, aligned with NESA principles",
+    "rules": [
+      { "condition": "Strong analytical argument but limited textual evidence",              "marksAwarded": "Middle band — evidence integration is essential for upper bands" },
+      { "condition": "Excellent evidence but analysis does not develop a sustained argument", "marksAwarded": "Middle band — argument cohesion required for upper bands" },
+      { "condition": "Narrative or descriptive response rather than analytical",              "marksAwarded": "Lower band — must demonstrate analytical, not descriptive, engagement" },
+      { "condition": "Addresses the question partially (e.g. only affirm, not challenge)",   "marksAwarded": "Cap at middle band — full response to the question required for upper bands" },
+      { "condition": "Creative piece strong but reflective statement absent or minimal",      "marksAwarded": "Module C: deduct up to 3 marks from total; reflective statement is separately assessed" },
+      { "condition": "Module A: texts treated separately, not comparatively",                 "marksAwarded": "Cap at lower-middle band — integration is a requirement, not an option" }
+    ]
+  },
+
+  "bandDescriptors": {
+    "description": "General NESA band descriptors for HSC English Advanced extended responses (out of 20). Applied proportionally to shorter questions.",
+    "bands": {
+      "Band6": {
+        "markRange": "17–20",
+        "descriptor": "The student demonstrates extensive and detailed knowledge and understanding of the text(s) and the module/concept. They make sophisticated, original and sustained judgements, perceptively analysing how language forms, features and structures shape meaning. They express well-developed, cohesive and insightful arguments with clarity, precision and fluency."
+      },
+      "Band5": {
+        "markRange": "13–16",
+        "descriptor": "The student demonstrates thorough knowledge and understanding of the text(s) and the module/concept. They make well-developed and sustained judgements, analysing how language forms, features and structures shape meaning with competence. They express clear, well-organised arguments with control and fluency."
+      },
+      "Band4": {
+        "markRange": "9–12",
+        "descriptor": "The student demonstrates sound knowledge and understanding of the text(s) and the module/concept. They make relevant judgements and show some analytical engagement with language forms, features and structures. Arguments are present but may be uneven, partially developed, or inconsistently supported."
+      },
+      "Band3": {
+        "markRange": "5–8",
+        "descriptor": "The student demonstrates some knowledge of the text(s) and the module/concept. Analysis is attempted but may be largely descriptive or superficial. Evidence is used but the connection between technique and meaning is underdeveloped. Expression may affect clarity."
+      },
+      "Band2": {
+        "markRange": "1–4",
+        "descriptor": "The student demonstrates limited knowledge of the text(s) or the module/concept. The response is largely narrative or descriptive. Little or no analytical engagement with language. Evidence is minimal or absent."
+      }
+    }
+  },
+
+  "markingPrinciples": {
+    "analytical": [
+      "Reward analytical engagement with language, form and structure — not plot summary or general commentary",
+      "A response that demonstrates a genuine, original reading of the text should be rewarded even if it is unconventional",
+      "Evidence must be integrated — a response with excellent argument but no textual evidence cannot exceed Band 4",
+      "Metalanguage should be precise and purposeful — naming a technique earns nothing unless its effect is explained",
+      "Sophisticated responses explore complexity, tension, and paradox — not just surface meaning"
+    ],
+    "essayStructure": [
+      "A clear, arguable thesis is essential for Band 5–6 — 'This text explores human experiences' is not a thesis",
+      "Every paragraph must advance the argument — descriptive paragraphs cap the response at Band 3–4",
+      "Conclusion must synthesise, not repeat — a conclusion that mirrors the introduction suggests limited analytical range",
+      "Responses that address only part of the question are capped — read carefully and answer fully"
+    ],
+    "moduleSpecific": {
+      "CommonModule": [
+        "Responses must engage explicitly with the module concept of 'texts and human experiences'",
+        "The individual/collective distinction is central — responses that address only individual experience are incomplete",
+        "Section I unseen responses must be grounded in the specific unseen text — generic technique lists without evidence score Band 2–3"
+      ],
+      "ModuleA": [
+        "Integration of both texts throughout is mandatory — separated analysis is capped at Band 3–4",
+        "Context must be embedded in analysis, not listed as background information",
+        "The thesis must make a claim about the RELATIONSHIP between texts, not just what each explores"
+      ],
+      "ModuleB": [
+        "Responses must evaluate, not merely analyse — Module B requires genuine critical judgement",
+        "Textual integrity must be demonstrated through specific close language analysis",
+        "A personal, authentic critical voice is rewarded — generic or encyclopaedic responses score Band 3–4"
+      ],
+      "ModuleC": [
+        "Creative pieces are assessed on craft, not on content — avoid formulaic or predictable responses",
+        "The reflective statement is separately assessed (3 marks) — a missing reflective statement loses those marks entirely",
+        "A literal response to the stimulus scores in Band 2–3 — sophisticated responses find unexpected angles"
+      ]
+    }
+  },
+
+  "guidelines": {
+
+    "2023": {
+      "year": 2023,
+      "source": "representative",
+      "nesaReference": "English Advanced HSC Marking Guidelines 2023",
+      "generalPrinciples": [
+        "Holistic assessment against band descriptors — there is no single correct interpretation",
+        "Reward analytical engagement with language, not description of content",
+        "Evidence must be embedded and precise — long block quotes with no analysis are penalised",
+        "Expression and coherence of argument contribute to the band assessment",
+        "Module-specific requirements must be met — e.g. integration in Module A, evaluation in Module B"
+      ],
+      "paper1": {
+        "description": "Paper 1 — Common Module: Texts and Human Experiences",
+        "totalMarks": 40,
+        "sectionI": {
+          "description": "Unseen texts — short answer and extended response",
+          "totalMarks": 20,
+          "generalNotes": [
+            "Responses must be grounded in the specific unseen texts provided",
+            "Short answer responses: mark allocation determines depth required — 1 mark per focused analytical point",
+            "Extended response: assess against band descriptors scaled to 8 marks"
+          ]
+        },
+        "sectionII": {
+          "description": "Prescribed text extended response",
+          "totalMarks": 20,
+          "generalNotes": [
+            "Assess holistically against band descriptors",
+            "Reward specific, precise textual engagement over general thematic discussion",
+            "A response that does not address the specific question asked is capped at Band 3"
+          ]
+        }
+      },
+      "paper2": {
+        "description": "Paper 2 — Modules A, B and C",
+        "totalMarks": 60,
+        "generalNotes": [
+          "Each module assessed at 20 marks using module-specific band descriptors",
+          "Module C: 17 marks for creative piece + 3 marks for reflective statement"
+        ]
+      },
+      "questionGuidelines": {
+        "2023-EA-P1-Q1a": { "totalMarks": 3,  "partialCredit": true,  "keySkill": "technique identification and effect explanation using metalanguage" },
+        "2023-EA-P1-Q1b": { "totalMarks": 4,  "partialCredit": true,  "keySkill": "analysis of collective experience through language and structure" },
+        "2023-EA-P1-Q1c": { "totalMarks": 5,  "partialCredit": true,  "keySkill": "sustained analysis across texts with integration of form" },
+        "2023-EA-P1-Q2":  { "totalMarks": 8,  "partialCredit": true,  "keySkill": "comparative analysis of form across two unseen texts" },
+        "2023-EA-P1-Q3":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "sustained analytical essay on prescribed text with thesis and close language analysis" },
+        "2023-EA-P2-Q4":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "integrated comparative essay with contextual analysis" },
+        "2023-EA-P2-Q5":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "evaluative essay demonstrating textual integrity and critical perspective" },
+        "2023-EA-P2-Q6":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "crafted creative piece (17 marks) + metacognitive reflective statement (3 marks)" }
+      }
+    },
+
+    "2022": {
+      "year": 2022,
+      "source": "representative",
+      "nesaReference": "English Advanced HSC Marking Guidelines 2022",
+      "generalPrinciples": [
+        "Holistic assessment against band descriptors — there is no single correct interpretation",
+        "Reward analytical engagement with language, not description of content",
+        "Evidence must be embedded and precise — long block quotes with no analysis are penalised",
+        "Expression and coherence of argument contribute to the band assessment",
+        "Module-specific requirements must be met"
+      ],
+      "paper1": {
+        "description": "Paper 1 — Common Module: Texts and Human Experiences",
+        "totalMarks": 40,
+        "sectionI": { "description": "Unseen texts", "totalMarks": 20, "generalNotes": ["Responses grounded in specific unseen texts", "Short answer: 1 analytical point per mark", "Extended: scaled band descriptors"] },
+        "sectionII": { "description": "Prescribed text extended response", "totalMarks": 20, "generalNotes": ["Holistic band assessment", "Reward specific textual engagement", "Off-topic responses capped at Band 3"] }
+      },
+      "paper2": {
+        "description": "Paper 2 — Modules A, B and C",
+        "totalMarks": 60,
+        "generalNotes": ["Each module: 20 marks with module-specific band descriptors", "Module C: 17 creative + 3 reflective"]
+      },
+      "questionGuidelines": {
+        "2022-EA-P1-Q1a": { "totalMarks": 3,  "partialCredit": true,  "keySkill": "identifying and explaining a language technique from unseen text" },
+        "2022-EA-P1-Q1b": { "totalMarks": 4,  "partialCredit": true,  "keySkill": "analysing structure and language in non-literary unseen text" },
+        "2022-EA-P1-Q1c": { "totalMarks": 5,  "partialCredit": true,  "keySkill": "extended analysis of unseen literary text and human experience" },
+        "2022-EA-P1-Q2":  { "totalMarks": 8,  "partialCredit": true,  "keySkill": "cross-text analysis of form and representation" },
+        "2022-EA-P1-Q3":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "prescribed text essay — thesis, argument, close analysis" },
+        "2022-EA-P2-Q4":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "integrated comparative essay — Module A" },
+        "2022-EA-P2-Q5":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "evaluative essay on literary value and textual integrity" },
+        "2022-EA-P2-Q6":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "creative piece and metacognitive reflection" }
+      }
+    },
+
+    "2021": {
+      "year": 2021,
+      "source": "representative",
+      "nesaReference": "English Advanced HSC Marking Guidelines 2021",
+      "generalPrinciples": [
+        "Holistic assessment against band descriptors",
+        "Analytical engagement with language rewarded over content description",
+        "Precise, embedded evidence required for Band 5–6",
+        "Module-specific requirements must be demonstrated",
+        "Expression and argument coherence assessed as part of the band"
+      ],
+      "paper1": {
+        "description": "Paper 1 — Common Module",
+        "totalMarks": 40,
+        "sectionI":  { "description": "Unseen texts", "totalMarks": 20 },
+        "sectionII": { "description": "Prescribed text essay", "totalMarks": 20 }
+      },
+      "paper2": {
+        "description": "Paper 2 — Modules A, B and C",
+        "totalMarks": 60
+      },
+      "questionGuidelines": {
+        "2021-EA-P1-Q1a": { "totalMarks": 3,  "partialCredit": true,  "keySkill": "technique identification and precise metalanguage" },
+        "2021-EA-P1-Q1b": { "totalMarks": 4,  "partialCredit": true,  "keySkill": "language analysis of unseen text" },
+        "2021-EA-P1-Q1c": { "totalMarks": 5,  "partialCredit": true,  "keySkill": "extended analytical response to unseen text" },
+        "2021-EA-P1-Q2":  { "totalMarks": 8,  "partialCredit": true,  "keySkill": "multi-text analysis connecting form and human experience" },
+        "2021-EA-P1-Q3":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "sustained essay on prescribed text" },
+        "2021-EA-P2-Q4":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "integrated comparative essay" },
+        "2021-EA-P2-Q5":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "evaluative critical essay on Module B text" },
+        "2021-EA-P2-Q6":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "creative writing and reflective statement" }
+      }
+    },
+
+    "2020": {
+      "year": 2020,
+      "source": "representative",
+      "nesaReference": "English Advanced HSC Marking Guidelines 2020",
+      "generalPrinciples": [
+        "Holistic assessment against band descriptors",
+        "First HSC sitting under the current 2015 syllabus with the four-module structure",
+        "Analytical engagement rewarded over content description",
+        "Module-specific requirements apply"
+      ],
+      "paper1": {
+        "description": "Paper 1 — Common Module",
+        "totalMarks": 40,
+        "sectionI":  { "description": "Unseen texts", "totalMarks": 20 },
+        "sectionII": { "description": "Prescribed text essay", "totalMarks": 20 }
+      },
+      "paper2": {
+        "description": "Paper 2 — Modules A, B and C",
+        "totalMarks": 60
+      },
+      "questionGuidelines": {
+        "2020-EA-P1-Q1a": { "totalMarks": 3,  "partialCredit": true,  "keySkill": "technique identification and metalanguage" },
+        "2020-EA-P1-Q1b": { "totalMarks": 4,  "partialCredit": true,  "keySkill": "language and structure analysis in unseen texts" },
+        "2020-EA-P1-Q1c": { "totalMarks": 5,  "partialCredit": true,  "keySkill": "analysis of human experience across texts" },
+        "2020-EA-P1-Q2":  { "totalMarks": 8,  "partialCredit": true,  "keySkill": "extended comparative analysis of unseen texts" },
+        "2020-EA-P1-Q3":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "prescribed text analytical essay" },
+        "2020-EA-P2-Q4":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module A integrated comparative essay" },
+        "2020-EA-P2-Q5":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module B evaluative literary essay" },
+        "2020-EA-P2-Q6":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module C creative piece and reflective statement" }
+      }
+    },
+
+    "2019": {
+      "year": 2019,
+      "source": "representative",
+      "nesaReference": "English Advanced HSC Marking Guidelines 2019",
+      "generalPrinciples": [
+        "Holistic assessment against band descriptors",
+        "This was a transition year — Area of Study: Discovery was the final cohort",
+        "Paper 1 assessed Area of Study; Paper 2 assessed the three modules",
+        "Analytical engagement with language and form rewarded throughout"
+      ],
+      "paper1": {
+        "description": "Paper 1 — Area of Study: Discovery",
+        "totalMarks": 40,
+        "sectionI":  { "description": "Unseen texts related to Discovery", "totalMarks": 20 },
+        "sectionII": { "description": "Prescribed text essay on Discovery (including related text)", "totalMarks": 20 }
+      },
+      "paper2": {
+        "description": "Paper 2 — Modules A, B and C",
+        "totalMarks": 60
+      },
+      "questionGuidelines": {
+        "2019-EA-P1-Q1a": { "totalMarks": 3,  "partialCredit": true,  "keySkill": "technique identification from discovery-themed unseen text" },
+        "2019-EA-P1-Q1b": { "totalMarks": 4,  "partialCredit": true,  "keySkill": "analysis of discovery representation in unseen text" },
+        "2019-EA-P1-Q1c": { "totalMarks": 5,  "partialCredit": true,  "keySkill": "extended response on discovery across texts" },
+        "2019-EA-P1-Q2":  { "totalMarks": 8,  "partialCredit": true,  "keySkill": "comparative analysis of discovery in unseen texts" },
+        "2019-EA-P1-Q3":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "prescribed text essay on discovery including related text" },
+        "2019-EA-P2-Q4":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module A integrated comparative essay" },
+        "2019-EA-P2-Q5":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module B evaluative literary essay" },
+        "2019-EA-P2-Q6":  { "totalMarks": 20, "partialCredit": true,  "keySkill": "Module C creative piece and reflective statement" }
+      }
+    }
+
+  }
+}

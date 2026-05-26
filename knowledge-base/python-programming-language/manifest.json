@@ -1,0 +1,49 @@
+{
+    "id": "python-learning",
+    "name": "Python Programming Language",
+    "shortName": "Python",
+    "icon": "🐍",
+    "categories": ["programming", "python", "development", "algorithms", "data science"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "📚", "label": "Python basics", "text": "Explain Python variables, data types, and basic syntax." },
+        { "icon": "🔄", "label": "Control flow", "text": "How do I use if-else statements and loops in Python?" },
+        { "icon": "📋", "label": "Data structures", "text": "Explain lists, tuples, sets, and dictionaries with examples." },
+        { "icon": "🔧", "label": "Functions", "text": "How do I define and use functions with parameters and return values?" },
+        { "icon": "📦", "label": "Modules", "text": "How to import and create Python modules and packages?" },
+        { "icon": "🔍", "label": "File I/O", "text": "Show me how to read and write files in Python." },
+        { "icon": "⚠️", "label": "Error handling", "text": "Explain try-except blocks for exception handling." },
+        { "icon": "🧩", "label": "OOP", "text": "Teach me classes, inheritance, and polymorphism in Python." },
+        { "icon": "🚀", "label": "Advanced topics", "text": "Explain decorators, generators, and context managers." },
+        { "icon": "📊", "label": "Data science", "text": "How to use NumPy and Pandas for data analysis?" },
+        { "icon": "🌐", "label": "Web development", "text": "Show me a simple Flask or Django web application." },
+        { "icon": "🧪", "label": "Testing", "text": "How to write unit tests with pytest or unittest?" },
+        { "icon": "⚡", "label": "Performance", "text": "Tips for optimizing Python code performance." },
+        { "icon": "🛠️", "label": "Debugging", "text": "How to use pdb and debugging techniques in Python?" },
+        { "icon": "📝", "label": "Practice", "text": "Give me a Python coding challenge to solve." }
+    ],
+    "quickActions": [
+        { "icon": "📚", "label": "Basics", "text": "Explain Python basics." },
+        { "icon": "🔄", "label": "Control flow", "text": "Help with if/else and loops." },
+        { "icon": "📋", "label": "Data structures", "text": "Explain lists/dicts/sets." },
+        { "icon": "🔧", "label": "Functions", "text": "Help with functions." },
+        { "icon": "📦", "label": "Modules", "text": "Explain modules/packages." },
+        { "icon": "🔍", "label": "File I/O", "text": "Help with file operations." },
+        { "icon": "⚠️", "label": "Exceptions", "text": "Explain error handling." },
+        { "icon": "🧩", "label": "OOP", "text": "Teach Python classes." },
+        { "icon": "🚀", "label": "Advanced", "text": "Explain advanced features." },
+        { "icon": "📊", "label": "Data science", "text": "Help with NumPy/Pandas." },
+        { "icon": "🌐", "label": "Web dev", "text": "Help with Flask/Django." },
+        { "icon": "🧪", "label": "Testing", "text": "Help with unit tests." },
+        { "icon": "⚡", "label": "Performance", "text": "Optimization tips." },
+        { "icon": "🛠️", "label": "Debugging", "text": "Debugging techniques." },
+        { "icon": "📝", "label": "Practice", "text": "Give me a challenge." }
+    ],
+    "filenames": {
+        "syllabusMap": "python-syllabus-map.json",
+        "dotPoints": "python-dot-points.json",
+        "questionIndex": "python-index.json",
+        "questions": "python-questions.json",
+        "markingGuidelinesIndex": "python-marking-guidelines-index.json"
+    }
+}

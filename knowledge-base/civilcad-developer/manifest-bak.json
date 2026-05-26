@@ -1,0 +1,31 @@
+{
+    "id": "civilcad-developer",
+    "name": "CivilCAD Developer",
+    "shortName": "CivilCAD",
+    "icon": "🏗️",
+    "categories": ["civil engineering", "developer", "algorithms", "geospatial"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🔺", "label": "Terrain algorithms", "text": "Explain Delaunay triangulation for TIN surface generation in CivilCAD." },
+        { "icon": "🛣️", "label": "Alignment design", "text": "How do I implement circular curve calculations for horizontal alignments?" },
+        { "icon": "💧", "label": "Hydraulics", "text": "Walk me through Manning's equation for pipe sizing in a gravity network." },
+        { "icon": "📦", "label": "File formats", "text": "How do I parse LandXML for alignment and surface data?" },
+        { "icon": "⚡", "label": "Performance", "text": "What spatial indexing strategies work best for large point cloud queries?" },
+        { "icon": "🤖", "label": "AI integration", "text": "How do I integrate an ONNX model into a desktop CivilCAD application?" }
+    ],
+    "quickActions": [
+        { "icon": "🔺", "label": "Terrain", "text": "Explain a terrain algorithm." },
+        { "icon": "🛣️", "label": "Alignment", "text": "Help with alignment geometry." },
+        { "icon": "💧", "label": "Hydraulics", "text": "Help with hydraulic calculations." },
+        { "icon": "📦", "label": "File format", "text": "Help with a file format." },
+        { "icon": "⚡", "label": "Performance", "text": "Help optimise this algorithm." },
+        { "icon": "🤖", "label": "AI/ML", "text": "Help with AI integration." }
+    ],
+    "filenames": {
+        "syllabusMap": "syllabus-map.json",
+        "dotPoints": "dot-points.json",
+        "questionIndex": "index.json",
+        "questions": "questions.json",
+        "markingGuidelinesIndex": "marking-guidelines-index.json"
+    }
+}

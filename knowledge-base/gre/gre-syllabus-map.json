@@ -1,0 +1,330 @@
+{
+    "subject": "GRE Exam Preparation",
+    "subjectId": "gre",
+    "syllabusVersion": "GRE General Test 2024-2025",
+    "appliesTo": "Students preparing for the GRE General Test for graduate school admission",
+    "learningPath": {
+        "totalDuration": "160 hours",
+        "levels": [
+            { "level": "Foundation", "estimatedHours": 40, "topics": ["Verbal Fundamentals", "Arithmetic & Number Theory", "Test Strategy & Structure"] },
+            { "level": "Intermediate", "estimatedHours": 60, "topics": ["Text Completion & Sentence Equivalence", "Reading Comprehension", "Algebra", "Geometry", "Analytical Writing Basics"] },
+            { "level": "Advanced", "estimatedHours": 60, "topics": ["Advanced Verbal Reasoning", "Data Analysis & Statistics", "Quantitative Comparison", "Advanced Word Problems", "High-Scoring Essays"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "GRE-TST",
+            "name": "Test Structure and Strategy",
+            "level": "Foundation",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "GRE-TST-1",
+                    "name": "GRE Format and Scoring",
+                    "dotPoints": [
+                        { "code": "GRE-TST-1.1", "name": "Test Structure Overview", "keywords": ["sections", "Verbal Reasoning", "Quantitative Reasoning", "Analytical Writing", "adaptive", "timing", "score range", "130-170"], "difficulty": "foundation" },
+                        { "code": "GRE-TST-1.2", "name": "Scoring and Score Reporting", "keywords": ["scaled score", "percentile rank", "ScoreSelect", "score validity", "5 years", "ETS", "target scores", "competitive scores"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "GRE-TST-2",
+                    "name": "General Test-Taking Strategies",
+                    "dotPoints": [
+                        { "code": "GRE-TST-2.1", "name": "Time Management and Pacing", "keywords": ["pacing", "time per question", "skipping", "flagging", "section timing", "21 minutes", "35 minutes", "guessing"], "difficulty": "foundation" },
+                        { "code": "GRE-TST-2.2", "name": "Process of Elimination and Guessing", "keywords": ["POE", "process of elimination", "no penalty for guessing", "educated guess", "narrowing choices", "trap answers"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-VRF",
+            "name": "Verbal Reasoning Fundamentals",
+            "level": "Foundation",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "GRE-VRF-1",
+                    "name": "Vocabulary Essentials",
+                    "dotPoints": [
+                        { "code": "GRE-VRF-1.1", "name": "High-Frequency GRE Vocabulary", "keywords": ["vocabulary", "word lists", "context clues", "roots", "prefixes", "suffixes", "flashcards", "spaced repetition"], "difficulty": "foundation" },
+                        { "code": "GRE-VRF-1.2", "name": "Word Roots, Prefixes, and Suffixes", "keywords": ["Latin roots", "Greek roots", "prefix", "suffix", "morphology", "word families", "etymology", "anti-", "pre-", "mis-", "bene-"], "difficulty": "foundation" },
+                        { "code": "GRE-VRF-1.3", "name": "Understanding Connotation and Tone", "keywords": ["connotation", "denotation", "positive tone", "negative tone", "neutral", "formal register", "nuance", "context"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-VRF-2",
+                    "name": "Verbal Reasoning Question Types",
+                    "dotPoints": [
+                        { "code": "GRE-VRF-2.1", "name": "Overview of Verbal Question Types", "keywords": ["Text Completion", "Sentence Equivalence", "Reading Comprehension", "question format", "one blank", "two blanks", "three blanks", "select one", "select two"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-VTC",
+            "name": "Text Completion",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "GRE-VTC-1",
+                    "name": "Single-Blank Text Completion",
+                    "dotPoints": [
+                        { "code": "GRE-VTC-1.1", "name": "Single-Blank Strategy", "keywords": ["one blank", "predict the word", "positive or negative", "clue words", "direction words", "select best fit", "eliminate", "context"], "difficulty": "intermediate" },
+                        { "code": "GRE-VTC-1.2", "name": "Signal Words and Direction Clues", "keywords": ["although", "however", "despite", "because", "since", "therefore", "but", "and", "likewise", "similarly", "contrast signal", "continuation signal"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-VTC-2",
+                    "name": "Multi-Blank Text Completion",
+                    "dotPoints": [
+                        { "code": "GRE-VTC-2.1", "name": "Two-Blank Text Completion Strategy", "keywords": ["two blanks", "independent selection", "easier blank first", "relationship between blanks", "logical flow", "eliminate by one blank"], "difficulty": "intermediate" },
+                        { "code": "GRE-VTC-2.2", "name": "Three-Blank Text Completion Strategy", "keywords": ["three blanks", "complex passages", "tone consistency", "structural analysis", "easiest anchor first", "paragraph-length passages"], "difficulty": "advanced" },
+                        { "code": "GRE-VTC-2.3", "name": "Common Traps in Text Completion", "keywords": ["half-right answers", "superficially attractive", "tone mismatch", "over-reading", "opposite direction", "extreme words", "hedging words"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-VSE",
+            "name": "Sentence Equivalence",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "GRE-VSE-1",
+                    "name": "Sentence Equivalence Strategy",
+                    "dotPoints": [
+                        { "code": "GRE-VSE-1.1", "name": "Sentence Equivalence Question Format", "keywords": ["select two answers", "same meaning sentence", "six choices", "both answers required", "synonyms", "partial credit none"], "difficulty": "intermediate" },
+                        { "code": "GRE-VSE-1.2", "name": "Prediction-First Strategy for SE", "keywords": ["predict before looking", "tone positive or negative", "clue words", "two synonyms", "non-synonym pairs", "eliminate loners"], "difficulty": "intermediate" },
+                        { "code": "GRE-VSE-1.3", "name": "Near-Synonym Recognition", "keywords": ["near synonyms", "shades of meaning", "precise definitions", "dictionary habit", "context-dependent", "connotation match"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-VRC",
+            "name": "Reading Comprehension",
+            "level": "Intermediate",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "GRE-VRC-1",
+                    "name": "Passage Types and Reading Strategies",
+                    "dotPoints": [
+                        { "code": "GRE-VRC-1.1", "name": "Short and Long Passage Strategy", "keywords": ["short passage", "long passage", "paragraph argument", "active reading", "annotation", "main idea first", "topic sentence", "passage map"], "difficulty": "intermediate" },
+                        { "code": "GRE-VRC-1.2", "name": "Identifying Main Idea and Author's Tone", "keywords": ["main idea", "primary purpose", "author's tone", "objective", "critical", "approving", "cautious", "nuanced", "big picture question"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-VRC-2",
+                    "name": "Reading Comprehension Question Types",
+                    "dotPoints": [
+                        { "code": "GRE-VRC-2.1", "name": "Detail and Inference Questions", "keywords": ["detail question", "inference question", "evidence in passage", "line reference", "must be true", "directly stated", "implied", "supported"], "difficulty": "intermediate" },
+                        { "code": "GRE-VRC-2.2", "name": "Vocabulary-in-Context Questions", "keywords": ["vocabulary in context", "word meaning as used", "nearest synonym in context", "not primary definition", "connotation in passage"], "difficulty": "intermediate" },
+                        { "code": "GRE-VRC-2.3", "name": "Purpose and Structure Questions", "keywords": ["function of paragraph", "role of example", "organisation", "why author mentions", "structure question", "rhetorical purpose"], "difficulty": "advanced" },
+                        { "code": "GRE-VRC-2.4", "name": "Select-in-Passage and Multiple-Answer Questions", "keywords": ["select sentence", "highlight text", "three choices select all that apply", "all three", "partial credit none", "careful reading"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "GRE-VRC-3",
+                    "name": "Argument Analysis Passages",
+                    "dotPoints": [
+                        { "code": "GRE-VRC-3.1", "name": "Strengthen, Weaken, and Assumption Questions", "keywords": ["argument structure", "assumption", "strengthen", "weaken", "conclusion", "premise", "unstated assumption", "logical gap", "negation test"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-QAR",
+            "name": "Arithmetic and Number Theory",
+            "level": "Foundation",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "GRE-QAR-1",
+                    "name": "Integers and Number Properties",
+                    "dotPoints": [
+                        { "code": "GRE-QAR-1.1", "name": "Integers, Factors, and Multiples", "keywords": ["integer", "factor", "multiple", "divisor", "prime number", "composite number", "GCF", "LCM", "divisibility rules", "prime factorisation"], "difficulty": "foundation" },
+                        { "code": "GRE-QAR-1.2", "name": "Odd, Even, Positive, and Negative Numbers", "keywords": ["odd", "even", "positive", "negative", "zero", "absolute value", "properties of zero", "number line", "sign rules multiplication"], "difficulty": "foundation" },
+                        { "code": "GRE-QAR-1.3", "name": "Order of Operations and Number Line", "keywords": ["PEMDAS", "BODMAS", "parentheses", "exponents", "multiplication", "division", "addition", "subtraction", "number line ordering"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "GRE-QAR-2",
+                    "name": "Fractions, Decimals, and Percentages",
+                    "dotPoints": [
+                        { "code": "GRE-QAR-2.1", "name": "Fractions and Operations", "keywords": ["numerator", "denominator", "proper fraction", "improper fraction", "mixed number", "simplify", "common denominator", "multiply fractions", "divide fractions"], "difficulty": "foundation" },
+                        { "code": "GRE-QAR-2.2", "name": "Decimals and Scientific Notation", "keywords": ["decimal", "repeating decimal", "terminating decimal", "converting fractions to decimals", "scientific notation", "powers of 10"], "difficulty": "foundation" },
+                        { "code": "GRE-QAR-2.3", "name": "Percentages and Percent Change", "keywords": ["percent", "percent of a number", "percent change formula", "percent increase", "percent decrease", "markup", "discount", "original value"], "difficulty": "intermediate" },
+                        { "code": "GRE-QAR-2.4", "name": "Ratios and Proportions", "keywords": ["ratio", "proportion", "part-to-part", "part-to-whole", "equivalent ratios", "cross-multiplication", "direct proportion", "inverse proportion"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QAR-3",
+                    "name": "Exponents and Roots",
+                    "dotPoints": [
+                        { "code": "GRE-QAR-3.1", "name": "Exponent Rules", "keywords": ["base", "exponent", "power", "product rule", "quotient rule", "power rule", "negative exponent", "zero exponent", "fractional exponent"], "difficulty": "intermediate" },
+                        { "code": "GRE-QAR-3.2", "name": "Square Roots and Radicals", "keywords": ["square root", "cube root", "nth root", "simplifying radicals", "rationalising", "radical arithmetic", "perfect squares"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-QAL",
+            "name": "Algebra",
+            "level": "Intermediate",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "GRE-QAL-1",
+                    "name": "Expressions and Equations",
+                    "dotPoints": [
+                        { "code": "GRE-QAL-1.1", "name": "Algebraic Expressions and Simplification", "keywords": ["variable", "constant", "coefficient", "like terms", "combining terms", "distributive property", "factoring", "FOIL", "polynomial"], "difficulty": "foundation" },
+                        { "code": "GRE-QAL-1.2", "name": "Solving Linear Equations", "keywords": ["linear equation", "one variable", "isolate variable", "balance method", "solution", "checking answer", "no solution", "infinite solutions"], "difficulty": "foundation" },
+                        { "code": "GRE-QAL-1.3", "name": "Solving Quadratic Equations", "keywords": ["quadratic", "ax² + bx + c", "factoring", "quadratic formula", "discriminant", "two solutions", "one solution", "no real solution", "completing the square"], "difficulty": "intermediate" },
+                        { "code": "GRE-QAL-1.4", "name": "Systems of Equations", "keywords": ["system of equations", "two variables", "substitution method", "elimination method", "consistent", "inconsistent", "dependent", "graphical solution"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QAL-2",
+                    "name": "Inequalities and Absolute Value",
+                    "dotPoints": [
+                        { "code": "GRE-QAL-2.1", "name": "Linear Inequalities", "keywords": ["inequality", "less than", "greater than", "solve inequality", "flip sign when dividing by negative", "compound inequality", "interval notation", "number line graph"], "difficulty": "intermediate" },
+                        { "code": "GRE-QAL-2.2", "name": "Absolute Value Equations and Inequalities", "keywords": ["absolute value", "|x|", "distance from zero", "absolute value equation", "two cases", "absolute value inequality", "between", "outside"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QAL-3",
+                    "name": "Functions and Graphs",
+                    "dotPoints": [
+                        { "code": "GRE-QAL-3.1", "name": "Functions: Domain, Range, and Notation", "keywords": ["function", "f(x)", "domain", "range", "input", "output", "function notation", "evaluate function", "composition", "inverse"], "difficulty": "intermediate" },
+                        { "code": "GRE-QAL-3.2", "name": "Linear and Quadratic Graphs", "keywords": ["slope", "y-intercept", "slope-intercept form", "y = mx + b", "parabola", "vertex", "axis of symmetry", "x-intercept", "line equation from two points"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QAL-4",
+                    "name": "Word Problems",
+                    "dotPoints": [
+                        { "code": "GRE-QAL-4.1", "name": "Rate, Work, and Mixture Problems", "keywords": ["rate", "distance = rate × time", "combined work rate", "mixture", "weighted average", "concentration", "translate words to equations"], "difficulty": "advanced" },
+                        { "code": "GRE-QAL-4.2", "name": "Sequence and Pattern Problems", "keywords": ["arithmetic sequence", "common difference", "geometric sequence", "common ratio", "nth term formula", "sum of sequence", "consecutive integers"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-QGE",
+            "name": "Geometry",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "GRE-QGE-1",
+                    "name": "Lines, Angles, and Triangles",
+                    "dotPoints": [
+                        { "code": "GRE-QGE-1.1", "name": "Lines, Angles, and Angle Relationships", "keywords": ["acute", "obtuse", "right angle", "straight angle", "supplementary", "complementary", "vertical angles", "parallel lines", "transversal", "alternate interior angles"], "difficulty": "foundation" },
+                        { "code": "GRE-QGE-1.2", "name": "Triangle Properties and Theorems", "keywords": ["triangle angle sum 180", "isosceles", "equilateral", "scalene", "Pythagorean theorem", "right triangle", "special triangles", "30-60-90", "45-45-90", "triangle inequality"], "difficulty": "intermediate" },
+                        { "code": "GRE-QGE-1.3", "name": "Area and Perimeter of Polygons", "keywords": ["area", "perimeter", "rectangle", "square", "parallelogram", "trapezoid", "composite figures", "base times height", "diagonal"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QGE-2",
+                    "name": "Circles and Coordinate Geometry",
+                    "dotPoints": [
+                        { "code": "GRE-QGE-2.1", "name": "Circle Properties", "keywords": ["radius", "diameter", "circumference", "area of circle", "arc", "sector", "central angle", "inscribed angle", "chord", "tangent"], "difficulty": "intermediate" },
+                        { "code": "GRE-QGE-2.2", "name": "Coordinate Geometry", "keywords": ["x-axis", "y-axis", "coordinates", "distance formula", "midpoint formula", "slope", "parallel lines same slope", "perpendicular lines negative reciprocal slopes"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-QGE-3",
+                    "name": "3D Figures and Volumes",
+                    "dotPoints": [
+                        { "code": "GRE-QGE-3.1", "name": "Volume and Surface Area", "keywords": ["rectangular solid", "cube", "cylinder", "sphere", "cone", "volume formula", "surface area", "length width height"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-QDA",
+            "name": "Data Analysis and Statistics",
+            "level": "Intermediate",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "GRE-QDA-1",
+                    "name": "Descriptive Statistics",
+                    "dotPoints": [
+                        { "code": "GRE-QDA-1.1", "name": "Mean, Median, Mode, and Range", "keywords": ["mean", "average", "median", "mode", "range", "weighted average", "effect of outliers", "balancing point", "middle value"], "difficulty": "foundation" },
+                        { "code": "GRE-QDA-1.2", "name": "Standard Deviation and Normal Distribution", "keywords": ["standard deviation", "spread", "normal distribution", "bell curve", "68-95-99.7 rule", "variance", "z-score", "percentile"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "GRE-QDA-2",
+                    "name": "Probability",
+                    "dotPoints": [
+                        { "code": "GRE-QDA-2.1", "name": "Basic Probability", "keywords": ["probability", "P(event)", "favourable outcomes", "total outcomes", "complement", "1 minus probability", "mutually exclusive", "at least one", "certain event", "impossible event"], "difficulty": "intermediate" },
+                        { "code": "GRE-QDA-2.2", "name": "Compound Probability and Counting", "keywords": ["and probability", "or probability", "independent events", "dependent events", "multiplication rule", "addition rule", "permutation", "combination", "factorial", "nCr", "nPr"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "GRE-QDA-3",
+                    "name": "Data Interpretation",
+                    "dotPoints": [
+                        { "code": "GRE-QDA-3.1", "name": "Tables, Charts, and Graphs", "keywords": ["bar chart", "line graph", "pie chart", "table", "frequency distribution", "histogram", "scatterplot", "reading data", "interpolation", "extrapolation"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-QQC",
+            "name": "Quantitative Comparison",
+            "level": "Advanced",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "GRE-QQC-1",
+                    "name": "Quantitative Comparison Strategy",
+                    "dotPoints": [
+                        { "code": "GRE-QQC-1.1", "name": "QC Question Format and Answer Choices", "keywords": ["Quantity A", "Quantity B", "A greater", "B greater", "equal", "cannot be determined", "4 choices only", "relationship"], "difficulty": "intermediate" },
+                        { "code": "GRE-QQC-1.2", "name": "QC Strategy: Simplify and Plug In", "keywords": ["simplify both sides", "plug in numbers", "FROZEN", "fractions", "zero", "one", "extremes", "negatives", "eliminate impossible choices", "look for exceptions"], "difficulty": "advanced" },
+                        { "code": "GRE-QQC-1.3", "name": "QC with Geometry and Algebra", "keywords": ["geometry QC", "diagram assumptions", "algebra QC", "when to say cannot be determined", "variable constraints", "positive restrictions", "hidden constraints"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "GRE-AWT",
+            "name": "Analytical Writing",
+            "level": "Intermediate",
+            "learningWeightPercent": 11,
+            "subtopics": [
+                {
+                    "code": "GRE-AWT-1",
+                    "name": "Analyse an Issue Task",
+                    "dotPoints": [
+                        { "code": "GRE-AWT-1.1", "name": "Understanding the Issue Task", "keywords": ["Issue task", "30 minutes", "position", "argument", "perspective", "take a side", "acknowledge complexity", "prompt types", "specific claim", "recommendation", "policy"], "difficulty": "intermediate" },
+                        { "code": "GRE-AWT-1.2", "name": "Issue Essay Structure", "keywords": ["introduction", "thesis statement", "body paragraphs", "counterargument", "rebuttal", "conclusion", "topic sentence", "supporting evidence", "examples"], "difficulty": "intermediate" },
+                        { "code": "GRE-AWT-1.3", "name": "Issue Essay Scoring Criteria", "keywords": ["1-6 scale", "critical thinking", "organisation", "development", "language facility", "grammar", "sentence variety", "evidence quality", "nuanced position"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "GRE-AWT-2",
+                    "name": "Analyse an Argument Task",
+                    "dotPoints": [
+                        { "code": "GRE-AWT-2.1", "name": "Understanding the Argument Task", "keywords": ["Argument task", "30 minutes", "critique not agree or disagree", "logical flaws", "assumptions", "evidence quality", "do not give your opinion"], "difficulty": "intermediate" },
+                        { "code": "GRE-AWT-2.2", "name": "Common Logical Fallacies", "keywords": ["hasty generalisation", "false analogy", "causal fallacy", "post hoc", "correlation vs causation", "unrepresentative sample", "either-or fallacy", "ad hominem", "circular reasoning", "straw man"], "difficulty": "advanced" },
+                        { "code": "GRE-AWT-2.3", "name": "Argument Essay Structure and Scoring", "keywords": ["identify conclusion", "identify premises", "unstated assumptions", "alternative explanations", "missing evidence", "questions to strengthen", "1-6 scale", "systematic critique"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "GRE-AWT-3",
+                    "name": "Writing Quality and Language",
+                    "dotPoints": [
+                        { "code": "GRE-AWT-3.1", "name": "Academic Writing Style", "keywords": ["formal register", "precise word choice", "avoid colloquial", "transition words", "coherence", "cohesion", "vary sentence structure", "active vs passive voice"], "difficulty": "intermediate" },
+                        { "code": "GRE-AWT-3.2", "name": "Grammar, Mechanics, and Proofreading", "keywords": ["subject-verb agreement", "pronoun agreement", "comma splice", "run-on sentence", "sentence fragment", "apostrophe", "spelling", "proofreading strategy"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

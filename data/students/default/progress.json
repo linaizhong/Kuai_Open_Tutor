@@ -1,0 +1,1184 @@
+{
+  "sessions": [
+    {
+      "date": "2026-03-09",
+      "attempts": [
+        {
+          "timestamp": "2026-03-09T06:31:47.496Z",
+          "dotPoint": "english.module.modA",
+          "problem": "Can you show me a model essay introduction for a Module A question?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-09T06:32:01.426Z",
+          "dotPoint": "english.module.modA",
+          "problem": "Can you show me a model essay introduction for a Module A question?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-09T06:49:56.963Z",
+          "dotPoint": "english.module.modA",
+          "problem": "Can you show me a model essay introduction for a Module A question?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-09T06:50:19.108Z",
+          "dotPoint": "english.module.modA",
+          "problem": "Can you show me a model essay introduction for a Module A question?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 4
+    },
+    {
+      "date": "2026-03-11",
+      "attempts": [
+        {
+          "timestamp": "2026-03-11T04:36:10.887Z",
+          "dotPoint": "english.module.modA",
+          "problem": "What are the main ideas of Module A?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-12",
+      "attempts": [
+        {
+          "timestamp": "2026-03-12T01:54:41.912Z",
+          "dotPoint": "english.technique.drama",
+          "problem": "What are some examples of literary techniques used in Shakespeare's plays?",
+          "result": "technique task: identify",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-12T22:31:20.852Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-12T22:37:17.404Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-12T22:45:06.362Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-12T22:54:35.817Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-12T23:44:46.250Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 6
+    },
+    {
+      "date": "2026-03-13",
+      "attempts": [
+        {
+          "timestamp": "2026-03-13T00:24:56.513Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-13T00:32:35.911Z",
+          "dotPoint": "english.module.modA",
+          "problem": "What specific Module A question or topic would you like to cover?",
+          "result": "module mode: explain",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-13T01:53:50.799Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-13T03:14:59.355Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-13T03:49:35.157Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-13T04:32:04.312Z",
+          "dotPoint": "EA-CM1",
+          "problem": "Explain Understanding Human Experiences in Texts",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 6
+    },
+    {
+      "date": "2026-03-17",
+      "attempts": [
+        {
+          "timestamp": "2026-03-17T05:36:30.960Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-18",
+      "attempts": [
+        {
+          "timestamp": "2026-03-18T06:07:24.624Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression \\(\\frac{2x^3 - 8x}{4x}\\).",
+          "result": "x^2 - 4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T06:17:21.943Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of \\( f(x) = \\sin(2x + 3) \\)?",
+          "result": "2cos(2x + 3)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T06:30:26.020Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of \\( f(x) = \\sin(2x + 3) \\)?",
+          "result": "2cos(2x + 3)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T06:35:47.689Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: *Find the derivative of f(x) = x^3 - 4x + 2 using the power rule.*",
+          "result": "3x^2 - 4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T06:50:43.113Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression \\(\\frac{x^2 + 4x + 4}{x + 2}\\).",
+          "result": "x + 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T20:58:52.388Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation $2x^2 - 5x + 3 = 0$ for $x$.",
+          "result": "x = 1/2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T21:22:08.768Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for x in the equation $2x^2 - 5x + 3 = 0$ using the quadratic formula.",
+          "result": "x = 1/2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T21:28:39.195Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression \\((2x + 3)^2 - (x - 1)^2\\).",
+          "result": "(3x + 2)(x + 4)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T21:35:46.861Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 2x + 5 = 17 \\).",
+          "result": "x = 6",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T21:40:04.159Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of the function \\( f(x) = \\sin(2x + 3) \\)?",
+          "result": "2cos(2x + 3)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T21:54:25.353Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 2x^2 - 5x + 3 = 0 \\).",
+          "result": "x = 1 / 2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:01:00.279Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^2 + 1) \\, dx$.",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:08:12.226Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^2 + 1) \\, dx$.",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:19:02.237Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 2x + 5 = 17 \\).",
+          "result": "x = 6",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:22:33.527Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^2 + 1) \\, dx\\).",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:28:03.857Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^2 + 1) \\, dx$.",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:37:25.532Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^2 + 1) \\, dx\\).",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:47:08.432Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of the function \\( f(x) = \\sin(2x + 3) \\)?",
+          "result": "2cos(2x + 3)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T22:56:38.303Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression $\\frac{2x^3 - 6x^2 + 4x}{2x}$.",
+          "result": "x^2 - 3x + 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:12:29.320Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation $2x^2 - 5x + 3 = 0$ for x.",
+          "result": "x = 1/2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:15:07.837Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $2x^2 - 5x + 3 = 0$.",
+          "result": "x = 3/2 or x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:16:15.757Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^2 + 1) \\, dx$.",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:21:42.679Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 2x^2 - 5x + 3 = 0 \\).",
+          "result": "x = 2/3 or x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:31:18.474Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $2x^2 - 5x + 3 = 0$ using the quadratic formula.",
+          "result": "x=3/2 or x=1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:40:27.265Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation \\(2x^2 - 5x + 3 = 0\\) for \\(x\\).",
+          "result": "x=3/2 and x=1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-18T23:49:00.505Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression $\\frac{2x^2 - 8x + 12}{4x - 6}$ and express it in its simplest form.",
+          "result": "(x^2-4x+6)/(x-3)",
+          "isCorrect": true
+        }
+      ],
+      "correct": 26,
+      "total": 26
+    },
+    {
+      "date": "2026-03-19",
+      "attempts": [
+        {
+          "timestamp": "2026-03-19T00:03:28.800Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 4x + 5) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T00:10:23.038Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 4x) \\, dx$.",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:39:19.039Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation \\( x^2 - 5x + 6 = 0 \\).",
+          "result": "x=2 and x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:45:02.319Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:45:45.376Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Find the derivative of \\( f(x) = \\sin(3x + 4) \\).",
+          "result": "3cos(3x + 4)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:46:30.582Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 5 = 14 \\).",
+          "result": "x=19/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:53:36.848Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Find the derivative of the function \\( f(x) = \\sin(3x + 4) \\).",
+          "result": "9cos(3x + 4)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:54:12.509Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T01:56:13.464Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T02:02:14.075Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $2x^2 - 5x + 3 = 0$.",
+          "result": "x=3/2 and x=1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T02:06:31.574Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T03:20:20.802Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T03:22:07.373Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $x^2 - 5x + 6 = 0$ for $x$.",
+          "result": "x=2 and x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T03:23:40.958Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T03:41:32.911Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T03:46:21.798Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T03:50:38.677Z",
+          "dotPoint": "MA-F1",
+          "problem": "Explain Working with Functions",
+          "result": "viewed concept explanation",
+          "isCorrect": null
+        },
+        {
+          "timestamp": "2026-03-19T21:13:19.835Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of \\( \\sin(3x) \\)?",
+          "result": "3cos(3x)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:20:46.718Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 + 6x}{x+2}$.",
+          "result": "3x",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:26:54.493Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 2x + 4) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:36:01.880Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $x^2 - 5x + 6 = 0$ for $x$.",
+          "result": "x = 2 and x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:36:44.916Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x^2 - 12 = 0 \\).",
+          "result": "x=2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:37:21.873Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 + 6x}{3}$ and express it in its simplest form.",
+          "result": "3x",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:37:55.384Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 5 = 14 \\).",
+          "result": "x = 19/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T21:55:34.307Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 2x + 1) \\, dx\\).",
+          "result": "1/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:01:36.242Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the definite integral \\(\\int_0^{\\pi} \\sin(x) \\, dx\\).",
+          "result": "-1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:02:43.413Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 4x) \\, dx$.",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:04:34.910Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\).",
+          "result": "x=2 or x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:08:32.239Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:15:19.818Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation \\(2x^2 - 5x + 3 = 0\\) using the quadratic formula.",
+          "result": "x=3/2 or x=1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:16:50.556Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 4x + 5) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:19:16.890Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 4x + 1) \\, dx\\).",
+          "result": "-(3/4)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:26:06.521Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation $3x^2 - 5x + 2 = 0$.",
+          "result": "x=2/3 or x=1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:31:35.855Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 4 = 10 \\).",
+          "result": "x = 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:32:44.619Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\).",
+          "result": "x=2 or x=3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-19T22:56:48.337Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 4x + 5) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        }
+      ],
+      "correct": 30,
+      "total": 36
+    },
+    {
+      "date": "2026-03-20",
+      "attempts": [
+        {
+          "timestamp": "2026-03-20T01:51:10.073Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 - 12x + 9}{x - 3}$.",
+          "result": "3(x - 1)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T01:53:17.772Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + \\sin(x)) \\, dx$.",
+          "result": "1/4 + cos(1) - cos(0)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T01:54:45.739Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Solve the quadratic equation \\(3x^2 - 5x + 2 = 0\\) using the quadratic formula.",
+          "result": "x = 2 / 3 or x = 1",
+          "isCorrect": false
+        },
+        {
+          "timestamp": "2026-03-20T01:57:12.720Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 4x + 7) \\, dx$.",
+          "result": "21/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:36:30.424Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 2x + 4) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:38:25.757Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 2x + 1) \\, dx$.",
+          "result": "1/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:42:52.646Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation $3x - 5 = 10$ for $x$.",
+          "result": "x = 5",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:43:23.529Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^2 + 1) \\, dx\\).",
+          "result": "4/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:44:01.284Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 + 2x) \\, dx\\).",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:44:43.121Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Find the derivative of the function \\( f(x) = \\sin(3x + 4) \\).",
+          "result": "3cos(3x + 4)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:45:32.168Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Simplify the expression $\\frac{x^3 - 8}{x - 2}$.",
+          "result": "x^2 -2x + 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T02:45:59.584Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: What is the derivative of \\( f(x) = \\sin(3x) \\)?",
+          "result": "3cos(3x)",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:12:34.862Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation \\(3x - 7 = 14\\).",
+          "result": "x = 7",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:13:02.810Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:13:32.947Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 2x + 4) \\, dx$.",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:13:53.497Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 11 \\).",
+          "result": "x = 6",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:14:24.298Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x + 5 = 14 \\).",
+          "result": "x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T03:14:53.581Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 4x + 5) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:12:49.931Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Simplify the expression \\(\\frac{3x^3 - 12x^2 + 9x}{3x}\\).",
+          "result": "x^2 + 4x + 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:13:33.557Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve the quadratic equation $2x^2 - 5x + 3 = 0$.",
+          "result": "x = 3 / 2 or x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:22:54.046Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 - 6x + 9}{x - 3}$.",
+          "result": "N/A",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:23:59.375Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve the quadratic equation $3x^2 - 5x + 2 = 0$.",
+          "result": "x = 2/3 or x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:24:42.902Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 2x + 4) \\, dx$.",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:25:36.521Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 + 4x) \\, dx\\).",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:34:31.953Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\).",
+          "result": "x = 2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:35:03.639Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\) using factoring.",
+          "result": "x = 2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:37:56.953Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Simplify the expression $\\frac{x^3 - 8}{x - 2}$.",
+          "result": "x^2 - 2x + 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:39:37.502Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\) using the quadratic formula.",
+          "result": "x = 2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:40:09.179Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 2x + 4) \\, dx$.",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:40:35.463Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 10 \\).",
+          "result": "x = 17/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:44:04.775Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (3x + 4) \\, dx\\).",
+          "result": "4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:44:50.856Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve the equation \\(3x + 5 = 14\\) for \\(x\\).",
+          "result": "x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:45:36.603Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Solve the quadratic equation $3x^2 - 5x + 2 = 0$ using the quadratic formula.",
+          "result": "x = 2/3 or x = 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:46:22.644Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\).",
+          "result": "x = 1 or x = 2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:47:12.440Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 - 6x + 9}{x - 3}$.",
+          "result": "N/A",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:48:26.601Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 4x) \\, dx$.",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:58:04.643Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 + x) \\, dx\\).",
+          "result": "1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:58:18.736Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + x) \\, dx$.",
+          "result": "1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:58:58.946Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (3x^2 - 4x + 5) \\, dx$.",
+          "result": "1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T04:59:39.111Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^2 + 1) \\, dx$.",
+          "result": "1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T05:00:46.188Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: What is the derivative of \\( f(x) = \\sin^3(2x + 5) \\)?",
+          "result": "1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-20T05:01:43.858Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 2x) \\, dx$.",
+          "result": "1",
+          "isCorrect": true
+        }
+      ],
+      "correct": 41,
+      "total": 42
+    },
+    {
+      "date": "2026-03-21",
+      "attempts": [
+        {
+          "timestamp": "2026-03-21T02:36:38.249Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the quadratic equation \\(2x^2 - 5x + 3 = 0\\) using the quadratic formula.",
+          "result": "x = 3/2 and x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-21T02:53:21.362Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^{\\pi/2} \\sin(x) \\cos(x) \\, dx$.",
+          "result": "0",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-21T03:02:28.765Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 14 \\).",
+          "result": "x = 7",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-21T03:03:14.723Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 2x + 4) \\, dx\\).",
+          "result": "13/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-21T03:11:38.460Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 4) \\, dx$.",
+          "result": "17/4",
+          "isCorrect": true
+        }
+      ],
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2026-03-22",
+      "attempts": [
+        {
+          "timestamp": "2026-03-22T09:06:56.062Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3(x + 4) = 15 \\).",
+          "result": "x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:08:10.928Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 11 \\).",
+          "result": "6",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:18:05.756Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 14 \\).",
+          "result": "7",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:19:01.129Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x^2 - 7x + 4 = 0 \\).",
+          "result": "4/3 or 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:30:57.361Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 5 = 14 \\).",
+          "result": "19/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:45:03.961Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve the quadratic equation $3x^2 - 7x + 4 = 0$ using the quadratic formula.",
+          "result": "4/3 or 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:46:23.344Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 - 6x + 9}{x - 3}$.",
+          "result": "N/A",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:47:59.290Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 + 4x) \\, dx\\).",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:48:33.642Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 5 = 14 \\).",
+          "result": "x = 19/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-22T09:50:22.126Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 - 2x + 1) \\, dx\\).",
+          "result": "1/4",
+          "isCorrect": true
+        }
+      ],
+      "correct": 10,
+      "total": 10
+    },
+    {
+      "date": "2026-03-23",
+      "attempts": [
+        {
+          "timestamp": "2026-03-23T03:59:57.701Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: What is the derivative of the function \\( f(x) = \\frac{x^3}{3} + x \\)?",
+          "result": "x^2 + 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:03:01.363Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: What is the value of $\\sin(30^\\circ)$ in radians?",
+          "result": "1/2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:03:42.926Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Evaluate the integral $\\int_0^{\\pi} \\sin(x) \\, dx$.",
+          "result": "-2",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:04:42.440Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 + 2x^2) \\, dx$.",
+          "result": "11/12",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:14:52.273Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 10 \\).",
+          "result": "17/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:15:24.948Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 10 \\).",
+          "result": "17/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:16:36.457Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Simplify the expression $\\frac{3x^2 + 12x}{6}$ and express it in its simplest form.",
+          "result": "(1/2)x^2 + 2x",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:17:18.893Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve the quadratic equation \\(x^2 - 5x + 6 = 0\\) using factoring.",
+          "result": "x = 2 or x = 3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:18:15.863Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Evaluate the integral $\\int_0^1 (x^3 - 2x + 3) \\, dx$.",
+          "result": "9/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:27:31.093Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^3 + x) \\, dx\\).",
+          "result": "3/4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:42:35.843Z",
+          "dotPoint": "MA-F",
+          "problem": "Check question: Solve the equation \\(3x + 4 = 10\\).",
+          "result": "14/3",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:44:32.625Z",
+          "dotPoint": "MA-C",
+          "problem": "Check question: Solve the quadratic equation $3x^2 - 7x + 4 = 0$ using the quadratic formula.",
+          "result": "x=4/3 or x = 1",
+          "isCorrect": false
+        },
+        {
+          "timestamp": "2026-03-23T04:46:48.457Z",
+          "dotPoint": "MA-T",
+          "problem": "Check question: Solve the equation $3x - 5 = 7$ for x.",
+          "result": "x = 4",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:47:15.841Z",
+          "dotPoint": "MA-E",
+          "problem": "Check question: Solve for \\( x \\) in the equation \\( 3x - 7 = 14 \\).",
+          "result": "x = 7",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:50:46.675Z",
+          "dotPoint": "MA-S",
+          "problem": "Check question: Solve the equation $3x^2 - 5x + 2 = 0$ for $x$.",
+          "result": "x = 2/3 or x = 1",
+          "isCorrect": true
+        },
+        {
+          "timestamp": "2026-03-23T04:51:27.756Z",
+          "dotPoint": "MA-M",
+          "problem": "Check question: Evaluate the integral \\(\\int_0^1 (x^2 + 1) \\, dx\\).",
+          "result": "4/3",
+          "isCorrect": true
+        }
+      ],
+      "correct": 15,
+      "total": 16
+    },
+    {
+      "date": "2026-03-26",
+      "attempts": [
+        {
+          "timestamp": "2026-03-26T20:44:37.560Z",
+          "dotPoint": "english.technique.prose",
+          "problem": "Integrate WMTS/WMS background imagery (OSM, aerial) in CivilCAD.",
+          "result": "technique task: identify",
+          "isCorrect": null
+        }
+      ],
+      "correct": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-30",
+      "attempts": [
+        {
+          "timestamp": "2026-03-30T21:54:56.710Z",
+          "dotPoint": "GRE-A.2",
+          "problem": "Argument analysis practice",
+          "result": "How can I start preparing for the GRE?...",
+          "isCorrect": false
+        }
+      ],
+      "correct": 0,
+      "total": 1
+    }
+  ],
+  "totalSessions": 12,
+  "totalAttempts": 154,
+  "lastSessionDate": "2026-03-30",
+  "totalCorrect": 126
+}

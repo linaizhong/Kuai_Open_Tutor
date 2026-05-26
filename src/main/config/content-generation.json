@@ -1,0 +1,288 @@
+{
+    "version": "1.0.0",
+    "description": "Configuration for dynamic content generation in Teacher-Led mode",
+    "lastUpdated": "2026-03-12",
+
+    "llm": {
+        "defaultModel": "qwen2.5-coder:3b",
+        "fallbackModel": "llama3.2:3b",
+        "timeoutMs": 30000,
+        "retryAttempts": 2,
+        "retryDelayMs": 1000
+    },
+
+    "cache": {
+        "enabled": true,
+        "defaultTTL": 86400000,
+        "maxSize": 1000,
+        "cleanupInterval": 3600000,
+        "persistToDisk": false,
+        "diskPath": "./data/cache/content-cache.json"
+    },
+
+    "contentGeneration": {
+        "explanations": {
+            "enabled": true,
+            "minLength": 100,
+            "maxLength": 5000,
+            "temperature": 0.5,
+            "topP": 0.9,
+            "frequencyPenalty": 0.3,
+            "presencePenalty": 0.3,
+            "fallbackMessage": "Let's learn about this topic together. I'll guide you through the key concepts."
+        },
+
+        "questions": {
+            "enabled": true,
+            "defaultCount": 3,
+            "maxCount": 5,
+            "temperature": 0.7,
+            "topP": 0.95,
+            "frequencyPenalty": 0.4,
+            "presencePenalty": 0.4,
+            "difficultyLevels": ["easy", "medium", "hard"],
+            "questionTypes": ["multiple-choice", "open"],
+            "fallbackQuestion": {
+                "question": "Can you explain what you understand about this topic?",
+                "type": "open",
+                "difficulty": "medium",
+                "expectedAnswer": "Student demonstrates understanding of key concepts"
+            }
+        },
+
+        "examples": {
+            "enabled": true,
+            "defaultCount": 2,
+            "maxCount": 4,
+            "temperature": 0.6,
+            "topP": 0.92,
+            "frequencyPenalty": 0.3,
+            "presencePenalty": 0.2,
+            "includeStepByStep": true,
+            "includeExplanations": true,
+            "fallbackExample": {
+                "problem": "Work through a practice problem",
+                "solution": "Step 1: Identify the key concept\nStep 2: Apply the relevant formula\nStep 3: Check your answer",
+                "explanation": "This demonstrates the core principle"
+            }
+        },
+
+        "misconceptions": {
+            "enabled": true,
+            "maxCount": 3,
+            "temperature": 0.5,
+            "topP": 0.88,
+            "frequencyPenalty": 0.5,
+            "presencePenalty": 0.5,
+            "includeCorrections": true,
+            "fallbackMisconception": {
+                "description": "Students sometimes confuse similar concepts",
+                "suggestion": "Review the differences carefully",
+                "example": "Make sure to check your work step by step"
+            }
+        },
+
+        "examTips": {
+            "enabled": true,
+            "maxCount": 5,
+            "temperature": 0.5,
+            "topP": 0.9,
+            "frequencyPenalty": 0.4,
+            "presencePenalty": 0.4,
+            "includeCommonMistakes": true,
+            "includeTimeManagement": true,
+            "fallbackTips": [
+                "Practice regularly to build confidence",
+                "Review your mistakes to learn from them",
+                "Use past papers to familiarise yourself with exam format",
+                "Show all working to maximise partial marks",
+                "Manage your time carefully during exams"
+            ]
+        },
+
+        "lessonPlans": {
+            "enabled": true,
+            "defaultDuration": 45,
+            "minDuration": 30,
+            "maxDuration": 90,
+            "temperature": 0.6,
+            "topP": 0.93,
+            "frequencyPenalty": 0.3,
+            "presencePenalty": 0.3,
+            "includeObjectives": true,
+            "includeActivities": true,
+            "includeHomework": true,
+            "includeAssessment": true
+        },
+
+        "feedback": {
+            "enabled": true,
+            "temperature": 0.4,
+            "topP": 0.85,
+            "frequencyPenalty": 0.2,
+            "presencePenalty": 0.2,
+            "maxLength": 500,
+            "includeStrengths": true,
+            "includeImprovements": true,
+            "encouragingTone": true,
+            "actionableAdvice": true,
+            "fallbackFeedback": "Thanks for your answer. Keep practicing to strengthen your understanding."
+        }
+    },
+
+    "studentLevels": {
+        "beginner": {
+            "masteryThreshold": 0.4,
+            "paceMultiplier": 0.7,
+            "detailLevel": "basic",
+            "exampleCount": 3,
+            "questionDifficulty": "easy",
+            "encouragementFrequency": "high",
+            "scaffoldingLevel": "high"
+        },
+        "intermediate": {
+            "masteryThreshold": 0.7,
+            "paceMultiplier": 1.0,
+            "detailLevel": "standard",
+            "exampleCount": 2,
+            "questionDifficulty": "medium",
+            "encouragementFrequency": "medium",
+            "scaffoldingLevel": "medium"
+        },
+        "advanced": {
+            "masteryThreshold": 0.9,
+            "paceMultiplier": 1.3,
+            "detailLevel": "deep",
+            "exampleCount": 1,
+            "questionDifficulty": "hard",
+            "encouragementFrequency": "low",
+            "scaffoldingLevel": "low"
+        }
+    },
+
+    "learningStyles": {
+        "visual": {
+            "preferDiagrams": true,
+            "preferGraphs": true,
+            "preferSpatialDescriptions": true,
+            "exampleFormat": "visual",
+            "explanationStyle": "spatial"
+        },
+        "numerical": {
+            "preferConcreteNumbers": true,
+            "preferCalculations": true,
+            "preferDataTables": true,
+            "exampleFormat": "numerical",
+            "explanationStyle": "computational"
+        },
+        "verbal": {
+            "preferTextDescriptions": true,
+            "preferAnalogies": true,
+            "preferStepByStep": true,
+            "exampleFormat": "descriptive",
+            "explanationStyle": "narrative"
+        },
+        "balanced": {
+            "preferDiagrams": false,
+            "preferGraphs": false,
+            "preferSpatialDescriptions": false,
+            "preferConcreteNumbers": false,
+            "preferCalculations": false,
+            "preferDataTables": false,
+            "preferTextDescriptions": false,
+            "preferAnalogies": false,
+            "preferStepByStep": true,
+            "exampleFormat": "mixed",
+            "explanationStyle": "balanced"
+        }
+    },
+
+    "subjects": {
+        "maths-advanced": {
+            "notation": "mathematical",
+            "exampleType": "calculations",
+            "questionStyle": "problem-solving",
+            "emphasisOnWorking": true,
+            "partialCreditAvailable": true
+        },
+        "maths-ext1": {
+            "notation": "mathematical",
+            "exampleType": "calculations",
+            "questionStyle": "problem-solving",
+            "emphasisOnWorking": true,
+            "partialCreditAvailable": true
+        },
+        "maths-ext2": {
+            "notation": "mathematical",
+            "exampleType": "calculations",
+            "questionStyle": "problem-solving",
+            "emphasisOnWorking": true,
+            "partialCreditAvailable": true
+        },
+        "english-advanced": {
+            "notation": "textual",
+            "exampleType": "essays",
+            "questionStyle": "analytical",
+            "emphasisOnWorking": false,
+            "partialCreditAvailable": true
+        },
+        "toefl": {
+            "notation": "standard",
+            "exampleType": "language",
+            "questionStyle": "test-prep",
+            "emphasisOnWorking": false,
+            "partialCreditAvailable": true
+        },
+        "gre": {
+            "notation": "standard",
+            "exampleType": "test-prep",
+            "questionStyle": "test-prep",
+            "emphasisOnWorking": true,
+            "partialCreditAvailable": true
+        }
+    },
+
+    "rateLimiting": {
+        "enabled": true,
+        "maxRequestsPerMinute": 30,
+        "maxRequestsPerHour": 500,
+        "maxRequestsPerDay": 5000,
+        "cooldownPeriodMs": 1000
+    },
+
+    "qualityChecks": {
+        "minExplanationLength": 100,
+        "maxExplanationLength": 5000,
+        "minQuestionLength": 10,
+        "maxQuestionLength": 500,
+        "minExampleLength": 20,
+        "maxExampleLength": 1000,
+        "requireExamples": true,
+        "requireKeyPoints": true,
+        "checkForProfanity": true,
+        "checkForSafety": true,
+        "checkForRelevance": true
+    },
+
+    "logging": {
+        "level": "info",
+        "logGenerations": true,
+        "logCacheHits": true,
+        "logCacheMisses": true,
+        "logErrors": true,
+        "logPerformance": true,
+        "logToFile": false,
+        "logFilePath": "./logs/content-generation.log"
+    },
+
+    "development": {
+        "bypassLLM": false,
+        "useFallbackOnly": false,
+        "mockResponses": false,
+        "mockResponsePath": "./data/mock-responses.json",
+        "debugPrompts": false,
+        "debugResponses": false,
+        "saveGeneratedContent": false,
+        "savedContentPath": "./data/generated-content"
+    }
+}

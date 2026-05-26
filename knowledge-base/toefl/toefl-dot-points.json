@@ -1,0 +1,507 @@
+{
+  "subject": "TOEFL iBT",
+  "version": "2024",
+  "description": "Deep detail for each TOEFL skill area, supporting error analysis, personalized feedback, and targeted practice.",
+  "sections": {
+    "reading": {
+      "code": "TOEFL-R",
+      "name": "Reading Comprehension",
+      "description": "Academic reading passages with 10 question types",
+      "skills": [
+        {
+          "code": "TOEFL-R.1",
+          "name": "Vocabulary and Reference",
+          "questionTypes": ["vocabulary", "reference"],
+          "summary": "Understand word meanings in context and identify pronoun references.",
+          "keyConcepts": [
+            "Context clues: definition, example, contrast, restatement",
+            "Pronoun reference: what noun a pronoun refers to",
+            "Word families: recognizing root words, prefixes, suffixes",
+            "Academic vocabulary: discipline-specific terms"
+          ],
+          "commonErrors": [
+            "Choosing dictionary definition instead of context-appropriate meaning",
+            "Missing that pronouns can refer to entire phrases, not just single nouns",
+            "Confusing similar-looking words (affect/effect, cite/site/sight)",
+            "Overlooking that 'it' may refer to an idea, not a concrete object"
+          ],
+          "examTips": [
+            "For vocabulary: the correct answer is always a synonym in context",
+            "For reference: the pronoun and its referent always match in number",
+            "Read the sentence before AND after the pronoun to find the referent"
+          ],
+          "socraticPrompts": [
+            "What clues in the surrounding sentences help you understand this word?",
+            "If 'they' refers to researchers, why can't it refer to the experiments?",
+            "How would the meaning change if we used a different word here?"
+          ],
+          "difficulty": "intermediate",
+          "relatedSkills": ["TOEFL-R.2", "TOEFL-R.5"]
+        },
+        {
+          "code": "TOEFL-R.2",
+          "name": "Factual Information",
+          "questionTypes": ["factual information", "negative fact"],
+          "summary": "Identify explicitly stated information and find exceptions.",
+          "keyConcepts": [
+            "Scanning vs. close reading",
+            "Paraphrase recognition",
+            "Signal words for exceptions (however, although, except)",
+            "Distinguishing main points from details"
+          ],
+          "commonErrors": [
+            "Choosing answers that are true but not in the passage",
+            "Missing the 'NOT' or 'EXCEPT' in negative fact questions",
+            "Selecting a detail when the question asks for main point"
+          ],
+          "examTips": [
+            "For negative fact questions: three answers are true, one is false",
+            "The correct answer may be a paraphrase, not exact words"
+          ],
+          "socraticPrompts": [
+            "Is this information directly stated or implied? How can you tell?",
+            "Why are the other three options correct? Find evidence for each."
+          ]
+        },
+        {
+          "code": "TOEFL-R.3",
+          "name": "Inference and Rhetorical Purpose",
+          "questionTypes": ["inference", "rhetorical purpose"],
+          "summary": "Draw logical conclusions and understand why the author includes information.",
+          "keyConcepts": [
+            "Strong vs. weak inference: what MUST be true vs. MIGHT be true",
+            "Author's purpose: explain, contrast, illustrate, qualify",
+            "Transition words as purpose signals",
+            "Reading between the lines without adding outside knowledge"
+          ],
+          "commonErrors": [
+            "Making leaps beyond what the text logically supports",
+            "Confusing inference with factual information",
+            "Misreading the author's tone (sarcasm, skepticism, support)"
+          ],
+          "examTips": [
+            "The correct inference is always directly supported by the text",
+            "Ask: 'Why does the author mention X?' Look at surrounding sentences"
+          ],
+          "socraticPrompts": [
+            "What must be true based on these sentences? What could be true but isn't proven?",
+            "If the author wanted to give an example, what words would they use?"
+          ]
+        },
+        {
+          "code": "TOEFL-R.4",
+          "name": "Sentence Simplification",
+          "questionTypes": ["sentence simplification"],
+          "summary": "Choose the sentence that best captures the essential meaning of a complex sentence.",
+          "keyConcepts": [
+            "Identifying main idea vs. supporting details",
+            "Recognizing logical relationships (cause-effect, contrast, condition)",
+            "Eliminating less important modifiers",
+            "Preserving the original meaning while reducing length"
+          ],
+          "commonErrors": [
+            "Omitting a key logical relationship (e.g., dropping 'although')",
+            "Including minor details that change the emphasis",
+            "Choosing an answer that changes the meaning"
+          ],
+          "examTips": [
+            "The correct answer preserves ALL essential information",
+            "Check that the logical relationship (however, because, etc.) is maintained"
+          ]
+        },
+        {
+          "code": "TOEFL-R.5",
+          "name": "Insert Text",
+          "questionTypes": ["insert text"],
+          "summary": "Determine where a given sentence best fits in the passage.",
+          "keyConcepts": [
+            "Transition and linking words",
+            "Pronoun reference across sentences",
+            "Logical flow of ideas",
+            "Sentence connectors (this, such, these, another)"
+          ],
+          "commonErrors": [
+            "Not checking pronoun references (inserted sentence has 'this idea' but previous sentence has no idea)",
+            "Breaking logical connections between sentences",
+            "Missing that the inserted sentence should connect to both previous and following sentences"
+          ],
+          "examTips": [
+            "Check the sentence BEFORE and AFTER each insertion point",
+            "Look for pronoun references and transition words that must connect"
+          ]
+        },
+        {
+          "code": "TOEFL-R.6",
+          "name": "Prose Summary",
+          "questionTypes": ["prose summary"],
+          "summary": "Select the three most important ideas that best summarize the passage.",
+          "keyConcepts": [
+            "Major ideas vs. supporting details",
+            "Hierarchy of information in academic texts",
+            "Distinguishing main points from examples",
+            "Recognizing the passage's organizational structure"
+          ],
+          "commonErrors": [
+            "Choosing minor details or examples",
+            "Selecting statements not in the passage",
+            "Missing that all three correct answers must be major points"
+          ],
+          "examTips": [
+            "The correct answers cover the passage's main structure",
+            "If an answer is a specific example, it's probably wrong"
+          ]
+        },
+        {
+          "code": "TOEFL-R.7",
+          "name": "Fill in a Table",
+          "questionTypes": ["table completion"],
+          "summary": "Categorize information from the passage into a table.",
+          "keyConcepts": [
+            "Categorization and classification",
+            "Comparing and contrasting theories/views",
+            "Identifying which category each detail belongs to",
+            "Recognizing when information applies to multiple categories"
+          ],
+          "commonErrors": [
+            "Misclassifying information",
+            "Including information not in the passage",
+            "Missing that some categories may have more than one correct answer"
+          ]
+        }
+      ]
+    },
+    
+    "listening": {
+      "code": "TOEFL-L",
+      "name": "Listening Comprehension",
+      "description": "Academic lectures and conversations with comprehension questions",
+      "skills": [
+        {
+          "code": "TOEFL-L.1",
+          "name": "Lecture: Main Idea and Purpose",
+          "questionTypes": ["main idea", "purpose"],
+          "summary": "Identify the overall topic and why the speaker is discussing it.",
+          "keyConcepts": [
+            "Lecture openings: thesis statements and previews",
+            "Signal phrases: 'Today we'll discuss...', 'My focus today is...'",
+            "Distinguishing topic from purpose",
+            "Recognizing when speakers digress and return"
+          ],
+          "commonErrors": [
+            "Choosing a detail instead of the main idea",
+            "Confusing the topic (what) with the purpose (why)",
+            "Missing that the professor may be responding to student questions"
+          ],
+          "examTips": [
+            "The main idea is usually stated in the first 30 seconds",
+            "If you're not sure, listen for what keeps coming up"
+          ]
+        },
+        {
+          "code": "TOEFL-L.2",
+          "name": "Lecture: Details and Examples",
+          "questionTypes": ["detail", "example"],
+          "summary": "Understand specific information and why examples are given.",
+          "keyConcepts": [
+            "Signal words: 'for example', 'for instance', 'such as'",
+            "Purpose of examples: illustrate, clarify, support",
+            "Details that support main points vs. tangential information",
+            "Numbers, dates, names as potential detail questions"
+          ],
+          "commonErrors": [
+            "Forgetting that the example's purpose matters more than the example itself",
+            "Missing that a detail question may ask about WHY something was mentioned"
+          ],
+          "socraticPrompts": [
+            "Why did the professor mention this specific experiment?",
+            "What point was this example supporting?"
+          ]
+        },
+        {
+          "code": "TOEFL-L.3",
+          "name": "Lecture: Attitude and Stance",
+          "questionTypes": ["attitude", "stance", "opinion"],
+          "summary": "Understand the speaker's opinion, certainty, or attitude.",
+          "keyConcepts": [
+            "Tone indicators: 'interestingly', 'surprisingly', 'unfortunately'",
+            "Hesitation and uncertainty markers",
+            "Comparing and contrasting theories: the professor may favor one",
+            "Qualifying language: 'might', 'could', 'possibly' vs. 'definitely'"
+          ],
+          "commonErrors": [
+            "Attributing a personal opinion when the professor is just reporting",
+            "Missing subtle disagreement with a cited theory",
+            "Confusing uncertainty about facts with uncertainty about interpretation"
+          ],
+          "examTips": [
+            "Listen for adjectives: 'a brilliant study' vs. 'a controversial study'",
+            "The professor's true attitude often comes at the end of a discussion"
+          ]
+        },
+        {
+          "code": "TOEFL-L.4",
+          "name": "Lecture: Organization and Relationship",
+          "questionTypes": ["organization", "relationship"],
+          "summary": "Understand how ideas are organized and how they relate.",
+          "keyConcepts": [
+            "Organizational patterns: compare-contrast, cause-effect, problem-solution",
+            "Transition words signaling relationships",
+            "How different theories or viewpoints relate",
+            "The overall structure of the lecture"
+          ],
+          "commonErrors": [
+            "Missing that two ideas are being compared",
+            "Not recognizing when the speaker is contrasting their view with others"
+          ]
+        },
+        {
+          "code": "TOEFL-L.5",
+          "name": "Lecture: Inference and Prediction",
+          "questionTypes": ["inference", "prediction"],
+          "summary": "Draw conclusions and predict what might happen next.",
+          "keyConcepts": [
+            "Implied meaning vs. stated meaning",
+            "What the professor assumes the student already knows",
+            "Predicting next steps in a process",
+            "Understanding the professor's pedagogical purpose"
+          ],
+          "commonErrors": [
+            "Making inferences that require outside knowledge",
+            "Predicting something that contradicts what was said"
+          ]
+        },
+        {
+          "code": "TOEFL-L.6",
+          "name": "Conversation: Purpose and Main Idea",
+          "questionTypes": ["purpose", "main idea"],
+          "summary": "Understand why students talk to professors or staff.",
+          "keyConcepts": [
+            "Common purposes: get information, resolve an issue, ask for help",
+            "Opening lines: 'I'm here because...', 'I needed to ask about...'",
+            "The stated purpose vs. the real need",
+            "Multiple purposes in one conversation"
+          ],
+          "commonErrors": [
+            "Stopping at the stated purpose when there's a deeper need",
+            "Missing that the conversation might have two purposes"
+          ]
+        },
+        {
+          "code": "TOEFL-L.7",
+          "name": "Conversation: Details and Implication",
+          "questionTypes": ["detail", "implication"],
+          "summary": "Understand specific information and what it means.",
+          "keyConcepts": [
+            "Solutions to problems",
+            "What the student must do next",
+            "Implications of what the professor says",
+            "Understanding university procedures"
+          ],
+          "commonErrors": [
+            "Missing that the professor's suggestion implies the student must do something",
+            "Not connecting a detail to the larger situation"
+          ]
+        },
+        {
+          "code": "TOEFL-L.8",
+          "name": "Conversation: Attitude and Stance",
+          "questionTypes": ["attitude", "stance"],
+          "summary": "Understand how speakers feel about the topic or each other.",
+          "keyConcepts": [
+            "Tone: helpful, frustrated, apologetic, encouraging",
+            "Politeness strategies and their meaning",
+            "Hesitation as a signal of uncertainty or discomfort",
+            "Agreement and disagreement signals"
+          ],
+          "commonErrors": [
+            "Missing that 'I guess I could...' means reluctant agreement, not enthusiasm",
+            "Not recognizing when a professor is being politely firm"
+          ]
+        }
+      ]
+    },
+    
+    "speaking": {
+      "code": "TOEFL-S",
+      "name": "Speaking",
+      "description": "Independent and integrated speaking tasks",
+      "skills": [
+        {
+          "code": "TOEFL-S.1",
+          "name": "Independent: Personal Preference",
+          "taskType": "independent",
+          "summary": "Express and support a personal opinion on a familiar topic.",
+          "keyConcepts": [
+            "Clear thesis: state your preference immediately",
+            "Organization: reason 1 → example/explanation, reason 2 → example/explanation",
+            "Transition words: first, also, for example",
+            "Conclusion: brief restatement"
+          ],
+          "scoringCriteria": {
+            "delivery": ["fluency", "pronunciation", "intonation", "pace"],
+            "language": ["grammar", "vocabulary", "range"],
+            "development": ["coherence", "progression", "specific examples"]
+          },
+          "commonErrors": [
+            "Not stating opinion clearly at the beginning",
+            "Vague examples without specific details",
+            "Running out of time before giving both reasons",
+            "Memorized responses that don't fit the question"
+          ],
+          "examTips": [
+            "Use the 15 seconds to plan: pick two clear reasons",
+            "Be specific: 'my brother' not 'someone I know'",
+            "It's okay to pause briefly between ideas"
+          ],
+          "socraticPrompts": [
+            "Why do you prefer that? What's the main reason?",
+            "Can you give a specific example of when that happened?",
+            "What would you say if you had only 30 seconds?"
+          ]
+        },
+        {
+          "code": "TOEFL-S.2",
+          "name": "Independent: Choice Between Two",
+          "taskType": "independent",
+          "summary": "Choose between two options and explain your choice.",
+          "keyConcepts": [
+            "Acknowledge both sides briefly, then commit",
+            "Comparison language: more important, better because",
+            "Specific reasons why one option outweighs the other",
+            "Examples that illustrate the comparison"
+          ],
+          "commonErrors": [
+            "Discussing both options equally without choosing",
+            "Changing opinion mid-response",
+            "Not explaining why the other option is weaker"
+          ],
+          "examTips": [
+            "It's okay to say 'both have benefits, but I prefer X because...'",
+            "The comparison itself can be your structure"
+          ]
+        },
+        {
+          "code": "TOEFL-S.3",
+          "name": "Integrated: Campus Announcement",
+          "taskType": "integrated",
+          "summary": "Read an announcement, listen to a conversation, then summarize the opinion.",
+          "keyConcepts": [
+            "Reading: identify the proposal/change and two reasons",
+            "Listening: identify the speaker's opinion (agree/disagree) and reasons",
+            "Integration: connect the listening's reasons to the reading's points",
+            "Structure: opinion → reason 1 (with reading/listening link) → reason 2"
+          ],
+          "scoringCriteria": {
+            "accuracy": ["correctly states opinion", "correctly reports reasons"],
+            "integration": ["connects listening to reading", "shows relationship"],
+            "completeness": ["covers both reasons", "no major omissions"]
+          },
+          "commonErrors": [
+            "Describing the reading and listening separately without connecting them",
+            "Missing that the listening reasons directly respond to reading reasons",
+            "Reporting the conversation but forgetting the reading context",
+            "Stating the opinion but not the supporting reasons"
+          ],
+          "examTips": [
+            "Your response should show HOW the listening relates to the reading",
+            "The speaker's reasons will directly address the reading's points"
+          ]
+        },
+        {
+          "code": "TOEFL-S.4",
+          "name": "Integrated: Academic Lecture",
+          "taskType": "integrated",
+          "summary": "Read a short passage, listen to a lecture, then summarize key points.",
+          "keyConcepts": [
+            "Reading: general concept or theory",
+            "Listening: examples or applications of the concept",
+            "Structure: concept → example 1 (explain how it illustrates) → example 2",
+            "Explicit connections: 'The professor illustrates this with...'"
+          ],
+          "commonErrors": [
+            "Describing the examples without linking to the concept",
+            "Giving equal detail to both, missing the hierarchy",
+            "Forgetting to state the concept clearly at the beginning"
+          ],
+          "examTips": [
+            "The reading gives you the framework; the listening gives the content",
+            "Each listening example should be connected back to the reading concept"
+          ]
+        }
+      ]
+    },
+    
+    "writing": {
+      "code": "TOEFL-W",
+      "name": "Writing",
+      "description": "Integrated and independent writing tasks",
+      "skills": [
+        {
+          "code": "TOEFL-W.1",
+          "name": "Integrated Writing",
+          "taskType": "integrated",
+          "summary": "Read a passage, listen to a lecture, then write summarizing the relationship.",
+          "keyConcepts": [
+            "Reading: presents a theory/argument with 3 main points",
+            "Listening: challenges/casts doubt on each point (usually)",
+            "Structure: introduction (reading's claim, lecture's response) → 3 body paragraphs",
+            "Each body paragraph: lecture's point + how it challenges reading"
+          ],
+          "scoringCriteria": {
+            "content": ["accurately represents reading", "accurately represents listening", "shows relationship"],
+            "organization": ["clear structure", "logical flow"],
+            "language": ["grammar", "vocabulary", "cohesion"]
+          },
+          "commonErrors": [
+            "Summarizing reading and listening separately without showing the relationship",
+            "Missing that the lecture usually OPPOSES the reading",
+            "Adding personal opinion (not allowed in integrated task)",
+            "Not covering all three points from the lecture"
+          ],
+          "examTips": [
+            "The relationship is almost always 'the lecture challenges the reading'",
+            "Use contrast language: however, in contrast, on the other hand",
+            "150-225 words is the sweet spot"
+          ],
+          "socraticPrompts": [
+            "How does the lecture's first point respond to the reading?",
+            "Does the lecture agree, disagree, or partially agree? How do you know?"
+          ]
+        },
+        {
+          "code": "TOEFL-W.2",
+          "name": "Independent Writing",
+          "taskType": "independent",
+          "summary": "Write an essay expressing and supporting an opinion on a given topic.",
+          "keyConcepts": [
+            "Thesis: clear position stated in introduction",
+            "Body paragraphs: each with a topic sentence and specific examples/reasons",
+            "Organization: 4-5 paragraphs typical",
+            "Development: specific, detailed examples, not vague generalities"
+          ],
+          "scoringCriteria": {
+            "development": ["strong thesis", "specific examples", "well-developed ideas"],
+            "organization": ["clear structure", "effective transitions", "progression"],
+            "language": ["varied vocabulary", "grammatical range", "appropriate register"]
+          },
+          "commonErrors": [
+            "Vague examples ('for example, in many countries...')",
+            "Off-topic paragraphs",
+            "Not enough development (one sentence per reason)",
+            "Memorized templates that don't fit the prompt"
+          ],
+          "examTips": [
+            "Quality over quantity: 300-350 well-developed words > 500 rambling words",
+            "Use personal experience as evidence",
+            "Leave 3-5 minutes to review for errors"
+          ],
+          "socraticPrompts": [
+            "Can you make that example more specific? When did this happen?",
+            "How does this reason connect back to your main argument?",
+            "What would someone who disagrees say? How would you respond?"
+          ]
+        }
+      ]
+    }
+  }
+}

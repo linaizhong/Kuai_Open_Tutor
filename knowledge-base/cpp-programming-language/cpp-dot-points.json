@@ -1,0 +1,523 @@
+{
+    "subject": "Advanced C++ Programming",
+    "syllabusVersion": "C++20",
+    "description": "Comprehensive C++ learning resource with key concepts, common errors, learning tips, and code examples for all advanced topics.",
+    "dotPoints": {
+        "CPP-CORE-1.1": {
+            "code": "CPP-CORE-1.1",
+            "name": "Compilation Pipeline",
+            "topic": "Core C++ Language",
+            "subtopic": "Compilation and Build System",
+            "level": "intermediate",
+            "summary": "C++ source code passes through four stages: preprocessing, compilation, assembly, and linking. Understanding this pipeline is essential for diagnosing build errors and structuring projects correctly.",
+            "keyConcepts": [
+                "Preprocessor: Handles #include, #define, #ifdef — produces a single translation unit",
+                "Compiler: Converts each translation unit to an object file (.o or .obj)",
+                "Linker: Combines object files and resolves symbol references into an executable or library",
+                "One Definition Rule (ODR): Every symbol must have exactly one definition across all translation units",
+                "Declarations vs Definitions: A declaration says a symbol exists; a definition provides the implementation",
+                "Static vs Dynamic Linking: Static links at build time; dynamic links at runtime via .dll/.so",
+                "Link-Time Optimisation (LTO): Allows the linker to optimise across translation unit boundaries"
+            ],
+            "commonErrors": [
+                "Undefined reference errors — symbol declared but not defined or missing from linker command",
+                "Multiple definition errors — ODR violation when defining a function in a header included multiple times",
+                "Circular #include leading to incomplete types",
+                "Forgetting to link required libraries (e.g., -lm for math functions)",
+                "Mixing debug and release object files causing ABI mismatches"
+            ],
+            "learningTips": [
+                "Use `g++ -v` or `clang++ -v` to see the full compilation pipeline in action",
+                "Use `nm` or `objdump -t` to inspect symbols in object files",
+                "Use `ldd` on Linux or `dumpbin /dependents` on Windows to inspect shared library dependencies",
+                "Always put definitions in .cpp files and declarations in headers to avoid ODR violations",
+                "Use `#pragma once` or include guards in every header"
+            ],
+            "socraticPrompts": [
+                "Why does the linker complain about undefined references even when the function is declared in the header?",
+                "What does the ODR mean for template definitions — must they go in headers?",
+                "Why might two translation units define the same inline function without violating the ODR?",
+                "What is the difference between a static library and a shared library in terms of the pipeline?"
+            ],
+            "codeExample": {
+                "description": "Understanding translation units and linking",
+                "code": "// math.h — declaration only\n#pragma once\nint add(int a, int b);\n\n// math.cpp — definition\n#include \"math.h\"\nint add(int a, int b) { return a + b; }\n\n// main.cpp — uses the function\n#include \"math.h\"\n#include <iostream>\nint main() {\n    std::cout << add(3, 4) << '\\n'; // Output: 7\n}\n\n// Build:\n// g++ -c math.cpp -o math.o\n// g++ -c main.cpp -o main.o\n// g++ math.o main.o -o program",
+                "output": "7"
+            },
+            "relatedDotPoints": ["CPP-CORE-1.2", "CPP-CORE-1.4"]
+        },
+        "CPP-CORE-1.2": {
+            "code": "CPP-CORE-1.2",
+            "name": "Headers and Source Files",
+            "topic": "Core C++ Language",
+            "subtopic": "Compilation and Build System",
+            "level": "intermediate",
+            "summary": "Headers expose declarations that multiple translation units can share. Source files contain definitions. Include guards or #pragma once prevent duplicate inclusion within a single translation unit.",
+            "keyConcepts": [
+                "#pragma once: Non-standard but universally supported single-include guard",
+                "Traditional include guards: #ifndef HEADER_H / #define HEADER_H / #endif",
+                "Forward declarations: Declare a class or function without defining it — avoids including heavy headers",
+                "Header-only libraries: All code in headers using inline or templates",
+                "Precompiled headers (PCH): Speed up builds by pre-compiling stable headers like <vector>"
+            ],
+            "commonErrors": [
+                "Missing include guards causing 'redefinition of class X' errors",
+                "Including a .cpp file instead of its header",
+                "Circular includes leading to incomplete type errors — use forward declarations instead",
+                "Defining non-inline functions in headers — violates ODR when included by multiple TUs",
+                "Forgetting to include the header that provides a type that the compiler inferred"
+            ],
+            "learningTips": [
+                "Prefer #pragma once for its simplicity and safety",
+                "Use forward declarations aggressively to keep headers minimal and compile times short",
+                "Organise headers as: system headers, then third-party, then project headers",
+                "IWYU (Include What You Use) is a tool that finds unnecessary or missing includes"
+            ],
+            "socraticPrompts": [
+                "When would you prefer a forward declaration over including the full header?",
+                "Why can inline functions be defined in headers without violating ODR?",
+                "What is the 'physical design' of a C++ project, and how do headers fit into it?"
+            ],
+            "codeExample": {
+                "description": "Header with include guard and forward declaration",
+                "code": "#pragma once\n\n// Forward declaration — no need to include <string> here\nclass std::string;\n\nclass Widget {\npublic:\n    explicit Widget(int id);\n    void setName(const std::string& name); // OK: string used by reference\n    int getId() const { return id_; }      // Inline — definition in header OK\nprivate:\n    int id_;\n    std::string name_; // Full definition needed for data member — include <string>\n};",
+                "output": ""
+            },
+            "relatedDotPoints": ["CPP-CORE-1.1", "CPP-CORE-1.3"]
+        },
+        "CPP-CORE-2.3": {
+            "code": "CPP-CORE-2.3",
+            "name": "const, constexpr, and consteval",
+            "topic": "Core C++ Language",
+            "subtopic": "Types and Type System",
+            "level": "advanced",
+            "summary": "const prevents runtime modification; constexpr allows or forces compile-time evaluation; consteval guarantees compile-time evaluation. Together they enable zero-overhead abstractions and compile-time computations.",
+            "keyConcepts": [
+                "const: Object value cannot be changed after initialisation; applies to variables, member functions, and pointers",
+                "constexpr variable: Value computed at compile time; implicitly const",
+                "constexpr function: May be called at compile time (if inputs are constant) or at runtime",
+                "consteval (C++20): Function MUST be evaluated at compile time; called an 'immediate function'",
+                "constinit (C++20): Guarantees static initialisation at compile time; not const",
+                "mutable: Allows a member to be modified even in a const member function (e.g., caches)"
+            ],
+            "commonErrors": [
+                "Expecting constexpr to force compile-time evaluation — use consteval for that guarantee",
+                "Using constexpr with functions that call non-constexpr functions — compile error",
+                "Confusing const pointer vs pointer to const: int* const p vs const int* p",
+                "Forgetting to mark getter member functions as const — prevents calling on const objects",
+                "constinit does not mean const — the object can still be modified after initialisation"
+            ],
+            "learningTips": [
+                "Mark every getter and non-mutating function as const — it's part of a class's interface contract",
+                "Prefer constexpr to #define for constants — constexpr is type-safe and scoped",
+                "Use consteval for functions that must produce compile-time constants (e.g., string hashing)",
+                "Godbolt Compiler Explorer is excellent for verifying what gets computed at compile time"
+            ],
+            "socraticPrompts": [
+                "Why might you prefer constexpr over consteval for a math function?",
+                "What does it mean for a member function to be const, and what can it not do?",
+                "When would mutable be appropriate, and when would it be a design smell?"
+            ],
+            "codeExample": {
+                "description": "const, constexpr, and consteval in action",
+                "code": "#include <array>\n\n// constexpr function — usable at compile time or runtime\nconstexpr int square(int x) { return x * x; }\n\n// consteval — compile-time only (C++20)\nconsteval int cube(int x) { return x * x * x; }\n\nclass Temperature {\npublic:\n    explicit Temperature(double c) : celsius_(c) {}\n    double toCelsius() const { return celsius_; }  // const member function\n    double toFahrenheit() const { return celsius_ * 9.0 / 5.0 + 32.0; }\nprivate:\n    double celsius_;\n    mutable int accessCount_ = 0; // mutable: can be modified in const function\n};\n\nint main() {\n    constexpr int s = square(5);  // Computed at compile time: 25\n    constexpr int c = cube(3);    // Must be compile time: 27\n    std::array<int, square(4)> arr; // Uses compile-time value as array size\n}",
+                "output": ""
+            },
+            "relatedDotPoints": ["CPP-CORE-2.2", "CPP-TPL-2.4", "CPP-OOP-1.4"]
+        },
+        "CPP-CORE-3.4": {
+            "code": "CPP-CORE-3.4",
+            "name": "Lambda Expressions",
+            "topic": "Core C++ Language",
+            "subtopic": "Control Flow and Functions",
+            "level": "advanced",
+            "summary": "Lambdas are anonymous function objects created inline. They can capture variables from the enclosing scope and are heavily used with STL algorithms, callbacks, and asynchronous code.",
+            "keyConcepts": [
+                "[=] capture: Capture all local variables by value (copy)",
+                "[&] capture: Capture all local variables by reference",
+                "[x, &y] capture: Capture x by value, y by reference",
+                "[this] capture: Capture the enclosing object pointer",
+                "mutable lambda: Allows modification of captured-by-value variables within the lambda",
+                "Generic lambda (C++14): auto parameters create a templated call operator",
+                "std::function: Type-erased wrapper for any callable — has overhead; prefer auto or templates"
+            ],
+            "commonErrors": [
+                "Capturing a local variable by reference and using the lambda after the variable goes out of scope — dangling reference",
+                "Capturing 'this' in a lambda that outlives the object",
+                "Using std::function where auto would do — std::function has heap allocation overhead",
+                "Forgetting mutable when a by-value captured variable needs modification inside the lambda"
+            ],
+            "learningTips": [
+                "Default to capturing nothing [] and pass what you need as parameters",
+                "Use [&] only when the lambda definitely does not outlive the captured variables",
+                "Use auto for lambda variables — lambdas have unique unnamed types",
+                "Generic lambdas (auto params) are often preferable to std::function for performance"
+            ],
+            "socraticPrompts": [
+                "Why is capturing by reference dangerous for lambdas stored in a data structure?",
+                "What is the type of a lambda, and why can't you name it?",
+                "When would you prefer std::function over auto for a lambda variable?"
+            ],
+            "codeExample": {
+                "description": "Lambda captures and use with STL algorithms",
+                "code": "#include <vector>\n#include <algorithm>\n#include <iostream>\n\nint main() {\n    std::vector<int> nums = {5, 2, 8, 1, 9, 3};\n    int threshold = 4;\n\n    // Lambda capturing threshold by value\n    auto isAbove = [threshold](int n) { return n > threshold; };\n\n    // Use with algorithm\n    std::sort(nums.begin(), nums.end());\n    auto it = std::find_if(nums.begin(), nums.end(), isAbove);\n    std::cout << \"First above \" << threshold << \": \" << *it << '\\n';\n\n    // Mutable lambda\n    int count = 0;\n    auto counter = [count](int) mutable { return ++count; }; // count is copy\n\n    // Generic lambda (C++14)\n    auto printAny = [](auto val) { std::cout << val << '\\n'; };\n    printAny(42);\n    printAny(\"hello\");\n}",
+                "output": "First above 4: 5\n42\nhello"
+            },
+            "relatedDotPoints": ["CPP-STL-3.1", "CPP-STL-3.2", "CPP-CON-1.4"]
+        },
+        "CPP-OOP-1.3": {
+            "code": "CPP-OOP-1.3",
+            "name": "Rule of Zero, Three, and Five",
+            "topic": "Classes and Object-Oriented Programming",
+            "subtopic": "Class Fundamentals",
+            "level": "advanced",
+            "summary": "The Rule of Zero, Three, and Five govern when you must define special member functions. Violating these rules causes resource leaks, double frees, or dangling pointers.",
+            "keyConcepts": [
+                "Rule of Zero: Prefer classes that manage no resources directly — let members (smart pointers, containers) handle it; define none of the five",
+                "Rule of Three (pre-C++11): If you define any of destructor, copy constructor, or copy assignment, define all three",
+                "Rule of Five (C++11+): If you define any of the three, also define move constructor and move assignment for efficiency",
+                "Copy constructor: T(const T& other) — deep copy of resources",
+                "Copy assignment: T& operator=(const T& other) — must handle self-assignment",
+                "Move constructor: T(T&& other) noexcept — steal resources from rvalue",
+                "Move assignment: T& operator=(T&& other) noexcept — steal resources, release old",
+                "= default and = delete: Explicitly request or forbid compiler-generated specials"
+            ],
+            "commonErrors": [
+                "Defining a destructor that frees a raw pointer but not defining a copy constructor — shallow copy leads to double free",
+                "Copy assignment that doesn't handle self-assignment (a = a) — undefined behaviour",
+                "Move constructor/assignment not marked noexcept — prevents use in STL containers during reallocation",
+                "Forgetting to null out the moved-from pointer — destructor runs on moved-from object and double-frees"
+            ],
+            "learningTips": [
+                "Aim for Rule of Zero by using RAII types (unique_ptr, vector, string) as members",
+                "When you must define one of the five, always define all five",
+                "Mark move constructor and move assignment noexcept — many STL optimisations depend on it",
+                "Use the copy-and-swap idiom for exception-safe copy assignment"
+            ],
+            "socraticPrompts": [
+                "Why does defining only a destructor lead to a shallow copy?",
+                "What is the copy-and-swap idiom, and how does it achieve exception safety?",
+                "Why must move constructors be noexcept for std::vector to use them during reallocation?"
+            ],
+            "codeExample": {
+                "description": "Rule of Five for a resource-owning class",
+                "code": "#include <utility>\n#include <cstring>\n\nclass Buffer {\npublic:\n    explicit Buffer(std::size_t size)\n        : data_(new char[size]), size_(size) {}\n\n    ~Buffer() { delete[] data_; }               // 1. Destructor\n\n    Buffer(const Buffer& other)                  // 2. Copy constructor\n        : data_(new char[other.size_]), size_(other.size_) {\n        std::memcpy(data_, other.data_, size_);\n    }\n\n    Buffer& operator=(const Buffer& other) {     // 3. Copy assignment\n        if (this != &other) {                    //    Self-assignment check\n            Buffer tmp(other);                   //    Copy-and-swap idiom\n            swap(tmp);\n        }\n        return *this;\n    }\n\n    Buffer(Buffer&& other) noexcept              // 4. Move constructor\n        : data_(other.data_), size_(other.size_) {\n        other.data_ = nullptr; other.size_ = 0;\n    }\n\n    Buffer& operator=(Buffer&& other) noexcept { // 5. Move assignment\n        if (this != &other) { Buffer tmp(std::move(other)); swap(tmp); }\n        return *this;\n    }\n\nprivate:\n    void swap(Buffer& other) noexcept {\n        std::swap(data_, other.data_);\n        std::swap(size_, other.size_);\n    }\n    char* data_;\n    std::size_t size_;\n};",
+                "output": ""
+            },
+            "relatedDotPoints": ["CPP-MEM-2.1", "CPP-MOV-1.2", "CPP-OOP-1.2"]
+        },
+        "CPP-OOP-2.2": {
+            "code": "CPP-OOP-2.2",
+            "name": "Virtual Functions and Dynamic Dispatch",
+            "topic": "Classes and Object-Oriented Programming",
+            "subtopic": "Inheritance and Polymorphism",
+            "level": "advanced",
+            "summary": "Virtual functions enable runtime polymorphism via a hidden vtable pointer. Every class with virtual functions has a vtable; calling a virtual function performs an indirect call through the vtable.",
+            "keyConcepts": [
+                "virtual keyword: Marks a function for dynamic dispatch; derived classes can override it",
+                "override keyword: Explicitly states intent to override; compiler error if no matching virtual function found",
+                "final: Prevents further overriding (on a function) or inheritance (on a class)",
+                "Pure virtual (= 0): Makes the function abstract; the class cannot be instantiated",
+                "Virtual destructor: MUST be virtual if you delete a derived object via a base pointer — prevents resource leaks",
+                "vtable: Per-class table of function pointers built at compile time; each object with virtuals carries a vptr",
+                "Cost: One extra pointer per object (vptr); one level of indirection per virtual call"
+            ],
+            "commonErrors": [
+                "Non-virtual destructor in a base class — deleting through base pointer causes undefined behaviour",
+                "Forgetting override keyword — typos create a new function instead of overriding",
+                "Calling virtual functions in constructors or destructors — dynamic dispatch does not work there",
+                "Slicing: Assigning a derived object to a base object by value loses the derived part"
+            ],
+            "learningTips": [
+                "Always declare the base class destructor as virtual (or = default virtual ~Base())",
+                "Always use override on overriding functions — it catches interface mismatches at compile time",
+                "Prefer composition and non-virtual interfaces (NVI pattern) to limit the virtual surface",
+                "Use final to prevent accidental subclassing of classes not designed for it"
+            ],
+            "socraticPrompts": [
+                "Why is dynamic dispatch not possible in a constructor?",
+                "What would happen if you delete a derived object through a non-virtual base destructor?",
+                "What is the Non-Virtual Interface (NVI) pattern and what problem does it solve?"
+            ],
+            "codeExample": {
+                "description": "Virtual dispatch and override keyword",
+                "code": "#include <iostream>\n#include <memory>\n#include <vector>\n\nclass Shape {\npublic:\n    virtual double area() const = 0;          // Pure virtual\n    virtual void describe() const {           // Virtual with default\n        std::cout << \"Shape\\n\";\n    }\n    virtual ~Shape() = default;               // Virtual destructor\n};\n\nclass Circle : public Shape {\npublic:\n    explicit Circle(double r) : radius_(r) {}\n    double area() const override {            // override keyword\n        return 3.14159 * radius_ * radius_;\n    }\n    void describe() const override final {\n        std::cout << \"Circle r=\" << radius_ << '\\n';\n    }\nprivate:\n    double radius_;\n};\n\nint main() {\n    std::vector<std::unique_ptr<Shape>> shapes;\n    shapes.push_back(std::make_unique<Circle>(5.0));\n    for (const auto& s : shapes) {\n        s->describe();                        // Dynamic dispatch\n        std::cout << \"Area: \" << s->area() << '\\n';\n    }\n}",
+                "output": "Circle r=5\nArea: 78.5398"
+            },
+            "relatedDotPoints": ["CPP-OOP-2.3", "CPP-MEM-2.2", "CPP-OOP-1.3"]
+        },
+        "CPP-MEM-2.1": {
+            "code": "CPP-MEM-2.1",
+            "name": "RAII Principle",
+            "topic": "Memory Management",
+            "subtopic": "RAII and Resource Management",
+            "level": "advanced",
+            "summary": "RAII (Resource Acquisition Is Initialisation) ties resource lifetimes to object lifetimes. Resources are acquired in constructors and released in destructors, guaranteeing cleanup even in the presence of exceptions.",
+            "keyConcepts": [
+                "RAII: Resource lifetime == object lifetime; destructor always runs when object goes out of scope",
+                "Basic guarantee: No resource leaks after an exception, but object state may have changed",
+                "Strong guarantee: Either the operation succeeds completely or the state is unchanged (like a transaction)",
+                "Nothrow guarantee: Operation never throws — often required for move operations",
+                "Scope guard: A RAII wrapper that runs a lambda on scope exit regardless of exception",
+                "Typical RAII resources: memory, file handles, mutexes, network sockets, database connections"
+            ],
+            "commonErrors": [
+                "Acquiring resources with new/open without wrapping in RAII — resource leaks on exceptions",
+                "Using goto or longjmp — bypasses destructors, breaking RAII",
+                "Catching exceptions too broadly (catch ...) and swallowing without cleanup",
+                "Writing a destructor that can throw — undefined behaviour if destructor runs during stack unwinding"
+            ],
+            "learningTips": [
+                "Never use raw new/delete in application code — wrap in unique_ptr or a custom RAII class",
+                "Use std::lock_guard / std::scoped_lock instead of manually locking/unlocking mutexes",
+                "Destructors must be noexcept — an exception escaping a destructor during unwinding calls std::terminate",
+                "The standard library is built on RAII — study std::unique_ptr, std::fstream, std::lock_guard"
+            ],
+            "socraticPrompts": [
+                "What happens to destructors of already-constructed objects when an exception is thrown?",
+                "Why must destructors not throw, and what should you do if cleanup can fail?",
+                "How would you implement a scope guard using RAII and a lambda?"
+            ],
+            "codeExample": {
+                "description": "RAII file handle and scope guard",
+                "code": "#include <fstream>\n#include <stdexcept>\n#include <functional>\n\n// std::fstream IS a RAII wrapper — closes file in destructor\nvoid processFile(const std::string& path) {\n    std::fstream file(path, std::ios::in);\n    if (!file.is_open())\n        throw std::runtime_error(\"Cannot open: \" + path);\n\n    // Even if readData() throws, file.~fstream() closes the handle\n    std::string line;\n    while (std::getline(file, line)) {\n        // process...\n    }\n} // file closed here automatically\n\n// Generic scope guard\nstruct ScopeGuard {\n    std::function<void()> fn;\n    ~ScopeGuard() { fn(); } // Runs on any exit path\n};\n\nvoid demo() {\n    ScopeGuard guard{[] { /* cleanup */ }};\n    // ... operations that may throw ...\n} // guard.~ScopeGuard() always called",
+                "output": ""
+            },
+            "relatedDotPoints": ["CPP-MEM-2.2", "CPP-MEM-2.3", "CPP-OOP-1.3"]
+        },
+        "CPP-MEM-2.2": {
+            "code": "CPP-MEM-2.2",
+            "name": "Smart Pointers — unique_ptr",
+            "topic": "Memory Management",
+            "subtopic": "RAII and Resource Management",
+            "level": "advanced",
+            "summary": "std::unique_ptr provides exclusive ownership of a heap-allocated object. It has zero overhead compared to a raw pointer and automatically frees the object when it goes out of scope.",
+            "keyConcepts": [
+                "Exclusive ownership: Only one unique_ptr owns a resource at a time",
+                "Non-copyable: unique_ptr cannot be copied; ownership is transferred via std::move",
+                "make_unique (C++14): Factory function — preferred over new; exception-safe",
+                "release(): Releases ownership without deleting; returns raw pointer (use carefully)",
+                "reset(p): Deletes current resource and takes ownership of p",
+                "get(): Returns raw pointer without releasing ownership",
+                "Custom deleter: unique_ptr<T, Deleter> for custom cleanup (e.g., fclose)"
+            ],
+            "commonErrors": [
+                "Initialising two unique_ptrs from the same raw pointer — double free when both destruct",
+                "Calling get() and using the raw pointer after the unique_ptr is destroyed — use-after-free",
+                "Using release() without immediately storing the returned pointer — memory leak",
+                "Passing unique_ptr by value without std::move — compile error (non-copyable)"
+            ],
+            "learningTips": [
+                "Always use make_unique — never write new in modern code",
+                "If a function takes unique_ptr by value, it takes ownership; by reference, it observes without taking ownership",
+                "unique_ptr<T[]> is the correct type for dynamic arrays — uses delete[] automatically",
+                "Functions should accept raw pointers or references, not smart pointers, unless ownership transfer is intended"
+            ],
+            "socraticPrompts": [
+                "Why is make_unique exception-safer than calling new directly?",
+                "What happens to the managed object when a unique_ptr is moved from?",
+                "When would you use a custom deleter with unique_ptr?"
+            ],
+            "codeExample": {
+                "description": "unique_ptr ownership and transfer",
+                "code": "#include <memory>\n#include <iostream>\n\nstruct Widget {\n    int id;\n    Widget(int i) : id(i) { std::cout << \"Widget \" << id << \" created\\n\"; }\n    ~Widget() { std::cout << \"Widget \" << id << \" destroyed\\n\"; }\n};\n\nstd::unique_ptr<Widget> createWidget(int id) {\n    return std::make_unique<Widget>(id);  // Ownership transferred out\n}\n\nvoid takeOwnership(std::unique_ptr<Widget> w) {\n    std::cout << \"Owns Widget \" << w->id << '\\n';\n}   // w destroyed here\n\nint main() {\n    auto w = createWidget(1);\n    std::cout << \"w owns Widget \" << w->id << '\\n';\n    takeOwnership(std::move(w));  // Transfer ownership\n    // w is now null\n    if (!w) std::cout << \"w is empty\\n\";\n}",
+                "output": "Widget 1 created\nw owns Widget 1\nOwns Widget 1\nWidget 1 destroyed\nw is empty"
+            },
+            "relatedDotPoints": ["CPP-MEM-2.1", "CPP-MEM-2.3", "CPP-MOV-1.2"]
+        },
+        "CPP-TPL-1.1": {
+            "code": "CPP-TPL-1.1",
+            "name": "Function Templates",
+            "topic": "Templates and Generic Programming",
+            "subtopic": "Function and Class Templates",
+            "level": "advanced",
+            "summary": "Function templates generate a family of functions parameterised by type. The compiler deduces template arguments from the function call arguments and instantiates the appropriate version.",
+            "keyConcepts": [
+                "Template parameter: Declared with template<typename T> or template<class T>",
+                "Template argument deduction: Compiler infers T from the call arguments automatically",
+                "Explicit instantiation: Specify T explicitly when deduction is ambiguous: max<double>(a, b)",
+                "Template specialisation: Provide a different implementation for a specific type",
+                "Non-type template parameters: template<int N> allows values as template arguments",
+                "Two-phase name lookup: Names in templates looked up at definition time and at instantiation time"
+            ],
+            "commonErrors": [
+                "Template definitions must be in headers — the compiler needs the full definition at every instantiation point",
+                "Ambiguous deduction when arguments of different types are passed: max(1, 2.0) — T can't be both int and double",
+                "Expecting operator+ to exist for all T — templates do not check until instantiated",
+                "Accidental shadowing: a local variable named the same as a template parameter"
+            ],
+            "learningTips": [
+                "Always put function template definitions in headers (or use explicit instantiation in a .cpp)",
+                "Use concepts (C++20) or static_assert to constrain template parameters and get clear error messages",
+                "Prefer templates over void* or virtual dispatch when types are known at compile time — zero overhead",
+                "Godbolt is invaluable for seeing what code templates generate"
+            ],
+            "socraticPrompts": [
+                "Why must template definitions reside in header files, unlike regular function definitions?",
+                "What is two-phase name lookup and why does it matter?",
+                "How do templates achieve zero-overhead abstraction compared to virtual dispatch?"
+            ],
+            "codeExample": {
+                "description": "Function template with deduction and specialisation",
+                "code": "#include <iostream>\n#include <string>\n\n// Primary function template\ntemplate<typename T>\nT maximum(T a, T b) {\n    return (a > b) ? a : b;\n}\n\n// Explicit specialisation for const char*\ntemplate<>\nconst char* maximum<const char*>(const char* a, const char* b) {\n    return (std::strcmp(a, b) > 0) ? a : b;\n}\n\n// Non-type template parameter\ntemplate<int N>\nvoid printN() {\n    for (int i = 0; i < N; ++i)\n        std::cout << i << ' ';\n    std::cout << '\\n';\n}\n\nint main() {\n    std::cout << maximum(3, 7) << '\\n';        // T = int\n    std::cout << maximum(3.14, 2.72) << '\\n';  // T = double\n    std::cout << maximum(\"cat\", \"dog\") << '\\n'; // specialisation\n    printN<5>();\n}",
+                "output": "7\n3.14\ndog\n0 1 2 3 4"
+            },
+            "relatedDotPoints": ["CPP-TPL-1.2", "CPP-TPL-2.1", "CPP-TPL-2.3"]
+        },
+        "CPP-MOV-1.2": {
+            "code": "CPP-MOV-1.2",
+            "name": "Move Constructor and Move Assignment",
+            "topic": "Move Semantics and Value Categories",
+            "subtopic": "Value Categories",
+            "level": "advanced",
+            "summary": "Move semantics allow resource transfer instead of copying. Move operations steal resources from rvalues (temporaries or objects cast with std::move), leaving the source in a valid but unspecified state.",
+            "keyConcepts": [
+                "std::move: Casts an lvalue to an rvalue reference — does NOT actually move anything; it enables the move constructor/assignment to be called",
+                "Move constructor: T(T&& other) — takes ownership of other's resources; sets other's pointers to null",
+                "Move assignment: T& operator=(T&& other) — releases current resources, takes other's, nulls other",
+                "Moved-from state: A moved-from object must be in a valid (destructible) but unspecified state",
+                "noexcept move: Essential for STL containers to use move during reallocation instead of copy"
+            ],
+            "commonErrors": [
+                "Not marking move operations noexcept — std::vector uses copy instead of move on reallocation if move can throw",
+                "Accessing a moved-from object — valid to destroy or reassign, but not to read a meaningful value",
+                "Using std::move on a const object — calls copy instead of move silently",
+                "Returning a local variable with std::move — prevents NRVO and may be slower"
+            ],
+            "learningTips": [
+                "Mark all move constructors and move assignments noexcept — it's critical for performance with STL",
+                "Never return std::move(local_var) — the compiler applies NRVO automatically",
+                "std::move is just a cast; the actual resource transfer happens in the move constructor/assignment",
+                "Use std::exchange(ptr_, nullptr) in move constructors for clean pointer transfer"
+            ],
+            "socraticPrompts": [
+                "Why does std::move not actually move anything?",
+                "What guarantee must a moved-from object satisfy?",
+                "Why does std::vector use copy instead of move if the move constructor is not noexcept?"
+            ],
+            "codeExample": {
+                "description": "Move semantics in a resource-owning class",
+                "code": "#include <iostream>\n#include <utility>\n\nclass ResourceHolder {\npublic:\n    explicit ResourceHolder(int* p) : ptr_(p) {}\n    ~ResourceHolder() { delete ptr_; }\n\n    // Move constructor\n    ResourceHolder(ResourceHolder&& other) noexcept\n        : ptr_(std::exchange(other.ptr_, nullptr)) {\n        std::cout << \"Moved\\n\";\n    }\n\n    // Move assignment\n    ResourceHolder& operator=(ResourceHolder&& other) noexcept {\n        if (this != &other) {\n            delete ptr_;\n            ptr_ = std::exchange(other.ptr_, nullptr);\n        }\n        return *this;\n    }\n\n    // No copy\n    ResourceHolder(const ResourceHolder&) = delete;\n    ResourceHolder& operator=(const ResourceHolder&) = delete;\n\n    int value() const { return ptr_ ? *ptr_ : -1; }\nprivate:\n    int* ptr_;\n};\n\nint main() {\n    ResourceHolder a(new int(42));\n    ResourceHolder b(std::move(a));    // Move constructor\n    std::cout << b.value() << '\\n';   // 42\n    std::cout << a.value() << '\\n';   // -1 (moved-from)\n}",
+                "output": "Moved\n42\n-1"
+            },
+            "relatedDotPoints": ["CPP-OOP-1.3", "CPP-MEM-2.2", "CPP-MOV-1.3"]
+        },
+        "CPP-CON-1.2": {
+            "code": "CPP-CON-1.2",
+            "name": "Mutual Exclusion",
+            "topic": "Concurrency and Parallelism",
+            "subtopic": "Threading",
+            "level": "advanced",
+            "summary": "Mutexes prevent concurrent access to shared data. RAII wrappers (lock_guard, scoped_lock, unique_lock) ensure locks are always released, even when exceptions are thrown.",
+            "keyConcepts": [
+                "std::mutex: Non-recursive mutual exclusion; lock() blocks until acquired",
+                "std::lock_guard: RAII mutex lock; locks on construction, unlocks on destruction — preferred for simple cases",
+                "std::unique_lock: More flexible than lock_guard; supports deferred locking, timed locking, and condition variables",
+                "std::scoped_lock (C++17): Locks multiple mutexes simultaneously using a deadlock-avoidance algorithm",
+                "std::recursive_mutex: Can be locked multiple times by the same thread; required for recursive algorithms",
+                "Deadlock: Thread A holds mutex 1 and waits for mutex 2; Thread B holds mutex 2 and waits for mutex 1"
+            ],
+            "commonErrors": [
+                "Locking mutex manually without RAII — lock is not released if exception is thrown",
+                "Locking mutexes in different orders in different threads — causes deadlock",
+                "Using std::mutex when you need std::shared_mutex for reader-writer locking",
+                "Locking the same non-recursive mutex twice from the same thread — deadlock",
+                "Accessing shared data after the lock_guard goes out of scope"
+            ],
+            "learningTips": [
+                "Always use RAII locks — never call mutex.lock() without a corresponding RAII wrapper",
+                "Use std::scoped_lock when acquiring multiple mutexes — it uses std::lock internally to avoid deadlock",
+                "Keep critical sections as short as possible — do not perform I/O or long operations while holding a lock",
+                "ThreadSanitizer (-fsanitize=thread) detects data races and lock order violations"
+            ],
+            "socraticPrompts": [
+                "Why is lock_guard preferred over calling mutex.lock() and mutex.unlock() manually?",
+                "How does std::scoped_lock avoid deadlock when locking multiple mutexes?",
+                "When would you choose unique_lock over lock_guard?"
+            ],
+            "codeExample": {
+                "description": "Thread-safe counter using RAII locking",
+                "code": "#include <thread>\n#include <mutex>\n#include <iostream>\n#include <vector>\n\nclass ThreadSafeCounter {\npublic:\n    void increment() {\n        std::lock_guard<std::mutex> lock(mutex_); // RAII lock\n        ++count_;\n    }\n    int get() const {\n        std::lock_guard<std::mutex> lock(mutex_);\n        return count_;\n    }\nprivate:\n    mutable std::mutex mutex_;\n    int count_ = 0;\n};\n\nint main() {\n    ThreadSafeCounter counter;\n    std::vector<std::thread> threads;\n    for (int i = 0; i < 10; ++i)\n        threads.emplace_back([&counter] {\n            for (int j = 0; j < 1000; ++j)\n                counter.increment();\n        });\n    for (auto& t : threads) t.join();\n    std::cout << counter.get() << '\\n'; // Always 10000\n}",
+                "output": "10000"
+            },
+            "relatedDotPoints": ["CPP-CON-1.1", "CPP-CON-1.3", "CPP-CON-2.1"]
+        },
+        "CPP-STL-3.4": {
+            "code": "CPP-STL-3.4",
+            "name": "Ranges and Views (C++20)",
+            "topic": "Standard Template Library",
+            "subtopic": "Algorithms and Ranges",
+            "level": "expert",
+            "summary": "C++20 Ranges provide a composable, lazy pipeline for sequence processing. Views are range adaptors that transform or filter ranges without materialising intermediate results, enabling efficient and expressive data pipelines.",
+            "keyConcepts": [
+                "std::ranges algorithms: Operate on range objects directly — no begin/end pair needed",
+                "std::views (range adaptors): filter, transform, take, drop, reverse, enumerate, zip",
+                "Pipe operator |: Composes views into a pipeline — evaluated lazily",
+                "Lazy evaluation: Elements are processed on demand — no intermediate containers allocated",
+                "std::ranges::to<> (C++23): Materialise a view into a container"
+            ],
+            "commonErrors": [
+                "Storing a view that outlives the underlying range — dangling view",
+                "Expecting views to be evaluated immediately — they are lazy; iteration triggers evaluation",
+                "Using views::filter with a stateful predicate that captures by reference after the range moves",
+                "Confusing std::views::transform with std::ranges::transform — former returns a lazy view, latter mutates in place"
+            ],
+            "learningTips": [
+                "Think of ranges as a functional pipeline: source | filter | transform | take",
+                "Views have zero allocation overhead — ideal for large datasets",
+                "std::ranges algorithms are safer — they accept ranges directly and cannot be called with mismatched begin/end",
+                "Use Compiler Explorer to verify that the ranges pipeline compiles to the same code as a hand-written loop"
+            ],
+            "socraticPrompts": [
+                "What is the difference between a range adaptor (view) and a range algorithm?",
+                "Why might a lazily-evaluated view be more memory-efficient than composing algorithms with intermediate vectors?",
+                "When would you avoid ranges in favour of classic iterator-pair algorithms?"
+            ],
+            "codeExample": {
+                "description": "Composing views with the pipe operator",
+                "code": "#include <vector>\n#include <ranges>\n#include <iostream>\n\nint main() {\n    std::vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n\n    // Lazy pipeline: filter evens, square them, take first 3\n    auto pipeline = nums\n        | std::views::filter([](int n) { return n % 2 == 0; })\n        | std::views::transform([](int n) { return n * n; })\n        | std::views::take(3);\n\n    for (int v : pipeline)           // Evaluation happens here\n        std::cout << v << ' ';       // 4 16 36\n    std::cout << '\\n';\n\n    // Ranges sort — no begin/end pair needed\n    std::ranges::sort(nums, std::greater{});\n    for (int v : nums | std::views::take(5))\n        std::cout << v << ' ';       // 10 9 8 7 6\n}",
+                "output": "4 16 36\n10 9 8 7 6"
+            },
+            "relatedDotPoints": ["CPP-STL-3.1", "CPP-STL-3.2", "CPP-TPL-2.3"]
+        },
+        "CPP-MOD20-2.2": {
+            "code": "CPP-MOD20-2.2",
+            "name": "Coroutines",
+            "topic": "Modern C++17/20/23 Features",
+            "subtopic": "C++20 Features",
+            "level": "expert",
+            "summary": "C++20 coroutines are functions that can suspend and resume execution. They enable asynchronous programming and lazy generators without callback-based spaghetti code.",
+            "keyConcepts": [
+                "co_await: Suspends the coroutine until an awaitable completes",
+                "co_yield: Suspends and produces a value (used in generators)",
+                "co_return: Finalises the coroutine and sets the return value",
+                "promise_type: The type that controls the coroutine's behaviour — produced by promise_type::get_return_object()",
+                "Awaitable: A type with operator co_await or the three await methods: await_ready, await_suspend, await_resume",
+                "Generator: A coroutine that yields a sequence of values lazily using co_yield"
+            ],
+            "commonErrors": [
+                "Forgetting that coroutines are stackless — cannot co_await inside a nested non-coroutine function",
+                "Lifetime issues: a coroutine's frame outlives local variables in the caller",
+                "Missing coroutine_handle::destroy() — coroutine frames are leaked like heap allocations",
+                "Trying to use C++20 coroutines without a proper executor or coroutine library — the low-level API is complex"
+            ],
+            "learningTips": [
+                "Start with a coroutine library (cppcoro, libcoro, or C++23 std::generator) before implementing promise_type from scratch",
+                "Think of co_await as 'pause here until this completes, then continue'",
+                "Coroutines are ideal for asynchronous I/O, lazy sequences, and state machines",
+                "std::generator (C++23) provides a ready-made generator type for co_yield-based iterators"
+            ],
+            "socraticPrompts": [
+                "What is the difference between a stackful coroutine (like a fiber) and a stackless C++20 coroutine?",
+                "How does co_yield differ from co_return?",
+                "Why must a coroutine's promise_type be customisable?"
+            ],
+            "codeExample": {
+                "description": "Lazy integer generator using co_yield",
+                "code": "// Requires C++23 std::generator or a custom generator type\n// Simplified conceptual example:\n\n// With std::generator (C++23):\n#include <generator>\n#include <iostream>\n\nstd::generator<int> fibonacci() {\n    int a = 0, b = 1;\n    while (true) {\n        co_yield a;            // Suspend and produce value\n        auto tmp = a + b;\n        a = b;\n        b = tmp;\n    }\n}\n\nint main() {\n    for (int n : fibonacci() | std::views::take(8))\n        std::cout << n << ' ';\n    std::cout << '\\n';\n}",
+                "output": "0 1 1 2 3 5 8 13"
+            },
+            "relatedDotPoints": ["CPP-MOD20-2.1", "CPP-CON-1.4", "CPP-STL-3.4"]
+        }
+    }
+}

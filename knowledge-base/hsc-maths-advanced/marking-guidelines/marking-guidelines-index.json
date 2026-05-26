@@ -1,0 +1,242 @@
+{
+  "subject": "HSC Mathematics Advanced",
+  "description": "Index of marking guidelines by year. Each entry references the full marking guideline data embedded in the question bank. This file provides a quick lookup for the marking-guideline-feedback skill.",
+  "lastUpdated": "2025-03-07",
+
+  "partialCreditPolicy": {
+    "description": "OpenTutor partial credit assessment policy, aligned with NESA principles",
+    "rules": [
+      { "condition": "Correct method but arithmetic error",                                          "marksAwarded": "full marks minus 1" },
+      { "condition": "Correct first step but incorrect subsequent steps",                            "marksAwarded": "1 mark" },
+      { "condition": "Correct answer without required working shown",                                "marksAwarded": "0 to 1 depending on question" },
+      { "condition": "Follow-through error: error from part (a) carried correctly into part (b)",   "marksAwarded": "full marks for part (b) working" }
+    ]
+  },
+
+  "guidelines": {
+
+    "2023": {
+      "year": 2023,
+      "source": "representative",
+      "nesaReference": "Mathematics Advanced HSC Marking Guidelines 2023",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 90,
+        "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem"
+        ]
+      },
+      "questionGuidelines": {
+        "2023-MA-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "factorisation or quadratic formula" },
+        "2023-MA-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "differentiation and tangent equation" },
+        "2023-MA-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "sine rule application" },
+        "2023-MA-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "stationary point classification" },
+        "2023-MA-Q14":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "area below x-axis" },
+        "2023-MA-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "optimisation setup and verification" },
+        "2023-MA-Q16":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "exponential growth model" },
+        "2023-MA-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "trig graph parameters and equation solving" },
+        "2023-MA-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "normal distribution and z-scores" },
+        "2023-MA-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "product and quotient rule" },
+        "2023-MA-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "area between curves" },
+        "2023-MA-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "present value annuity formula" },
+        "2023-MA-Q22":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "discrete probability distribution" },
+        "2023-MA-Q23":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "double angle and compound angle identities" }
+      }
+    },
+
+    "2022": {
+      "year": 2022,
+      "source": "representative",
+      "nesaReference": "Mathematics Advanced HSC Marking Guidelines 2022",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 90,
+        "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem"
+        ]
+      },
+      "questionGuidelines": {
+        "2022-MA-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "solving quadratic equations" },
+        "2022-MA-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "logarithm laws and evaluation" },
+        "2022-MA-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "basic integration and definite integrals" },
+        "2022-MA-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "exact trigonometric values and simplification" },
+        "2022-MA-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "mean and standard deviation" },
+        "2022-MA-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "implicit differentiation and chain rule" },
+        "2022-MA-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "exponential equations and natural logarithms" },
+        "2022-MA-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "future value of annuity" },
+        "2022-MA-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "curve sketching and second derivative test" },
+        "2022-MA-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "area between curve and axis" },
+        "2022-MA-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "normal distribution and probability" },
+        "2022-MA-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "integration by substitution and definite integrals" },
+        "2022-MA-Q22":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "solving trigonometric equations over a domain" }
+      }
+    },
+
+    "2021": {
+      "year": 2021,
+      "source": "representative",
+      "nesaReference": "Mathematics Advanced HSC Marking Guidelines 2021",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 90,
+        "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem"
+        ]
+      },
+      "questionGuidelines": {
+        "2021-MA-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "domain and range of functions" },
+        "2021-MA-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "product rule differentiation" },
+        "2021-MA-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "solving trigonometric equations" },
+        "2021-MA-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "exponential growth and decay" },
+        "2021-MA-Q14":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "stationary points and curve sketching" },
+        "2021-MA-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "z-scores and normal distribution" },
+        "2021-MA-Q16":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "area between two curves" },
+        "2021-MA-Q17":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "compound interest and present value" },
+        "2021-MA-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "quotient rule and integration" },
+        "2021-MA-Q19":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "continuous random variable and probability density" },
+        "2021-MA-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "optimisation with constraint" },
+        "2021-MA-Q21":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "trigonometric identities and integration" }
+      }
+    },
+
+    "2020": {
+      "year": 2020,
+      "source": "representative",
+      "nesaReference": "Mathematics Advanced HSC Marking Guidelines 2020",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 90,
+        "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem"
+        ]
+      },
+      "questionGuidelines": {
+        "2020-MA-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "interval notation and function evaluation" },
+        "2020-MA-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "derivative of exponential functions" },
+        "2020-MA-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "anti-differentiation and definite integrals" },
+        "2020-MA-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "cosine rule and bearing problems" },
+        "2020-MA-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "box plot interpretation and quartiles" },
+        "2020-MA-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "implicit differentiation and related rates" },
+        "2020-MA-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "loan repayment and reducing balance" },
+        "2020-MA-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "logarithmic differentiation" },
+        "2020-MA-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "integration by parts and definite integrals" },
+        "2020-MA-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "bivariate data and regression" },
+        "2020-MA-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "second derivative test and inflection points" },
+        "2020-MA-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "parametric equations and graph transformations" }
+      }
+    },
+
+    "2019": {
+      "year": 2019,
+      "source": "representative",
+      "nesaReference": "Mathematics Advanced HSC Marking Guidelines 2019",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 90,
+        "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem"
+        ]
+      },
+      "questionGuidelines": {
+        "2019-MA-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "completing the square and vertex form" },
+        "2019-MA-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "chain rule differentiation" },
+        "2019-MA-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "logarithm equations and change of base" },
+        "2019-MA-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "sine and cosine graphs" },
+        "2019-MA-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "cumulative frequency and percentiles" },
+        "2019-MA-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "product rule and applications of differentiation" },
+        "2019-MA-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "superannuation and geometric series" },
+        "2019-MA-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "integration of trigonometric functions" },
+        "2019-MA-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "exponential functions and logarithmic models" },
+        "2019-MA-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "inflection points and concavity" },
+        "2019-MA-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "normal distribution and sample proportions" },
+        "2019-MA-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "area under curve and Riemann sums" }
+      }
+    }
+
+  }
+}

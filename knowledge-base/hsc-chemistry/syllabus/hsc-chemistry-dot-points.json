@@ -1,0 +1,1156 @@
+{
+  "subject": "HSC Chemistry",
+  "syllabusVersion": "2023",
+  "description": "Dot-point detail for HSC Chemistry supporting error analysis, worked examples and marking feedback.",
+  "dotPoints": {
+    "CH-A1.1": {
+      "code": "CH-A1.1",
+      "name": "Atomic number, mass number and atomic structure",
+      "topic": "CH-A",
+      "subtopic": "CH-A1",
+      "year": "11",
+      "summary": "Atoms are composed of protons, neutrons, and electrons, with the atomic number representing the number of protons and the mass number representing the total number of protons and neutrons.",
+      "keyConcepts": [
+        "Protons",
+        "Neutrons",
+        "Electrons",
+        "Atomic Number",
+        "Mass Number"
+      ],
+      "commonErrors": [
+        "Confusing protons and electrons",
+        "Misunderstanding atomic structure"
+      ],
+      "examTips": [
+        "Understand the difference between protons, neutrons, and electrons",
+        "Practice calculating atomic numbers and mass numbers"
+      ],
+      "socraticPrompts": [
+        "What is the relationship between the number of protons and neutrons in an atom?",
+        "How do you calculate the atomic number of an element?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the number of protons in the element.",
+          "Determine if there are any neutrons present (usually given or can be calculated from the mass number and atomic number).",
+          "Add the number of protons to the number of neutrons to get the total mass number.",
+          "The atomic number is equal to the number of protons."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A1.2",
+        "CH-A1.3"
+      ]
+    },
+    "CH-A1.2": {
+      "code": "CH-A1.2",
+      "name": "Isotopes and isotopic notation",
+      "topic": "CH-A",
+      "subtopic": "CH-A1",
+      "year": "11",
+      "summary": "Isotopes are atoms of the same element with different mass numbers due to variations in the number of neutrons.",
+      "keyConcepts": [
+        "Isotope",
+        "Mass Number",
+        "Atomic Mass",
+        "Nuclear Stability"
+      ],
+      "commonErrors": [
+        "Confusing isotopes and elements",
+        "Misunderstanding nuclear stability"
+      ],
+      "examTips": [
+        "Understand the difference between isotopes and elements",
+        "Practice identifying isotopes from their atomic mass"
+      ],
+      "socraticPrompts": [
+        "What is an isotope?",
+        "How do you determine if two atoms are isotopes of each other?"
+      ],
+      "workedExampleTemplate": {
+        "type": "identification",
+        "steps": [
+          "Identify the element and its atomic number.",
+          "Look at the given mass number.",
+          "Determine if there is a difference between the calculated mass number and the given mass number.",
+          "If there is, then the atom is an isotope."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A1.1"
+      ]
+    },
+    "CH-A1.3": {
+      "code": "CH-A1.3",
+      "name": "Atomic radii and ionization energy",
+      "topic": "CH-A",
+      "subtopic": "CH-A1",
+      "year": "11",
+      "summary": "Atomic radius is the distance from the nucleus to the outermost electron, while ionization energy is the energy required to remove an electron from a neutral atom.",
+      "keyConcepts": [
+        "Atomic Radius",
+        "Ionization Energy",
+        "Electron Configuration"
+      ],
+      "commonErrors": [
+        "Confusing atomic radius and ionization energy",
+        "Misunderstanding electron configuration"
+      ],
+      "examTips": [
+        "Understand the relationship between atomic radius and electron configuration",
+        "Practice calculating ionization energies"
+      ],
+      "socraticPrompts": [
+        "What is the relationship between atomic radius and electron configuration?",
+        "How do you calculate the ionization energy of an element?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the element and its electron configuration.",
+          "Determine the position of the outermost electron in the electron configuration.",
+          "Calculate the distance from the nucleus to this electron as the atomic radius.",
+          "Use the ionization energy formula to calculate the ionization energy."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A1.1"
+      ]
+    },
+    "CH-A2.1": {
+      "code": "CH-A2.1",
+      "name": "Group 1 elements (alkali metals)",
+      "topic": "CH-A",
+      "subtopic": "CH-A2",
+      "year": "12",
+      "summary": "Alkali metals are highly reactive, soft metals that readily lose their outermost electron to form +1 ions.",
+      "keyConcepts": [
+        "Reactivity",
+        "Softness",
+        "Losing electrons",
+        "+1 ion formation"
+      ],
+      "commonErrors": [
+        "Confusing alkali metals with alkaline earth metals",
+        "Misunderstanding the reactivity series"
+      ],
+      "examTips": [
+        "Understand the reactivity series and how it applies to alkali metals",
+        "Practice balancing redox reactions involving alkali metals"
+      ],
+      "socraticPrompts": [
+        "Why are alkali metals so reactive?",
+        "How does the size of an atom affect its reactivity?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the alkali metal involved (e.g., sodium)",
+          "Determine the number of electrons lost to form a +1 ion",
+          "Write the chemical equation for the reaction",
+          "Balance the equation if necessary"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A2.2",
+        "CH-A2.3"
+      ]
+    },
+    "CH-A2.2": {
+      "code": "CH-A2.2",
+      "name": "Group 7 elements (halogens)",
+      "topic": "CH-A",
+      "subtopic": "CH-A2",
+      "year": "12",
+      "summary": "Halogens are highly reactive nonmetals that readily gain one electron to form -1 ions.",
+      "keyConcepts": [
+        "Reactivity",
+        "Nonmetallic nature",
+        "Gaining electrons",
+        "-1 ion formation"
+      ],
+      "commonErrors": [
+        "Confusing halogens with noble gases",
+        "Misunderstanding the reactivity series"
+      ],
+      "examTips": [
+        "Understand the reactivity series and how it applies to halogens",
+        "Practice balancing redox reactions involving halogens"
+      ],
+      "socraticPrompts": [
+        "Why are halogens so reactive?",
+        "How does the size of an atom affect its reactivity?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the halogen involved (e.g., chlorine)",
+          "Determine the number of electrons gained to form a -1 ion",
+          "Write the chemical equation for the reaction",
+          "Balance the equation if necessary"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A2.1",
+        "CH-A2.3"
+      ]
+    },
+    "CH-A2.3": {
+      "code": "CH-A2.3",
+      "name": "Periodic trends in atomic radius and ionization energy",
+      "topic": "CH-A",
+      "subtopic": "CH-A2",
+      "year": "12",
+      "summary": "Atomic radius decreases across a period, while ionization energy increases.",
+      "keyConcepts": [
+        "Atomic radius",
+        "Ionization energy",
+        "Periodic trends"
+      ],
+      "commonErrors": [
+        "Confusing atomic radius with electron affinity",
+        "Misunderstanding the periodic trend in ionization energy"
+      ],
+      "examTips": [
+        "Understand the periodic trends in atomic radius and ionization energy",
+        "Practice predicting these trends for elements in a period or group"
+      ],
+      "socraticPrompts": [
+        "Why does atomic radius decrease across a period?",
+        "How does ionization energy change as you move down a group?"
+      ],
+      "workedExampleTemplate": {
+        "type": "prediction",
+        "steps": [
+          "Identify the element(s) in question (e.g., lithium and fluorine)",
+          "Recall the periodic trends for atomic radius and ionization energy",
+          "Predict the change in atomic radius and ionization energy based on these trends"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-A2.1",
+        "CH-A2.2"
+      ]
+    },
+    "CH-B1.1": {
+      "code": "CH-B1.1",
+      "name": "Formation of Ionic Bonds",
+      "topic": "CH-B",
+      "subtopic": "CH-B1",
+      "year": "11",
+      "summary": "Ionic bonds are formed when electrons are transferred from a metal to a non-metal, resulting in the formation of oppositely charged ions.",
+      "keyConcepts": [
+        "Metallic ion",
+        "Non-metals",
+        "Electron transfer",
+        "Oppositely charged ions"
+      ],
+      "commonErrors": [
+        "Confusing ionic bonds with covalent bonds",
+        "Misunderstanding electron configuration"
+      ],
+      "examTips": [
+        "Identify metals and non-metals in a compound",
+        "Understand the electron configuration of both elements involved"
+      ],
+      "socraticPrompts": [
+        "What is an example of an ionic bond?",
+        "How does the electron transfer process affect the stability of an ionic compound?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the metal and non-metal in the compound.",
+          "Determine the number of valence electrons for each element.",
+          "Calculate the difference in electronegativity between the two elements.",
+          "Write the chemical formula showing the transfer of electrons.",
+          "Verify that the resulting ions have opposite charges."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B1.2",
+        "CH-B1.3"
+      ]
+    },
+    "CH-B1.2": {
+      "code": "CH-B1.2",
+      "name": "Electronegativity and Polarity in Ionic Compounds",
+      "topic": "CH-B",
+      "subtopic": "CH-B1",
+      "year": "11",
+      "summary": "Electronegativity is a measure of an atom's ability to attract electrons. In ionic compounds, the difference in electronegativity between the metal and non-metal determines the polarity of the bond.",
+      "keyConcepts": [
+        "Electronegativity",
+        "Polarity",
+        "Metallic ion",
+        "Non-metals"
+      ],
+      "commonErrors": [
+        "Confusing electronegativity with atomic number",
+        "Misunderstanding how to calculate electronegativity difference"
+      ],
+      "examTips": [
+        "Understand the concept of electronegativity and its effect on bond polarity",
+        "Calculate the electronegativity difference between two elements"
+      ],
+      "socraticPrompts": [
+        "What is the relationship between electronegativity and bond polarity?",
+        "How does the electronegativity difference affect the stability of an ionic compound?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the metal and non-metal in the compound.",
+          "Determine the electronegativity of each element.",
+          "Calculate the electronegativity difference between the two elements.",
+          "Interpret the polarity of the bond based on the electronegativity difference.",
+          "Verify that the resulting ions have opposite charges."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B1.1",
+        "CH-B1.3"
+      ]
+    },
+    "CH-B1.3": {
+      "code": "CH-B1.3",
+      "name": "Ionic Bonding in Metals and Non-Metals",
+      "topic": "CH-B",
+      "subtopic": "CH-B1",
+      "year": "11",
+      "summary": "Ionic bonding occurs when a metal loses electrons to form a positively charged ion (cation) and a non-metal gains electrons to form a negatively charged ion (anion). The resulting ionic compound is neutral.",
+      "keyConcepts": [
+        "Metallic ion",
+        "Non-metals",
+        "Electron transfer",
+        "Cation",
+        "Anion"
+      ],
+      "commonErrors": [
+        "Confusing metallic ions with covalent bonds",
+        "Misunderstanding the formation of cations and anions"
+      ],
+      "examTips": [
+        "Identify metals and non-metals in a compound",
+        "Understand the electron configuration of both elements involved"
+      ],
+      "socraticPrompts": [
+        "What is an example of ionic bonding?",
+        "How does the formation of ions affect the stability of an ionic compound?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the metal and non-metal in the compound.",
+          "Determine the number of valence electrons for each element.",
+          "Calculate the difference in electronegativity between the two elements.",
+          "Write the chemical formula showing the transfer of electrons.",
+          "Verify that the resulting ions have opposite charges."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B1.1",
+        "CH-B1.2"
+      ]
+    },
+    "CH-B2.1": {
+      "code": "CH-B2.1",
+      "name": "Formation of covalent bonds (beginner)",
+      "topic": "CH-B",
+      "subtopic": "CH-B2",
+      "year": "12",
+      "summary": "Covalent bonds are formed when two atoms share electrons to achieve a stable electron configuration.",
+      "keyConcepts": [
+        "Electron sharing",
+        "Stable electron configuration",
+        "Valence electrons"
+      ],
+      "commonErrors": [
+        "Confusing ionic and covalent bonds",
+        "Misunderstanding the number of shared electrons"
+      ],
+      "examTips": [
+        "Draw Lewis structures to visualize bonding",
+        "Understand the octet rule for stable configurations"
+      ],
+      "socraticPrompts": [
+        "Why do atoms share electrons?",
+        "What is a valence electron?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the elements involved in the bond.",
+          "Determine the number of valence electrons for each atom.",
+          "Calculate the total number of valence electrons available for bonding.",
+          "Determine how many pairs of electrons can be shared to achieve a stable configuration.",
+          "Draw the Lewis structure showing the shared electron pairs."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B2.2",
+        "CH-B2.3"
+      ]
+    },
+    "CH-B2.2": {
+      "code": "CH-B2.2",
+      "name": "Types of covalent bonds (single, double, triple)",
+      "topic": "CH-B",
+      "subtopic": "CH-B2",
+      "year": "12",
+      "summary": "Covalent bonds can be single, double, or triple, depending on the number of shared electron pairs.",
+      "keyConcepts": [
+        "Single bond",
+        "Double bond",
+        "Triple bond",
+        "Electron pair"
+      ],
+      "commonErrors": [
+        "Confusing different types of covalent bonds",
+        "Misunderstanding the difference between single and double bonds"
+      ],
+      "examTips": [
+        "Understand the difference in energy between single, double, and triple bonds",
+        "Draw diagrams to represent each type of bond"
+      ],
+      "socraticPrompts": [
+        "What is a single bond?",
+        "How do you know if a bond is single, double, or triple?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the elements involved in the bond.",
+          "Determine the number of valence electrons for each atom.",
+          "Calculate the total number of valence electrons available for bonding.",
+          "Determine how many pairs of electrons can be shared to achieve a stable configuration.",
+          "Draw the Lewis structure showing the type of covalent bond."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B2.1",
+        "CH-B2.3"
+      ]
+    },
+    "CH-B2.3": {
+      "code": "CH-B2.3",
+      "name": "Hybridization and molecular geometry (advanced)",
+      "topic": "CH-B",
+      "subtopic": "CH-B2",
+      "year": "12",
+      "summary": "Covalent bonds can be formed by different hybridizations of atomic orbitals, leading to various molecular geometries.",
+      "keyConcepts": [
+        "Hybridization",
+        "Molecular geometry",
+        "Valence shell electron pair repulsion (VSEPR) theory"
+      ],
+      "commonErrors": [
+        "Confusing different hybridizations and their corresponding molecular geometries",
+        "Misunderstanding the VSEPR model"
+      ],
+      "examTips": [
+        "Understand the relationship between hybridization and molecular geometry",
+        "Use VSEPR to predict molecular shapes"
+      ],
+      "socraticPrompts": [
+        "What is hybridization?",
+        "How do you determine the molecular geometry of a molecule?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the elements involved in the bond.",
+          "Determine the number of valence electrons for each atom.",
+          "Calculate the total number of valence electrons available for bonding.",
+          "Determine how many pairs of electrons can be shared to achieve a stable configuration.",
+          "Draw the Lewis structure showing the type of covalent bond and hybridization."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-B2.1",
+        "CH-B2.2"
+      ]
+    },
+    "CH-C1.1": {
+      "code": "CH-C1.1",
+      "name": "Writing balanced chemical equations",
+      "topic": "CH-C",
+      "subtopic": "CH-C1",
+      "year": "11",
+      "summary": "Students learn to write balanced chemical equations by identifying the reactants and products, ensuring that the number of atoms of each element is conserved.",
+      "keyConcepts": [
+        "Reactants",
+        "Products",
+        "Balanced equation"
+      ],
+      "commonErrors": [
+        "Omitting a product or reactant",
+        "Incorrect coefficients",
+        "Miscounting atoms"
+      ],
+      "examTips": [
+        "Draw a box around the reactants and products to visualize the reaction.",
+        "Check that the number of atoms of each element is equal on both sides of the equation."
+      ],
+      "socraticPrompts": [
+        "What are the reactants in this chemical reaction?",
+        "How do we know if an equation is balanced?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the reactants and products.",
+          "Write down the unbalanced equation.",
+          "Count the number of atoms of each element on both sides.",
+          "Adjust the coefficients to balance the equation."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C1.2",
+        "CH-C1.3"
+      ]
+    },
+    "CH-C1.2": {
+      "code": "CH-C1.2",
+      "name": "Balancing equations using coefficients",
+      "topic": "CH-C",
+      "subtopic": "CH-C1",
+      "year": "11",
+      "summary": "Students learn to balance chemical equations by adjusting the coefficients of the reactants and products.",
+      "keyConcepts": [
+        "Coefficients",
+        "Balanced equation"
+      ],
+      "commonErrors": [
+        "Incorrect use of coefficients",
+        "Miscounting atoms"
+      ],
+      "examTips": [
+        "Use trial and error or algebraic methods to find the correct coefficients.",
+        "Check that the number of atoms of each element is equal on both sides of the equation."
+      ],
+      "socraticPrompts": [
+        "How do we know if an equation is balanced? ",
+        "What are some strategies for balancing equations?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the reactants and products.",
+          "Write down the unbalanced equation.",
+          "Count the number of atoms of each element on both sides.",
+          "Adjust the coefficients to balance the equation."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C1.1",
+        "CH-C1.3"
+      ]
+    },
+    "CH-C1.3": {
+      "code": "CH-C1.3",
+      "name": "Balancing equations with subscripts",
+      "topic": "CH-C",
+      "subtopic": "CH-C1",
+      "year": "11",
+      "summary": "Students learn to balance chemical equations by adjusting the subscripts of the reactants and products.",
+      "keyConcepts": [
+        "Subscripts",
+        "Balanced equation"
+      ],
+      "commonErrors": [
+        "Incorrect use of subscripts",
+        "Miscounting atoms"
+      ],
+      "examTips": [
+        "Use trial and error or algebraic methods to find the correct subscripts.",
+        "Check that the number of atoms of each element is equal on both sides of the equation."
+      ],
+      "socraticPrompts": [
+        "How do we know if an equation is balanced? ",
+        "What are some strategies for balancing equations?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the reactants and products.",
+          "Write down the unbalanced equation.",
+          "Count the number of atoms of each element on both sides.",
+          "Adjust the subscripts to balance the equation."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C1.1",
+        "CH-C1.2"
+      ]
+    },
+    "CH-C2.1": {
+      "code": "CH-C2.1",
+      "name": "Mole Concept and Avogadro's Number",
+      "topic": "CH-C",
+      "subtopic": "CH-C2",
+      "year": "12",
+      "summary": "The mole is a fundamental unit in chemistry that defines the amount of substance based on the number of atoms or molecules. Avogadro's number, approximately 6.022 x 10^23, represents the number of particles (atoms, molecules, ions) in one mole.",
+      "keyConcepts": [
+        "Mole",
+        "Avogadro's Number",
+        "Substance Amount"
+      ],
+      "commonErrors": [
+        "Confusing moles with grams or liters",
+        "Misunderstanding the relationship between moles and mass"
+      ],
+      "examTips": [
+        "Always use Avogadro's number when converting between moles and particles",
+        "Check units carefully to avoid dimensional analysis errors"
+      ],
+      "socraticPrompts": [
+        "What is a mole in chemistry?",
+        "How does Avogadro's number relate to the mole concept?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the substance and its molar mass.",
+          "Convert the given amount of substance into grams using the molar mass.",
+          "Use Avogadro's number to convert grams to moles."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C2.2",
+        "CH-C2.3"
+      ]
+    },
+    "CH-C2.2": {
+      "code": "CH-C2.2",
+      "name": "Calculating Moles from Mass",
+      "topic": "CH-C",
+      "subtopic": "CH-C2",
+      "year": "12",
+      "summary": "To calculate the number of moles in a given mass, divide the mass by the molar mass of the substance.",
+      "keyConcepts": [
+        "Moles",
+        "Mass",
+        "Molar Mass"
+      ],
+      "commonErrors": [
+        "Forgetting to convert units (e.g., grams to kilograms)",
+        "Using incorrect molar masses"
+      ],
+      "examTips": [
+        "Always use the correct molar mass for the substance",
+        "Check your units and ensure they are consistent with the given mass"
+      ],
+      "socraticPrompts": [
+        "How do you calculate moles from mass?",
+        "What is the relationship between mass, molar mass, and moles?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the substance and its molar mass.",
+          "Convert the given amount of substance into grams using the molar mass.",
+          "Divide the mass by the molar mass to find the number of moles."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C2.1",
+        "CH-C2.3"
+      ]
+    },
+    "CH-C2.3": {
+      "code": "CH-C2.3",
+      "name": "Calculating Mass from Moles",
+      "topic": "CH-C",
+      "subtopic": "CH-C2",
+      "year": "12",
+      "summary": "To calculate the mass of a given number of moles, multiply the number of moles by the molar mass of the substance.",
+      "keyConcepts": [
+        "Moles",
+        "Mass",
+        "Molar Mass"
+      ],
+      "commonErrors": [
+        "Forgetting to convert units (e.g., moles to grams)",
+        "Using incorrect molar masses"
+      ],
+      "examTips": [
+        "Always use the correct molar mass for the substance",
+        "Check your units and ensure they are consistent with the given number of moles"
+      ],
+      "socraticPrompts": [
+        "How do you calculate mass from moles?",
+        "What is the relationship between moles, mass, and molar mass?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the substance and its molar mass.",
+          "Multiply the number of moles by the molar mass to find the mass."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-C2.1",
+        "CH-C2.2"
+      ]
+    },
+    "CH-D1.1": {
+      "code": "CH-D1.1",
+      "name": "Types of Thermodynamic Processes (Endothermic, Exothermic)",
+      "topic": "CH-D",
+      "subtopic": "CH-D1",
+      "year": "11",
+      "summary": "Thermodynamic processes are classified into endothermic and exothermic based on the energy transfer involved.",
+      "keyConcepts": [
+        "Endothermic",
+        "Exothermic",
+        "Energy Transfer"
+      ],
+      "commonErrors": [
+        "Confusing heat as work",
+        "Misunderstanding the direction of energy flow"
+      ],
+      "examTips": [
+        "Identify processes by observing changes in temperature and energy levels"
+      ],
+      "socraticPrompts": [
+        "What is an endothermic process? Give an example.",
+        "How do you determine if a reaction is exothermic or endothermic? Explain with a chemical equation."
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the type of thermodynamic process (endothermic or exothermic)",
+          "Write down the balanced chemical equation for the reaction",
+          "Determine the heat change (q) using the formula q = mcΔT",
+          "Calculate the amount of heat transferred to or from the system",
+          "State whether the process is endothermic or exothermic based on the sign of q"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D1.2",
+        "CH-D1.3"
+      ]
+    },
+    "CH-D1.2": {
+      "code": "CH-D1.2",
+      "name": "Heat Transfer and Temperature Changes",
+      "topic": "CH-D",
+      "subtopic": "CH-D1",
+      "year": "11",
+      "summary": "Heat transfer occurs between objects at different temperatures, causing temperature changes.",
+      "keyConcepts": [
+        "Heat Transfer",
+        "Temperature Change",
+        "Thermal Energy"
+      ],
+      "commonErrors": [
+        "Confusing heat as work",
+        "Misunderstanding the direction of energy flow"
+      ],
+      "examTips": [
+        "Identify processes by observing changes in temperature and energy levels"
+      ],
+      "socraticPrompts": [
+        "What is heat transfer? Give an example.",
+        "How do you determine if a reaction is exothermic or endothermic? Explain with a chemical equation."
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the type of thermodynamic process (endothermic or exothermic)",
+          "Write down the balanced chemical equation for the reaction",
+          "Determine the heat change (q) using the formula q = mcΔT",
+          "Calculate the amount of heat transferred to or from the system",
+          "State whether the process is endothermic or exothermic based on the sign of q"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D1.1",
+        "CH-D1.3"
+      ]
+    },
+    "CH-D1.3": {
+      "code": "CH-D1.3",
+      "name": "Thermodynamic Equations (q = mcΔT)",
+      "topic": "CH-D",
+      "subtopic": "CH-D1",
+      "year": "11",
+      "summary": "The relationship between heat transfer, mass, specific heat capacity, and temperature change is described by the equation q = mcΔT.",
+      "keyConcepts": [
+        "Thermodynamic Equation",
+        "Heat Transfer",
+        "Mass",
+        "Specific Heat Capacity",
+        "Temperature Change"
+      ],
+      "commonErrors": [
+        "Confusing heat as work",
+        "Misunderstanding the direction of energy flow"
+      ],
+      "examTips": [
+        "Identify processes by observing changes in temperature and energy levels"
+      ],
+      "socraticPrompts": [
+        "What is the thermodynamic equation for heat transfer? Explain with an example.",
+        "How do you determine if a reaction is exothermic or endothermic? Explain with a chemical equation."
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the type of thermodynamic process (endothermic or exothermic)",
+          "Write down the balanced chemical equation for the reaction",
+          "Determine the heat change (q) using the formula q = mcΔT",
+          "Calculate the amount of heat transferred to or from the system",
+          "State whether the process is endothermic or exothermic based on the sign of q"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D1.1",
+        "CH-D1.2"
+      ]
+    },
+    "CH-D2.1": {
+      "code": "CH-D2.1",
+      "name": "Rate of reaction and rate law",
+      "topic": "CH-D",
+      "subtopic": "CH-D2",
+      "year": "12",
+      "summary": "The rate of a chemical reaction is the speed at which reactants are converted into products, and it can be expressed as the change in concentration of a reactant or product over time.",
+      "keyConcepts": [
+        "Rate law",
+        "Rate constant",
+        "Order of reaction"
+      ],
+      "commonErrors": [
+        "Confusing rate with velocity",
+        "Misinterpreting units for rate"
+      ],
+      "examTips": [
+        "Always use the correct units (mol/L·s) when calculating rates.",
+        "Remember that the order of a reaction affects its rate law."
+      ],
+      "socraticPrompts": [
+        "What is the difference between the rate and the velocity of a chemical reaction?",
+        "How do you determine the rate law for a given reaction?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the reactant whose concentration changes over time.",
+          "Write down the balanced equation for the reaction.",
+          "Determine the initial and final concentrations of the reactant.",
+          "Calculate the change in concentration (Δ[A]) over a given time period (t).",
+          "Use the rate law to find the rate constant (k) if provided."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D2.2",
+        "CH-D2.3"
+      ]
+    },
+    "CH-D2.2": {
+      "code": "CH-D2.2",
+      "name": "Factors affecting reaction rates (temperature, concentration)",
+      "topic": "CH-D",
+      "subtopic": "CH-D2",
+      "year": "12",
+      "summary": "Temperature and concentration are two of the most significant factors that affect the rate of a chemical reaction.",
+      "keyConcepts": [
+        "Effect of temperature",
+        "Effect of concentration"
+      ],
+      "commonErrors": [
+        "Confusing activation energy with enthalpy change",
+        "Misinterpreting the effect of concentration on reaction rates"
+      ],
+      "examTips": [
+        "Understand the relationship between temperature and activation energy.",
+        "Always use the correct units (mol/L) when calculating reaction rates."
+      ],
+      "socraticPrompts": [
+        "How does increasing the temperature affect the rate of a chemical reaction?",
+        "What is the effect of increasing the concentration of reactants on the rate of a reaction?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the factor (temperature or concentration) that you want to change.",
+          "Write down the balanced equation for the reaction.",
+          "Determine the initial and final concentrations of the reactant(s) if changing concentration.",
+          "Calculate the effect of temperature on the rate constant using the Arrhenius equation.",
+          "Use the rate law to find the new rate of the reaction."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D2.1",
+        "CH-D2.3"
+      ]
+    },
+    "CH-D2.3": {
+      "code": "CH-D2.3",
+      "name": "Zeroth-order and first-order reactions",
+      "topic": "CH-D",
+      "subtopic": "CH-D2",
+      "year": "12",
+      "summary": "Zeroth-order and first-order reactions are two types of chemical reactions that have different rate laws.",
+      "keyConcepts": [
+        "Zeroth-order reaction",
+        "First-order reaction"
+      ],
+      "commonErrors": [
+        "Confusing zeroth-order with constant concentration",
+        "Misinterpreting the effect of time on reaction rates"
+      ],
+      "examTips": [
+        "Understand the difference between zeroth-order and first-order reactions.",
+        "Always use the correct units (mol/L·s) when calculating reaction rates."
+      ],
+      "socraticPrompts": [
+        "What is a zeroth-order reaction?",
+        "How does the rate of a first-order reaction change with time?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify whether the reaction is zeroth-order or first-order.",
+          "Write down the balanced equation for the reaction.",
+          "Determine the initial concentration of the reactant(s) if changing concentration.",
+          "Calculate the rate constant (k) using the integrated rate law for the chosen order.",
+          "Use the rate law to find the new concentration of the reactant after a given time."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-D2.1",
+        "CH-D2.2"
+      ]
+    },
+    "CH-E1.1": {
+      "code": "CH-E1.1",
+      "name": "Definition of acids and bases",
+      "topic": "CH-E",
+      "subtopic": "CH-E1",
+      "year": "11",
+      "summary": "Acids are proton donors, while bases are proton acceptors.",
+      "keyConcepts": [
+        "Proton donor",
+        "Proton acceptor",
+        "Acid-base reaction"
+      ],
+      "commonErrors": [
+        "Confusing acids and bases",
+        "Misunderstanding the role of protons"
+      ],
+      "examTips": [
+        "Identify whether a substance is an acid or base based on its chemical formula"
+      ],
+      "socraticPrompts": [
+        "What makes a substance an acid?",
+        "How do we know if a substance can accept protons?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the substance in question.",
+          "Determine whether it is an acid or base based on its chemical formula.",
+          "Write down the relevant equation for the acid-base reaction.",
+          "Calculate the number of moles of protons involved.",
+          "Solve for the concentration of H+ ions."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E1.2",
+        "CH-E1.3"
+      ]
+    },
+    "CH-E1.2": {
+      "code": "CH-E1.2",
+      "name": "Types of acids (monoprotic, diprotic, triprotic)",
+      "topic": "CH-E",
+      "subtopic": "CH-E1",
+      "year": "11",
+      "summary": "Acids can donate one, two, or three protons.",
+      "keyConcepts": [
+        "Monoprotic acid",
+        "Diprotic acid",
+        "Triprotic acid"
+      ],
+      "commonErrors": [
+        "Confusing the number of protons with the number of hydrogen atoms"
+      ],
+      "examTips": [
+        "Identify the number of H+ ions in the chemical formula of an acid"
+      ],
+      "socraticPrompts": [
+        "What is a monoprotic acid?",
+        "How many protons does a diprotic acid donate?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the chemical formula of the acid.",
+          "Count the number of H+ ions in the formula.",
+          "Determine if it is monoprotic, diprotic, or triprotic based on the count."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E1.1",
+        "CH-E1.3"
+      ]
+    },
+    "CH-E1.3": {
+      "code": "CH-E1.3",
+      "name": "Types of bases (alkali, amine)",
+      "topic": "CH-E",
+      "subtopic": "CH-E1",
+      "year": "11",
+      "summary": "Bases can accept one or more protons.",
+      "keyConcepts": [
+        "Alkali",
+        "Amine"
+      ],
+      "commonErrors": [
+        "Confusing alkalis and amines",
+        "Misunderstanding the role of hydroxide ions"
+      ],
+      "examTips": [
+        "Identify whether a substance is an alkali or amine based on its chemical formula"
+      ],
+      "socraticPrompts": [
+        "What makes a substance an alkali?",
+        "How do we know if a substance can accept protons?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Identify the substance in question.",
+          "Determine whether it is an alkali or amine based on its chemical formula.",
+          "Write down the relevant equation for the acid-base reaction.",
+          "Calculate the number of moles of hydroxide ions involved.",
+          "Solve for the concentration of OH- ions."
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E1.1",
+        "CH-E1.2"
+      ]
+    },
+    "CH-E2.1": {
+      "code": "CH-E2.1",
+      "name": "Formation of salts from acids and bases",
+      "topic": "CH-E",
+      "subtopic": "CH-E2",
+      "year": "12",
+      "summary": "Salts are formed when an acid reacts with a base to produce a neutral salt.",
+      "keyConcepts": [
+        "Acid-base reactions",
+        "Neutralization",
+        "Salt formation",
+        "Ionic compounds"
+      ],
+      "commonErrors": [
+        "Confusing the products of acid-base reactions",
+        "Misunderstanding the role of water in the reaction"
+      ],
+      "examTips": [
+        "Always write the balanced chemical equation for the reaction",
+        "Remember that the salt formed is neutral"
+      ],
+      "socraticPrompts": [
+        "What happens to the pH of a solution when an acid and base react?",
+        "How do you know if a reaction produces a salt?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Write the balanced chemical equation for the reaction: HCl + NaOH → NaCl + H2O",
+          "Identify the products of the reaction: NaCl (salt) and H2O (water)",
+          "Verify that the number of atoms of each element is conserved in the reaction",
+          "Check if the reaction produces a neutral salt"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E2.2",
+        "CH-E2.3"
+      ]
+    },
+    "CH-E2.2": {
+      "code": "CH-E2.2",
+      "name": "Properties of salts (ionic, neutral)",
+      "topic": "CH-E",
+      "subtopic": "CH-E2",
+      "year": "12",
+      "summary": "Salts can be classified as ionic or neutral based on their chemical composition.",
+      "keyConcepts": [
+        "Ionic compounds",
+        "Neutral compounds",
+        "Electronegativity",
+        "Ionization energy"
+      ],
+      "commonErrors": [
+        "Confusing the properties of ionic and neutral salts",
+        "Misunderstanding the role of ions in a salt"
+      ],
+      "examTips": [
+        "Always write the chemical formula for a salt",
+        "Remember that ionic compounds are soluble in water"
+      ],
+      "socraticPrompts": [
+        "What is the difference between an ionic compound and a neutral compound?",
+        "How do you know if a salt is soluble or insoluble?"
+      ],
+      "workedExampleTemplate": {
+        "type": "classification",
+        "steps": [
+          "Write the chemical formula for a salt: NaCl",
+          "Identify the type of salt based on its chemical composition (ionic)",
+          "Verify that the salt contains ionic compounds"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E2.1",
+        "CH-E2.3"
+      ]
+    },
+    "CH-E2.3": {
+      "code": "CH-E2.3",
+      "name": "Acid-base reactions and their effects on pH",
+      "topic": "CH-E",
+      "subtopic": "CH-E2",
+      "year": "12",
+      "summary": "Acid-base reactions affect the pH of a solution, which is measured in terms of hydrogen ion concentration.",
+      "keyConcepts": [
+        "pH scale",
+        "Acid-base reactions",
+        "Hydrogen ion concentration",
+        "Buffer solutions"
+      ],
+      "commonErrors": [
+        "Confusing the effects of acid and base on pH",
+        "Misunderstanding the role of buffer solutions"
+      ],
+      "examTips": [
+        "Always write the balanced chemical equation for the reaction",
+        "Remember that the pH scale ranges from 0 to 14"
+      ],
+      "socraticPrompts": [
+        "What happens to the pH of a solution when an acid is added?",
+        "How do you know if a solution is acidic, basic, or neutral?"
+      ],
+      "workedExampleTemplate": {
+        "type": "calculation",
+        "steps": [
+          "Write the balanced chemical equation for the reaction: HCl + NaOH → NaCl + H2O",
+          "Identify the products of the reaction: NaCl (salt) and H2O (water)",
+          "Verify that the number of atoms of each element is conserved in the reaction",
+          "Check if the reaction produces a neutral salt"
+        ]
+      },
+      "relatedDotPoints": [
+        "CH-E2.1",
+        "CH-E2.2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,565 @@
+{
+    "subject": "中国高考语文",
+    "description": "高考语文典型试题库，包含现代文阅读、古诗文阅读、语言文字运用和写作各题型。试题参考全国卷及地方卷题型设计。",
+    "note": "语文主观题需根据评分标准综合评判，参考答案供参考。",
+    "questions": {
+        "2023-GK-XD-1": {
+            "id": "2023-GK-XD-1",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一（一）",
+            "questionNumber": "1",
+            "marks": 3,
+            "module": "现代文阅读",
+            "type": "选择题",
+            "dotPoints": ["YW-XD-1.1"],
+            "topic": "YW-XD",
+            "difficulty": "中等",
+            "stimulus": "阅读下面的文字，完成1-3题。\n\n（论述类文本材料略）",
+            "stem": "下列关于原文内容的理解和分析，正确的一项是（3分）\nA. ……\nB. ……\nC. ……\nD. ……",
+            "solution": {
+                "steps": [
+                    "通读全文，把握文章主旨",
+                    "定位选项在文中的对应位置",
+                    "比对原文，判断选项表述是否准确",
+                    "排除明显错误的选项",
+                    "确认正确答案"
+                ],
+                "modelResponse": "B",
+                "finalAnswer": "B"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 3, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "断章取义，只读局部忽略整体",
+                    "被选项中的原文词语迷惑，忽略表述差异",
+                    "对文章主旨把握不准"
+                ]
+            },
+            "tags": ["论述类文本", "理解", "选择题"]
+        },
+
+        "2023-GK-XD-2": {
+            "id": "2023-GK-XD-2",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一（三）",
+            "questionNumber": "8",
+            "marks": 4,
+            "module": "现代文阅读",
+            "type": "简答题",
+            "dotPoints": ["YW-XD-3.1"],
+            "topic": "YW-XD",
+            "difficulty": "较难",
+            "stimulus": "（文学类文本材料略，小说或散文一篇）",
+            "stem": "请结合文本，简要分析文中某某人物形象。",
+            "solution": {
+                "steps": [
+                    "找出文中对人物的描写（外貌、语言、动作、心理）",
+                    "概括人物性格特征",
+                    "结合具体内容分析",
+                    "点明人物在文中的作用或意义"
+                ],
+                "modelResponse": "文中某某人物是一个……的形象。通过……（具体描写），表现了他……的性格特点。这一形象在文中起到了……的作用。",
+                "finalAnswer": "见参考答案要点"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 4, "description": "能准确概括人物形象，结合文本分析充分，观点明确"},
+                    {"marks": 3, "description": "能概括人物形象，有文本分析，但不够充分"},
+                    {"marks": 2, "description": "能概括人物形象，但分析简单，文本依据不足"},
+                    {"marks": 1, "description": "有人物形象意识，但概括不准或分析错误"},
+                    {"marks": 0, "description": "回答与问题无关"}
+                ],
+                "commonErrors": [
+                    "贴标签式概括，没有文本依据",
+                    "只罗列描写，没有概括性格",
+                    "分析脱离文本"
+                ]
+            },
+            "tags": ["文学类文本", "人物形象", "简答题"]
+        },
+
+        "2023-GK-XD-3": {
+            "id": "2023-GK-XD-3",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一（三）",
+            "questionNumber": "9",
+            "marks": 6,
+            "module": "现代文阅读",
+            "type": "简答题",
+            "dotPoints": ["YW-XD-3.2", "YW-XD-3.4"],
+            "topic": "YW-XD",
+            "difficulty": "较难",
+            "stimulus": "（文学类文本材料略）",
+            "stem": "文中多次出现某某景物描写，请分析这些描写的作用。",
+            "solution": {
+                "steps": [
+                    "找出文中相关的景物描写",
+                    "概括景物特点",
+                    "分析景物描写的作用（交代背景、烘托气氛、推动情节、塑造人物、深化主题等）",
+                    "结合文本具体说明"
+                ],
+                "modelResponse": "文中的景物描写具有以下作用：1.交代了……背景；2.烘托了……气氛；3.衬托了人物……的心情；4.推动了……情节的发展；5.深化了……主题。",
+                "finalAnswer": "见参考答案要点"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "5-6", "description": "能准确分析景物描写的多重作用，结合文本充分，条理清晰"},
+                    {"marks": "3-4", "description": "能分析景物描写的作用，但不够全面或分析不够深入"},
+                    {"marks": "1-2", "description": "能指出景物描写的作用，但分析简单或文本依据不足"},
+                    {"marks": 0, "description": "回答与问题无关"}
+                ],
+                "commonErrors": [
+                    "只罗列景物，不分析作用",
+                    "作用分析公式化，不结合文本",
+                    "遗漏重要作用"
+                ]
+            },
+            "tags": ["文学类文本", "环境描写", "作用分析", "简答题"]
+        },
+
+        "2023-GK-GD-1": {
+            "id": "2023-GK-GD-1",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "二（一）",
+            "questionNumber": "10",
+            "marks": 3,
+            "module": "古代诗文阅读",
+            "type": "选择题",
+            "dotPoints": ["YW-GD-1.1"],
+            "topic": "YW-GD",
+            "difficulty": "中等",
+            "stimulus": "阅读下面的文言文，完成10-13题。\n\n（文言文材料略）",
+            "stem": "对下列句子中加点词的解释，不正确的一项是（3分）\nA. ……",
+            "solution": {
+                "steps": [
+                    "定位加点词在文中的位置",
+                    "结合上下文推断词义",
+                    "对照选项解释，判断正误",
+                    "确认错误选项"
+                ],
+                "modelResponse": "A",
+                "finalAnswer": "A"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 3, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "用现代汉语词义理解古义",
+                    "忽略语境，死记硬背"
+                ]
+            },
+            "tags": ["文言文", "实词", "选择题"]
+        },
+
+        "2023-GK-GD-2": {
+            "id": "2023-GK-GD-2",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "二（一）",
+            "questionNumber": "13",
+            "marks": 10,
+            "module": "古代诗文阅读",
+            "type": "翻译题",
+            "dotPoints": ["YW-GD-2.1"],
+            "topic": "YW-GD",
+            "difficulty": "较难",
+            "stimulus": "（文言文材料略）",
+            "stem": "把文中画横线的句子翻译成现代汉语。（10分）\n（1）……\n（2）……",
+            "solution": {
+                "steps": [
+                    "通读句子，理解大意",
+                    "逐词分析，找出关键词和特殊句式",
+                    "先直译每个字词",
+                    "调整语序，补充省略成分",
+                    "润色表达，使译文通顺"
+                ],
+                "modelResponse": "（1）译文：……\n（2）译文：……",
+                "finalAnswer": "见参考答案译文"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "9-10", "description": "翻译准确，关键词译出，句式处理恰当，表达通顺"},
+                    {"marks": "7-8", "description": "翻译基本准确，关键词多数译出，句式基本处理，表达较通顺"},
+                    {"marks": "5-6", "description": "翻译部分准确，关键词有遗漏，句式处理有欠缺，表达基本通顺"},
+                    {"marks": "3-4", "description": "翻译有较多错误，关键词多处遗漏，句式处理不当，表达不够通顺"},
+                    {"marks": "1-2", "description": "翻译错误严重，只译出个别词语"},
+                    {"marks": 0, "description": "未作答或完全错误"}
+                ],
+                "commonErrors": [
+                    "关键实词翻译错误",
+                    "特殊句式未调整语序",
+                    "省略成分未补充",
+                    "表达生硬，不符合现代汉语习惯"
+                ]
+            },
+            "tags": ["文言文", "翻译", "主观题"]
+        },
+
+        "2023-GK-GD-3": {
+            "id": "2023-GK-GD-3",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "二（二）",
+            "questionNumber": "15",
+            "marks": 6,
+            "module": "古代诗文阅读",
+            "type": "简答题",
+            "dotPoints": ["YW-GD-3.1", "YW-GD-3.4"],
+            "topic": "YW-GD",
+            "difficulty": "较难",
+            "stimulus": "阅读下面这首宋诗，完成14-15题。\n\n（诗歌材料略）",
+            "stem": "这首诗表达了诗人怎样的思想感情？请结合诗句简要分析。",
+            "solution": {
+                "steps": [
+                    "整体感知诗歌情感基调",
+                    "找出体现情感的关键词句",
+                    "分析意象、手法如何表达情感",
+                    "结合背景理解情感产生的原因",
+                    "概括主旨思想"
+                ],
+                "modelResponse": "这首诗表达了诗人……的情感。首联……，表现了……；颔联……，抒发了……；尾联……，寄托了……。",
+                "finalAnswer": "见参考答案要点"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "5-6", "description": "准确把握诗歌情感，结合诗句分析充分，条理清晰"},
+                    {"marks": "3-4", "description": "基本把握诗歌情感，有诗句分析但不够充分"},
+                    {"marks": "1-2", "description": "对诗歌情感理解有偏差，分析简单或脱离诗句"},
+                    {"marks": 0, "description": "回答与问题无关"}
+                ],
+                "commonErrors": [
+                    "贴标签式回答（如'忧国忧民'）",
+                    "脱离诗句空谈情感",
+                    "情感把握不准确"
+                ]
+            },
+            "tags": ["古诗词", "思想情感", "简答题"]
+        },
+
+        "2023-GK-GD-4": {
+            "id": "2023-GK-GD-4",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "二（三）",
+            "questionNumber": "16",
+            "marks": 7,
+            "module": "古代诗文阅读",
+            "type": "填空题",
+            "dotPoints": ["YW-GD-4.1"],
+            "topic": "YW-GD",
+            "difficulty": "容易",
+            "stem": "补写出下列句子中的空缺部分。（7分）\n（1）《论语》中，孔子说：'学而不思则罔，______________。'\n（2）李白《蜀道难》中，'______________，______________'两句写出了蜀道的崎岖险峻。\n（3）苏轼《赤壁赋》中，'______________，______________'两句表现了作者与自然相融的豁达胸襟。",
+            "solution": {
+                "steps": [
+                    "回忆篇目和作者",
+                    "回忆句子上下文",
+                    "逐字默写，注意易错字",
+                    "检查是否完整准确"
+                ],
+                "modelResponse": "（1）思而不学则殆\n（2）黄鹤之飞尚不得过，猿猱欲度愁攀援\n（3）惟江上之清风，与山间之明月",
+                "finalAnswer": "见参考答案"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 7, "description": "全部默写正确"},
+                    {"marks": 5, "description": "错1-2个字"},
+                    {"marks": 3, "description": "错3-4个字"},
+                    {"marks": 1, "description": "错5-6个字"},
+                    {"marks": 0, "description": "全错或未作答"}
+                ],
+                "commonErrors": [
+                    "同音字错误",
+                    "形近字错误",
+                    "漏字、添字",
+                    "顺序颠倒"
+                ]
+            },
+            "tags": ["名句默写", "填空题"]
+        },
+
+        "2023-GK-YY-1": {
+            "id": "2023-GK-YY-1",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "17",
+            "marks": 3,
+            "module": "语言文字运用",
+            "type": "选择题",
+            "dotPoints": ["YW-YY-1.1"],
+            "topic": "YW-YY",
+            "difficulty": "中等",
+            "stimulus": "阅读下面的文字，完成17-19题。\n\n（语境材料略）",
+            "stem": "依次填入文中横线上的词语，全都恰当的一项是（3分）\nA. ……",
+            "solution": {
+                "steps": [
+                    "理解每个成语的含义",
+                    "分析语境对词语的要求",
+                    "辨析近义成语的区别",
+                    "代入验证"
+                ],
+                "modelResponse": "A",
+                "finalAnswer": "A"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 3, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "望文生义",
+                    "忽略语境",
+                    "近义成语辨析不清"
+                ]
+            },
+            "tags": ["成语", "词语运用", "选择题"]
+        },
+
+        "2023-GK-YY-2": {
+            "id": "2023-GK-YY-2",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "18",
+            "marks": 3,
+            "module": "语言文字运用",
+            "type": "选择题",
+            "dotPoints": ["YW-YY-2.1"],
+            "topic": "YW-YY",
+            "difficulty": "中等",
+            "stem": "文中画横线的句子有语病，下列修改最恰当的一项是（3分）\nA. ……",
+            "solution": {
+                "steps": [
+                    "找出原句的语病类型",
+                    "分析各选项的修改方式",
+                    "判断修改是否准确、简洁",
+                    "选择最佳修改"
+                ],
+                "modelResponse": "B",
+                "finalAnswer": "B"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 3, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "找不准语病类型",
+                    "修改后出现新问题",
+                    "修改过度，改变原意"
+                ]
+            },
+            "tags": ["病句", "修改", "选择题"]
+        },
+
+        "2023-GK-YY-3": {
+            "id": "2023-GK-YY-3",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "20",
+            "marks": 4,
+            "module": "语言文字运用",
+            "type": "简答题",
+            "dotPoints": ["YW-YY-3.1", "YW-YY-4.1"],
+            "topic": "YW-YY",
+            "difficulty": "中等",
+            "stimulus": "（语境材料略）",
+            "stem": "文中画波浪线的句子使用了比喻的修辞手法，请简要分析其表达效果。（4分）",
+            "solution": {
+                "steps": [
+                    "判断修辞手法",
+                    "找出本体和喻体",
+                    "分析相似点",
+                    "说明表达效果"
+                ],
+                "modelResponse": "文中把……比作……，生动形象地写出了……的特点，表达了作者……的情感，增强了文章的感染力。",
+                "finalAnswer": "见参考答案要点"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 4, "description": "准确判断修辞，分析充分，表达效果说明清楚"},
+                    {"marks": 3, "description": "准确判断修辞，有分析，表达效果说明基本清楚"},
+                    {"marks": 2, "description": "准确判断修辞，分析简单，表达效果说明不够清楚"},
+                    {"marks": 1, "description": "判断修辞有误或只判断不分析"},
+                    {"marks": 0, "description": "回答与问题无关"}
+                ],
+                "commonErrors": [
+                    "只判断修辞，不分析效果",
+                    "效果分析公式化，不结合文本"
+                ]
+            },
+            "tags": ["修辞手法", "表达效果", "简答题"]
+        },
+
+        "2023-GK-XZ-1": {
+            "id": "2023-GK-XZ-1",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "四",
+            "questionNumber": "22",
+            "marks": 60,
+            "module": "写作",
+            "type": "作文",
+            "dotPoints": ["YW-XZ-1.1", "YW-XZ-2.1", "YW-XZ-2.2"],
+            "topic": "YW-XZ",
+            "difficulty": "较难",
+            "stimulus": "阅读下面的材料，根据要求写作。（60分）\n\n人们因技术发展得以更好地掌控时间，但也有人因此成了时间的仆人。\n\n这句话引发了你怎样的联想与思考？请写一篇文章。",
+            "stem": "要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。",
+            "solution": {
+                "steps": [
+                    "审题：理解材料核心——技术与时间的关系",
+                    "立意：确定写作角度（技术使人更好掌控时间/人成为时间的仆人/辩证看待）",
+                    "文体：选择适合的文体（议论文/记叙文/散文）",
+                    "构思：列出提纲，确定论点和论据",
+                    "写作：按要求完成800字作文"
+                ],
+                "modelResponse": "范文略",
+                "finalAnswer": "作文按高考评分标准"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "50-60", "description": "基础等级40分（内容20分+表达20分）+发展等级20分。一等（50-60）：切合题意，中心突出，内容充实，感情真挚；符合文体要求，结构严谨，语言流畅，字迹工整；有文采，有创意。"},
+                    {"marks": "42-49", "description": "二等：符合题意，中心明确，内容较充实，感情真实；基本符合文体要求，结构完整，语言通顺，字迹清楚；较有文采，较有创意。"},
+                    {"marks": "36-41", "description": "三等：基本符合题意，中心基本明确，内容单薄，感情基本真实；大体符合文体要求，结构基本完整，语言基本通顺，字迹基本清楚；略显文采，略显创意。"},
+                    {"marks": "25-35", "description": "四等：偏离题意，中心不明或立意不当，内容空洞，感情虚假；不符合文体要求，结构混乱，语言不通顺，字迹潦草；个别语句有深意，个别例子较好，个别语句较精彩，个别地方有创新。"},
+                    {"marks": "0-24", "description": "五等：严重偏离题意，无中心，抄袭；不符合文体要求，结构混乱，语言不通顺，字迹潦草；无文采，无创意。"}
+                ],
+                "commonErrors": [
+                    "跑题",
+                    "立意肤浅",
+                    "素材陈旧",
+                    "结构混乱",
+                    "语言平淡"
+                ]
+            },
+            "tags": ["作文", "材料作文", "议论文"]
+        },
+
+        "practice-XZ-lianxi-1": {
+            "id": "practice-XZ-lianxi-1",
+            "source": "模拟题",
+            "year": null,
+            "paper": "模拟题",
+            "section": "四",
+            "questionNumber": "模拟1",
+            "marks": 60,
+            "module": "写作",
+            "type": "作文",
+            "dotPoints": ["YW-XZ-1.1", "YW-XZ-2.1"],
+            "topic": "YW-XZ",
+            "difficulty": "较难",
+            "stimulus": "阅读下面的材料，根据要求写作。（60分）\n\n奋斗是青春最亮丽的底色。新时代中国青年要勇于砥砺奋斗，在实现中华民族伟大复兴中国梦的新长征路上奋勇搏击。\n\n请结合材料，以\"奋斗的青春\"为主题，写一篇文章。",
+            "stem": "要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。",
+            "solution": {
+                "steps": [
+                    "审题：关键词\"奋斗\"\"青春\"\"新时代\"",
+                    "立意：可从奋斗的意义、青春的担当、时代使命等角度切入",
+                    "文体：建议议论文",
+                    "构思：中心论点+2-3个分论点",
+                    "写作：按要求完成"
+                ],
+                "modelResponse": "范文略",
+                "finalAnswer": "作文按高考评分标准"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "50-60", "description": "一等：切合题意，中心突出，内容充实，感情真挚；符合文体要求，结构严谨，语言流畅，字迹工整；有文采，有创意。"},
+                    {"marks": "42-49", "description": "二等：符合题意，中心明确，内容较充实，感情真实；基本符合文体要求，结构完整，语言通顺，字迹清楚；较有文采，较有创意。"},
+                    {"marks": "36-41", "description": "三等：基本符合题意，中心基本明确，内容单薄，感情基本真实；大体符合文体要求，结构基本完整，语言基本通顺，字迹基本清楚；略显文采，略显创意。"},
+                    {"marks": "25-35", "description": "四等：偏离题意，中心不明或立意不当，内容空洞，感情虚假；不符合文体要求，结构混乱，语言不通顺，字迹潦草。"},
+                    {"marks": "0-24", "description": "五等：严重偏离题意，无中心，抄袭；不符合文体要求，结构混乱，语言不通顺，字迹潦草。"}
+                ],
+                "commonErrors": [
+                    "空喊口号，缺乏具体内容",
+                    "素材陈旧",
+                    "论证单薄"
+                ]
+            },
+            "tags": ["作文", "主题作文", "议论文"]
+        },
+
+        "practice-XD-duanlian-1": {
+            "id": "practice-XD-duanlian-1",
+            "source": "模拟题",
+            "year": null,
+            "paper": "模拟题",
+            "section": "练习",
+            "questionNumber": "练习1",
+            "marks": 4,
+            "module": "现代文阅读",
+            "type": "简答题",
+            "dotPoints": ["YW-XD-3.3"],
+            "topic": "YW-XD",
+            "difficulty": "中等",
+            "stimulus": "（小说片段略）",
+            "stem": "小说结尾写道：'……'。请分析这个结尾的作用。",
+            "solution": {
+                "steps": [
+                    "概括结尾内容",
+                    "分析结尾在情节上的作用（照应前文、留下悬念、卒章显志等）",
+                    "分析结尾在人物塑造上的作用",
+                    "分析结尾在主题表达上的作用"
+                ],
+                "modelResponse": "这个结尾……，在情节上……，在人物上……，在主题上……。",
+                "finalAnswer": "见参考答案要点"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 4, "description": "能全面分析结尾的多重作用，结合文本充分"},
+                    {"marks": 3, "description": "能分析结尾的作用，但不够全面或分析不够深入"},
+                    {"marks": 2, "description": "能指出结尾的作用，但分析简单"},
+                    {"marks": 1, "description": "对结尾作用理解有偏差"},
+                    {"marks": 0, "description": "回答与问题无关"}
+                ],
+                "commonErrors": [
+                    "只概括结尾内容，不分析作用",
+                    "作用分析不全面"
+                ]
+            },
+            "tags": ["文学类文本", "情节结构", "结尾作用", "简答题"]
+        }
+    },
+    "meta": {
+        "totalQuestions": 12,
+        "questionTypes": {
+            "选择题": 4,
+            "简答题": 5,
+            "翻译题": 1,
+            "填空题": 1,
+            "作文": 2
+        },
+        "moduleCoverage": {
+            "现代文阅读": 3,
+            "古代诗文阅读": 4,
+            "语言文字运用": 3,
+            "写作": 2
+        },
+        "difficultyCoverage": {
+            "容易": 2,
+            "中等": 5,
+            "较难": 5
+        },
+        "lastUpdated": "2025-03-17"
+    }
+}

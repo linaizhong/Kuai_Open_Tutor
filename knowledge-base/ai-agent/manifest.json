@@ -1,0 +1,49 @@
+{
+    "id": "ai-agent-development",
+    "name": "AI Agent Development",
+    "shortName": "AI Agents",
+    "icon": "🤖",
+    "categories": ["ai", "agents", "llm", "langchain", "llamaindex", "rag", "python", "development"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🤖", "label": "What is an AI agent?",      "text": "Explain what an AI agent is, how it differs from a simple LLM chatbot, and what the core components are." },
+        { "icon": "🔁", "label": "ReAct pattern",             "text": "Explain the ReAct (Reasoning + Acting) pattern and how it enables agents to think step-by-step before taking actions." },
+        { "icon": "🔧", "label": "Tools and function calling","text": "How do AI agents use tools? Explain function calling, tool schemas, and how an agent decides which tool to use." },
+        { "icon": "🧠", "label": "Agent memory",              "text": "Explain the different types of memory in AI agents: short-term, long-term, episodic, and semantic memory." },
+        { "icon": "📚", "label": "RAG explained",             "text": "Explain Retrieval-Augmented Generation (RAG) — what it is, why it matters, and how to build a basic RAG pipeline." },
+        { "icon": "🔗", "label": "LangChain basics",          "text": "Give me an introduction to LangChain. What are chains, agents, and tools in the LangChain framework?" },
+        { "icon": "🕸️", "label": "LangGraph",                "text": "What is LangGraph and how does it extend LangChain for building stateful, multi-step agent workflows?" },
+        { "icon": "🦙", "label": "LlamaIndex",                "text": "Explain LlamaIndex — what it does, how it differs from LangChain, and when to use it for RAG pipelines." },
+        { "icon": "👥", "label": "Multi-agent systems",       "text": "What are multi-agent systems? Explain how multiple agents can collaborate, delegate tasks, and share memory." },
+        { "icon": "📝", "label": "Prompt engineering",        "text": "What prompt engineering techniques are most important for building reliable AI agents?" },
+        { "icon": "📊", "label": "Vector databases",          "text": "Explain vector databases and embeddings — how they work and which ones to use for RAG (Chroma, Pinecone, Weaviate)." },
+        { "icon": "🔍", "label": "Agent evaluation",          "text": "How do I evaluate the performance of an AI agent? What metrics and tools should I use?" },
+        { "icon": "⚠️", "label": "Agent failure modes",       "text": "What are the common failure modes of AI agents — hallucination, infinite loops, tool misuse — and how do I prevent them?" },
+        { "icon": "🚀", "label": "Planning and reasoning",    "text": "Explain planning strategies for AI agents: Chain-of-Thought, Tree of Thoughts, and Plan-and-Execute." },
+        { "icon": "📝", "label": "Practice",                  "text": "Give me a hands-on AI agent coding challenge to build." }
+    ],
+    "quickActions": [
+        { "icon": "🤖", "label": "Agent basics",      "text": "Explain AI agent fundamentals." },
+        { "icon": "🔁", "label": "ReAct",             "text": "Explain the ReAct pattern." },
+        { "icon": "🔧", "label": "Tools",             "text": "Explain tools and function calling." },
+        { "icon": "🧠", "label": "Memory",            "text": "Explain agent memory types." },
+        { "icon": "📚", "label": "RAG",               "text": "Explain RAG pipelines." },
+        { "icon": "🔗", "label": "LangChain",         "text": "Help with LangChain." },
+        { "icon": "🕸️", "label": "LangGraph",        "text": "Help with LangGraph." },
+        { "icon": "🦙", "label": "LlamaIndex",        "text": "Help with LlamaIndex." },
+        { "icon": "👥", "label": "Multi-agent",       "text": "Explain multi-agent systems." },
+        { "icon": "📊", "label": "Vector DBs",        "text": "Explain vector databases." },
+        { "icon": "📝", "label": "Prompting",         "text": "Prompt engineering for agents." },
+        { "icon": "🚀", "label": "Planning",          "text": "Explain agent planning strategies." },
+        { "icon": "🔍", "label": "Evaluation",        "text": "How to evaluate agents." },
+        { "icon": "⚠️", "label": "Failure modes",    "text": "Common agent failure modes." },
+        { "icon": "📝", "label": "Practice",          "text": "Give me a coding challenge." }
+    ],
+    "filenames": {
+        "syllabusMap":            "ai-agent-syllabus-map.json",
+        "dotPoints":              "ai-agent-dot-points.json",
+        "questionIndex":          "ai-agent-index.json",
+        "questions":              "ai-agent-questions.json",
+        "markingGuidelinesIndex": "ai-agent-marking-guidelines-index.json"
+    }
+}

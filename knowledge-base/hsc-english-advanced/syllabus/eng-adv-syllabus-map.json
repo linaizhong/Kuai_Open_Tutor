@@ -1,0 +1,232 @@
+{
+  "subject": "HSC English Advanced",
+  "subjectId": "english-advanced",
+  "syllabusVersion": "2015",
+  "appliesTo": "HSC examinations 2019–2026",
+  "examStructure": {
+    "paper1": {
+      "name": "Paper 1 — Common Module: Texts and Human Experiences",
+      "totalMarks": 40,
+      "sections": [
+        { "section": "Section I", "description": "Unseen texts", "marks": 20 },
+        { "section": "Section II", "description": "Prescribed text essay", "marks": 20 }
+      ]
+    },
+    "paper2": {
+      "name": "Paper 2 — Modules A, B and C",
+      "totalMarks": 60,
+      "sections": [
+        { "section": "Section I", "module": "Module A", "description": "Textual Conversations", "marks": 20 },
+        { "section": "Section II", "module": "Module B", "description": "Critical Study of Literature", "marks": 20 },
+        { "section": "Section III", "module": "Module C", "description": "The Craft of Writing", "marks": 20 }
+      ]
+    }
+  },
+  "topics": [
+    {
+      "code": "EA-CM",
+      "name": "Common Module: Texts and Human Experiences",
+      "year": "12",
+      "examWeightPercent": 40,
+      "paper": "Paper 1",
+      "subtopics": [
+        {
+          "code": "EA-CM1",
+          "name": "Understanding Human Experiences in Texts",
+          "dotPoints": [
+            {
+              "code": "EA-CM1.1",
+              "name": "Analysing how texts represent human experiences",
+              "keywords": ["human experience", "representation", "individual", "collective", "anomalous", "contradictory", "paradoxical"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-CM1.2",
+              "name": "The impact of texts on audiences and composers",
+              "keywords": ["affirm", "challenge", "transform", "audience", "positioning", "cultural assumptions", "values", "beliefs", "context"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-CM1.3",
+              "name": "Language, form and features for analytical response",
+              "keywords": ["metalanguage", "language features", "textual evidence", "analytical response", "close reading"],
+              "difficulty": "intermediate"
+            }
+          ]
+        },
+        {
+          "code": "EA-CM2",
+          "name": "Responding to Unseen Texts (Section I)",
+          "dotPoints": [
+            {
+              "code": "EA-CM2.1",
+              "name": "Reading and interpreting unseen texts",
+              "keywords": ["unseen text", "close reading", "comprehension", "literary", "non-literary", "synthesise"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-CM2.2",
+              "name": "Short answer comprehension strategies",
+              "keywords": ["short answer", "comprehension", "technique", "effect", "textual evidence", "metalanguage"],
+              "difficulty": "easy"
+            }
+          ]
+        },
+        {
+          "code": "EA-CM3",
+          "name": "Prescribed Text Essay (Section II)",
+          "dotPoints": [
+            {
+              "code": "EA-CM3.1",
+              "name": "Extended response — prescribed text",
+              "keywords": ["extended response", "prescribed text", "thesis", "argument", "analytical essay", "topic sentence", "evidence", "analysis"],
+              "difficulty": "advanced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "EA-A",
+      "name": "Module A: Textual Conversations",
+      "year": "12",
+      "examWeightPercent": 20,
+      "paper": "Paper 2, Section I",
+      "subtopics": [
+        {
+          "code": "EA-A1",
+          "name": "Comparative Analysis of Paired Texts",
+          "dotPoints": [
+            {
+              "code": "EA-A1.1",
+              "name": "How texts in conversation respond to each other",
+              "keywords": ["textual conversation", "intertextuality", "reimagine", "recontextualise", "allusion", "dialogue between texts"],
+              "difficulty": "advanced"
+            },
+            {
+              "code": "EA-A1.2",
+              "name": "How context shapes meaning in paired texts",
+              "keywords": ["context", "historical context", "cultural context", "social context", "values", "assumptions", "reinterpretation"],
+              "difficulty": "advanced"
+            },
+            {
+              "code": "EA-A1.3",
+              "name": "Comparative essay writing for Module A",
+              "keywords": ["comparative essay", "comparative thesis", "integrated comparison", "linking words", "Module A essay"],
+              "difficulty": "advanced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "EA-B",
+      "name": "Module B: Critical Study of Literature",
+      "year": "12",
+      "examWeightPercent": 20,
+      "paper": "Paper 2, Section II",
+      "subtopics": [
+        {
+          "code": "EA-B1",
+          "name": "Deep Study of a Single Literary Text",
+          "dotPoints": [
+            {
+              "code": "EA-B1.1",
+              "name": "Literary value and textual integrity",
+              "keywords": ["literary value", "textual integrity", "critical response", "personal response", "aesthetic qualities", "unity", "cohesion"],
+              "difficulty": "advanced"
+            },
+            {
+              "code": "EA-B1.2",
+              "name": "Critical perspectives and interpretations",
+              "keywords": ["critical perspective", "interpretation", "reading", "framework", "critical lens", "plurality of meaning"],
+              "difficulty": "advanced"
+            },
+            {
+              "code": "EA-B1.3",
+              "name": "Language, form and aesthetic qualities",
+              "keywords": ["aesthetic qualities", "language choices", "structural decisions", "poetic technique", "dramatic technique", "narrative technique"],
+              "difficulty": "advanced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "EA-C",
+      "name": "Module C: The Craft of Writing",
+      "year": "12",
+      "examWeightPercent": 20,
+      "paper": "Paper 2, Section III",
+      "subtopics": [
+        {
+          "code": "EA-C1",
+          "name": "Understanding and Applying Craft",
+          "dotPoints": [
+            {
+              "code": "EA-C1.1",
+              "name": "The craft of effective writing",
+              "keywords": ["craft of writing", "intentional choices", "voice", "perspective", "structure", "stylistic techniques"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-C1.2",
+              "name": "Writing for specific forms and purposes",
+              "keywords": ["narrative", "persuasive", "reflective", "imaginative writing", "voice", "register", "audience", "purpose"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-C1.3",
+              "name": "The reflective statement",
+              "keywords": ["reflective statement", "compositional choices", "metacognitive", "creative piece", "reflection"],
+              "difficulty": "intermediate"
+            }
+          ]
+        },
+        {
+          "code": "EA-C2",
+          "name": "Creative and Analytical Writing in the Exam",
+          "dotPoints": [
+            {
+              "code": "EA-C2.1",
+              "name": "Responding to stimulus in imaginative/creative writing",
+              "keywords": ["stimulus", "creative response", "imaginative writing", "sustained", "sophisticated", "narrative arc"],
+              "difficulty": "advanced"
+            },
+            {
+              "code": "EA-C2.2",
+              "name": "Analytical response about writing craft",
+              "keywords": ["analytical response craft", "composer's choices", "intended effect", "form and meaning", "metalanguage"],
+              "difficulty": "advanced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "EA-AOS",
+      "name": "Area of Study: Discovery (Year 11)",
+      "year": "11",
+      "subtopics": [
+        {
+          "code": "EA-AOS1",
+          "name": "The Concept of Discovery",
+          "dotPoints": [
+            {
+              "code": "EA-AOS1.1",
+              "name": "Exploring the concept of discovery",
+              "keywords": ["discovery", "fresh and intensely meaningful", "re-discovery", "disturbing discovery", "physical discovery", "emotional discovery"],
+              "difficulty": "intermediate"
+            },
+            {
+              "code": "EA-AOS1.2",
+              "name": "How discovery is represented in prescribed and related texts",
+              "keywords": ["related text", "prescribed text", "representation", "connections", "personal response"],
+              "difficulty": "intermediate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

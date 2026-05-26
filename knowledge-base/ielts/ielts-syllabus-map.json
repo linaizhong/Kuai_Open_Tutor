@@ -1,0 +1,245 @@
+{
+    "subject": "IELTS Exam Preparation",
+    "subjectId": "ielts-preparation",
+    "syllabusVersion": "IELTS 2024",
+    "appliesTo": "Candidates preparing for Academic or General Training IELTS",
+    "learningPath": {
+        "totalDuration": "120 hours",
+        "levels": [
+            { "level": "Foundation",    "estimatedHours": 30, "topics": ["Exam Overview", "Listening", "Reading Fundamentals"] },
+            { "level": "Intermediate",  "estimatedHours": 50, "topics": ["Writing Task 1", "Writing Task 2", "Speaking", "Vocabulary and Grammar"] },
+            { "level": "Advanced",      "estimatedHours": 40, "topics": ["Band 7+ Strategies", "Advanced Writing", "Advanced Speaking", "Exam Technique"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "IELTS-OVR",
+            "name": "IELTS Exam Overview",
+            "level": "Foundation",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "IELTS-OVR-1",
+                    "name": "Exam Structure and Format",
+                    "dotPoints": [
+                        { "code": "IELTS-OVR-1.1", "name": "Academic vs General Training",          "keywords": ["Academic IELTS", "General Training", "university entry", "migration", "professional registration", "format differences"], "difficulty": "foundation" },
+                        { "code": "IELTS-OVR-1.2", "name": "Section Overview and Timing",            "keywords": ["Listening 40 min", "Reading 60 min", "Writing 60 min", "Speaking 11-14 min", "total time", "test day order"], "difficulty": "foundation" },
+                        { "code": "IELTS-OVR-1.3", "name": "Band Score System",                      "keywords": ["band 1-9", "overall band", "sectional scores", "rounding", "half bands", "band descriptors", "minimum band requirements"], "difficulty": "foundation" },
+                        { "code": "IELTS-OVR-1.4", "name": "Registration and Test Day Logistics",   "keywords": ["IDP", "British Council", "paper-based", "computer-delivered", "ID requirements", "test day checklist", "score validity 2 years"], "difficulty": "foundation" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-LIS",
+            "name": "Listening",
+            "level": "Foundation",
+            "learningWeightPercent": 20,
+            "subtopics": [
+                {
+                    "code": "IELTS-LIS-1",
+                    "name": "Listening Test Structure",
+                    "dotPoints": [
+                        { "code": "IELTS-LIS-1.1", "name": "Four Sections and Question Types",       "keywords": ["Section 1 social", "Section 2 monologue", "Section 3 academic", "Section 4 lecture", "40 questions", "multiple choice", "map/diagram labelling", "form completion", "note completion", "table completion", "flow-chart", "sentence completion", "short answer"], "difficulty": "foundation" },
+                        { "code": "IELTS-LIS-1.2", "name": "Answer Transfer and Spelling",           "keywords": ["10 minutes transfer", "spelling accuracy", "capital letters", "word limit", "no more than X words", "numbers as digits or words", "hyphenated words"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "IELTS-LIS-2",
+                    "name": "Listening Strategies",
+                    "dotPoints": [
+                        { "code": "IELTS-LIS-2.1", "name": "Prediction and Pre-reading Questions",   "keywords": ["predict answer type", "read questions before audio", "underline keywords", "anticipate content", "context clues", "section topic"], "difficulty": "intermediate" },
+                        { "code": "IELTS-LIS-2.2", "name": "Following the Audio and Signposting",   "keywords": ["signpost language", "firstly", "however", "on the other hand", "in conclusion", "paraphrasing in questions", "following speaker transitions", "distractor answers"], "difficulty": "intermediate" },
+                        { "code": "IELTS-LIS-2.3", "name": "Handling Difficult Accents and Speed",  "keywords": ["British accent", "Australian accent", "American accent", "fast speech", "connected speech", "elision", "assimilation", "accent exposure practice"], "difficulty": "intermediate" },
+                        { "code": "IELTS-LIS-2.4", "name": "Map and Diagram Labelling Strategy",    "keywords": ["compass directions", "left right opposite", "between next to", "landmark vocabulary", "orientation language", "process diagrams", "label sequence"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-LIS-3",
+                    "name": "Listening Practice and Improvement",
+                    "dotPoints": [
+                        { "code": "IELTS-LIS-3.1", "name": "Active Listening Techniques",            "keywords": ["shadowing", "dictation practice", "BBC", "TED Talks", "podcasts", "note-taking while listening", "gist vs detail"], "difficulty": "intermediate" },
+                        { "code": "IELTS-LIS-3.2", "name": "Scoring Band 7+ in Listening",          "keywords": ["36-40 correct for Band 8", "32-35 for Band 7", "error analysis", "distractor awareness", "concentration strategies"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-RDG",
+            "name": "Reading",
+            "level": "Foundation",
+            "learningWeightPercent": 20,
+            "subtopics": [
+                {
+                    "code": "IELTS-RDG-1",
+                    "name": "Reading Test Structure",
+                    "dotPoints": [
+                        { "code": "IELTS-RDG-1.1", "name": "Academic Reading Passages",              "keywords": ["3 passages", "2000-2750 words", "authentic texts", "newspapers", "journals", "books", "increasing difficulty", "40 questions", "60 minutes"], "difficulty": "foundation" },
+                        { "code": "IELTS-RDG-1.2", "name": "General Training Reading Sections",     "keywords": ["Section 1 everyday", "Section 2 workplace", "Section 3 general interest", "shorter texts", "advertisements", "notices", "longer passage"], "difficulty": "foundation" },
+                        { "code": "IELTS-RDG-1.3", "name": "Reading Question Types",                 "keywords": ["multiple choice", "True/False/Not Given", "Yes/No/Not Given", "matching headings", "matching features", "matching sentence endings", "sentence completion", "summary completion", "short answer", "labelling a diagram"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "IELTS-RDG-2",
+                    "name": "Reading Strategies",
+                    "dotPoints": [
+                        { "code": "IELTS-RDG-2.1", "name": "Skimming for Gist",                     "keywords": ["read title", "first and last sentences", "topic sentences", "paragraph overview", "60 seconds per passage", "main idea identification"], "difficulty": "intermediate" },
+                        { "code": "IELTS-RDG-2.2", "name": "Scanning for Specific Information",     "keywords": ["keyword scanning", "names dates numbers", "capitalised words", "specific facts", "locating quickly", "return to text"], "difficulty": "intermediate" },
+                        { "code": "IELTS-RDG-2.3", "name": "True/False/Not Given Strategy",         "keywords": ["TFNG", "YNGNG", "text matches exactly", "contradicts text", "information absent", "common traps", "do not use prior knowledge"], "difficulty": "intermediate" },
+                        { "code": "IELTS-RDG-2.4", "name": "Matching Headings Strategy",            "keywords": ["read headings first", "paraphrase recognition", "topic sentence", "eliminate wrong headings", "one heading per paragraph", "not all headings used"], "difficulty": "intermediate" },
+                        { "code": "IELTS-RDG-2.5", "name": "Time Management in Reading",            "keywords": ["20 minutes per passage", "don't get stuck", "move on", "return to difficult questions", "leave no blanks", "guessing strategy"], "difficulty": "intermediate" },
+                        { "code": "IELTS-RDG-2.6", "name": "Vocabulary in Context",                 "keywords": ["unknown words from context", "prefix suffix root", "academic word list", "paraphrase recognition", "synonyms in text"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-WRT",
+            "name": "Writing",
+            "level": "Intermediate",
+            "learningWeightPercent": 25,
+            "subtopics": [
+                {
+                    "code": "IELTS-WRT-1",
+                    "name": "Writing Task 1 — Academic",
+                    "dotPoints": [
+                        { "code": "IELTS-WRT-1.1", "name": "Task 1 Overview and Scoring",           "keywords": ["minimum 150 words", "20 minutes", "one third of writing score", "Task Achievement", "Coherence and Cohesion", "Lexical Resource", "Grammatical Range and Accuracy", "band descriptors"], "difficulty": "foundation" },
+                        { "code": "IELTS-WRT-1.2", "name": "Describing Graphs and Charts",          "keywords": ["line graph", "bar chart", "pie chart", "table", "overview paragraph", "significant trends", "highest lowest", "increases decreases", "fluctuates", "remains stable", "comparisons"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-1.3", "name": "Describing Processes and Diagrams",     "keywords": ["process diagram", "how something is made", "passive voice", "sequencing language", "firstly then next finally", "map description", "changes over time", "before and after"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-1.4", "name": "Task 1 Language and Vocabulary",       "keywords": ["rose by 20%", "fell sharply", "levelled off", "peaked at", "accounted for", "the proportion of", "approximately", "significant", "gradual", "dramatic", "data language"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-1.5", "name": "Task 1 Structure and Overview",        "keywords": ["introduction paraphrase", "overview of main trends", "body paragraphs", "grouping data", "avoid personal opinion", "no conclusion needed", "select key features"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-WRT-2",
+                    "name": "Writing Task 1 — General Training",
+                    "dotPoints": [
+                        { "code": "IELTS-WRT-2.1", "name": "Letter Writing Overview",               "keywords": ["minimum 150 words", "formal semi-formal informal", "three bullet points", "all points addressed", "appropriate tone", "opening closing phrases"], "difficulty": "foundation" },
+                        { "code": "IELTS-WRT-2.2", "name": "Formal Letter Writing",                 "keywords": ["Dear Sir/Madam", "Yours faithfully", "complaint letter", "application letter", "request letter", "professional vocabulary", "passive constructions", "formal register"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-2.3", "name": "Informal Letter Writing",               "keywords": ["Dear [name]", "Best wishes", "contractions", "colloquial expressions", "friendly tone", "personal pronouns", "invitations", "thank you letters"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-WRT-3",
+                    "name": "Writing Task 2 — Essay",
+                    "dotPoints": [
+                        { "code": "IELTS-WRT-3.1", "name": "Task 2 Overview and Scoring",           "keywords": ["minimum 250 words", "40 minutes", "two thirds of writing score", "Task Response", "Coherence and Cohesion", "Lexical Resource", "Grammatical Range and Accuracy"], "difficulty": "foundation" },
+                        { "code": "IELTS-WRT-3.2", "name": "Essay Question Types",                  "keywords": ["opinion agree/disagree", "discussion both views", "problem and solution", "advantages and disadvantages", "two-part question", "direct question essay", "hybrid question"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-3.3", "name": "Essay Introduction Writing",            "keywords": ["paraphrase the question", "thesis statement", "outline statement", "hook optional", "do not copy question verbatim", "clear position", "two to three sentences"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-3.4", "name": "Body Paragraph Structure (PEEL)",      "keywords": ["PEEL", "point", "explain", "example", "link", "topic sentence", "supporting evidence", "concrete example", "concluding sentence", "paragraph unity"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-3.5", "name": "Essay Conclusion Writing",              "keywords": ["restate position", "summarise main points", "no new information", "logical conclusion", "final thought", "linking to introduction", "two to three sentences"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-3.6", "name": "Task 2 — Opinion Essays",              "keywords": ["I believe", "In my opinion", "It is my view that", "clear position throughout", "do not sit on the fence", "both paragraphs support your view", "qualify opinion"], "difficulty": "advanced" },
+                        { "code": "IELTS-WRT-3.7", "name": "Task 2 — Discussion Essays",           "keywords": ["on the one hand", "on the other hand", "balanced discussion", "two perspectives", "your final view in conclusion", "arguments for and against", "discuss both views"], "difficulty": "advanced" },
+                        { "code": "IELTS-WRT-3.8", "name": "Task 2 — Problem/Solution Essays",    "keywords": ["problem identification", "causes", "effects", "solutions", "recommendations", "clear structure", "logical flow", "one problem per paragraph"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "IELTS-WRT-4",
+                    "name": "Writing Language and Style",
+                    "dotPoints": [
+                        { "code": "IELTS-WRT-4.1", "name": "Coherence and Cohesion",               "keywords": ["cohesive devices", "discourse markers", "pronoun reference", "lexical chains", "paragraph linking", "logical order", "given-new", "topic sentence"], "difficulty": "intermediate" },
+                        { "code": "IELTS-WRT-4.2", "name": "Lexical Resource for Writing",         "keywords": ["academic vocabulary", "synonyms", "collocations", "word families", "idiomatic language", "avoid repetition", "precise vocabulary", "topic-specific vocabulary"], "difficulty": "advanced" },
+                        { "code": "IELTS-WRT-4.3", "name": "Grammar Range and Accuracy",           "keywords": ["complex sentences", "relative clauses", "conditional sentences", "passive voice", "modal verbs", "perfect tenses", "subordinate clauses", "avoid simple sentence only"], "difficulty": "advanced" },
+                        { "code": "IELTS-WRT-4.4", "name": "Common Writing Errors to Avoid",      "keywords": ["informal language", "contractions", "copied question", "under word count", "bullet points", "addressing wrong question", "no paragraphs", "repetition"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-SPK",
+            "name": "Speaking",
+            "level": "Intermediate",
+            "learningWeightPercent": 20,
+            "subtopics": [
+                {
+                    "code": "IELTS-SPK-1",
+                    "name": "Speaking Part 1 — Introduction",
+                    "dotPoints": [
+                        { "code": "IELTS-SPK-1.1", "name": "Part 1 Structure and Topics",           "keywords": ["4-5 minutes", "familiar topics", "home hometown work study leisure hobbies", "2-3 questions per topic", "short answers", "natural conversation", "no preparation time"], "difficulty": "foundation" },
+                        { "code": "IELTS-SPK-1.2", "name": "Answering Part 1 Effectively",         "keywords": ["extend answers", "give reasons", "add examples", "give opinions", "do not memorise", "natural delivery", "avoid one word answers", "ask for clarification"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-SPK-2",
+                    "name": "Speaking Part 2 — Long Turn",
+                    "dotPoints": [
+                        { "code": "IELTS-SPK-2.1", "name": "Cue Card Structure and Preparation",   "keywords": ["1 minute preparation", "2 minutes speaking", "cue card", "four bullet points", "make notes", "personal experience", "storytelling", "describe a person place thing event"], "difficulty": "intermediate" },
+                        { "code": "IELTS-SPK-2.2", "name": "Structuring the 2-Minute Response",   "keywords": ["introduction", "cover all bullet points", "description", "personal reflection", "conclusion", "narrative tenses", "past simple", "past continuous", "past perfect", "vivid language"], "difficulty": "intermediate" },
+                        { "code": "IELTS-SPK-2.3", "name": "Dealing with Unfamiliar Cue Card Topics", "keywords": ["adapt familiar story", "personalise generic topic", "not be silent", "maintain fluency", "approximate", "creative interpretation", "make it personal"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "IELTS-SPK-3",
+                    "name": "Speaking Part 3 — Discussion",
+                    "dotPoints": [
+                        { "code": "IELTS-SPK-3.1", "name": "Part 3 Structure and Expectations",    "keywords": ["4-5 minutes", "abstract discussion", "societal topics", "reasons and examples", "speculate", "compare", "evaluate", "extended responses"], "difficulty": "intermediate" },
+                        { "code": "IELTS-SPK-3.2", "name": "Giving Opinions and Justifying",       "keywords": ["In my view", "I think that", "It seems to me", "One reason is", "For example", "On the other hand", "However", "I suppose", "speculative language", "hypothetical scenarios"], "difficulty": "advanced" },
+                        { "code": "IELTS-SPK-3.3", "name": "Handling Difficult Questions",         "keywords": ["buying time phrases", "That is an interesting question", "repeat question differently", "partial answers", "redirect", "ask for clarification", "think aloud"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "IELTS-SPK-4",
+                    "name": "Speaking Assessment Criteria",
+                    "dotPoints": [
+                        { "code": "IELTS-SPK-4.1", "name": "Fluency and Coherence",                 "keywords": ["speak without long pauses", "self-correct naturally", "logical progression", "topic development", "avoid rehearsed answers", "hesitation fillers", "mm", "well", "you know"], "difficulty": "advanced" },
+                        { "code": "IELTS-SPK-4.2", "name": "Lexical Resource in Speaking",         "keywords": ["topic-specific vocabulary", "idiomatic expressions", "collocations", "paraphrase", "avoid repetition", "less common vocabulary", "word choice", "circumlocution"], "difficulty": "advanced" },
+                        { "code": "IELTS-SPK-4.3", "name": "Pronunciation",                        "keywords": ["word stress", "sentence stress", "intonation", "rhythm", "connected speech", "intelligibility", "not accent-free", "clear articulation", "individual sounds"], "difficulty": "advanced" },
+                        { "code": "IELTS-SPK-4.4", "name": "Grammatical Range in Speaking",        "keywords": ["mix of structures", "complex sentences", "conditionals", "passive voice", "tense accuracy", "subject-verb agreement", "article usage", "prepositions"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-VOC",
+            "name": "Vocabulary and Grammar",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "IELTS-VOC-1",
+                    "name": "Vocabulary Building",
+                    "dotPoints": [
+                        { "code": "IELTS-VOC-1.1", "name": "Academic Word List (AWL)",               "keywords": ["Academic Word List", "570 word families", "Averil Coxhead", "sub-technical vocabulary", "analyse", "significant", "indicate", "establish", "constitute", "demonstrate"], "difficulty": "intermediate" },
+                        { "code": "IELTS-VOC-1.2", "name": "Collocations and Word Families",        "keywords": ["adjective-noun collocation", "verb-noun collocation", "adverb-adjective", "word forms", "noun verb adjective adverb", "common collocations", "strong interest", "raise awareness"], "difficulty": "intermediate" },
+                        { "code": "IELTS-VOC-1.3", "name": "Topic Vocabulary by Theme",             "keywords": ["environment", "technology", "education", "health", "crime", "globalisation", "urbanisation", "media", "transport", "society", "work and employment"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-VOC-2",
+                    "name": "Grammar for IELTS",
+                    "dotPoints": [
+                        { "code": "IELTS-VOC-2.1", "name": "Complex Sentence Structures",           "keywords": ["relative clauses", "defining non-defining", "adverbial clauses", "noun clauses", "gerunds", "infinitives", "participle phrases", "apposition"], "difficulty": "advanced" },
+                        { "code": "IELTS-VOC-2.2", "name": "Passive Voice and Formal Structures",  "keywords": ["passive construction", "it is believed that", "it is argued that", "passive for Task 1 processes", "formal impersonal style", "reported speech"], "difficulty": "advanced" },
+                        { "code": "IELTS-VOC-2.3", "name": "Conditionals and Modal Verbs",         "keywords": ["first conditional", "second conditional", "third conditional", "mixed conditional", "could would might should", "speculative language", "recommendations"], "difficulty": "advanced" },
+                        { "code": "IELTS-VOC-2.4", "name": "Cohesive Devices and Discourse Markers", "keywords": ["addition furthermore moreover", "contrast however although nevertheless", "cause because due to as a result", "concession despite although", "exemplification for instance such as", "sequence firstly secondly finally", "conclusion in conclusion therefore"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "IELTS-STR",
+            "name": "Exam Strategy and Test-Taking Skills",
+            "level": "Advanced",
+            "learningWeightPercent": 5,
+            "subtopics": [
+                {
+                    "code": "IELTS-STR-1",
+                    "name": "Time Management",
+                    "dotPoints": [
+                        { "code": "IELTS-STR-1.1", "name": "Overall Test Day Strategy",             "keywords": ["test day routine", "arrive early", "read instructions carefully", "do not waste time on one question", "guess rather than leave blank in reading", "check answers", "sleep well"], "difficulty": "intermediate" },
+                        { "code": "IELTS-STR-1.2", "name": "Writing Time Allocation",               "keywords": ["20 minutes Task 1", "40 minutes Task 2", "plan first 5 minutes", "write 10-15 minutes", "check last 2-3 minutes", "prioritise Task 2", "do not over-plan"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "IELTS-STR-2",
+                    "name": "Band 7+ Target Strategies",
+                    "dotPoints": [
+                        { "code": "IELTS-STR-2.1", "name": "What Band 7 Looks Like Across Sections", "keywords": ["Band 7 descriptors", "operationally effective", "occasional inaccuracies", "good range of vocabulary", "frequent error-free sentences", "well-organised writing", "wide topic range speaking"], "difficulty": "advanced" },
+                        { "code": "IELTS-STR-2.2", "name": "Common Mistakes That Lower Your Band", "keywords": ["off-topic response", "under word count", "no overview Task 1", "one-sided argument", "memorised phrases detected", "inconsistent tone", "spelling errors", "misread question"], "difficulty": "advanced" },
+                        { "code": "IELTS-STR-2.3", "name": "Study Plan and Mock Test Strategy",    "keywords": ["mock test conditions", "timed practice", "error log", "weakness identification", "official Cambridge materials", "IDP practice tests", "weekly targets", "progress tracking"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

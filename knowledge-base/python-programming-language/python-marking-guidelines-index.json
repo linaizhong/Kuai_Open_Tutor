@@ -1,0 +1,134 @@
+{
+    "subject": "Python Programming Language",
+    "description": "Marking guidelines for Python coding exercises and assessments.",
+    "lastUpdated": "2025-03-17",
+    "importantNote": "Coding exercises are assessed on correctness, code quality, efficiency, and documentation.",
+    "assessmentCriteria": {
+        "general": [
+            "Correctness: Does the code produce the expected output for all test cases?",
+            "Code Quality: Is the code readable, well-structured, and following PEP 8?",
+            "Efficiency: Is the algorithm reasonably efficient for the problem?",
+            "Documentation: Are there appropriate comments and docstrings?",
+            "Edge Cases: Does the code handle edge cases gracefully?"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "Python coding assessment scoring principles",
+        "rules": [
+            { "condition": "Code runs but produces incorrect output for some cases", "marksAwarded": "Partial credit based on passing test cases" },
+            { "condition": "Correct logic but syntax errors", "marksAwarded": "Deduct 10-20% for syntax errors" },
+            { "condition": "Correct but inefficient solution", "marksAwarded": "Deduct 10-15% for significant inefficiency" },
+            { "condition": "Missing error handling for edge cases", "marksAwarded": "Deduct 5-10% per missing edge case" },
+            { "condition": "Poor code style (PEP 8 violations)", "marksAwarded": "Deduct up to 10% for style issues" },
+            { "condition": "No comments or documentation", "marksAwarded": "Deduct 5-10% for missing documentation" }
+        ]
+    },
+    "levelDescriptors": {
+        "foundation": {
+            "expectations": [
+                "Basic syntax correct",
+                "Simple problems solved correctly",
+                "Variables named appropriately",
+                "Basic input/output handled"
+            ],
+            "commonErrors": [
+                "Indentation errors",
+                "Type confusion",
+                "Off-by-one errors in loops",
+                "Missing colons"
+            ]
+        },
+        "intermediate": {
+            "expectations": [
+                "Complex data structures used appropriately",
+                "Functions properly structured",
+                "Error handling implemented",
+                "Code follows PEP 8 guidelines",
+                "Basic algorithmic thinking demonstrated"
+            ],
+            "commonErrors": [
+                "Mutable default arguments",
+                "Shallow copy vs deep copy confusion",
+                "Inefficient algorithms",
+                "Missing edge cases"
+            ]
+        },
+        "advanced": {
+            "expectations": [
+                "Advanced Python features used appropriately",
+                "Optimized algorithms",
+                "Comprehensive error handling",
+                "Clean, maintainable code",
+                "Appropriate design patterns",
+                "Threading/async handled correctly"
+            ],
+            "commonErrors": [
+                "Memory leaks",
+                "Race conditions in concurrent code",
+                "Over-engineering",
+                "Premature optimization"
+            ]
+        }
+    },
+    "questionGuidelines": {
+        "PY-Q-BAS-001": {
+            "totalMarks": 5,
+            "criteria": [
+                {"marks": 5, "description": "All operations correct, clear output formatting, variables properly named"},
+                {"marks": 4, "description": "All operations correct, but output formatting could be clearer"},
+                {"marks": 3, "description": "Most operations correct, 1-2 minor errors"},
+                {"marks": 2, "description": "Multiple operations incorrect, but basic structure present"},
+                {"marks": 1, "description": "Some attempt made, but largely incorrect"},
+                {"marks": 0, "description": "No attempt or completely incorrect"}
+            ]
+        },
+        "PY-Q-CFL-001": {
+            "totalMarks": 8,
+            "criteria": [
+                {"marks": "7-8", "description": "Perfect FizzBuzz implementation, correct order of conditions, clean code"},
+                {"marks": "5-6", "description": "Correct output but condition order could be improved, minor issues"},
+                {"marks": "3-4", "description": "Partially correct, some numbers misclassified"},
+                {"marks": "1-2", "description": "Basic loop structure present but logic flawed"},
+                {"marks": 0, "description": "No attempt or completely incorrect"}
+            ]
+        },
+        "PY-Q-DST-001": {
+            "totalMarks": 10,
+            "criteria": [
+                {"marks": "9-10", "description": "Perfect implementation, handles punctuation correctly, case-insensitive, efficient"},
+                {"marks": "7-8", "description": "Correct frequency counts but minor issues (e.g., punctuation handling incomplete)"},
+                {"marks": "5-6", "description": "Basic counting works but misses some requirements"},
+                {"marks": "3-4", "description": "Significant issues, but some understanding shown"},
+                {"marks": "1-2", "description": "Minimal correct elements"},
+                {"marks": 0, "description": "No attempt or completely incorrect"}
+            ]
+        },
+        "PY-Q-OOP-001": {
+            "totalMarks": 12,
+            "criteria": [
+                {"marks": "11-12", "description": "Excellent OOP design, all features implemented correctly, clean inheritance"},
+                {"marks": "9-10", "description": "All features work, but some design could be improved"},
+                {"marks": "7-8", "description": "Most features work, but some missing or incorrect"},
+                {"marks": "5-6", "description": "Basic class structure present, but functionality limited"},
+                {"marks": "3-4", "description": "Attempt at classes made, but significant issues"},
+                {"marks": "1-2", "description": "Minimal OOP elements present"},
+                {"marks": 0, "description": "No attempt or completely incorrect"}
+            ]
+        },
+        "PY-Q-ADV-001": {
+            "totalMarks": 15,
+            "criteria": [
+                {"marks": "14-15", "description": "All generator implementations perfect, excellent use of itertools, insightful performance comparison"},
+                {"marks": "12-13", "description": "All features work correctly, minor improvements possible"},
+                {"marks": "10-11", "description": "Most features work, but some missing or incorrect"},
+                {"marks": "7-9", "description": "Basic generator implemented, but itertools usage limited"},
+                {"marks": "4-6", "description": "Significant issues, but demonstrates understanding of generators"},
+                {"marks": "1-3", "description": "Minimal correct elements"},
+                {"marks": 0, "description": "No attempt or completely incorrect"}
+            ]
+        }
+    },
+    "feedbackTemplate": {
+        "coding": "Score: {score}/{totalMarks}\n\nCorrectness: {correctness}\nCode Quality: {quality}\nEfficiency: {efficiency}\nDocumentation: {docs}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nSuggested Fixes:\n{suggestions}"
+    }
+}

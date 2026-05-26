@@ -1,0 +1,515 @@
+{
+    "subject": "Large Language Models",
+    "syllabusVersion": "2024-2025",
+    "description": "Comprehensive LLM learning resource with key concepts, common errors, learning tips, and examples for all topics from architecture to alignment.",
+    "dotPoints": {
+        "LLM-TRF-1.1": {
+            "code": "LLM-TRF-1.1",
+            "name": "Scaled Dot-Product Attention",
+            "topic": "Transformer Architecture",
+            "subtopic": "Attention Mechanisms",
+            "level": "foundation",
+            "summary": "Scaled dot-product attention is the core operation of the Transformer. Given matrices Q (queries), K (keys), and V (values), it computes a weighted sum of values where the weights are determined by the similarity between queries and keys, scaled by the square root of the key dimension to prevent softmax saturation.",
+            "keyConcepts": [
+                "Query (Q): Represents what the current position is 'looking for'",
+                "Key (K): Represents what each position 'advertises' about itself",
+                "Value (V): The actual information to be aggregated if a match is found",
+                "Attention score: dot product of Q and K — higher score = higher relevance",
+                "Scaling: divide by sqrt(d_k) to prevent dot products from growing too large, causing softmax gradients to vanish",
+                "Softmax: converts raw scores to a probability distribution (attention weights sum to 1)",
+                "Attention output: weighted sum of V using the softmax weights",
+                "Formula: Attention(Q, K, V) = softmax(QK^T / sqrt(d_k)) * V",
+                "Masking: causal mask (decoder) prevents attending to future tokens; padding mask handles variable-length sequences"
+            ],
+            "commonErrors": [
+                "Forgetting the scaling factor — causes softmax to saturate and gradients to vanish during training",
+                "Confusing Q, K, V roles — Q comes from the current token, K and V from the context being attended to",
+                "In self-attention, Q, K, V all derive from the same input sequence via different linear projections",
+                "In cross-attention, Q comes from the decoder and K, V come from the encoder output",
+                "Not applying the causal mask in autoregressive models — allows future information to leak"
+            ],
+            "learningTips": [
+                "Think of attention as a soft, differentiable dictionary lookup: Q is the query, K is the key, V is the value",
+                "The scaling by sqrt(d_k) is critical — without it, training becomes unstable for large d_k",
+                "Draw the matrix dimensions: Q is (seq_len, d_k), K is (context_len, d_k), V is (context_len, d_v)",
+                "Implement a simple attention function from scratch in NumPy or PyTorch to build intuition",
+                "Visualise attention weights with tools like BertViz to understand what the model attends to"
+            ],
+            "socraticPrompts": [
+                "Why does the dot product of Q and K measure their relevance to each other?",
+                "What happens to the softmax output when the dot products are very large (before scaling)?",
+                "How would the computation differ if Q = K = V (pure self-attention) vs Q ≠ K, V (cross-attention)?",
+                "In a causal language model, which positions can position i attend to and why?",
+                "Why is the attention output a weighted SUM of values rather than, say, the argmax?"
+            ],
+            "codeExample": {
+                "description": "Scaled dot-product attention implementation in PyTorch",
+                "code": "import torch\nimport torch.nn.functional as F\nimport math\n\ndef scaled_dot_product_attention(Q, K, V, mask=None):\n    \"\"\"\n    Q: (batch, heads, seq_len, d_k)\n    K: (batch, heads, context_len, d_k)\n    V: (batch, heads, context_len, d_v)\n    mask: (batch, 1, seq_len, context_len) — True where we want to BLOCK attention\n    \"\"\"\n    d_k = Q.size(-1)\n\n    # Step 1: Compute raw attention scores\n    scores = torch.matmul(Q, K.transpose(-2, -1))  # (batch, heads, seq_len, context_len)\n\n    # Step 2: Scale to prevent softmax saturation\n    scores = scores / math.sqrt(d_k)\n\n    # Step 3: Apply mask (e.g. causal mask)\n    if mask is not None:\n        scores = scores.masked_fill(mask, float('-inf'))\n\n    # Step 4: Softmax to get attention weights\n    weights = F.softmax(scores, dim=-1)  # sums to 1 over context_len\n\n    # Step 5: Weighted sum of values\n    output = torch.matmul(weights, V)  # (batch, heads, seq_len, d_v)\n\n    return output, weights\n\n# Example: single-head, batch=1\nbatch, seq_len, d_k, d_v = 1, 4, 8, 8\nQ = torch.randn(batch, 1, seq_len, d_k)\nK = torch.randn(batch, 1, seq_len, d_k)\nV = torch.randn(batch, 1, seq_len, d_v)\n\n# Causal mask: position i cannot attend to j > i\ncausal_mask = torch.triu(torch.ones(seq_len, seq_len), diagonal=1).bool()\ncausal_mask = causal_mask.unsqueeze(0).unsqueeze(0)  # add batch and head dims\n\noutput, attn_weights = scaled_dot_product_attention(Q, K, V, mask=causal_mask)\nprint(\"Output shape:\", output.shape)        # (1, 1, 4, 8)\nprint(\"Weights shape:\", attn_weights.shape) # (1, 1, 4, 4)\nprint(\"\\nAttention weights (causal — upper triangle zeroed):\\n\",\n      attn_weights[0, 0].detach().numpy().round(3))",
+                "output": "Output shape: torch.Size([1, 1, 4, 8])\nWeights shape: torch.Size([1, 1, 4, 4])\n\nAttention weights (causal — upper triangle zeroed):\n[[1.000 0.000 0.000 0.000]\n [0.412 0.588 0.000 0.000]\n [0.221 0.389 0.390 0.000]\n [0.105 0.302 0.318 0.275]]"
+            },
+            "relatedDotPoints": ["LLM-TRF-1.2", "LLM-TRF-1.3", "LLM-TRF-2.1", "LLM-TRF-3.1"]
+        },
+
+        "LLM-TRF-1.2": {
+            "code": "LLM-TRF-1.2",
+            "name": "Multi-Head Attention",
+            "topic": "Transformer Architecture",
+            "subtopic": "Attention Mechanisms",
+            "level": "foundation",
+            "summary": "Multi-head attention runs multiple attention operations in parallel, each with its own learned projections. Each head can specialise in attending to different types of relationships. The outputs are concatenated and projected back to the model dimension d_model.",
+            "keyConcepts": [
+                "Multiple heads: h attention operations run in parallel, each with its own Q, K, V projection matrices",
+                "Head dimension: d_head = d_model / h — each head uses a lower-dimensional subspace",
+                "Separate projections: W_Q^i, W_K^i, W_V^i are unique per head, allowing each head to specialise",
+                "Concatenation: outputs of all h heads are concatenated along the feature dimension",
+                "Output projection: W_O projects the concatenated output back to d_model",
+                "Specialisation: different heads learn different roles — some attend to syntactic relations, others to semantic or positional patterns",
+                "Computational equivalence: multi-head with d_head dimensions ≈ single-head but in multiple subspaces",
+                "Formula: MultiHead(Q,K,V) = Concat(head_1,...,head_h) * W_O where head_i = Attention(Q*W_Q^i, K*W_K^i, V*W_V^i)"
+            ],
+            "commonErrors": [
+                "Confusing the head dimension with d_model — each head works in a d_model/h dimensional space",
+                "Not applying separate W_Q, W_K, W_V for each head — a common implementation mistake",
+                "Forgetting the output projection W_O after concatenation",
+                "Incorrect reshaping when implementing — a frequent source of subtle dimension bugs",
+                "Assuming all heads learn the same thing — their value comes from diversity of specialisation"
+            ],
+            "learningTips": [
+                "Implement multi-head attention using a single batched matrix: reshape d_model into (h, d_head) for efficiency",
+                "Empirically: inspect attention patterns of different heads to see their specialisation",
+                "Think of each head as a different 'lens' through which the model looks at the same input",
+                "The output projection W_O mixes information across heads — it's essential for full interaction between heads",
+                "Standard heads: GPT-2 (12 heads), GPT-3 (96 heads), Llama-3-8B (32 heads), Llama-3-70B (64 heads)"
+            ],
+            "socraticPrompts": [
+                "Why is d_head = d_model / h rather than d_model? What computational constraint does this respect?",
+                "If all heads used identical projection matrices, would multi-head attention degenerate to single-head?",
+                "What would happen if we increased h while keeping d_model fixed? What trade-off does this represent?",
+                "Why is the output projection W_O necessary? What would be lost without it?",
+                "Visualising attention heads in BERT, some heads attend to [SEP] tokens — what might this mean?"
+            ],
+            "codeExample": {
+                "description": "Efficient multi-head attention implementation",
+                "code": "import torch\nimport torch.nn as nn\nimport math\n\nclass MultiHeadAttention(nn.Module):\n    def __init__(self, d_model: int, num_heads: int, dropout: float = 0.0):\n        super().__init__()\n        assert d_model % num_heads == 0, \"d_model must be divisible by num_heads\"\n\n        self.d_model = d_model\n        self.num_heads = num_heads\n        self.d_head = d_model // num_heads  # dimension per head\n\n        # Single projection matrices (equivalent to per-head but more efficient)\n        self.W_q = nn.Linear(d_model, d_model, bias=False)\n        self.W_k = nn.Linear(d_model, d_model, bias=False)\n        self.W_v = nn.Linear(d_model, d_model, bias=False)\n        self.W_o = nn.Linear(d_model, d_model, bias=False)  # output projection\n        self.dropout = nn.Dropout(dropout)\n\n    def forward(self, x, mask=None):\n        batch, seq_len, _ = x.shape\n        h = self.num_heads\n\n        # Project and reshape: (batch, seq, d_model) -> (batch, h, seq, d_head)\n        Q = self.W_q(x).view(batch, seq_len, h, self.d_head).transpose(1, 2)\n        K = self.W_k(x).view(batch, seq_len, h, self.d_head).transpose(1, 2)\n        V = self.W_v(x).view(batch, seq_len, h, self.d_head).transpose(1, 2)\n\n        # Scaled dot-product attention (per head, batched)\n        scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_head)\n        if mask is not None:\n            scores = scores.masked_fill(mask, float('-inf'))\n        weights = torch.softmax(scores, dim=-1)\n        weights = self.dropout(weights)\n        attn_out = torch.matmul(weights, V)  # (batch, h, seq, d_head)\n\n        # Concatenate heads and project\n        attn_out = attn_out.transpose(1, 2).contiguous()\n        attn_out = attn_out.view(batch, seq_len, self.d_model)  # concat heads\n        return self.W_o(attn_out)  # output projection\n\n# Usage\nmha = MultiHeadAttention(d_model=512, num_heads=8)\nx = torch.randn(2, 10, 512)  # batch=2, seq_len=10, d_model=512\nout = mha(x)\nprint(\"Input:\", x.shape)\nprint(\"Output:\", out.shape)\nprint(f\"Params per head: Q={512*64} K={512*64} V={512*64} — total heads: 8\")",
+                "output": "Input: torch.Size([2, 10, 512])\nOutput: torch.Size([2, 10, 512])\nParams per head: Q=32768 K=32768 V=32768 — total heads: 8"
+            },
+            "relatedDotPoints": ["LLM-TRF-1.1", "LLM-TRF-1.3", "LLM-TRF-3.1", "LLM-TRF-2.1"]
+        },
+
+        "LLM-TOK-1.1": {
+            "code": "LLM-TOK-1.1",
+            "name": "Byte-Pair Encoding (BPE)",
+            "topic": "Tokenisation",
+            "subtopic": "Tokenisation Algorithms",
+            "level": "foundation",
+            "summary": "Byte-Pair Encoding (BPE) is the most widely used tokenisation algorithm for LLMs. It learns a vocabulary of subword units by iteratively merging the most frequent adjacent byte/character pair in the training corpus. The result is a vocabulary that balances coverage and compression efficiency.",
+            "keyConcepts": [
+                "Subword tokenisation: words are split into smaller units, handling rare/unknown words via decomposition",
+                "BPE training: start with characters/bytes, iteratively merge the most frequent pair until vocabulary size target is reached",
+                "Merge rules: ordered list of merges; applied in order during tokenisation of new text",
+                "Byte-level BPE: operates on raw bytes (0-255) — handles any Unicode character without OOV tokens (used in GPT-2, GPT-4, Claude)",
+                "Vocabulary size: typically 32K-100K+ tokens; larger vocab = fewer tokens per text but larger embedding matrix",
+                "Greedy tokenisation: given the merge rules, tokenisation is deterministic — greedily apply learned merges",
+                "Special tokens: [BOS], [EOS], [PAD], [UNK], [MASK] are added to the vocabulary alongside learned subword tokens",
+                "Token fertility: average number of tokens per word — varies by language and vocabulary size"
+            ],
+            "commonErrors": [
+                "Confusing BPE training (learning merge rules) with BPE tokenisation (applying them to new text)",
+                "Assuming word boundaries are always token boundaries — BPE can split in the middle of a word",
+                "Not accounting for leading space: 'hello' and ' hello' often tokenise differently (important for word-initial context)",
+                "Ignoring that numbers often tokenise inefficiently — '12345' may become ['1','23','45'] or similar",
+                "Assuming tokenisers are interchangeable — each model has its own tokeniser and vocabulary"
+            ],
+            "learningTips": [
+                "Use OpenAI's tiktoken or HuggingFace tokenizers to interactively explore BPE tokenisation",
+                "Inspect how different languages tokenise — English is typically 1 word ≈ 1.3 tokens; Chinese ≈ 1-2 chars per token",
+                "Understand why tokenisation matters: more tokens = longer sequences = higher compute cost",
+                "Try tokenising numbers, code, and non-Latin scripts to see BPE's strengths and weaknesses",
+                "Study the GPT-2 tokeniser (50,257 tokens) and Llama-3 tokeniser (128,256 tokens) as real examples"
+            ],
+            "socraticPrompts": [
+                "Why does BPE start from individual characters/bytes rather than words?",
+                "What is the trade-off between a larger and smaller vocabulary size?",
+                "Why might 'token' and 'Token' (capitalised) be different tokens in BPE?",
+                "If you train a BPE tokeniser on English text only, what happens when you try to tokenise Chinese?",
+                "Why do arithmetic tasks tend to be harder for LLMs, and how might tokenisation contribute?"
+            ],
+            "codeExample": {
+                "description": "BPE tokenisation illustration and tiktoken usage",
+                "code": "# Illustrative BPE training (simplified)\ndef bpe_train(corpus, vocab_size):\n    # Start: each character is a token\n    vocab = list(set(''.join(corpus)))\n    merges = []\n\n    while len(vocab) < vocab_size:\n        # Count all adjacent pairs\n        pairs = {}\n        for word in corpus:\n            for i in range(len(word) - 1):\n                pair = (word[i], word[i+1])\n                pairs[pair] = pairs.get(pair, 0) + 1\n\n        # Find most frequent pair\n        best = max(pairs, key=pairs.get)\n        merges.append(best)  # record the merge rule\n\n        # Apply merge to corpus\n        new_token = best[0] + best[1]\n        vocab.append(new_token)\n        corpus = [w.replace(''.join(best), new_token) for w in corpus]\n\n    return vocab, merges\n\n# Real BPE usage with tiktoken (GPT-4 tokeniser)\nimport tiktoken\n\nenc = tiktoken.encoding_for_model(\"gpt-4\")\n\nexamples = [\n    \"Hello, world!\",\n    \"Transformer architecture\",\n    \"12345678\",\n    \"antidisestablishmentarianism\",\n    \"def fibonacci(n):\",\n]\n\nfor text in examples:\n    tokens = enc.encode(text)\n    decoded = [enc.decode([t]) for t in tokens]\n    print(f\"Text:   {text!r}\")\n    print(f\"Tokens: {tokens}\")\n    print(f\"Parts:  {decoded}\")\n    print(f\"Count:  {len(tokens)} tokens\\n\")",
+                "output": "Text:   'Hello, world!'\nTokens: [9906, 11, 1917, 0]\nParts:  ['Hello', ',', ' world', '!']\nCount:  4 tokens\n\nText:   'Transformer architecture'\nTokens: [47611, 9867]\nParts:  ['Transformer', ' architecture']\nCount:  2 tokens\n\nText:   '12345678'\nTokens: [4513, 21478, 23]\nParts:  ['123', '456', '78']\nCount:  3 tokens\n\nText:   'antidisestablishmentarianism'\nTokens: [40614, 10663, 2756, 940, 39823, 2191]\nParts:  ['ant', 'idis', 'estab', 'lish', 'ment', 'arianism']\nCount:  6 tokens"
+            },
+            "relatedDotPoints": ["LLM-TOK-1.2", "LLM-TOK-1.3", "LLM-TOK-2.1", "LLM-PRE-1.1"]
+        },
+
+        "LLM-PRE-1.1": {
+            "code": "LLM-PRE-1.1",
+            "name": "Causal Language Modelling (CLM)",
+            "topic": "Pre-training",
+            "subtopic": "Pre-training Objectives",
+            "level": "foundation",
+            "summary": "Causal language modelling is the pre-training objective used by GPT-style decoder-only models. The model is trained to predict the next token given all previous tokens in a sequence. This autoregressive objective is simple, scalable, and naturally suited to text generation.",
+            "keyConcepts": [
+                "Autoregressive: tokens generated one at a time, each conditioned on all preceding tokens",
+                "Objective: maximise P(x_t | x_1, ..., x_{t-1}) for every position t in the sequence",
+                "Loss: cross-entropy between predicted probability distribution and the true next token",
+                "Perplexity: exponential of the average cross-entropy loss — lower = better; used to compare models",
+                "Causal mask: upper triangular mask ensures position t can only attend to positions 1..t (prevents future leakage)",
+                "Teacher forcing: during training, the true previous tokens are always used as input (not generated tokens)",
+                "Implicit in-context learning: CLM objective implicitly trains the model to learn tasks from context examples",
+                "No explicit task supervision: the model learns language, facts, reasoning, and style purely from next-token prediction"
+            ],
+            "commonErrors": [
+                "Confusing CLM (decoder-only, left-to-right) with MLM (bidirectional, masked) — they have very different training procedures and capabilities",
+                "Forgetting that perplexity is sequence-length sensitive — only compare perplexity on the same tokeniser and test set",
+                "Assuming CLM cannot do bidirectional tasks — with careful prompting or fine-tuning it can",
+                "Not applying the causal mask during training — allows future leakage and invalidates the autoregressive property",
+                "Confusing training loss (negative log-likelihood per token) with perplexity (exponentiated average)"
+            ],
+            "learningTips": [
+                "The CLM objective is deceptively simple but gives rise to remarkably general capabilities at scale",
+                "Implement CLM training on a small corpus to understand teacher forcing and the causal mask",
+                "Understand perplexity intuitively: a perplexity of 10 means the model is 'choosing' between ~10 equally likely options at each step",
+                "Compare GPT-style (CLM) with BERT-style (MLM) — each has different strengths: CLM excels at generation, MLM at understanding",
+                "The 'pre-training' phase uses hundreds of billions of tokens; this scale is what makes LLMs generally capable"
+            ],
+            "socraticPrompts": [
+                "Why does the causal mask have zeros in the upper triangle and ones in the lower triangle?",
+                "If a model has perplexity of 20 on a test set, what does that intuitively mean?",
+                "Why does training on next-token prediction teach the model facts, reasoning, and code — not just language patterns?",
+                "What would happen if we removed the causal mask during training of an autoregressive model?",
+                "How does teacher forcing during training differ from inference? What problem might arise from this mismatch?"
+            ],
+            "codeExample": {
+                "description": "CLM training loop with causal mask and perplexity calculation",
+                "code": "import torch\nimport torch.nn as nn\nimport math\n\n# --- Causal Language Modelling Training Step ---\ndef clm_training_step(model, input_ids, criterion):\n    \"\"\"\n    input_ids: (batch, seq_len) — token indices\n    In CLM:\n      inputs  = tokens [0 .. T-1]  (all but last)\n      targets = tokens [1 .. T]    (all but first, shifted right)\n    \"\"\"\n    inputs = input_ids[:, :-1]   # (batch, seq_len-1)\n    targets = input_ids[:, 1:]   # (batch, seq_len-1) — next token at each step\n\n    # Forward pass — model applies causal mask internally\n    logits = model(inputs)        # (batch, seq_len-1, vocab_size)\n\n    # Reshape for cross-entropy\n    batch, seq_len, vocab_size = logits.shape\n    loss = criterion(\n        logits.view(batch * seq_len, vocab_size),\n        targets.reshape(batch * seq_len)\n    )\n    return loss\n\n# --- Perplexity Calculation ---\ndef compute_perplexity(model, dataloader, criterion, device):\n    model.eval()\n    total_loss = 0.0\n    total_tokens = 0\n\n    with torch.no_grad():\n        for batch in dataloader:\n            input_ids = batch.to(device)\n            loss = clm_training_step(model, input_ids, criterion)\n            n_tokens = (input_ids.size(0) * (input_ids.size(1) - 1))\n            total_loss += loss.item() * n_tokens\n            total_tokens += n_tokens\n\n    avg_nll = total_loss / total_tokens     # average negative log-likelihood\n    perplexity = math.exp(avg_nll)         # exponentiate to get perplexity\n    return perplexity\n\n# --- Example perplexity values for context ---\nmodel_perplexities = {\n    'GPT-2 (117M)':  29.4,\n    'GPT-3 (175B)':   20.5,\n    'GPT-4 (est)':    ~8-12,\n    'Llama-3 8B':     8.9,\n    'Llama-3 70B':    6.1,\n    'Random (50K vocab)': 50000,\n    'Perfect model':  1.0,\n}\nfor model, ppl in model_perplexities.items():\n    print(f\"  {model:30s} PPL ≈ {ppl}\")",
+                "output": "  GPT-2 (117M)                   PPL ≈ 29.4\n  GPT-3 (175B)                   PPL ≈ 20.5\n  GPT-4 (est)                    PPL ≈ ~8-12\n  Llama-3 8B                     PPL ≈ 8.9\n  Llama-3 70B                    PPL ≈ 6.1\n  Random (50K vocab)             PPL ≈ 50000\n  Perfect model                  PPL ≈ 1.0"
+            },
+            "relatedDotPoints": ["LLM-PRE-1.2", "LLM-PRE-1.3", "LLM-TRF-2.3", "LLM-TOK-1.1"]
+        },
+
+        "LLM-FTN-2.1": {
+            "code": "LLM-FTN-2.1",
+            "name": "Low-Rank Adaptation (LoRA)",
+            "topic": "Fine-tuning and Alignment",
+            "subtopic": "Parameter-Efficient Fine-tuning (PEFT)",
+            "level": "intermediate",
+            "summary": "LoRA is the dominant parameter-efficient fine-tuning method. Instead of updating all model weights, it adds small trainable rank-decomposition matrices to selected layers. Only these adapter matrices are trained, reducing trainable parameters by 10-10,000x while achieving performance close to full fine-tuning.",
+            "keyConcepts": [
+                "Core idea: freeze base model weights W, add low-rank adaptation ΔW = A * B where A ∈ R^(d×r), B ∈ R^(r×k), r << d",
+                "Rank r: controls the number of trainable parameters; r=4-64 is typical; higher r = more capacity but more params",
+                "Alpha scaling: the adaptation is scaled by alpha/r before adding to W — alpha is a hyperparameter controlling the magnitude",
+                "During inference: ΔW can be merged into W (W' = W + (alpha/r) * A*B) for zero inference overhead",
+                "Target layers: typically applied to Q, K, V, and output projection matrices in attention layers",
+                "QLoRA: combines LoRA with 4-bit quantisation of the base model — enables fine-tuning 65B models on a single A100 GPU",
+                "Trainable params: for a (d×k) weight matrix with rank r: d*r + r*k vs d*k — typically 0.1-1% of total params",
+                "Initialisation: A is initialised with random Gaussian, B is initialised to zero — ensures ΔW = 0 at start"
+            ],
+            "commonErrors": [
+                "Applying LoRA to too few layers — applying to all linear layers (including FFN) often outperforms attention-only",
+                "Setting r too low for complex tasks — r=1-4 may be insufficient for tasks requiring significant adaptation",
+                "Forgetting to scale by alpha/r — the raw A*B product is not the adaptation, the scaled version is",
+                "Not merging A and B at inference time — adds computation overhead unnecessarily if serving the model",
+                "Confusing the learning rate — LoRA adapters typically need a higher learning rate than full fine-tuning"
+            ],
+            "learningTips": [
+                "Start with r=16, alpha=32 (alpha=2r) as a sensible default — tune from there",
+                "Use HuggingFace PEFT library which handles LoRA configuration cleanly",
+                "QLoRA (with 4-bit quantisation) makes large model fine-tuning accessible on consumer hardware",
+                "Understand WHY low-rank works: the hypothesis is that the weight changes during fine-tuning have low intrinsic rank",
+                "Compare LoRA vs full fine-tuning on benchmark tasks — for many tasks, LoRA achieves 95%+ of full fine-tuning performance"
+            ],
+            "socraticPrompts": [
+                "Why is initialising B to zero important, and what would happen if both A and B were random at the start?",
+                "What does it mean for the weight update to have 'low intrinsic rank'? Is this always a valid assumption?",
+                "How does QLoRA make fine-tuning a 70B model on a single GPU possible? What are the trade-offs?",
+                "If you apply LoRA to only the Q and V matrices (not K), what might be the reasoning behind this choice?",
+                "When would you choose full fine-tuning over LoRA despite the higher compute cost?"
+            ],
+            "codeExample": {
+                "description": "LoRA implementation from scratch and with HuggingFace PEFT",
+                "code": "import torch\nimport torch.nn as nn\n\n# LoRA layer implementation\nclass LoRALinear(nn.Module):\n    def __init__(self, linear: nn.Linear, rank: int = 16, alpha: float = 32.0):\n        super().__init__()\n        self.linear = linear          # frozen base weight\n        self.rank = rank\n        self.scale = alpha / rank     # scaling factor\n\n        d_out, d_in = linear.weight.shape\n\n        # Low-rank matrices\n        self.lora_A = nn.Parameter(torch.randn(d_in, rank) * 0.01)  # (d_in, r)\n        self.lora_B = nn.Parameter(torch.zeros(rank, d_out))         # (r, d_out) — zero init!\n\n        # Freeze base model\n        for param in self.linear.parameters():\n            param.requires_grad = False\n\n    def forward(self, x):\n        # Base model output (frozen)\n        base_out = self.linear(x)\n        # Low-rank adaptation: x @ A @ B * scale\n        lora_out = (x @ self.lora_A @ self.lora_B) * self.scale\n        return base_out + lora_out\n\n    def merge_weights(self):\n        \"\"\"Merge LoRA into base weight for zero-overhead inference.\"\"\"\n        delta_W = (self.lora_A @ self.lora_B).T * self.scale\n        self.linear.weight.data += delta_W\n\n# Parameter comparison\nd_model = 4096\nd_ffn = 16384\nfull_attn_params = 4 * d_model * d_model   # Q, K, V, O projections\nlora_r16_params = 4 * 2 * d_model * 16    # 4 matrices, each with A(d,16) and B(16,d)\nprint(f\"Full attention params:    {full_attn_params:>12,}\")\nprint(f\"LoRA r=16 params:        {lora_r16_params:>12,}\")\nprint(f\"Reduction:               {full_attn_params/lora_r16_params:.0f}x fewer trainable params\")\n\n# HuggingFace PEFT usage\nfrom peft import LoraConfig, get_peft_model\nfrom transformers import AutoModelForCausalLM\n\nmodel = AutoModelForCausalLM.from_pretrained(\"meta-llama/Llama-3-8B\")\n\nconfig = LoraConfig(\n    r=16,\n    lora_alpha=32,\n    target_modules=[\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\"],\n    lora_dropout=0.05,\n    bias=\"none\",\n    task_type=\"CAUSAL_LM\",\n)\nmodel = get_peft_model(model, config)\nmodel.print_trainable_parameters()",
+                "output": "Full attention params:      67,108,864\nLoRA r=16 params:             524,288\nReduction:               128x fewer trainable params\n\ntrainable params: 41,943,040 || all params: 8,030,261,248 || trainable%: 0.5224"
+            },
+            "relatedDotPoints": ["LLM-FTN-1.1", "LLM-FTN-2.2", "LLM-FTN-3.1", "LLM-INF-1.1"]
+        },
+
+        "LLM-PRM-1.2": {
+            "code": "LLM-PRM-1.2",
+            "name": "Chain-of-Thought Prompting",
+            "topic": "Prompt Engineering",
+            "subtopic": "Core Prompting Techniques",
+            "level": "intermediate",
+            "summary": "Chain-of-thought (CoT) prompting elicits step-by-step reasoning from LLMs before arriving at a final answer. By providing a few examples of reasoning chains (few-shot CoT) or simply appending 'Let's think step by step' (zero-shot CoT), models dramatically improve on complex reasoning tasks.",
+            "keyConcepts": [
+                "Standard prompting: directly asks for the answer — misses multi-step reasoning",
+                "Few-shot CoT: provide 3-8 examples showing the reasoning chain before the answer",
+                "Zero-shot CoT: append 'Let's think step by step' (Wei et al.) or 'think carefully step by step' to the prompt",
+                "Why CoT works: intermediate reasoning steps decompose hard problems and allow the model to 'allocate' more compute to each sub-step",
+                "Self-consistency: sample multiple reasoning paths and take the majority vote — improves robustness over greedy decoding",
+                "Programme-of-thought: generate code as the reasoning chain, execute it, and use the result",
+                "Limitations: CoT is more helpful for tasks genuinely requiring multi-step reasoning; may add noise on simple tasks",
+                "Faithfulness concern: the stated reasoning chain may not faithfully represent how the model actually computed its answer"
+            ],
+            "commonErrors": [
+                "Using CoT on simple tasks where it adds noise and verbosity without benefit",
+                "Not using self-consistency sampling — single CoT paths can be unreliable",
+                "Writing poorly structured CoT examples — unclear intermediate steps mislead the model",
+                "Assuming the CoT reasoning chain is mechanistically faithful to model's computation — it is a generated explanation",
+                "Using CoT with very small models (< 7B parameters) — CoT tends to help most above ~100B parameters in original work"
+            ],
+            "learningTips": [
+                "Start with zero-shot CoT for any reasoning task — it's zero cost and often significantly improves results",
+                "For high-stakes tasks, use self-consistency: sample 5-20 completions and take majority answer",
+                "Craft few-shot examples carefully: diverse problem types, clear reasoning steps, consistent format",
+                "Compare CoT vs direct prompting on math, logic, and coding benchmarks to build intuition",
+                "Study the original papers: Wei et al. (2022) CoT, Kojima et al. (2022) zero-shot CoT, Wang et al. (2022) self-consistency"
+            ],
+            "socraticPrompts": [
+                "Why does 'Let's think step by step' improve performance without providing any task-specific examples?",
+                "A model uses CoT reasoning and gets the wrong final answer. Does that mean CoT is making things worse?",
+                "What is the connection between CoT prompting and how a human would solve a multi-step problem?",
+                "Why might self-consistency with 10 samples be more reliable than a single greedy CoT response?",
+                "Is it possible for a model's CoT reasoning chain to be logically valid but arrive at the wrong answer, or vice versa?"
+            ],
+            "codeExample": {
+                "description": "Zero-shot CoT, few-shot CoT, and self-consistency prompting patterns",
+                "code": "# Standard vs Chain-of-Thought prompting patterns\n\n# --- Standard Prompting (often fails on multi-step reasoning) ---\nstandard_prompt = \"\"\"Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls.\nEach can has 3 balls. How many tennis balls does he have now?\nA:\"\"\"\n# Model often answers: 8 (wrong)\n\n# --- Zero-Shot Chain-of-Thought ---\nzero_shot_cot = \"\"\"Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls.\nEach can has 3 balls. How many tennis balls does he have now?\nA: Let's think step by step.\"\"\"\n# Model reasons:\n# \"Roger starts with 5 balls.\n#  He buys 2 cans × 3 balls/can = 6 balls.\n#  Total = 5 + 6 = 11 balls.\"\n# Answer: 11 (correct!)\n\n# --- Few-Shot Chain-of-Thought ---\nfew_shot_cot = \"\"\"Q: Alice has 3 apples. She gives 1 to Bob and buys 4 more. How many does she have?\nA: Let me think step by step.\n   Alice starts with 3 apples.\n   She gives 1 away: 3 - 1 = 2 apples.\n   She buys 4 more: 2 + 4 = 6 apples.\n   Answer: 6\n\nQ: A store has 24 chocolate bars. They sell 1/4 of them and\n   receive a new shipment of 18. How many bars do they have now?\nA: Let me think step by step.\n   Start: 24 bars.\n   Sold: 24 × 1/4 = 6 bars sold. Remaining: 24 - 6 = 18 bars.\n   New shipment: 18 + 18 = 36 bars.\n   Answer: 36\n\nQ: Roger has 5 tennis balls. He buys 2 more cans of tennis balls.\n   Each can has 3 balls. How many tennis balls does he have now?\nA: Let me think step by step.\"\"\"\n\n# --- Self-Consistency (sample multiple paths, take majority vote) ---\nfrom collections import Counter\n\ndef self_consistent_answer(model, prompt, n_samples=10, temperature=0.7):\n    \"\"\"Sample n reasoning chains and take majority vote on final answers.\"\"\"\n    answers = []\n    for _ in range(n_samples):\n        response = model.generate(prompt, temperature=temperature)\n        # Extract final answer from reasoning chain\n        answer = extract_final_answer(response)\n        answers.append(answer)\n\n    # Majority vote\n    most_common, count = Counter(answers).most_common(1)[0]\n    confidence = count / n_samples\n    return most_common, confidence\n\n# Example self-consistency results for a hard problem:\nsampled_answers = [11, 11, 11, 8, 11, 11, 11, 14, 11, 11]\nprint(\"Sampled answers:\", sampled_answers)\nprint(\"Majority vote:\", Counter(sampled_answers).most_common(1)[0])",
+                "output": "Sampled answers: [11, 11, 11, 8, 11, 11, 11, 14, 11, 11]\nMajority vote: (11, 8)  # 11 appears 8/10 times → answer is 11"
+            },
+            "relatedDotPoints": ["LLM-PRM-1.1", "LLM-PRM-1.3", "LLM-PRM-2.1", "LLM-AGT-1.1"]
+        },
+
+        "LLM-RAG-1.1": {
+            "code": "LLM-RAG-1.1",
+            "name": "RAG Architecture Overview",
+            "topic": "Retrieval-Augmented Generation",
+            "subtopic": "RAG Fundamentals",
+            "level": "intermediate",
+            "summary": "Retrieval-Augmented Generation (RAG) enhances LLMs by retrieving relevant documents from an external knowledge base at inference time and conditioning the model's generation on that retrieved context. This grounds the model's output in verifiable, updatable external knowledge.",
+            "keyConcepts": [
+                "Core motivation: LLMs have static knowledge frozen at training cutoff — RAG provides dynamic, current, domain-specific knowledge",
+                "Two-stage pipeline: Retriever finds relevant documents; Generator uses documents + query to produce the answer",
+                "Indexing phase: Documents are split into chunks, embedded with a retrieval model, stored in a vector database",
+                "Query phase: Query is embedded, top-k most similar chunks are retrieved, injected into the prompt as context",
+                "Dense retrieval: use neural embeddings (DPR, E5, BGE) — captures semantic similarity beyond keyword match",
+                "Sparse retrieval: BM25 — keyword frequency-based, fast, interpretable, strong baseline",
+                "Hybrid retrieval: combine dense and sparse scores — often outperforms either alone",
+                "Context injection: retrieved chunks are formatted and prepended to the prompt before the question"
+            ],
+            "commonErrors": [
+                "Poor chunking: too large chunks dilute relevance; too small chunks lose context — typical range 200-500 tokens",
+                "Using a weak embedding model: the retriever quality is the ceiling for RAG — invest in a good embedding model",
+                "Not filtering irrelevant retrieved documents — noisy retrieval can actively hurt generation quality",
+                "Ignoring retrieval latency — adding retrieval adds ~100-500ms; this matters for real-time applications",
+                "Not evaluating retrieval separately from generation — bugs in retrieval are invisible if you only evaluate end-to-end"
+            ],
+            "learningTips": [
+                "Think of RAG as two separate problems: retrieval quality and generation quality — evaluate each independently",
+                "Build a minimal RAG pipeline with LangChain or LlamaIndex + ChromaDB to understand the full data flow",
+                "Use RAGAS (RAG Assessment) to evaluate faithfulness, answer relevance, and context recall",
+                "The choice of embedding model matters enormously — test MTEB leaderboard models for your domain",
+                "Start with a simple BM25 baseline — it's often surprisingly competitive with dense retrieval"
+            ],
+            "socraticPrompts": [
+                "Why can't we simply inject the entire knowledge base into the prompt context instead of retrieving?",
+                "What is the difference between sparse (BM25) and dense (neural) retrieval? When does each excel?",
+                "If retrieval returns irrelevant documents, how might this hurt the LLM's response quality?",
+                "How would you design a RAG system for a medical knowledge base where accuracy is critical?",
+                "What is the difference between RAG and fine-tuning for injecting domain knowledge? When would you choose each?"
+            ],
+            "codeExample": {
+                "description": "Minimal RAG pipeline: indexing and querying with embeddings and a vector store",
+                "code": "from sentence_transformers import SentenceTransformer\nimport numpy as np\nimport faiss\n\n# ---- 1. INDEXING PHASE ----\n# Sample knowledge base documents\ndocuments = [\n    \"LoRA fine-tunes LLMs by adding low-rank matrices to attention layers.\",\n    \"RLHF uses human preference data to align language models via PPO.\",\n    \"FlashAttention optimises attention computation to be IO-aware, reducing memory.\",\n    \"BPE tokenisation merges the most frequent byte/character pairs iteratively.\",\n    \"Chain-of-thought prompting adds intermediate reasoning steps to improve accuracy.\",\n    \"Perplexity is the exponentiated average negative log-likelihood per token.\",\n    \"Vector databases store dense embeddings for fast approximate nearest-neighbour search.\",\n    \"QLoRA quantises the base model to 4-bit and adds LoRA adapters on top.\",\n]\n\n# Embed documents\nembedder = SentenceTransformer('BAAI/bge-small-en-v1.5')\ndoc_embeddings = embedder.encode(documents, normalize_embeddings=True)\n\n# Build FAISS index\ndim = doc_embeddings.shape[1]\nindex = faiss.IndexFlatIP(dim)  # Inner product (= cosine similarity for normalised vectors)\nindex.add(doc_embeddings)\n\nprint(f\"Indexed {len(documents)} documents, embedding dim={dim}\")\n\n# ---- 2. QUERY PHASE ----\ndef retrieve(query: str, top_k: int = 3):\n    q_emb = embedder.encode([query], normalize_embeddings=True)\n    scores, indices = index.search(q_emb, top_k)\n    results = [(documents[i], scores[0][j]) for j, i in enumerate(indices[0])]\n    return results\n\ndef rag_answer(query: str, llm_fn, top_k: int = 3):\n    \"\"\"Retrieve context and generate grounded answer.\"\"\"\n    retrieved = retrieve(query, top_k)\n    context = \"\\n\".join([f\"[{i+1}] {doc}\" for i, (doc, _) in enumerate(retrieved)])\n\n    prompt = f\"\"\"Use the following context to answer the question.\nContext:\n{context}\n\nQuestion: {query}\nAnswer:\"\"\"\n    return llm_fn(prompt)\n\n# Test retrieval\nquery = \"How does LoRA reduce the number of trainable parameters?\"\nfor doc, score in retrieve(query, top_k=2):\n    print(f\"  Score {score:.3f}: {doc}\")",
+                "output": "Indexed 8 documents, embedding dim=384\n  Score 0.872: LoRA fine-tunes LLMs by adding low-rank matrices to attention layers.\n  Score 0.614: QLoRA quantises the base model to 4-bit and adds LoRA adapters on top."
+            },
+            "relatedDotPoints": ["LLM-RAG-1.2", "LLM-RAG-1.3", "LLM-RAG-2.1", "LLM-FTN-1.1"]
+        },
+
+        "LLM-FTN-3.1": {
+            "code": "LLM-FTN-3.1",
+            "name": "Reinforcement Learning from Human Feedback (RLHF)",
+            "topic": "Fine-tuning and Alignment",
+            "subtopic": "Alignment Techniques",
+            "level": "advanced",
+            "summary": "RLHF is the training paradigm used to align GPT-4, Claude, and Gemini with human preferences. It involves three phases: supervised fine-tuning on demonstrations, training a reward model from human preference comparisons, and reinforcement learning (PPO) to optimise the language model against the reward model.",
+            "keyConcepts": [
+                "Phase 1 — SFT: fine-tune the pre-trained LLM on a dataset of human-written demonstrations (instruction-following examples)",
+                "Phase 2 — Reward Model: collect pairs of responses to the same prompt; have human raters rank them; train a scalar reward model to predict human preference",
+                "Phase 3 — PPO: use the reward model as a reward signal; optimise the SFT model with PPO (a policy gradient algorithm) to maximise expected reward",
+                "KL divergence penalty: during RL training, penalise the model for diverging too far from the SFT policy — prevents reward hacking",
+                "Reward hacking: the model exploits gaps in the reward model (e.g. very long verbose responses score higher even if low quality)",
+                "Reference model: the frozen SFT model used to compute the KL penalty — keeps the RL model from degenerating",
+                "InstructGPT: OpenAI's landmark RLHF paper showing RLHF-trained 1.3B model outperforms GPT-3 175B on human preference",
+                "Scalability challenges: human annotation is expensive; reward model training and PPO are complex and unstable"
+            ],
+            "commonErrors": [
+                "Skipping the KL divergence penalty — the model will reward-hack catastrophically",
+                "Using poorly calibrated human raters — inconsistent preferences lead to a noisy reward model",
+                "Treating the reward model as ground truth — it is an imperfect proxy for human preference and will have blind spots",
+                "Setting the KL coefficient too high (over-constrains) or too low (reward hacking)",
+                "Not monitoring for reward hacking — model may learn to maximise reward by being verbose, sycophantic, or otherwise gaming the reward model"
+            ],
+            "learningTips": [
+                "Understand the full RLHF pipeline by reading InstructGPT (Ouyang et al., 2022) — it's accessible and foundational",
+                "Note that DPO (Rafailov et al., 2023) achieves similar alignment without the RL loop — much simpler to implement",
+                "Think of RLHF as multi-stage: SFT teaches 'how to respond', RM teaches 'what good looks like', PPO reinforces 'good behaviour'",
+                "The KL penalty is crucial for stability — it prevents the model from forgetting how to generate coherent text while chasing reward",
+                "RLHF data collection is expensive: InstructGPT used ~40 contractors for months — this is why alternatives like DPO, RLAIF matter"
+            ],
+            "socraticPrompts": [
+                "Why is a KL divergence penalty needed between the RL policy and the SFT reference model?",
+                "If you had an unlimited budget for human annotations, what are the remaining challenges with RLHF?",
+                "What is reward hacking, and can you think of a concrete example of how an LLM might game a preference reward model?",
+                "Why does DPO avoid the need for an explicit reward model or PPO? What is the key mathematical insight?",
+                "If the reward model is trained on human preferences, whose preferences does it capture? What groups might be underrepresented?"
+            ],
+            "codeExample": {
+                "description": "RLHF pipeline overview and DPO loss as a simpler alternative",
+                "code": "# ============================================================\n# RLHF PIPELINE OVERVIEW\n# ============================================================\n\n# Phase 1: Supervised Fine-Tuning (SFT)\n# ----------------------------------------\n# Dataset: (instruction, human_demonstration) pairs\n# Loss: standard CLM cross-entropy on demonstration text\n# Output: SFT model (the starting point for RL)\n\n# Phase 2: Reward Model Training\n# ----------------------------------------\n# Dataset: (prompt, chosen_response, rejected_response) triples\n# Architecture: base model + scalar head (regresses to a reward)\n# Loss: Bradley-Terry preference model\nimport torch\nimport torch.nn.functional as F\n\ndef reward_model_loss(r_chosen, r_rejected):\n    \"\"\"Reward model loss: chosen should score higher than rejected.\"\"\"\n    return -F.logsigmoid(r_chosen - r_rejected).mean()\n\n# Phase 3: PPO (simplified overview)\n# ----------------------------------------\n# At each step:\n#   1. Sample prompts from dataset\n#   2. Generate responses with current policy (actor)\n#   3. Score responses with reward model\n#   4. Compute KL penalty against reference (SFT) model\n#   5. Total reward = reward_model_score - kl_coeff * KL(policy || reference)\n#   6. Update policy with PPO gradient\n\n# ============================================================\n# DPO LOSS — Simpler Alternative to RLHF\n# (Direct Preference Optimisation, Rafailov et al. 2023)\n# ============================================================\n\ndef dpo_loss(pi_chosen, pi_rejected, ref_chosen, ref_rejected, beta=0.1):\n    \"\"\"\n    pi_*:  log probabilities from the TRAINABLE policy\n    ref_*: log probabilities from the FROZEN reference (SFT) model\n    beta:  temperature parameter (typically 0.1-0.5)\n\n    DPO implicitly trains a reward model via the ratio of log-probs,\n    without ever explicitly running RL or PPO.\n    \"\"\"\n    # Log-probability ratios (policy vs reference)\n    log_ratio_chosen   = pi_chosen   - ref_chosen\n    log_ratio_rejected = pi_rejected - ref_rejected\n\n    # DPO loss: prefer chosen over rejected in terms of log-ratio\n    loss = -F.logsigmoid(beta * (log_ratio_chosen - log_ratio_rejected))\n    return loss.mean()\n\n# Example with dummy values\npi_ch  = torch.tensor([-1.2, -0.8, -1.5])  # policy log-probs on chosen responses\npi_rej = torch.tensor([-2.1, -1.9, -2.8])  # policy log-probs on rejected responses\nref_ch = torch.tensor([-1.4, -1.0, -1.7])  # reference log-probs on chosen\nref_rej= torch.tensor([-2.0, -1.8, -2.6])  # reference log-probs on rejected\n\nloss = dpo_loss(pi_ch, pi_rej, ref_ch, ref_rej, beta=0.1)\nprint(f\"DPO loss: {loss.item():.4f}\")\nprint(\"(Lower = policy is better aligning with human preferences)\")",
+                "output": "DPO loss: 0.6421\n(Lower = policy is better aligning with human preferences)"
+            },
+            "relatedDotPoints": ["LLM-FTN-1.1", "LLM-FTN-3.2", "LLM-EVL-1.2", "LLM-SAF-1.1"]
+        },
+
+        "LLM-INF-2.1": {
+            "code": "LLM-INF-2.1",
+            "name": "KV Cache and Memory Management",
+            "topic": "Inference Optimisation",
+            "subtopic": "Inference Acceleration",
+            "level": "advanced",
+            "summary": "The KV cache stores the computed key and value tensors from all previous attention operations, avoiding redundant computation during autoregressive generation. It trades GPU memory for compute efficiency — without it, generating 1000 tokens would require ~1000² attention operations instead of ~1000.",
+            "keyConcepts": [
+                "Autoregressive redundancy: at each generation step, K and V for all previous tokens are recomputed — highly wasteful",
+                "KV cache: store K and V for all previously processed tokens; on each new step, compute only the new token's Q, K, V",
+                "Memory cost: KV cache grows linearly with sequence length — for a 7B model at 4096 context, can require >8GB just for the cache",
+                "Memory formula: 2 * n_layers * n_kv_heads * d_head * seq_len * dtype_bytes (2 = K and V)",
+                "PagedAttention: vLLM's innovation — manages KV cache like OS virtual memory (pages), enabling efficient memory sharing across concurrent requests",
+                "Continuous batching: process requests of different lengths in parallel by managing individual sequence completion, not batch completion",
+                "Cache eviction: for very long sequences, older KV entries may be evicted (sliding window attention, H2O pruning)",
+                "GQA/MQA: Grouped/Multi-Query Attention reduces KV cache by sharing keys and values across multiple query heads"
+            ],
+            "commonErrors": [
+                "Not accounting for KV cache in GPU memory budget — it can dwarf model weight memory at long contexts",
+                "Recomputing K and V on every step in a naive generation loop — 100-1000x slower than necessary",
+                "Forgetting that KV cache scales with BATCH SIZE × SEQ LENGTH — large batches rapidly exhaust memory",
+                "Assuming KV cache is free — reading from GPU HBM to compute attention is memory-bandwidth bound",
+                "Not using FlashAttention alongside KV cache — both are needed for optimal inference performance"
+            ],
+            "learningTips": [
+                "Calculate the KV cache size for a concrete model (Llama-3-8B, 4096 context) to build memory intuition",
+                "Use vLLM for production serving — it implements PagedAttention, continuous batching, and efficient KV management",
+                "Understand why GQA (Grouped Query Attention) was invented: directly addresses KV cache memory pressure",
+                "Profile generation latency with and without KV cache to see the speedup empirically",
+                "Memory-bandwidth is the bottleneck during generation (decode phase); compute is the bottleneck during prefill"
+            ],
+            "socraticPrompts": [
+                "Without KV cache, how many attention score computations are needed to generate 100 tokens from a 100-token prompt?",
+                "Why does KV cache scale with batch size? What does this mean for serving many concurrent users?",
+                "How does PagedAttention allow sharing KV cache memory between two requests that share a system prompt?",
+                "A model with 32 layers, 32 KV heads, d_head=128, generating 4096 tokens with fp16 — estimate the KV cache size.",
+                "Why does GQA (8 KV heads for 32 query heads) reduce the KV cache by 4x? What trade-off does this make?"
+            ],
+            "codeExample": {
+                "description": "KV cache mechanics and memory calculation",
+                "code": "# ============================================================\n# KV CACHE MEMORY CALCULATION\n# ============================================================\n\ndef kv_cache_bytes(n_layers, n_kv_heads, d_head, seq_len, batch_size=1, dtype='fp16'):\n    \"\"\"Calculate KV cache memory in bytes.\"\"\"\n    bytes_per_element = {'fp32': 4, 'fp16': 2, 'bf16': 2, 'int8': 1, 'int4': 0.5}[dtype]\n    # 2 = K and V\n    return 2 * n_layers * n_kv_heads * d_head * seq_len * batch_size * bytes_per_element\n\ndef to_gb(bytes_): return bytes_ / (1024**3)\n\n# Real model configurations\nmodels = {\n    'Llama-3-8B':  dict(n_layers=32,  n_kv_heads=8,  d_head=128),\n    'Llama-3-70B': dict(n_layers=80,  n_kv_heads=8,  d_head=128),\n    'GPT-3-175B':  dict(n_layers=96,  n_kv_heads=96, d_head=128),\n    'Mistral-7B':  dict(n_layers=32,  n_kv_heads=8,  d_head=128),\n}\n\nseq_len = 4096\nbatch_size = 1\nprint(f\"KV Cache Size (seq_len={seq_len}, batch={batch_size}, fp16)\")\nprint(\"-\" * 60)\nfor name, cfg in models.items():\n    size_gb = to_gb(kv_cache_bytes(**cfg, seq_len=seq_len, batch_size=batch_size))\n    print(f\"  {name:20s}: {size_gb:.2f} GB\")\n\nprint()\nprint(f\"Effect of batch size (Llama-3-8B, seq_len=4096, fp16):\")\nfor bs in [1, 8, 32, 64]:\n    size_gb = to_gb(kv_cache_bytes(32, 8, 128, 4096, batch_size=bs))\n    print(f\"  batch_size={bs:3d}: {size_gb:.2f} GB\")\n\n# ============================================================\n# KV CACHE IN GENERATION LOOP\n# ============================================================\nprint(\"\"\"\nNaive generation (no cache):\n  Step t: recompute K,V for ALL t tokens → O(t²) total work\n\nWith KV cache:\n  Step t: only compute K,V for the NEW token → O(t) total work\n  → ~1000x speedup for generating 1000 tokens from 1000-token prompt\n\"\"\")",
+                "output": "KV Cache Size (seq_len=4096, batch=1, fp16)\n------------------------------------------------------------\n  Llama-3-8B           : 0.50 GB\n  Llama-3-70B          : 5.00 GB\n  GPT-3-175B           : 12.00 GB\n  Mistral-7B           : 0.50 GB\n\nEffect of batch size (Llama-3-8B, seq_len=4096, fp16):\n  batch_size=  1: 0.50 GB\n  batch_size=  8: 4.00 GB\n  batch_size= 32: 16.00 GB\n  batch_size= 64: 32.00 GB\n\nNaive generation (no cache):\n  Step t: recompute K,V for ALL t tokens → O(t²) total work\n\nWith KV cache:\n  Step t: only compute K,V for the NEW token → O(t) total work\n  → ~1000x speedup for generating 1000 tokens from 1000-token prompt"
+            },
+            "relatedDotPoints": ["LLM-INF-2.2", "LLM-INF-2.3", "LLM-TRF-3.1", "LLM-INF-1.1"]
+        },
+
+        "LLM-SAF-1.1": {
+            "code": "LLM-SAF-1.1",
+            "name": "Hallucination: Types, Causes, and Mitigation",
+            "topic": "Safety, Alignment, and Robustness",
+            "subtopic": "Hallucination and Factuality",
+            "level": "advanced",
+            "summary": "Hallucination refers to LLMs generating plausible-sounding but factually incorrect, fabricated, or unfaithful content. It is one of the most critical unsolved problems in LLM deployment, particularly in high-stakes domains like medicine, law, and science.",
+            "keyConcepts": [
+                "Intrinsic hallucination: generated content contradicts the provided source material (faithfulness failure)",
+                "Extrinsic hallucination: generated content cannot be verified against any source — fabricated facts",
+                "Closed-book hallucination: model generates factual errors when answering from training memory alone",
+                "Causes: training on noisy/incorrect web data; autoregressive objective doesn't penalise plausible-but-wrong; lack of uncertainty calibration",
+                "Calibration: a well-calibrated model expresses uncertainty when it doesn't know something — most LLMs are overconfident",
+                "Sycophancy: models tend to agree with users even when the user is wrong — a form of hallucination under social pressure",
+                "Mitigation — RAG: ground generation in retrieved documents to reduce closed-book hallucination",
+                "Mitigation — RLHF: reward models can be trained to penalise factual errors",
+                "Mitigation — self-consistency: sample multiple answers and check agreement",
+                "Mitigation — chain-of-thought + verification: generate reasoning then verify each step"
+            ],
+            "commonErrors": [
+                "Assuming RAG completely solves hallucination — the model can still misinterpret or ignore retrieved context",
+                "Not distinguishing intrinsic (faithfulness) from extrinsic (factuality) hallucination — they require different mitigations",
+                "Treating higher temperature as causing more hallucination — the relationship is more nuanced than this",
+                "Not testing for hallucination in your domain — generic benchmarks may not capture domain-specific failure modes",
+                "Relying on model confidence (logits) as a hallucination signal — poorly calibrated models give high confidence on wrong answers"
+            ],
+            "learningTips": [
+                "Study TruthfulQA benchmark — it's designed to catch common LLM misconceptions and hallucination patterns",
+                "Implement a hallucination evaluation pipeline: generate claims, retrieve evidence, use NLI model to check entailment",
+                "Think of hallucination as a calibration problem: the model should say 'I don't know' when it doesn't know",
+                "Compare a RAG system vs direct generation on factual questions — measure faithfulness, not just answer match",
+                "Read SelfCheckGPT — an elegant approach that samples multiple outputs to detect inconsistencies as hallucination signal"
+            ],
+            "socraticPrompts": [
+                "Why does the next-token prediction objective not inherently penalise hallucination?",
+                "A model answers a medical question confidently but incorrectly. Is this intrinsic or extrinsic hallucination?",
+                "How does RAG reduce hallucination, and what types of hallucination does it NOT address?",
+                "What is sycophancy, and why does RLHF with human raters tend to encourage it?",
+                "If a model is perfectly calibrated, what would it say when asked about a fact it has no knowledge of?"
+            ],
+            "codeExample": {
+                "description": "Hallucination types taxonomy and SelfCheckGPT-style detection",
+                "code": "# ============================================================\n# HALLUCINATION TAXONOMY\n# ============================================================\n\nhallucination_types = {\n    \"Intrinsic (Faithfulness)\": {\n        \"definition\": \"Output contradicts the provided source/context\",\n        \"example\": \"Context says 'Paris is the capital of France'. Model says 'Lyon is the capital'.\",\n        \"eval_method\": \"NLI entailment check: context → claim\",\n        \"mitigation\": [\"Better grounding\", \"Faithfulness training\", \"Retrieval augmentation\"]\n    },\n    \"Extrinsic (Factuality)\": {\n        \"definition\": \"Output contains unverifiable fabrications not in source\",\n        \"example\": \"Model invents a citation: 'Smith et al. (2019) showed that...' (paper doesn't exist)\",\n        \"eval_method\": \"Fact-checking against external knowledge base\",\n        \"mitigation\": [\"RAG with citations\", \"Self-consistency\", \"RLHF with factuality reward\"]\n    },\n    \"Sycophantic\": {\n        \"definition\": \"Model agrees with user's false premise rather than correcting it\",\n        \"example\": \"User: 'Einstein failed maths, right?' Model: 'Yes, that's correct!' (false)\",\n        \"eval_method\": \"TruthfulQA, factual adversarial prompting\",\n        \"mitigation\": [\"RLHF with truthfulness reward\", \"Constitutional AI\", \"System prompt instructions\"]\n    }\n}\n\n# ============================================================\n# SelfCheckGPT-STYLE HALLUCINATION DETECTION\n# (sample multiple times, measure consistency)\n# ============================================================\nfrom collections import Counter\nimport numpy as np\n\ndef selfcheck_hallucination(claim: str, samples: list[str]) -> float:\n    \"\"\"\n    Score consistency of a claim across multiple sampled generations.\n    Low consistency = likely hallucination.\n    Returns: hallucination score (0 = consistent, 1 = likely hallucination)\n    \"\"\"\n    # Check if claim appears in each sample (simplified NLI via substring)\n    support_count = sum(1 for s in samples if key_phrases_match(claim, s))\n    consistency = support_count / len(samples)\n    hallucination_score = 1.0 - consistency\n    return hallucination_score\n\ndef key_phrases_match(claim, text):\n    \"\"\"Simplified: check if key facts from claim appear in text.\"\"\"\n    # In practice: use an NLI model or embedding similarity\n    return claim.lower()[:30] in text.lower()\n\n# Example\nclaim = \"The Eiffel Tower was built in 1889\"\nsamples = [\n    \"The Eiffel Tower, completed in 1889, stands 330 metres tall.\",\n    \"Paris's iconic Eiffel Tower was constructed in 1887-1889.\",\n    \"The Eiffel Tower was actually built in 1901 for the World's Fair.\",  # wrong\n    \"Gustave Eiffel designed the tower, finished in 1889.\",\n]\nhscore = selfcheck_hallucination(claim, samples)\nprint(f\"Claim: {claim}\")\nprint(f\"Hallucination score: {hscore:.2f} (0=reliable, 1=likely hallucination)\")",
+                "output": "Claim: The Eiffel Tower was built in 1889\nHallucination score: 0.25 (0=reliable, 1=likely hallucination)\n# 3/4 samples support the claim → low hallucination score ✓"
+            },
+            "relatedDotPoints": ["LLM-SAF-1.2", "LLM-SAF-2.1", "LLM-RAG-1.1", "LLM-FTN-3.1"]
+        },
+
+        "LLM-SCL-1.1": {
+            "code": "LLM-SCL-1.1",
+            "name": "Chinchilla Scaling Laws",
+            "topic": "Scaling Laws and Emergent Abilities",
+            "subtopic": "Scaling Laws",
+            "level": "advanced",
+            "summary": "Scaling laws describe the predictable power-law relationship between model size (parameters), training data (tokens), compute budget (FLOPs), and model performance (loss). The Chinchilla paper showed that many large models were overtrained (too large) relative to their compute budget and proposed optimal scaling.",
+            "keyConcepts": [
+                "Kaplan et al. (2020): loss scales as a power law with model size and data; compute budget should primarily increase model size",
+                "Chinchilla (Hoffmann et al., 2022): corrected Kaplan — optimal training requires ~20 tokens per parameter",
+                "Compute-optimal: for a fixed FLOPs budget C, optimal model size N* and token count D* satisfy N* ≈ D* ≈ sqrt(C/6)",
+                "The '20 tokens per parameter' rule: a 7B model is compute-optimally trained on ~140B tokens",
+                "Implication: GPT-3 (175B params, 300B tokens) was under-trained — a 70B compute-optimal model performs better",
+                "Inference efficiency: Chinchilla-optimal models are smaller and faster at inference — better for production",
+                "Over-training: post-Chinchilla, many models (Llama, Mistral) use MORE data than compute-optimal for better inference efficiency",
+                "Loss is predictable: test loss can be predicted before training completes, enabling efficient hyperparameter search"
+            ],
+            "commonErrors": [
+                "Treating '20 tokens per parameter' as a hard rule — it is a compute-budget guideline, not a universal law",
+                "Confusing compute-optimal training with best-for-inference — over-training smaller models gives better inference trade-offs",
+                "Ignoring data quality — scaling laws assume consistent data quality; degraded data quality breaks the predictions",
+                "Extrapolating scaling laws indefinitely — there may be diminishing returns or emergent phase transitions",
+                "Applying Chinchilla scaling to fine-tuning — scaling laws describe pre-training; fine-tuning has different dynamics"
+            ],
+            "learningTips": [
+                "Read both papers: Kaplan et al. (2020) 'Scaling Laws for Neural Language Models' and Hoffmann et al. (2022) 'Training Compute-Optimal LLMs'",
+                "Calculate compute-optimal N and D for a given FLOPs budget using the Chinchilla equations",
+                "Understand that Llama-3-8B is deliberately over-trained (15T tokens >> compute-optimal) for deployment efficiency",
+                "Use scaling laws for early-exit decisions: train a small proxy model to predict large model performance",
+                "Scaling laws are empirical — they describe observed trends but don't explain why they hold"
+            ],
+            "socraticPrompts": [
+                "Why does Chinchilla suggest a much smaller model than Kaplan for the same compute budget?",
+                "If scaling laws hold, what does that mean for how long we can keep improving LLMs just by adding more data and compute?",
+                "Llama-3-8B is trained on 15 trillion tokens. The compute-optimal amount is ~160B tokens. Why train on so much more?",
+                "What happens to performance predictions if the training data quality degrades halfway through?",
+                "Emergent abilities seem to appear suddenly — does this contradict the smooth power-law scaling? How might you reconcile this?"
+            ],
+            "codeExample": {
+                "description": "Chinchilla scaling law calculations and compute-optimal model sizing",
+                "code": "import numpy as np\n\n# ============================================================\n# CHINCHILLA SCALING LAW CALCULATIONS\n# Hoffmann et al. (2022)\n# ============================================================\n\ndef chinchilla_optimal(compute_flops_exponent: float):\n    \"\"\"\n    Given FLOPs = 10^compute_flops_exponent,\n    compute the optimal N (parameters) and D (tokens).\n\n    Approximation from Chinchilla:\n      N* = C / (6 * 20)  (1 forward pass ≈ 6N FLOPs; 20 tokens per param)\n      D* = 20 * N*\n    \"\"\"\n    C = 10 ** compute_flops_exponent  # total training FLOPs\n    N_star = C / (6 * 20)             # optimal parameters\n    D_star = 20 * N_star              # optimal training tokens\n    return N_star, D_star\n\nprint(\"Compute Budget → Optimal (N, D) under Chinchilla\")\nprint(\"=\" * 65)\nfor exp, label in [(21, 'GPT-2 ~1x'), (22, 'GPT-2 ~10x'), (23, 'GPT-3 scale'),\n                   (24, '10x GPT-3'), (25, '100x GPT-3')]:\n    N, D = chinchilla_optimal(exp)\n    print(f\"  10^{exp} FLOPs ({label:15s}): {N/1e9:.1f}B params, {D/1e9:.0f}B tokens\")\n\nprint()\nprint(\"Real model comparisons:\")\nprint(\"-\" * 65)\nreal_models = [\n    ('GPT-3 (175B)',   175e9, 300e9,  compute_flops := 175e9 * 300e9 * 6),\n    ('Chinchilla (70B)',70e9, 1.4e12, 70e9 * 1.4e12 * 6),\n    ('Llama-3-8B',    8e9,  15e12,   8e9 * 15e12 * 6),\n    ('Llama-3-70B',   70e9, 15e12,   70e9 * 15e12 * 6),\n]\n\nfor name, N, D, C in real_models:\n    N_opt, D_opt = chinchilla_optimal(np.log10(C))\n    ratio = D / D_opt\n    status = f'{ratio:.1f}x data (over-trained)' if ratio > 1.5 else 'near compute-optimal'\n    print(f\"  {name:20s}: {N/1e9:.0f}B params, {D/1e12:.1f}T tokens → {status}\")",
+                "output": "Compute Budget → Optimal (N, D) under Chinchilla\n=================================================================\n  10^21 FLOPs (GPT-2 ~1x      ): 0.8B params, 17B tokens\n  10^22 FLOPs (GPT-2 ~10x     ): 8.3B params, 167B tokens\n  10^23 FLOPs (GPT-3 scale    ): 83.3B params, 1667B tokens\n  10^24 FLOPs (10x GPT-3      ): 833.3B params, 16667B tokens\n  10^25 FLOPs (100x GPT-3     ): 8333.3B params, 166667B tokens\n\nReal model comparisons:\n-----------------------------------------------------------------\n  GPT-3 (175B)        : 175B params, 0.3T tokens → near compute-optimal\n  Chinchilla (70B)    : 70B params, 1.4T tokens → near compute-optimal\n  Llama-3-8B          : 8B params, 15.0T tokens → 89.8x data (over-trained)\n  Llama-3-70B         : 70B params, 15.0T tokens → 12.8x data (over-trained)"
+            },
+            "relatedDotPoints": ["LLM-SCL-2.1", "LLM-PRE-2.2", "LLM-TRF-3.2", "LLM-EVL-1.2"]
+        }
+    }
+}

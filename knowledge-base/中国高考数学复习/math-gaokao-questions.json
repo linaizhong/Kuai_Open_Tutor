@@ -1,0 +1,444 @@
+{
+    "subject": "中国高考数学",
+    "description": "高考数学典型试题库，包含选择题、填空题、解答题各题型。",
+    "note": "数学试题提供详细解答过程和评分标准。",
+    "questions": {
+        "2023-GK-SX-1": {
+            "id": "2023-GK-SX-1",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一",
+            "questionNumber": "1",
+            "marks": 5,
+            "type": "选择题",
+            "dotPoints": ["SX-HS-1.2"],
+            "topic": "SX-HS",
+            "difficulty": "容易",
+            "stem": "已知集合A={x|x²-3x-4≤0}，B={x|2x-3>0}，则A∩B=（ ）\nA. (-1,3/2) \nB. (3/2,4] \nC. (-1,4] \nD. (3/2,+∞)",
+            "solution": {
+                "steps": [
+                    "解不等式x²-3x-4≤0，得(x-4)(x+1)≤0，所以-1≤x≤4，即A=[-1,4]",
+                    "解不等式2x-3>0，得x>3/2，即B=(3/2,+∞)",
+                    "求交集A∩B=(3/2,4]"
+                ],
+                "modelResponse": "B",
+                "finalAnswer": "B"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 5, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "解不等式错误",
+                    "区间端点判断错误",
+                    "交集概念不清"
+                ]
+            },
+            "tags": ["集合", "不等式", "选择题"]
+        },
+
+        "2023-GK-SX-2": {
+            "id": "2023-GK-SX-2",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一",
+            "questionNumber": "5",
+            "marks": 5,
+            "type": "选择题",
+            "dotPoints": ["SX-HS-2.2"],
+            "topic": "SX-HS",
+            "difficulty": "中等",
+            "stem": "函数f(x)=x³-3x+1在区间[-2,2]上的最大值为（ ）\nA. 3 \nB. 4 \nC. 5 \nD. 6",
+            "solution": {
+                "steps": [
+                    "求导：f'(x)=3x²-3=3(x²-1)=3(x-1)(x+1)",
+                    "令f'(x)=0，得x=1或x=-1",
+                    "计算端点值和极值点值：\n   f(-2)=-8+6+1=-1\n   f(-1)=-1+3+1=3\n   f(1)=1-3+1=-1\n   f(2)=8-6+1=3",
+                    "比较得最大值为3"
+                ],
+                "modelResponse": "A",
+                "finalAnswer": "A"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 5, "description": "选择正确"},
+                    {"marks": 0, "description": "选择错误"}
+                ],
+                "commonErrors": [
+                    "导数求错",
+                    "忽略端点值",
+                    "计算错误"
+                ]
+            },
+            "tags": ["导数", "最值", "选择题"]
+        },
+
+        "2023-GK-SX-3": {
+            "id": "2023-GK-SX-3",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "一",
+            "questionNumber": "9",
+            "marks": 5,
+            "type": "多选题",
+            "dotPoints": ["SX-SL-1.2", "SX-SL-1.3"],
+            "topic": "SX-SL",
+            "difficulty": "中等",
+            "stem": "已知等差数列{an}的前n项和为Sn，等比数列{bn}的前n项和为Tn。下列说法正确的是（ ）\nA. 若{an}是等差数列，则{S_n/n}也是等差数列\nB. 若{an}是等差数列，则{a_n²}也是等差数列\nC. 若{bn}是等比数列，则{ln|bn|}是等差数列\nD. 若{bn}是等比数列，则{b_n²}也是等比数列",
+            "solution": {
+                "steps": [
+                    "A: S_n/n = a1+(n-1)d/2，是关于n的一次函数，所以是等差数列，正确",
+                    "B: a_n² = [a1+(n-1)d]²，展开后含有n²项，不是等差数列，错误",
+                    "C: ln|bn| = ln|b1·q^(n-1)| = ln|b1|+(n-1)ln|q|，是关于n的一次函数，是等差数列，正确",
+                    "D: b_n² = b1²·q^(2(n-1))，仍是等比数列，公比为q²，正确"
+                ],
+                "modelResponse": "ACD",
+                "finalAnswer": "ACD"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 5, "description": "全部选对得5分，部分选对得2分，有选错得0分"},
+                    {"marks": 2, "description": "部分选对"},
+                    {"marks": 0, "description": "选错或未选"}
+                ],
+                "commonErrors": [
+                    "等差数列性质理解不清",
+                    "等比数列性质理解不清",
+                    "漏选或错选"
+                ]
+            },
+            "tags": ["数列", "等差数列", "等比数列", "多选题"]
+        },
+
+        "2023-GK-SX-4": {
+            "id": "2023-GK-SX-4",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "二",
+            "questionNumber": "13",
+            "marks": 5,
+            "type": "填空题",
+            "dotPoints": ["SX-JX-1.2"],
+            "topic": "SX-JX",
+            "difficulty": "容易",
+            "stem": "已知圆C的圆心在直线y=x上，且与x轴相切于点(2,0)，则圆C的方程为______。",
+            "solution": {
+                "steps": [
+                    "圆心在直线y=x上，设圆心为(a,a)",
+                    "圆与x轴相切于点(2,0)，说明切点为(2,0)，且半径等于圆心纵坐标的绝对值：r=|a|",
+                    "圆心到切点的距离等于半径：√[(a-2)²+(a-0)²] = |a|",
+                    "平方得：(a-2)²+a² = a² ⇒ (a-2)² = 0 ⇒ a=2",
+                    "所以圆心(2,2)，半径r=2",
+                    "圆方程：(x-2)²+(y-2)²=4"
+                ],
+                "modelResponse": "(x-2)²+(y-2)²=4",
+                "finalAnswer": "(x-2)²+(y-2)²=4"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 5, "description": "完全正确"},
+                    {"marks": 3, "description": "思路正确但计算有误"},
+                    {"marks": 0, "description": "错误"}
+                ],
+                "commonErrors": [
+                    "圆心设错",
+                    "相切条件理解错误",
+                    "方程形式错误"
+                ]
+            },
+            "tags": ["圆", "切线", "填空题"]
+        },
+
+        "2023-GK-SX-5": {
+            "id": "2023-GK-SX-5",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "17",
+            "marks": 10,
+            "type": "解答题",
+            "dotPoints": ["SX-SJ-2.2"],
+            "topic": "SX-SJ",
+            "difficulty": "中等",
+            "stem": "在△ABC中，内角A,B,C的对边分别为a,b,c，已知a=3，c=2，B=60°。\n（1）求b的值；\n（2）求sinA的值。",
+            "solution": {
+                "steps": [
+                    "（1）由余弦定理：b²=a²+c²-2accosB",
+                    "代入：b²=3²+2²-2×3×2×cos60°=9+4-12×1/2=13-6=7",
+                    "所以b=√7",
+                    "（2）由正弦定理：a/sinA = b/sinB",
+                    "代入：3/sinA = √7/sin60° = √7/(√3/2) = 2√7/√3",
+                    "所以sinA = 3 × (√3/(2√7)) = (3√3)/(2√7) = (3√21)/14"
+                ],
+                "modelResponse": "（1）b=√7\n（2）sinA=(3√21)/14",
+                "finalAnswer": "（1）√7 （2）(3√21)/14"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "9-10", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "7-8", "description": "思路正确，计算有个别错误"},
+                    {"marks": "5-6", "description": "部分正确，有主要思路"},
+                    {"marks": "3-4", "description": "有正确公式，但计算错误多"},
+                    {"marks": "1-2", "description": "有正确思路，但未完成"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "余弦定理公式记错",
+                    "正弦定理公式记错",
+                    "三角函数值记错",
+                    "计算错误"
+                ]
+            },
+            "tags": ["解三角形", "余弦定理", "正弦定理", "解答题"]
+        },
+
+        "2023-GK-SX-6": {
+            "id": "2023-GK-SX-6",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "18",
+            "marks": 12,
+            "type": "解答题",
+            "dotPoints": ["SX-TJ-2.2"],
+            "topic": "SX-TJ",
+            "difficulty": "中等",
+            "stem": "某批产品中，甲厂生产的产品占60%，乙厂生产的产品占40%。甲厂产品的次品率为5%，乙厂产品的次品率为4%。\n（1）从这批产品中任取一件，求取到次品的概率；\n（2）若取到一件次品，求这件次品来自甲厂的概率。",
+            "solution": {
+                "steps": [
+                    "设事件A：取到甲厂产品，事件B：取到乙厂产品，事件C：取到次品",
+                    "已知：P(A)=0.6，P(B)=0.4，P(C|A)=0.05，P(C|B)=0.04",
+                    "（1）全概率公式：P(C)=P(A)P(C|A)+P(B)P(C|B)",
+                    "代入：P(C)=0.6×0.05+0.4×0.04=0.03+0.016=0.046",
+                    "（2）贝叶斯公式：P(A|C)=P(A)P(C|A)/P(C)=0.03/0.046=30/46=15/23≈0.6522"
+                ],
+                "modelResponse": "（1）0.046\n（2）15/23",
+                "finalAnswer": "（1）0.046 （2）15/23"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "11-12", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "9-10", "description": "思路正确，计算有个别错误"},
+                    {"marks": "7-8", "description": "部分正确，有主要思路"},
+                    {"marks": "5-6", "description": "有正确公式，但计算错误多"},
+                    {"marks": "3-4", "description": "有正确思路，但未完成"},
+                    {"marks": "1-2", "description": "有部分正确内容"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "全概率公式用错",
+                    "贝叶斯公式用错",
+                    "条件概率理解错误",
+                    "计算错误"
+                ]
+            },
+            "tags": ["概率", "全概率公式", "贝叶斯公式", "解答题"]
+        },
+
+        "2023-GK-SX-7": {
+            "id": "2023-GK-SX-7",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "19",
+            "marks": 12,
+            "type": "解答题",
+            "dotPoints": ["SX-KJ-2.2"],
+            "topic": "SX-KJ",
+            "difficulty": "较难",
+            "stem": "如图，四棱锥P-ABCD中，底面ABCD是矩形，PA⊥平面ABCD，PA=AB=2，AD=4。\n（1）求证：平面PAB⊥平面PAD；\n（2）求直线PC与平面PAD所成角的正弦值。",
+            "solution": {
+                "steps": [
+                    "（1）证明：\n    ∵PA⊥平面ABCD，AB⊂平面ABCD，∴PA⊥AB\n    ∵ABCD是矩形，∴AB⊥AD\n    ∵PA⊥AB，AB⊥AD，PA∩AD=A，PA、AD⊂平面PAD\n    ∴AB⊥平面PAD\n    ∵AB⊂平面PAB，∴平面PAB⊥平面PAD",
+                    "（2）建立空间直角坐标系：以A为原点，AB为x轴，AD为y轴，AP为z轴\n    A(0,0,0)，B(2,0,0)，D(0,4,0)，P(0,0,2)，C(2,4,0)\n    平面PAD的法向量：取AB方向(2,0,0)即为法向量？不对，平面PAD由A,P,D确定，法向量n=AP×AD\n    AP=(0,0,2)，AD=(0,4,0)，则n=AP×AD = (0×0-2×4, 2×0-0×0, 0×4-0×0) = (-8,0,0) 或取(1,0,0)\n    直线PC的方向向量：PC=C-P=(2,4,0)-(0,0,2)=(2,4,-2)\n    设PC与平面PAD所成角为θ，则sinθ=|PC·n|/(|PC||n|)\n    PC·n=(2,4,-2)·(1,0,0)=2\n    |PC|=√(2²+4²+(-2)²)=√(4+16+4)=√24=2√6\n    |n|=1\n    sinθ=2/(2√6)=1/√6=√6/6"
+                ],
+                "modelResponse": "（1）见证明过程\n（2）√6/6",
+                "finalAnswer": "（1）略 （2）√6/6"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "11-12", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "9-10", "description": "思路正确，计算有个别错误"},
+                    {"marks": "7-8", "description": "部分正确，有主要思路"},
+                    {"marks": "5-6", "description": "有正确方法，但计算错误多"},
+                    {"marks": "3-4", "description": "有正确思路，但未完成"},
+                    {"marks": "1-2", "description": "有部分正确内容"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "证明逻辑不清",
+                    "坐标系建立不当",
+                    "法向量求错",
+                    "线面角公式用错"
+                ]
+            },
+            "tags": ["立体几何", "面面垂直", "线面角", "空间向量", "解答题"]
+        },
+
+        "2023-GK-SX-8": {
+            "id": "2023-GK-SX-8",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "20",
+            "marks": 12,
+            "type": "解答题",
+            "dotPoints": ["SX-JX-2.1"],
+            "topic": "SX-JX",
+            "difficulty": "较难",
+            "stem": "已知椭圆C：x²/a²+y²/b²=1(a>b>0)的离心率为√3/2，且过点(2,1)。\n（1）求椭圆C的方程；\n（2）设直线l：y=kx+m与椭圆C交于A,B两点，以AB为直径的圆过原点，求m²的值。",
+            "solution": {
+                "steps": [
+                    "（1）离心率e=c/a=√3/2，则c²/a²=3/4，即(a²-b²)/a²=3/4，得a²=4b²",
+                    "代入点(2,1)：4/a²+1/b²=1 ⇒ 4/(4b²)+1/b²=1 ⇒ 1/b²+1/b²=1 ⇒ 2/b²=1 ⇒ b²=2",
+                    "a²=4b²=8",
+                    "椭圆方程：x²/8+y²/2=1",
+                    "（2）联立方程：\n   x²/8+y²/2=1，y=kx+m\n   代入得：x²/8+(kx+m)²/2=1\n   两边乘8：x²+4(kx+m)²=8\n   整理：x²+4(k²x²+2kmx+m²)=8\n   (1+4k²)x²+8kmx+4m²-8=0",
+                    "设A(x1,y1)，B(x2,y2)，则x1+x2=-8km/(1+4k²)，x1x2=(4m²-8)/(1+4k²)",
+                    "以AB为直径的圆过原点，则OA⊥OB，即x1x2+y1y2=0",
+                    "y1y2=(kx1+m)(kx2+m)=k²x1x2+km(x1+x2)+m²",
+                    "代入得：x1x2+k²x1x2+km(x1+x2)+m²=0\n   (1+k²)x1x2+km(x1+x2)+m²=0",
+                    "代入x1+x2和x1x2：\n   (1+k²)[(4m²-8)/(1+4k²)] + km[-8km/(1+4k²)] + m² = 0",
+                    "两边乘(1+4k²)：\n   (1+k²)(4m²-8) - 8k²m² + m²(1+4k²) = 0",
+                    "展开：4m²-8+4k²m²-8k² -8k²m² + m²+4k²m² = 0",
+                    "合并：4m²+m²=5m²，4k²m²+4k²m²-8k²m²=0，-8-8k²=-8(1+k²)",
+                    "得：5m²-8(1+k²)=0 ⇒ m²=8(1+k²)/5"
+                ],
+                "modelResponse": "（1）x²/8+y²/2=1\n（2）m²=8(1+k²)/5",
+                "finalAnswer": "（1）x²/8+y²/2=1 （2）m²=8(1+k²)/5"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "11-12", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "9-10", "description": "思路正确，计算有个别错误"},
+                    {"marks": "7-8", "description": "部分正确，有主要思路"},
+                    {"marks": "5-6", "description": "有正确方法，但计算错误多"},
+                    {"marks": "3-4", "description": "有正确思路，但未完成"},
+                    {"marks": "1-2", "description": "有部分正确内容"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "椭圆方程求错",
+                    "联立方程计算错误",
+                    "韦达定理用错",
+                    "垂直条件转化错误"
+                ]
+            },
+            "tags": ["解析几何", "椭圆", "直线与椭圆", "解答题"]
+        },
+
+        "2023-GK-SX-9": {
+            "id": "2023-GK-SX-9",
+            "source": "全国甲卷",
+            "year": 2023,
+            "paper": "全国甲卷",
+            "section": "三",
+            "questionNumber": "21",
+            "marks": 12,
+            "type": "解答题",
+            "dotPoints": ["SX-HS-2.4"],
+            "topic": "SX-HS",
+            "difficulty": "较难",
+            "stem": "已知函数f(x)=ln(1+x)-x。\n（1）讨论f(x)的单调性；\n（2）证明：当x>0时，ln(1+x)<x；\n（3）证明：对任意n∈N*，有(1+1/2)(1+1/4)...(1+1/2^n)<e。",
+            "solution": {
+                "steps": [
+                    "（1）f(x)定义域：x>-1\n   f'(x)=1/(1+x)-1 = [1-(1+x)]/(1+x) = -x/(1+x)\n   当-1<x<0时，f'(x)>0，f(x)递增\n   当x>0时，f'(x)<0，f(x)递减\n   所以f(x)在(-1,0)递增，在(0,+∞)递减",
+                    "（2）由（1）知，f(x)在x=0处取得极大值，也是最大值\n   f(0)=ln1-0=0\n   所以当x>0时，f(x)<f(0)=0，即ln(1+x)-x<0\n   因此ln(1+x)<x",
+                    "（3）由（2）知，对任意x>0，有ln(1+x)<x\n   取x=1/2^k，得ln(1+1/2^k) < 1/2^k\n   求和：∑_{k=1}^n ln(1+1/2^k) < ∑_{k=1}^n 1/2^k = 1 - 1/2^n < 1\n   所以ln[∏_{k=1}^n (1+1/2^k)] < 1\n   即∏_{k=1}^n (1+1/2^k) < e"
+                ],
+                "modelResponse": "（1）f(x)在(-1,0)递增，在(0,+∞)递减\n（2）见证明过程\n（3）见证明过程",
+                "finalAnswer": "（1）递增区间(-1,0)，递减区间(0,+∞) （2）（3）略"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "11-12", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "9-10", "description": "思路正确，有个别步骤不完整"},
+                    {"marks": "7-8", "description": "部分正确，有主要思路"},
+                    {"marks": "5-6", "description": "有正确方法，但证明不完整"},
+                    {"marks": "3-4", "description": "有正确思路，但未完成"},
+                    {"marks": "1-2", "description": "有部分正确内容"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "导数求错",
+                    "单调性判断错误",
+                    "不等式方向错误",
+                    "放缩不当"
+                ]
+            },
+            "tags": ["导数", "不等式证明", "数列", "解答题"]
+        },
+
+        "practice-SX-lianxi-1": {
+            "id": "practice-SX-lianxi-1",
+            "source": "模拟题",
+            "year": null,
+            "paper": "模拟题",
+            "section": "三",
+            "questionNumber": "模拟1",
+            "marks": 12,
+            "type": "解答题",
+            "dotPoints": ["SX-SL-2.1"],
+            "topic": "SX-SL",
+            "difficulty": "较难",
+            "stem": "已知数列{an}满足a1=1，a_{n+1}=2a_n+1。\n（1）求数列{an}的通项公式；\n（2）求数列{an}的前n项和Sn。",
+            "solution": {
+                "steps": [
+                    "（1）由a_{n+1}=2a_n+1，两边加1得：a_{n+1}+1=2(a_n+1)\n   令b_n=a_n+1，则b_1=a_1+1=2，且b_{n+1}=2b_n\n   所以{b_n}是首项为2，公比为2的等比数列\n   b_n=2·2^(n-1)=2^n\n   因此a_n=b_n-1=2^n-1",
+                    "（2）Sn=∑(2^k-1)=∑2^k - ∑1 = (2+2²+...+2^n) - n\n   前n项和：2+2²+...+2^n = 2(2^n-1)/(2-1)=2^(n+1)-2\n   所以Sn=2^(n+1)-2-n"
+                ],
+                "modelResponse": "（1）a_n=2^n-1\n（2）Sn=2^(n+1)-n-2",
+                "finalAnswer": "（1）2^n-1 （2）2^(n+1)-n-2"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": "11-12", "description": "解答完整正确，步骤清晰"},
+                    {"marks": "9-10", "description": "思路正确，计算有个别错误"},
+                    {"marks": "7-8", "description": "部分正确，有主要思路"},
+                    {"marks": "5-6", "description": "有正确方法，但计算错误多"},
+                    {"marks": "3-4", "description": "有正确思路，但未完成"},
+                    {"marks": "1-2", "description": "有部分正确内容"},
+                    {"marks": 0, "description": "完全错误"}
+                ],
+                "commonErrors": [
+                    "构造新数列时系数错误",
+                    "等比数列求和公式记错",
+                    "计算错误"
+                ]
+            },
+            "tags": ["数列", "递推公式", "通项公式", "求和", "解答题"]
+        }
+    },
+    "meta": {
+        "totalQuestions": 9,
+        "questionTypes": {
+            "选择题": 2,
+            "多选题": 1,
+            "填空题": 1,
+            "解答题": 5
+        },
+        "topicCoverage": {
+            "SX-HS": 3,
+            "SX-SL": 2,
+            "SX-SJ": 1,
+            "SX-JX": 1,
+            "SX-KJ": 1,
+            "SX-TJ": 1
+        },
+        "difficultyCoverage": {
+            "容易": 2,
+            "中等": 3,
+            "较难": 4
+        },
+        "lastUpdated": "2025-03-17"
+    }
+}

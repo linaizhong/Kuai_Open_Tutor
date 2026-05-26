@@ -1,0 +1,36 @@
+﻿{
+  "models": [
+    {
+      "id": "qwen2.5-coder:3b",
+      "name": "Qwen 2.5 Coder 3B",
+      "adapter": "ollama",
+      "description": "Primary development model — fast, locally hosted via Ollama",
+      "contextWindow": 32768,
+      "recommended": true
+    },
+    {
+      "id": "llama3.2:3b",
+      "name": "Llama 3.2 3B",
+      "adapter": "ollama",
+      "description": "Lightweight general-purpose local model",
+      "contextWindow": 131072,
+      "recommended": false
+    },
+    {
+      "id": "deepseek-r1:7b",
+      "name": "DeepSeek R1 7B",
+      "adapter": "ollama",
+      "description": "Stronger reasoning model for complex maths problems — requires more RAM",
+      "contextWindow": 65536,
+      "recommended": false
+    },
+    {
+      "id": "mistral:7b",
+      "name": "Mistral 7B",
+      "adapter": "ollama",
+      "description": "General-purpose local model with good instruction following",
+      "contextWindow": 32768,
+      "recommended": false
+    }
+  ]
+}

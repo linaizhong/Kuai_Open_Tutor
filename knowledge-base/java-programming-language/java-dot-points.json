@@ -1,0 +1,473 @@
+{
+    "subject": "Advanced Java Programming",
+    "syllabusVersion": "Java 21 LTS",
+    "description": "Comprehensive Java learning resource with key concepts, common errors, learning tips, and examples for all topics.",
+    "dotPoints": {
+        "JV-BAS-1.1": {
+            "code": "JV-BAS-1.1",
+            "name": "Java Installation and Environment Setup",
+            "topic": "Java Basics",
+            "subtopic": "Getting Started with Java",
+            "level": "foundation",
+            "summary": "Setting up a Java development environment requires installing the JDK, configuring PATH, and choosing an IDE. Understanding the distinction between JDK, JRE, and JVM is essential.",
+            "keyConcepts": [
+                "JDK (Java Development Kit): Full toolkit including compiler (javac), JRE, and development tools",
+                "JRE (Java Runtime Environment): Minimum needed to run Java programs",
+                "JVM (Java Virtual Machine): Interprets bytecode; provides platform independence",
+                "IntelliJ IDEA: Most popular Java IDE (Community edition free)",
+                "Eclipse: Free, open-source IDE with vast plugin ecosystem",
+                "VS Code: Lightweight editor with Java Extension Pack",
+                "Maven: Dependency management and build automation tool",
+                "Gradle: Flexible build tool using Groovy or Kotlin DSL",
+                "JAVA_HOME: Environment variable pointing to JDK installation directory",
+                "LTS Releases: Long-Term Support versions (Java 8, 11, 17, 21) recommended for production"
+            ],
+            "commonErrors": [
+                "Confusing JDK and JRE — always install JDK for development",
+                "Not setting JAVA_HOME environment variable",
+                "Having multiple JDK versions causing version conflicts",
+                "Forgetting to add JAVA_HOME/bin to PATH",
+                "Using an outdated JDK version incompatible with libraries",
+                "Running javac when Java is installed but JDK is not"
+            ],
+            "learningTips": [
+                "Use SDKMAN! (Linux/Mac) or Chocolatey (Windows) to manage multiple JDK versions",
+                "Verify installation with 'java -version' and 'javac -version'",
+                "Start with IntelliJ IDEA Community — it has the best Java support for free",
+                "Always prefer LTS versions for learning and production",
+                "Use Maven or Gradle from day one — avoid manual classpath management"
+            ],
+            "socraticPrompts": [
+                "Why is Java called 'write once, run anywhere'? What role does the JVM play?",
+                "What's the difference between compilation in Java vs Python?",
+                "Why would you choose Gradle over Maven for a new project?",
+                "What happens if you have Java 11 installed but your project requires Java 17?",
+                "Why should you use LTS versions of Java in production?"
+            ],
+            "codeExample": {
+                "description": "Verifying Java installation and basic compilation",
+                "code": "// Terminal commands — not Java code\n\n// Check versions\njava -version\njavac -version\n\n// Compile a Java file\njavac HelloWorld.java\n\n// Run the compiled class\njava HelloWorld\n\n// Check JAVA_HOME\necho $JAVA_HOME    // macOS/Linux\necho %JAVA_HOME%   // Windows",
+                "output": "java version \"21.0.1\" 2023-10-17 LTS\nJava(TM) SE Runtime Environment (build 21.0.1+12-LTS)\nJava HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS, mixed mode)\njavac 21.0.1"
+            },
+            "relatedDotPoints": ["JV-BAS-1.2", "JV-BAS-1.3", "JV-BP-2.1", "JV-BP-2.2"]
+        },
+
+        "JV-BAS-1.2": {
+            "code": "JV-BAS-1.2",
+            "name": "Your First Java Program",
+            "topic": "Java Basics",
+            "subtopic": "Getting Started with Java",
+            "level": "foundation",
+            "summary": "Every Java program starts with a class definition containing a main method. Understanding the structure of a Java source file — class, method, statement — is the foundation of Java programming.",
+            "keyConcepts": [
+                "Class definition: Java code must be inside a class",
+                "public static void main(String[] args): The entry point of every Java application",
+                "System.out.println(): Prints output and adds a newline",
+                "Statements end with semicolons in Java",
+                "File name must match the public class name (HelloWorld.java → public class HelloWorld)",
+                "Compilation: javac produces .class bytecode files",
+                "Execution: java runs the bytecode on the JVM",
+                "Package declaration: Organises classes into namespaces (optional for simple programs)"
+            ],
+            "commonErrors": [
+                "File name not matching class name (case-sensitive)",
+                "Forgetting semicolons at end of statements",
+                "Misspelling 'public static void main(String[] args)'",
+                "Trying to run .java file directly instead of compiling first",
+                "Missing opening or closing braces {}",
+                "Putting code outside a method (only field declarations allowed at class level)"
+            ],
+            "learningTips": [
+                "Type the program out rather than copying — muscle memory matters",
+                "Read compiler error messages carefully — they tell you the exact line",
+                "Use an IDE to catch syntax errors before compilation",
+                "Understand each word in 'public static void main(String[] args)' — each has meaning",
+                "Practice running from the terminal as well as the IDE"
+            ],
+            "socraticPrompts": [
+                "Why must the file name match the public class name in Java?",
+                "What does 'static' mean in 'public static void main'? Why is main static?",
+                "What's the difference between System.out.print() and System.out.println()?",
+                "What happens to the .class file after you run the program?",
+                "Why does Java require a class even for the simplest program?"
+            ],
+            "codeExample": {
+                "description": "Structure of a complete Java program",
+                "code": "// File: HelloWorld.java\npublic class HelloWorld {\n\n    // Entry point — JVM calls this method first\n    public static void main(String[] args) {\n\n        // Print to console\n        System.out.println(\"Hello, World!\");\n\n        // Print without newline\n        System.out.print(\"Java \");\n        System.out.print(\"is \");\n        System.out.println(\"awesome!\");\n\n        // Formatted output\n        String name = \"Java\";\n        int version = 21;\n        System.out.printf(\"Welcome to %s %d!%n\", name, version);\n    }\n}",
+                "output": "Hello, World!\nJava is awesome!\nWelcome to Java 21!"
+            },
+            "relatedDotPoints": ["JV-BAS-1.1", "JV-BAS-1.3", "JV-BAS-4.1"]
+        },
+
+        "JV-OOP-1.1": {
+            "code": "JV-OOP-1.1",
+            "name": "Class Definition and Object Creation",
+            "topic": "OOP Fundamentals",
+            "subtopic": "Classes and Objects",
+            "level": "foundation",
+            "summary": "Classes are blueprints for objects. An object is an instance of a class, allocated on the heap. Understanding the relationship between a class definition and object creation is fundamental to Java OOP.",
+            "keyConcepts": [
+                "Class: A blueprint defining fields (state) and methods (behaviour)",
+                "Object: A runtime instance of a class, created with 'new'",
+                "Heap: Where objects are stored in memory",
+                "Reference variable: Stores the memory address of an object",
+                "null: Default value for reference variables — means 'no object'",
+                "new keyword: Allocates memory and calls the constructor",
+                "Garbage Collection: JVM automatically reclaims unreferenced objects",
+                "Multiple references: Several variables can refer to the same object"
+            ],
+            "commonErrors": [
+                "NullPointerException: Calling a method on a null reference",
+                "Confusing the class (blueprint) with the object (instance)",
+                "Forgetting 'new' when creating an object",
+                "Expecting '==' to compare object content — it compares references",
+                "Not understanding that assignments copy references, not objects"
+            ],
+            "learningTips": [
+                "Draw memory diagrams showing heap objects and stack references",
+                "Always check for null before dereferencing a reference",
+                "Use equals() to compare object content, == for primitives and references identity",
+                "Think of a class as a cookie cutter and objects as the cookies"
+            ],
+            "socraticPrompts": [
+                "What happens in memory when you write 'Dog d1 = new Dog()'?",
+                "If Dog d2 = d1, and you call d2.setName('Rex'), what is d1.getName()?",
+                "Why does Java use garbage collection instead of manual memory management?",
+                "What is the difference between a class variable and an instance variable?",
+                "When would you get a NullPointerException and how do you prevent it?"
+            ],
+            "codeExample": {
+                "description": "Defining a class and creating objects",
+                "code": "public class Dog {\n    // Instance fields\n    String name;\n    int age;\n    String breed;\n\n    // Constructor\n    public Dog(String name, int age, String breed) {\n        this.name = name;\n        this.age = age;\n        this.breed = breed;\n    }\n\n    // Instance method\n    public void bark() {\n        System.out.println(name + \" says: Woof!\");\n    }\n\n    public String toString() {\n        return name + \" (\" + breed + \", age \" + age + \")\";\n    }\n\n    public static void main(String[] args) {\n        // Create objects using 'new'\n        Dog d1 = new Dog(\"Buddy\", 3, \"Labrador\");\n        Dog d2 = new Dog(\"Max\", 5, \"Poodle\");\n\n        d1.bark();\n        d2.bark();\n\n        System.out.println(d1);  // calls toString()\n\n        // d1 and d3 reference the SAME object\n        Dog d3 = d1;\n        d3.name = \"Rocky\";\n        System.out.println(d1.name); // Rocky — same object!\n\n        // Null reference\n        Dog d4 = null;\n        // d4.bark(); // NullPointerException!\n    }\n}",
+                "output": "Buddy says: Woof!\nMax says: Woof!\nBuddy (Labrador, age 3)\nRocky"
+            },
+            "relatedDotPoints": ["JV-OOP-1.2", "JV-OOP-1.3", "JV-OOP-1.4", "JV-OOP-1.6"]
+        },
+
+        "JV-OOP-2.3": {
+            "code": "JV-OOP-2.3",
+            "name": "Interfaces",
+            "topic": "OOP Fundamentals",
+            "subtopic": "Inheritance",
+            "level": "intermediate",
+            "summary": "Interfaces define contracts — a set of methods that implementing classes must provide. Since Java 8, interfaces can have default and static methods. Interfaces enable multiple inheritance of type in Java.",
+            "keyConcepts": [
+                "interface: Declares abstract methods (implicitly public abstract)",
+                "implements: A class signs a contract to implement an interface",
+                "Multiple interfaces: A class can implement many interfaces (unlike extends)",
+                "default method (Java 8+): Provides a default implementation in the interface",
+                "static method (Java 8+): Utility method belonging to the interface itself",
+                "private method (Java 9+): Helper method inside the interface",
+                "Functional interface: Interface with exactly one abstract method (used with lambdas)",
+                "@FunctionalInterface: Annotation to enforce functional interface contract",
+                "Marker interface: Interface with no methods (e.g., Serializable, Cloneable)"
+            ],
+            "commonErrors": [
+                "Forgetting to implement all abstract methods of an interface",
+                "Trying to instantiate an interface directly",
+                "Confusing abstract class with interface — use interface for pure contracts",
+                "Assuming interface fields are mutable — they are public static final",
+                "Not understanding diamond problem resolution with default methods"
+            ],
+            "learningTips": [
+                "Prefer interfaces over abstract classes when no shared state is needed",
+                "Use functional interfaces with lambdas for cleaner code",
+                "Program to the interface, not the implementation (List not ArrayList)",
+                "Use default methods carefully — they can break existing implementations"
+            ],
+            "socraticPrompts": [
+                "Why can a class implement multiple interfaces but only extend one class?",
+                "When would you use an abstract class instead of an interface?",
+                "What problem do default methods solve that didn't exist before Java 8?",
+                "Why is Comparator a functional interface? How does that relate to lambdas?",
+                "What is the diamond problem and how does Java resolve it with default methods?"
+            ],
+            "codeExample": {
+                "description": "Defining and implementing interfaces with default methods",
+                "code": "// Interface with abstract and default methods\npublic interface Shape {\n    // Abstract method — must implement\n    double area();\n    double perimeter();\n\n    // Default method — optional to override\n    default String describe() {\n        return String.format(\"Shape: area=%.2f, perimeter=%.2f\", area(), perimeter());\n    }\n\n    // Static utility method\n    static boolean isLarger(Shape a, Shape b) {\n        return a.area() > b.area();\n    }\n}\n\n// Implementing the interface\npublic class Circle implements Shape {\n    private final double radius;\n\n    public Circle(double radius) {\n        this.radius = radius;\n    }\n\n    @Override\n    public double area() {\n        return Math.PI * radius * radius;\n    }\n\n    @Override\n    public double perimeter() {\n        return 2 * Math.PI * radius;\n    }\n}\n\n// Main usage\nShape c = new Circle(5.0);\nShape r = new Rectangle(4.0, 6.0);\n\nSystem.out.println(c.describe());\nSystem.out.println(Shape.isLarger(c, r)); // static method on interface",
+                "output": "Shape: area=78.54, perimeter=31.42\ntrue"
+            },
+            "relatedDotPoints": ["JV-OOP-2.1", "JV-OOP-2.2", "JV-OOP-2.4", "JV-STR-1.1"]
+        },
+
+        "JV-COL-1.2": {
+            "code": "JV-COL-1.2",
+            "name": "List Implementations",
+            "topic": "Collections Framework",
+            "subtopic": "Core Collection Interfaces",
+            "level": "intermediate",
+            "summary": "ArrayList and LinkedList are the two most common List implementations. ArrayList provides O(1) random access backed by an array; LinkedList provides O(1) head/tail operations backed by a doubly-linked list.",
+            "keyConcepts": [
+                "ArrayList: Backed by a resizable array; O(1) get/set, O(n) insert/delete in middle",
+                "LinkedList: Doubly-linked list; O(1) add/remove at head/tail, O(n) random access",
+                "List<E> interface: Ordered, allows duplicates, index-based access",
+                "add(), remove(), get(), set(), size(), contains(), indexOf()",
+                "Autoboxing: Primitives auto-converted to wrapper types (int → Integer)",
+                "List.of() (Java 9+): Creates an immutable list",
+                "ArrayList capacity: Grows by 50% when full — consider initial capacity for performance",
+                "Iteration: for-each, iterator, or ListIterator (supports bidirectional traversal)"
+            ],
+            "commonErrors": [
+                "Using ArrayList for frequent insertions/deletions in the middle (use LinkedList)",
+                "Removing elements by index vs by object: remove(0) vs remove(Integer.valueOf(0))",
+                "ConcurrentModificationException: Modifying a list while iterating with for-each",
+                "Using == instead of equals() to check if list contains an object",
+                "Not declaring as List<E> — coding to ArrayList<E> prevents easy switching"
+            ],
+            "learningTips": [
+                "Default to ArrayList — it outperforms LinkedList in most real-world scenarios",
+                "Use iterator.remove() if you need to remove while iterating",
+                "Declare as List<E> (interface type) to keep code flexible",
+                "Use Collections.unmodifiableList() or List.of() for read-only lists",
+                "Pre-size ArrayList if you know the approximate number of elements"
+            ],
+            "socraticPrompts": [
+                "When would you choose LinkedList over ArrayList?",
+                "Why does removing by index work differently from removing by object value?",
+                "What is autoboxing? What are its performance implications?",
+                "How would you safely remove all even numbers from an ArrayList while iterating?",
+                "What is the time complexity of ArrayList.contains() and why?"
+            ],
+            "codeExample": {
+                "description": "ArrayList and LinkedList usage with common operations",
+                "code": "import java.util.*;\n\npublic class ListDemo {\n    public static void main(String[] args) {\n        // ArrayList — best for most use cases\n        List<String> fruits = new ArrayList<>();\n        fruits.add(\"Apple\");\n        fruits.add(\"Banana\");\n        fruits.add(\"Cherry\");\n        fruits.add(0, \"Avocado\"); // insert at index 0\n\n        System.out.println(fruits);          // [Avocado, Apple, Banana, Cherry]\n        System.out.println(fruits.get(2));   // Banana\n        System.out.println(fruits.size());   // 4\n\n        // Iterate safely while removing\n        Iterator<String> it = fruits.iterator();\n        while (it.hasNext()) {\n            if (it.next().startsWith(\"A\")) {\n                it.remove(); // safe removal during iteration\n            }\n        }\n        System.out.println(fruits); // [Banana, Cherry]\n\n        // Immutable list (Java 9+)\n        List<Integer> nums = List.of(1, 2, 3, 4, 5);\n        System.out.println(nums);\n        // nums.add(6); // UnsupportedOperationException!\n\n        // LinkedList as a Deque\n        Deque<String> deque = new LinkedList<>();\n        deque.addFirst(\"First\");\n        deque.addLast(\"Last\");\n        System.out.println(deque.peekFirst()); // First\n    }\n}",
+                "output": "[Avocado, Apple, Banana, Cherry]\nBanana\n4\n[Banana, Cherry]\n[1, 2, 3, 4, 5]\nFirst"
+            },
+            "relatedDotPoints": ["JV-COL-1.1", "JV-COL-1.3", "JV-COL-1.4", "JV-GEN-1.1"]
+        },
+
+        "JV-STR-2.2": {
+            "code": "JV-STR-2.2",
+            "name": "Intermediate Stream Operations",
+            "topic": "Streams and Functional Programming",
+            "subtopic": "Stream API",
+            "level": "intermediate",
+            "summary": "Intermediate operations transform a stream into another stream. They are lazy — they are not executed until a terminal operation is invoked. Chaining intermediate operations builds a pipeline.",
+            "keyConcepts": [
+                "filter(Predicate): Retains elements matching the predicate",
+                "map(Function): Transforms each element to another type",
+                "flatMap(Function): Maps each element to a stream, then flattens into one stream",
+                "distinct(): Removes duplicate elements using equals()",
+                "sorted(): Natural ordering or Comparator-based sorting",
+                "peek(Consumer): Inspects elements without consuming them (debugging)",
+                "limit(n): Truncates stream to at most n elements",
+                "skip(n): Discards first n elements",
+                "mapToInt/Long/Double: Produces primitive specialised streams for efficiency"
+            ],
+            "commonErrors": [
+                "Reusing a stream — streams can only be consumed once",
+                "Expecting filter() to modify the original collection — streams are non-mutating",
+                "Forgetting that intermediate ops are lazy — no work happens without a terminal op",
+                "Using peek() in production code — it's for debugging only",
+                "Confusing map() (1-to-1) with flatMap() (1-to-many flattened)"
+            ],
+            "learningTips": [
+                "Think of a stream pipeline as an assembly line — each station transforms elements",
+                "Use peek() liberally during development to debug pipeline behaviour",
+                "Prefer method references (String::toUpperCase) over lambdas when possible",
+                "Order matters for performance: filter early to reduce elements for later ops",
+                "Use primitive streams (IntStream) for numeric ops to avoid boxing overhead"
+            ],
+            "socraticPrompts": [
+                "Why are stream operations lazy? What performance benefit does this give?",
+                "What's the difference between map() and flatMap()? Give a concrete example.",
+                "Why can't you reuse a stream after a terminal operation?",
+                "How would you debug a complex stream pipeline?",
+                "When would sorted() after filter() be more efficient than the reverse?"
+            ],
+            "codeExample": {
+                "description": "Chaining intermediate stream operations",
+                "code": "import java.util.*;\nimport java.util.stream.*;\n\npublic class StreamDemo {\n    public static void main(String[] args) {\n        List<String> names = List.of(\n            \"Alice\", \"Bob\", \"Charlie\", \"Anna\", \"Brian\", \"alice\"\n        );\n\n        // filter + map + distinct + sorted + collect\n        List<String> result = names.stream()\n            .filter(n -> n.length() > 3)          // keep names > 3 chars\n            .map(String::toLowerCase)              // to lowercase\n            .distinct()                            // remove duplicates\n            .sorted()                              // alphabetical\n            .collect(Collectors.toList());\n\n        System.out.println(result);\n\n        // flatMap example\n        List<List<Integer>> nested = List.of(\n            List.of(1, 2, 3),\n            List.of(4, 5),\n            List.of(6, 7, 8, 9)\n        );\n\n        List<Integer> flat = nested.stream()\n            .flatMap(Collection::stream)    // flatten nested lists\n            .filter(n -> n % 2 == 0)       // keep even numbers\n            .collect(Collectors.toList());\n\n        System.out.println(flat);\n\n        // Numeric stream\n        int sumOfSquares = IntStream.rangeClosed(1, 5)\n            .map(n -> n * n)\n            .sum();\n        System.out.println(\"Sum of squares 1-5: \" + sumOfSquares);\n    }\n}",
+                "output": "[alice, brian, charlie]\n[2, 4, 6, 8]\nSum of squares 1-5: 55"
+            },
+            "relatedDotPoints": ["JV-STR-1.1", "JV-STR-2.1", "JV-STR-2.3", "JV-STR-2.4"]
+        },
+
+        "JV-CON-2.1": {
+            "code": "JV-CON-2.1",
+            "name": "Executor Framework",
+            "topic": "Concurrency and Multithreading",
+            "subtopic": "java.util.concurrent Package",
+            "level": "advanced",
+            "summary": "The Executor framework decouples task submission from task execution. ExecutorService manages a pool of threads, reusing them to avoid the overhead of creating new threads per task.",
+            "keyConcepts": [
+                "ExecutorService: Interface for managing and controlling thread execution",
+                "Executors factory: Creates common pool types (Fixed, Cached, Single, Scheduled)",
+                "newFixedThreadPool(n): Pool with n threads — best for CPU-bound tasks",
+                "newCachedThreadPool(): Grows as needed — best for short-lived I/O tasks",
+                "newSingleThreadExecutor(): Guarantees sequential task execution",
+                "submit(): Submits Runnable or Callable, returns Future",
+                "shutdown(): Initiates orderly shutdown — no new tasks accepted",
+                "shutdownNow(): Attempts to stop all running tasks",
+                "awaitTermination(): Waits for completion up to a timeout",
+                "Future.get(): Blocks until result available; throws ExecutionException on failure"
+            ],
+            "commonErrors": [
+                "Forgetting to shutdown the ExecutorService — causes the JVM to hang",
+                "Calling Future.get() on the submission thread — blocks calling thread",
+                "Using newCachedThreadPool() for CPU-bound tasks — creates too many threads",
+                "Not handling ExecutionException from Future.get()",
+                "Submitting tasks after shutdown — causes RejectedExecutionException"
+            ],
+            "learningTips": [
+                "Always shut down ExecutorService — use try-finally or try-with-resources pattern",
+                "Use CompletableFuture for non-blocking async composition (Java 8+)",
+                "Rule of thumb: FixedThreadPool(Runtime.getRuntime().availableProcessors()) for CPU tasks",
+                "Use ScheduledExecutorService for recurring tasks instead of Timer",
+                "Prefer Callable over Runnable when you need a return value or exception propagation"
+            ],
+            "socraticPrompts": [
+                "Why is creating a new Thread for every task inefficient?",
+                "What happens if all threads in a FixedThreadPool are busy and you submit another task?",
+                "Why do you need to call shutdown() on an ExecutorService?",
+                "What is the difference between submit() and execute()?",
+                "When would you prefer a single-thread executor over a fixed thread pool?"
+            ],
+            "codeExample": {
+                "description": "Using ExecutorService with Callable and Future",
+                "code": "import java.util.concurrent.*;\nimport java.util.*;\n\npublic class ExecutorDemo {\n    public static void main(String[] args) throws Exception {\n\n        // Fixed thread pool with 3 threads\n        ExecutorService pool = Executors.newFixedThreadPool(3);\n\n        try {\n            // Submit Callable tasks that return results\n            List<Future<Integer>> futures = new ArrayList<>();\n\n            for (int i = 1; i <= 5; i++) {\n                final int taskId = i;\n                Future<Integer> future = pool.submit(() -> {\n                    System.out.println(\"Task \" + taskId + \" on \" +\n                        Thread.currentThread().getName());\n                    Thread.sleep(100); // simulate work\n                    return taskId * taskId; // return result\n                });\n                futures.add(future);\n            }\n\n            // Collect results\n            for (Future<Integer> f : futures) {\n                System.out.println(\"Result: \" + f.get()); // blocks until done\n            }\n\n        } finally {\n            pool.shutdown();\n            pool.awaitTermination(5, TimeUnit.SECONDS);\n        }\n    }\n}",
+                "output": "Task 1 on pool-1-thread-1\nTask 2 on pool-1-thread-2\nTask 3 on pool-1-thread-3\nTask 4 on pool-1-thread-1\nTask 5 on pool-1-thread-2\nResult: 1\nResult: 4\nResult: 9\nResult: 16\nResult: 25"
+            },
+            "relatedDotPoints": ["JV-CON-1.1", "JV-CON-1.3", "JV-CON-2.2", "JV-CON-2.3"]
+        },
+
+        "JV-DSG-1.1": {
+            "code": "JV-DSG-1.1",
+            "name": "Singleton Pattern",
+            "topic": "Design Patterns",
+            "subtopic": "Creational Patterns",
+            "level": "intermediate",
+            "summary": "The Singleton pattern ensures a class has only one instance and provides a global point of access. It's one of the most well-known but also most misused patterns — prefer dependency injection when possible.",
+            "keyConcepts": [
+                "Private constructor: Prevents direct instantiation",
+                "Static instance: Holds the single instance",
+                "Lazy initialisation: Create instance only when first needed",
+                "Eager initialisation: Create instance when class loads",
+                "Double-checked locking: Thread-safe lazy init with minimal synchronisation",
+                "volatile keyword: Prevents instruction reordering with double-checked locking",
+                "Enum Singleton: Simplest thread-safe singleton, handles serialisation",
+                "Bill Pugh Singleton: Uses static inner class for lazy thread-safe init"
+            ],
+            "commonErrors": [
+                "Non-thread-safe singleton — two threads creating two instances",
+                "Using synchronised getInstance() — every call pays synchronisation cost",
+                "Forgetting volatile with double-checked locking — can cause subtle bugs",
+                "Overusing Singleton — makes code hard to test (can't inject mock)",
+                "Singleton broken by reflection or serialisation"
+            ],
+            "learningTips": [
+                "Prefer Enum Singleton — it's concise, thread-safe, and serialisation-safe",
+                "Consider dependency injection (Spring @Bean) instead of Singleton pattern",
+                "Use for truly shared resources: configuration, logging, connection pools",
+                "Never use Singleton for mutable shared state — leads to hidden coupling"
+            ],
+            "socraticPrompts": [
+                "Why is a non-thread-safe Singleton dangerous in a multi-threaded app?",
+                "What problems does the volatile keyword solve in double-checked locking?",
+                "How does the enum Singleton handle serialisation automatically?",
+                "Why is Singleton considered an anti-pattern by some developers?",
+                "How would you test code that depends on a Singleton?"
+            ],
+            "codeExample": {
+                "description": "Three correct Singleton implementations",
+                "code": "// 1. Enum Singleton (recommended — simplest, thread-safe, serialisation-safe)\npublic enum DatabaseConfig {\n    INSTANCE;\n\n    private String url = \"jdbc:postgresql://localhost:5432/mydb\";\n\n    public String getUrl() { return url; }\n    public void setUrl(String url) { this.url = url; }\n}\n\n// Usage: DatabaseConfig.INSTANCE.getUrl()\n\n// 2. Bill Pugh Singleton (lazy, thread-safe, no synchronised overhead)\npublic class AppLogger {\n    private AppLogger() {}\n\n    private static class Holder {\n        private static final AppLogger INSTANCE = new AppLogger();\n    }\n\n    public static AppLogger getInstance() {\n        return Holder.INSTANCE;\n    }\n\n    public void log(String message) {\n        System.out.println(\"[LOG] \" + message);\n    }\n}\n\n// 3. Double-checked locking (for reference)\npublic class Cache {\n    private static volatile Cache instance;\n\n    private Cache() {}\n\n    public static Cache getInstance() {\n        if (instance == null) {                    // first check (no lock)\n            synchronized (Cache.class) {\n                if (instance == null) {            // second check (with lock)\n                    instance = new Cache();\n                }\n            }\n        }\n        return instance;\n    }\n}",
+                "output": "// No direct output — demonstrates class structure\n// Usage:\nAppLogger.getInstance().log(\"Application started\");\n// [LOG] Application started"
+            },
+            "relatedDotPoints": ["JV-DSG-1.2", "JV-DSG-1.3", "JV-OOP-1.5", "JV-CON-1.3"]
+        },
+
+        "JV-EXC-2.1": {
+            "code": "JV-EXC-2.1",
+            "name": "try-catch-finally",
+            "topic": "Exception Handling",
+            "subtopic": "Exception Handling Constructs",
+            "level": "intermediate",
+            "summary": "Java uses try-catch-finally to handle exceptions gracefully. The try block contains risky code, catch blocks handle specific exceptions, and finally always executes for cleanup — even if an exception occurs.",
+            "keyConcepts": [
+                "try block: Encloses code that may throw an exception",
+                "catch block: Handles a specific exception type",
+                "Multiple catch: Order matters — catch subclasses before superclasses",
+                "finally block: Always executes (even with return statements), used for cleanup",
+                "Exception class hierarchy: Throwable → Exception → Specific exceptions",
+                "getMessage(): Returns the exception detail message",
+                "printStackTrace(): Prints the full stack trace (use loggers in production)",
+                "Multi-catch (Java 7+): catch (IOException | SQLException e) combines catches"
+            ],
+            "commonErrors": [
+                "Catching Exception or Throwable too broadly — hides bugs",
+                "Empty catch blocks — silently swallowing exceptions",
+                "Wrong catch order: Catching parent before child causes compile error",
+                "Relying on finally for return values — behaviour is surprising",
+                "Using exception handling for normal control flow — is expensive"
+            ],
+            "learningTips": [
+                "Always log the exception in the catch block — never leave it empty",
+                "Catch the most specific exception type possible",
+                "Use finally for closing resources, or better: use try-with-resources",
+                "In production: use SLF4J logger.error() instead of printStackTrace()",
+                "Re-throw if you can't meaningfully handle the exception at this level"
+            ],
+            "socraticPrompts": [
+                "What happens if an exception is thrown inside a finally block?",
+                "Why does catching Exception broadly hide bugs?",
+                "If a try block has a return statement and finally also has return, which return wins?",
+                "When should you re-throw an exception instead of handling it?",
+                "What's the difference between checked and unchecked exceptions?"
+            ],
+            "codeExample": {
+                "description": "try-catch-finally with multiple catch blocks",
+                "code": "import java.io.*;\n\npublic class ExceptionDemo {\n\n    public static int divide(int a, int b) {\n        try {\n            return a / b;\n        } catch (ArithmeticException e) {\n            System.err.println(\"Cannot divide by zero: \" + e.getMessage());\n            return -1;\n        } finally {\n            System.out.println(\"divide() finally block executed\");\n        }\n    }\n\n    public static void readFile(String filename) {\n        FileReader reader = null;\n        try {\n            reader = new FileReader(filename);\n            // ... read file ...\n        } catch (FileNotFoundException e) {\n            System.err.println(\"File not found: \" + filename);\n        } catch (IOException e) {\n            System.err.println(\"I/O error: \" + e.getMessage());\n        } finally {\n            // Always close, even if exception occurred\n            if (reader != null) {\n                try { reader.close(); }\n                catch (IOException e) { /* ignore close error */ }\n            }\n        }\n    }\n\n    // Multi-catch (Java 7+)\n    public static void process(String input) {\n        try {\n            int value = Integer.parseInt(input);\n            int[] arr = new int[value];\n            arr[0] = 10;\n        } catch (NumberFormatException | NegativeArraySizeException e) {\n            System.err.println(\"Invalid input: \" + e.getMessage());\n        }\n    }\n\n    public static void main(String[] args) {\n        System.out.println(divide(10, 2));\n        System.out.println(divide(10, 0));\n    }\n}",
+                "output": "divide() finally block executed\n5\nCannot divide by zero: / by zero\ndivide() finally block executed\n-1"
+            },
+            "relatedDotPoints": ["JV-EXC-1.1", "JV-EXC-2.2", "JV-EXC-2.3", "JV-EXC-2.4"]
+        },
+
+        "JV-TST-1.1": {
+            "code": "JV-TST-1.1",
+            "name": "JUnit 5 Basics",
+            "topic": "Testing",
+            "subtopic": "JUnit 5",
+            "level": "intermediate",
+            "summary": "JUnit 5 is the standard Java testing framework. Tests are annotated methods in test classes. Assertions verify expected behaviour. Lifecycle annotations manage setup and teardown.",
+            "keyConcepts": [
+                "@Test: Marks a method as a test case",
+                "@BeforeEach: Runs before each test method — setup per test",
+                "@AfterEach: Runs after each test method — cleanup per test",
+                "@BeforeAll: Runs once before all tests in the class (must be static)",
+                "@AfterAll: Runs once after all tests in the class (must be static)",
+                "Assertions.assertEquals(expected, actual): Verifies equality",
+                "Assertions.assertThrows(ExceptionType.class, executable): Verifies exception thrown",
+                "Assertions.assertAll(): Groups multiple assertions — all run even if some fail",
+                "@DisplayName: Human-readable test name",
+                "@Disabled: Skips a test — equivalent to @Ignore in JUnit 4"
+            ],
+            "commonErrors": [
+                "Confusing expected and actual parameters in assertEquals (expected first!)",
+                "Writing @BeforeAll or @AfterAll on non-static methods",
+                "Testing implementation details rather than behaviour",
+                "Tests depending on order of execution — each test must be independent",
+                "Not asserting anything — a test that never fails is useless"
+            ],
+            "learningTips": [
+                "Follow AAA (Arrange-Act-Assert) structure within each test method",
+                "Test one behaviour per test method — keep tests focused",
+                "Use @DisplayName with descriptive names: 'should return empty list when user has no orders'",
+                "Never test private methods directly — test through public API",
+                "Aim for tests that document behaviour, not just code coverage"
+            ],
+            "socraticPrompts": [
+                "Why should each test be independent? What problems arise if they share state?",
+                "What is the difference between @BeforeEach and @BeforeAll?",
+                "Why put the expected value first in assertEquals(expected, actual)?",
+                "What does assertAll() give you that multiple separate asserts don't?",
+                "When would you use assertThrows instead of try-catch in a test?"
+            ],
+            "codeExample": {
+                "description": "Complete JUnit 5 test class with lifecycle annotations",
+                "code": "import org.junit.jupiter.api.*;\nimport static org.junit.jupiter.api.Assertions.*;\n\n@DisplayName(\"Calculator Tests\")\nclass CalculatorTest {\n\n    private Calculator calc;\n\n    @BeforeAll\n    static void initAll() {\n        System.out.println(\"Starting Calculator test suite\");\n    }\n\n    @BeforeEach\n    void setUp() {\n        calc = new Calculator(); // fresh instance for each test\n    }\n\n    @Test\n    @DisplayName(\"should add two positive numbers correctly\")\n    void testAddition() {\n        // Arrange — setUp() already created calc\n        // Act\n        int result = calc.add(3, 5);\n        // Assert\n        assertEquals(8, result);\n    }\n\n    @Test\n    @DisplayName(\"should throw ArithmeticException when dividing by zero\")\n    void testDivisionByZero() {\n        ArithmeticException ex = assertThrows(\n            ArithmeticException.class,\n            () -> calc.divide(10, 0)\n        );\n        assertEquals(\"/ by zero\", ex.getMessage());\n    }\n\n    @Test\n    @DisplayName(\"should validate multiple operations together\")\n    void testMultipleAssertions() {\n        assertAll(\"calculator operations\",\n            () -> assertEquals(5,  calc.add(2, 3)),\n            () -> assertEquals(10, calc.multiply(2, 5)),\n            () -> assertEquals(4,  calc.subtract(9, 5))\n        );\n    }\n\n    @Test\n    @Disabled(\"Feature not yet implemented\")\n    void testSquareRoot() {\n        // Will be skipped\n    }\n\n    @AfterEach\n    void tearDown() {\n        calc = null;\n    }\n\n    @AfterAll\n    static void tearDownAll() {\n        System.out.println(\"Calculator test suite complete\");\n    }\n}",
+                "output": "Starting Calculator test suite\ntestAddition — PASSED\ntestDivisionByZero — PASSED\ntestMultipleAssertions — PASSED\ntestSquareRoot — SKIPPED\nCalculator test suite complete"
+            },
+            "relatedDotPoints": ["JV-TST-1.2", "JV-TST-2.1", "JV-TST-3.1"]
+        }
+    }
+}

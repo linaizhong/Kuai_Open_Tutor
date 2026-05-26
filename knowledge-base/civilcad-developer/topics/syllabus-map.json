@@ -1,0 +1,339 @@
+{
+    "subject": "CivilCAD Developer",
+    "subjectId": "civilcad-developer",
+    "syllabusVersion": "1.0",
+    "appliesTo": "Professional developers building CivilCAD civil engineering software",
+    "topics": [
+        {
+            "code": "CD-SM",
+            "name": "Surface Modeling & Terrain Analysis",
+            "year": "professional",
+            "examWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "CD-SM1",
+                    "name": "TIN Surface Construction",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-SM1.1", "name": "Delaunay Triangulation for Terrain Modeling", "keywords": ["delaunay", "triangulation", "TIN", "circumcircle", "incremental insertion", "edge flip", "half-edge", "terrain surface", "survey points"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-SM1.2", "name": "Breakline Enforcement in TIN Surfaces", "keywords": ["breakline", "constrained delaunay", "CDT", "hard breakline", "soft breakline", "feature line", "steiner point", "edge constraint"], "difficulty": "advanced", "prerequisites": ["CD-SM1.1"] },
+                        { "code": "CD-SM1.3", "name": "LiDAR Point Cloud Processing for DTM Generation", "keywords": ["lidar", "point cloud", "DTM", "ground classification", "PTD", "progressive TIN densification", "axelsson", "LAS", "LAZ", "bare earth"], "difficulty": "advanced", "prerequisites": ["CD-SM1.1"] },
+                        { "code": "CD-SM1.4", "name": "Surface Editing Operations for Civil Design", "keywords": ["surface editing", "add points", "delete points", "swap edge", "raise lower", "paste surface", "surface boundaries", "exclusion boundary"], "difficulty": "intermediate", "prerequisites": ["CD-SM1.1"] },
+                        { "code": "CD-SM1.5", "name": "Surface Simplification Algorithms", "keywords": ["surface simplification", "decimation", "VW algorithm", "Visvalingam-Whyatt", "Douglas-Peucker", "LOD", "level of detail", "point reduction"], "difficulty": "intermediate", "prerequisites": ["CD-SM1.1"] }
+                    ]
+                },
+                {
+                    "code": "CD-SM2",
+                    "name": "Contour Generation",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-SM2.1", "name": "Contour Tracing Algorithms for TIN Surfaces", "keywords": ["contour", "isoline", "marching triangles", "linear interpolation", "contour interval", "index contour", "contour tracing"], "difficulty": "intermediate", "prerequisites": ["CD-SM1.1"] },
+                        { "code": "CD-SM2.2", "name": "Contour Smoothing for Cartographic Quality", "keywords": ["contour smoothing", "bezier", "spline", "PAEK", "polynomial approximation", "cartographic quality", "smoothing algorithm"], "difficulty": "intermediate", "prerequisites": ["CD-SM2.1"] },
+                        { "code": "CD-SM2.3", "name": "Contour Label Placement Algorithms", "keywords": ["contour label", "label placement", "annotation", "uphill direction", "curved text", "label spacing", "contour annotation"], "difficulty": "intermediate", "prerequisites": ["CD-SM2.1"] },
+                        { "code": "CD-SM2.4", "name": "Adaptive Contouring Based on Terrain Complexity", "keywords": ["adaptive contour", "variable interval", "terrain complexity", "curvature analysis", "adaptive sampling"], "difficulty": "advanced", "prerequisites": ["CD-SM2.1"] }
+                    ]
+                },
+                {
+                    "code": "CD-SM3",
+                    "name": "Volume Calculations",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-SM3.1", "name": "Composite Volume Method for Earthwork Calculations", "keywords": ["composite volume", "end area", "prismatoid", "earthwork", "cut fill", "average end area", "prismoidal correction"], "difficulty": "intermediate", "prerequisites": ["CD-SM1.1"] },
+                        { "code": "CD-SM3.2", "name": "Grid-Based Volume Calculations", "keywords": ["grid volume", "borrow pit", "grid method", "elevation difference", "cell volume", "aggregate volume"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-SM3.3", "name": "Shrinkage and Swell Factors in Earthwork", "keywords": ["shrinkage", "swell factor", "compaction", "load factor", "bank measure", "loose measure", "compacted measure"], "difficulty": "foundation", "prerequisites": [] },
+                        { "code": "CD-SM3.4", "name": "Mass Haul Diagrams and Economic Optimization", "keywords": ["mass haul", "haul diagram", "free haul", "overhaul", "waste", "borrow", "economic haul", "cumulative volume"], "difficulty": "advanced", "prerequisites": ["CD-SM3.1"] },
+                        { "code": "CD-SM3.5", "name": "3D Solid Volume Calculations for Complex Excavations", "keywords": ["3D solid", "boolean operations", "solid volume", "complex excavation", "foundation volume", "grading volume"], "difficulty": "advanced", "prerequisites": ["CD-SM3.1"] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-HY",
+            "name": "Pipe Networks and Hydraulic Design",
+            "year": "professional",
+            "examWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "CD-HY1",
+                    "name": "Gravity Pipe Networks",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-HY1.1", "name": "Gravity Pipe Network Data Structures", "keywords": ["gravity pipe", "storm sewer", "sanitary sewer", "manhole", "catch basin", "pipe network", "node", "structure", "invert elevation"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-HY1.2", "name": "Manning's Equation and Pipe Sizing", "keywords": ["manning", "manning's equation", "n value", "hydraulic radius", "pipe sizing", "flow velocity", "full flow", "partial flow"], "difficulty": "intermediate", "prerequisites": ["CD-HY1.1"] },
+                        { "code": "CD-HY1.3", "name": "Hydraulic Grade Line (HGL) Analysis", "keywords": ["HGL", "hydraulic grade line", "EGL", "energy grade line", "pressure", "headloss", "surcharge", "backwater"], "difficulty": "advanced", "prerequisites": ["CD-HY1.2"] },
+                        { "code": "CD-HY1.4", "name": "Inlet Design and Capture Capacity", "keywords": ["inlet", "gutter", "capture efficiency", "grate inlet", "curb inlet", "carryover", "spread", "inlet capacity"], "difficulty": "advanced", "prerequisites": ["CD-HY1.2"] },
+                        { "code": "CD-HY1.5", "name": "Storm Sewer Sizing and Optimization", "keywords": ["storm sewer", "pipe sizing", "rational method", "peak flow", "sewer design", "downstream control", "minimum velocity", "self-cleaning"], "difficulty": "advanced", "prerequisites": ["CD-HY1.2", "CD-HY1.3"] }
+                    ]
+                },
+                {
+                    "code": "CD-HY2",
+                    "name": "Pressure Networks and Hydrology",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-HY2.1", "name": "Pressure Network Analysis (Water Distribution)", "keywords": ["pressure network", "water distribution", "Hardy-Cross", "Newton-Raphson", "node pressure", "pipe flow", "network analysis"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-HY2.2", "name": "Darcy-Weisbach and Hazen-Williams Equations", "keywords": ["Darcy-Weisbach", "Hazen-Williams", "friction loss", "head loss", "C factor", "roughness", "Reynolds number", "Moody diagram"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-HY2.3", "name": "Water Hammer and Surge Analysis", "keywords": ["water hammer", "surge", "transient", "wave speed", "pressure surge", "valve closure", "surge protection"], "difficulty": "advanced", "prerequisites": ["CD-HY2.1"] },
+                        { "code": "CD-HY2.4", "name": "Watershed Delineation from Digital Elevation Models", "keywords": ["watershed", "catchment", "delineation", "DEM", "flow direction", "flow accumulation", "pour point", "D8 algorithm"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-HY2.5", "name": "Rational Method for Peak Flow Estimation", "keywords": ["rational method", "Q = CiA", "runoff coefficient", "rainfall intensity", "IDF curve", "peak flow", "time of concentration"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-HY2.6", "name": "SCS Curve Number Method for Runoff Estimation", "keywords": ["SCS", "curve number", "CN", "NRCS", "runoff", "rainfall-runoff", "AMC", "antecedent moisture"], "difficulty": "advanced", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-AL",
+            "name": "Alignment and Geometry Design",
+            "year": "professional",
+            "examWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "CD-AL1",
+                    "name": "Horizontal Alignment",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-AL1.1", "name": "Horizontal Alignment Fundamentals and Data Structures", "keywords": ["horizontal alignment", "PI", "point of intersection", "tangent", "back tangent", "forward tangent", "alignment geometry", "stationing"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-AL1.2", "name": "Circular Curve Calculations and Geometry", "keywords": ["circular curve", "radius", "PC", "PT", "delta angle", "tangent length", "curve length", "chord", "middle ordinate", "external distance"], "difficulty": "intermediate", "prerequisites": ["CD-AL1.1"] },
+                        { "code": "CD-AL1.3", "name": "Spiral (Clothoid) Curve Implementation", "keywords": ["spiral curve", "clothoid", "Euler spiral", "transition curve", "TS", "SC", "CS", "ST", "spiral angle", "long tangent", "short tangent"], "difficulty": "advanced", "prerequisites": ["CD-AL1.2"] },
+                        { "code": "CD-AL1.4", "name": "Compound and Reverse Curve Algorithms", "keywords": ["compound curve", "reverse curve", "broken back", "compound radius", "reverse tangent", "common tangent"], "difficulty": "advanced", "prerequisites": ["CD-AL1.2"] },
+                        { "code": "CD-AL1.5", "name": "Stationing and Chainage Calculations", "keywords": ["stationing", "chainage", "station equation", "station ahead", "station back", "reference station", "cumulative distance"], "difficulty": "intermediate", "prerequisites": ["CD-AL1.1"] },
+                        { "code": "CD-AL1.6", "name": "Superelevation Calculation and Transition", "keywords": ["superelevation", "cross slope", "emax", "transition length", "axis of rotation", "normal crown", "adverse crown", "runoff length"], "difficulty": "advanced", "prerequisites": ["CD-AL1.2"] }
+                    ]
+                },
+                {
+                    "code": "CD-AL2",
+                    "name": "Vertical Alignment",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-AL2.1", "name": "Vertical Alignment (Profile) Fundamentals", "keywords": ["vertical alignment", "profile", "PVI", "grade", "VPI", "vertical grade", "profile grade line", "existing ground profile"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-AL2.2", "name": "Vertical Curve Calculations (Crest and Sag)", "keywords": ["vertical curve", "crest curve", "sag curve", "K value", "PVC", "PVT", "high point", "low point", "parabolic curve", "rate of grade change"], "difficulty": "intermediate", "prerequisites": ["CD-AL2.1"] },
+                        { "code": "CD-AL2.3", "name": "Stopping Sight Distance and Curve Length Requirements", "keywords": ["sight distance", "stopping sight distance", "SSD", "headlight sight distance", "minimum K", "AASHTO", "design speed"], "difficulty": "advanced", "prerequisites": ["CD-AL2.2"] },
+                        { "code": "CD-AL2.4", "name": "3D Alignment Representation and Cross-Section Extraction", "keywords": ["3D alignment", "cross section", "template", "offset elevation", "section extraction", "cut section", "fill section", "end area"], "difficulty": "advanced", "prerequisites": ["CD-AL1.1", "CD-AL2.1"] }
+                    ]
+                },
+                {
+                    "code": "CD-AL3",
+                    "name": "Intersection and Special Geometry",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-AL3.1", "name": "Intersection Geometry and Turn Path Calculations", "keywords": ["intersection", "turn path", "swept path", "turning radius", "curb return", "vehicle template", "AASHTO WB-67"], "difficulty": "advanced", "prerequisites": ["CD-AL1.2"] },
+                        { "code": "CD-AL3.2", "name": "Roundabout Geometry Design Algorithms", "keywords": ["roundabout", "inscribed circle", "entry width", "circulatory road", "splitter island", "approach alignment", "deflection angle"], "difficulty": "advanced", "prerequisites": ["CD-AL1.2"] },
+                        { "code": "CD-AL3.3", "name": "Railway Alignment Specifics", "keywords": ["railway alignment", "cant", "gauge", "track centres", "transition curve", "bogie", "Prud'homme", "minimum radius"], "difficulty": "advanced", "prerequisites": ["CD-AL1.3"] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-GR",
+            "name": "Grading and Earthwork",
+            "year": "professional",
+            "examWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "CD-GR1",
+                    "name": "Feature Lines and Grading",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-GR1.1", "name": "Feature Line Data Structures", "keywords": ["feature line", "grading object", "3D polyline", "elevation point", "grade break", "slope", "key station"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GR1.2", "name": "Dynamic Feature Line Grading for Land Development", "keywords": ["dynamic grading", "daylight", "target surface", "grading footprint", "setback", "grading group", "infill"], "difficulty": "advanced", "prerequisites": ["CD-GR1.1"] },
+                        { "code": "CD-GR1.3", "name": "Slope Projection and Daylighting", "keywords": ["slope projection", "daylight line", "cut slope", "fill slope", "daylighting", "slope ratio", "2:1 slope", "grading breakout"], "difficulty": "intermediate", "prerequisites": ["CD-GR1.1"] },
+                        { "code": "CD-GR1.4", "name": "Building Pad Grading", "keywords": ["building pad", "finished floor elevation", "FFE", "pad grading", "perimeter grading", "drainage swale", "positive drainage"], "difficulty": "intermediate", "prerequisites": ["CD-GR1.1"] },
+                        { "code": "CD-GR1.5", "name": "Balanced Earthwork Optimization Using Linear Programming", "keywords": ["balanced earthwork", "linear programming", "optimization", "haul distance", "transportation problem", "cut fill balance", "earthwork optimization"], "difficulty": "advanced", "prerequisites": ["CD-SM3.1"] }
+                    ]
+                },
+                {
+                    "code": "CD-GR2",
+                    "name": "Quantity Takeoff",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-GR2.1", "name": "Pavement and Base Course Quantities", "keywords": ["pavement quantity", "AC tonnage", "base course", "subbase", "area calculation", "depth calculation", "material volume"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GR2.2", "name": "Pipe and Structure Material Takeoffs", "keywords": ["pipe quantity", "structure count", "material takeoff", "pipe length", "fitting count", "manhole schedule"], "difficulty": "foundation", "prerequisites": [] },
+                        { "code": "CD-GR2.3", "name": "Unit Cost Databases and Escalation", "keywords": ["unit cost", "cost database", "cost escalation", "RSMeans", "bid item", "pay item", "cost index"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GR2.4", "name": "5D BIM and Quantity Linkage", "keywords": ["5D BIM", "model based quantity", "BIM quantity", "linked cost", "quantity extraction", "model attribute", "cost model"], "difficulty": "advanced", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-GS",
+            "name": "Coordinate Systems and Geospatial",
+            "year": "professional",
+            "examWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "CD-GS1",
+                    "name": "Geodesy and Projections",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-GS1.1", "name": "Geodetic Datums and Reference Ellipsoids", "keywords": ["datum", "ellipsoid", "GRS80", "WGS84", "GDA2020", "GDA94", "NAD83", "ETRS89", "semi-major axis", "flattening"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-GS1.2", "name": "Map Projections Fundamentals", "keywords": ["map projection", "UTM", "MGA", "transverse mercator", "lambert", "conformal", "equal area", "EPSG", "SRID"], "difficulty": "intermediate", "prerequisites": ["CD-GS1.1"] },
+                        { "code": "CD-GS1.3", "name": "Datum Transformations (Helmert, Molodensky)", "keywords": ["datum transformation", "Helmert", "Molodensky", "7 parameter", "grid shift", "NTv2", "NADCON", "AUSGEOID", "geoid model"], "difficulty": "advanced", "prerequisites": ["CD-GS1.1"] },
+                        { "code": "CD-GS1.4", "name": "Grid Convergence and Scale Factors", "keywords": ["grid convergence", "scale factor", "combined factor", "ellipsoidal height", "orthometric height", "grid north", "true north"], "difficulty": "advanced", "prerequisites": ["CD-GS1.2"] },
+                        { "code": "CD-GS1.5", "name": "Local Site Coordinates and Grid-to-Ground", "keywords": ["local coordinates", "grid to ground", "combined scale factor", "ground distance", "project coordinates", "arbitrary origin"], "difficulty": "intermediate", "prerequisites": ["CD-GS1.4"] }
+                    ]
+                },
+                {
+                    "code": "CD-GS2",
+                    "name": "Geospatial Data Integration",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-GS2.1", "name": "Shapefile and GeoJSON Parsing", "keywords": ["shapefile", "GeoJSON", "SHP", "DBF", "SHX", "geometry types", "feature collection", "attribute table"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GS2.2", "name": "Raster Data and GeoTIFF Integration", "keywords": ["raster", "GeoTIFF", "DEM", "DTM", "pixel resolution", "band", "nodata", "GDAL", "bilinear interpolation"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GS2.3", "name": "Web Mapping Integration (WMTS, WMS)", "keywords": ["WMTS", "WMS", "web map tile", "slippy map", "tile pyramid", "background imagery", "OSM", "aerial imagery"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-GS2.4", "name": "Vertical Datums and Orthometric Heights", "keywords": ["vertical datum", "orthometric height", "ellipsoidal height", "geoid", "AHD", "NAVD88", "geoid undulation", "N value"], "difficulty": "advanced", "prerequisites": ["CD-GS1.1"] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-FF",
+            "name": "File Formats and Interoperability",
+            "year": "professional",
+            "examWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "CD-FF1",
+                    "name": "Civil and Survey Formats",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-FF1.1", "name": "LandXML Format Parsing and Generation", "keywords": ["LandXML", "XML schema", "alignment", "surface", "parcel", "pipe network", "LandXML 1.2", "XML parsing"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-FF1.2", "name": "DXF/DWG File Format Understanding", "keywords": ["DXF", "DWG", "AutoCAD", "entity", "layer", "block", "xref", "ODA", "libopenacad", "DXF spec"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-FF1.3", "name": "IFC for Civil Infrastructure (IfcAlignment, IfcRoad)", "keywords": ["IFC", "IfcAlignment", "IfcRoad", "OpenBIM", "buildingSMART", "IFC4x3", "civil IFC", "alignment IFC"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-FF1.4", "name": "Survey Data Formats (CSV, CR5, RW5, FBK)", "keywords": ["survey format", "raw data", "CR5", "RW5", "FBK", "field book", "total station", "raw observations"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-FF1.5", "name": "LiDAR Point Cloud Formats (LAS/LAZ)", "keywords": ["LAS", "LAZ", "ASPRS", "point record", "classification", "intensity", "return number", "GPS time", "LASzip"], "difficulty": "intermediate", "prerequisites": [] }
+                    ]
+                },
+                {
+                    "code": "CD-FF2",
+                    "name": "Data Storage and Exchange",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-FF2.1", "name": "GIS Vector Format Exchange (Shapefile, GeoPackage)", "keywords": ["GeoPackage", "GPKG", "shapefile", "GeoJSON", "FlatGeobuf", "OGR", "GDAL vector", "PostGIS"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-FF2.2", "name": "Database Storage for Civil Data", "keywords": ["spatial database", "PostGIS", "SpatiaLite", "SQLite", "geometry column", "spatial index", "RTREE", "WKB", "WKT"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-FF2.3", "name": "Binary Serialization for Civil Objects", "keywords": ["binary serialization", "Protocol Buffers", "FlatBuffers", "MessagePack", "custom binary", "serialization format", "endianness"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-FF2.4", "name": "Large File Streaming and Memory Management", "keywords": ["streaming", "out-of-core", "memory mapped file", "mmap", "chunked reading", "lazy loading", "tiled storage"], "difficulty": "advanced", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-CO",
+            "name": "Corridor Modeling",
+            "year": "professional",
+            "examWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "CD-CO1",
+                    "name": "Corridor Architecture",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-CO1.1", "name": "Corridor Data Structure and Components", "keywords": ["corridor", "baseline", "region", "frequency", "sample line", "assembly", "subassembly", "corridor model"], "difficulty": "intermediate", "prerequisites": ["CD-AL1.1", "CD-AL2.1"] },
+                        { "code": "CD-CO1.2", "name": "Assembly and Subassembly Architecture", "keywords": ["assembly", "subassembly", "attachment point", "code", "link", "shape", "corridor code", "subassembly composer"], "difficulty": "advanced", "prerequisites": ["CD-CO1.1"] },
+                        { "code": "CD-CO1.3", "name": "Parametric Subassembly Design", "keywords": ["parametric subassembly", "parameter", "input parameter", "output point", "conditional logic", ".NET subassembly", "PKT file"], "difficulty": "advanced", "prerequisites": ["CD-CO1.2"] },
+                        { "code": "CD-CO1.4", "name": "Corridor Surface Generation", "keywords": ["corridor surface", "top surface", "datum surface", "code set style", "link code", "surface from corridor", "paving surface"], "difficulty": "intermediate", "prerequisites": ["CD-CO1.1"] },
+                        { "code": "CD-CO1.5", "name": "Target Mapping (Surfaces, Widths, Elevations)", "keywords": ["target mapping", "target surface", "target alignment", "target profile", "width target", "slope target", "offset target"], "difficulty": "advanced", "prerequisites": ["CD-CO1.1"] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-SV",
+            "name": "Survey Data Processing",
+            "year": "professional",
+            "examWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "CD-SV1",
+                    "name": "COGO and Adjustment",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-SV1.1", "name": "Survey Data Models and Point Management", "keywords": ["survey point", "PNEZD", "point number", "northing", "easting", "elevation", "description", "point group"], "difficulty": "foundation", "prerequisites": [] },
+                        { "code": "CD-SV1.2", "name": "COGO (Coordinate Geometry) Calculations", "keywords": ["COGO", "inverse", "traverse", "bearing distance", "radiation", "intersection", "resection", "coordinate geometry"], "difficulty": "intermediate", "prerequisites": ["CD-SV1.1"] },
+                        { "code": "CD-SV1.3", "name": "Traverse Closure and Compass Rule Adjustment", "keywords": ["traverse", "closure", "Bowditch", "compass rule", "transit rule", "angular closure", "linear closure", "latitude departure"], "difficulty": "intermediate", "prerequisites": ["CD-SV1.2"] },
+                        { "code": "CD-SV1.4", "name": "Least Squares Adjustment for Survey Networks", "keywords": ["least squares", "adjustment", "normal equations", "redundancy", "residual", "cofactor matrix", "variance factor", "blunder detection"], "difficulty": "advanced", "prerequisites": ["CD-SV1.3"] },
+                        { "code": "CD-SV1.5", "name": "Point Cloud Registration and Alignment", "keywords": ["point cloud registration", "ICP", "iterative closest point", "transformation matrix", "coarse alignment", "fine alignment", "SLAM"], "difficulty": "advanced", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-VZ",
+            "name": "Visualization and Rendering",
+            "year": "professional",
+            "examWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "CD-VZ1",
+                    "name": "3D Graphics and Terrain Rendering",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-VZ1.1", "name": "3D Graphics Pipeline for CivilCAD", "keywords": ["graphics pipeline", "OpenGL", "Vulkan", "vertex shader", "fragment shader", "transformation matrix", "MVP matrix", "rendering pipeline"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-VZ1.2", "name": "Large Terrain Rendering (LOD, Clipmaps)", "keywords": ["terrain rendering", "LOD", "clipmap", "CDLOD", "GPU tessellation", "heightmap", "terrain tile", "view dependent LOD"], "difficulty": "advanced", "prerequisites": ["CD-VZ1.1"] },
+                        { "code": "CD-VZ1.3", "name": "Point Cloud Rendering (Billions of Points)", "keywords": ["point cloud rendering", "octree", "LOD point cloud", "eye dome lighting", "splat rendering", "potree", "copc"], "difficulty": "advanced", "prerequisites": ["CD-VZ1.1"] },
+                        { "code": "CD-VZ1.4", "name": "Terrain Shading (Hillshade, Slope, Aspect)", "keywords": ["hillshade", "slope shading", "aspect", "terrain analysis raster", "illumination angle", "relief shading", "color ramp"], "difficulty": "intermediate", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-AP",
+            "name": "API Design and Extensibility",
+            "year": "professional",
+            "examWeightPercent": 7,
+            "subtopics": [
+                {
+                    "code": "CD-AP1",
+                    "name": "Plugin and API Architecture",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-AP1.1", "name": "API Design Principles for CivilCAD", "keywords": ["API design", "object model", "facade pattern", "fluent interface", "API surface", "encapsulation", "SOLID principles"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-AP1.2", "name": "Plugin Architecture Design", "keywords": ["plugin", "add-in", "extension point", "MEF", "plugin host", "assembly loading", "IPlugin interface", "lifecycle"], "difficulty": "advanced", "prerequisites": ["CD-AP1.1"] },
+                        { "code": "CD-AP1.3", "name": "Scripting Language Integration (Python, Lua)", "keywords": ["scripting", "Python", "Lua", "IronPython", "embedding Python", "CPython", "script API", "automation"], "difficulty": "advanced", "prerequisites": ["CD-AP1.1"] },
+                        { "code": "CD-AP1.4", "name": "API Versioning Strategies", "keywords": ["API versioning", "backward compatibility", "semantic versioning", "deprecated", "migration guide", "adapter pattern", "version negotiation"], "difficulty": "intermediate", "prerequisites": ["CD-AP1.1"] },
+                        { "code": "CD-AP1.5", "name": "Event System and Notifications", "keywords": ["event system", "observer pattern", "event handler", "delegate", "pub sub", "reactive", "property changed", "notification"], "difficulty": "intermediate", "prerequisites": ["CD-AP1.1"] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-PO",
+            "name": "Performance Optimization",
+            "year": "professional",
+            "examWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "CD-PO1",
+                    "name": "Algorithms and Parallelism",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-PO1.1", "name": "Spatial Indexing for Fast Queries", "keywords": ["spatial index", "R-tree", "quadtree", "octree", "kd-tree", "BVH", "AABB", "nearest neighbour", "range query"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-PO1.2", "name": "Multi-threading for Civil Computations", "keywords": ["multithreading", "thread pool", "parallel for", "task parallel library", "race condition", "mutex", "lock-free", "concurrent collection"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-PO1.3", "name": "GPU Computing for Surface Analysis", "keywords": ["GPU computing", "CUDA", "OpenCL", "compute shader", "GPGPU", "parallel reduction", "GPU memory", "kernel"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-PO1.4", "name": "Memory-Efficient Data Structures", "keywords": ["memory efficiency", "struct of arrays", "array of structs", "cache line", "memory layout", "compact representation", "memory pool"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-PO1.5", "name": "Profiling Tools and Performance Analysis", "keywords": ["profiling", "performance analysis", "sampling profiler", "instrumentation", "hotspot", "flamegraph", "perf", "VTune", "dotTrace"], "difficulty": "intermediate", "prerequisites": [] }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "CD-AI",
+            "name": "AI Usage in Civil Engineering",
+            "year": "professional",
+            "examWeightPercent": 6,
+            "subtopics": [
+                {
+                    "code": "CD-AI1",
+                    "name": "ML Applications and Integration",
+                    "year": "professional",
+                    "dotPoints": [
+                        { "code": "CD-AI1.1", "name": "AI/ML Applications in Civil Engineering Software", "keywords": ["machine learning", "AI civil", "deep learning", "neural network", "civil AI", "intelligent design", "automated design"], "difficulty": "intermediate", "prerequisites": [] },
+                        { "code": "CD-AI1.2", "name": "Generative Design for Alignment Optimization", "keywords": ["generative design", "alignment optimization", "genetic algorithm", "evolutionary", "multi-objective", "pareto front", "design space"], "difficulty": "advanced", "prerequisites": ["CD-AL1.1"] },
+                        { "code": "CD-AI1.3", "name": "Automated Breakline Detection from Point Clouds", "keywords": ["breakline detection", "point cloud AI", "edge detection", "feature extraction", "segmentation", "deep learning point cloud", "PointNet"], "difficulty": "advanced", "prerequisites": ["CD-SM1.3"] },
+                        { "code": "CD-AI1.4", "name": "Construction Cost Estimation with ML", "keywords": ["cost estimation", "ML regression", "random forest", "XGBoost", "feature engineering", "cost model", "historical data", "quantity prediction"], "difficulty": "advanced", "prerequisites": [] },
+                        { "code": "CD-AI1.5", "name": "Integrating ML Models into CivilCAD", "keywords": ["ONNX", "TensorFlow", "model deployment", "inference engine", "ONNX runtime", "model packaging", "desktop ML", "C++ inference"], "difficulty": "advanced", "prerequisites": ["CD-AI1.1"] },
+                        { "code": "CD-AI1.6", "name": "Continuous Learning from User Design Patterns", "keywords": ["continuous learning", "federated learning", "online learning", "model update", "user feedback", "telemetry", "A/B testing", "incremental learning"], "difficulty": "advanced", "prerequisites": ["CD-AI1.5"] }
+                    ]
+                }
+            ]
+        }
+    ]
+}

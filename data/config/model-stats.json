@@ -1,0 +1,4504 @@
+{
+  "calls": [
+    {
+      "timestamp": "2026-03-19T04:11:50.760Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2593,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:02.304Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 17367,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:15.265Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2354,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:15.658Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2746,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:35.538Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14248,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:47.667Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2704,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T04:13:47.703Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2740,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T05:50:30.555Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 28425,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T05:50:50.157Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2812,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T05:50:50.321Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2972,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:08:37.386Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22252,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:08:48.593Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2157,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:08:48.908Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2468,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:09:25.702Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11531,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:09:37.922Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2202,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:09:38.037Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2316,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:12:46.789Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3994,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:13:19.834Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3187,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:13:27.263Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4833,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:20:27.843Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6935,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:20:46.717Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3022,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:20:54.904Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5609,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:25:46.467Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5432,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:26:54.491Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8073,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:27:03.104Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6007,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:35:34.837Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7174,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:36:01.878Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3400,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:36:13.027Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8569,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:36:44.914Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8522,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:36:51.826Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4308,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:37:21.871Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2830,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:37:28.466Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3999,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:37:55.382Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4800,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:38:02.481Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4511,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:46:25.024Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7484,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:50:44.503Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4329,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:54:36.879Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5058,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T21:55:34.303Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9170,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T21:55:41.105Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4193,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:00:53.202Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8629,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:01:36.241Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8378,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:01:45.207Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6357,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:02:43.411Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7699,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:02:51.660Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5598,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:04:34.909Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9556,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:04:41.976Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4447,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:08:09.401Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3173,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:08:32.236Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5273,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:14:34.718Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7593,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:15:19.816Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9006,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:16:10.065Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6700,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:16:50.555Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8990,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:18:30.888Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6591,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:19:16.889Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8859,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:25:19.628Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6286,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:26:06.519Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5808,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:31:16.459Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6918,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:31:35.854Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4607,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:31:47.136Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5703,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:32:44.616Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9198,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:56:13.513Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9927,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:56:48.334Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9237,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-19T22:57:05.155Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6110,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:58:52.225Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 13028,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:59:01.179Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2114,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-19T22:59:01.703Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2637,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:11:04.485Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22084,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:11:16.200Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2800,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:11:16.321Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2927,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:11:46.647Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22508,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:12:02.092Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2885,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:12:02.258Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3052,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:12:58.804Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 26529,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:14:24.920Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2908,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:14:28.529Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1997,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:14:29.964Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3431,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:15:12.692Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2042,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:15:12.896Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2248,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:26:58.624Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4673,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:27:00.930Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1711,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:27:01.490Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2269,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T00:38:34.886Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8308,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:49:24.083Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7438,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:51:10.070Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10160,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T01:51:18.642Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5844,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:53:17.770Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9667,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T01:53:39.531Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5677,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:54:45.736Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9413,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T01:54:51.670Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5897,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:55:03.475Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11789,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:56:04.601Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6400,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T01:57:12.719Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9497,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:35:44.028Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9668,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:36:30.423Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6564,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:38:03.212Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6024,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:38:25.755Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7468,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:42:37.032Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4955,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:42:52.645Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4459,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:43:01.490Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5889,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:43:23.528Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6125,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:43:33.277Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6109,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:44:01.283Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8996,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:44:10.319Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4440,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:44:43.119Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9233,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:44:50.294Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3694,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:45:32.167Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9432,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T02:45:41.179Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5169,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T02:45:59.583Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7865,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:12:16.863Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8140,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:12:34.860Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5322,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:12:46.266Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4808,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:13:02.807Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6203,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:13:12.192Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6572,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:13:32.943Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9253,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:13:40.415Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4013,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:13:53.493Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4266,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:14:05.887Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4417,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:14:24.294Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9338,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T03:14:34.893Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6812,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T03:14:53.579Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4808,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:12:14.674Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7471,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:12:49.928Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9049,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:12:57.610Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3982,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:13:33.555Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9617,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:13:41.389Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3647,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:22:54.044Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8291,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:23:16.922Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5533,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:23:59.373Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9109,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:24:15.989Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6593,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:24:42.897Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8801,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:25:06.466Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6383,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:25:36.519Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6822,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:34:03.384Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8124,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:34:31.950Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8374,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:34:40.618Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4164,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:35:03.636Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7272,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:35:12.180Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4818,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:37:56.951Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9117,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:39:00.334Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5205,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:39:37.498Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9770,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:39:48.155Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6599,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:40:09.178Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9115,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:40:20.115Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4745,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:40:35.461Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2917,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:43:49.616Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6762,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:44:04.774Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8978,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:44:09.433Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4643,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:44:23.528Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14092,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:44:35.593Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4509,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:44:50.849Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5192,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:44:59.666Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5161,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:45:36.592Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10988,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:45:54.165Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4962,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:46:22.637Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10496,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:46:45.291Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3953,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:47:12.432Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8342,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:47:18.673Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6181,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:47:47.343Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 28661,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:48:04.506Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6295,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:48:26.592Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5939,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:57:55.325Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9059,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:58:04.641Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4874,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:58:14.406Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6619,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:58:18.735Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1356,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:58:24.904Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6153,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:58:36.742Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11837,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:58:45.868Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6922,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:58:58.940Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9642,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:59:05.042Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6049,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:59:17.913Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12859,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:59:26.491Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5983,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T04:59:39.106Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8587,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T04:59:45.567Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6417,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:00:06.647Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 21075,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:00:26.403Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4413,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:00:46.180Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11657,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T05:00:55.224Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8977,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:01:15.719Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20486,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:01:32.857Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6131,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:01:43.855Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7226,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-20T05:01:49.730Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5836,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:02:07.855Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18115,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:02:41.996Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22674,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:21:20.111Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 30476,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-20T05:30:26.136Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 27874,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:06:33.752Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 35393,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:20:26.265Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 26837,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:34:43.185Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22614,
+      "errorMessage": null,
+      "skillName": "gre-reading-comprehension",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:35:01.586Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2180,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:35:01.896Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2490,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:35:50.141Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5185,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:36:38.247Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8388,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-21T02:38:00.447Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6875,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:52:54.625Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7224,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:53:21.359Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9001,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-21T02:53:26.153Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4769,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:53:44.619Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18463,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T02:54:52.099Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5562,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:02:12.965Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8581,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:02:28.761Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4545,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-21T03:02:38.946Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6734,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:03:14.719Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10263,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-21T03:03:19.374Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4616,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:03:39.809Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20426,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:03:54.777Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6773,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:11:06.397Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7878,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-21T03:11:38.455Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9852,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-21T03:11:49.423Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5474,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:06:32.917Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10156,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:06:56.056Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10107,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:07:03.557Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7420,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:07:12.123Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8562,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:07:54.910Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3820,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:08:10.926Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7864,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:08:15.005Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4056,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:08:21.606Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6596,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:17:48.691Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7076,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:18:05.751Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7029,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:18:19.123Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4916,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:19:01.125Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10369,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:30:26.184Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7309,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:30:57.358Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10047,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:31:02.977Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5571,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:31:15.340Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12357,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:38:06.558Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7484,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:38:23.319Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5626,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:38:37.966Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14642,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:38:53.019Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4333,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:39:15.425Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5834,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:39:29.987Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14557,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:43:59.201Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4461,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:44:43.866Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4307,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:45:03.958Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3099,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:45:10.606Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6597,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:45:25.473Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14851,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:45:58.811Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3842,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:46:23.341Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8813,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:46:49.781Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5857,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:47:59.287Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6327,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:48:07.339Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3748,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:48:33.639Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9284,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:48:39.337Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5654,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:48:49.116Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9772,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:49:52.375Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6328,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-22T09:50:22.125Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4897,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-22T09:50:28.818Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4913,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T02:28:09.549Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8946,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T03:59:57.698Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12528,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:01:33.845Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4529,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:02:35.597Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3161,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:03:01.360Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10868,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:03:15.881Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5093,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:03:42.922Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8539,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:03:54.346Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6474,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:04:42.437Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10524,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:04:49.379Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6876,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:05:13.455Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 24059,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:14:27.911Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7459,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:14:52.266Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12488,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:15:00.119Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3862,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:15:24.942Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 13107,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:15:42.407Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4621,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:16:36.451Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10261,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:16:50.219Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5357,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:17:18.888Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6997,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:17:30.546Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6539,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:18:15.859Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2779,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:18:24.282Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6338,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:27:31.089Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 15481,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:41:04.107Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7625,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:41:16.241Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1882,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:41:20.084Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2850,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:41:20.469Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3234,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:41:29.881Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1938,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:41:30.129Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2184,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:42:14.875Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3892,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:42:35.837Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11869,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:43:18.462Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5435,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:44:32.618Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10153,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:44:39.646Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6945,
+      "errorMessage": null,
+      "skillName": "error-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:44:57.789Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18134,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:46:34.133Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4381,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:46:48.452Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4401,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:46:55.728Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4024,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:47:15.839Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8271,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:47:27.978Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5178,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:50:46.673Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7599,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:51:01.449Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5976,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:51:27.754Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7403,
+      "errorMessage": null,
+      "skillName": "check-understanding-evaluate",
+      "studentId": null
+    },
+    {
+      "timestamp": "2026-03-23T04:52:01.735Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20044,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:57:52.239Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20606,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:58:05.752Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2157,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T04:58:05.769Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2160,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:01:22.793Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5135,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:01:28.572Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2779,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:01:28.658Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2866,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:07:42.513Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 32207,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:07:57.169Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2873,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-23T05:07:57.315Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3019,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T06:44:01.300Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 120031,
+      "errorMessage": "Ollama: request timed out after 120000ms",
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T06:44:41.657Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 40338,
+      "errorMessage": "Ollama: connection error — is Ollama running? (read ECONNRESET)",
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T06:47:38.263Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 120028,
+      "errorMessage": "Ollama: request timed out after 120000ms",
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T06:48:01.640Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 23355,
+      "errorMessage": "Ollama: connection error — is Ollama running? (read ECONNRESET)",
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T06:51:12.998Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 80805,
+      "errorMessage": "Ollama: connection error — is Ollama running? (read ECONNRESET)",
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T07:01:39.678Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 120024,
+      "errorMessage": "Ollama: request timed out after 120000ms",
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T07:03:39.716Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": false,
+      "timeMs": 120022,
+      "errorMessage": "Ollama: request timed out after 120000ms",
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:29:57.360Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 25210,
+      "errorMessage": null,
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:30:13.938Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2333,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:30:14.150Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2544,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:32:09.727Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 16695,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:32:30.043Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 16479,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:37:24.065Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2214,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:37:26.883Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1646,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:37:26.978Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1741,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:54:07.277Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8871,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:58:05.128Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 4741,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:58:11.665Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2732,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:58:11.761Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2827,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:59:00.599Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7466,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:59:07.503Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2482,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-24T22:59:07.880Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2860,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:21:12.962Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 38498,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:21:29.030Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2645,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:21:29.338Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2955,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:53:16.132Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 32540,
+      "errorMessage": null,
+      "skillName": "mathematical-proof",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:53:34.839Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2388,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T04:53:35.438Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2987,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:28:26.701Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 21577,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:28:41.959Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2361,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:28:42.351Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2751,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:30:29.847Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 30822,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:30:49.957Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2542,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:30:50.813Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3399,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:35:23.250Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 17593,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:35:39.379Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3509,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:35:39.840Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3970,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:36:34.128Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 25250,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:36:53.121Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3236,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T05:36:53.311Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3425,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T21:09:48.651Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 24253,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T21:10:01.147Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3023,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-25T21:10:01.888Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3765,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:48:39.459Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8273,
+      "errorMessage": null,
+      "skillName": "general-conversation",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:48:44.593Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2974,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:48:44.639Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3020,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:49:29.040Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 24246,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:49:48.833Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3246,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T01:49:48.901Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3314,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T05:57:03.875Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 25364,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T05:57:18.125Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2525,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T05:57:18.286Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2687,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:44:37.558Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7481,
+      "errorMessage": null,
+      "skillName": "language-technique-identifier",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:44:41.553Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2452,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:44:41.824Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2723,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:45:37.854Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20378,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:45:53.412Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3181,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T20:45:53.479Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3247,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:16:39.195Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 29303,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:16:57.777Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3011,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:16:58.135Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3367,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:25:41.211Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11539,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:25:51.018Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2401,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:25:51.226Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2609,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:26:23.893Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 13186,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:26:36.898Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2484,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:26:37.119Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2704,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:11.163Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22988,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:29.910Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2893,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:30.037Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3033,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:51.259Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 8451,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:59.466Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2574,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:28:59.650Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2758,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:29:10.272Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6350,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:29:16.724Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2433,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:29:16.787Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2495,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:29:52.759Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 15788,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:30:05.752Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2951,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:30:05.820Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3018,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:33:09.194Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 23874,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:33:24.480Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3098,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T21:33:24.791Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3407,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T23:19:57.137Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22980,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T23:20:12.547Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2598,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-26T23:20:12.841Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2894,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:03:10.279Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2187,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:03:10.964Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2872,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:03:32.157Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6992,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:04:07.343Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20310,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:06:46.247Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6647,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:07:43.658Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 23033,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:08:00.608Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2213,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-27T02:08:01.176Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2781,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:09:35.321Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 16447,
+      "errorMessage": null,
+      "skillName": "general-conversation",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:09:43.486Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2192,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:09:43.900Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2606,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:16:48.344Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 31895,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:17:07.032Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2369,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:17:07.081Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2411,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:44:55.083Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 23131,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:10.096Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3019,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:10.448Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3369,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:19:10.825Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 35576,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:19:30.498Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2265,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:19:30.972Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2738,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:45:31.033Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18430,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:45:45.094Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2694,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T04:45:45.473Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3073,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:04.419Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9971,
+      "errorMessage": null,
+      "skillName": "general-conversation",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:11.775Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2482,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:11.936Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2643,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:43.576Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14415,
+      "errorMessage": null,
+      "skillName": "gre-text-completion",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:57.388Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2888,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:06:57.483Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2983,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:09:18.126Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 5293,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:09:24.137Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2602,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:09:24.171Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2637,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:21:18.232Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 22151,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:21:32.393Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2267,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:21:32.431Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2304,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:40:12.781Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7965,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:40:17.077Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2102,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T05:40:17.604Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2627,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:29:37.120Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 36010,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:29:57.823Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2398,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:29:58.747Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3321,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:30:41.330Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10992,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:30:53.165Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2776,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:30:53.293Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2903,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:31:29.716Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18151,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:31:44.431Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2056,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:31:45.018Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2646,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:37:43.930Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 24429,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:38:02.612Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2423,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:38:02.706Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2516,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:39:45.701Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 14546,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:39:59.776Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2242,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:39:59.810Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2276,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:40:25.940Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 16221,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:40:40.425Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2126,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:40:40.970Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2671,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:40:59.495Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12330,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:41:12.218Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2721,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:41:12.482Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2986,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:44:22.967Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2332,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:44:23.005Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2370,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:44:44.681Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11611,
+      "errorMessage": null,
+      "skillName": "request-tool",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:44:53.690Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2581,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:44:53.899Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2793,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:45:40.019Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 11361,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:45:50.490Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2069,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:45:50.899Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2476,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:46:02.170Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2666,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:46:02.378Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2872,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:50:34.237Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1829,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:50:34.270Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 1862,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:54:56.708Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3173,
+      "errorMessage": null,
+      "skillName": "gre-argument-analysis",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:55:01.319Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2004,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T21:55:01.583Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2268,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:40:20.730Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 24500,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:40:32.775Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2277,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:40:33.071Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2572,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:45:56.071Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 16473,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:46:08.194Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2734,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-30T23:46:08.231Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2772,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T00:10:16.478Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 23366,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T00:10:33.392Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2778,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T00:10:33.534Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2917,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T03:46:54.602Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 18047,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T03:47:07.763Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3072,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T03:47:07.776Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3075,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:12:42.447Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 10035,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:12:47.111Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2599,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:12:47.886Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3377,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:13:06.470Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6518,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:13:09.176Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2183,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:13:09.211Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2209,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:13:55.478Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 12215,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:14:01.987Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3031,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-03-31T04:14:02.632Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3677,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:05.446Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6672,
+      "errorMessage": null,
+      "skillName": "fallback-llm",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:07.870Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2059,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:07.933Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2123,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:33.922Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2145,
+      "errorMessage": null,
+      "skillName": "toefl-independent-writing",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:37.709Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2177,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:52:37.770Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2240,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:54:41.973Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 20312,
+      "errorMessage": null,
+      "skillName": "explain-concept",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:54:58.506Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2624,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T22:54:58.880Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3003,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:16:50.878Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 6662,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:16:54.806Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2212,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:16:55.150Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2552,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:12.964Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 7405,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:16.763Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2031,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:16.797Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2067,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:40.655Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 15179,
+      "errorMessage": null,
+      "skillName": "hsc-worked-example",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:55.033Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 2786,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-08T23:29:55.281Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3032,
+      "errorMessage": null,
+      "skillName": "follow-ups",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-09T00:13:47.992Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 9656,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-04-09T00:18:12.408Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 3774,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    },
+    {
+      "timestamp": "2026-05-11T01:24:31.707Z",
+      "modelId": "qwen2.5-coder:3b",
+      "success": true,
+      "timeMs": 21851,
+      "errorMessage": null,
+      "skillName": "generate-quiz",
+      "studentId": "default"
+    }
+  ]
+}

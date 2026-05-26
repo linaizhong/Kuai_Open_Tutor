@@ -1,0 +1,82 @@
+{
+  "id": "hsc-chemistry",
+  "name": "HSC Chemistry",
+  "shortName": "CHEM",
+  "icon": "🧪",
+  "categories": [
+    "Science",
+    "Mathematics"
+  ],
+  "enabled": true,
+  "suggestions": [
+    {
+      "icon": "❓",
+      "label": "What is the difference between acid and base?",
+      "text": "A realistic student question about HSC Chemistry?"
+    },
+    {
+      "icon": "🔍",
+      "label": "How do you calculate the pH of a solution?",
+      "text": "A realistic student question about HSC Chemistry?"
+    },
+    {
+      "icon": "💡",
+      "label": "What is the role of catalysts in chemical reactions?",
+      "text": "A realistic student question about HSC Chemistry?"
+    },
+    {
+      "icon": "🔬",
+      "label": "How do you determine the empirical formula of a compound?",
+      "text": "A realistic student question about HSC Chemistry?"
+    },
+    {
+      "icon": "📈",
+      "label": "What is Hess's Law and how is it used in chemistry?",
+      "text": "A realistic student question about HSC Chemistry?"
+    },
+    {
+      "icon": "📚",
+      "label": "What are the main types of chemical bonds and their characteristics?",
+      "text": "A realistic student question about HSC Chemistry?"
+    }
+  ],
+  "quickActions": [
+    {
+      "icon": "💡",
+      "label": "Review Key Concepts",
+      "text": "Quickly review important concepts in HSC Chemistry."
+    },
+    {
+      "icon": "🔍",
+      "label": "Practice Past Papers",
+      "text": "Access practice papers to test your understanding of HSC Chemistry."
+    },
+    {
+      "icon": "📚",
+      "label": "Study Notes",
+      "text": "Download study notes for a comprehensive overview of HSC Chemistry."
+    },
+    {
+      "icon": "📈",
+      "label": "Mock Exams",
+      "text": "Take mock exams to simulate the actual HSC Chemistry exam."
+    },
+    {
+      "icon": "⏰",
+      "label": "Time Management Tips",
+      "text": "Learn tips for effective time management during HSC Chemistry exams."
+    },
+    {
+      "icon": "📚",
+      "label": "Revision Guides",
+      "text": "Access revision guides to reinforce your learning of HSC Chemistry."
+    }
+  ],
+  "filenames": {
+    "syllabusMap": "hsc-chemistry-syllabus-map.json",
+    "dotPoints": "hsc-chemistry-dot-points.json",
+    "questionIndex": "hsc-chemistry-question-index.json",
+    "questions": "hsc-chemistry-questions.json",
+    "markingGuidelinesIndex": "hsc-chemistry-marking-guidelines-index.json"
+  }
+}

@@ -1,0 +1,422 @@
+[
+    {
+        "id": "LLM-NLP-1.1",
+        "code": "LLM-NLP-1.1",
+        "name": "Text as Data: Challenges in NLP",
+        "topic": "LLM-NLP",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-NLP-1.2",
+        "code": "LLM-NLP-1.2",
+        "name": "Word Embeddings and Distributed Representations",
+        "topic": "LLM-NLP",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-NLP-1.3",
+        "code": "LLM-NLP-1.3",
+        "name": "Sequence Modelling: RNNs and LSTMs",
+        "topic": "LLM-NLP",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-NLP-2.1",
+        "code": "LLM-NLP-2.1",
+        "name": "Core NLP Tasks",
+        "topic": "LLM-NLP",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-NLP-2.2",
+        "code": "LLM-NLP-2.2",
+        "name": "From Task-Specific to General-Purpose Models",
+        "topic": "LLM-NLP",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TOK-1.1",
+        "code": "LLM-TOK-1.1",
+        "name": "Byte-Pair Encoding (BPE)",
+        "topic": "LLM-TOK",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TOK-1.2",
+        "code": "LLM-TOK-1.2",
+        "name": "WordPiece and SentencePiece",
+        "topic": "LLM-TOK",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TOK-1.3",
+        "code": "LLM-TOK-1.3",
+        "name": "Vocabulary Design and Token Efficiency",
+        "topic": "LLM-TOK",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-TOK-2.1",
+        "code": "LLM-TOK-2.1",
+        "name": "Tokenisation and Model Behaviour",
+        "topic": "LLM-TOK",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-TRF-1.1",
+        "code": "LLM-TRF-1.1",
+        "name": "Scaled Dot-Product Attention",
+        "topic": "LLM-TRF",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TRF-1.2",
+        "code": "LLM-TRF-1.2",
+        "name": "Multi-Head Attention",
+        "topic": "LLM-TRF",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TRF-1.3",
+        "code": "LLM-TRF-1.3",
+        "name": "Self-Attention vs Cross-Attention",
+        "topic": "LLM-TRF",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-TRF-2.1",
+        "code": "LLM-TRF-2.1",
+        "name": "Feed-Forward Networks and Residual Connections",
+        "topic": "LLM-TRF",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TRF-2.2",
+        "code": "LLM-TRF-2.2",
+        "name": "Positional Encoding",
+        "topic": "LLM-TRF",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-TRF-2.3",
+        "code": "LLM-TRF-2.3",
+        "name": "Encoder, Decoder, and Encoder-Decoder Architectures",
+        "topic": "LLM-TRF",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-TRF-3.1",
+        "code": "LLM-TRF-3.1",
+        "name": "Grouped-Query Attention and Multi-Query Attention",
+        "topic": "LLM-TRF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-TRF-3.2",
+        "code": "LLM-TRF-3.2",
+        "name": "Mixture of Experts (MoE)",
+        "topic": "LLM-TRF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-TRF-3.3",
+        "code": "LLM-TRF-3.3",
+        "name": "Sliding Window and Long-Context Attention",
+        "topic": "LLM-TRF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-PRE-1.1",
+        "code": "LLM-PRE-1.1",
+        "name": "Causal Language Modelling (CLM)",
+        "topic": "LLM-PRE",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-PRE-1.2",
+        "code": "LLM-PRE-1.2",
+        "name": "Masked Language Modelling (MLM)",
+        "topic": "LLM-PRE",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-PRE-1.3",
+        "code": "LLM-PRE-1.3",
+        "name": "Other Pre-training Objectives",
+        "topic": "LLM-PRE",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-PRE-2.1",
+        "code": "LLM-PRE-2.1",
+        "name": "Pre-training Data: Sources, Curation, and Quality",
+        "topic": "LLM-PRE",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-PRE-2.2",
+        "code": "LLM-PRE-2.2",
+        "name": "Distributed Training and Parallelism",
+        "topic": "LLM-PRE",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-FTN-1.1",
+        "code": "LLM-FTN-1.1",
+        "name": "Supervised Fine-tuning (SFT)",
+        "topic": "LLM-FTN",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-FTN-2.1",
+        "code": "LLM-FTN-2.1",
+        "name": "Low-Rank Adaptation (LoRA)",
+        "topic": "LLM-FTN",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-FTN-2.2",
+        "code": "LLM-FTN-2.2",
+        "name": "Other PEFT Methods",
+        "topic": "LLM-FTN",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-FTN-3.1",
+        "code": "LLM-FTN-3.1",
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "topic": "LLM-FTN",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-FTN-3.2",
+        "code": "LLM-FTN-3.2",
+        "name": "Direct Preference Optimisation (DPO) and Alternatives",
+        "topic": "LLM-FTN",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-PRM-1.1",
+        "code": "LLM-PRM-1.1",
+        "name": "Zero-Shot and Few-Shot Prompting",
+        "topic": "LLM-PRM",
+        "difficulty": "foundation"
+    },
+    {
+        "id": "LLM-PRM-1.2",
+        "code": "LLM-PRM-1.2",
+        "name": "Chain-of-Thought Prompting",
+        "topic": "LLM-PRM",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-PRM-1.3",
+        "code": "LLM-PRM-1.3",
+        "name": "Advanced Prompting: ReAct, Tree-of-Thought, and Self-Consistency",
+        "topic": "LLM-PRM",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-PRM-2.1",
+        "code": "LLM-PRM-2.1",
+        "name": "System Prompts and Instruction Design",
+        "topic": "LLM-PRM",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-PRM-2.2",
+        "code": "LLM-PRM-2.2",
+        "name": "Automatic Prompt Optimisation",
+        "topic": "LLM-PRM",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-RAG-1.1",
+        "code": "LLM-RAG-1.1",
+        "name": "RAG Architecture Overview",
+        "topic": "LLM-RAG",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-RAG-1.2",
+        "code": "LLM-RAG-1.2",
+        "name": "Chunking Strategies and Embedding Models",
+        "topic": "LLM-RAG",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-RAG-1.3",
+        "code": "LLM-RAG-1.3",
+        "name": "Vector Databases and Indexing",
+        "topic": "LLM-RAG",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-RAG-2.1",
+        "code": "LLM-RAG-2.1",
+        "name": "Query Transformation and Hybrid Search",
+        "topic": "LLM-RAG",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-RAG-2.2",
+        "code": "LLM-RAG-2.2",
+        "name": "Agentic RAG and Self-RAG",
+        "topic": "LLM-RAG",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-EVL-1.1",
+        "code": "LLM-EVL-1.1",
+        "name": "Intrinsic Metrics: Perplexity and Token-Level Measures",
+        "topic": "LLM-EVL",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-EVL-1.2",
+        "code": "LLM-EVL-1.2",
+        "name": "Capability Benchmarks",
+        "topic": "LLM-EVL",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-EVL-1.3",
+        "code": "LLM-EVL-1.3",
+        "name": "LLM-as-Judge and Human Evaluation",
+        "topic": "LLM-EVL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-EVL-2.1",
+        "code": "LLM-EVL-2.1",
+        "name": "Benchmark Contamination and Evaluation Pitfalls",
+        "topic": "LLM-EVL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-INF-1.1",
+        "code": "LLM-INF-1.1",
+        "name": "Model Quantisation: INT8, INT4, and GPTQ",
+        "topic": "LLM-INF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-INF-1.2",
+        "code": "LLM-INF-1.2",
+        "name": "Pruning and Distillation",
+        "topic": "LLM-INF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-INF-2.1",
+        "code": "LLM-INF-2.1",
+        "name": "KV Cache and Memory Management",
+        "topic": "LLM-INF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-INF-2.2",
+        "code": "LLM-INF-2.2",
+        "name": "Speculative Decoding and FlashAttention",
+        "topic": "LLM-INF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-INF-2.3",
+        "code": "LLM-INF-2.3",
+        "name": "Serving Frameworks and Deployment",
+        "topic": "LLM-INF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-AGT-1.1",
+        "code": "LLM-AGT-1.1",
+        "name": "Agent Architecture: Planning, Memory, and Tools",
+        "topic": "LLM-AGT",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-AGT-1.2",
+        "code": "LLM-AGT-1.2",
+        "name": "Tool Use and Function Calling",
+        "topic": "LLM-AGT",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-AGT-2.1",
+        "code": "LLM-AGT-2.1",
+        "name": "Multi-Agent Systems",
+        "topic": "LLM-AGT",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-AGT-2.2",
+        "code": "LLM-AGT-2.2",
+        "name": "Long-Horizon Planning and Memory Systems",
+        "topic": "LLM-AGT",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-SCL-1.1",
+        "code": "LLM-SCL-1.1",
+        "name": "Chinchilla Scaling Laws",
+        "topic": "LLM-SCL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-SCL-2.1",
+        "code": "LLM-SCL-2.1",
+        "name": "Emergent Abilities and Phase Transitions",
+        "topic": "LLM-SCL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-MUL-1.1",
+        "code": "LLM-MUL-1.1",
+        "name": "Image Encoding and Cross-Modal Fusion",
+        "topic": "LLM-MUL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-MUL-1.2",
+        "code": "LLM-MUL-1.2",
+        "name": "Multimodal Training and Evaluation",
+        "topic": "LLM-MUL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-MUL-2.1",
+        "code": "LLM-MUL-2.1",
+        "name": "Audio-Language and Video-Language Models",
+        "topic": "LLM-MUL",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-SAF-1.1",
+        "code": "LLM-SAF-1.1",
+        "name": "Hallucination: Types, Causes, and Mitigation",
+        "topic": "LLM-SAF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-SAF-1.2",
+        "code": "LLM-SAF-1.2",
+        "name": "Bias and Fairness in LLMs",
+        "topic": "LLM-SAF",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": "LLM-SAF-2.1",
+        "code": "LLM-SAF-2.1",
+        "name": "Prompt Injection and Jailbreaking",
+        "topic": "LLM-SAF",
+        "difficulty": "advanced"
+    },
+    {
+        "id": "LLM-SAF-2.2",
+        "code": "LLM-SAF-2.2",
+        "name": "Copyright, Privacy, and Memorisation",
+        "topic": "LLM-SAF",
+        "difficulty": "advanced"
+    }
+]

@@ -1,0 +1,173 @@
+{
+    "subject": "IELTS Exam Preparation",
+    "description": "Practice questions for all four IELTS skills — Listening, Reading, Writing, and Speaking — with model answers and examiner commentary.",
+    "questions": {
+        "IELTS-Q-WRT1-001": {
+            "id": "IELTS-Q-WRT1-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 9,
+            "type": "writing",
+            "dotPoints": ["IELTS-WRT-1.2", "IELTS-WRT-1.4", "IELTS-WRT-1.5"],
+            "topic": "IELTS-WRT",
+            "difficulty": "medium",
+            "title": "Academic Writing Task 1 — Line Graph",
+            "description": "Describe a line graph showing changes over time for three countries.",
+            "question": "The line graph below shows the percentage of the population aged 65 and over in three countries (Japan, Sweden, and the USA) between 1940 and 2040 (with projections from 2020 onwards).\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+            "graphData": {
+                "description": "Imagined data for practice purposes",
+                "data": {
+                    "1940": { "Japan": 5, "Sweden": 7, "USA": 7 },
+                    "1960": { "Japan": 6, "Sweden": 12, "USA": 9 },
+                    "1980": { "Japan": 9, "Sweden": 15, "USA": 11 },
+                    "2000": { "Japan": 17, "Sweden": 17, "USA": 13 },
+                    "2020": { "Japan": 28, "Sweden": 20, "USA": 16 },
+                    "2040": { "Japan": 27, "Sweden": 25, "USA": 23 }
+                }
+            },
+            "solution": {
+                "steps": [
+                    "Write introduction: Paraphrase the graph title and time period",
+                    "Write overview: Identify 2-3 key trends without specific data (all three rose; Japan most dramatic increase; Sweden consistently above USA until 2020)",
+                    "Body paragraph 1: Describe Sweden and USA together — comparatively close, both rising steadily",
+                    "Body paragraph 2: Describe Japan — slow at first, then dramatic surge; projects to level off"
+                ],
+                "modelAnswer": "The line graph illustrates the proportion of people aged 65 and over in Japan, Sweden, and the United States over a 100-year period from 1940 to 2040, with figures from 2020 onwards representing projections.\n\nOverall, the percentage of older citizens rose in all three countries across the period. Japan experienced by far the most dramatic increase, particularly from the 1980s onwards, while Sweden consistently had the highest proportion in the earlier decades.\n\nIn 1940, Sweden and the USA both stood at approximately 7%, whereas Japan's figure was slightly lower at 5%. Sweden rose steadily throughout the period, reaching around 20% by 2020 and projected to climb to 25% by 2040. The USA followed a similar but slower trajectory, growing from 7% to 16% between 1940 and 2020, with projections suggesting it will approach 23% by 2040.\n\nBy contrast, Japan's proportion remained relatively modest until around 1980, when it stood at just 9%. However, it then surged dramatically, overtaking both other nations to reach 28% in 2020 — the highest of the three. Projections indicate a slight plateau of around 27% by 2040.\n\nWord count: 185 ✓",
+                "examinerCommentary": "Band 7.5 response. Strong paraphrase in introduction. Clear overview identifies main trend. Data is selected and compared rather than listed. Accurate data language throughout ('surged', 'plateau', 'trajectory'). Minor issue: could group 2020-2040 projection period more explicitly."
+            },
+            "hints": [
+                "Your introduction should paraphrase, not copy — change the sentence structure and vocabulary",
+                "Your overview must appear as a separate paragraph (usually paragraph 2) — not as a conclusion",
+                "Group countries by similarity (Sweden and USA both rose steadily) rather than describing each country separately from start to finish"
+            ],
+            "tags": ["task-1", "line-graph", "overview", "comparisons", "data-language"]
+        },
+        "IELTS-Q-WRT2-001": {
+            "id": "IELTS-Q-WRT2-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 9,
+            "type": "writing",
+            "dotPoints": ["IELTS-WRT-3.3", "IELTS-WRT-3.4", "IELTS-WRT-3.6", "IELTS-WRT-4.2"],
+            "topic": "IELTS-WRT",
+            "difficulty": "hard",
+            "title": "Academic Writing Task 2 — Opinion Essay",
+            "description": "Write an opinion essay on the role of technology in education.",
+            "question": "Some people believe that technology, such as smartphones and tablets, has made a positive contribution to children's education. Others feel that these devices are more of a distraction.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+            "solution": {
+                "steps": [
+                    "Decide your position BEFORE writing — partial agreement is acceptable but full agreement/disagreement is easier to structure",
+                    "Introduction: Paraphrase the question + clear thesis statement (your position)",
+                    "Body 1: Main argument FOR your position (with PEEL structure)",
+                    "Body 2: Counter-argument — acknowledge then refute OR second supporting argument",
+                    "Conclusion: Restate position + summary — no new information"
+                ],
+                "modelAnswer": "The rapid integration of digital devices into classrooms has sparked considerable debate among educators and parents alike. While there are legitimate concerns regarding distraction, I firmly believe that technology, when used appropriately, has a predominantly positive impact on children's learning.\n\nThe most compelling argument in favour of classroom technology is its capacity to personalise education in ways that traditional teaching simply cannot. Adaptive learning platforms, for instance, can assess a student's strengths and weaknesses in real time and adjust the difficulty of tasks accordingly. Khan Academy, widely used in primary and secondary schools globally, exemplifies this approach: its algorithm ensures that each child is consistently challenged without being overwhelmed. This tailored experience can be particularly beneficial for students who would otherwise fall behind in a uniform classroom environment.\n\nAdmittedly, the concern that smartphones and tablets serve as a source of distraction is not without foundation. Research has shown that the presence of a smartphone on a desk — even when switched off — can reduce a student's cognitive capacity. However, this issue is fundamentally one of management rather than technology itself. When schools implement clear protocols around device use, restricting personal smartphones while permitting supervised educational tablets, the distraction argument largely loses its force.\n\nIn conclusion, while technology in education must be carefully managed to avoid misuse, its potential to personalise learning, foster engagement, and prepare young people for a digital world far outweighs the risks of distraction. The problem is not technology per se, but the absence of effective policy around its use.\n\nWord count: 262 ✓",
+                "examinerCommentary": "Band 7.5-8 response. Clear and consistent position throughout. PEEL structure evident in both body paragraphs. Strong specific example (Khan Academy). Effective concession-refutation in paragraph 2. Wide vocabulary range ('exemplifies', 'cognitive capacity', 'protocols', 'per se'). Minimal grammatical errors. Could score Band 8 with slightly more complex grammatical structures in paragraph 1."
+            },
+            "hints": [
+                "Do not try to argue both sides equally in an opinion essay — state a clear position and defend it",
+                "A concession in body paragraph 2 ('Admittedly...') followed by a refutation ('However...') shows sophisticated argumentation",
+                "Your conclusion must match your introduction position — do not change your opinion at the end"
+            ],
+            "tags": ["task-2", "opinion-essay", "technology", "education", "PEEL", "concession"]
+        },
+        "IELTS-Q-WRT-GT-001": {
+            "id": "IELTS-Q-WRT-GT-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 9,
+            "type": "writing",
+            "dotPoints": ["IELTS-WRT-2.2", "IELTS-WRT-2.1", "IELTS-WRT-4.1"],
+            "topic": "IELTS-WRT",
+            "difficulty": "medium",
+            "title": "General Training Writing Task 1 — Formal Complaint Letter",
+            "description": "Write a formal letter of complaint to a company.",
+            "question": "You recently bought a laptop computer from an online store. When it arrived, you found that the screen was damaged and some software was missing.\n\nWrite a letter to the customer service manager. In your letter:\n  • describe the problem with the laptop\n  • explain how this has affected you\n  • say what action you want the company to take\n\nWrite at least 150 words.",
+            "solution": {
+                "steps": [
+                    "Identify register: formal (to customer service manager of a company)",
+                    "Opening: Dear Sir/Madam (if name unknown)",
+                    "Paragraph 1: Explain context — when and what you purchased (order reference if possible)",
+                    "Paragraph 2: Describe the damage to the screen specifically",
+                    "Paragraph 3: Explain the missing software and how it has affected your work/studies",
+                    "Paragraph 4: State clearly what you want — refund, replacement, repair",
+                    "Closing: Yours faithfully (if Dear Sir/Madam)"
+                ],
+                "modelAnswer": "Dear Sir or Madam,\n\nI am writing to express my serious dissatisfaction with a laptop computer I recently purchased through your online store. My order (reference number: OL-48291) was placed on 14th March and delivered on 19th March; however, upon opening the package, I discovered significant problems with the product.\n\nFirstly, the screen arrived with a visible crack running across the lower left corner, rendering part of the display unreadable. It is clear that the damage occurred either during manufacturing or in transit, as the box itself showed signs of rough handling.\n\nFurthermore, I was dismayed to find that the operating system did not include the productivity software suite advertised on your website. As I purchased this laptop specifically for work purposes, the absence of this software has meant that I have been unable to complete several urgent tasks, resulting in financial inconvenience.\n\nI would therefore request either a full replacement with an undamaged unit that includes the correct software, or a complete refund within 14 days. I expect a prompt response to this matter and would appreciate acknowledgement of this letter within five working days.\n\nYours faithfully,\nA. Candidate\n\nWord count: 194 ✓",
+                "examinerCommentary": "Band 7.5. All three bullet points addressed fully. Formal register maintained throughout ('dissatisfied', 'dismayed', 'rendering', 'therefore request'). No contractions. Logical paragraph structure. Specific details added (order number, dates) which enhance Task Achievement. Tone is firm but professional."
+            },
+            "hints": [
+                "Use 'Dear Sir or Madam' when you do not know the name; close with 'Yours faithfully'",
+                "Address ALL three bullet points — missing one drops Task Achievement significantly",
+                "Make your request in the final paragraph specific: 'full refund', 'replacement', 'repair' — not just 'please fix it'"
+            ],
+            "tags": ["GT-task-1", "formal-letter", "complaint", "register", "bullet-points"]
+        },
+        "IELTS-Q-SPK-001": {
+            "id": "IELTS-Q-SPK-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 9,
+            "type": "speaking",
+            "dotPoints": ["IELTS-SPK-2.1", "IELTS-SPK-2.2", "IELTS-SPK-4.1", "IELTS-SPK-4.2"],
+            "topic": "IELTS-SPK",
+            "difficulty": "medium",
+            "title": "Speaking Part 2 — Describe a Place You Have Visited",
+            "description": "Practice a Part 2 long turn on a place cue card.",
+            "question": "Describe a place you have visited that you found particularly impressive.\n\nYou should say:\n  • where the place is and when you visited it\n  • what you did there\n  • what you found most impressive about it\n  • and explain why you would recommend this place to others\n\n(You have one minute to prepare. Then speak for up to two minutes.)",
+            "solution": {
+                "steps": [
+                    "Preparation (1 minute): Note 1-2 keywords per bullet — do NOT write full sentences",
+                    "Opening: Name the place and give brief context (when, with whom)",
+                    "Cover bullet 1: Location and when",
+                    "Cover bullet 2: What you did — specific activities",
+                    "Cover bullet 3: Most impressive feature — use vivid sensory language",
+                    "Cover bullet 4: Why recommend — link to feelings/experience",
+                    "Aim to speak for the full 2 minutes without the examiner stopping you"
+                ],
+                "modelAnswer": "The place I would like to describe is the ancient city of Kyoto in Japan, which I had the privilege of visiting for five days back in 2019, during the spring cherry blossom season.\n\nI travelled there with my university friends, and we spent our days exploring the city's extraordinary array of temples and traditional districts. One of the highlights was visiting Fushimi Inari Shrine, which is famous for its thousands of vibrant orange torii gates that wind their way up a forested mountain. We also had the opportunity to participate in a traditional tea ceremony in a centuries-old teahouse, which was a genuinely humbling experience.\n\nWhat I found most impressive, I think, was the contrast between the ancient and the modern. Kyoto is a city where you can turn a corner and find yourself standing before a 1,000-year-old wooden temple, only to look up and see a gleaming high-rise in the background. This sense of history coexisting with the present is something I have never encountered quite so vividly anywhere else.\n\nI would wholeheartedly recommend Kyoto to anyone with even a passing interest in history, culture, or simply beautiful scenery. The city has a particular magic about it, especially in spring, when the cherry blossoms transform even the most ordinary street into something almost breathtakingly beautiful. It is the kind of place that stays with you long after you have returned home.\n\nTime: approximately 1 minute 55 seconds ✓",
+                "examinerCommentary": "Band 7.5-8. All four bullets addressed. Fluent delivery with very few hesitations. Wide vocabulary range: 'privilege', 'extraordinary array', 'humbling', 'coexisting', 'breathtakingly'. Good use of narrative tenses: past simple, past continuous implied. Strong use of vivid and emotive language in bullet 3 and 4. Slight improvement possible in grammatical range — more complex embedded clauses would push to Band 8."
+            },
+            "hints": [
+                "During your preparation minute, jot one or two keywords per bullet — these are memory triggers, not a script",
+                "Use vivid language: instead of 'it was beautiful', say 'the contrast between the ancient and modern was something I had never encountered so vividly'",
+                "If you are running low on content, expand with feelings: 'What really struck me was...', 'I remember thinking at the time...'"
+            ],
+            "tags": ["speaking-part-2", "cue-card", "place", "fluency", "narrative-tenses"]
+        },
+        "IELTS-Q-RDG-001": {
+            "id": "IELTS-Q-RDG-001",
+            "source": "practice",
+            "level": "intermediate",
+            "marks": 9,
+            "type": "reading",
+            "dotPoints": ["IELTS-RDG-2.3", "IELTS-RDG-2.1", "IELTS-RDG-2.5"],
+            "topic": "IELTS-RDG",
+            "difficulty": "medium",
+            "title": "Academic Reading — True/False/Not Given Practice",
+            "description": "Practice the TFNG question type using a short academic-style passage.",
+            "question": "Read the following passage and answer the questions below.\n\n--- PASSAGE ---\nUrban green spaces, such as parks, gardens, and tree-lined streets, have long been valued for their aesthetic contribution to city environments. However, research conducted over the past two decades increasingly suggests that proximity to green space offers measurable health benefits. Studies conducted in the Netherlands found that residents living within one kilometre of a park reported significantly lower rates of anxiety and depression compared with those living in areas with no accessible green space. Similarly, research from the United Kingdom indicates that regular walking in green environments can reduce cortisol levels — a physiological marker of stress — by up to 15% compared with equivalent exercise conducted in urban built environments.\n\nDespite this growing body of evidence, access to urban green space remains highly unequal. In many cities, wealthier neighbourhoods tend to have greater access to well-maintained parks, while lower-income areas frequently lack adequate green infrastructure. Some urban planners argue that addressing this disparity should be a central priority of public health policy, though governments have been slow to implement the systemic changes required.\n\n--- QUESTIONS (True / False / Not Given) ---\nDo the following statements agree with the information given in the passage?\nWrite TRUE if the statement agrees with the information.\nWrite FALSE if the statement contradicts the information.\nWrite NOT GIVEN if the information is not given in the passage.\n\n1. Urban green spaces have only recently been recognised for their environmental benefits.\n2. Dutch residents near parks had lower rates of anxiety and depression than those without nearby parks.\n3. Walking in green areas reduces cortisol levels by more than 15% compared with walking in cities.\n4. Access to green space is distributed equally across different income groups in most cities.\n5. Governments have been quick to act on recommendations to equalise access to green space.",
+            "solution": {
+                "answers": {
+                    "1": { "answer": "FALSE",     "explanation": "The passage says green spaces 'have long been valued for their aesthetic contribution' — implying they have been recognised for a long time, not 'only recently'. FALSE (contradicts the passage)." },
+                    "2": { "answer": "TRUE",      "explanation": "The passage states 'residents living within one kilometre of a park reported significantly lower rates of anxiety and depression compared with those living in areas with no accessible green space.' This matches exactly. TRUE." },
+                    "3": { "answer": "FALSE",     "explanation": "The passage says cortisol can be reduced 'by up to 15%' — meaning a maximum of 15%, not 'more than 15%'. The statement contradicts the passage. FALSE." },
+                    "4": { "answer": "FALSE",     "explanation": "The passage explicitly states 'access to urban green space remains highly unequal' and that wealthier areas have more access. The statement contradicts this. FALSE." },
+                    "5": { "answer": "FALSE",     "explanation": "The passage states 'governments have been SLOW to implement the systemic changes required'. The statement says governments have been 'quick to act' — a direct contradiction. FALSE." }
+                },
+                "keyStrategies": [
+                    "Question 1: Look for the word 'recently' — the passage says 'long been valued' → contradicts → FALSE",
+                    "Question 3: Note the word 'up to' in the passage — this sets a maximum, not a minimum",
+                    "The passage has no examples of NOT GIVEN in this question set — but a common NOT GIVEN would be asking about a specific country or statistic not mentioned"
+                ]
+            },
+            "hints": [
+                "Always locate the relevant part of the passage before deciding — do not answer from memory",
+                "Watch for quantifiers: 'more than 15%' (question) vs 'up to 15%' (passage) = FALSE",
+                "NOT GIVEN means the passage simply does not address the statement — if you cannot find it after 2 minutes, mark NOT GIVEN and move on"
+            ],
+            "tags": ["reading", "TFNG", "academic", "strategy", "comprehension"]
+        }
+    }
+}

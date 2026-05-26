@@ -1,0 +1,36 @@
+{
+    "id": "chinese-gaokao",
+    "name": "中国高考语文复习",
+    "shortName": "语文高考",
+    "icon": "📚",
+    "categories": ["现代文阅读", "古诗文阅读", "语言文字运用", "写作"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "📖", "label": "文言文翻译", "text": "帮我翻译一段文言文" },
+        { "icon": "🎯", "label": "古诗鉴赏", "text": "给我一道古诗词鉴赏练习题" },
+        { "icon": "✍️", "label": "作文指导", "text": "如何写好议论文？" },
+        { "icon": "📋", "label": "真题练习", "text": "给我一道高考真题" },
+        { "icon": "🔍", "label": "修改作文", "text": "帮我修改这篇作文：[粘贴你的作文]" },
+        { "icon": "🗺️", "label": "复习规划", "text": "根据我的情况，今天应该复习什么？" },
+        { "icon": "📝", "label": "病句修改", "text": "练习修改病句" },
+        { "icon": "🖋️", "label": "成语运用", "text": "练习成语填空" },
+        { "icon": "🎭", "label": "文学常识", "text": "帮我梳理文学常识" }
+    ],
+    "quickActions": [
+        { "icon": "📖", "label": "文言文翻译", "text": "帮我翻译这段文言文" },
+        { "icon": "🎯", "label": "古诗鉴赏", "text": "练习古诗鉴赏" },
+        { "icon": "✍️", "label": "作文指导", "text": "指导我写作文" },
+        { "icon": "📋", "label": "真题练习", "text": "做一道高考真题" },
+        { "icon": "🔍", "label": "修改作文", "text": "修改我的作文" },
+        { "icon": "🗺️", "label": "复习计划", "text": "今天该复习什么？" },
+        { "icon": "📝", "label": "病句修改", "text": "练习修改病句" },
+        { "icon": "🖋️", "label": "成语运用", "text": "练习成语运用" }
+    ],
+    "filenames": {
+        "syllabusMap": "chinese-gaokao-syllabus-map.json",
+        "dotPoints": "chinese-gaokao-dot-points.json",
+        "questionIndex": "chinese-gaokao-index.json",
+        "questions": "chinese-gaokao-questions.json",
+        "markingGuidelinesIndex": "chinese-gaokao-marking-guidelines-index.json"
+    }
+}

@@ -1,0 +1,301 @@
+{
+  "subject": "HSC Mathematics Extension 1",
+  "subjectId": "maths-ext1",
+  "syllabusVersion": "2017",
+  "appliesTo": "HSC examinations 2020–2026",
+  "topics": [
+    {
+      "code": "ME-F",
+      "name": "Functions",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "ME-F1",
+          "name": "Further Work with Functions",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "ME-F1.1",
+              "name": "Graphical relationships — reciprocal and square",
+              "keywords": ["reciprocal graph", "square graph", "1/f(x)", "[f(x)]²", "asymptote", "turning point", "graphical relationship", "sign analysis"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.2", "MA-F1.4"]
+            },
+            {
+              "code": "ME-F1.2",
+              "name": "Inequalities involving functions",
+              "keywords": ["inequality", "absolute value inequality", "sign diagram", "number line", "critical values", "f(x) > g(x)", "solve inequality", "fraction inequality"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.3", "MA-F1.4"]
+            },
+            {
+              "code": "ME-F1.3",
+              "name": "Inverse functions",
+              "keywords": ["inverse function", "f⁻¹(x)", "reflection", "y = x", "one-to-one", "horizontal line test", "domain restriction", "swap x and y"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.2"]
+            },
+            {
+              "code": "ME-F1.4",
+              "name": "Parametric representation of curves",
+              "keywords": ["parametric equations", "parameter", "Cartesian form", "x = f(t)", "y = g(t)", "eliminate parameter", "parametric curve", "parametric parabola", "parametric circle"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-F1.3"]
+            }
+          ]
+        },
+        {
+          "code": "ME-F2",
+          "name": "Polynomials",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "ME-F2.1",
+              "name": "Remainder and factor theorems",
+              "keywords": ["remainder theorem", "factor theorem", "polynomial division", "P(a)", "long division", "factorise polynomial", "root", "zero of polynomial"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.3"]
+            },
+            {
+              "code": "ME-F2.2",
+              "name": "Sums and products of roots",
+              "keywords": ["sum of roots", "product of roots", "Vieta's formulas", "roots and coefficients", "α + β", "αβ", "cubic roots", "quartic roots", "symmetric functions of roots"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-F2.1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME-T",
+      "name": "Trigonometric Functions",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "ME-T1",
+          "name": "Inverse Trigonometric Functions",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "ME-T1.1",
+              "name": "Define and use inverse trigonometric functions",
+              "keywords": ["arcsin", "arccos", "arctan", "sin⁻¹", "cos⁻¹", "tan⁻¹", "inverse trig", "restricted domain", "principal value", "inverse trigonometric"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.3", "ME-F1.3"]
+            },
+            {
+              "code": "ME-T1.2",
+              "name": "Trigonometric identities and equations",
+              "keywords": ["sum formula", "difference formula", "double angle", "sin(A+B)", "cos(A+B)", "tan(A+B)", "auxiliary angle", "compound angle", "t-formula", "half angle"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-T1.3", "MA-T2.1", "ME-T1.1"]
+            }
+          ]
+        },
+        {
+          "code": "ME-T2",
+          "name": "Further Trigonometric Identities",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "ME-T2.1",
+              "name": "Trigonometric equations and general solutions",
+              "keywords": ["general solution", "t-formula", "t = tan(θ/2)", "trigonometric equation", "periodicity", "general angle", "2nπ", "principal solution"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-T1.2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME-C",
+      "name": "Calculus",
+      "year": "11-12",
+      "examWeightPercent": 30,
+      "subtopics": [
+        {
+          "code": "ME-C1",
+          "name": "Rates of Change",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "ME-C1.1",
+              "name": "Rates of change and their applications",
+              "keywords": ["rate of change", "differential equation", "related rates", "dy/dx", "instantaneous rate", "population model", "Newton's law of cooling", "chain rule rates"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C1.4", "MA-C2.1"]
+            },
+            {
+              "code": "ME-C1.2",
+              "name": "Exponential growth and decay",
+              "keywords": ["exponential growth", "exponential decay", "dN/dt = kN", "half-life", "decay constant", "growth constant", "natural growth", "radioactive decay"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-E1.2", "ME-C1.1"]
+            }
+          ]
+        },
+        {
+          "code": "ME-C2",
+          "name": "Further Calculus Skills",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "ME-C2.1",
+              "name": "Differential calculus — further techniques",
+              "keywords": ["differentiate inverse trig", "d/dx arcsin", "d/dx arccos", "d/dx arctan", "parametric differentiation", "dy/dt", "dx/dt", "chain rule", "implicit differentiation"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C2.1", "ME-T1.1", "ME-F1.4"]
+            },
+            {
+              "code": "ME-C2.2",
+              "name": "Integral calculus — further techniques",
+              "keywords": ["integrate inverse trig", "∫1/√(a²−x²)", "∫1/(a²+x²)", "substitution", "u-substitution", "integration by substitution", "antiderivative", "definite integral"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C3.1", "ME-C2.1"]
+            },
+            {
+              "code": "ME-C2.3",
+              "name": "Volumes of solids of revolution",
+              "keywords": ["volume of revolution", "solid of revolution", "V = π∫y²dx", "rotate about x-axis", "rotate about y-axis", "washer method", "disc method", "bounded region"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C3.2", "ME-C2.2"]
+            }
+          ]
+        },
+        {
+          "code": "ME-C3",
+          "name": "Applications of Calculus",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "ME-C3.1",
+              "name": "Differential equations",
+              "keywords": ["separable differential equation", "separation of variables", "slope field", "first order ODE", "dy/dx = f(x)g(y)", "general solution", "particular solution", "initial condition"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-C1.1", "ME-C2.2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME-A",
+      "name": "Combinatorics",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "ME-A1",
+          "name": "Working with Combinatorics",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "ME-A1.1",
+              "name": "Permutations",
+              "keywords": ["permutation", "nPr", "factorial", "n!", "arrangement", "circular permutation", "fundamental counting principle", "multiplication rule", "restriction", "ordered arrangement"],
+              "difficulty": "intermediate",
+              "prerequisites": []
+            },
+            {
+              "code": "ME-A1.2",
+              "name": "Combinations",
+              "keywords": ["combination", "nCr", "choose", "selection", "Pascal's triangle", "binomial coefficient", "unordered selection", "C(n,r)", "restriction on selection"],
+              "difficulty": "intermediate",
+              "prerequisites": ["ME-A1.1"]
+            },
+            {
+              "code": "ME-A1.3",
+              "name": "Binomial theorem and binomial expansion",
+              "keywords": ["binomial theorem", "binomial expansion", "(a+b)^n", "general term", "T(r+1)", "Pascal's triangle", "binomial coefficient", "constant term", "coefficient", "expand"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-A1.2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME-V",
+      "name": "Vectors",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "ME-V1",
+          "name": "Introduction to Vectors",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "ME-V1.1",
+              "name": "Vector concepts and representations",
+              "keywords": ["vector", "magnitude", "direction", "component form", "column vector", "vector addition", "scalar multiplication", "unit vector", "i j notation", "|v|", "resultant"],
+              "difficulty": "intermediate",
+              "prerequisites": []
+            },
+            {
+              "code": "ME-V1.2",
+              "name": "Dot product and projections",
+              "keywords": ["dot product", "scalar product", "a·b", "angle between vectors", "perpendicular", "parallel vectors", "projection", "scalar resolute", "vector resolute", "component"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-V1.1"]
+            },
+            {
+              "code": "ME-V1.3",
+              "name": "Vectors and geometry",
+              "keywords": ["position vector", "displacement vector", "geometric proof", "vector proof", "line equation", "parametric line", "collinear", "parallel lines", "intersection of lines"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-V1.2"]
+            },
+            {
+              "code": "ME-V1.4",
+              "name": "Projectile motion using vectors",
+              "keywords": ["projectile motion", "trajectory", "range", "maximum height", "time of flight", "horizontal component", "vertical component", "initial velocity", "angle of projection", "Cartesian trajectory"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-V1.1", "ME-F1.4"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME-S",
+      "name": "Statistical Analysis",
+      "year": "11-12",
+      "examWeightPercent": 10,
+      "subtopics": [
+        {
+          "code": "ME-S1",
+          "name": "The Binomial Distribution",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "ME-S1.1",
+              "name": "Bernoulli trials and binomial probability",
+              "keywords": ["Bernoulli trial", "binomial distribution", "B(n,p)", "P(X=r)", "success probability", "n trials", "independent trials", "binomial probability", "X ~ B(n,p)"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-S1.1", "ME-A1.2"]
+            },
+            {
+              "code": "ME-S1.2",
+              "name": "Mean and variance of binomial distribution",
+              "keywords": ["mean of binomial", "E(X) = np", "variance np(1-p)", "standard deviation", "expected value", "binomial mean", "binomial variance", "statistical inference"],
+              "difficulty": "intermediate",
+              "prerequisites": ["ME-S1.1", "MA-S2.1"]
+            },
+            {
+              "code": "ME-S1.3",
+              "name": "Normal approximation to the binomial",
+              "keywords": ["normal approximation", "continuity correction", "large sample", "approximation", "N(np, np(1-p))", "when to approximate", "binomial to normal"],
+              "difficulty": "advanced",
+              "prerequisites": ["ME-S1.2", "MA-S3.1"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

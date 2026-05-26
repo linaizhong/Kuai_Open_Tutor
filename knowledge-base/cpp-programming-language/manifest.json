@@ -1,0 +1,49 @@
+{
+    "id": "cpp-advanced",
+    "name": "Advanced C++ Programming",
+    "shortName": "C++",
+    "icon": "⚙️",
+    "categories": ["programming", "cpp", "systems", "performance", "algorithms", "embedded"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🔧", "label": "Core C++ basics", "text": "Explain C++ compilation, headers, namespaces, and the build process." },
+        { "icon": "📦", "label": "Classes and OOP", "text": "Explain classes, constructors, destructors, and the Rule of Three/Five." },
+        { "icon": "🧠", "label": "Memory management", "text": "How does memory management work in C++? Explain the heap, stack, and RAII." },
+        { "icon": "🔁", "label": "Templates", "text": "Explain C++ templates, template specialisation, and generic programming." },
+        { "icon": "⚡", "label": "Move semantics", "text": "Explain rvalue references, move semantics, and perfect forwarding." },
+        { "icon": "📋", "label": "STL containers", "text": "Explain the Standard Template Library containers: vector, map, set, deque, list." },
+        { "icon": "🔍", "label": "STL algorithms", "text": "How do I use STL algorithms like sort, find, transform, and accumulate?" },
+        { "icon": "🧩", "label": "Smart pointers", "text": "Explain unique_ptr, shared_ptr, and weak_ptr with examples." },
+        { "icon": "🚀", "label": "Concurrency", "text": "How do I write multithreaded C++ using std::thread, mutex, and condition variables?" },
+        { "icon": "📊", "label": "Modern C++", "text": "What are the key features of C++11/14/17/20 and how do I use them?" },
+        { "icon": "🌐", "label": "Design patterns", "text": "Explain common C++ design patterns: CRTP, PIMPL, Factory, Singleton." },
+        { "icon": "🧪", "label": "Testing", "text": "How do I write unit tests in C++ with Google Test or Catch2?" },
+        { "icon": "⚠️", "label": "Error handling", "text": "Explain C++ exception handling, noexcept, and error management strategies." },
+        { "icon": "🛠️", "label": "Debugging", "text": "How do I debug C++ programs using GDB, Valgrind, and AddressSanitizer?" },
+        { "icon": "📝", "label": "Practice", "text": "Give me an advanced C++ coding challenge to solve." }
+    ],
+    "quickActions": [
+        { "icon": "🔧", "label": "Basics", "text": "Explain C++ basics." },
+        { "icon": "📦", "label": "Classes", "text": "Help with classes and OOP." },
+        { "icon": "🧠", "label": "Memory", "text": "Explain memory management." },
+        { "icon": "🔁", "label": "Templates", "text": "Help with templates." },
+        { "icon": "⚡", "label": "Move semantics", "text": "Explain move semantics." },
+        { "icon": "📋", "label": "STL", "text": "Explain STL containers." },
+        { "icon": "🔍", "label": "Algorithms", "text": "Help with STL algorithms." },
+        { "icon": "🧩", "label": "Smart pointers", "text": "Explain smart pointers." },
+        { "icon": "🚀", "label": "Concurrency", "text": "Help with multithreading." },
+        { "icon": "📊", "label": "Modern C++", "text": "Explain modern C++ features." },
+        { "icon": "🌐", "label": "Patterns", "text": "Explain design patterns." },
+        { "icon": "🧪", "label": "Testing", "text": "Help with C++ testing." },
+        { "icon": "⚠️", "label": "Exceptions", "text": "Explain error handling." },
+        { "icon": "🛠️", "label": "Debugging", "text": "Debugging techniques." },
+        { "icon": "📝", "label": "Practice", "text": "Give me a challenge." }
+    ],
+    "filenames": {
+        "syllabusMap": "cpp-syllabus-map.json",
+        "dotPoints": "cpp-dot-points.json",
+        "questionIndex": "cpp-index.json",
+        "questions": "cpp-questions.json",
+        "markingGuidelinesIndex": "cpp-marking-guidelines-index.json"
+    }
+}

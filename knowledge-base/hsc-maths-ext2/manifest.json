@@ -1,0 +1,43 @@
+{
+    "id": "maths-ext2",
+    "name": "HSC Maths Extension 2",
+    "shortName": "Ext 2",
+    "icon": "📐",
+    "categories": ["math", "assessment", "exam-prep", "calculation", "plotting"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "🔢", "label": "Complex numbers", "text": "Explain how to multiply complex numbers in polar form." },
+        { "icon": "📐", "label": "Worked example", "text": "Show me a worked example of proof by induction involving inequalities." },
+        { "icon": "🧮", "label": "Integration", "text": "Show me how to integrate using partial fractions with quadratic factors." },
+        { "icon": "🔄", "label": "Vectors in 3D", "text": "Explain how to find the shortest distance between two skew lines." },
+        { "icon": "⚙️", "label": "Mechanics", "text": "Explain simple harmonic motion and how to derive the equation x = a sin(nt + α)." },
+        { "icon": "🔬", "label": "Proof", "text": "Show me a proof by contradiction example." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a challenging practice question on conics." },
+        { "icon": "❓", "label": "Explain", "text": "Explain the difference between parametric and Cartesian equations for conics." },
+        { "icon": "📊", "label": "Polynomials", "text": "Explain how to find multiple roots of a polynomial using calculus." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC Extension 2 style question on volumes of revolution." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my working: [paste your answer here]" },
+        { "icon": "🗺️", "label": "What to study", "text": "Based on my progress, what should I focus on today?" }
+    ],
+    "quickActions": [
+        { "icon": "🔢", "label": "Complex numbers", "text": "Explain complex numbers." },
+        { "icon": "📐", "label": "Worked example", "text": "Show me a worked example." },
+        { "icon": "🧮", "label": "Integration", "text": "Explain integration techniques." },
+        { "icon": "🔄", "label": "Vectors 3D", "text": "Explain 3D vectors." },
+        { "icon": "⚙️", "label": "Mechanics", "text": "Explain mechanics." },
+        { "icon": "🔬", "label": "Proof", "text": "Explain proof techniques." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question." },
+        { "icon": "❓", "label": "Explain", "text": "Explain this concept." },
+        { "icon": "📊", "label": "Polynomials", "text": "Explain polynomials." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC past paper question." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my answer." },
+        { "icon": "🗺️", "label": "What to study", "text": "What should I study today?" }
+    ],
+    "filenames": {
+        "syllabusMap": "ext2-syllabus-map.json",
+        "dotPoints": "ext2-dot-points.json",
+        "questionIndex": "ext2-index.json",
+        "questions": "ext2-questions.json",
+        "markingGuidelinesIndex": "ext2-marking-guidelines-index.json"
+    }
+}

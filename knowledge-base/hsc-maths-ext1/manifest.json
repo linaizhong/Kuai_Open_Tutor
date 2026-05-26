@@ -1,0 +1,37 @@
+{
+    "id": "maths-ext1",
+    "name": "HSC Maths Extension 1",
+    "shortName": "Ext 1",
+    "icon": "📐",
+    "categories": ["math", "assessment", "exam-prep", "calculation", "plotting"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "📐", "label": "Worked example", "text": "Can you show me a worked example of mathematical induction?" },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question on inverse trigonometric functions." },
+        { "icon": "❓", "label": "Explain", "text": "Explain parametric equations and how to convert between forms." },
+        { "icon": "🧮", "label": "Binomial theorem", "text": "Help me understand the binomial theorem for (1+x)^n." },
+        { "icon": "📊", "label": "Vectors", "text": "Explain how to find the angle between two vectors." },
+        { "icon": "🔄", "label": "Permutations", "text": "Show me how to solve circular permutation problems." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC Extension 1 style question on projectile motion." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my working: [paste your answer here]" },
+        { "icon": "🗺️", "label": "What to study", "text": "Based on my progress, what should I focus on today?" }
+    ],
+    "quickActions": [
+        { "icon": "📐", "label": "Worked example", "text": "Show me a worked example." },
+        { "icon": "🎯", "label": "Test me", "text": "Give me a practice question." },
+        { "icon": "❓", "label": "Explain", "text": "Explain this concept." },
+        { "icon": "🧮", "label": "Binomial theorem", "text": "Explain binomial theorem." },
+        { "icon": "📊", "label": "Vectors", "text": "Explain vectors." },
+        { "icon": "🔄", "label": "Permutations", "text": "Explain permutations." },
+        { "icon": "📋", "label": "Past paper", "text": "Give me an HSC past paper question." },
+        { "icon": "🔍", "label": "Check my answer", "text": "Check my answer." },
+        { "icon": "🗺️", "label": "What to study", "text": "What should I study today?" }
+    ],
+    "filenames": {
+        "syllabusMap": "ext1-syllabus-map.json",
+        "dotPoints": "ext1-dot-points.json",
+        "questionIndex": "ext1-index.json",
+        "questions": "ext1-questions.json",
+        "markingGuidelinesIndex": "ext1-marking-guidelines-index.json"
+    }
+}

@@ -1,0 +1,468 @@
+{
+  "subject": "HSC Mathematics Extension 2",
+  "description": "Index of marking guidelines by year. Each entry references the full marking guideline data embedded in the question bank. This file provides a quick lookup for the marking-guideline-feedback skill.",
+  "lastUpdated": "2026-03-09",
+  "partialCreditPolicy": {
+    "description": "OpenTutor partial credit assessment policy, aligned with NESA principles",
+    "rules": [
+      {
+        "condition": "Correct method but arithmetic error",
+        "marksAwarded": "full marks minus 1"
+      },
+      {
+        "condition": "Correct first step but incorrect subsequent steps",
+        "marksAwarded": "1 mark"
+      },
+      {
+        "condition": "Correct answer without required working shown",
+        "marksAwarded": "0 to 1 depending on question"
+      },
+      {
+        "condition": "Follow-through error: error from part (a) carried correctly into part (b)",
+        "marksAwarded": "full marks for part (b) working"
+      },
+      {
+        "condition": "'Show that' question: answer is given, so full working is mandatory",
+        "marksAwarded": "0 if working absent, even if conclusion is stated"
+      },
+      {
+        "condition": "Proof question: working both sides simultaneously",
+        "marksAwarded": "0 — must work from one side only"
+      }
+    ]
+  },
+  "ext2SpecificPolicies": {
+    "description": "Additional marking policies specific to Extension 2 question types",
+    "policies": [
+      {
+        "questionType": "Proof / 'Show that'",
+        "policy": "Full stepwise working required. Conclusion must follow logically from working. No marks for stating the result alone."
+      },
+      {
+        "questionType": "Mathematical induction",
+        "policy": "Base case, explicit inductive assumption, and full inductive step are all required. A conclusion statement ('by induction, true for all n ≥ ...') is mandatory for full marks."
+      },
+      {
+        "questionType": "Proof by contradiction",
+        "policy": "The initial assumption must be clearly stated. The contradiction must be made explicit. Conclusion must follow from the contradiction."
+      },
+      {
+        "questionType": "Proof by contrapositive",
+        "policy": "The contrapositive statement must be clearly written before the proof begins. The logical link back to the original statement must be stated."
+      },
+      {
+        "questionType": "Complex numbers — modulus-argument form",
+        "policy": "Argument must lie in the principal range (-π, π]. Arguments outside this range receive 0 for the argument component."
+      },
+      {
+        "questionType": "Complex numbers — locus",
+        "policy": "Locus must be described both algebraically (equation) and geometrically (e.g., 'perpendicular bisector', 'circle', 'ray'). Half-lines must state the excluded endpoint."
+      },
+      {
+        "questionType": "Complex numbers — de Moivre's theorem",
+        "policy": "All roots must be found. For nth roots, exactly n distinct values are required. Geometric description of root arrangement must be stated where asked."
+      },
+      {
+        "questionType": "Integration — integration by parts",
+        "policy": "Choice of u and dv must be stated explicitly. The formula ∫u dv = uv − ∫v du must be applied correctly with all terms shown."
+      },
+      {
+        "questionType": "Integration — trigonometric substitution",
+        "policy": "The substitution, the transformed integrand, and the change of limits (for definite integrals) must all be shown. Back-substitution required for indefinite integrals."
+      },
+      {
+        "questionType": "Integration — reduction formula",
+        "policy": "The derivation must use integration by parts with all intermediate steps shown. The boundary term evaluation must be explicit. Application of the formula must show each step of the recurrence."
+      },
+      {
+        "questionType": "Vectors — 3D lines and planes",
+        "policy": "Vector and Cartesian forms must be clearly distinguished. When finding intersection, all three component equations must be written and the third must be verified for consistency."
+      },
+      {
+        "questionType": "Vectors — cross product and scalar triple product",
+        "policy": "Determinant expansion must be shown in full, including the alternating signs. Volume formulas using the scalar triple product must include the correct fraction (1/6 for tetrahedron, 1/2 for parallelepiped base area)."
+      }
+    ]
+  },
+  "guidelines": {
+    "2023": {
+      "year": 2023,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 2 HSC Marking Guidelines 2023",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "Arbitrary constants in integration results must be shown (write + C)",
+        "For induction proofs, base case, inductive assumption and inductive step must all be present and clearly labelled"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 44,
+        "marking": "Criteria-based marking. See individual question entries in ext2-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For complex number locus questions, both algebraic and geometric descriptions are required",
+          "For proof questions, begin from one side only and work to the other",
+          "For induction proofs, all three components (base case, assumption, step) must be explicitly labelled"
+        ]
+      },
+      "questionGuidelines": {
+        "2023-ME2-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "complex division — multiply by conjugate to reach a + bi form"
+        },
+        "2023-ME2-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "modulus-argument form — correct quadrant and principal argument"
+        },
+        "2023-ME2-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "integration by parts — ∫x sin x dx with correct u and dv selection"
+        },
+        "2023-ME2-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "complex locus — perpendicular bisector from |z − a| = |z − b|"
+        },
+        "2023-ME2-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "3D vector lines — intersection via simultaneous component equations"
+        },
+        "2023-ME2-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "trig integration — half-angle identity and arcsin substitution"
+        },
+        "2023-ME2-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "proof by induction — sum of squares formula"
+        },
+        "2023-ME2-Q17": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "partial fractions — decomposition and logarithmic integration"
+        },
+        "2023-ME2-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "roots of unity — de Moivre's theorem and geometric arrangement"
+        },
+        "2023-ME2-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "equation of a plane — normal via cross product, Cartesian form"
+        },
+        "2023-ME2-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "reduction formula — derivation by parts and repeated application"
+        },
+        "2023-ME2-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "de Moivre's theorem — cos(4θ) expansion and polynomial roots"
+        },
+        "2023-ME2-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "proof by contrapositive and contradiction — irrationality of √2"
+        }
+      }
+    },
+    "2022": {
+      "year": 2022,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 2 HSC Marking Guidelines 2022",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "Arbitrary constants in integration results must be shown (write + C)",
+        "For induction proofs, base case, inductive assumption and inductive step must all be present and clearly labelled"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 45,
+        "marking": "Criteria-based marking. See individual question entries in ext2-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For complex number locus questions, both algebraic and geometric descriptions are required",
+          "For proof questions, begin from one side only and work to the other",
+          "For induction proofs, all three components (base case, assumption, step) must be explicitly labelled"
+        ]
+      },
+      "questionGuidelines": {
+        "2022-ME2-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "complex number arithmetic — powers and simplification using i² = −1"
+        },
+        "2022-ME2-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "complex conjugate — division and Cartesian form"
+        },
+        "2022-ME2-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "complex locus — circle from |z − a| = r"
+        },
+        "2022-ME2-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "integration by parts — tabular or repeated application"
+        },
+        "2022-ME2-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "3D vectors — dot product, angle and perpendicularity"
+        },
+        "2022-ME2-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "partial fractions — repeated or irreducible quadratic factor"
+        },
+        "2022-ME2-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "proof by induction — divisibility or inequality"
+        },
+        "2022-ME2-Q17": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "trigonometric substitution — definite integral with limit change"
+        },
+        "2022-ME2-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "de Moivre's theorem — multiple angle formula derivation"
+        },
+        "2022-ME2-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "vector equation of a plane — normal vector and point substitution"
+        },
+        "2022-ME2-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "complex roots of unity — sum/product properties and exact trig values"
+        },
+        "2022-ME2-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "reduction formula — derivation and iterative evaluation"
+        },
+        "2022-ME2-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "proof by contradiction — irrational or number-theoretic result"
+        }
+      }
+    },
+    "2021": {
+      "year": 2021,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 2 HSC Marking Guidelines 2021",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "Arbitrary constants in integration results must be shown (write + C)",
+        "For induction proofs, base case, inductive assumption and inductive step must all be present and clearly labelled"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 45,
+        "marking": "Criteria-based marking. See individual question entries in ext2-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For complex number locus questions, both algebraic and geometric descriptions are required",
+          "For proof questions, begin from one side only and work to the other",
+          "For induction proofs, all three components (base case, assumption, step) must be explicitly labelled"
+        ]
+      },
+      "questionGuidelines": {
+        "2021-ME2-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "complex numbers — argument and modulus of a product"
+        },
+        "2021-ME2-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "3D vectors — magnitude and unit vector"
+        },
+        "2021-ME2-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "integration by parts — ∫x eˣ dx or similar"
+        },
+        "2021-ME2-Q13": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "complex locus — half-line from arg(z − a) = θ"
+        },
+        "2021-ME2-Q14": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "3D vector lines — parametric form and direction vector"
+        },
+        "2021-ME2-Q15": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "partial fractions and integration — linear factors"
+        },
+        "2021-ME2-Q16": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "proof by induction — geometric series or power inequality"
+        },
+        "2021-ME2-Q17": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "trigonometric substitution — indefinite integral"
+        },
+        "2021-ME2-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "de Moivre's theorem — sin(nθ) or cos(nθ) expansion"
+        },
+        "2021-ME2-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "planes in 3D — distance from point to plane"
+        },
+        "2021-ME2-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "roots of unity — factorisation and exact trigonometric values"
+        },
+        "2021-ME2-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "reduction formula — sinⁿx or cosⁿx with boundary evaluation"
+        },
+        "2021-ME2-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "proof by induction — inequality with inductive step requiring justification"
+        }
+      }
+    },
+    "2020": {
+      "year": 2020,
+      "source": "representative",
+      "nesaReference": "Mathematics Extension 2 HSC Marking Guidelines 2020",
+      "generalPrinciples": [
+        "Marks are awarded for correct mathematical reasoning and working, not just the final answer",
+        "Where a question says 'show that' or 'prove', full working must be shown — the answer is given",
+        "Correct answer without working may receive zero marks for multi-mark questions",
+        "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+        "Diagrams must be clearly labelled to receive associated marks",
+        "Rounding: round only at the final step unless otherwise instructed",
+        "Units must be included where applicable",
+        "Arbitrary constants in integration results must be shown (write + C)",
+        "For induction proofs, base case, inductive assumption and inductive step must all be present and clearly labelled"
+      ],
+      "sectionI": {
+        "description": "10 multiple choice questions, 1 mark each",
+        "totalMarks": 10,
+        "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+      },
+      "sectionII": {
+        "description": "Extended response questions requiring full working",
+        "totalMarks": 28,
+        "marking": "Criteria-based marking. See individual question entries in ext2-questions.json for full criteria.",
+        "generalNotes": [
+          "Show all necessary working",
+          "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+          "State conclusions in the context of the problem",
+          "For complex number locus questions, both algebraic and geometric descriptions are required",
+          "For proof questions, begin from one side only and work to the other",
+          "For induction proofs, all three components (base case, assumption, step) must be explicitly labelled"
+        ]
+      },
+      "questionGuidelines": {
+        "2020-ME2-Q11a": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "complex number powers — expanding and collecting real and imaginary parts"
+        },
+        "2020-ME2-Q11b": {
+          "totalMarks": 2,
+          "partialCredit": true,
+          "keySkill": "3D dot product — angle between vectors including perpendicularity"
+        },
+        "2020-ME2-Q12": {
+          "totalMarks": 3,
+          "partialCredit": true,
+          "keySkill": "trigonometric substitution — x = a sinθ with definite integral limit change"
+        },
+        "2020-ME2-Q18": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "complex locus — ray from arg condition combined with circle condition"
+        },
+        "2020-ME2-Q19": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "integral symmetry property — substitution u = π − x and evaluation"
+        },
+        "2020-ME2-Q20": {
+          "totalMarks": 5,
+          "partialCredit": true,
+          "keySkill": "primitive roots of unity — sum/product identities and exact cos(2π/5)"
+        },
+        "2020-ME2-Q21": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "scalar triple product — volume of tetrahedron via cross and dot product"
+        },
+        "2020-ME2-Q22": {
+          "totalMarks": 4,
+          "partialCredit": true,
+          "keySkill": "proof by induction — inequality 3ⁿ > n² and extension to n³"
+        }
+      }
+    }
+  }
+}

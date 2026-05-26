@@ -1,0 +1,257 @@
+{
+    "subject": "HSC Physics",
+    "description": "Index of marking guidelines by year. Each entry references the full marking guideline data embedded in the question bank. This file provides a quick lookup for the marking-guideline-feedback skill.",
+    "lastUpdated": "2026-03-14",
+
+    "partialCreditPolicy": {
+        "description": "OpenTutor partial credit assessment policy, aligned with NESA principles",
+        "rules": [
+            { "condition": "Correct method but arithmetic or unit conversion error",                        "marksAwarded": "full marks minus 1" },
+            { "condition": "Correct first step but incorrect subsequent steps",                             "marksAwarded": "1 mark" },
+            { "condition": "Correct answer without required working shown",                                 "marksAwarded": "0 to 1 depending on question" },
+            { "condition": "Follow-through error: error from part (a) carried correctly into part (b)",    "marksAwarded": "full marks for part (b) working" },
+            { "condition": "Correct magnitude but incorrect or missing direction for a vector quantity",    "marksAwarded": "full marks minus 1" },
+            { "condition": "Correct method but incorrect significant figures or rounding",                  "marksAwarded": "full marks minus 1 (once per question only)" }
+        ]
+    },
+
+    "guidelines": {
+
+        "2023": {
+            "year": 2023,
+            "source": "representative",
+            "nesaReference": "Physics HSC Marking Guidelines 2023",
+            "generalPrinciples": [
+                "Marks are awarded for correct physical reasoning and working, not just the final answer",
+                "Where a question says 'show that', full working must be shown — the answer is given",
+                "Correct answer without working may receive zero marks for multi-mark questions",
+                "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+                "Diagrams (free body diagrams, ray diagrams, circuit diagrams) must be clearly labelled to receive associated marks",
+                "Vector quantities require both magnitude and direction for full marks",
+                "Units must be included in all final answers — missing units lose marks",
+                "Rounding: round only at the final step unless otherwise instructed",
+                "Scientific notation must be used for very large or very small numbers"
+            ],
+            "sectionI": {
+                "description": "20 multiple choice questions, 1 mark each",
+                "totalMarks": 20,
+                "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+            },
+            "sectionII": {
+                "description": "Extended response questions requiring full working",
+                "totalMarks": 80,
+                "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+                "generalNotes": [
+                    "Show all necessary working including formula, substitution and evaluation steps",
+                    "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+                    "State conclusions and interpret results in the context of the physical problem",
+                    "For 'explain' or 'describe' questions, refer to relevant physical laws or principles by name"
+                ]
+            },
+            "questionGuidelines": {
+                "2023-PH-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "SUVAT equations with uniform acceleration" },
+                "2023-PH-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "work done by an angled force" },
+                "2023-PH-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Coulomb's law and force direction" },
+                "2023-PH-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Snell's law and critical angle" },
+                "2023-PH-Q14":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "projectile motion components and kinematics" },
+                "2023-PH-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "circular motion at top of hill — normal force and minimum speed" },
+                "2023-PH-Q16":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "magnetic flux and Faraday's law" },
+                "2023-PH-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "photoelectric effect — work function and KE_max" },
+                "2023-PH-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "time dilation and Lorentz factor" },
+                "2023-PH-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "transformer turns ratio and RMS to peak voltage" },
+                "2023-PH-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "orbital speed, period and explanation of orbital mechanics" },
+                "2023-PH-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "alpha decay equation, half-life and activity" },
+                "2023-PH-Q22":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "quark composition and standard model classification" }
+            }
+        },
+
+        "2022": {
+            "year": 2022,
+            "source": "representative",
+            "nesaReference": "Physics HSC Marking Guidelines 2022",
+            "generalPrinciples": [
+                "Marks are awarded for correct physical reasoning and working, not just the final answer",
+                "Where a question says 'show that', full working must be shown — the answer is given",
+                "Correct answer without working may receive zero marks for multi-mark questions",
+                "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+                "Diagrams (free body diagrams, ray diagrams, circuit diagrams) must be clearly labelled to receive associated marks",
+                "Vector quantities require both magnitude and direction for full marks",
+                "Units must be included in all final answers — missing units lose marks",
+                "Rounding: round only at the final step unless otherwise instructed",
+                "Scientific notation must be used for very large or very small numbers"
+            ],
+            "sectionI": {
+                "description": "20 multiple choice questions, 1 mark each",
+                "totalMarks": 20,
+                "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+            },
+            "sectionII": {
+                "description": "Extended response questions requiring full working",
+                "totalMarks": 80,
+                "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+                "generalNotes": [
+                    "Show all necessary working including formula, substitution and evaluation steps",
+                    "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+                    "State conclusions and interpret results in the context of the physical problem",
+                    "For 'explain' or 'describe' questions, refer to relevant physical laws or principles by name"
+                ]
+            },
+            "questionGuidelines": {
+                "2022-PH-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "SUVAT equations — finding distance and speed" },
+                "2022-PH-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "electrical power calculations" },
+                "2022-PH-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "specific heat capacity and calorimetry" },
+                "2022-PH-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "vector resolution and projectile launch components" },
+                "2022-PH-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "series and parallel circuit analysis" },
+                "2022-PH-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "conservation of momentum and elastic/inelastic classification" },
+                "2022-PH-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "force on current-carrying conductor and right-hand rule" },
+                "2022-PH-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Young's double slit and wavelength calculation" },
+                "2022-PH-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "Kepler's third law and mass of central body" },
+                "2022-PH-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "circular motion at top and bottom of vertical loop" },
+                "2022-PH-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "time dilation, length contraction and mass-energy" },
+                "2022-PH-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "radioactive decay equation and half-life calculation" }
+            }
+        },
+
+        "2021": {
+            "year": 2021,
+            "source": "representative",
+            "nesaReference": "Physics HSC Marking Guidelines 2021",
+            "generalPrinciples": [
+                "Marks are awarded for correct physical reasoning and working, not just the final answer",
+                "Where a question says 'show that', full working must be shown — the answer is given",
+                "Correct answer without working may receive zero marks for multi-mark questions",
+                "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+                "Diagrams (free body diagrams, ray diagrams, circuit diagrams) must be clearly labelled to receive associated marks",
+                "Vector quantities require both magnitude and direction for full marks",
+                "Units must be included in all final answers — missing units lose marks",
+                "Rounding: round only at the final step unless otherwise instructed",
+                "Scientific notation must be used for very large or very small numbers"
+            ],
+            "sectionI": {
+                "description": "20 multiple choice questions, 1 mark each",
+                "totalMarks": 20,
+                "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+            },
+            "sectionII": {
+                "description": "Extended response questions requiring full working",
+                "totalMarks": 80,
+                "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+                "generalNotes": [
+                    "Show all necessary working including formula, substitution and evaluation steps",
+                    "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+                    "State conclusions and interpret results in the context of the physical problem",
+                    "For 'explain' or 'describe' questions, refer to relevant physical laws or principles by name"
+                ]
+            },
+            "questionGuidelines": {
+                "2021-PH-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "wave speed equation v = fλ" },
+                "2021-PH-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "Coulomb's law magnitude and force type" },
+                "2021-PH-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "SUVAT — multi-step kinematics problem" },
+                "2021-PH-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Snell's law — refraction at a boundary" },
+                "2021-PH-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "work-energy theorem and conservation of energy" },
+                "2021-PH-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "parallel circuit — equivalent resistance and power" },
+                "2021-PH-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "force on moving charge in magnetic field" },
+                "2021-PH-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Young's double slit — fringe spacing and wavelength" },
+                "2021-PH-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "de Broglie wavelength and wave-particle duality" },
+                "2021-PH-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "banked track and conical pendulum circular motion" },
+                "2021-PH-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "orbital mechanics — speed, period and gravitational field" },
+                "2021-PH-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "Bohr model energy levels and nuclear decay equations" }
+            }
+        },
+
+        "2020": {
+            "year": 2020,
+            "source": "representative",
+            "nesaReference": "Physics HSC Marking Guidelines 2020",
+            "generalPrinciples": [
+                "Marks are awarded for correct physical reasoning and working, not just the final answer",
+                "Where a question says 'show that', full working must be shown — the answer is given",
+                "Correct answer without working may receive zero marks for multi-mark questions",
+                "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+                "Diagrams (free body diagrams, ray diagrams, circuit diagrams) must be clearly labelled to receive associated marks",
+                "Vector quantities require both magnitude and direction for full marks",
+                "Units must be included in all final answers — missing units lose marks",
+                "Rounding: round only at the final step unless otherwise instructed",
+                "Scientific notation must be used for very large or very small numbers"
+            ],
+            "sectionI": {
+                "description": "20 multiple choice questions, 1 mark each",
+                "totalMarks": 20,
+                "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+            },
+            "sectionII": {
+                "description": "Extended response questions requiring full working",
+                "totalMarks": 80,
+                "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+                "generalNotes": [
+                    "Show all necessary working including formula, substitution and evaluation steps",
+                    "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+                    "State conclusions and interpret results in the context of the physical problem",
+                    "For 'explain' or 'describe' questions, refer to relevant physical laws or principles by name"
+                ]
+            },
+            "questionGuidelines": {
+                "2020-PH-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "scalar vs vector — distance and displacement" },
+                "2020-PH-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "electric field strength calculation" },
+                "2020-PH-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "free body diagram and Newton's second law on inclined plane" },
+                "2020-PH-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "total internal reflection — critical angle and conditions" },
+                "2020-PH-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "series and parallel circuits — current and voltage" },
+                "2020-PH-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "projectile motion — horizontal launch from height" },
+                "2020-PH-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "transformer equations and power transmission" },
+                "2020-PH-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "photoelectric effect — threshold frequency and KE_max" },
+                "2020-PH-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "centripetal force and circular motion analysis" },
+                "2020-PH-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "time dilation and length contraction calculations" },
+                "2020-PH-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "orbital radius, speed, period — extended gravitational mechanics" },
+                "2020-PH-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "atomic spectra and radioactive decay nuclear equations" }
+            }
+        },
+
+        "2019": {
+            "year": 2019,
+            "source": "representative",
+            "nesaReference": "Physics HSC Marking Guidelines 2019",
+            "generalPrinciples": [
+                "Marks are awarded for correct physical reasoning and working, not just the final answer",
+                "Where a question says 'show that', full working must be shown — the answer is given",
+                "Correct answer without working may receive zero marks for multi-mark questions",
+                "If a student makes an error early but carries through consistently, follow-through marks may be awarded",
+                "Diagrams (free body diagrams, ray diagrams, circuit diagrams) must be clearly labelled to receive associated marks",
+                "Vector quantities require both magnitude and direction for full marks",
+                "Units must be included in all final answers — missing units lose marks",
+                "Rounding: round only at the final step unless otherwise instructed",
+                "Scientific notation must be used for very large or very small numbers"
+            ],
+            "sectionI": {
+                "description": "20 multiple choice questions, 1 mark each",
+                "totalMarks": 20,
+                "marking": "No working required. 1 mark for correct answer, 0 otherwise."
+            },
+            "sectionII": {
+                "description": "Extended response questions requiring full working",
+                "totalMarks": 80,
+                "marking": "Criteria-based marking. See individual question entries in questions.json for full criteria.",
+                "generalNotes": [
+                    "Show all necessary working including formula, substitution and evaluation steps",
+                    "Marks may be awarded for correct intermediate steps even if the final answer is wrong",
+                    "State conclusions and interpret results in the context of the physical problem",
+                    "For 'explain' or 'describe' questions, refer to relevant physical laws or principles by name"
+                ]
+            },
+            "questionGuidelines": {
+                "2019-PH-Q11a": { "totalMarks": 2, "partialCredit": true,  "keySkill": "displacement-time and velocity-time graph interpretation" },
+                "2019-PH-Q11b": { "totalMarks": 2, "partialCredit": true,  "keySkill": "electrical power and energy dissipation" },
+                "2019-PH-Q12":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "work done by electric field — W = qV" },
+                "2019-PH-Q13":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "Snell's law and total internal reflection combined" },
+                "2019-PH-Q14":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "conservation of energy — work-energy theorem with friction" },
+                "2019-PH-Q15":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "parallel circuit analysis — Kirchhoff's laws" },
+                "2019-PH-Q16":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "Young's double slit — wavelength and fringe spacing" },
+                "2019-PH-Q17":  { "totalMarks": 3, "partialCredit": true,  "keySkill": "force on conductor — F = BIl and right-hand rule" },
+                "2019-PH-Q18":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "special relativity — time dilation with muon example" },
+                "2019-PH-Q19":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "vertical circular motion — top and bottom forces" },
+                "2019-PH-Q20":  { "totalMarks": 5, "partialCredit": true,  "keySkill": "Rutherford model, Bohr energy levels and radioactive decay" },
+                "2019-PH-Q21":  { "totalMarks": 4, "partialCredit": true,  "keySkill": "Kepler's third law and gravitational orbital period" }
+            }
+        }
+
+    }
+}

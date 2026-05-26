@@ -1,0 +1,35 @@
+{
+  "id": "math-gaokao",
+  "name": "中国高考数学复习",
+  "shortName": "数学高考",
+  "icon": "🧮",
+  "categories": ["代数", "几何", "概率统计", "函数与导数", "数列", "三角函数", "向量", "不等式"],
+  "enabled": true,
+  "suggestions": [
+    { "icon": "📐", "label": "解题思路", "text": "帮我分析这道题的解题思路：[粘贴题目]" },
+    { "icon": "🎯", "label": "练习题", "text": "给我一道函数综合题练习" },
+    { "icon": "❓", "label": "知识点讲解", "text": "解释一下导数的几何意义" },
+    { "icon": "📋", "label": "真题练习", "text": "给我一道高考数学真题" },
+    { "icon": "🔍", "label": "检查解答", "text": "帮我检查一下我的解题过程：[粘贴解答]" },
+    { "icon": "🗺️", "label": "复习规划", "text": "根据我的薄弱点，今天该复习什么？" },
+    { "icon": "⚠️", "label": "易错题", "text": "给我一道易错题" },
+    { "icon": "📊", "label": "题型总结", "text": "总结一下圆锥曲线的常见题型" }
+  ],
+  "quickActions": [
+    { "icon": "📐", "label": "解题思路", "text": "分析解题思路" },
+    { "icon": "🎯", "label": "练习题", "text": "做一道练习题" },
+    { "icon": "❓", "label": "知识点", "text": "讲解知识点" },
+    { "icon": "📋", "label": "真题", "text": "做高考真题" },
+    { "icon": "🔍", "label": "检查", "text": "检查我的解答" },
+    { "icon": "🗺️", "label": "复习计划", "text": "今天复习什么" },
+    { "icon": "⚠️", "label": "易错题", "text": "练习易错题" },
+    { "icon": "📊", "label": "题型", "text": "题型总结" }
+  ],
+  "filenames": {
+    "syllabusMap": "math-gaokao-syllabus-map.json",
+    "dotPoints": "math-gaokao-dot-points.json",
+    "questionIndex": "math-gaokao-index.json",
+    "questions": "math-gaokao-questions.json",
+    "markingGuidelinesIndex": "math-gaokao-marking-guidelines-index.json"
+  }
+}

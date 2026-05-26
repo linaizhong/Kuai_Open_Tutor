@@ -1,0 +1,1100 @@
+{
+    "subject": "HSC Physics",
+    "description": "Past paper and representative practice question bank. Questions are structured in authentic HSC format with full marking guidelines.",
+    "note": "Questions marked 'representative' are modelled on authentic HSC question styles and difficulty. Verify NESA-sourced questions against official exam papers before production use.",
+    "questions": {
+
+        "2023-PH-Q1": {
+            "id": "2023-PH-Q1",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "1",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-K1.1"],
+            "topic": "PH-K",
+            "difficulty": "easy",
+            "stem": "A car travels 60 km east, then 80 km north. What is the magnitude of the car's displacement?",
+            "options": {
+                "A": "20 km",
+                "B": "100 km",
+                "C": "140 km",
+                "D": "10 000 km"
+            },
+            "answer": "B",
+            "solution": {
+                "reasoning": "Displacement is the straight-line distance from start to finish. Using Pythagoras: displacement = √(60² + 80²) = √(3600 + 6400) = √10000 = 100 km.",
+                "answer": "B: 100 km"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects B"}],
+                "commonErrors": ["Adding 60 + 80 = 140 km (confusing displacement with distance, option C)", "Confusing scalar distance with vector displacement"]
+            },
+            "tags": ["displacement", "scalar", "vector", "Pythagoras"]
+        },
+
+        "2023-PH-Q2": {
+            "id": "2023-PH-Q2",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "2",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-D1.1"],
+            "topic": "PH-D",
+            "difficulty": "easy",
+            "stem": "A 4 kg object accelerates at 3 m/s² to the right. A friction force of 2 N acts to the left. What is the applied force?",
+            "options": {
+                "A": "10 N to the right",
+                "B": "12 N to the right",
+                "C": "14 N to the right",
+                "D": "6 N to the right"
+            },
+            "answer": "C",
+            "solution": {
+                "reasoning": "F_net = ma = 4 × 3 = 12 N to the right. F_net = F_applied - F_friction. 12 = F_applied - 2. F_applied = 14 N to the right.",
+                "answer": "C: 14 N to the right"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects C"}],
+                "commonErrors": ["Using F = ma = 12 N as the applied force without accounting for friction (option B)", "Subtracting instead of adding friction: 12 - 2 = 10 N (option A)"]
+            },
+            "tags": ["Newton's second law", "net force", "friction", "F=ma"]
+        },
+
+        "2023-PH-Q3": {
+            "id": "2023-PH-Q3",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "3",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-W1.1"],
+            "topic": "PH-W",
+            "difficulty": "easy",
+            "stem": "A wave has a frequency of 200 Hz and travels at 340 m/s. What is its wavelength?",
+            "options": {
+                "A": "0.59 m",
+                "B": "1.7 m",
+                "C": "68 000 m",
+                "D": "0.17 m"
+            },
+            "answer": "B",
+            "solution": {
+                "reasoning": "Using v = fλ: λ = v/f = 340/200 = 1.7 m.",
+                "answer": "B: 1.7 m"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects B"}],
+                "commonErrors": ["Inverting: λ = f/v = 200/340 ≈ 0.59 m (option A)", "Multiplying: λ = fv = 200 × 340 = 68 000 m (option C)"]
+            },
+            "tags": ["wave speed", "wavelength", "frequency", "v=fλ"]
+        },
+
+        "2023-PH-Q4": {
+            "id": "2023-PH-Q4",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "4",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-E2.1"],
+            "topic": "PH-E",
+            "difficulty": "easy",
+            "stem": "A resistor has a voltage of 12 V across it and a current of 0.5 A through it. What is its resistance?",
+            "options": {
+                "A": "6 Ω",
+                "B": "12.5 Ω",
+                "C": "24 Ω",
+                "D": "0.042 Ω"
+            },
+            "answer": "C",
+            "solution": {
+                "reasoning": "Using Ohm's law: R = V/I = 12/0.5 = 24 Ω.",
+                "answer": "C: 24 Ω"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects C"}],
+                "commonErrors": ["Using R = I/V = 0.5/12 (inverted, option D)", "Using R = V × I = 6 (option A — multiplying instead of dividing)"]
+            },
+            "tags": ["Ohm's law", "resistance", "voltage", "current"]
+        },
+
+        "2023-PH-Q5": {
+            "id": "2023-PH-Q5",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "5",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-N2.1"],
+            "topic": "PH-N",
+            "difficulty": "easy",
+            "stem": "Light of frequency 8.0 × 10¹⁴ Hz shines on a metal surface with a work function of 2.0 eV. Which statement is correct? (h = 6.63 × 10⁻³⁴ J s, 1 eV = 1.6 × 10⁻¹⁹ J)",
+            "options": {
+                "A": "No electrons are emitted because the frequency is below the threshold.",
+                "B": "Electrons are emitted with maximum kinetic energy of approximately 1.3 eV.",
+                "C": "Electrons are emitted with maximum kinetic energy of approximately 3.3 eV.",
+                "D": "Increasing the intensity would increase the maximum kinetic energy of emitted electrons."
+            },
+            "answer": "B",
+            "solution": {
+                "reasoning": "Photon energy E = hf = 6.63×10⁻³⁴ × 8.0×10¹⁴ = 5.3×10⁻¹⁹ J = 5.3×10⁻¹⁹/1.6×10⁻¹⁹ ≈ 3.3 eV. KE_max = hf - φ = 3.3 - 2.0 = 1.3 eV. Emission occurs since E > φ.",
+                "answer": "B: Electrons are emitted with maximum KE of approximately 1.3 eV"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects B"}],
+                "commonErrors": ["Selecting C: confusing photon energy (3.3 eV) with KE_max (1.3 eV) — forgetting to subtract work function", "Selecting D: intensity affects number of electrons, NOT kinetic energy"]
+            },
+            "tags": ["photoelectric effect", "work function", "photon energy", "Einstein", "E=hf"]
+        },
+
+        "2023-PH-Q6": {
+            "id": "2023-PH-Q6",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "6",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-E3.1"],
+            "topic": "PH-E",
+            "difficulty": "easy",
+            "stem": "A horizontal wire of length 0.4 m carries a current of 5 A eastward in a magnetic field of 0.3 T directed vertically upward. What is the magnitude and direction of the force on the wire?",
+            "options": {
+                "A": "0.6 N downward",
+                "B": "0.6 N northward",
+                "C": "6.0 N northward",
+                "D": "0.6 N southward"
+            },
+            "answer": "B",
+            "solution": {
+                "reasoning": "F = BIl sinθ = 0.3 × 5 × 0.4 × sin90° = 0.6 N. Direction: current east, B upward — right-hand rule gives force northward.",
+                "answer": "B: 0.6 N northward"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects B"}],
+                "commonErrors": ["Getting direction wrong — must use right-hand rule carefully with current (east) and B (up)", "Multiplying all three without sin90° (same result here but wrong reasoning)"]
+            },
+            "tags": ["motor effect", "magnetic force", "right-hand rule", "F=BIl"]
+        },
+
+        "2023-PH-Q8": {
+            "id": "2023-PH-Q8",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "8",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-D2.1"],
+            "topic": "PH-D",
+            "difficulty": "medium",
+            "stem": "A 500 g ball on a string moves in a horizontal circle of radius 0.8 m at a speed of 4 m/s. What is the centripetal force acting on the ball?",
+            "options": {
+                "A": "2.5 N",
+                "B": "5.0 N",
+                "C": "10 N",
+                "D": "20 N"
+            },
+            "answer": "C",
+            "solution": {
+                "reasoning": "F_c = mv²/r = 0.5 × 4²/0.8 = 0.5 × 16/0.8 = 0.5 × 20 = 10 N.",
+                "answer": "C: 10 N"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects C"}],
+                "commonErrors": ["Using mass in grams: 500 × 16/0.8 (forgetting to convert to kg)", "Using F = mv/r instead of mv²/r (option B: 0.5×4/0.8 = 2.5)"]
+            },
+            "tags": ["centripetal force", "circular motion", "F=mv²/r"]
+        },
+
+        "2023-PH-Q9": {
+            "id": "2023-PH-Q9",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "9",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-N3.1"],
+            "topic": "PH-N",
+            "difficulty": "medium",
+            "stem": "A spaceship moves at 0.6c relative to Earth. An astronaut on board measures a journey time of 10 years. What time does an Earth observer measure for the same journey?",
+            "options": {
+                "A": "8 years",
+                "B": "10 years",
+                "C": "12.5 years",
+                "D": "16.7 years"
+            },
+            "answer": "C",
+            "solution": {
+                "reasoning": "t₀ = 10 years (proper time, measured in ship's rest frame). γ = 1/√(1-0.6²) = 1/√(1-0.36) = 1/√0.64 = 1/0.8 = 1.25. t = γt₀ = 1.25 × 10 = 12.5 years.",
+                "answer": "C: 12.5 years"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects C"}],
+                "commonErrors": ["Inverting: t = t₀/γ = 10/1.25 = 8 years — confusing which observer measures proper time (option A)", "Not applying time dilation at all (option B)"]
+            },
+            "tags": ["time dilation", "special relativity", "Lorentz factor", "proper time"]
+        },
+
+        "2023-PH-Q10": {
+            "id": "2023-PH-Q10",
+            "source": "representative",
+            "year": 2023,
+            "section": "I",
+            "questionNumber": "10",
+            "marks": 1,
+            "type": "multiple-choice",
+            "dotPoints": ["PH-E3.3"],
+            "topic": "PH-E",
+            "difficulty": "medium",
+            "stem": "A coil of 100 turns has a magnetic flux that changes from 0.05 Wb to 0.02 Wb in 0.3 s. What is the magnitude of the induced EMF?",
+            "options": {
+                "A": "0.1 V",
+                "B": "1.0 V",
+                "C": "10 V",
+                "D": "30 V"
+            },
+            "answer": "C",
+            "solution": {
+                "reasoning": "ε = N × |ΔΦ/Δt| = 100 × |0.02 - 0.05|/0.3 = 100 × 0.03/0.3 = 100 × 0.1 = 10 V.",
+                "answer": "C: 10 V"
+            },
+            "markingGuideline": {
+                "criteria": [{"marks": 1, "description": "Selects C"}],
+                "commonErrors": ["Forgetting to multiply by N = 100 turns: 0.03/0.3 = 0.1 V (option A)", "Using total flux rather than change in flux"]
+            },
+            "tags": ["Faraday's law", "induced EMF", "magnetic flux", "electromagnetic induction"]
+        },
+
+        "2023-PH-Q11a": {
+            "id": "2023-PH-Q11a",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "11a",
+            "marks": 2,
+            "type": "short-answer",
+            "dotPoints": ["PH-K1.3"],
+            "topic": "PH-K",
+            "difficulty": "easy",
+            "stem": "A car starts from rest and accelerates uniformly at 2.5 m/s² for 8 seconds.\n(a) Calculate the final speed of the car.\n(b) Calculate the distance travelled during this time.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) u = 0, a = 2.5 m/s², t = 8 s",
+                    "v = u + at = 0 + 2.5 × 8 = 20 m/s",
+                    "",
+                    "(b) s = ut + ½at² = 0 + ½ × 2.5 × 64 = 80 m"
+                ],
+                "finalAnswer": "(a) v = 20 m/s   (b) s = 80 m"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) v = 20 m/s with correct substitution shown"},
+                    {"marks": 1, "description": "(b) s = 80 m with correct substitution shown"}
+                ],
+                "commonErrors": [
+                    "(b) Using s = vt = 20 × 8 = 160 m (using final velocity instead of SUVAT)",
+                    "(b) Using s = ½at² without the ut term (correct here since u=0, but wrong reasoning)"
+                ]
+            },
+            "tags": ["SUVAT", "uniform acceleration", "kinematics", "v=u+at", "s=ut+½at²"]
+        },
+
+        "2023-PH-Q11b": {
+            "id": "2023-PH-Q11b",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "11b",
+            "marks": 2,
+            "type": "short-answer",
+            "dotPoints": ["PH-D1.3"],
+            "topic": "PH-D",
+            "difficulty": "easy",
+            "stem": "A 3 kg block is pushed 5 m along a horizontal surface by a force of 20 N at 30° below the horizontal. Calculate the work done by the applied force.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "W = Fs cosθ where θ is the angle between force and displacement",
+                    "The force is at 30° below the horizontal; displacement is horizontal",
+                    "W = 20 × 5 × cos30°",
+                    "W = 100 × (√3/2)",
+                    "W = 100 × 0.866 ≈ 86.6 J"
+                ],
+                "finalAnswer": "W ≈ 86.6 J"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 2, "description": "Correct answer W ≈ 86.6 J with W = Fs cosθ shown"},
+                    {"marks": 1, "description": "Correct formula W = Fs cosθ identified and substituted, with arithmetic error"}
+                ],
+                "commonErrors": [
+                    "Using W = Fs = 20 × 5 = 100 J (forgetting the cos30° factor)",
+                    "Using sin30° instead of cos30° (measuring angle from vertical rather than horizontal)"
+                ]
+            },
+            "tags": ["work", "W=Fscosθ", "angled force", "energy"]
+        },
+
+        "2023-PH-Q12": {
+            "id": "2023-PH-Q12",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "12",
+            "marks": 3,
+            "type": "short-answer",
+            "dotPoints": ["PH-E1.1"],
+            "topic": "PH-E",
+            "difficulty": "easy",
+            "stem": "Two point charges, q₁ = +4 μC and q₂ = -6 μC, are placed 0.3 m apart.\n(a) Calculate the magnitude of the electrostatic force between them.\n(b) State whether the force is attractive or repulsive and explain why.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) F = kq₁q₂/r²",
+                    "F = (9.0×10⁹ × 4×10⁻⁶ × 6×10⁻⁶) / (0.3)²",
+                    "F = (9.0×10⁹ × 24×10⁻¹²) / 0.09",
+                    "F = (216×10⁻³) / 0.09",
+                    "F = 2.4 N",
+                    "",
+                    "(b) The force is attractive because the charges are opposite in sign (one positive, one negative). Unlike charges attract."
+                ],
+                "finalAnswer": "(a) F = 2.4 N   (b) Attractive — opposite charges attract"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 2, "description": "(a) F = 2.4 N with correct substitution into F = kq₁q₂/r²"},
+                    {"marks": 1, "description": "(a) Correct formula and substitution but arithmetic error"},
+                    {"marks": 1, "description": "(b) Attractive, with reason: opposite/unlike charges attract"}
+                ],
+                "commonErrors": [
+                    "Using r = 0.3 instead of r² = 0.09 in denominator",
+                    "Converting μC incorrectly: using 4 instead of 4×10⁻⁶",
+                    "(b) Stating repulsive without checking charge signs"
+                ]
+            },
+            "tags": ["Coulomb's law", "electrostatic force", "point charge", "attractive force"]
+        },
+
+        "2023-PH-Q13": {
+            "id": "2023-PH-Q13",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "13",
+            "marks": 3,
+            "type": "short-answer",
+            "dotPoints": ["PH-W3.1", "PH-W3.2"],
+            "topic": "PH-W",
+            "difficulty": "medium",
+            "stem": "Light travels from water (n = 1.33) into glass (n = 1.50) at an angle of incidence of 40°.\n(a) Calculate the angle of refraction.\n(b) If the light instead travelled from the glass into the water, calculate the critical angle for total internal reflection.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Snell's law: n₁ sinθ₁ = n₂ sinθ₂",
+                    "1.33 × sin40° = 1.50 × sinθ₂",
+                    "1.33 × 0.6428 = 1.50 × sinθ₂",
+                    "0.8549 = 1.50 × sinθ₂",
+                    "sinθ₂ = 0.5699",
+                    "θ₂ = 34.8° ≈ 35°",
+                    "",
+                    "(b) For TIR, light travels from glass (denser, n₁ = 1.50) to water (less dense, n₂ = 1.33)",
+                    "sinC = n₂/n₁ = 1.33/1.50 = 0.8867",
+                    "C = 62.5°"
+                ],
+                "finalAnswer": "(a) θ₂ ≈ 35°   (b) C ≈ 62.5°"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 2, "description": "(a) θ₂ ≈ 35° with Snell's law correctly applied"},
+                    {"marks": 1, "description": "(a) Snell's law set up correctly with correct substitution but arithmetic error"},
+                    {"marks": 1, "description": "(b) C ≈ 62.5° with sinC = n₂/n₁ shown correctly"}
+                ],
+                "commonErrors": [
+                    "(a) Swapping n₁ and n₂: using 1.50 × sin40° = 1.33 × sinθ₂",
+                    "(b) Using sinC = n₁/n₂ (inverted): sinC = 1.50/1.33 > 1 (impossible — a check that formula is wrong)",
+                    "Measuring angles from the surface instead of from the normal"
+                ]
+            },
+            "tags": ["Snell's law", "refraction", "total internal reflection", "critical angle", "refractive index"]
+        },
+
+        "2023-PH-Q14": {
+            "id": "2023-PH-Q14",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "14",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-K2.2"],
+            "topic": "PH-K",
+            "difficulty": "medium",
+            "stem": "A ball is launched from ground level at 25 m/s at an angle of 37° above the horizontal. (sin37° = 0.60, cos37° = 0.80, g = 9.8 m/s²)\n(a) Calculate the initial horizontal and vertical components of velocity.\n(b) Calculate the maximum height reached.\n(c) Calculate the total time of flight.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) uₓ = 25 cos37° = 25 × 0.80 = 20 m/s",
+                    "    uᵧ = 25 sin37° = 25 × 0.60 = 15 m/s",
+                    "",
+                    "(b) At maximum height, vᵧ = 0",
+                    "    vᵧ² = uᵧ² - 2g·h",
+                    "    0 = 15² - 2 × 9.8 × h",
+                    "    h = 225/19.6 = 11.5 m",
+                    "",
+                    "(c) Time to reach maximum height: vᵧ = uᵧ - gt",
+                    "    0 = 15 - 9.8t → t = 15/9.8 = 1.53 s",
+                    "    Total time = 2 × 1.53 = 3.06 s ≈ 3.1 s (symmetric launch and landing on flat ground)"
+                ],
+                "finalAnswer": "(a) uₓ = 20 m/s, uᵧ = 15 m/s   (b) h = 11.5 m   (c) T = 3.1 s"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Both components correct: uₓ = 20 m/s, uᵧ = 15 m/s"},
+                    {"marks": 1, "description": "(b) h = 11.5 m with correct vertical SUVAT used"},
+                    {"marks": 1, "description": "(b) Correct method: vᵧ = 0 at peak, correct equation set up"},
+                    {"marks": 1, "description": "(c) T ≈ 3.1 s (doubling time to maximum height, or using vertical s = 0)"}
+                ],
+                "commonErrors": [
+                    "(a) Swapping sin and cos: uₓ = 25×0.60 = 15, uᵧ = 25×0.80 = 20",
+                    "(b) Forgetting vᵧ = 0 at maximum height",
+                    "(c) Using T = time to peak only (1.53 s) without doubling",
+                    "Using g = 10 m/s² without justification when 9.8 is given"
+                ]
+            },
+            "tags": ["projectile motion", "components", "maximum height", "time of flight", "SUVAT"]
+        },
+
+        "2023-PH-Q15": {
+            "id": "2023-PH-Q15",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "15",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-D2.1"],
+            "topic": "PH-D",
+            "difficulty": "hard",
+            "stem": "A 1200 kg car travels over a circular hill of radius 50 m at a constant speed of 15 m/s.\n(a) Draw a free body diagram of the car at the top of the hill.\n(b) Calculate the normal force acting on the car at the top of the hill.\n(c) Calculate the maximum speed at which the car can travel over the hill without losing contact with the road.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Free body diagram: Weight mg downward (arrow larger); Normal force N upward (arrow smaller). Net force = centripetal force directed downward (toward centre of circle).",
+                    "",
+                    "(b) At the top, both weight and normal force act vertically.",
+                    "    Net downward force = centripetal force",
+                    "    mg - N = mv²/r",
+                    "    N = mg - mv²/r",
+                    "    N = m(g - v²/r)",
+                    "    N = 1200 × (9.8 - 15²/50)",
+                    "    N = 1200 × (9.8 - 4.5)",
+                    "    N = 1200 × 5.3 = 6360 N",
+                    "",
+                    "(c) At maximum speed, N = 0 (car just loses contact)",
+                    "    mg = mv²_max/r",
+                    "    v²_max = gr = 9.8 × 50 = 490",
+                    "    v_max = √490 ≈ 22.1 m/s"
+                ],
+                "finalAnswer": "(b) N = 6360 N   (c) v_max ≈ 22.1 m/s"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Free body diagram showing mg downward and N upward, with N < mg at the top of a hill"},
+                    {"marks": 2, "description": "(b) N = 6360 N with correct equation mg - N = mv²/r shown"},
+                    {"marks": 1, "description": "(b) Correct setup mg - N = mv²/r even if arithmetic error"},
+                    {"marks": 1, "description": "(c) v_max ≈ 22.1 m/s with N = 0 condition stated"}
+                ],
+                "commonErrors": [
+                    "(b) Using N + mg = mv²/r (wrong direction — at top of hill, both N and centripetal are relevant differently)",
+                    "(b) Adding instead of subtracting: N = mg + mv²/r (treating hill like inside of a loop)",
+                    "(c) Not recognising that N = 0 gives maximum speed",
+                    "(a) Drawing centrifugal force on the free body diagram"
+                ]
+            },
+            "tags": ["circular motion", "normal force", "centripetal force", "top of hill", "apparent weight"]
+        },
+
+        "2023-PH-Q16": {
+            "id": "2023-PH-Q16",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "16",
+            "marks": 3,
+            "type": "short-answer",
+            "dotPoints": ["PH-E3.3"],
+            "topic": "PH-E",
+            "difficulty": "medium",
+            "stem": "A rectangular coil of area 0.05 m² and 200 turns is in a magnetic field of 0.4 T perpendicular to the coil. The field drops to zero in 0.2 s.\n(a) Calculate the initial magnetic flux through the coil.\n(b) Calculate the magnitude of the induced EMF.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Φ = BA cosθ = 0.4 × 0.05 × cos0° = 0.02 Wb",
+                    "    (B is perpendicular to coil so θ = 0° between B and normal to coil)",
+                    "",
+                    "(b) ε = N × |ΔΦ/Δt|",
+                    "    ΔΦ = 0 - 0.02 = -0.02 Wb",
+                    "    ε = 200 × 0.02/0.2 = 200 × 0.1 = 20 V"
+                ],
+                "finalAnswer": "(a) Φ = 0.02 Wb   (b) ε = 20 V"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Φ = 0.02 Wb with Φ = BA cosθ shown"},
+                    {"marks": 2, "description": "(b) ε = 20 V with ε = NΔΦ/Δt correctly applied"},
+                    {"marks": 1, "description": "(b) Correct formula with substitution error, or ε = 0.1 V (forgetting N = 200 turns)"}
+                ],
+                "commonErrors": [
+                    "(a) Not using cosθ or using sin instead of cos",
+                    "(b) Forgetting to multiply by N (number of turns): getting 0.1 V instead of 20 V",
+                    "(b) Using Φ instead of ΔΦ in the numerator"
+                ]
+            },
+            "tags": ["Faraday's law", "magnetic flux", "induced EMF", "electromagnetic induction", "coil"]
+        },
+
+        "2023-PH-Q17": {
+            "id": "2023-PH-Q17",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "17",
+            "marks": 3,
+            "type": "short-answer",
+            "dotPoints": ["PH-N2.1"],
+            "topic": "PH-N",
+            "difficulty": "medium",
+            "stem": "In a photoelectric experiment, the threshold frequency for a metal surface is 6.0 × 10¹⁴ Hz.\n(a) Calculate the work function of the metal in joules and in electron volts.\n(b) Light of wavelength 400 nm shines on the metal. Calculate the maximum kinetic energy of the emitted electrons. (h = 6.63 × 10⁻³⁴ J s, c = 3.0 × 10⁸ m/s, 1 eV = 1.6 × 10⁻¹⁹ J)",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) φ = hf₀ = 6.63×10⁻³⁴ × 6.0×10¹⁴",
+                    "    φ = 3.98×10⁻¹⁹ J ≈ 4.0×10⁻¹⁹ J",
+                    "    φ = 4.0×10⁻¹⁹ / 1.6×10⁻¹⁹ = 2.5 eV",
+                    "",
+                    "(b) f = c/λ = 3.0×10⁸ / 400×10⁻⁹ = 7.5×10¹⁴ Hz",
+                    "    E_photon = hf = 6.63×10⁻³⁴ × 7.5×10¹⁴ = 4.97×10⁻¹⁹ J",
+                    "    KE_max = E_photon - φ = 4.97×10⁻¹⁹ - 4.0×10⁻¹⁹ = 9.7×10⁻²⁰ J"
+                ],
+                "finalAnswer": "(a) φ = 4.0×10⁻¹⁹ J = 2.5 eV   (b) KE_max = 9.7×10⁻²⁰ J"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) φ ≈ 4.0×10⁻¹⁹ J and 2.5 eV"},
+                    {"marks": 1, "description": "(b) Correct photon energy E = hc/λ calculated"},
+                    {"marks": 1, "description": "(b) KE_max = E_photon - φ correctly applied with numerical answer"}
+                ],
+                "commonErrors": [
+                    "(b) Not converting wavelength to metres (using 400 instead of 400×10⁻⁹)",
+                    "(b) Subtracting in wrong order: φ - E_photon (giving negative KE)",
+                    "(a) Not converting to eV when asked"
+                ]
+            },
+            "tags": ["photoelectric effect", "work function", "threshold frequency", "KE_max", "photon energy"]
+        },
+
+        "2023-PH-Q18": {
+            "id": "2023-PH-Q18",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "18",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-N3.1", "PH-N3.2"],
+            "topic": "PH-N",
+            "difficulty": "hard",
+            "stem": "A muon travels toward Earth at 0.98c relative to Earth. In the muon's rest frame, its lifetime is 2.2 μs.\n(a) Calculate the Lorentz factor γ for the muon.\n(b) Calculate the muon's lifetime as measured by an observer on Earth.\n(c) Calculate the distance the muon travels (as measured by Earth) during its lifetime.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) γ = 1/√(1-v²/c²) = 1/√(1-0.98²) = 1/√(1-0.9604) = 1/√0.0396",
+                    "    γ = 1/0.199 ≈ 5.03",
+                    "",
+                    "(b) t = γt₀ = 5.03 × 2.2×10⁻⁶ = 1.11×10⁻⁵ s ≈ 11 μs",
+                    "",
+                    "(c) d = v × t = 0.98 × 3.0×10⁸ × 1.11×10⁻⁵",
+                    "    d = 2.94×10⁸ × 1.11×10⁻⁵",
+                    "    d ≈ 3260 m ≈ 3.3 km"
+                ],
+                "finalAnswer": "(a) γ ≈ 5.03   (b) t ≈ 11 μs   (c) d ≈ 3.3 km"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) γ ≈ 5.03 with correct formula 1/√(1-v²/c²)"},
+                    {"marks": 1, "description": "(b) t ≈ 11 μs using t = γt₀"},
+                    {"marks": 1, "description": "(c) Distance calculated using d = vt with Earth-frame time"},
+                    {"marks": 1, "description": "Consistent use of γ throughout with correct identification of proper time"}
+                ],
+                "commonErrors": [
+                    "(b) Using t = t₀/γ (inverting — confusing which frame measures proper time)",
+                    "(c) Using the proper lifetime (2.2 μs) instead of dilated lifetime for distance calculation",
+                    "(a) Computing γ = √(1-0.98²) without taking the reciprocal"
+                ]
+            },
+            "tags": ["time dilation", "Lorentz factor", "muon", "special relativity", "proper time"]
+        },
+
+        "2023-PH-Q19": {
+            "id": "2023-PH-Q19",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "19",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-E3.4"],
+            "topic": "PH-E",
+            "difficulty": "medium",
+            "stem": "A step-down transformer has 2400 primary turns and 120 secondary turns. The primary voltage is 240 V (RMS) and the secondary current is 10 A.\n(a) Calculate the secondary voltage.\n(b) Assuming the transformer is ideal, calculate the primary current.\n(c) Calculate the peak secondary voltage.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Vp/Vs = Np/Ns",
+                    "    240/Vs = 2400/120 = 20",
+                    "    Vs = 240/20 = 12 V",
+                    "",
+                    "(b) For ideal transformer: Vp × Ip = Vs × Is",
+                    "    240 × Ip = 12 × 10 = 120",
+                    "    Ip = 120/240 = 0.5 A",
+                    "",
+                    "(c) V_peak = V_rms × √2 = 12 × √2 ≈ 17.0 V"
+                ],
+                "finalAnswer": "(a) Vs = 12 V   (b) Ip = 0.5 A   (c) V_peak ≈ 17.0 V"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Vs = 12 V with turns ratio correctly applied"},
+                    {"marks": 1, "description": "(b) Ip = 0.5 A using ideal transformer power equation"},
+                    {"marks": 1, "description": "(b) Correct formula Vp×Ip = Vs×Is stated"},
+                    {"marks": 1, "description": "(c) V_peak ≈ 17.0 V with V_peak = V_rms × √2 shown"}
+                ],
+                "commonErrors": [
+                    "(a) Inverting turns ratio: Vs = 240 × (2400/120) = 4800 V (step-up instead of step-down)",
+                    "(b) Using Ip/Is = Np/Ns instead of power equation (gives same answer but wrong reasoning)",
+                    "(c) V_peak = V_rms / √2 (dividing instead of multiplying)"
+                ]
+            },
+            "tags": ["transformer", "turns ratio", "AC", "RMS", "peak voltage", "ideal transformer"]
+        },
+
+        "2023-PH-Q20": {
+            "id": "2023-PH-Q20",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "20",
+            "marks": 5,
+            "type": "extended-response",
+            "dotPoints": ["PH-A1.1"],
+            "topic": "PH-A",
+            "difficulty": "hard",
+            "stem": "A satellite orbits Earth at an altitude of 400 km above the surface.\n(G = 6.67×10⁻¹¹ N m² kg⁻², M_Earth = 5.97×10²⁴ kg, R_Earth = 6.37×10⁶ m)\n(a) Calculate the orbital radius of the satellite.\n(b) Calculate the orbital speed of the satellite.\n(c) Calculate the orbital period of the satellite in minutes.\n(d) Explain why a satellite in a higher orbit moves more slowly than one in a lower orbit.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) r = R_Earth + altitude = 6.37×10⁶ + 400×10³ = 6.37×10⁶ + 0.4×10⁶ = 6.77×10⁶ m",
+                    "",
+                    "(b) For circular orbit: GMm/r² = mv²/r → v = √(GM/r)",
+                    "    v = √(6.67×10⁻¹¹ × 5.97×10²⁴ / 6.77×10⁶)",
+                    "    v = √(3.98×10¹⁴ / 6.77×10⁶)",
+                    "    v = √(5.88×10⁷)",
+                    "    v ≈ 7670 m/s ≈ 7.67 km/s",
+                    "",
+                    "(c) T = 2πr/v = 2π × 6.77×10⁶ / 7670",
+                    "    T = 4.254×10⁷ / 7670 ≈ 5546 s",
+                    "    T ≈ 5546/60 ≈ 92.4 minutes",
+                    "",
+                    "(d) Gravity provides centripetal force: GMm/r² = mv²/r → v = √(GM/r).",
+                    "    As r increases, v decreases (v is inversely proportional to √r).",
+                    "    A higher orbit has weaker gravity, so the satellite needs less speed to maintain its circular orbit.",
+                    "    Additionally, Kepler's third law states T² ∝ r³, so a larger orbit has a longer period as well as slower speed."
+                ],
+                "finalAnswer": "(a) r = 6.77×10⁶ m   (b) v ≈ 7670 m/s   (c) T ≈ 92.4 min"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) r = 6.77×10⁶ m — adds R_Earth and altitude correctly"},
+                    {"marks": 1, "description": "(b) v ≈ 7670 m/s with v = √(GM/r) derived from GMm/r² = mv²/r"},
+                    {"marks": 1, "description": "(c) T ≈ 92 min using T = 2πr/v with correct units conversion"},
+                    {"marks": 2, "description": "(d) Clear explanation using v = √(GM/r): larger r → smaller v, with reference to gravity providing centripetal force"}
+                ],
+                "commonErrors": [
+                    "(a) Using r = 400 km only (forgetting to add Earth's radius)",
+                    "(b) Using g = 9.8 m/s² at this altitude (g varies with altitude: g = GM/r²)",
+                    "(c) Leaving answer in seconds without converting to minutes",
+                    "(d) Vague answer — must specifically reference the equation v = √(GM/r) or GM/r² = mv²/r"
+                ]
+            },
+            "tags": ["orbital motion", "orbital speed", "orbital period", "Kepler's third law", "gravity", "centripetal force"]
+        },
+
+        "2023-PH-Q21": {
+            "id": "2023-PH-Q21",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "21",
+            "marks": 4,
+            "type": "extended-response",
+            "dotPoints": ["PH-M2.2"],
+            "topic": "PH-M",
+            "difficulty": "hard",
+            "stem": "Radium-226 (²²⁶₈₈Ra) undergoes alpha decay.\n(a) Write the balanced nuclear equation for this decay.\n(b) The half-life of Ra-226 is 1600 years. A sample initially contains 8.0 × 10²⁰ atoms. Calculate the number of Ra-226 atoms remaining after 4800 years.\n(c) Calculate the activity of the initial sample in Bq. (1 year = 3.15 × 10⁷ s)",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Alpha decay: ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He",
+                    "    (Mass number: 226 = 222 + 4 ✓; Atomic number: 88 = 86 + 2 ✓)",
+                    "    Daughter nucleus is Radon-222",
+                    "",
+                    "(b) Number of half-lives: n = 4800/1600 = 3",
+                    "    N = N₀ × (½)ⁿ = 8.0×10²⁰ × (½)³ = 8.0×10²⁰ × 1/8",
+                    "    N = 1.0×10²⁰ atoms",
+                    "",
+                    "(c) λ = ln2 / t½ = 0.693 / (1600 × 3.15×10⁷)",
+                    "    λ = 0.693 / (5.04×10¹⁰) = 1.375×10⁻¹¹ s⁻¹",
+                    "    A = λN₀ = 1.375×10⁻¹¹ × 8.0×10²⁰",
+                    "    A = 1.10×10¹⁰ Bq"
+                ],
+                "finalAnswer": "(a) ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He   (b) N = 1.0×10²⁰   (c) A ≈ 1.1×10¹⁰ Bq"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Correct equation: ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He with both A and Z balanced"},
+                    {"marks": 1, "description": "(b) N = 1.0×10²⁰ with n = 3 half-lives and (½)³ shown"},
+                    {"marks": 2, "description": "(c) A ≈ 1.1×10¹⁰ Bq with λ = ln2/t½ and A = λN₀ shown with t½ in seconds"}
+                ],
+                "commonErrors": [
+                    "(a) Writing alpha particle as ⁴₂α instead of ⁴₂He, or not identifying daughter as Rn-222",
+                    "(b) Dividing N₀ by 3 instead of by 2³: N = 8.0×10²⁰/3 (incorrect)",
+                    "(c) Using t½ in years instead of seconds for λ calculation",
+                    "(c) Confusing N (remaining atoms) with N₀ (initial atoms) for activity"
+                ]
+            },
+            "tags": ["alpha decay", "nuclear equation", "half-life", "radioactivity", "activity", "decay constant"]
+        },
+
+        "2023-PH-Q22": {
+            "id": "2023-PH-Q22",
+            "source": "representative",
+            "year": 2023,
+            "section": "II",
+            "questionNumber": "22",
+            "marks": 4,
+            "type": "extended-response",
+            "dotPoints": ["PH-M2.3"],
+            "topic": "PH-M",
+            "difficulty": "hard",
+            "stem": "(a) State the quark composition of a proton and a neutron, and verify the charge of each particle.\n(b) Identify the fundamental force responsible for holding quarks together inside a proton, and name the force-carrying particle.\n(c) A pion (π⁺) is a meson with charge +1. State the quark composition of the π⁺ and explain why it is classified as a meson rather than a baryon.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Proton: uud (up, up, down)",
+                    "    Charge = (+2/3) + (+2/3) + (-1/3) = +3/3 = +1 ✓",
+                    "    Neutron: udd (up, down, down)",
+                    "    Charge = (+2/3) + (-1/3) + (-1/3) = 0/3 = 0 ✓",
+                    "",
+                    "(b) The strong nuclear force holds quarks together.",
+                    "    Force-carrying particle: gluon",
+                    "",
+                    "(c) π⁺ quark composition: u d̄ (up quark + anti-down quark)",
+                    "    Charge = (+2/3) + (+1/3) = +1 ✓",
+                    "    It is a meson because it consists of one quark and one antiquark (quark-antiquark pair).",
+                    "    A baryon consists of three quarks, so the π⁺ cannot be a baryon."
+                ],
+                "finalAnswer": "(a) Proton: uud, q = +1; Neutron: udd, q = 0   (b) Strong force, gluon   (c) π⁺ = ud̄, meson = quark + antiquark"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Both quark compositions correct (uud and udd) with charge verified"},
+                    {"marks": 1, "description": "(b) Strong nuclear force and gluon both named"},
+                    {"marks": 1, "description": "(c) Correct quark composition of π⁺: ud̄ (or u anti-d)"},
+                    {"marks": 1, "description": "(c) Correct explanation: meson = quark + antiquark (2 quarks), baryon = 3 quarks"}
+                ],
+                "commonErrors": [
+                    "(a) Proton = udd (confusing proton and neutron compositions)",
+                    "(b) Naming the electromagnetic force or the weak force instead of the strong force",
+                    "(c) Stating π⁺ = uū or dd̄ (charge would be 0, not +1)",
+                    "(c) Saying meson has 2 quarks without specifying one must be an antiquark"
+                ]
+            },
+            "tags": ["standard model", "quarks", "proton", "neutron", "meson", "baryon", "strong force", "gluon"]
+        },
+
+        "2022-PH-Q15": {
+            "id": "2022-PH-Q15",
+            "source": "representative",
+            "year": 2022,
+            "section": "II",
+            "questionNumber": "15",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-D1.4"],
+            "topic": "PH-D",
+            "difficulty": "medium",
+            "stem": "A 0.5 kg ball moving at 6 m/s east collides with a 1.5 kg ball at rest. After the collision, the 0.5 kg ball moves at 2 m/s west.\n(a) Calculate the velocity of the 1.5 kg ball after the collision.\n(b) Determine whether the collision is elastic or inelastic by comparing kinetic energies.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Define east as positive.",
+                    "    p_before = 0.5 × 6 + 1.5 × 0 = 3.0 kg m/s",
+                    "    p_after = 0.5 × (-2) + 1.5 × v₂",
+                    "    Conservation of momentum: 3.0 = -1.0 + 1.5v₂",
+                    "    1.5v₂ = 4.0",
+                    "    v₂ = 2.67 m/s east",
+                    "",
+                    "(b) KE_before = ½ × 0.5 × 6² = 9.0 J",
+                    "    KE_after = ½ × 0.5 × 2² + ½ × 1.5 × 2.67²",
+                    "    KE_after = 1.0 + 5.34 = 6.34 J",
+                    "    KE_before ≠ KE_after (9.0 J ≠ 6.34 J)",
+                    "    The collision is inelastic — kinetic energy is not conserved."
+                ],
+                "finalAnswer": "(a) v₂ = 2.67 m/s east   (b) Inelastic — KE lost = 2.66 J"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Correct definition of positive direction and initial momentum"},
+                    {"marks": 1, "description": "(a) v₂ = 2.67 m/s east with conservation of momentum shown"},
+                    {"marks": 1, "description": "(b) KE_before = 9.0 J and KE_after ≈ 6.34 J correctly calculated"},
+                    {"marks": 1, "description": "(b) Correctly concludes inelastic with reason: KE not conserved"}
+                ],
+                "commonErrors": [
+                    "(a) Forgetting sign convention — using +2 for the ball that moves west",
+                    "(a) Not defining positive direction and getting direction wrong",
+                    "(b) Only calculating KE_before or KE_after but not both",
+                    "(b) Stating elastic without checking KE"
+                ]
+            },
+            "tags": ["momentum conservation", "collision", "elastic", "inelastic", "kinetic energy"]
+        },
+
+        "2022-PH-Q18": {
+            "id": "2022-PH-Q18",
+            "source": "representative",
+            "year": 2022,
+            "section": "II",
+            "questionNumber": "18",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-A1.1"],
+            "topic": "PH-A",
+            "difficulty": "hard",
+            "stem": "Two planets X and Y orbit the same star. Planet X has an orbital radius of 2.0 × 10¹¹ m and a period of 365 days.\n(a) Using Kepler's third law, calculate the orbital period of planet Y, which has an orbital radius of 4.5 × 10¹¹ m. Give your answer in days.\n(b) Calculate the mass of the star. (G = 6.67×10⁻¹¹ N m² kg⁻²)",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Kepler's third law: T²/r³ = constant",
+                    "    Tₓ²/rₓ³ = Tᵧ²/rᵧ³",
+                    "    Tᵧ² = Tₓ² × (rᵧ/rₓ)³",
+                    "    Tᵧ² = 365² × (4.5×10¹¹ / 2.0×10¹¹)³",
+                    "    Tᵧ² = 133225 × (2.25)³",
+                    "    Tᵧ² = 133225 × 11.39",
+                    "    Tᵧ² = 1,517,934",
+                    "    Tᵧ ≈ 1232 days",
+                    "",
+                    "(b) From Kepler's third law: T²/r³ = 4π²/GM",
+                    "    M = 4π²r³/(GT²)",
+                    "    Convert: T = 365 × 24 × 3600 = 3.156×10⁷ s",
+                    "    M = 4π² × (2.0×10¹¹)³ / (6.67×10⁻¹¹ × (3.156×10⁷)²)",
+                    "    M = 4π² × 8.0×10³³ / (6.67×10⁻¹¹ × 9.96×10¹⁴)",
+                    "    M = 3.158×10³⁵ / 6.64×10⁴",
+                    "    M ≈ 2.0×10³⁰ kg"
+                ],
+                "finalAnswer": "(a) Tᵧ ≈ 1232 days   (b) M ≈ 2.0×10³⁰ kg"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Kepler's third law ratio correctly set up: (Tᵧ/Tₓ)² = (rᵧ/rₓ)³"},
+                    {"marks": 1, "description": "(a) Tᵧ ≈ 1232 days with correct calculation"},
+                    {"marks": 1, "description": "(b) M = 4π²r³/GT² with correct T converted to seconds"},
+                    {"marks": 1, "description": "(b) M ≈ 2.0×10³⁰ kg"}
+                ],
+                "commonErrors": [
+                    "(a) Using T ∝ r (not T² ∝ r³ — forgetting to cube the radius ratio)",
+                    "(b) Not converting T from days to seconds before substituting",
+                    "(b) Using r in km instead of metres"
+                ]
+            },
+            "tags": ["Kepler's third law", "orbital period", "orbital radius", "mass of star", "gravitation"]
+        },
+
+        "2021-PH-Q18": {
+            "id": "2021-PH-Q18",
+            "source": "representative",
+            "year": 2021,
+            "section": "II",
+            "questionNumber": "18",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-N2.2"],
+            "topic": "PH-N",
+            "difficulty": "hard",
+            "stem": "(a) Calculate the de Broglie wavelength of an electron moving at 2.0 × 10⁶ m/s. (m_e = 9.11 × 10⁻³¹ kg, h = 6.63 × 10⁻³⁴ J s)\n(b) Explain why the wave nature of a cricket ball (mass 0.16 kg, speed 40 m/s) is not observable in practice.\n(c) State one experimental observation that provides evidence for the wave nature of electrons.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) λ = h/mv = 6.63×10⁻³⁴ / (9.11×10⁻³¹ × 2.0×10⁶)",
+                    "    λ = 6.63×10⁻³⁴ / 1.822×10⁻²⁴",
+                    "    λ = 3.64×10⁻¹⁰ m ≈ 0.364 nm",
+                    "",
+                    "(b) λ = h/mv = 6.63×10⁻³⁴ / (0.16 × 40) = 6.63×10⁻³⁴ / 6.4 ≈ 1.04×10⁻³⁴ m",
+                    "    This wavelength is far smaller than any physical obstacle or gap (atoms are ~10⁻¹⁰ m).",
+                    "    Diffraction and interference effects require λ ≈ size of the gap/obstacle.",
+                    "    The cricket ball's wavelength is so incredibly small that quantum wave effects are completely undetectable.",
+                    "",
+                    "(c) Electron diffraction: when a beam of electrons passes through a crystal lattice or thin film,",
+                    "    it produces a diffraction pattern (rings or spots). This pattern can only be explained if",
+                    "    electrons have wave properties with wavelength comparable to atomic spacings."
+                ],
+                "finalAnswer": "(a) λ ≈ 3.64×10⁻¹⁰ m   (b) Wavelength ~10⁻³⁴ m — far too small to produce observable diffraction"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) λ ≈ 3.64×10⁻¹⁰ m with λ = h/mv correctly applied"},
+                    {"marks": 1, "description": "(b) Calculates cricket ball wavelength (~10⁻³⁴ m) OR explains wavelength is far smaller than any physical aperture"},
+                    {"marks": 1, "description": "(b) States that diffraction requires λ ≈ gap size — cricket ball wavelength is undetectably small"},
+                    {"marks": 1, "description": "(c) Names electron diffraction with explanation (produces diffraction pattern like waves)"}
+                ],
+                "commonErrors": [
+                    "(a) Using λ = mv/h (inverting the formula)",
+                    "(b) Vague answer — must specifically mention wavelength is too small relative to any physical gap",
+                    "(c) Naming the photoelectric effect — this shows particle nature of LIGHT, not wave nature of electrons"
+                ]
+            },
+            "tags": ["de Broglie wavelength", "wave-particle duality", "electron diffraction", "matter wave"]
+        },
+
+        "2020-PH-Q15": {
+            "id": "2020-PH-Q15",
+            "source": "representative",
+            "year": 2020,
+            "section": "II",
+            "questionNumber": "15",
+            "marks": 4,
+            "type": "short-answer",
+            "dotPoints": ["PH-K2.2"],
+            "topic": "PH-K",
+            "difficulty": "medium",
+            "stem": "A ball is kicked horizontally from the top of a cliff at 12 m/s. It hits the ground 3.0 s later. (g = 9.8 m/s²)\n(a) Calculate the height of the cliff.\n(b) Calculate the horizontal distance from the base of the cliff to where the ball lands.\n(c) Calculate the speed of the ball just before it hits the ground.",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Vertical: u_y = 0 (horizontal launch), a = 9.8 m/s², t = 3.0 s",
+                    "    h = ½gt² = ½ × 9.8 × 9.0 = 44.1 m",
+                    "",
+                    "(b) Horizontal: u_x = 12 m/s, a_x = 0",
+                    "    x = u_x × t = 12 × 3.0 = 36 m",
+                    "",
+                    "(c) v_x = 12 m/s (unchanged)",
+                    "    v_y = u_y + gt = 0 + 9.8 × 3.0 = 29.4 m/s",
+                    "    v = √(v_x² + v_y²) = √(144 + 864.36) = √1008.36 ≈ 31.8 m/s"
+                ],
+                "finalAnswer": "(a) h = 44.1 m   (b) x = 36 m   (c) v ≈ 31.8 m/s"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) h = 44.1 m using h = ½gt² with u_y = 0 for horizontal launch"},
+                    {"marks": 1, "description": "(b) x = 36 m using x = u_x × t with constant horizontal velocity"},
+                    {"marks": 1, "description": "(c) Both v_x = 12 m/s and v_y = 29.4 m/s correctly identified"},
+                    {"marks": 1, "description": "(c) Final speed ≈ 31.8 m/s using Pythagoras"}
+                ],
+                "commonErrors": [
+                    "(a) Using h = gt² (forgetting ½ factor)",
+                    "(c) Adding velocities directly: 12 + 29.4 = 41.4 m/s (not using Pythagoras)",
+                    "(c) Using initial vertical velocity instead of final vertical velocity"
+                ]
+            },
+            "tags": ["projectile motion", "horizontal launch", "cliff", "final speed", "Pythagoras"]
+        },
+
+        "2019-PH-Q20": {
+            "id": "2019-PH-Q20",
+            "source": "representative",
+            "year": 2019,
+            "section": "II",
+            "questionNumber": "20",
+            "marks": 5,
+            "type": "extended-response",
+            "dotPoints": ["PH-M2.1", "PH-M2.2"],
+            "topic": "PH-M",
+            "difficulty": "hard",
+            "stem": "(a) Describe how Rutherford's gold foil experiment led to the nuclear model of the atom. Your answer should refer to the results of the experiment and how they were interpreted.\n(b) An electron in a hydrogen atom falls from the n = 4 energy level to the n = 2 energy level. Calculate the wavelength of the photon emitted. (E_n = -13.6/n² eV, h = 6.63×10⁻³⁴ J s, c = 3.0×10⁸ m/s, 1 eV = 1.6×10⁻¹⁹ J)",
+            "workingRequired": true,
+            "solution": {
+                "steps": [
+                    "(a) Rutherford fired alpha particles at thin gold foil and detected them on a surrounding screen.",
+                    "    Observations:",
+                    "    - Most alpha particles passed straight through (little or no deflection)",
+                    "    - A small fraction were deflected at large angles",
+                    "    - A very small number bounced almost straight back",
+                    "    Interpretation:",
+                    "    - The Thomson 'plum pudding' model predicted only slight deflections (diffuse positive charge)",
+                    "    - Large-angle deflections and back-scattering could only occur if the positive charge was concentrated in a tiny, dense nucleus",
+                    "    - The mostly empty space explains why most particles passed through undeflected",
+                    "    Conclusion: atoms have a small, dense, positively charged nucleus surrounded by mostly empty space.",
+                    "",
+                    "(b) E_4 = -13.6/4² = -13.6/16 = -0.85 eV",
+                    "    E_2 = -13.6/2² = -13.6/4 = -3.40 eV",
+                    "    ΔE = E_4 - E_2 = -0.85 - (-3.40) = 2.55 eV",
+                    "    Convert: ΔE = 2.55 × 1.6×10⁻¹⁹ = 4.08×10⁻¹⁹ J",
+                    "    E = hc/λ → λ = hc/E",
+                    "    λ = (6.63×10⁻³⁴ × 3.0×10⁸) / 4.08×10⁻¹⁹",
+                    "    λ = 1.989×10⁻²⁵ / 4.08×10⁻¹⁹",
+                    "    λ ≈ 4.87×10⁻⁷ m = 487 nm (visible blue-green)"
+                ],
+                "finalAnswer": "(a) Nuclear model from Rutherford's experiment   (b) λ ≈ 487 nm"
+            },
+            "markingGuideline": {
+                "criteria": [
+                    {"marks": 1, "description": "(a) Describes experimental setup: alpha particles fired at gold foil"},
+                    {"marks": 1, "description": "(a) Describes key results: most pass through, few deflected, tiny fraction backscattered"},
+                    {"marks": 1, "description": "(a) Correct interpretation: small dense positive nucleus, mostly empty space — contradicts Thomson model"},
+                    {"marks": 1, "description": "(b) ΔE = 2.55 eV correctly calculated using E_n = -13.6/n²"},
+                    {"marks": 1, "description": "(b) λ ≈ 487 nm with λ = hc/ΔE correctly applied"}
+                ],
+                "commonErrors": [
+                    "(a) Not mentioning the Thomson model or why results were surprising",
+                    "(a) Not explaining why backscattering requires a concentrated nucleus",
+                    "(b) Using E_2 - E_4 = -2.55 eV (negative — giving negative wavelength)",
+                    "(b) Not converting eV to Joules before calculating wavelength"
+                ]
+            },
+            "tags": ["Rutherford", "gold foil experiment", "nuclear model", "atomic spectra", "energy levels", "hydrogen", "photon wavelength"]
+        }
+
+    },
+
+    "meta": {
+        "totalQuestions": 20,
+        "multipleChoiceQuestions": 8,
+        "shortAnswerQuestions": 9,
+        "extendedResponseQuestions": 3,
+        "topicCoverage": {
+            "PH-K": 5,
+            "PH-D": 4,
+            "PH-W": 2,
+            "PH-E": 5,
+            "PH-A": 2,
+            "PH-N": 5,
+            "PH-M": 4
+        },
+        "difficultyCoverage": {
+            "easy": 6,
+            "medium": 9,
+            "hard": 5
+        },
+        "lastUpdated": "2026-03-14",
+        "buildNote": "Questions are representative, modelled on authentic HSC Physics exam style (NESA 2017 syllabus). Expand with actual NESA past paper questions (2019–2025) sourced directly from NESA publications. Each NESA question requires verification of exact wording and official marking criteria."
+    }
+}

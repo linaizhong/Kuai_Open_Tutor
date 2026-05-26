@@ -1,0 +1,146 @@
+{
+    "subject": "HSC Mathematics Advanced",
+    "subjectId": "maths-advanced",
+    "version": "1.0.0",
+    "totalWeeks": 40,
+    "examWeight": {
+        "MA-F": 0.20,
+        "MA-T": 0.15,
+        "MA-C": 0.30,
+        "MA-E": 0.10,
+        "MA-S": 0.15,
+        "MA-M": 0.10
+    },
+    "topics": {
+        "MA-F1": {
+            "name": "Algebraic Techniques",
+            "prerequisites": [],
+            "dotPoints": ["MA-F1.1", "MA-F1.2", "MA-F1.3"],
+            "estimatedSessions": 3,
+            "learningObjectives": [
+                "Simplify algebraic expressions",
+                "Expand and factorise expressions",
+                "Solve linear and quadratic equations"
+            ]
+        },
+        "MA-F2": {
+            "name": "Functions and Relations",
+            "prerequisites": ["MA-F1"],
+            "dotPoints": ["MA-F2.1", "MA-F2.2"],
+            "estimatedSessions": 2,
+            "learningObjectives": [
+                "Understand function notation",
+                "Find domain and range",
+                "Graph basic functions"
+            ]
+        },
+        "MA-T1": {
+            "name": "Trigonometry",
+            "prerequisites": ["MA-F1"],
+            "dotPoints": ["MA-T1.1", "MA-T1.2", "MA-T1.3"],
+            "estimatedSessions": 4,
+            "learningObjectives": [
+                "Use trigonometric ratios",
+                "Solve right-angled triangles",
+                "Apply sine and cosine rules"
+            ]
+        },
+        "MA-C1": {
+            "name": "Introduction to Differentiation",
+            "prerequisites": ["MA-F1"],
+            "dotPoints": ["MA-C1.1", "MA-C1.2", "MA-C1.3"],
+            "estimatedSessions": 4,
+            "learningObjectives": [
+                "Understand the definition of a derivative",
+                "Find derivatives using first principles",
+                "Apply basic differentiation rules"
+            ]
+        },
+        "MA-C2": {
+            "name": "Further Differentiation",
+            "prerequisites": ["MA-C1"],
+            "dotPoints": ["MA-C2.1", "MA-C2.2", "MA-C2.3"],
+            "estimatedSessions": 4,
+            "learningObjectives": [
+                "Differentiate products and quotients",
+                "Apply chain rule",
+                "Find second derivatives"
+            ]
+        },
+        "MA-C3": {
+            "name": "Applications of Differentiation",
+            "prerequisites": ["MA-C2"],
+            "dotPoints": ["MA-C3.1", "MA-C3.2", "MA-C3.3"],
+            "estimatedSessions": 4,
+            "learningObjectives": [
+                "Find stationary points",
+                "Solve optimisation problems",
+                "Sketch curves"
+            ]
+        },
+        "MA-C4": {
+            "name": "Integration",
+            "prerequisites": ["MA-C2"],
+            "dotPoints": ["MA-C4.1", "MA-C4.2", "MA-C4.3"],
+            "estimatedSessions": 4,
+            "learningObjectives": [
+                "Understand integration as reverse differentiation",
+                "Find indefinite integrals",
+                "Calculate definite integrals"
+            ]
+        },
+        "MA-E1": {
+            "name": "Exponential and Logarithmic Functions",
+            "prerequisites": ["MA-C1"],
+            "dotPoints": ["MA-E1.1", "MA-E1.2"],
+            "estimatedSessions": 3,
+            "learningObjectives": [
+                "Understand exponential functions",
+                "Apply logarithm laws",
+                "Solve exponential equations"
+            ]
+        },
+        "MA-S1": {
+            "name": "Probability",
+            "prerequisites": ["MA-F1"],
+            "dotPoints": ["MA-S1.1", "MA-S1.2"],
+            "estimatedSessions": 3,
+            "learningObjectives": [
+                "Calculate probabilities",
+                "Use probability distributions",
+                "Apply conditional probability"
+            ]
+        },
+        "MA-S2": {
+            "name": "Statistical Analysis",
+            "prerequisites": ["MA-S1"],
+            "dotPoints": ["MA-S2.1", "MA-S2.2", "MA-S2.3"],
+            "estimatedSessions": 3,
+            "learningObjectives": [
+                "Calculate mean and standard deviation",
+                "Understand normal distribution",
+                "Interpret statistical reports"
+            ]
+        },
+        "MA-M1": {
+            "name": "Financial Mathematics",
+            "prerequisites": ["MA-F1"],
+            "dotPoints": ["MA-M1.1", "MA-M1.2"],
+            "estimatedSessions": 2,
+            "learningObjectives": [
+                "Calculate simple and compound interest",
+                "Model annuities and loans"
+            ]
+        },
+        "MA-M2": {
+            "name": "Further Financial Mathematics",
+            "prerequisites": ["MA-M1"],
+            "dotPoints": ["MA-M2.1", "MA-M2.2"],
+            "estimatedSessions": 2,
+            "learningObjectives": [
+                "Use geometric series in finance",
+                "Calculate present and future value"
+            ]
+        }
+    }
+}

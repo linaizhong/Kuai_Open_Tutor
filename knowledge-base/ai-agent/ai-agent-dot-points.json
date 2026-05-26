@@ -1,0 +1,412 @@
+{
+    "subject": "AI Agent Development",
+    "syllabusVersion": "2025",
+    "description": "Comprehensive AI agent learning resource with key concepts, common errors, learning tips, code examples, and research references for intermediate developers.",
+    "dotPoints": {
+        "AGT-CORE-1.1": {
+            "code": "AGT-CORE-1.1",
+            "name": "Agents vs Chatbots vs Pipelines",
+            "topic": "Agent Concepts and Architecture",
+            "subtopic": "What is an AI Agent?",
+            "level": "foundation",
+            "summary": "An AI agent is a system that perceives its environment, reasons about a goal, takes actions using tools, and iterates until the goal is achieved — going far beyond a simple chatbot or fixed pipeline.",
+            "keyConcepts": [
+                "Chatbot: Takes input, generates one response, stops — no tool use, no iteration, no goal tracking",
+                "Pipeline: Fixed sequence of steps; deterministic; no branching based on LLM reasoning",
+                "Agent: Uses an LLM as a reasoning engine; dynamically decides what tools to call; loops until goal is met",
+                "Autonomy: The degree to which the system acts independently without human intervention",
+                "Goal-directed: Agents maintain a goal across multiple steps rather than responding to a single prompt",
+                "Environment interaction: Agents can read from and write to the world (web, databases, APIs, files)",
+                "Agentic loop: Observe → Think (LLM) → Act (tool call) → Observe result → Repeat"
+            ],
+            "commonErrors": [
+                "Calling a chatbot an 'agent' just because it uses an LLM — if it cannot call tools or iterate, it is not an agent",
+                "Building a hardcoded pipeline when the task genuinely requires dynamic reasoning — over-constraining the system",
+                "Giving the agent too much autonomy for high-stakes actions (e.g. sending emails, deleting files) without human approval",
+                "Not defining a clear stopping condition — agent loops indefinitely or stops too early"
+            ],
+            "learningTips": [
+                "Think of the LLM as the agent's 'brain' — everything else (tools, memory, state) is the body",
+                "Start with a simple single-tool agent before building complex multi-tool systems",
+                "The key question to ask: 'Does the LLM need to decide what to do next, or is the flow always the same?' — if always the same, a pipeline is better",
+                "Read the ReAct paper (Yao et al. 2022) for the theoretical foundation of LLM agents"
+            ],
+            "socraticPrompts": [
+                "What is the minimum set of capabilities something needs to be called an 'agent'?",
+                "When would you choose a fixed pipeline over an agent, and why?",
+                "What are the risks of giving an agent the ability to take irreversible actions?"
+            ],
+            "codeExample": {
+                "description": "Conceptual comparison: chatbot vs pipeline vs agent",
+                "code": "# === CHATBOT (no tools, no iteration) ===\nfrom langchain_openai import ChatOpenAI\nllm = ChatOpenAI(model='gpt-4o')\nresponse = llm.invoke('What is the capital of France?')\nprint(response.content)  # 'Paris' — done, no further action\n\n# === FIXED PIPELINE (hardcoded steps) ===\n# Step 1: always retrieve, Step 2: always summarise — no LLM reasoning about what to do\ndocs = retriever.invoke('France capital')\nsummary = llm.invoke(f'Summarise: {docs}')\n\n# === AGENT (LLM decides what to do) ===\nfrom langchain.agents import create_openai_tools_agent, AgentExecutor\nfrom langchain_community.tools import WikipediaQueryRun\n\ntools = [WikipediaQueryRun()]  # Agent DECIDES whether/when to use this\nagent = create_openai_tools_agent(llm, tools, prompt)\nexecutor = AgentExecutor(agent=agent, tools=tools)\n# Agent reasons: 'Do I need Wikipedia? Yes for complex questions.'\nresult = executor.invoke({'input': 'Who invented the telephone and what year?'})\nprint(result['output'])",
+                "output": "Alexander Graham Bell invented the telephone in 1876."
+            },
+            "relatedDotPoints": ["AGT-CORE-1.2", "AGT-CORE-1.4", "AGT-PROMPT-1.4"]
+        },
+        "AGT-CORE-1.4": {
+            "code": "AGT-CORE-1.4",
+            "name": "The Agent Loop (Observe-Think-Act)",
+            "topic": "Agent Concepts and Architecture",
+            "subtopic": "What is an AI Agent?",
+            "level": "foundation",
+            "summary": "All agents operate on a core loop: observe the current state, think (use the LLM to reason), act (call a tool or produce output), then observe the result of the action and repeat. Understanding this loop is fundamental to debugging agent behaviour.",
+            "keyConcepts": [
+                "Observe: Receive input — could be user message, tool result, environment state",
+                "Think: LLM generates a 'thought' — what does it know, what does it need, what should it do?",
+                "Act: Execute the decided action — call a tool, write output, ask a clarifying question",
+                "Observation: Receive the result of the action and feed it back into the context",
+                "Stopping condition: The loop ends when: task is complete, max iterations reached, or agent produces a final answer",
+                "Scratchpad: The intermediate reasoning and tool calls are often stored in a 'scratchpad' (agent_scratchpad)",
+                "Token accumulation: Each iteration adds tokens to the context — budget management is critical"
+            ],
+            "commonErrors": [
+                "No stopping condition — agent loops until hitting token limit or max_iterations",
+                "Tool results not being fed back into the context — agent cannot learn from what it did",
+                "Confusing the 'thought' step with output — thoughts are internal reasoning, not the final answer",
+                "Not handling tool errors in the observation — failed tools cause hallucination in subsequent steps"
+            ],
+            "learningTips": [
+                "Enable verbose=True in AgentExecutor to watch the full observe-think-act loop in action",
+                "Each 'intermediate step' in AgentExecutor output is one iteration of the loop",
+                "The agent_scratchpad in the prompt template holds all previous thoughts and tool results",
+                "Think of max_iterations as a safety valve — always set it; default is often too high"
+            ],
+            "socraticPrompts": [
+                "What happens to the agent's context window as it iterates through the loop multiple times?",
+                "How does the agent 'know' when to stop iterating and produce a final answer?",
+                "What is the role of the tool result (Observation) in shaping the agent's next Thought?"
+            ],
+            "codeExample": {
+                "description": "Visualising the agent loop with verbose output",
+                "code": "from langchain_openai import ChatOpenAI\nfrom langchain.agents import create_openai_tools_agent, AgentExecutor\nfrom langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder\nfrom langchain_community.tools import WikipediaQueryRun\nfrom langchain_community.utilities import WikipediaAPIWrapper\n\nllm = ChatOpenAI(model='gpt-4o', temperature=0)\ntools = [WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())]\n\nprompt = ChatPromptTemplate.from_messages([\n    ('system', 'You are a helpful research assistant.'),\n    ('human', '{input}'),\n    MessagesPlaceholder('agent_scratchpad'),  # Loop history stored here\n])\n\nagent = create_openai_tools_agent(llm, tools, prompt)\nexecutor = AgentExecutor(agent=agent, tools=tools, verbose=True, max_iterations=5)\n\nresult = executor.invoke({'input': 'What year was the Eiffel Tower completed?'})\n# verbose=True shows:\n# > Entering new AgentExecutor chain...\n# Thought: I should look up the Eiffel Tower on Wikipedia\n# Action: Wikipedia\n# Action Input: Eiffel Tower\n# Observation: The Eiffel Tower is a wrought-iron lattice tower...completed in 1889...\n# Thought: I now have the answer\n# Final Answer: The Eiffel Tower was completed in 1889.\nprint(result['output'])",
+                "output": "The Eiffel Tower was completed in 1889."
+            },
+            "relatedDotPoints": ["AGT-CORE-1.1", "AGT-PROMPT-1.4", "AGT-LC-1.4"]
+        },
+        "AGT-PROMPT-1.4": {
+            "code": "AGT-PROMPT-1.4",
+            "name": "ReAct Prompting Pattern",
+            "topic": "Prompt Engineering for Agents",
+            "subtopic": "Core Prompting Techniques",
+            "level": "intermediate",
+            "summary": "ReAct (Reasoning + Acting) is the foundational prompting pattern for agents. It interleaves Thought (reasoning) with Action (tool call) and Observation (tool result), enabling the model to ground its reasoning in real retrieved information.",
+            "keyConcepts": [
+                "Thought: The model explicitly reasons about what it knows and what it needs — reduces hallucination",
+                "Action: The model selects and calls a tool with specific inputs",
+                "Observation: The tool result is fed back into the prompt — grounds subsequent reasoning",
+                "Interleaving: Alternating T/A/O steps allows the model to update its reasoning with real evidence",
+                "Scratchpad: All T/A/O steps are concatenated into the agent_scratchpad prompt variable",
+                "Original ReAct paper: Yao et al. 2022 — showed significant improvement over CoT on knowledge-intensive tasks",
+                "Zero-shot ReAct: The model follows the T/A/O format without examples, guided by prompt structure"
+            ],
+            "commonErrors": [
+                "Confusing Thought with Action — the model outputs reasoning as an action, calling a non-existent tool",
+                "Not including the agent_scratchpad in the prompt template — previous T/A/O history is lost",
+                "Allowing the model to 'think' indefinitely without acting — endless reasoning without grounding",
+                "Ignoring the Observation — not reading the tool result before generating the next Thought"
+            ],
+            "learningTips": [
+                "The Thought step is where most of the value comes from — it forces the model to plan before acting",
+                "In LangChain, create_react_agent (string-based) vs create_openai_tools_agent (function calling) both implement ReAct differently",
+                "Read the original ReAct paper to understand why T→A→O ordering outperforms pure reasoning (CoT) on tasks requiring external knowledge",
+                "For debugging: print the full agent_scratchpad to see exactly what the model 'saw' at each step"
+            ],
+            "socraticPrompts": [
+                "Why does having a Thought step before each Action reduce hallucination compared to acting directly?",
+                "What is the key difference between the ReAct pattern and a simple Chain-of-Thought approach?",
+                "How would you modify the ReAct pattern to include self-criticism after each Observation?"
+            ],
+            "codeExample": {
+                "description": "ReAct pattern — Thought/Action/Observation trace",
+                "code": "# The ReAct trace looks like this in a classic string-based agent:\n# (This is the scratchpad that grows with each loop iteration)\n\nreact_trace = \"\"\"\nQuestion: What is the population of the capital of Australia?\n\nThought: I need to first find out what the capital of Australia is, then find its population.\nAction: Wikipedia\nAction Input: capital of Australia\nObservation: Canberra is the capital city of Australia. It is the largest inland city...\n              Population: approximately 470,000 (2023 estimate).\n\nThought: I found that the capital is Canberra and its population is approximately 470,000.\nI now have enough information to answer the question.\nFinal Answer: The capital of Australia is Canberra, with a population of approximately 470,000.\n\"\"\"\n\n# In LangChain, this is handled automatically:\nfrom langchain import hub\nfrom langchain.agents import create_react_agent, AgentExecutor\nfrom langchain_openai import ChatOpenAI\nfrom langchain_community.tools import WikipediaQueryRun\n\nprompt = hub.pull('hwchase17/react')  # Official ReAct prompt template\nllm = ChatOpenAI(model='gpt-4o')\ntools = [WikipediaQueryRun()]\nagent = create_react_agent(llm, tools, prompt)\nexecutor = AgentExecutor(agent=agent, tools=tools, verbose=True)\nresult = executor.invoke({'input': 'What is the population of the capital of Australia?'})",
+                "output": "The capital of Australia is Canberra, with a population of approximately 470,000."
+            },
+            "relatedDotPoints": ["AGT-CORE-1.4", "AGT-PROMPT-1.3", "AGT-LC-1.4", "AGT-PLAN-2.1"]
+        },
+        "AGT-TOOLS-1.1": {
+            "code": "AGT-TOOLS-1.1",
+            "name": "OpenAI Function Calling API",
+            "topic": "Tools and Function Calling",
+            "subtopic": "Function Calling Fundamentals",
+            "level": "intermediate",
+            "summary": "Function calling allows the LLM to request execution of a specific function by outputting a structured JSON object with the function name and arguments. The application executes the function and returns the result to the model.",
+            "keyConcepts": [
+                "tools parameter: List of function schemas passed to the API — tells the model what it can call",
+                "tool_choice: 'auto' (model decides), 'required' (must call a tool), 'none' (no tool), or specific tool name",
+                "Function schema: JSON Schema object with 'name', 'description', and 'parameters' fields",
+                "Model output: When calling a tool, the model returns a finish_reason of 'tool_calls' with the function name and arguments",
+                "Application executes: The developer runs the actual function and sends the result back as a ToolMessage",
+                "Parallel tool calls: GPT-4 can call multiple tools simultaneously in one turn (array of tool_calls)",
+                "LangChain abstraction: bind_tools() and with_structured_output() wrap the raw API"
+            ],
+            "commonErrors": [
+                "Not returning the tool result to the model — the model will hallucinate the result",
+                "Poor function descriptions — the model picks the wrong tool or passes wrong arguments",
+                "Not handling the case where the model returns tool_calls and finish_reason = 'tool_calls' — treating it as a final answer",
+                "Schemas with unclear parameter names — 'x' instead of 'city_name' causes wrong argument values"
+            ],
+            "learningTips": [
+                "The description field in the schema is the most important part — write it as if explaining to a junior developer",
+                "Test your tools with the actual API directly before wrapping in LangChain",
+                "Use Pydantic models in LangChain to auto-generate schemas — cleaner and type-safe",
+                "Always check finish_reason: 'tool_calls' before trying to read message.content as text"
+            ],
+            "socraticPrompts": [
+                "What happens if you do not send the tool result back to the model after it calls a function?",
+                "Why is the description field in a tool schema so critical for correct tool selection?",
+                "When would you set tool_choice='required' vs 'auto'?"
+            ],
+            "codeExample": {
+                "description": "Raw OpenAI function calling then LangChain equivalent",
+                "code": "# === RAW OPENAI API ===\nfrom openai import OpenAI\nimport json\n\nclient = OpenAI()\n\ntools = [{\n    'type': 'function',\n    'function': {\n        'name': 'get_weather',\n        'description': 'Get the current weather for a given city.',\n        'parameters': {\n            'type': 'object',\n            'properties': {\n                'city': {'type': 'string', 'description': 'The city name, e.g. Sydney'},\n                'unit': {'type': 'string', 'enum': ['celsius', 'fahrenheit']}\n            },\n            'required': ['city']\n        }\n    }\n}]\n\nresponse = client.chat.completions.create(\n    model='gpt-4o',\n    messages=[{'role': 'user', 'content': 'What is the weather in Sydney?'}],\n    tools=tools,\n    tool_choice='auto'\n)\n\nmsg = response.choices[0].message\nif msg.tool_calls:\n    call = msg.tool_calls[0]\n    args = json.loads(call.function.arguments)  # {'city': 'Sydney'}\n    # Execute the actual function here\n    result = get_weather(**args)\n    # Return result to model\n    ...\n\n# === LANGCHAIN EQUIVALENT ===\nfrom langchain_openai import ChatOpenAI\nfrom langchain_core.tools import tool\n\n@tool\ndef get_weather(city: str, unit: str = 'celsius') -> str:\n    \"\"\"Get the current weather for a given city.\"\"\"\n    return f'The weather in {city} is 22 degrees {unit}.'\n\nllm = ChatOpenAI(model='gpt-4o')\nllm_with_tools = llm.bind_tools([get_weather])\nresponse = llm_with_tools.invoke('What is the weather in Sydney?')\nprint(response.tool_calls)  # [{'name': 'get_weather', 'args': {'city': 'Sydney'}}]",
+                "output": "[{'name': 'get_weather', 'args': {'city': 'Sydney', 'unit': 'celsius'}, 'id': 'call_abc123'}]"
+            },
+            "relatedDotPoints": ["AGT-TOOLS-1.2", "AGT-TOOLS-1.3", "AGT-TOOLS-2.1", "AGT-LC-1.4"]
+        },
+        "AGT-RAG-1.3": {
+            "code": "AGT-RAG-1.3",
+            "name": "Document Loading and Chunking",
+            "topic": "Retrieval-Augmented Generation (RAG)",
+            "subtopic": "RAG Fundamentals",
+            "level": "intermediate",
+            "summary": "Before indexing, documents must be loaded from various sources and split into chunks that fit within the embedding model's context window. Chunking strategy significantly impacts retrieval quality.",
+            "keyConcepts": [
+                "Document loaders: PyPDFLoader, WebBaseLoader, TextLoader, CSVLoader, UnstructuredFileLoader etc.",
+                "Chunk size: Number of characters per chunk — too small loses context, too large reduces precision",
+                "Chunk overlap: Number of characters shared between adjacent chunks — preserves context at boundaries",
+                "RecursiveCharacterTextSplitter: Splits by \\n\\n, \\n, ' ', '' in order — best default splitter",
+                "Semantic chunking: Uses embeddings to split at semantic boundaries — higher quality, slower",
+                "Parent-child chunking: Small chunks for retrieval, large parent chunks for context injection",
+                "Metadata: Attach source, page number, title to chunks — enables metadata filtering in retrieval"
+            ],
+            "commonErrors": [
+                "Chunk size too small (< 100 chars) — individual sentences lose context and retrieve poorly",
+                "No chunk overlap — sentences at chunk boundaries lose surrounding context",
+                "Not attaching source metadata — cannot trace retrieved chunks back to their source",
+                "Splitting mid-sentence or mid-table — destroys the semantic unit",
+                "Using CharacterTextSplitter on code — splits at wrong boundaries; use MarkdownTextSplitter or language-aware splitter"
+            ],
+            "learningTips": [
+                "Start with chunk_size=1000, chunk_overlap=200 — a good default for most documents",
+                "For PDFs: PyPDFLoader preserves page numbers; add page to metadata for citation",
+                "Experiment with chunk sizes: smaller chunks = more precise retrieval; larger chunks = more context",
+                "Use len(chunks) and chunks[0].page_content to inspect what your splitter produces before indexing"
+            ],
+            "socraticPrompts": [
+                "Why does chunk overlap help preserve context even though it duplicates some content?",
+                "When would semantic chunking be worth the extra computation cost over RecursiveCharacterTextSplitter?",
+                "How does the parent-child chunking pattern combine the benefits of small and large chunks?"
+            ],
+            "codeExample": {
+                "description": "Document loading and chunking pipeline",
+                "code": "from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader\nfrom langchain.text_splitter import RecursiveCharacterTextSplitter\n\n# Load from PDF\nloader = PyPDFLoader('research_paper.pdf')\ndocs = loader.load()  # List of Document objects, one per page\nprint(f'Loaded {len(docs)} pages')\n\n# Load from web\nweb_loader = WebBaseLoader('https://example.com/article')\nweb_docs = web_loader.load()\n\n# Split into chunks\nsplitter = RecursiveCharacterTextSplitter(\n    chunk_size=1000,       # Characters per chunk\n    chunk_overlap=200,     # Overlap to preserve boundary context\n    length_function=len,   # Use character count\n    separators=['\\n\\n', '\\n', '. ', ' ', '']  # Try these in order\n)\n\nchunks = splitter.split_documents(docs)\nprint(f'Split into {len(chunks)} chunks')\nprint(f'First chunk preview: {chunks[0].page_content[:200]}')\nprint(f'Metadata: {chunks[0].metadata}')  # {'source': 'research_paper.pdf', 'page': 0}\n\n# Each chunk is a Document with page_content and metadata\nfor i, chunk in enumerate(chunks[:3]):\n    print(f'\\nChunk {i}: {len(chunk.page_content)} chars | source: {chunk.metadata[\"source\"]}')",
+                "output": "Loaded 12 pages\nSplit into 47 chunks\nFirst chunk preview: Abstract: This paper presents...\nMetadata: {'source': 'research_paper.pdf', 'page': 0}"
+            },
+            "relatedDotPoints": ["AGT-RAG-1.2", "AGT-RAG-1.4", "AGT-RAG-2.1", "AGT-RAG-2.2"]
+        },
+        "AGT-RAG-2.1": {
+            "code": "AGT-RAG-2.1",
+            "name": "Basic RAG Chain (Retrieve + Generate)",
+            "topic": "Retrieval-Augmented Generation (RAG)",
+            "subtopic": "RAG Pipeline Construction",
+            "level": "intermediate",
+            "summary": "A basic RAG chain retrieves relevant documents for a query and injects them as context into the LLM prompt. This grounds the model's answer in real retrieved evidence, reducing hallucination and extending knowledge beyond the training cutoff.",
+            "keyConcepts": [
+                "Retriever: Wraps a vector store's similarity_search as a Runnable — retriever.invoke(query) returns docs",
+                "Context injection: Retrieved documents are formatted and inserted into the prompt as {context}",
+                "LCEL RAG chain: retriever | format_docs → context; passes to LLM with question",
+                "create_retrieval_chain: Higher-level LangChain helper that builds retrieve + generate + history chain",
+                "Source documents: Chain returns both the answer and the retrieved chunks for attribution",
+                "Chain types: 'stuff' (all docs in one prompt), 'map_reduce', 'refine' — choose based on doc count",
+                "Faithfulness: The answer should only use information from retrieved context — critical quality metric"
+            ],
+            "commonErrors": [
+                "Not formatting retrieved documents properly — passing Document objects directly to the LLM causes errors",
+                "Using 'stuff' chain type with too many retrieved documents — exceeds context window",
+                "Not including retrieved sources in the output — users cannot verify the answer",
+                "Asking questions that require combining information across many documents — single retrieval may not be enough",
+                "k=4 (default) may retrieve irrelevant documents for specific queries — tune k for your use case"
+            ],
+            "learningTips": [
+                "Always inspect what your retriever returns with retriever.invoke('test query') before building the full chain",
+                "The prompt template matters enormously — instruct the model to ONLY answer from the provided context",
+                "Start with k=3-5 retrieved chunks; increase if answers are incomplete",
+                "Use the 'with_sources' variant to always return source metadata alongside the answer"
+            ],
+            "socraticPrompts": [
+                "What would happen if you removed the 'only use the context' instruction from the RAG prompt?",
+                "When would you choose map_reduce chain type over stuff? What is the tradeoff?",
+                "How does RAG differ from just giving the LLM a very large document in its context window?"
+            ],
+            "codeExample": {
+                "description": "Complete RAG pipeline with LangChain LCEL",
+                "code": "from langchain_openai import ChatOpenAI, OpenAIEmbeddings\nfrom langchain_community.vectorstores import Chroma\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain.text_splitter import RecursiveCharacterTextSplitter\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnablePassthrough\n\n# 1. Load and chunk documents\nloader = PyPDFLoader('my_document.pdf')\ndocs = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)\\\n    .split_documents(loader.load())\n\n# 2. Create vector store\nvectorstore = Chroma.from_documents(\n    documents=docs,\n    embedding=OpenAIEmbeddings(model='text-embedding-3-small')\n)\n\n# 3. Create retriever\nretriever = vectorstore.as_retriever(search_kwargs={'k': 4})\n\n# 4. RAG prompt\nprompt = ChatPromptTemplate.from_template(\"\"\"\nAnswer the question based ONLY on the following context.\nIf the answer is not in the context, say 'I don't know based on the provided documents.'\n\nContext:\n{context}\n\nQuestion: {question}\n\"\"\")\n\n# 5. Build LCEL chain\ndef format_docs(docs):\n    return '\\n\\n'.join(doc.page_content for doc in docs)\n\nllm = ChatOpenAI(model='gpt-4o', temperature=0)\n\nrag_chain = (\n    {'context': retriever | format_docs, 'question': RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n\n# 6. Query\nanswer = rag_chain.invoke('What are the main findings of the study?')\nprint(answer)",
+                "output": "According to the provided documents, the main findings of the study are: [answer grounded in retrieved context]"
+            },
+            "relatedDotPoints": ["AGT-RAG-1.3", "AGT-RAG-1.4", "AGT-RAG-2.2", "AGT-RAG-2.3"]
+        },
+        "AGT-LC-2.1": {
+            "code": "AGT-LC-2.1",
+            "name": "LangGraph Core Concepts",
+            "topic": "LangChain and LangGraph",
+            "subtopic": "LangGraph",
+            "level": "intermediate",
+            "summary": "LangGraph models agent workflows as directed graphs where nodes are Python functions (or LLM calls) and edges define control flow. It enables stateful, cyclical workflows that are impossible to express in linear LCEL chains.",
+            "keyConcepts": [
+                "StateGraph: The main graph class — parameterised by a state schema (TypedDict)",
+                "State: A dictionary-like object that flows through the graph — nodes read and update it",
+                "Nodes: Functions (or LLM chains) that take state as input and return partial state updates",
+                "Edges: Define which node runs next — can be fixed (add_edge) or conditional (add_conditional_edges)",
+                "START and END: Special nodes marking the graph's entry and exit points",
+                "compile(): Converts the graph definition into a Runnable — call .invoke() or .stream() on it",
+                "Cycles: LangGraph allows cycles — a node can route back to a previous node for iteration"
+            ],
+            "commonErrors": [
+                "Forgetting to add START → first_node edge — graph never starts",
+                "Not compiling the graph before invoking it",
+                "State mutations instead of returning new state — nodes must return a dict of updates, not mutate in place",
+                "Missing END edge — graph runs forever or raises an error",
+                "Using a plain dict instead of TypedDict for the state schema — type safety and tooling breaks"
+            ],
+            "learningTips": [
+                "Draw the graph on paper first — nodes as circles, edges as arrows — then translate to code",
+                "Use graph.get_graph().draw_mermaid_png() to visualise the compiled graph structure",
+                "State is the 'memory' of the graph — everything a node needs should be in the state",
+                "Start with a simple two-node graph (LLM node → tools node → back) before adding complexity"
+            ],
+            "socraticPrompts": [
+                "Why can LangGraph handle use cases that simple LCEL chains cannot?",
+                "What is the difference between a node returning partial state vs returning the full state?",
+                "How does LangGraph's state differ from the 'memory' concept in traditional LangChain agents?"
+            ],
+            "codeExample": {
+                "description": "Minimal LangGraph agent with LLM + tools node",
+                "code": "from typing import TypedDict, Annotated\nfrom langchain_openai import ChatOpenAI\nfrom langchain_core.messages import BaseMessage\nfrom langgraph.graph import StateGraph, START, END\nfrom langgraph.graph.message import add_messages\nfrom langgraph.prebuilt import ToolNode, tools_condition\nfrom langchain_community.tools import WikipediaQueryRun\n\n# 1. Define state\nclass AgentState(TypedDict):\n    messages: Annotated[list[BaseMessage], add_messages]  # add_messages is a reducer\n\n# 2. Define nodes\ntools = [WikipediaQueryRun()]\nllm = ChatOpenAI(model='gpt-4o').bind_tools(tools)\n\ndef call_llm(state: AgentState):\n    response = llm.invoke(state['messages'])\n    return {'messages': [response]}  # Partial state update\n\ntool_node = ToolNode(tools)  # Executes tool calls from the last AIMessage\n\n# 3. Build graph\ngraph = StateGraph(AgentState)\ngraph.add_node('llm', call_llm)\ngraph.add_node('tools', tool_node)\n\ngraph.add_edge(START, 'llm')\n# tools_condition: if last message has tool_calls -> 'tools', else -> END\ngraph.add_conditional_edges('llm', tools_condition)\ngraph.add_edge('tools', 'llm')   # After tools, go back to LLM (the cycle)\n\n# 4. Compile and run\napp = graph.compile()\nresult = app.invoke({'messages': [('human', 'What year was Python created?')]})\nprint(result['messages'][-1].content)",
+                "output": "Python was created in 1991 by Guido van Rossum."
+            },
+            "relatedDotPoints": ["AGT-LC-2.2", "AGT-LC-2.3", "AGT-LC-2.4", "AGT-MEM-2.3"]
+        },
+        "AGT-MEM-2.3": {
+            "code": "AGT-MEM-2.3",
+            "name": "LangGraph State and Checkpointing",
+            "topic": "Memory Systems",
+            "subtopic": "Implementing Memory",
+            "level": "advanced",
+            "summary": "LangGraph's checkpointing system persists the full graph state after every step, enabling pause-and-resume, human-in-the-loop workflows, and long-running agents that survive process restarts.",
+            "keyConcepts": [
+                "Checkpointer: Persists state snapshots — MemorySaver (in-memory), SqliteSaver, AsyncSqliteSaver",
+                "thread_id: Identifies a conversation/run — same thread_id resumes from the last checkpoint",
+                "config: {'configurable': {'thread_id': 'user-123'}} — passed to invoke/stream",
+                "get_state(): Inspect the current state for a given thread_id",
+                "update_state(): Manually modify state — essential for human-in-the-loop interventions",
+                "interrupt_before: List of node names to pause before executing",
+                "Persistence: SqliteSaver saves to disk — state survives process restarts"
+            ],
+            "commonErrors": [
+                "Not passing config with thread_id — each invocation starts fresh with no memory",
+                "Using MemorySaver in production — in-memory, lost on restart; use SqliteSaver or Postgres",
+                "Modifying state directly instead of using update_state() — corrupts the checkpoint",
+                "Using the same thread_id for different users — state bleeds across conversations"
+            ],
+            "learningTips": [
+                "Think of thread_id as a conversation ID — create a new UUID for each new conversation",
+                "Use get_state(config) after each step to inspect what the graph remembers",
+                "SqliteSaver is perfect for development and single-server production; use Postgres checkpointer for scale",
+                "Checkpointing enables time-travel: you can replay from any previous checkpoint"
+            ],
+            "socraticPrompts": [
+                "What is the difference between in-context memory (conversation history) and LangGraph checkpointing?",
+                "How would you use checkpointing to implement a multi-day research agent that can be paused and resumed?",
+                "What are the security implications of persisting agent state to disk?"
+            ],
+            "codeExample": {
+                "description": "LangGraph with SqliteSaver checkpointing for persistent memory",
+                "code": "from langgraph.graph import StateGraph, START, END\nfrom langgraph.checkpoint.sqlite import SqliteSaver\nfrom langgraph.graph.message import add_messages\nfrom langchain_openai import ChatOpenAI\nfrom typing import TypedDict, Annotated\nfrom langchain_core.messages import BaseMessage\nimport uuid\n\nclass State(TypedDict):\n    messages: Annotated[list[BaseMessage], add_messages]\n\nllm = ChatOpenAI(model='gpt-4o')\n\ndef chat_node(state: State):\n    return {'messages': [llm.invoke(state['messages'])]}\n\ngraph = StateGraph(State)\ngraph.add_node('chat', chat_node)\ngraph.add_edge(START, 'chat')\ngraph.add_edge('chat', END)\n\n# Persistent SQLite checkpointer\nwith SqliteSaver.from_conn_string('agent_memory.db') as checkpointer:\n    app = graph.compile(checkpointer=checkpointer)\n\n    thread_id = str(uuid.uuid4())  # Unique ID per conversation\n    config = {'configurable': {'thread_id': thread_id}}\n\n    # Turn 1\n    r1 = app.invoke({'messages': [('human', 'My name is Alan.')]}, config)\n    print(r1['messages'][-1].content)  # 'Nice to meet you, Alan!'\n\n    # Turn 2 — agent REMEMBERS turn 1 because of checkpointing\n    r2 = app.invoke({'messages': [('human', 'What is my name?')]}, config)\n    print(r2['messages'][-1].content)  # 'Your name is Alan!'",
+                "output": "Nice to meet you, Alan!\nYour name is Alan!"
+            },
+            "relatedDotPoints": ["AGT-LC-2.1", "AGT-LC-2.4", "AGT-MEM-1.1", "AGT-MEM-1.2"]
+        },
+        "AGT-EVAL-2.1": {
+            "code": "AGT-EVAL-2.1",
+            "name": "Common Failure Modes",
+            "topic": "Evaluation and Reliability",
+            "subtopic": "Agent Failure Modes and Safety",
+            "level": "intermediate",
+            "summary": "AI agents fail in predictable ways. Understanding the common failure patterns — hallucination, tool misuse, infinite loops, task drift, and prompt injection — allows developers to design preventative measures upfront.",
+            "keyConcepts": [
+                "Hallucination: Model fabricates tool arguments, facts, or results — especially dangerous with no tool grounding",
+                "Infinite loop: Agent keeps calling tools without making progress — no convergence, hits max_iterations",
+                "Tool misuse: Agent calls a wrong tool, passes malformed arguments, or misinterprets tool results",
+                "Task drift: Agent loses track of the original goal across many iterations and pursues a subtask",
+                "Over-planning: Agent generates elaborate plans but never executes — analysis paralysis",
+                "Irreversible actions: Agent takes destructive actions (delete, send, purchase) prematurely",
+                "Prompt injection: Malicious content in tool results hijacks the agent's instructions"
+            ],
+            "commonErrors": [
+                "No max_iterations limit — agent loops indefinitely burning tokens and money",
+                "No validation of tool arguments before execution — e.g. SQL injection via model-generated query",
+                "Allowing irreversible actions without human confirmation step",
+                "Not sanitising web content before feeding it to the agent as Observations — prompt injection risk",
+                "Vague tool descriptions — model cannot distinguish between tools and picks randomly"
+            ],
+            "learningTips": [
+                "Always set max_iterations=10 or lower; most legitimate tasks complete in fewer steps",
+                "For irreversible actions: add a 'dry run' mode that describes what would happen without executing",
+                "Add a 'sanity check' node in LangGraph that validates the agent's plan before execution",
+                "Log every tool call and its result — essential for debugging unexpected agent behaviour",
+                "Use LangSmith traces to identify exactly which step caused the failure"
+            ],
+            "socraticPrompts": [
+                "How would you design an agent that handles database writes safely without risking data corruption?",
+                "What is prompt injection in the context of an agent that browses the web? How would you defend against it?",
+                "How does the ReAct pattern help reduce hallucination compared to direct tool calling?"
+            ],
+            "codeExample": {
+                "description": "Defensive agent patterns — max iterations, dry run, input validation",
+                "code": "from langchain.agents import AgentExecutor\nfrom langchain_core.tools import tool\nfrom pydantic import BaseModel, validator\n\n# === PATTERN 1: max_iterations safety valve ===\nexecutor = AgentExecutor(\n    agent=agent,\n    tools=tools,\n    max_iterations=8,            # Never loop more than 8 times\n    max_execution_time=60,       # Timeout after 60 seconds\n    handle_parsing_errors=True,  # Don't crash on malformed output\n    early_stopping_method='generate'  # Try to produce an answer if stuck\n)\n\n# === PATTERN 2: Input validation in tools ===\nclass SQLQueryInput(BaseModel):\n    query: str\n\n    @validator('query')\n    def no_dangerous_keywords(cls, v):\n        dangerous = ['DROP', 'DELETE', 'TRUNCATE', 'ALTER']\n        if any(kw in v.upper() for kw in dangerous):\n            raise ValueError(f'Destructive SQL not permitted: {v}')\n        return v\n\n@tool(args_schema=SQLQueryInput)\ndef run_sql_query(query: str) -> str:\n    \"\"\"Run a read-only SQL SELECT query against the database.\"\"\"\n    assert 'SELECT' in query.upper(), 'Only SELECT queries are allowed'\n    return db.run(query)\n\n# === PATTERN 3: Dry-run mode ===\nDRY_RUN = True\n\n@tool\ndef send_email(to: str, subject: str, body: str) -> str:\n    \"\"\"Send an email to the specified recipient.\"\"\"\n    if DRY_RUN:\n        return f'[DRY RUN] Would send email to {to}: Subject={subject}'\n    # actual send logic here\n    return f'Email sent to {to}'",
+                "output": "[DRY RUN] Would send email to user@example.com: Subject=Meeting Tomorrow"
+            },
+            "relatedDotPoints": ["AGT-EVAL-2.2", "AGT-EVAL-2.3", "AGT-EVAL-1.2", "AGT-TOOLS-1.3"]
+        },
+        "AGT-RAG-2.2": {
+            "code": "AGT-RAG-2.2",
+            "name": "LlamaIndex RAG Pipeline",
+            "topic": "Retrieval-Augmented Generation (RAG)",
+            "subtopic": "RAG Pipeline Construction",
+            "level": "intermediate",
+            "summary": "LlamaIndex provides a high-level, opinionated pipeline for building RAG systems with minimal boilerplate. Its core abstractions (VectorStoreIndex, QueryEngine, RetrieverQueryEngine) make building production-ready RAG faster than raw LangChain.",
+            "keyConcepts": [
+                "SimpleDirectoryReader: Loads all documents from a folder — detects file type automatically",
+                "VectorStoreIndex: Chunks, embeds, and indexes documents in one call — from_documents()",
+                "VectorStoreIndex.from_vector_store(): Load an existing vector store for production use",
+                "QueryEngine: Combines retrieval + synthesis — query_engine.query('question') returns a Response",
+                "Response object: Contains .response (answer string) and .source_nodes (retrieved chunks)",
+                "ServiceContext / Settings: Configure LLM, embedding model, chunk size globally",
+                "RetrieverQueryEngine: More flexible — separate retriever and response synthesiser"
+            ],
+            "commonErrors": [
+                "Rebuilding the index on every run — use persist() and load_from_storage() for production",
+                "Using the default LLM (OpenAI) without setting llm in Settings — unexpected billing",
+                "Not inspecting source_nodes — cannot verify what the model retrieved",
+                "Using query_engine for conversation — use ChatEngine for multi-turn with history"
+            ],
+            "learningTips": [
+                "LlamaIndex is opinionated and faster to get started with than LangChain for pure RAG use cases",
+                "Always persist your index: index.storage_context.persist('index_dir') — rebuilding is slow and costly",
+                "Use index.as_chat_engine() for conversational RAG — automatically manages history",
+                "LlamaIndex's node_postprocessors allow reranking, filtering, and metadata-based scoring after retrieval"
+            ],
+            "socraticPrompts": [
+                "When would you choose LlamaIndex over LangChain for a RAG pipeline?",
+                "How does LlamaIndex's QueryEngine differ from LangChain's create_retrieval_chain?",
+                "What is the advantage of storing and loading a persisted index versus rebuilding it each time?"
+            ],
+            "codeExample": {
+                "description": "Complete LlamaIndex RAG pipeline with persistence",
+                "code": "from llama_index.core import (\n    VectorStoreIndex,\n    SimpleDirectoryReader,\n    StorageContext,\n    load_index_from_storage,\n    Settings\n)\nfrom llama_index.llms.openai import OpenAI\nfrom llama_index.embeddings.openai import OpenAIEmbedding\nimport os\n\n# Configure models globally\nSettings.llm = OpenAI(model='gpt-4o', temperature=0)\nSettings.embed_model = OpenAIEmbedding(model='text-embedding-3-small')\nSettings.chunk_size = 1024\nSettings.chunk_overlap = 200\n\nPERSIST_DIR = './index_storage'\n\n# Build or load index\nif not os.path.exists(PERSIST_DIR):\n    # First run: load docs and build index\n    documents = SimpleDirectoryReader('./data').load_data()  # Auto-detects PDF, txt, etc.\n    print(f'Loaded {len(documents)} documents')\n\n    index = VectorStoreIndex.from_documents(documents, show_progress=True)\n    index.storage_context.persist(persist_dir=PERSIST_DIR)\n    print('Index built and persisted.')\nelse:\n    # Subsequent runs: load from disk\n    storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)\n    index = load_index_from_storage(storage_context)\n    print('Index loaded from storage.')\n\n# Create query engine\nquery_engine = index.as_query_engine(\n    similarity_top_k=4,     # Retrieve top 4 chunks\n    response_mode='compact' # Concatenate and synthesise\n)\n\n# Query\nresponse = query_engine.query('What are the key findings of this report?')\nprint(response.response)\nprint(f'\\nSources: {[n.metadata[\"file_name\"] for n in response.source_nodes]}')",
+                "output": "The key findings of this report are: [answer grounded in documents]\n\nSources: ['report_2024.pdf', 'report_2024.pdf', 'appendix.pdf']"
+            },
+            "relatedDotPoints": ["AGT-RAG-1.3", "AGT-RAG-1.4", "AGT-RAG-2.1", "AGT-RAG-3.1"]
+        }
+    }
+}

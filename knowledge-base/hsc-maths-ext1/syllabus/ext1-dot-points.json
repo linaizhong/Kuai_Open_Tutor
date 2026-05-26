@@ -1,0 +1,1029 @@
+{
+  "subject": "HSC Mathematics Extension 1",
+  "syllabusVersion": "2017",
+  "description": "Deep detail for each syllabus dot-point, supporting error analysis, Socratic questioning, worked examples and marking feedback skills.",
+  "dotPoints": {
+
+    "ME-F1.1": {
+      "code": "ME-F1.1",
+      "name": "Graphical relationships — reciprocal and square",
+      "topic": "ME-F",
+      "subtopic": "ME-F1",
+      "year": 11,
+      "summary": "Sketch y = 1/f(x) and y = [f(x)]² from a given graph of y = f(x) using key feature analysis.",
+      "keyConcepts": [
+        "For y = 1/f(x): zeros of f(x) become vertical asymptotes; asymptotes of f(x) become zeros; where f(x) > 0, so is 1/f(x); where f(x) is large, 1/f(x) is small",
+        "For y = [f(x)]²: always ≥ 0; zeros of f(x) remain zeros; turning points of f(x) give turning points; negative y-values are reflected above x-axis",
+        "Sign analysis: the sign of f(x) determines the sign of 1/f(x)",
+        "Gradient relationship: if f(x) is increasing, 1/f(x) is decreasing (for positive f)",
+        "Asymptote rule: vertical asymptotes of 1/f(x) occur where f(x) = 0"
+      ],
+      "commonErrors": [
+        "Forgetting that zeros of f become asymptotes in 1/f(x) — not zeros",
+        "Drawing 1/f(x) below the x-axis when f(x) is positive — it should stay positive",
+        "Incorrectly reflecting [f(x)]² — negative portions of f(x) go above x-axis, not below",
+        "Missing the turning points that arise in [f(x)]² at the zeros of f(x)",
+        "Confusing the behaviour near asymptotes of f(x) in the reciprocal graph"
+      ],
+      "examTips": [
+        "Always mark zeros, asymptotes and turning points of f(x) first, then transform each",
+        "For 1/f(x): ask yourself — where is f(x) = 0? Those become your asymptotes",
+        "For [f(x)]²: the graph never goes below the x-axis",
+        "Check the sign of the reciprocal carefully — it always matches f(x)"
+      ],
+      "socraticPrompts": [
+        "If f(3) = 0, what happens to 1/f(x) at x = 3? Why?",
+        "If f(x) = −2 at some point, what does [f(x)]² equal there? Where does that point go?",
+        "As x approaches a zero of f(x), what happens to 1/f(x)? Draw what you'd expect.",
+        "If f(x) is very large and positive, is 1/f(x) large or small? Positive or negative?"
+      ],
+      "workedExampleTemplate": {
+        "type": "graph-transform",
+        "steps": ["Identify zeros, asymptotes and turning points of f(x)", "Apply transformation rules to each key feature", "Determine sign in each interval", "Sketch the transformed graph with correct shape"]
+      },
+      "relatedDotPoints": ["MA-F1.2", "MA-F1.4", "ME-F1.3"]
+    },
+
+    "ME-F1.2": {
+      "code": "ME-F1.2",
+      "name": "Inequalities involving functions",
+      "topic": "ME-F",
+      "subtopic": "ME-F1",
+      "year": 11,
+      "summary": "Solve inequalities graphically and algebraically using sign diagrams and critical values.",
+      "keyConcepts": [
+        "Sign diagram: a number line showing where an expression is positive, negative or zero",
+        "Critical values: x-values where the expression equals zero or is undefined",
+        "For |f(x)| > a: solve f(x) > a OR f(x) < −a",
+        "For |f(x)| < a: solve −a < f(x) < a",
+        "For rational inequalities: never multiply both sides by an expression that could be negative; instead bring everything to one side and use a sign diagram",
+        "Graphical method: sketch both sides and find where one is above the other"
+      ],
+      "commonErrors": [
+        "Multiplying both sides of an inequality by a variable expression (which might be negative) without considering sign change",
+        "Forgetting to flip the inequality sign when multiplying/dividing by a negative number",
+        "Missing solutions in absolute value inequalities — forgetting the OR case",
+        "Incorrectly stating the solution set — use correct interval notation or set notation",
+        "Not checking critical values — x-values that make denominator zero must be excluded"
+      ],
+      "examTips": [
+        "For fraction inequalities: bring all terms to one side, combine over common denominator, then use sign diagram",
+        "Always test a value in each interval of the sign diagram to confirm the sign",
+        "For absolute value: split into two cases — always write both cases explicitly",
+        "State the final answer as an interval or union of intervals, not just critical values"
+      ],
+      "socraticPrompts": [
+        "If I multiply both sides of x > 2 by −1, what happens to the inequality? Why?",
+        "How would you solve (x−1)/(x+2) > 0? Why can't you just multiply both sides by (x+2)?",
+        "What does |x − 3| < 2 mean geometrically on a number line?",
+        "Can you sketch y = (x−1)/(x+2) and y = 0 to find where the fraction is positive?"
+      ],
+      "workedExampleTemplate": {
+        "type": "inequality",
+        "steps": ["Rearrange so one side is zero", "Find all critical values (zeros and undefined points)", "Draw sign diagram", "Read off solution intervals", "State answer in correct notation"]
+      },
+      "relatedDotPoints": ["MA-F1.3", "MA-F1.4", "ME-F1.1"]
+    },
+
+    "ME-F1.3": {
+      "code": "ME-F1.3",
+      "name": "Inverse functions",
+      "topic": "ME-F",
+      "subtopic": "ME-F1",
+      "year": 11,
+      "summary": "Find and graph inverse functions; apply domain restrictions to ensure the inverse is a function.",
+      "keyConcepts": [
+        "f⁻¹(x) is the inverse of f(x): f(f⁻¹(x)) = x and f⁻¹(f(x)) = x",
+        "To find f⁻¹(x): write y = f(x), swap x and y, solve for y",
+        "Graphical relationship: f⁻¹ is the reflection of f in the line y = x",
+        "Horizontal line test: f has an inverse function iff every horizontal line meets the graph at most once (i.e. f is one-to-one)",
+        "Domain of f⁻¹ = Range of f; Range of f⁻¹ = Domain of f",
+        "If f is not one-to-one, restrict the domain of f to make it so, then find the inverse"
+      ],
+      "commonErrors": [
+        "Confusing f⁻¹(x) with 1/f(x) — the inverse function is NOT the reciprocal",
+        "Not swapping domain and range when stating the inverse function's domain and range",
+        "Forgetting to apply domain restrictions when f is not one-to-one (e.g. f(x) = x²)",
+        "Graphing f⁻¹ without reflecting correctly — every point (a,b) on f becomes (b,a) on f⁻¹",
+        "Incorrect algebra when solving for y after swapping x and y"
+      ],
+      "examTips": [
+        "Always state the domain of f⁻¹ — it equals the range of f",
+        "Check your answer: compute f(f⁻¹(x)) — it should equal x",
+        "Draw y = x as a dashed guideline when sketching inverse functions",
+        "For f(x) = x²: restrict domain to x ≥ 0 to get f⁻¹(x) = √x"
+      ],
+      "socraticPrompts": [
+        "If f(2) = 7, what does f⁻¹(7) equal? Why?",
+        "Why does f(x) = x² not have an inverse over all real x? What goes wrong?",
+        "If I reflect y = 2x + 1 in the line y = x, what equation do I get?",
+        "What is the domain of f⁻¹ if f has domain [−3, 5] and range [0, 8]?"
+      ],
+      "workedExampleTemplate": {
+        "type": "inverse-function",
+        "steps": ["Write y = f(x)", "Swap x and y to get x = f(y)", "Solve for y to get f⁻¹(x)", "State domain and range of f⁻¹", "Sketch both f and f⁻¹ with the line y = x"]
+      },
+      "relatedDotPoints": ["MA-F1.2", "ME-F1.1", "ME-T1.1"]
+    },
+
+    "ME-F1.4": {
+      "code": "ME-F1.4",
+      "name": "Parametric representation of curves",
+      "topic": "ME-F",
+      "subtopic": "ME-F1",
+      "year": 11,
+      "summary": "Use parametric equations to represent and sketch curves; convert between parametric and Cartesian form.",
+      "keyConcepts": [
+        "Parametric form: x = f(t), y = g(t) where t is the parameter",
+        "To convert to Cartesian: eliminate t by solving one equation for t and substituting into the other",
+        "Parametric parabola: x = 2at, y = at² represents x² = 4ay with vertex at origin",
+        "Parametric circle: x = r cosθ, y = r sinθ represents x² + y² = r²",
+        "The parameter t often represents time — points are traced in a specific direction as t increases",
+        "Domain restrictions on t may limit which part of the Cartesian curve is traced"
+      ],
+      "commonErrors": [
+        "Eliminating t incorrectly — squaring both sides without checking for extraneous solutions",
+        "Ignoring domain restrictions from the parameter when stating the Cartesian equation",
+        "Confusing the standard parametric form for a parabola: x = 2at, y = at² (not x = at², y = 2at)",
+        "Not recognising that different parameter ranges trace different portions of the same Cartesian curve",
+        "Mixing up which trigonometric identity to use when eliminating θ from circular parametric equations"
+      ],
+      "examTips": [
+        "For parabola: remember x = 2at, y = at² gives x² = 4ay; or use x = at², y = 2at for x² = 4ay as well — check which form is given",
+        "For circle: use cos²θ + sin²θ = 1 to eliminate θ",
+        "Always state the Cartesian equation AND any restrictions on x or y that come from the parameter range",
+        "If t ∈ [0, 2π] for a circle, you get the full circle; if t ∈ [0, π], only the upper semicircle"
+      ],
+      "socraticPrompts": [
+        "If x = 2t and y = t², can you find y in terms of x? What curve is this?",
+        "For x = 3cosθ, y = 3sinθ, what is x² + y²? What shape does this describe?",
+        "What happens to the point (x, y) as t increases from 0 to 1 in x = t, y = t²?",
+        "If t ≥ 0 only, does that change which part of the curve you draw?"
+      ],
+      "workedExampleTemplate": {
+        "type": "parametric",
+        "steps": ["Write the parametric equations", "Solve one equation for the parameter t", "Substitute into the other equation", "Simplify to get Cartesian form", "State any domain/range restrictions"]
+      },
+      "relatedDotPoints": ["MA-F1.2", "ME-F1.3", "ME-V1.4"]
+    },
+
+    "ME-F2.1": {
+      "code": "ME-F2.1",
+      "name": "Remainder and factor theorems",
+      "topic": "ME-F",
+      "subtopic": "ME-F2",
+      "year": 11,
+      "summary": "Use remainder and factor theorems to analyse and factorise polynomials.",
+      "keyConcepts": [
+        "Remainder theorem: when P(x) is divided by (x − a), the remainder is P(a)",
+        "Factor theorem: (x − a) is a factor of P(x) if and only if P(a) = 0",
+        "Polynomial long division: divide P(x) by D(x) to get P(x) = D(x)·Q(x) + R(x)",
+        "Degree of remainder R(x) is always less than the degree of D(x)",
+        "To find all factors: use factor theorem to find one root, then divide to reduce degree, repeat"
+      ],
+      "commonErrors": [
+        "Substituting the wrong value — for factor (x − a), substitute x = a not x = −a",
+        "Arithmetic errors during polynomial long division — missing terms or sign errors",
+        "Forgetting that the remainder theorem gives the REMAINDER, not the quotient",
+        "Not checking all rational roots systematically — use the rational root theorem to guide guessing",
+        "Leaving the polynomial partially factorised when a full factorisation is possible"
+      ],
+      "examTips": [
+        "Try small integer values (±1, ±2, ±3) first when looking for rational roots",
+        "After finding one factor by trial, always do polynomial division to reduce the degree",
+        "Check your factorisation by expanding — the result should equal the original polynomial",
+        "Remember: if P(a) = 0, then (x − a) is a factor — write this conclusion explicitly in exams"
+      ],
+      "socraticPrompts": [
+        "If P(2) = 0, what does the factor theorem tell you about P(x)?",
+        "How would you find the remainder when x³ − 3x + 1 is divided by (x − 2)?",
+        "After finding that (x − 1) is a factor, how do you find the remaining factors?",
+        "Why does polynomial long division always give a remainder of lower degree than the divisor?"
+      ],
+      "workedExampleTemplate": {
+        "type": "polynomial",
+        "steps": ["Find a root by trial using the factor theorem", "Perform polynomial long division by the corresponding factor", "Factorise the quotient further if possible", "Write the complete factorisation", "Solve P(x) = 0 if required"]
+      },
+      "relatedDotPoints": ["MA-F1.3", "ME-F2.2"]
+    },
+
+    "ME-F2.2": {
+      "code": "ME-F2.2",
+      "name": "Sums and products of roots",
+      "topic": "ME-F",
+      "subtopic": "ME-F2",
+      "year": 11,
+      "summary": "Use Vieta's formulas to relate roots and coefficients of polynomials without solving.",
+      "keyConcepts": [
+        "For ax² + bx + c = 0 with roots α, β: α + β = −b/a, αβ = c/a",
+        "For ax³ + bx² + cx + d = 0 with roots α, β, γ: α+β+γ = −b/a, αβ+βγ+γα = c/a, αβγ = −d/a",
+        "For ax⁴ + bx³ + cx² + dx + e = 0 with roots α,β,γ,δ: sum = −b/a, sum of pairs = c/a, sum of triples = −d/a, product = e/a",
+        "Symmetric functions of roots can be evaluated using Vieta's formulas without finding the roots",
+        "α² + β² = (α + β)² − 2αβ and similar identities are used to find derived expressions"
+      ],
+      "commonErrors": [
+        "Getting the sign wrong — sum of roots = −b/a NOT +b/a for ax² + bx + c = 0",
+        "Dividing by the wrong coefficient — always divide by the leading coefficient a, not 1",
+        "Errors in derived expressions — forgetting the factor of 2 in α² + β² = (α+β)² − 2αβ",
+        "Using the formulas for a monic polynomial when the polynomial is not monic (leading coefficient ≠ 1)",
+        "Not checking whether roots are real before drawing conclusions about their values"
+      ],
+      "examTips": [
+        "Write out Vieta's formulas explicitly at the start — don't rely on memory under pressure",
+        "For α² + β²: always expand (α+β)² = α² + 2αβ + β², then rearrange",
+        "For 1/α + 1/β: write as (α+β)/(αβ) — use Vieta's for both numerator and denominator",
+        "Check: the formulas apply to ALL roots, including complex ones — but HSC usually involves real roots"
+      ],
+      "socraticPrompts": [
+        "Without solving x² − 5x + 6 = 0, can you find α + β and αβ? Then find α² + β².",
+        "If the roots of x³ + px + q = 0 are α, β, γ, what is α + β + γ? Why?",
+        "How would you find 1/α + 1/β using Vieta's formulas? Write it as a single fraction first.",
+        "If αβ = 3 and α + β = 5, can you find (α − β)²?"
+      ],
+      "workedExampleTemplate": {
+        "type": "roots-and-coefficients",
+        "steps": ["Identify the polynomial and write Vieta's formulas", "Calculate the elementary symmetric expressions", "Use algebraic identities to find the required expression", "Substitute Vieta values to get the numerical answer"]
+      },
+      "relatedDotPoints": ["ME-F2.1", "MA-F1.3"]
+    },
+
+    "ME-T1.1": {
+      "code": "ME-T1.1",
+      "name": "Define and use inverse trigonometric functions",
+      "topic": "ME-T",
+      "subtopic": "ME-T1",
+      "year": 11,
+      "summary": "Define sin⁻¹, cos⁻¹, tan⁻¹ with restricted domains; evaluate exact values and sketch their graphs.",
+      "keyConcepts": [
+        "sin⁻¹x: domain [−1, 1], range [−π/2, π/2]",
+        "cos⁻¹x: domain [−1, 1], range [0, π]",
+        "tan⁻¹x: domain all reals ℝ, range (−π/2, π/2)",
+        "Exact values: sin⁻¹(1/2) = π/6, cos⁻¹(0) = π/2, tan⁻¹(1) = π/4 etc.",
+        "The restriction is necessary to make each trig function one-to-one so its inverse exists",
+        "sin⁻¹x is an odd function; cos⁻¹x is neither odd nor even; tan⁻¹x is an odd function",
+        "Complementary relationship: sin⁻¹x + cos⁻¹x = π/2 for x ∈ [−1, 1]"
+      ],
+      "commonErrors": [
+        "Confusing sin⁻¹x with (sinx)⁻¹ = 1/sinx — the notation means inverse function, not reciprocal",
+        "Giving answers outside the principal range — sin⁻¹(1/2) = π/6, NOT 5π/6",
+        "Wrong range for cos⁻¹ — it returns values in [0, π], never negative values",
+        "Forgetting that sin⁻¹(−x) = −sin⁻¹(x) but cos⁻¹(−x) = π − cos⁻¹(x)",
+        "Evaluating sin(sin⁻¹(2)) — this is undefined since 2 is outside [−1, 1]"
+      ],
+      "examTips": [
+        "Memorise the three domain-range pairs — they come up in every exam",
+        "Use sin⁻¹x + cos⁻¹x = π/2 as a shortcut when both appear in the same problem",
+        "For compound expressions like sin(cos⁻¹(3/5)): draw a right triangle",
+        "Sketch all three inverse trig graphs — know their shape, intercepts and asymptotes"
+      ],
+      "socraticPrompts": [
+        "Why can't we define sin⁻¹x over all real x? What goes wrong with sin(x)?",
+        "What is sin⁻¹(sin(π)) equal to? Be careful — it's NOT π.",
+        "If cos⁻¹x = π/3, what is x? What is sin⁻¹x?",
+        "Draw a right triangle to find sin(cos⁻¹(4/5)) without a calculator."
+      ],
+      "workedExampleTemplate": {
+        "type": "inverse-trig",
+        "steps": ["Identify the inverse trig function and its range", "Find the exact value using known trig ratios", "Check the answer is within the principal range", "For compound expressions, use a right triangle or identity"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "ME-F1.3", "ME-C2.1"]
+    },
+
+    "ME-T1.2": {
+      "code": "ME-T1.2",
+      "name": "Trigonometric identities and equations",
+      "topic": "ME-T",
+      "subtopic": "ME-T1",
+      "year": 11,
+      "summary": "Prove and apply compound angle, double angle formulas and the auxiliary angle method.",
+      "keyConcepts": [
+        "sin(A ± B) = sinA cosB ± cosA sinB",
+        "cos(A ± B) = cosA cosB ∓ sinA sinB",
+        "tan(A ± B) = (tanA ± tanB) / (1 ∓ tanA tanB)",
+        "sin2A = 2sinA cosA",
+        "cos2A = cos²A − sin²A = 2cos²A − 1 = 1 − 2sin²A",
+        "tan2A = 2tanA / (1 − tan²A)",
+        "Auxiliary angle: a sinx + b cosx = R sin(x + α) where R = √(a²+b²), tanα = b/a"
+      ],
+      "commonErrors": [
+        "Sign errors in cos(A − B) — the minus between terms in expansion becomes a plus",
+        "Using the wrong form of cos2A — choose the form that simplifies the problem",
+        "Auxiliary angle: wrong formula for α — ensure tanα = b/a not a/b",
+        "Not simplifying the auxiliary angle expression back to find the max/min value",
+        "Forgetting that R must be positive in the auxiliary angle method"
+      ],
+      "examTips": [
+        "Learn all compound angle formulas — they are NOT given in the HSC formula sheet for Ext1",
+        "For double angle proofs: usually start from one side and work to the other — never work both sides at once",
+        "Auxiliary angle: once R sin(x + α) is found, the maximum value is R and minimum is −R",
+        "In exams, show the derivation of R and α explicitly — don't just state the result"
+      ],
+      "socraticPrompts": [
+        "Can you expand sin(45° + 30°) using the compound angle formula and check it equals sin75°?",
+        "If sin2A = 2sinA cosA, can you derive a formula for sin3A? Hint: sin3A = sin(2A + A).",
+        "What is the maximum value of 3sinx + 4cosx? How do you find it?",
+        "Why are there three forms of cos2A? Which one would you choose if you needed to integrate cos²x?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-identity",
+        "steps": ["State the relevant identity/formula", "Substitute and expand carefully", "Simplify using Pythagorean or other identities", "State the final result clearly"]
+      },
+      "relatedDotPoints": ["MA-T1.3", "MA-T2.1", "ME-T1.1", "ME-T2.1"]
+    },
+
+    "ME-T2.1": {
+      "code": "ME-T2.1",
+      "name": "Trigonometric equations and general solutions",
+      "topic": "ME-T",
+      "subtopic": "ME-T2",
+      "year": 12,
+      "summary": "Solve trig equations using t = tan(θ/2) substitution and find general solutions.",
+      "keyConcepts": [
+        "General solution: sinx = a → x = sin⁻¹(a) + 2nπ or x = π − sin⁻¹(a) + 2nπ",
+        "General solution: cosx = a → x = ±cos⁻¹(a) + 2nπ",
+        "General solution: tanx = a → x = tan⁻¹(a) + nπ",
+        "t-formula: let t = tan(θ/2), then sinθ = 2t/(1+t²), cosθ = (1−t²)/(1+t²), tanθ = 2t/(1−t²)",
+        "The t-substitution converts trig equations into algebraic (polynomial) equations",
+        "Note: t-substitution excludes θ = π (since tan(π/2) is undefined) — check this solution separately"
+      ],
+      "commonErrors": [
+        "Forgetting the n in the general solution — the answer is a family of solutions, not a single value",
+        "Losing the solution θ = π when using the t-substitution — always check separately",
+        "Wrong period in general solution: tan has period π, but sin and cos have period 2π",
+        "Sign errors in the t-formula substitutions",
+        "Not simplifying the algebraic equation fully before solving"
+      ],
+      "examTips": [
+        "Write the general solution with 'n ∈ ℤ' explicitly — examiners look for this",
+        "After t-substitution, solve the algebraic equation and convert t back to θ",
+        "Always check θ = π separately when using t = tan(θ/2)",
+        "If the domain is restricted (e.g. 0 ≤ θ ≤ 2π), list all specific solutions from the general formula"
+      ],
+      "socraticPrompts": [
+        "What are ALL the solutions to sinx = 1/2? Not just the ones in [0, 2π].",
+        "If t = tan(θ/2) = 1, what is θ? And what does sinθ equal using the t-formula?",
+        "Why does using t = tan(θ/2) miss the solution θ = π? What goes wrong?",
+        "How is the general solution for tanx = 1 different from the general solution for sinx = 1/√2?"
+      ],
+      "workedExampleTemplate": {
+        "type": "trig-equation",
+        "steps": ["Substitute t = tan(θ/2) and rewrite equation algebraically", "Solve the polynomial equation for t", "Convert back: θ = 2tan⁻¹(t)", "Check θ = π separately", "State all solutions (general or within given domain)"]
+      },
+      "relatedDotPoints": ["ME-T1.2", "MA-T2.2"]
+    },
+
+    "ME-C1.1": {
+      "code": "ME-C1.1",
+      "name": "Rates of change and their applications",
+      "topic": "ME-C",
+      "subtopic": "ME-C1",
+      "year": 11,
+      "summary": "Interpret derivatives as rates and solve related rates problems using the chain rule.",
+      "keyConcepts": [
+        "The derivative dy/dx represents the instantaneous rate of change of y with respect to x",
+        "Related rates: use chain rule — if A depends on r which depends on t, then dA/dt = dA/dr × dr/dt",
+        "Set up: identify what is changing, what is constant, and which rates are given/sought",
+        "Common related rates: area, volume, distance, angle — all changing with time",
+        "Differential equation: an equation relating a function to its derivative, e.g. dy/dt = ky"
+      ],
+      "commonErrors": [
+        "Differentiating with respect to the wrong variable — always check what you are differentiating with respect to",
+        "Forgetting to apply the chain rule when the variable inside a function is itself changing",
+        "Not drawing a diagram — related rates problems almost always require a clear diagram",
+        "Substituting numerical values before differentiating — differentiate first, then substitute",
+        "Sign errors — distinguish between rates that are increasing (positive) and decreasing (negative)"
+      ],
+      "examTips": [
+        "Always define all variables clearly at the start: 'let r = radius in cm, t = time in seconds'",
+        "Write out the chain rule explicitly: dV/dt = dV/dr × dr/dt",
+        "Draw a diagram for every related rates problem",
+        "After finding the rate, check the sign and units make sense in context"
+      ],
+      "socraticPrompts": [
+        "If V = (4/3)πr³, what is dV/dr? Now if r is changing with time, what is dV/dt?",
+        "A ladder is sliding down a wall. What quantities are changing? What stays the same?",
+        "If the radius of a circle is increasing at 2 cm/s, how fast is the area increasing when r = 5?",
+        "What does it mean for dV/dt to be negative in a context where water is draining from a tank?"
+      ],
+      "workedExampleTemplate": {
+        "type": "related-rates",
+        "steps": ["Define all variables with units", "Write an equation relating the variables", "Differentiate both sides with respect to time", "Substitute given values", "State the answer with correct units and sign"]
+      },
+      "relatedDotPoints": ["MA-C2.1", "ME-C1.2", "ME-C3.1"]
+    },
+
+    "ME-C1.2": {
+      "code": "ME-C1.2",
+      "name": "Exponential growth and decay",
+      "topic": "ME-C",
+      "subtopic": "ME-C1",
+      "year": 11,
+      "summary": "Model and solve exponential growth and decay problems using dN/dt = kN.",
+      "keyConcepts": [
+        "The differential equation dN/dt = kN has solution N = N₀eᵏᵗ",
+        "k > 0: exponential growth (population, compound interest)",
+        "k < 0: exponential decay (radioactive decay, cooling)",
+        "Half-life T₁/₂: time for quantity to halve; T₁/₂ = ln2/|k|",
+        "Doubling time: time for quantity to double; T_double = ln2/k",
+        "Newton's law of cooling: dT/dt = −k(T − T_room) has solution T = T_room + Ae^(−kt)"
+      ],
+      "commonErrors": [
+        "Using the wrong sign for k — decay has k < 0, which means the exponent is negative",
+        "Forgetting to include the initial condition N₀ when writing the general solution",
+        "Confusing half-life with the decay constant — they are related by T₁/₂ = ln2/|k|, not T₁/₂ = 1/k",
+        "Not converting to the same time units throughout the problem",
+        "Rounding k too early — keep exact values until the final answer"
+      ],
+      "examTips": [
+        "Always verify the solution satisfies the differential equation by differentiating",
+        "Use exact values (ln) until the very last step",
+        "For Newton's cooling: the temperature approaches T_room asymptotically, never reaches it",
+        "State the model clearly: 'N = N₀eᵏᵗ where N₀ = ... and k = ...'"
+      ],
+      "socraticPrompts": [
+        "If dN/dt = 0.03N and N(0) = 500, what is N(10)?",
+        "A substance has half-life of 8 years. What is the decay constant k?",
+        "Why does the solution to dN/dt = kN always involve eᵏᵗ? Can you verify by differentiating?",
+        "If a population doubles every 12 years, what is k? How long to triple?"
+      ],
+      "workedExampleTemplate": {
+        "type": "exponential-model",
+        "steps": ["Write the differential equation", "State the general solution N = N₀eᵏᵗ", "Apply initial conditions to find N₀", "Apply a second condition to find k", "Answer the question and interpret the result"]
+      },
+      "relatedDotPoints": ["MA-E1.2", "ME-C1.1", "ME-C3.1"]
+    },
+
+    "ME-C2.1": {
+      "code": "ME-C2.1",
+      "name": "Differential calculus — further techniques",
+      "topic": "ME-C",
+      "subtopic": "ME-C2",
+      "year": 12,
+      "summary": "Differentiate inverse trig functions and functions defined parametrically.",
+      "keyConcepts": [
+        "d/dx[sin⁻¹(x/a)] = 1/√(a²−x²)",
+        "d/dx[cos⁻¹(x/a)] = −1/√(a²−x²)",
+        "d/dx[tan⁻¹(x/a)] = a/(a²+x²)",
+        "Parametric differentiation: dy/dx = (dy/dt)/(dx/dt)",
+        "Second derivative parametrically: d²y/dx² = (d/dt[dy/dx])/(dx/dt)",
+        "Chain rule applies when differentiating composite inverse trig functions"
+      ],
+      "commonErrors": [
+        "Forgetting the negative sign in d/dx[cos⁻¹x] = −1/√(1−x²)",
+        "Not applying the chain rule when the argument is a function of x, not just x",
+        "Dividing dy/dt by dx/dt in the wrong order for parametric differentiation",
+        "Using a = 1 in the formula when a ≠ 1 — always check the value of a",
+        "Errors computing d²y/dx² parametrically — forgetting to divide by dx/dt again"
+      ],
+      "examTips": [
+        "Write out the formula with the correct a before differentiating",
+        "For parametric: dy/dx = (dy/dt)/(dx/dt) — write this ratio explicitly",
+        "Chain rule reminder: d/dx[sin⁻¹(f(x))] = f'(x)/√(1−[f(x)]²)",
+        "Always simplify the result — examiners check simplified form"
+      ],
+      "socraticPrompts": [
+        "What is d/dx[sin⁻¹(x/3)]? Write out the formula with a = 3 first.",
+        "For x = t², y = t³, find dy/dx in terms of t. What is it when t = 2?",
+        "Why does d/dx[cos⁻¹x] have a negative sign but d/dx[sin⁻¹x] does not?",
+        "If y = tan⁻¹(2x), find dy/dx. Don't forget the chain rule."
+      ],
+      "workedExampleTemplate": {
+        "type": "differentiation",
+        "steps": ["Identify the function type (inverse trig or parametric)", "Write the appropriate differentiation formula", "Apply chain rule if needed", "Substitute and simplify", "Evaluate at specific point if required"]
+      },
+      "relatedDotPoints": ["MA-C2.1", "ME-T1.1", "ME-F1.4", "ME-C2.2"]
+    },
+
+    "ME-C2.2": {
+      "code": "ME-C2.2",
+      "name": "Integral calculus — further techniques",
+      "topic": "ME-C",
+      "subtopic": "ME-C2",
+      "year": 12,
+      "summary": "Integrate using inverse trig results and substitution.",
+      "keyConcepts": [
+        "∫ 1/√(a²−x²) dx = sin⁻¹(x/a) + C",
+        "∫ 1/(a²+x²) dx = (1/a)tan⁻¹(x/a) + C",
+        "Integration by substitution: let u = g(x), then ∫f(g(x))g'(x)dx = ∫f(u)du",
+        "Always change limits of integration when substituting in definite integrals",
+        "Recognise when a substitution will simplify the integral — look for a function and its derivative"
+      ],
+      "commonErrors": [
+        "Forgetting the 1/a factor in ∫1/(a²+x²)dx — it is (1/a)tan⁻¹(x/a), not tan⁻¹(x/a)",
+        "Not changing the limits when using substitution in a definite integral",
+        "Choosing a substitution that doesn't simplify the integral",
+        "Forgetting the + C in indefinite integrals",
+        "Not differentiating u to find du correctly before substituting"
+      ],
+      "examTips": [
+        "Write a = √(something) clearly — identify a before applying the formula",
+        "For substitution: write du = ... dx, then express dx in terms of du",
+        "Check: differentiate your answer to verify it gives the integrand",
+        "For definite integrals with substitution: change limits, don't convert back to x"
+      ],
+      "socraticPrompts": [
+        "What is ∫1/(9+x²)dx? Identify a first.",
+        "For ∫1/√(4−x²)dx, what is a? What is the antiderivative?",
+        "To evaluate ∫x·√(x²+1)dx, what substitution would you choose? Why?",
+        "After letting u = x², what is du? How does the integral change?"
+      ],
+      "workedExampleTemplate": {
+        "type": "integration",
+        "steps": ["Identify the form: inverse trig standard or requires substitution", "State the formula or substitution clearly", "Rewrite the integral in the new form", "Integrate", "Substitute back and add C (or evaluate limits)"]
+      },
+      "relatedDotPoints": ["MA-C3.1", "ME-C2.1", "ME-C2.3"]
+    },
+
+    "ME-C2.3": {
+      "code": "ME-C2.3",
+      "name": "Volumes of solids of revolution",
+      "topic": "ME-C",
+      "subtopic": "ME-C2",
+      "year": 12,
+      "summary": "Calculate volumes formed by rotating regions about coordinate axes.",
+      "keyConcepts": [
+        "Volume about x-axis: V = π∫[a to b] [f(x)]² dx",
+        "Volume about y-axis: V = π∫[c to d] [g(y)]² dy where x = g(y)",
+        "Washer method (region between two curves): V = π∫[a to b] ([f(x)]² − [g(x)]²) dx",
+        "The disc method considers thin circular discs of thickness δx",
+        "Always sketch the region and identify the axis of rotation before integrating"
+      ],
+      "commonErrors": [
+        "Forgetting the π factor — V = π∫y²dx, not ∫y²dx",
+        "Squaring the wrong function — it is [f(x)]², not f(x²)",
+        "Incorrect limits of integration — find intersection points carefully",
+        "Using x = g(y) incorrectly when rotating about the y-axis — rearrange the function first",
+        "Subtracting in the wrong order for the washer method — outer radius² minus inner radius²"
+      ],
+      "examTips": [
+        "Always draw a diagram — label the axis of rotation and the region clearly",
+        "For washer method: V = π∫(R² − r²)dx where R = outer radius, r = inner radius",
+        "Check: the volume should be positive — if negative, check your limits or function order",
+        "State the integral setup before evaluating — examiners award marks for the setup"
+      ],
+      "socraticPrompts": [
+        "If y = x² is rotated about the x-axis from x = 0 to x = 2, what is each disc shaped like?",
+        "Why do we square f(x) in the volume formula? Where does that come from geometrically?",
+        "For the region between y = x and y = x², which function gives the outer radius?",
+        "If rotating about the y-axis instead, how does the integral change?"
+      ],
+      "workedExampleTemplate": {
+        "type": "volume-revolution",
+        "steps": ["Sketch the region and identify axis of rotation", "Write the volume formula with correct radii", "Find the limits of integration (intersection points)", "Evaluate the integral", "State the answer with units (if applicable)"]
+      },
+      "relatedDotPoints": ["MA-C3.2", "ME-C2.2"]
+    },
+
+    "ME-C3.1": {
+      "code": "ME-C3.1",
+      "name": "Differential equations",
+      "topic": "ME-C",
+      "subtopic": "ME-C3",
+      "year": 12,
+      "summary": "Solve first-order separable differential equations; interpret solutions and slope fields.",
+      "keyConcepts": [
+        "Separable ODE: dy/dx = f(x)g(y) — separate variables to get dy/g(y) = f(x)dx",
+        "Integrate both sides: ∫1/g(y) dy = ∫f(x) dx",
+        "General solution contains an arbitrary constant C",
+        "Particular solution: apply initial condition y(x₀) = y₀ to find C",
+        "Slope field: a diagram showing the gradient at each point — solutions are curves that follow the arrows",
+        "Verify a solution by differentiating and checking it satisfies the ODE"
+      ],
+      "commonErrors": [
+        "Incorrectly separating variables — all y terms (including dy) must go to one side",
+        "Forgetting the constant of integration on BOTH sides — consolidate into one C",
+        "Not applying the initial condition to find the particular solution",
+        "Errors with absolute values when integrating 1/y: ∫1/y dy = ln|y| + C",
+        "Not considering whether y = 0 is also a solution (equilibrium solution)"
+      ],
+      "examTips": [
+        "Separate variables clearly — write dy/g(y) = f(x)dx before integrating",
+        "Consolidate both constants of integration into a single constant immediately",
+        "Check your solution by differentiating — substitute back into the ODE",
+        "For slope fields: at each point (x,y), draw a short line with slope = f(x,y)"
+      ],
+      "socraticPrompts": [
+        "How would you separate variables in dy/dx = xy? Write it with all y's on the left.",
+        "After integrating, you get ln|y| = x²/2 + C. How do you solve for y?",
+        "If y(0) = 3, how do you use this to find the specific value of C?",
+        "What does a slope field tell you about solutions without actually solving the ODE?"
+      ],
+      "workedExampleTemplate": {
+        "type": "differential-equation",
+        "steps": ["Separate variables: move all y terms to left, all x terms to right", "Integrate both sides", "Solve explicitly for y if possible", "Apply initial condition to find C", "State the particular solution and verify by substitution"]
+      },
+      "relatedDotPoints": ["ME-C1.1", "ME-C1.2", "ME-C2.2"]
+    },
+
+    "ME-A1.1": {
+      "code": "ME-A1.1",
+      "name": "Permutations",
+      "topic": "ME-A",
+      "subtopic": "ME-A1",
+      "year": 11,
+      "summary": "Count ordered arrangements using factorial notation and the permutation formula.",
+      "keyConcepts": [
+        "Fundamental counting principle: if task A can be done in m ways and task B in n ways, both together can be done in m × n ways",
+        "n! = n × (n−1) × ... × 2 × 1, and 0! = 1",
+        "ⁿPr = n!/(n−r)! — number of ways to arrange r objects from n distinct objects",
+        "Arrangements in a line: n distinct objects → n! arrangements",
+        "Circular arrangements: (n−1)! arrangements (one object fixed to remove rotational symmetry)",
+        "Restrictions: use casework or fix restricted objects first"
+      ],
+      "commonErrors": [
+        "Forgetting that order matters in permutations — AB and BA are different arrangements",
+        "Circular permutations: using n! instead of (n−1)!",
+        "Overcounting when identical objects are present — must divide by the factorials of repeated items",
+        "Not considering all cases when there are restrictions",
+        "Confusing ⁿPr with ⁿCr — permutations are ordered, combinations are not"
+      ],
+      "examTips": [
+        "For restrictions: place the restricted items first, then fill remaining positions",
+        "For circular: fix one person/object and arrange the rest — (n−1)!",
+        "Draw slots (__ × __ × ...) and fill them systematically",
+        "Always check: does order matter? If yes, use permutations. If no, use combinations."
+      ],
+      "socraticPrompts": [
+        "In how many ways can 5 people sit in a row? What if 2 specific people must sit together?",
+        "How many 3-letter words can be made from {A, B, C, D, E} without repeating letters?",
+        "For circular arrangements of 6 people, why do we use 5! instead of 6!?",
+        "If we have 4 red and 3 blue identical beads in a line, how do we avoid overcounting?"
+      ],
+      "workedExampleTemplate": {
+        "type": "counting",
+        "steps": ["Identify whether order matters", "Identify any restrictions", "Apply the multiplication principle or permutation formula", "Handle restrictions using casework or fixing objects", "Calculate the final answer"]
+      },
+      "relatedDotPoints": ["ME-A1.2", "ME-A1.3"]
+    },
+
+    "ME-A1.2": {
+      "code": "ME-A1.2",
+      "name": "Combinations",
+      "topic": "ME-A",
+      "subtopic": "ME-A1",
+      "year": 11,
+      "summary": "Count unordered selections using the combination formula and Pascal's triangle.",
+      "keyConcepts": [
+        "ⁿCr = n!/[r!(n−r)!] — number of ways to choose r objects from n without regard to order",
+        "Also written C(n,r) or (n choose r) — the binomial coefficient",
+        "Symmetry: ⁿCr = ⁿC(n−r) — choosing r to include = choosing (n−r) to exclude",
+        "Pascal's triangle: ⁿCr = ⁿ⁻¹C(r−1) + ⁿ⁻¹Cr",
+        "ⁿC0 = ⁿCn = 1; ⁿC1 = n",
+        "Selecting with restrictions: use casework — 'at least one' = total − none"
+      ],
+      "commonErrors": [
+        "Using permutations when order doesn't matter — selecting a committee is a combination",
+        "Forgetting the symmetry property — ¹⁰C7 = ¹⁰C3, which is easier to calculate",
+        "Errors in 'at least' problems — forgetting to subtract properly",
+        "Including or excluding the restriction group incorrectly in casework",
+        "Arithmetic errors with large factorials — simplify before calculating"
+      ],
+      "examTips": [
+        "Always simplify ⁿCr before calculating: cancel common factors in the factorial",
+        "For 'at least one': P(at least 1) = Total − P(none)",
+        "Draw a list of cases clearly when using casework — don't skip any case",
+        "Check: ⁿC0 + ⁿC1 + ... + ⁿCn = 2ⁿ — use this to verify your working"
+      ],
+      "socraticPrompts": [
+        "From 10 students, how many ways can a group of 3 be chosen? Does the order of selection matter?",
+        "Why is ¹⁰C7 equal to ¹⁰C3? What does that mean intuitively?",
+        "A committee of 4 must include at least 1 woman from 5 women and 6 men. How many ways?",
+        "Can you write out Pascal's triangle to row 5 and find ⁵C2 from it?"
+      ],
+      "workedExampleTemplate": {
+        "type": "counting",
+        "steps": ["Identify this is a selection (unordered) problem", "Identify restrictions and set up cases", "Apply ⁿCr formula to each case", "Add or subtract cases as appropriate", "Verify total is sensible"]
+      },
+      "relatedDotPoints": ["ME-A1.1", "ME-A1.3", "ME-S1.1"]
+    },
+
+    "ME-A1.3": {
+      "code": "ME-A1.3",
+      "name": "Binomial theorem and binomial expansion",
+      "topic": "ME-A",
+      "subtopic": "ME-A1",
+      "year": 11,
+      "summary": "Expand (a + b)ⁿ using the binomial theorem; find general and specific terms.",
+      "keyConcepts": [
+        "Binomial theorem: (a+b)ⁿ = Σ(r=0 to n) ⁿCr × aⁿ⁻ʳ × bʳ",
+        "General term: T(r+1) = ⁿCr × aⁿ⁻ʳ × bʳ (note: r starts at 0)",
+        "To find the constant term: set the power of x in T(r+1) equal to 0 and solve for r",
+        "To find the coefficient of xᵏ: set the power of x equal to k and solve for r",
+        "The expansion has (n+1) terms",
+        "Sum of all coefficients: set a = b = 1, giving (1+1)ⁿ = 2ⁿ"
+      ],
+      "commonErrors": [
+        "Off-by-one error: T(r+1) has r starting from 0, so T₁ corresponds to r = 0",
+        "Forgetting to raise both a and b to their respective powers in the general term",
+        "Sign errors when b is negative: (a − b)ⁿ has b = −b, so signs alternate",
+        "Not simplifying ⁿCr before calculating large values",
+        "Finding the wrong term — confusing 'the 4th term' with T(r+1) where r+1 = 4, so r = 3"
+      ],
+      "examTips": [
+        "Always write T(r+1) = ⁿCr × aⁿ⁻ʳ × bʳ as your starting point",
+        "For the constant term: write out the power of x and set it to zero",
+        "For (1+x)ⁿ: the coefficient of xʳ is simply ⁿCr",
+        "Check: the sum of all ⁿCr values (coefficients when a=b=1) equals 2ⁿ"
+      ],
+      "socraticPrompts": [
+        "What is the general term in the expansion of (x + 2)⁵? Write it using T(r+1).",
+        "In (x + 1/x)⁶, for what value of r does the constant term occur?",
+        "What is the coefficient of x³ in (2 + x)⁷?",
+        "Why does (1+x)ⁿ expanded give coefficients that match Pascal's triangle?"
+      ],
+      "workedExampleTemplate": {
+        "type": "binomial",
+        "steps": ["Identify a, b and n", "Write the general term T(r+1) = ⁿCr × aⁿ⁻ʳ × bʳ", "Set up the equation for the required power of x", "Solve for r", "Substitute r to find the specific term or coefficient"]
+      },
+      "relatedDotPoints": ["ME-A1.2", "ME-S1.1"]
+    },
+
+    "ME-V1.1": {
+      "code": "ME-V1.1",
+      "name": "Vector concepts and representations",
+      "topic": "ME-V",
+      "subtopic": "ME-V1",
+      "year": 12,
+      "summary": "Represent, add and scale vectors in component form; find magnitude and unit vectors.",
+      "keyConcepts": [
+        "A vector has both magnitude and direction; a scalar has magnitude only",
+        "Component form: v = (x, y) or v = xi + yj",
+        "Magnitude: |v| = √(x² + y²)",
+        "Unit vector: v̂ = v/|v| — a vector of length 1 in the direction of v",
+        "Addition: (a, b) + (c, d) = (a+c, b+d) — add components",
+        "Scalar multiplication: k(a, b) = (ka, kb)",
+        "Zero vector: (0, 0); equal vectors: same magnitude and direction"
+      ],
+      "commonErrors": [
+        "Confusing magnitude |v| with the vector v itself",
+        "Adding magnitudes instead of components: |a + b| ≠ |a| + |b| in general",
+        "Unit vector error: dividing by the wrong magnitude",
+        "Not expressing the answer as a vector when a vector is required",
+        "Confusing i and j components — i is horizontal (x), j is vertical (y)"
+      ],
+      "examTips": [
+        "Always state whether your answer is a vector or a scalar",
+        "Unit vector: find |v| first, then divide each component by |v|",
+        "Check: |v̂| should equal 1 — verify your unit vector",
+        "For position vectors: point P at (3, 4) has position vector OP = 3i + 4j"
+      ],
+      "socraticPrompts": [
+        "If v = 3i + 4j, what is |v|? What is the unit vector in the direction of v?",
+        "Can you add vectors (2, 3) and (−1, 5) geometrically? What about algebraically?",
+        "Is it true that |a + b| = |a| + |b|? Try a = (1,0) and b = (0,1) to check.",
+        "What does it mean for two vectors to be equal if they are at different positions?"
+      ],
+      "workedExampleTemplate": {
+        "type": "vector",
+        "steps": ["Write vectors in component form", "Perform the required operation (add, scale, etc.)", "Calculate magnitude using Pythagoras", "Find unit vector by dividing by magnitude", "Interpret geometrically if required"]
+      },
+      "relatedDotPoints": ["ME-V1.2", "ME-V1.3", "ME-V1.4"]
+    },
+
+    "ME-V1.2": {
+      "code": "ME-V1.2",
+      "name": "Dot product and projections",
+      "topic": "ME-V",
+      "subtopic": "ME-V1",
+      "year": 12,
+      "summary": "Calculate and apply the dot product to find angles, test perpendicularity and compute projections.",
+      "keyConcepts": [
+        "Dot product: a·b = x₁x₂ + y₁y₂ = |a||b|cosθ",
+        "Perpendicular vectors: a·b = 0 (and a ≠ 0, b ≠ 0)",
+        "Parallel vectors: a = kb for some scalar k",
+        "Angle between vectors: cosθ = (a·b)/(|a||b|), where 0 ≤ θ ≤ π",
+        "Scalar resolute of b onto a: (a·b)/|a|",
+        "Vector resolute of b onto a: [(a·b)/|a|²] × a"
+      ],
+      "commonErrors": [
+        "Computing a·b as a vector instead of a scalar — the dot product is always a scalar",
+        "Using the wrong formula for the angle: forgetting to divide by |a||b|",
+        "Concluding vectors are parallel when their dot product is non-zero — parallelism uses a = kb",
+        "Projecting b onto a using b's magnitude instead of a's magnitude",
+        "Not verifying that θ is between 0 and π when using the dot product angle formula"
+      ],
+      "examTips": [
+        "Show the formula, then substitute — write a·b = x₁x₂ + y₁y₂ explicitly",
+        "Perpendicular check: compute a·b and confirm it equals 0",
+        "For projection: the scalar resolute is a number; the vector resolute is a vector — state which is required",
+        "cosθ < 0 means the angle is obtuse — this is valid, don't force an acute angle"
+      ],
+      "socraticPrompts": [
+        "Find the angle between a = (1, 2) and b = (3, −1). Start with a·b.",
+        "If a·b = 0, what does that tell you about a and b geometrically?",
+        "What is the scalar resolute of b = (4, 3) in the direction of a = (1, 0)?",
+        "Why is the dot product a scalar, not a vector? What does it measure geometrically?"
+      ],
+      "workedExampleTemplate": {
+        "type": "vector",
+        "steps": ["Calculate a·b using components", "Calculate |a| and |b|", "Find the angle or resolute using the appropriate formula", "Interpret the result geometrically", "State whether the answer is scalar or vector"]
+      },
+      "relatedDotPoints": ["ME-V1.1", "ME-V1.3"]
+    },
+
+    "ME-V1.3": {
+      "code": "ME-V1.3",
+      "name": "Vectors and geometry",
+      "topic": "ME-V",
+      "subtopic": "ME-V1",
+      "year": 12,
+      "summary": "Use vectors to prove geometric results and find equations of lines.",
+      "keyConcepts": [
+        "Position vector of P: OP⃗ = p",
+        "Vector from A to B: AB⃗ = b − a (position vector of B minus position vector of A)",
+        "Midpoint M of AB: OM⃗ = (a + b)/2",
+        "Three points A, B, C are collinear if AC⃗ = k × AB⃗ for some scalar k",
+        "Vector equation of a line: r = a + λd where a is a point on the line and d is the direction vector",
+        "Two lines are parallel if their direction vectors are scalar multiples; they intersect if they have a common point"
+      ],
+      "commonErrors": [
+        "AB⃗ = a − b wrong — it should be b − a (destination minus origin)",
+        "Midpoint formula: using a − b instead of (a + b)/2",
+        "Collinearity: showing vectors are parallel is necessary but not sufficient — they must share a common point",
+        "Line equation: confusing the position vector a with the direction vector d",
+        "Not checking if lines actually intersect after assuming they do"
+      ],
+      "examTips": [
+        "For geometric proofs: express all vectors in terms of a few base vectors",
+        "Collinearity: show that one vector is a scalar multiple of another AND they share a point",
+        "Midpoint: OM = (a + b)/2 — this is a vector average",
+        "For line intersection: set equal and solve for both parameters simultaneously"
+      ],
+      "socraticPrompts": [
+        "If A has position vector a and B has position vector b, what is AB⃗? And the midpoint?",
+        "How can you show that three points are collinear using vectors?",
+        "Write the vector equation of the line through (1,2) in the direction (3,−1).",
+        "Two lines have equations r = (1,0) + s(2,1) and r = (3,2) + t(1,−1). Do they intersect?"
+      ],
+      "workedExampleTemplate": {
+        "type": "vector-geometry",
+        "steps": ["Express all relevant vectors in terms of position vectors", "Use vector operations to find required vectors", "Apply collinearity or intersection conditions", "State conclusion clearly with justification"]
+      },
+      "relatedDotPoints": ["ME-V1.1", "ME-V1.2", "ME-V1.4"]
+    },
+
+    "ME-V1.4": {
+      "code": "ME-V1.4",
+      "name": "Projectile motion using vectors",
+      "topic": "ME-V",
+      "subtopic": "ME-V1",
+      "year": 12,
+      "summary": "Model projectile motion with vector equations; find range, height and trajectory.",
+      "keyConcepts": [
+        "Acceleration: a = (0, −g) where g ≈ 9.8 m/s² or 10 m/s²",
+        "Initial velocity: v₀ = V cosα i + V sinα j where V = speed, α = angle of projection",
+        "Velocity: v(t) = (V cosα)i + (V sinα − gt)j",
+        "Position: r(t) = (V cosα · t)i + (V sinα · t − ½gt²)j",
+        "Maximum height: when vertical velocity = 0, i.e. t = V sinα/g",
+        "Range: horizontal distance when y = 0 (back at ground level)",
+        "Cartesian equation of trajectory: y = x tanα − gx²/(2V²cos²α)"
+      ],
+      "commonErrors": [
+        "Not resolving initial velocity into horizontal and vertical components correctly",
+        "Forgetting that horizontal velocity is constant (no horizontal acceleration)",
+        "Finding max height at max range — these are different times",
+        "Using degrees instead of considering radians (HSC usually uses degrees — check context)",
+        "Sign error: gravity acts downward so vertical acceleration is −g"
+      ],
+      "examTips": [
+        "Always start by writing horizontal and vertical components separately",
+        "Maximum height: set vy = 0 and solve for t, then substitute into y(t)",
+        "Range: set y(t) = 0, solve for t > 0, substitute into x(t)",
+        "Trajectory equation: eliminate t from x = V cosα · t and y = V sinα · t − ½gt²"
+      ],
+      "socraticPrompts": [
+        "A ball is projected at 20 m/s at 30° to the horizontal. What are the horizontal and vertical components of velocity?",
+        "Why does the horizontal velocity stay constant throughout the motion?",
+        "How do you find the time of flight? What condition are you applying?",
+        "Can you derive the trajectory equation y in terms of x by eliminating t?"
+      ],
+      "workedExampleTemplate": {
+        "type": "projectile",
+        "steps": ["Resolve initial velocity into components", "Write position vector r(t)", "For max height: set vertical velocity to zero and find t", "For range: set y = 0 and solve for t > 0", "Substitute to find the required quantity"]
+      },
+      "relatedDotPoints": ["ME-V1.1", "ME-F1.4", "ME-C1.1"]
+    },
+
+    "ME-S1.1": {
+      "code": "ME-S1.1",
+      "name": "Bernoulli trials and binomial probability",
+      "topic": "ME-S",
+      "subtopic": "ME-S1",
+      "year": 12,
+      "summary": "Recognise Bernoulli trials and calculate binomial probabilities.",
+      "keyConcepts": [
+        "Bernoulli trial: a single experiment with exactly two outcomes (success/failure), fixed probability p of success",
+        "Binomial distribution X ~ B(n, p): n independent Bernoulli trials",
+        "P(X = r) = ⁿCr × pʳ × (1−p)ⁿ⁻ʳ for r = 0, 1, 2, ..., n",
+        "P(X ≥ r) = 1 − P(X ≤ r−1) — use complement for 'at least' problems",
+        "The distribution is valid only when: fixed n, independent trials, constant p, two outcomes"
+      ],
+      "commonErrors": [
+        "Using the binomial formula when trials are not independent — check this condition first",
+        "Confusing p (probability of success) with q = 1−p (probability of failure)",
+        "Off-by-one in 'at least r' problems — P(X ≥ r) = 1 − P(X ≤ r−1), not 1 − P(X ≤ r)",
+        "Forgetting to include ⁿCr — multiplying only pʳ(1−p)ⁿ⁻ʳ",
+        "Not verifying the four conditions for a binomial model"
+      ],
+      "examTips": [
+        "Always verify: are trials independent? Is p constant? Are there exactly two outcomes?",
+        "For 'at least 2': use 1 − P(X=0) − P(X=1)",
+        "Write P(X = r) = ⁿCr pʳ qⁿ⁻ʳ explicitly before substituting values",
+        "CAS calculator: use binomPdf and binomCdf for checking, but show the formula in working"
+      ],
+      "socraticPrompts": [
+        "A fair coin is tossed 10 times. Why is this a binomial situation? What are n and p?",
+        "Find P(X = 3) when X ~ B(10, 0.4). Write out the formula first.",
+        "For P(X ≥ 2), why is it easier to use the complement?",
+        "If I draw cards without replacement, is this binomial? Why or why not?"
+      ],
+      "workedExampleTemplate": {
+        "type": "probability",
+        "steps": ["Verify binomial conditions", "Identify n and p", "Write P(X = r) = ⁿCr pʳ (1−p)ⁿ⁻ʳ", "Substitute and calculate", "For cumulative probabilities, use complement or add individual terms"]
+      },
+      "relatedDotPoints": ["MA-S1.1", "ME-A1.2", "ME-S1.2"]
+    },
+
+    "ME-S1.2": {
+      "code": "ME-S1.2",
+      "name": "Mean and variance of binomial distribution",
+      "topic": "ME-S",
+      "subtopic": "ME-S1",
+      "year": 12,
+      "summary": "Calculate and interpret E(X) = np and Var(X) = np(1−p) for a binomial distribution.",
+      "keyConcepts": [
+        "Mean (expected value): E(X) = np",
+        "Variance: Var(X) = np(1−p) = npq where q = 1−p",
+        "Standard deviation: SD(X) = √(npq)",
+        "The mean is the long-run average number of successes in n trials",
+        "Larger variance means more spread — occurs when p is close to 0.5",
+        "These formulas apply ONLY to the binomial distribution — not a general rule"
+      ],
+      "commonErrors": [
+        "Using Var(X) = np instead of np(1−p) — forgetting to multiply by (1−p)",
+        "Confusing variance and standard deviation — SD = √Var, not Var itself",
+        "Applying E(X) = np to non-binomial distributions",
+        "Incorrect p — ensure p is the probability of success, not failure",
+        "Not interpreting E(X) in context — state what the expected value means"
+      ],
+      "examTips": [
+        "Write down E(X) = np and Var(X) = npq with the actual values substituted",
+        "State: 'On average, we expect ... successes in n trials'",
+        "Standard deviation is more interpretable than variance — convert for context questions",
+        "If asked to compare two distributions, compare both mean AND standard deviation"
+      ],
+      "socraticPrompts": [
+        "X ~ B(20, 0.3). Find E(X) and SD(X). What do these values mean in context?",
+        "If you toss a coin 100 times, how many heads do you expect? How spread out is the result?",
+        "Why is the variance largest when p = 0.5? What does that tell us?",
+        "Can E(X) be non-integer for a binomial distribution? Is that possible?"
+      ],
+      "workedExampleTemplate": {
+        "type": "statistics",
+        "steps": ["Identify n and p from the binomial distribution", "Calculate E(X) = np", "Calculate Var(X) = np(1−p)", "Calculate SD(X) = √(Var)", "Interpret the results in context"]
+      },
+      "relatedDotPoints": ["ME-S1.1", "MA-S2.1", "ME-S1.3"]
+    },
+
+    "ME-S1.3": {
+      "code": "ME-S1.3",
+      "name": "Normal approximation to the binomial",
+      "topic": "ME-S",
+      "subtopic": "ME-S1",
+      "year": 12,
+      "summary": "Approximate binomial probabilities using the normal distribution with continuity correction.",
+      "keyConcepts": [
+        "When n is large and p is not too close to 0 or 1: X ~ B(n,p) ≈ N(np, npq)",
+        "Rule of thumb: np ≥ 5 and nq ≥ 5 for the approximation to be valid",
+        "Continuity correction: since X is discrete and Z is continuous, P(X = k) ≈ P(k−0.5 < Y < k+0.5)",
+        "P(X ≤ k) ≈ P(Y < k + 0.5) and P(X ≥ k) ≈ P(Y > k − 0.5)",
+        "Standardise: Z = (Y − μ)/σ where μ = np and σ = √(npq)"
+      ],
+      "commonErrors": [
+        "Forgetting the continuity correction — this is a very common mark-losing error",
+        "Wrong direction of correction: P(X ≤ k) uses k + 0.5, not k − 0.5",
+        "Not checking the conditions np ≥ 5 and nq ≥ 5 before applying the approximation",
+        "Using the wrong mean or variance — μ = np, σ² = npq (not np or n)",
+        "Not standardising correctly — Z = (X − μ)/σ"
+      ],
+      "examTips": [
+        "Always state: 'Since np = ... ≥ 5 and nq = ... ≥ 5, the normal approximation is valid'",
+        "Apply continuity correction before standardising — write P(X ≤ k) = P(Y < k + 0.5)",
+        "Show the standardisation step: Z = (Y − np)/√(npq)",
+        "Compare with the exact binomial answer if asked — show both"
+      ],
+      "socraticPrompts": [
+        "X ~ B(100, 0.4). Why can we approximate with a normal distribution here?",
+        "What normal distribution approximates B(50, 0.6)? What are μ and σ?",
+        "To find P(X ≤ 25) using the normal approximation, what continuity correction do you apply?",
+        "Why do we need the continuity correction? What goes wrong without it?"
+      ],
+      "workedExampleTemplate": {
+        "type": "normal-approximation",
+        "steps": ["Verify conditions: np ≥ 5 and nq ≥ 5", "State the approximating distribution Y ~ N(np, npq)", "Apply continuity correction to the probability", "Standardise to find Z", "Use standard normal tables or calculator to evaluate"]
+      },
+      "relatedDotPoints": ["ME-S1.2", "MA-S3.1"]
+    }
+
+  }
+}

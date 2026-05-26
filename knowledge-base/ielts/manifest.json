@@ -1,0 +1,49 @@
+{
+    "id": "ielts-preparation",
+    "name": "IELTS Exam Preparation",
+    "shortName": "IELTS",
+    "icon": "🎓",
+    "categories": ["ielts", "english", "writing", "reading", "listening", "speaking", "exam-prep"],
+    "enabled": true,
+    "suggestions": [
+        { "icon": "✍️", "label": "Task 1 Academic",    "text": "Explain how to write an IELTS Academic Task 1 report describing a graph or chart." },
+        { "icon": "📝", "label": "Task 2 Essay",        "text": "How do I structure an IELTS Task 2 essay? Explain the introduction, body paragraphs, and conclusion." },
+        { "icon": "📖", "label": "Reading strategies",  "text": "What are the best strategies for the IELTS Reading section? Explain skimming, scanning, and time management." },
+        { "icon": "🎧", "label": "Listening tips",      "text": "How should I approach each section of the IELTS Listening test?" },
+        { "icon": "🗣️", "label": "Speaking Part 1",     "text": "How do I perform well in IELTS Speaking Part 1? Give me example questions and model answers." },
+        { "icon": "💬", "label": "Speaking Part 2",     "text": "Explain how to structure a 2-minute IELTS Speaking Part 2 long turn with a cue card." },
+        { "icon": "🔤", "label": "Vocabulary",          "text": "What vocabulary strategies help most for IELTS? How do I learn and use academic vocabulary effectively?" },
+        { "icon": "📊", "label": "Band scores",         "text": "How is IELTS scored? Explain the band descriptors for Writing, Speaking, Reading, and Listening." },
+        { "icon": "🔗", "label": "Cohesion devices",   "text": "Teach me cohesive devices and discourse markers for IELTS Writing and Speaking." },
+        { "icon": "⏱️", "label": "Time management",    "text": "How should I manage my time across all four IELTS sections on exam day?" },
+        { "icon": "❓", "label": "Question types",      "text": "Explain all the question types in IELTS Reading and how to approach each one." },
+        { "icon": "🏆", "label": "Band 7+ tips",        "text": "What does it take to score Band 7 or above in each IELTS section?" },
+        { "icon": "📋", "label": "GT Task 1 letter",    "text": "How do I write an IELTS General Training Task 1 letter? Explain formal, semi-formal, and informal styles." },
+        { "icon": "🧠", "label": "Grammar for IELTS",  "text": "What grammar structures are most important for IELTS Writing Band 7+?" },
+        { "icon": "📝", "label": "Practice",            "text": "Give me an IELTS practice question to try." }
+    ],
+    "quickActions": [
+        { "icon": "✍️", "label": "Task 1",          "text": "Help with IELTS Task 1." },
+        { "icon": "📝", "label": "Task 2",          "text": "Help with IELTS Task 2 essay." },
+        { "icon": "📖", "label": "Reading",         "text": "Reading strategies." },
+        { "icon": "🎧", "label": "Listening",       "text": "Listening tips." },
+        { "icon": "🗣️", "label": "Speaking",        "text": "Speaking practice." },
+        { "icon": "🔤", "label": "Vocabulary",      "text": "Vocabulary strategies." },
+        { "icon": "🔗", "label": "Cohesion",        "text": "Cohesive devices." },
+        { "icon": "📊", "label": "Band scores",     "text": "Explain band scoring." },
+        { "icon": "🏆", "label": "Band 7+ tips",   "text": "How to score Band 7+." },
+        { "icon": "🧠", "label": "Grammar",         "text": "Grammar for IELTS." },
+        { "icon": "⏱️", "label": "Timing",          "text": "Time management tips." },
+        { "icon": "❓", "label": "Question types",  "text": "Explain question types." },
+        { "icon": "📋", "label": "GT Letter",       "text": "Help with GT Task 1 letter." },
+        { "icon": "🗂️", "label": "Exam overview",  "text": "Give me an overview of the IELTS exam." },
+        { "icon": "📝", "label": "Practice",        "text": "Give me a practice question." }
+    ],
+    "filenames": {
+        "syllabusMap":             "ielts-syllabus-map.json",
+        "dotPoints":               "ielts-dot-points.json",
+        "questionIndex":           "ielts-index.json",
+        "questions":               "ielts-questions.json",
+        "markingGuidelinesIndex":  "ielts-marking-guidelines-index.json"
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "subject": "IELTS Exam Preparation",
+    "description": "Marking guidelines for IELTS practice responses across all four skills, based on official IELTS band descriptors.",
+    "lastUpdated": "2025-03-17",
+    "importantNote": "IELTS Writing and Speaking are assessed holistically against four equally-weighted criteria. Listening and Reading are assessed by the number of correct answers out of 40, converted to a band score.",
+    "assessmentCriteria": {
+        "writing": [
+            "Task Achievement / Task Response (25%): Does the response fully address the task? Is the position clear and consistently maintained?",
+            "Coherence and Cohesion (25%): Is the response logically organised? Are cohesive devices used accurately and appropriately?",
+            "Lexical Resource (25%): Is a wide range of vocabulary used accurately? Are less common words and collocations used appropriately?",
+            "Grammatical Range and Accuracy (25%): Is a wide range of structures used? Are sentences mostly error-free?"
+        ],
+        "speaking": [
+            "Fluency and Coherence (25%): Does the candidate speak at length without unnatural pauses? Is speech well-organised?",
+            "Lexical Resource (25%): Is vocabulary varied and topic-appropriate? Are less common words and idiomatic language used?",
+            "Grammatical Range and Accuracy (25%): Is a variety of structures used? Are they mostly accurate?",
+            "Pronunciation (25%): Is speech intelligible? Is there appropriate use of stress, rhythm, and intonation?"
+        ]
+    },
+    "partialCreditPolicy": {
+        "description": "IELTS Writing partial credit principles",
+        "rules": [
+            { "condition": "Task Achievement/Response below Band 5 (major misunderstanding of task)", "marksAwarded": "Caps overall Writing score at Band 5 regardless of other criteria" },
+            { "condition": "Under word count (fewer than 150 words Task 1 / 250 words Task 2)",       "marksAwarded": "Automatic penalty applied to Task Achievement/Response" },
+            { "condition": "Missing overview in Academic Task 1",                                    "marksAwarded": "Task Achievement capped at approximately Band 5" },
+            { "condition": "Introduction copied verbatim from the question",                         "marksAwarded": "Those words not counted toward word count; Task Achievement penalised" },
+            { "condition": "Memorised or scripted response detected in Speaking",                    "marksAwarded": "Fluency and Coherence score reduced; may be flagged for review" },
+            { "condition": "Bullet points not addressed in GT Task 1 letter",                        "marksAwarded": "Task Achievement score reduced by approximately 1 band per missing bullet" }
+        ]
+    },
+    "levelDescriptors": {
+        "band5": {
+            "writing": {
+                "taskResponse":   "Addresses the task only partially; position may be unclear; ideas limited and not well supported",
+                "cohesion":       "Some basic cohesive devices; may be inaccurate or repetitive",
+                "lexical":        "Limited range; noticeable errors in word choice and spelling",
+                "grammar":        "Limited range of structures; frequent errors; meaning sometimes obscured"
+            },
+            "speaking": {
+                "fluency":        "Usually maintains flow but uses repetition or self-correction to keep talking; limited range of connectives",
+                "lexical":        "Has enough vocabulary for familiar topics; errors in less common vocabulary",
+                "grammar":        "Produces basic sentence forms reasonably accurately; limited complex structures",
+                "pronunciation":  "Generally intelligible; mispronounces some words; accent affects clarity occasionally"
+            }
+        },
+        "band6": {
+            "writing": {
+                "taskResponse":   "Addresses all parts of the task, though some may be more fully covered; position generally clear",
+                "cohesion":       "Coherent paragraphing; cohesive devices used but may be faulty or mechanical",
+                "lexical":        "Adequate range; some awareness of style and collocation; some errors in word choice",
+                "grammar":        "Mix of simple and complex structures; some errors in complex structures; generally clear meaning"
+            },
+            "speaking": {
+                "fluency":        "Willing to speak at length; coherent but may have uneven flow; uses a range of connectives",
+                "lexical":        "Generally paraphrases successfully; less common vocabulary sometimes inaccurate",
+                "grammar":        "Mix of simple and complex structures; not always accurate but errors rarely cause misunderstanding",
+                "pronunciation":  "Generally intelligible; flexibly controls stress and intonation for some effect"
+            }
+        },
+        "band7": {
+            "writing": {
+                "taskResponse":   "Addresses all parts of the task; clear position maintained throughout; main ideas extended and supported",
+                "cohesion":       "Logically organised; range of cohesive devices used flexibly; clear referencing",
+                "lexical":        "Sufficient range to allow flexibility and precision; uses less common items with some awareness of style; occasional inaccuracies",
+                "grammar":        "Variety of complex structures; majority of sentences error-free; occasional errors in complex grammar"
+            },
+            "speaking": {
+                "fluency":        "Speaks at length without noticeable effort; uses paraphrase effectively; coherently develops topics",
+                "lexical":        "Wide enough range to discuss most topics; uses idiomatic language naturally; occasional inaccuracies",
+                "grammar":        "Wide range of structures; frequently error-free; occasional slips; good control of complex structures",
+                "pronunciation":  "Easy to understand; uses a range of features with flexibility; only occasionally unclear"
+            }
+        },
+        "band8": {
+            "writing": {
+                "taskResponse":   "Sufficiently addresses all requirements; well-developed position; well-chosen ideas; occasionally over-generalises",
+                "cohesion":       "Sequences information and ideas expertly; manages paragraphing very well",
+                "lexical":        "Wide range; fluent and flexible use; rare minor errors only",
+                "grammar":        "Wide range; majority error-free; rare minor errors; flexible use in communication"
+            },
+            "speaking": {
+                "fluency":        "Speaks fluently with only occasional repetition or self-correction; hesitation rare; coherent and connected discourse",
+                "lexical":        "Wide resource; flexible; precise in familiar and unfamiliar topics; effective circumlocution",
+                "grammar":        "Wide range; consistently accurate; only occasional slips",
+                "pronunciation":  "Wide range of features; precise; flexible; only occasional difficulty for the listener"
+            }
+        }
+    },
+    "questionGuidelines": {
+        "IELTS-Q-WRT1-001": {
+            "totalMarks": 9,
+            "bandDescriptors": [
+                { "band": "8-9",   "description": "All key features selected and highlighted; insightful overview; accurate and flexible data language; sophisticated comparisons; minimal errors; well above 150 words" },
+                { "band": "7-7.5", "description": "Main features covered; clear overview present; good range of data language; accurate comparisons; occasional minor errors; well-organised" },
+                { "band": "6-6.5", "description": "Key features covered but some may be underdeveloped; overview present but may be vague; adequate data language with some errors; generally organised" },
+                { "band": "5-5.5", "description": "Task partially addressed; overview missing or unclear; limited data language; mechanical description; noticeable errors" },
+                { "band": "4",     "description": "Very limited coverage; no overview; very limited vocabulary; frequent errors obscure meaning" }
+            ]
+        },
+        "IELTS-Q-WRT2-001": {
+            "totalMarks": 9,
+            "bandDescriptors": [
+                { "band": "8-9",   "description": "All requirements fully addressed; clear well-developed position; sophisticated ideas; wide range of vocabulary and complex structures; rare errors" },
+                { "band": "7-7.5", "description": "All parts addressed; clear position maintained; well-developed ideas; flexible vocabulary; variety of structures; occasional errors" },
+                { "band": "6-6.5", "description": "Most parts addressed; position generally clear; main ideas present but not fully extended; adequate vocabulary; mix of simple and complex structures" },
+                { "band": "5-5.5", "description": "Partial coverage; position may be unclear; limited idea development; limited vocabulary; simple structures dominate; frequent errors" },
+                { "band": "4",     "description": "Limited response; position unclear or absent; very limited development; severe errors" }
+            ]
+        },
+        "IELTS-Q-WRT-GT-001": {
+            "totalMarks": 9,
+            "bandDescriptors": [
+                { "band": "8-9",   "description": "All bullet points fully addressed; appropriate tone throughout; wide vocabulary range; sophisticated formal structures; minimal errors" },
+                { "band": "7-7.5", "description": "All bullet points covered; register consistently appropriate; good vocabulary range; varied structures; occasional errors" },
+                { "band": "6-6.5", "description": "All bullet points mentioned but some underdeveloped; register generally appropriate; adequate vocabulary; simple and some complex structures" },
+                { "band": "5-5.5", "description": "Not all bullet points fully addressed; register occasionally inappropriate; limited vocabulary; errors noticeable" },
+                { "band": "4",     "description": "Bullet points missing or very underdeveloped; register often wrong; very limited vocabulary and structures" }
+            ]
+        },
+        "IELTS-Q-SPK-001": {
+            "totalMarks": 9,
+            "bandDescriptors": [
+                { "band": "8-9",   "description": "All bullets addressed fluently; sophisticated vocabulary; wide range of structures; natural pronunciation; nearly 2 minutes without effort" },
+                { "band": "7-7.5", "description": "All bullets covered; good vocabulary range; variety of structures; minor errors; good fluency and pronunciation" },
+                { "band": "6-6.5", "description": "Bullets generally covered; adequate vocabulary; some complex structures attempted; some hesitation; generally intelligible" },
+                { "band": "5-5.5", "description": "Some bullets missed or very brief; limited vocabulary; mostly simple structures; noticeable pausing; some pronunciation errors" },
+                { "band": "4",     "description": "Very limited content; long pauses; very limited vocabulary; frequent errors; difficult to understand" }
+            ]
+        },
+        "IELTS-Q-RDG-001": {
+            "totalMarks": 5,
+            "scoringNote": "1 mark per correct TFNG answer. No negative marking.",
+            "answerKey": {
+                "1": "FALSE",
+                "2": "TRUE",
+                "3": "FALSE",
+                "4": "FALSE",
+                "5": "FALSE"
+            },
+            "bandEquivalence": {
+                "5/5": "Equivalent to Band 8+ performance on this question type",
+                "4/5": "Band 7 range",
+                "3/5": "Band 6 range",
+                "2/5": "Band 5 range",
+                "0-1/5": "Below Band 5 — strategy review needed"
+            }
+        }
+    },
+    "feedbackTemplate": {
+        "writing": "Score: Band {band}\n\nTask Achievement/Response: {task_response}\nCoherence and Cohesion: {cohesion}\nLexical Resource: {lexical}\nGrammatical Range and Accuracy: {grammar}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}\n\nTarget Score Actions:\n{actions}\n\nRecommended Resources:\n- Official IELTS Practice Materials (Cambridge IELTS 1-18)\n- IELTS.org official band descriptors\n- E2 Language IELTS writing feedback platform",
+        "speaking": "Score: Band {band}\n\nFluency and Coherence: {fluency}\nLexical Resource: {lexical}\nGrammatical Range and Accuracy: {grammar}\nPronunciation: {pronunciation}\n\nStrengths:\n{strengths}\n\nAreas for Improvement:\n{improvements}"
+    }
+}

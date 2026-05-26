@@ -1,0 +1,174 @@
+{
+    "subject": "Advanced C++ Programming",
+    "description": "Practice coding questions for Advanced C++ covering memory management, templates, move semantics, concurrency, and modern C++20 features.",
+    "questions": {
+        "CPP-Q-OOP-001": {
+            "id": "CPP-Q-OOP-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 12,
+            "type": "coding",
+            "dotPoints": ["CPP-OOP-1.3", "CPP-MEM-2.1", "CPP-MOV-1.2"],
+            "topic": "CPP-OOP",
+            "difficulty": "hard",
+            "title": "Rule of Five — Dynamic String Buffer",
+            "description": "Implement a resource-owning string buffer class that correctly follows the Rule of Five.",
+            "question": "Implement a class DynamicString that:\n1. Stores a heap-allocated C-string (char*)\n2. Implements a constructor from const char*\n3. Implements a destructor that frees the buffer\n4. Implements a deep-copying copy constructor\n5. Implements a copy assignment operator using copy-and-swap (handles self-assignment)\n6. Implements a noexcept move constructor that steals the buffer\n7. Implements a noexcept move assignment operator\n8. Implements size() and c_str() getters\n\nDemonstrate all five operations in main() using an std::vector<DynamicString> that forces reallocation.",
+            "solution": {
+                "steps": [
+                    "Define the data members: char* data_ and std::size_t size_",
+                    "Constructor: allocate with new[], copy with std::memcpy or std::strcpy",
+                    "Destructor: delete[] data_",
+                    "Copy constructor: allocate and deep-copy",
+                    "Copy assignment: copy-and-swap — construct a copy then swap with *this",
+                    "Move constructor: steal data_ and size_, null the source",
+                    "Move assignment: swap with a moved-from temp",
+                    "Mark move operations noexcept so std::vector uses them during reallocation"
+                ],
+                "code": "#include <cstring>\n#include <iostream>\n#include <vector>\n#include <utility>\n\nclass DynamicString {\npublic:\n    // Constructor\n    explicit DynamicString(const char* str = \"\")\n        : size_(std::strlen(str)),\n          data_(new char[size_ + 1]) {\n        std::memcpy(data_, str, size_ + 1);\n    }\n\n    // Destructor\n    ~DynamicString() { delete[] data_; }\n\n    // Copy constructor (deep copy)\n    DynamicString(const DynamicString& other)\n        : size_(other.size_),\n          data_(new char[other.size_ + 1]) {\n        std::memcpy(data_, other.data_, size_ + 1);\n    }\n\n    // Copy assignment (copy-and-swap)\n    DynamicString& operator=(DynamicString other) noexcept {\n        swap(other); // other is a copy or a moved-from object\n        return *this;\n    }\n\n    // Move constructor\n    DynamicString(DynamicString&& other) noexcept\n        : size_(other.size_),\n          data_(other.data_) {\n        other.data_ = nullptr;\n        other.size_ = 0;\n    }\n\n    // Accessors\n    const char* c_str() const { return data_ ? data_ : \"\"; }\n    std::size_t size() const  { return size_; }\n\nprivate:\n    void swap(DynamicString& other) noexcept {\n        std::swap(data_, other.data_);\n        std::swap(size_, other.size_);\n    }\n    char* data_;\n    std::size_t size_;\n};\n\nint main() {\n    std::vector<DynamicString> v;\n    v.reserve(1); // Force reallocation on push_back\n    v.emplace_back(\"hello\");\n    v.emplace_back(\"world\"); // Triggers move during reallocation\n\n    DynamicString a(\"foo\");\n    DynamicString b = a;               // Copy constructor\n    DynamicString c = std::move(a);    // Move constructor\n    b = DynamicString(\"bar\");          // Move assignment\n\n    std::cout << b.c_str() << '\\n';   // bar\n    std::cout << c.c_str() << '\\n';   // foo\n    std::cout << v[0].c_str() << '\\n'; // hello\n    std::cout << v[1].c_str() << '\\n'; // world\n}",
+                "output": "bar\nfoo\nhello\nworld"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "bar\nfoo\nhello\nworld" }
+            ],
+            "hints": [
+                "The copy assignment operator can be implemented as a single unified function that accepts by value — it serves as both copy and move assignment",
+                "Always null the moved-from pointer to prevent double-free in the destructor",
+                "Mark move operations noexcept so std::vector can use them during reallocation"
+            ],
+            "tags": ["rule-of-five", "RAII", "move-semantics", "copy-swap"]
+        },
+        "CPP-Q-TPL-001": {
+            "id": "CPP-Q-TPL-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "coding",
+            "dotPoints": ["CPP-TPL-1.1", "CPP-TPL-1.2", "CPP-TPL-2.1"],
+            "topic": "CPP-TPL",
+            "difficulty": "hard",
+            "title": "Generic Stack with Type Traits Constraint",
+            "description": "Implement a generic stack class template with a static_assert constraint, and a type-trait-based utility function.",
+            "question": "Implement a class template Stack<T> that:\n1. Internally uses std::vector<T> as storage\n2. Provides push(const T&), push(T&&), pop(), top() const, empty() const, and size() const\n3. Throws std::underflow_error on pop()/top() of an empty stack\n4. Has a static_assert that prevents instantiation with non-copyable AND non-movable types\n\nAlso write a free function template sum_stack<T>(Stack<T> s) that pops all elements and returns their sum using operator+, but only compiles for arithmetic types (use std::enable_if or a concept).",
+            "solution": {
+                "steps": [
+                    "Define template<typename T> class Stack with a std::vector<T> member",
+                    "Implement push() with two overloads: const ref (copy) and rvalue ref (move)",
+                    "Implement pop(), top(), empty(), size() with appropriate exception handling",
+                    "Add static_assert(std::is_copy_constructible_v<T> || std::is_move_constructible_v<T>)",
+                    "Write sum_stack using std::enable_if<std::is_arithmetic_v<T>> or a requires clause"
+                ],
+                "code": "#include <vector>\n#include <stdexcept>\n#include <type_traits>\n#include <iostream>\n\ntemplate<typename T>\nclass Stack {\n    static_assert(\n        std::is_copy_constructible_v<T> || std::is_move_constructible_v<T>,\n        \"Stack<T>: T must be copy or move constructible\"\n    );\npublic:\n    void push(const T& val) { data_.push_back(val); }\n    void push(T&& val)      { data_.push_back(std::move(val)); }\n\n    void pop() {\n        if (empty()) throw std::underflow_error(\"pop on empty stack\");\n        data_.pop_back();\n    }\n\n    const T& top() const {\n        if (empty()) throw std::underflow_error(\"top on empty stack\");\n        return data_.back();\n    }\n\n    bool        empty() const { return data_.empty(); }\n    std::size_t size()  const { return data_.size();  }\n\nprivate:\n    std::vector<T> data_;\n};\n\n// Only for arithmetic types\ntemplate<typename T>\nstd::enable_if_t<std::is_arithmetic_v<T>, T>\nsum_stack(Stack<T> s) {\n    T total{};\n    while (!s.empty()) { total += s.top(); s.pop(); }\n    return total;\n}\n\nint main() {\n    Stack<int> s;\n    s.push(10); s.push(20); s.push(30);\n    std::cout << \"Top: \" << s.top() << '\\n';\n    std::cout << \"Sum: \" << sum_stack(s) << '\\n';\n\n    try {\n        Stack<double> empty;\n        empty.pop();\n    } catch (const std::underflow_error& e) {\n        std::cout << \"Caught: \" << e.what() << '\\n';\n    }\n}",
+                "output": "Top: 30\nSum: 60\nCaught: pop on empty stack"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "Top: 30\nSum: 60\nCaught: pop on empty stack" }
+            ],
+            "hints": [
+                "std::is_arithmetic_v<T> is true for int, float, double — use it to constrain sum_stack",
+                "std::enable_if_t<condition, ReturnType> makes the function only exist when condition is true",
+                "Remember to provide both const T& and T&& overloads for push to support both copy and move"
+            ],
+            "tags": ["templates", "type-traits", "enable_if", "generic-programming"]
+        },
+        "CPP-Q-CON-001": {
+            "id": "CPP-Q-CON-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 15,
+            "type": "coding",
+            "dotPoints": ["CPP-CON-1.1", "CPP-CON-1.2", "CPP-CON-1.3"],
+            "topic": "CPP-CON",
+            "difficulty": "hard",
+            "title": "Thread-Safe Bounded Queue",
+            "description": "Implement a thread-safe bounded queue using a mutex and condition variables.",
+            "question": "Implement a class BoundedQueue<T> that:\n1. Has a maximum capacity set at construction time\n2. Provides push(T) that blocks if the queue is full until space is available\n3. Provides pop() that blocks if the queue is empty until an item is available\n4. Provides try_push(T) that returns false immediately if full (non-blocking)\n5. Provides try_pop(T&) that returns false immediately if empty (non-blocking)\n6. Provides size() and empty() methods\n7. Is thread-safe — multiple producers and consumers can use it concurrently\n\nDemonstrate with 2 producer threads and 3 consumer threads processing 20 items through a queue of capacity 5.",
+            "solution": {
+                "steps": [
+                    "Store items in a std::queue<T> and protect with a std::mutex",
+                    "Use two condition variables: not_full_ and not_empty_",
+                    "push(): lock, wait on not_full_ while at capacity, push, notify not_empty_",
+                    "pop(): lock, wait on not_empty_ while empty, pop, notify not_full_",
+                    "try_push/try_pop: use unique_lock with std::try_to_lock or just check condition without waiting"
+                ],
+                "code": "#include <queue>\n#include <mutex>\n#include <condition_variable>\n#include <thread>\n#include <iostream>\n#include <atomic>\n\ntemplate<typename T>\nclass BoundedQueue {\npublic:\n    explicit BoundedQueue(std::size_t cap) : capacity_(cap) {}\n\n    void push(T val) {\n        std::unique_lock lock(mutex_);\n        not_full_.wait(lock, [this] { return queue_.size() < capacity_; });\n        queue_.push(std::move(val));\n        not_empty_.notify_one();\n    }\n\n    T pop() {\n        std::unique_lock lock(mutex_);\n        not_empty_.wait(lock, [this] { return !queue_.empty(); });\n        T val = std::move(queue_.front());\n        queue_.pop();\n        not_full_.notify_one();\n        return val;\n    }\n\n    bool try_push(T val) {\n        std::unique_lock lock(mutex_);\n        if (queue_.size() >= capacity_) return false;\n        queue_.push(std::move(val));\n        not_empty_.notify_one();\n        return true;\n    }\n\n    bool try_pop(T& out) {\n        std::unique_lock lock(mutex_);\n        if (queue_.empty()) return false;\n        out = std::move(queue_.front());\n        queue_.pop();\n        not_full_.notify_one();\n        return true;\n    }\n\n    std::size_t size()  const { std::unique_lock l(mutex_); return queue_.size(); }\n    bool        empty() const { std::unique_lock l(mutex_); return queue_.empty(); }\n\nprivate:\n    mutable std::mutex         mutex_;\n    std::condition_variable    not_full_;\n    std::condition_variable    not_empty_;\n    std::queue<T>              queue_;\n    std::size_t                capacity_;\n};\n\nint main() {\n    BoundedQueue<int> q(5);\n    std::atomic<int> consumed{0};\n\n    auto producer = [&](int start) {\n        for (int i = start; i < start + 10; ++i)\n            q.push(i);\n    };\n\n    auto consumer = [&] {\n        while (consumed.fetch_add(1) < 20) {\n            int v = q.pop();\n            std::cout << v << ' ';\n        }\n    };\n\n    std::vector<std::thread> threads;\n    threads.emplace_back(producer, 0);\n    threads.emplace_back(producer, 10);\n    for (int i = 0; i < 3; ++i) threads.emplace_back(consumer);\n    for (auto& t : threads) t.join();\n    std::cout << '\\n';\n}",
+                "output": "(20 integers in non-deterministic order)"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "20 integers printed (order non-deterministic)" }
+            ],
+            "hints": [
+                "Use std::unique_lock (not lock_guard) with condition variables — wait() needs to release and re-acquire the lock",
+                "Always pass a predicate to wait() to guard against spurious wakeups",
+                "Two separate condition variables (not_full and not_empty) avoid unnecessary wakeups"
+            ],
+            "tags": ["concurrency", "threading", "condition-variable", "producer-consumer"]
+        },
+        "CPP-Q-MEM-001": {
+            "id": "CPP-Q-MEM-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 10,
+            "type": "coding",
+            "dotPoints": ["CPP-MEM-2.2", "CPP-MEM-2.3", "CPP-MEM-2.1"],
+            "topic": "CPP-MEM",
+            "difficulty": "medium",
+            "title": "Smart Pointer Ownership Chain",
+            "description": "Demonstrate correct usage of unique_ptr, shared_ptr, and weak_ptr to avoid cyclic reference leaks.",
+            "question": "Implement a simple doubly-linked list node where:\n1. Each Node holds an int value\n2. The 'next' pointer is a std::shared_ptr<Node> (shared ownership of the next node)\n3. The 'prev' pointer is a std::weak_ptr<Node> (non-owning back-reference to avoid cycles)\n4. Write a function that creates a chain of 3 nodes and prints their values forward and backward\n5. Verify there are no memory leaks by printing a message in each Node's destructor\n\nExplain in a comment why prev must be weak_ptr and not shared_ptr.",
+            "solution": {
+                "steps": [
+                    "Define Node with int value, shared_ptr<Node> next, weak_ptr<Node> prev",
+                    "Build the chain: node1->next = node2; node2->next = node3",
+                    "Set back links: node2->prev = node1; node3->prev = node2",
+                    "Traverse forward using next, backward using prev.lock()",
+                    "If prev were shared_ptr, nodes would keep each other alive — memory leak"
+                ],
+                "code": "#include <memory>\n#include <iostream>\n\nstruct Node {\n    int value;\n    std::shared_ptr<Node> next; // Owns the next node\n    std::weak_ptr<Node>   prev; // Non-owning back-reference\n                                // weak_ptr prevents cycle: if prev were shared_ptr,\n                                // each node would keep adjacent nodes alive forever\n    explicit Node(int v) : value(v) {\n        std::cout << \"Node(\" << v << \") created\\n\";\n    }\n    ~Node() { std::cout << \"Node(\" << value << \") destroyed\\n\"; }\n};\n\nint main() {\n    auto n1 = std::make_shared<Node>(1);\n    auto n2 = std::make_shared<Node>(2);\n    auto n3 = std::make_shared<Node>(3);\n\n    // Forward links (owning)\n    n1->next = n2;\n    n2->next = n3;\n\n    // Back links (non-owning, avoids cycle)\n    n2->prev = n1;\n    n3->prev = n2;\n\n    // Traverse forward\n    std::cout << \"Forward: \";\n    for (auto cur = n1; cur; cur = cur->next)\n        std::cout << cur->value << ' ';\n    std::cout << '\\n';\n\n    // Traverse backward from n3\n    std::cout << \"Backward: \";\n    for (auto cur = n3; cur; cur = cur->prev.lock())\n        std::cout << cur->value << ' ';\n    std::cout << '\\n';\n\n    // n1, n2, n3 go out of scope — all nodes destroyed\n}",
+                "output": "Node(1) created\nNode(2) created\nNode(3) created\nForward: 1 2 3\nBackward: 3 2 1\nNode(3) destroyed\nNode(2) destroyed\nNode(1) destroyed"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "Node(1) created\nNode(2) created\nNode(3) created\nForward: 1 2 3\nBackward: 3 2 1\nNode(3) destroyed\nNode(2) destroyed\nNode(1) destroyed" }
+            ],
+            "hints": [
+                "weak_ptr::lock() returns a shared_ptr if the object still exists, or an empty shared_ptr if it has been destroyed",
+                "If both next and prev were shared_ptr, you would create a reference cycle — the use count would never reach zero and memory would leak",
+                "shared_ptr use_count() can be used during debugging to see how many owners exist"
+            ],
+            "tags": ["smart-pointers", "shared_ptr", "weak_ptr", "memory-management", "RAII"]
+        },
+        "CPP-Q-MOD-001": {
+            "id": "CPP-Q-MOD-001",
+            "source": "practice",
+            "level": "advanced",
+            "marks": 12,
+            "type": "coding",
+            "dotPoints": ["CPP-MOD20-2.3", "CPP-MOD20-2.4", "CPP-MOD20-1.1"],
+            "topic": "CPP-MOD20",
+            "difficulty": "medium",
+            "title": "Modern C++20 — Concepts, Format, and Spaceship",
+            "description": "Use three distinct C++20 features: a concept to constrain a template, std::format for output, and operator<=> for comparison.",
+            "question": "Using C++20 features:\n1. Define a concept 'Printable' that requires a type T to support operator<< with std::ostream\n2. Write a function template print_all(const Container& c) constrained with Printable elements that prints all elements using std::format\n3. Implement a struct Point {int x, y;} with:\n   a. A default operator<=> (three-way comparison) giving all comparison operators for free\n   b. operator<< for printing\n4. Demonstrate sorting a vector<Point> and using print_all on it\n5. Use if constexpr to print a different message for empty vs non-empty containers",
+            "solution": {
+                "steps": [
+                    "Define concept Printable using requires expression with std::declval<std::ostream&>() << std::declval<T>()",
+                    "Define print_all constrained with requires Printable<std::ranges::range_value_t<Container>>",
+                    "Implement Point with 'auto operator<=>(const Point&) const = default;'",
+                    "Use std::format('{}', value) — requires operator<< for the formatter",
+                    "Use if constexpr (std::ranges::empty(c)) for the empty check"
+                ],
+                "code": "#include <concepts>\n#include <format>\n#include <iostream>\n#include <vector>\n#include <algorithm>\n#include <ranges>\n\n// Concept: type can be printed via operator<<\ntemplate<typename T>\nconcept Printable = requires(std::ostream& os, const T& val) {\n    { os << val } -> std::convertible_to<std::ostream&>;\n};\n\n// Constrained function template\ntemplate<std::ranges::range Container>\n    requires Printable<std::ranges::range_value_t<Container>>\nvoid print_all(const Container& c) {\n    if constexpr (std::ranges::empty(c) == false) {\n        for (const auto& elem : c)\n            std::cout << std::format(\"{} \", elem);\n        std::cout << '\\n';\n    } else {\n        std::cout << \"(empty)\\n\";\n    }\n}\n\nstruct Point {\n    int x, y;\n    auto operator<=>(const Point&) const = default; // All comparisons for free\n\n    friend std::ostream& operator<<(std::ostream& os, const Point& p) {\n        return os << std::format(\"({},{})\", p.x, p.y);\n    }\n};\n\nint main() {\n    std::vector<Point> pts = {{3,1},{1,4},{1,5},{2,6},{5,3}};\n    std::ranges::sort(pts);           // Uses operator<=> automatically\n    print_all(pts);\n\n    std::vector<int> nums = {5, 3, 8, 1, 9};\n    std::ranges::sort(nums);\n    print_all(nums);\n}",
+                "output": "(1,4) (1,5) (2,6) (3,1) (5,3)\n1 3 5 8 9"
+            },
+            "testCases": [
+                { "input": "", "expectedOutput": "(1,4) (1,5) (2,6) (3,1) (5,3)\n1 3 5 8 9" }
+            ],
+            "hints": [
+                "auto operator<=>(const Point&) const = default; generates <, <=, >, >=, ==, != automatically",
+                "std::format requires a formatter specialisation — types with operator<< need std::formatter to be specialised or use a custom format spec",
+                "Concepts use requires expressions; the body lists expressions that must be valid"
+            ],
+            "tags": ["concepts", "std::format", "spaceship-operator", "C++20", "ranges"]
+        }
+    }
+}

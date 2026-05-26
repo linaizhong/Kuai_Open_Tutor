@@ -1,0 +1,413 @@
+{
+  "subject": "HSC Mathematics Advanced",
+  "subjectId": "maths-advanced",
+  "syllabusVersion": "2017",
+  "appliesTo": "HSC examinations 2020–2026",
+  "topics": [
+    {
+      "code": "MA-F",
+      "name": "Functions",
+      "year": "11-12",
+      "examWeightPercent": 20,
+      "subtopics": [
+        {
+          "code": "MA-F1",
+          "name": "Working with Functions",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-F1.1",
+              "name": "Algebraic techniques",
+              "keywords": ["index laws", "surds", "rationalise", "simplify", "index notation", "fractional indices", "negative indices"],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "MA-F1.2",
+              "name": "Introduction to functions",
+              "keywords": ["function", "relation", "vertical line test", "domain", "range", "f(x)", "function notation", "mapping", "independent variable", "dependent variable"],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "MA-F1.3",
+              "name": "Linear, quadratic and cubic functions",
+              "keywords": ["linear", "quadratic", "cubic", "parabola", "vertex", "axis of symmetry", "x-intercept", "y-intercept", "discriminant", "completing the square", "quadratic formula", "factorisation", "roots"],
+              "difficulty": "foundation",
+              "prerequisites": ["MA-F1.2"]
+            },
+            {
+              "code": "MA-F1.4",
+              "name": "Further functions and relations",
+              "keywords": ["hyperbola", "square root function", "semicircle", "absolute value", "odd function", "even function", "symmetry", "restriction", "1/x"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.2", "MA-F1.3"]
+            },
+            {
+              "code": "MA-F1.5",
+              "name": "Transformations of graphs",
+              "keywords": ["transformation", "translation", "dilation", "reflection", "shift", "stretch", "y = f(x) + c", "y = f(x+a)", "y = kf(x)", "y = -f(x)"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.3", "MA-F1.4"]
+            }
+          ]
+        },
+        {
+          "code": "MA-F2",
+          "name": "Graphing Techniques",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-F2.1",
+              "name": "Graphing techniques",
+              "keywords": ["reciprocal", "squared function", "absolute value", "sum of functions", "asymptote", "turning point", "intercept", "y = |f(x)|", "y = [f(x)]^2"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-F1.4", "MA-F1.5"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA-T",
+      "name": "Trigonometric Functions",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "MA-T1",
+          "name": "Trigonometry and Measure of Angles",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-T1.1",
+              "name": "Trigonometry of non-right-angled triangles",
+              "keywords": ["sine rule", "cosine rule", "area formula", "bearing", "angle of elevation", "angle of depression", "ambiguous case", "non-right triangle"],
+              "difficulty": "intermediate",
+              "prerequisites": []
+            },
+            {
+              "code": "MA-T1.2",
+              "name": "Radians and arc length",
+              "keywords": ["radian", "degree conversion", "arc length", "sector area", "segment", "l = rθ", "A = 1/2 r²θ"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.1"]
+            },
+            {
+              "code": "MA-T1.3",
+              "name": "Trigonometric functions and exact values",
+              "keywords": ["unit circle", "exact values", "ASTC", "all stations to central", "quadrant", "supplementary angles", "complementary angles", "sin cos tan", "30 45 60", "special angles"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.2"]
+            }
+          ]
+        },
+        {
+          "code": "MA-T2",
+          "name": "Trigonometric Functions and Identities",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-T2.1",
+              "name": "Trigonometric identities",
+              "keywords": ["Pythagorean identity", "sin²x + cos²x = 1", "tan x = sin x / cos x", "trig identity", "simplify", "prove"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.3"]
+            },
+            {
+              "code": "MA-T2.2",
+              "name": "Solving trigonometric equations",
+              "keywords": ["trigonometric equation", "solve", "domain", "general solution", "sin x = k", "exact form"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.3", "MA-T2.1"]
+            }
+          ]
+        },
+        {
+          "code": "MA-T3",
+          "name": "Trigonometric Functions and Graphs",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-T3.1",
+              "name": "Graphs of trigonometric functions",
+              "keywords": ["sine graph", "cosine graph", "tangent graph", "amplitude", "period", "phase shift", "vertical shift", "y = a sin(bx + c) + d", "y = a cos(bx + c) + d"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-T1.3", "MA-T2.2", "MA-F1.5"]
+            },
+            {
+              "code": "MA-T3.2",
+              "name": "Trigonometric modelling",
+              "keywords": ["periodic", "modelling", "tidal", "circular motion", "real world", "equation from graph", "period calculation"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-T3.1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA-C",
+      "name": "Calculus",
+      "year": "11-12",
+      "examWeightPercent": 30,
+      "subtopics": [
+        {
+          "code": "MA-C1",
+          "name": "Introduction to Differentiation",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-C1.1",
+              "name": "Gradients and tangents",
+              "keywords": ["gradient", "secant", "tangent", "limit", "difference quotient", "instantaneous rate of change", "slope"],
+              "difficulty": "foundation",
+              "prerequisites": ["MA-F1.3"]
+            },
+            {
+              "code": "MA-C1.2",
+              "name": "Differentiation from first principles",
+              "keywords": ["first principles", "limit", "definition of derivative", "f'(x)", "h tends to 0", "lim"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C1.1"]
+            },
+            {
+              "code": "MA-C1.3",
+              "name": "Differentiation of polynomials",
+              "keywords": ["power rule", "differentiate", "polynomial", "derivative", "tangent equation", "normal equation", "dy/dx"],
+              "difficulty": "foundation",
+              "prerequisites": ["MA-C1.2"]
+            },
+            {
+              "code": "MA-C1.4",
+              "name": "Increasing, decreasing and stationary points",
+              "keywords": ["increasing", "decreasing", "stationary point", "local maximum", "local minimum", "horizontal point of inflection", "first derivative test", "second derivative test", "f'(x) = 0"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C1.3"]
+            },
+            {
+              "code": "MA-C1.5",
+              "name": "Curve sketching using calculus",
+              "keywords": ["curve sketching", "concavity", "second derivative", "inflection point", "f''(x)", "relationship between f and f'"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C1.4"]
+            }
+          ]
+        },
+        {
+          "code": "MA-C2",
+          "name": "Differential Calculus",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-C2.1",
+              "name": "Differentiation of trigonometric, exponential and logarithmic functions",
+              "keywords": ["differentiate sin", "differentiate cos", "differentiate tan", "differentiate e^x", "differentiate ln x", "d/dx sin x = cos x", "d/dx cos x = -sin x", "d/dx e^x = e^x", "d/dx ln x = 1/x"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C1.3", "MA-E1.2", "MA-T1.3"]
+            },
+            {
+              "code": "MA-C2.2",
+              "name": "Rules of differentiation",
+              "keywords": ["product rule", "quotient rule", "chain rule", "composite function", "u*v", "u/v", "f(g(x))", "dy/dx", "differentiation rules"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C2.1"]
+            }
+          ]
+        },
+        {
+          "code": "MA-C3",
+          "name": "Applications of Differentiation",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-C3.1",
+              "name": "Exponential growth and decay",
+              "keywords": ["exponential growth", "exponential decay", "rate of change", "N = N₀e^(kt)", "proportional", "half-life", "doubling time"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C2.1", "MA-E1.2"]
+            },
+            {
+              "code": "MA-C3.2",
+              "name": "Related rates of change",
+              "keywords": ["related rates", "chain rule", "rate of change", "implicit differentiation", "dV/dt", "dr/dt", "connected rates"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C2.2"]
+            },
+            {
+              "code": "MA-C3.3",
+              "name": "Optimisation problems",
+              "keywords": ["optimisation", "maximum", "minimum", "constraint", "stationary point", "closed interval", "practical maximum", "practical minimum"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C1.4", "MA-C2.2"]
+            }
+          ]
+        },
+        {
+          "code": "MA-C4",
+          "name": "Integral Calculus",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-C4.1",
+              "name": "The anti-derivative",
+              "keywords": ["anti-derivative", "indefinite integral", "integration", "constant of integration", "C", "∫xⁿ dx", "∫e^x dx", "∫sin x dx", "∫cos x dx", "reverse differentiation"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C2.1", "MA-C2.2"]
+            },
+            {
+              "code": "MA-C4.2",
+              "name": "The definite integral and area",
+              "keywords": ["definite integral", "Riemann sum", "fundamental theorem of calculus", "area under curve", "area between curves", "limits of integration", "bounded area"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-C4.1"]
+            },
+            {
+              "code": "MA-C4.3",
+              "name": "Applications of integration",
+              "keywords": ["displacement", "velocity", "acceleration", "kinematics", "rate of change", "total change", "integral applications"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C4.2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA-E",
+      "name": "Exponential and Logarithmic Functions",
+      "year": "11-12",
+      "examWeightPercent": 10,
+      "subtopics": [
+        {
+          "code": "MA-E1",
+          "name": "Logarithms and Exponentials",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-E1.1",
+              "name": "Logarithms",
+              "keywords": ["logarithm", "log base", "log laws", "change of base", "log(mn)", "log(m/n)", "log(m^n)", "inverse of exponential", "evaluate log"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-F1.1"]
+            },
+            {
+              "code": "MA-E1.2",
+              "name": "The exponential function and natural logarithm",
+              "keywords": ["natural base", "e", "Euler's number", "e^x", "ln x", "natural logarithm", "y = e^x", "y = ln x", "solve e^x = k"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-E1.1", "MA-F1.5"]
+            },
+            {
+              "code": "MA-E1.3",
+              "name": "Applications of exponentials and logarithms",
+              "keywords": ["exponential model", "logarithmic model", "growth", "decay", "solve a^x = b", "change form"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-E1.1", "MA-E1.2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA-S",
+      "name": "Statistical Analysis",
+      "year": "11-12",
+      "examWeightPercent": 15,
+      "subtopics": [
+        {
+          "code": "MA-S1",
+          "name": "Probability and Discrete Probability Distributions",
+          "year": 11,
+          "dotPoints": [
+            {
+              "code": "MA-S1.1",
+              "name": "Probability",
+              "keywords": ["probability", "sample space", "event", "complementary", "mutually exclusive", "conditional probability", "P(A|B)", "independent events", "probability tree", "addition rule"],
+              "difficulty": "intermediate",
+              "prerequisites": []
+            },
+            {
+              "code": "MA-S1.2",
+              "name": "Discrete probability distributions",
+              "keywords": ["discrete random variable", "probability distribution", "expected value", "E(X)", "variance", "standard deviation", "binomial distribution", "B(n,p)", "mean of distribution"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-S1.1"]
+            }
+          ]
+        },
+        {
+          "code": "MA-S2",
+          "name": "Descriptive Statistics and Bivariate Data Analysis",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-S2.1",
+              "name": "Data analysis",
+              "keywords": ["histogram", "stem and leaf", "box plot", "mean", "median", "mode", "IQR", "interquartile range", "standard deviation", "outlier", "skew"],
+              "difficulty": "foundation",
+              "prerequisites": []
+            },
+            {
+              "code": "MA-S2.2",
+              "name": "Bivariate data analysis",
+              "keywords": ["scatter plot", "bivariate", "correlation", "regression", "line of best fit", "least squares", "Pearson correlation coefficient", "r", "causation vs correlation", "prediction"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-S2.1"]
+            }
+          ]
+        },
+        {
+          "code": "MA-S3",
+          "name": "Random Variables",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-S3.1",
+              "name": "Continuous random variables",
+              "keywords": ["continuous random variable", "probability density function", "pdf", "area under curve", "expected value", "variance", "integration and probability"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-C4.2", "MA-S1.2"]
+            },
+            {
+              "code": "MA-S3.2",
+              "name": "The normal distribution",
+              "keywords": ["normal distribution", "bell curve", "z-score", "standard normal", "μ", "σ", "empirical rule", "68-95-99.7", "standardise", "z = (x-μ)/σ", "probability normal"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-S3.1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA-M",
+      "name": "Financial Mathematics",
+      "year": "12",
+      "examWeightPercent": 10,
+      "subtopics": [
+        {
+          "code": "MA-M1",
+          "name": "Modelling Financial Situations",
+          "year": 12,
+          "dotPoints": [
+            {
+              "code": "MA-M1.1",
+              "name": "Modelling investments and loans",
+              "keywords": ["compound interest", "A = P(1+r)^n", "simple interest", "superannuation", "loan repayment", "geometric sequence", "time value of money", "present value", "future value"],
+              "difficulty": "intermediate",
+              "prerequisites": ["MA-S2.1"]
+            },
+            {
+              "code": "MA-M1.2",
+              "name": "Annuities and loan repayments",
+              "keywords": ["annuity", "future value", "present value", "geometric series", "loan repayment", "total interest", "number of repayments", "FV", "PV", "annuity formula"],
+              "difficulty": "advanced",
+              "prerequisites": ["MA-M1.1"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

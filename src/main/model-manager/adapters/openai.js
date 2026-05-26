@@ -1,0 +1,1 @@
+﻿// OpenAI cloud API adapter

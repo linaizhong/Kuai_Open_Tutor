@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!--
+    Content Security Policy:
+    - script-src 'self' allows our own bundled JS only
+    - style-src 'self' 'unsafe-inline' allows inline styles (needed for KaTeX and React)
+    - font-src allows Google Fonts for Fraunces + DM Sans + DM Mono
+    - img-src 'self' data: allows data URIs (used by Chart.js)
+    - connect-src allows Ollama (local) and common cloud API endpoints
+  -->
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self';
+      script-src  'self' 'unsafe-eval';
+      style-src   'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src    'self' data: https://fonts.gstatic.com;
+      img-src     'self' data:;
+      connect-src 'self'
+                  http://localhost:11434
+                  https://api.deepseek.com
+                  https://api.openai.com
+                  https://api.anthropic.com
+                  https://dashscope.aliyuncs.com;
+    "
+  />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    Electron security: disable node integration in renderer,
+    enable context isolation. These are enforced in main/index.js
+    via BrowserWindow webPreferences — this meta tag is belt-and-suspenders.
+  -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+  <title>OpenTutor</title>
+
+  <!--
+    App icon shown in the browser tab (Electron titlebar).
+    Place a 32×32 PNG at public/icon.png, or remove this line.
+  -->
+  <link rel="icon" type="image/png" href="./public/icon.png" />
+</head>
+
+<body>
+  <!--
+    React mounts here.
+    renderer/index.js calls createRoot(document.getElementById('root')).
+  -->
+  <div id="root"></div>
+
+  <!--
+    Webpack / electron-forge bundles renderer/index.js → dist/renderer.js
+    Adjust this path to match your bundler output if different.
+  -->
+  <!--
+    This file lives at: src/renderer/index.html
+    The bundled JS is expected at: src/renderer/dist/renderer.js
+
+    If you are NOT using a bundler yet and loading renderer/index.js
+    directly via Electron (e.g. with require()), replace this script
+    tag with the one in the comment below instead.
+
+    WITH bundler (webpack / electron-forge):
+      <script src="./dist/renderer.js"></script>
+
+    WITHOUT bundler — direct Electron file load (development only):
+      <script src="./index.js"></script>
+  -->
+  <script src="./dist/renderer.js"></script>
+</body>
+</html>

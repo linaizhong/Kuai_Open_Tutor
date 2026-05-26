@@ -1,0 +1,283 @@
+{
+    "subject": "AI Agent Development",
+    "subjectId": "ai-agent-development",
+    "syllabusVersion": "2025",
+    "appliesTo": "Intermediate Python developers building LLM-powered agents",
+    "learningPath": {
+        "totalDuration": "160 hours",
+        "levels": [
+            { "level": "Foundation",    "estimatedHours": 40, "topics": ["Agent Concepts", "LLM Fundamentals", "Prompt Engineering"] },
+            { "level": "Intermediate",  "estimatedHours": 70, "topics": ["Tools and Function Calling", "Memory Systems", "RAG Pipelines", "LangChain", "LlamaIndex"] },
+            { "level": "Advanced",      "estimatedHours": 50, "topics": ["LangGraph", "Multi-Agent Systems", "Planning and Reasoning", "Evaluation and Reliability"] }
+        ]
+    },
+    "topics": [
+        {
+            "code": "AGT-CORE",
+            "name": "Agent Concepts and Architecture",
+            "level": "Foundation",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "AGT-CORE-1",
+                    "name": "What is an AI Agent?",
+                    "dotPoints": [
+                        { "code": "AGT-CORE-1.1", "name": "Agents vs Chatbots vs Pipelines",         "keywords": ["agent definition", "autonomy", "goal-directed", "LLM chatbot", "pipeline", "agentic loop", "environment interaction", "perception action"], "difficulty": "foundation" },
+                        { "code": "AGT-CORE-1.2", "name": "Core Agent Components",                    "keywords": ["LLM brain", "tools", "memory", "planner", "executor", "orchestrator", "agent loop", "observation", "thought", "action"], "difficulty": "foundation" },
+                        { "code": "AGT-CORE-1.3", "name": "Agent Taxonomy",                           "keywords": ["reactive agent", "deliberative agent", "BDI agent", "tool-use agent", "autonomous agent", "assistant agent", "single-agent", "multi-agent"], "difficulty": "foundation" },
+                        { "code": "AGT-CORE-1.4", "name": "The Agent Loop (Observe-Think-Act)",       "keywords": ["observe-think-act", "perception", "reasoning", "action execution", "feedback loop", "stopping condition", "max iterations", "task completion"], "difficulty": "foundation" }
+                    ]
+                },
+                {
+                    "code": "AGT-CORE-2",
+                    "name": "LLM Fundamentals for Agents",
+                    "dotPoints": [
+                        { "code": "AGT-CORE-2.1", "name": "How LLMs Work (Transformer Basics)",      "keywords": ["transformer", "attention mechanism", "token", "context window", "temperature", "top-p", "sampling", "next token prediction", "prompt completion"], "difficulty": "foundation" },
+                        { "code": "AGT-CORE-2.2", "name": "Context Window and Token Management",      "keywords": ["context window", "token limit", "GPT-4 128k", "Claude 200k", "token counting", "tiktoken", "context stuffing", "truncation strategies"], "difficulty": "intermediate" },
+                        { "code": "AGT-CORE-2.3", "name": "Model Selection for Agents",              "keywords": ["GPT-4o", "Claude 3.5 Sonnet", "Gemini 1.5", "Llama 3", "open source vs proprietary", "cost per token", "latency", "reasoning capability", "function calling support"], "difficulty": "intermediate" },
+                        { "code": "AGT-CORE-2.4", "name": "Structured Output and JSON Mode",         "keywords": ["structured output", "JSON mode", "response format", "Pydantic models", "output parsing", "instructor library", "schema validation", "guaranteed structure"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-PROMPT",
+            "name": "Prompt Engineering for Agents",
+            "level": "Foundation",
+            "learningWeightPercent": 8,
+            "subtopics": [
+                {
+                    "code": "AGT-PROMPT-1",
+                    "name": "Core Prompting Techniques",
+                    "dotPoints": [
+                        { "code": "AGT-PROMPT-1.1", "name": "System Prompts and Role Assignment",    "keywords": ["system prompt", "role assignment", "persona", "instruction following", "guardrails", "agent identity", "task specification", "output format instructions"], "difficulty": "foundation" },
+                        { "code": "AGT-PROMPT-1.2", "name": "Few-Shot and Zero-Shot Prompting",       "keywords": ["zero-shot", "few-shot", "in-context learning", "exemplars", "shot selection", "demonstrations", "chain-of-thought examples"], "difficulty": "foundation" },
+                        { "code": "AGT-PROMPT-1.3", "name": "Chain-of-Thought (CoT) Prompting",      "keywords": ["chain-of-thought", "CoT", "step-by-step reasoning", "scratchpad", "rationale", "'Let's think step by step'", "zero-shot CoT", "few-shot CoT"], "difficulty": "intermediate" },
+                        { "code": "AGT-PROMPT-1.4", "name": "ReAct Prompting Pattern",               "keywords": ["ReAct", "Reason + Act", "Thought", "Action", "Observation", "scratchpad", "interleaved reasoning", "grounded reasoning", "tool use with reasoning"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-PROMPT-2",
+                    "name": "Advanced Reasoning Strategies",
+                    "dotPoints": [
+                        { "code": "AGT-PROMPT-2.1", "name": "Tree of Thoughts (ToT)",                "keywords": ["Tree of Thoughts", "ToT", "thought branching", "search over thoughts", "BFS DFS over reasoning", "self-evaluation", "backtracking", "deliberate problem solving"], "difficulty": "advanced" },
+                        { "code": "AGT-PROMPT-2.2", "name": "Self-Consistency and Majority Voting",  "keywords": ["self-consistency", "majority voting", "sample multiple paths", "aggregate answers", "diverse reasoning", "robustness", "variance reduction"], "difficulty": "advanced" },
+                        { "code": "AGT-PROMPT-2.3", "name": "Prompt Templates and Variables",        "keywords": ["PromptTemplate", "f-string templates", "Jinja2", "LangChain PromptTemplate", "input variables", "template composition", "dynamic prompts"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-TOOLS",
+            "name": "Tools and Function Calling",
+            "level": "Intermediate",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "AGT-TOOLS-1",
+                    "name": "Function Calling Fundamentals",
+                    "dotPoints": [
+                        { "code": "AGT-TOOLS-1.1", "name": "OpenAI Function Calling API",             "keywords": ["function calling", "tools parameter", "tool_choice", "function schema", "JSON schema", "name description parameters", "parallel tool calls", "tool result"], "difficulty": "intermediate" },
+                        { "code": "AGT-TOOLS-1.2", "name": "Defining Tool Schemas",                   "keywords": ["tool schema", "JSON schema", "type string number boolean", "required properties", "description field", "enum values", "Pydantic tool definition", "schema best practices"], "difficulty": "intermediate" },
+                        { "code": "AGT-TOOLS-1.3", "name": "Tool Selection and Routing",              "keywords": ["tool routing", "LLM selects tool", "tool description quality", "ambiguous tool names", "tool chaining", "sequential tool calls", "parallel tool calls"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-TOOLS-2",
+                    "name": "Building Custom Tools",
+                    "dotPoints": [
+                        { "code": "AGT-TOOLS-2.1", "name": "LangChain @tool Decorator",               "keywords": ["@tool decorator", "BaseTool", "Tool class", "StructuredTool", "args_schema", "Pydantic BaseModel", "tool name", "tool description", "tool return type"], "difficulty": "intermediate" },
+                        { "code": "AGT-TOOLS-2.2", "name": "Web Search and Browser Tools",            "keywords": ["Tavily", "SerpAPI", "DuckDuckGo search", "browser-use", "web scraping", "requests", "BeautifulSoup", "Playwright", "search tool integration"], "difficulty": "intermediate" },
+                        { "code": "AGT-TOOLS-2.3", "name": "Code Execution Tools",                    "keywords": ["Python REPL", "E2B sandbox", "code interpreter", "safe execution", "subprocess", "sandboxed execution", "LangChain PythonREPLTool", "agent writes code"], "difficulty": "advanced" },
+                        { "code": "AGT-TOOLS-2.4", "name": "Database and API Tools",                  "keywords": ["SQLDatabaseToolkit", "SQL agent", "REST API tool", "requests wrapper", "authenticated requests", "rate limiting", "error handling in tools", "Pydantic validation"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-TOOLS-3",
+                    "name": "MCP — Model Context Protocol",
+                    "dotPoints": [
+                        { "code": "AGT-TOOLS-3.1", "name": "MCP Architecture and Concepts",           "keywords": ["Model Context Protocol", "MCP", "Anthropic", "MCP server", "MCP client", "tool provider", "resource provider", "standardised tool interface", "JSON-RPC"], "difficulty": "intermediate" },
+                        { "code": "AGT-TOOLS-3.2", "name": "Building and Connecting MCP Servers",    "keywords": ["mcp Python SDK", "@mcp.tool", "@mcp.resource", "stdio transport", "SSE transport", "mcp server run", "Claude Desktop config", "tool registration", "LangChain MCP adapter"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-MEM",
+            "name": "Memory Systems",
+            "level": "Intermediate",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "AGT-MEM-1",
+                    "name": "Memory Taxonomy",
+                    "dotPoints": [
+                        { "code": "AGT-MEM-1.1", "name": "Short-Term and In-Context Memory",          "keywords": ["in-context memory", "conversation history", "message list", "HumanMessage AIMessage", "sliding window", "token budget", "ConversationBufferMemory", "ChatMessageHistory"], "difficulty": "foundation" },
+                        { "code": "AGT-MEM-1.2", "name": "Long-Term External Memory",                 "keywords": ["external memory", "vector store", "episodic memory", "semantic memory", "retrieval", "fuzzy search", "exact lookup", "Redis", "ChromaDB", "Pinecone"], "difficulty": "intermediate" },
+                        { "code": "AGT-MEM-1.3", "name": "Episodic vs Semantic vs Procedural",       "keywords": ["episodic memory", "semantic memory", "procedural memory", "working memory", "declarative memory", "skill memory", "learned behaviours", "memory architecture"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-MEM-2",
+                    "name": "Implementing Memory",
+                    "dotPoints": [
+                        { "code": "AGT-MEM-2.1", "name": "Conversation Buffer and Summary Memory",   "keywords": ["ConversationBufferMemory", "ConversationSummaryMemory", "ConversationBufferWindowMemory", "summarisation", "k last messages", "memory variables", "return_messages"], "difficulty": "intermediate" },
+                        { "code": "AGT-MEM-2.2", "name": "Vector Store Memory",                       "keywords": ["VectorStoreRetrieverMemory", "embedding memory", "semantic retrieval", "memory storage", "memory retrieval", "top-k similar memories", "faiss memory"], "difficulty": "intermediate" },
+                        { "code": "AGT-MEM-2.3", "name": "LangGraph State and Checkpointing",        "keywords": ["LangGraph state", "StateGraph", "checkpointer", "MemorySaver", "SqliteSaver", "persistence", "thread_id", "resume from checkpoint", "stateful agent"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-RAG",
+            "name": "Retrieval-Augmented Generation (RAG)",
+            "level": "Intermediate",
+            "learningWeightPercent": 15,
+            "subtopics": [
+                {
+                    "code": "AGT-RAG-1",
+                    "name": "RAG Fundamentals",
+                    "dotPoints": [
+                        { "code": "AGT-RAG-1.1", "name": "Why RAG? Problems it Solves",              "keywords": ["knowledge cutoff", "hallucination reduction", "private data", "grounding", "factuality", "context injection", "retrieval grounding", "RAG vs fine-tuning"], "difficulty": "foundation" },
+                        { "code": "AGT-RAG-1.2", "name": "Embeddings and Vector Representations",   "keywords": ["embedding model", "text-embedding-3-small", "sentence-transformers", "cosine similarity", "dense vector", "embedding dimension", "semantic similarity", "OpenAI embeddings"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-1.3", "name": "Document Loading and Chunking",           "keywords": ["document loader", "PyPDFLoader", "WebBaseLoader", "text splitter", "RecursiveCharacterTextSplitter", "chunk size", "chunk overlap", "semantic chunking", "parent-child chunking"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-1.4", "name": "Vector Stores and Indexing",              "keywords": ["Chroma", "FAISS", "Pinecone", "Weaviate", "Qdrant", "add_documents", "similarity_search", "index", "upsert", "metadata filtering", "namespace"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-RAG-2",
+                    "name": "RAG Pipeline Construction",
+                    "dotPoints": [
+                        { "code": "AGT-RAG-2.1", "name": "Basic RAG Chain (Retrieve + Generate)",    "keywords": ["retriever", "as_retriever", "RetrievalQA", "create_retrieval_chain", "context injection", "question answering", "source documents", "chain_type stuff map_reduce refine"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-2.2", "name": "LlamaIndex RAG Pipeline",                  "keywords": ["VectorStoreIndex", "SimpleDirectoryReader", "query_engine", "QueryBundle", "node postprocessors", "response synthesiser", "LlamaIndex pipeline", "ingestion pipeline", "ServiceContext"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-2.3", "name": "Advanced Retrieval Strategies",           "keywords": ["hybrid search", "BM25", "sparse dense hybrid", "MMR", "contextual compression", "multi-query retrieval", "HyDE", "hypothetical document embedding", "self-query retrieval", "reranking"], "difficulty": "advanced" },
+                        { "code": "AGT-RAG-2.4", "name": "Agentic RAG",                              "keywords": ["agentic RAG", "RAG agent", "retrieval tool", "self-reflection", "query rewriting", "CRAG", "corrective RAG", "self-RAG", "iterative retrieval", "agent decides when to retrieve"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "AGT-RAG-3",
+                    "name": "LlamaIndex Deep Dive",
+                    "dotPoints": [
+                        { "code": "AGT-RAG-3.1", "name": "LlamaIndex Core Abstractions",             "keywords": ["Node", "Document", "Index", "Retriever", "QueryEngine", "ChatEngine", "Agent", "LLM", "ServiceContext", "Settings", "llama_index.core"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-3.2", "name": "LlamaIndex Agents and Tools",              "keywords": ["FunctionCallingAgent", "ReActAgent", "QueryEngineTool", "FunctionTool", "agent.chat", "agent.query", "tool selection", "llama-hub", "tool spec"], "difficulty": "intermediate" },
+                        { "code": "AGT-RAG-3.3", "name": "LlamaIndex Workflows",                     "keywords": ["Workflow", "step decorator", "StartEvent", "StopEvent", "Context", "workflow.run", "streaming workflow", "nested workflows", "event-driven workflow"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-LC",
+            "name": "LangChain and LangGraph",
+            "level": "Intermediate",
+            "learningWeightPercent": 18,
+            "subtopics": [
+                {
+                    "code": "AGT-LC-1",
+                    "name": "LangChain Core",
+                    "dotPoints": [
+                        { "code": "AGT-LC-1.1", "name": "LCEL — LangChain Expression Language",      "keywords": ["LCEL", "pipe operator |", "Runnable", "RunnablePassthrough", "RunnableParallel", "chain composition", "invoke", "stream", "batch", "astream", "ainvoke"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-1.2", "name": "Chat Models and Messages",                  "keywords": ["ChatOpenAI", "ChatAnthropic", "ChatGoogleGenerativeAI", "HumanMessage", "AIMessage", "SystemMessage", "ToolMessage", "invoke", "stream"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-1.3", "name": "Output Parsers",                            "keywords": ["StrOutputParser", "JsonOutputParser", "PydanticOutputParser", "CommaSeparatedListOutputParser", "format_instructions", "parse", "output fixing parser"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-1.4", "name": "LangChain Agents (AgentExecutor)",          "keywords": ["create_openai_tools_agent", "create_react_agent", "AgentExecutor", "agent", "tools", "verbose", "max_iterations", "handle_parsing_errors", "early_stopping_method"], "difficulty": "intermediate" }
+                    ]
+                },
+                {
+                    "code": "AGT-LC-2",
+                    "name": "LangGraph",
+                    "dotPoints": [
+                        { "code": "AGT-LC-2.1", "name": "LangGraph Core Concepts",                   "keywords": ["StateGraph", "state", "TypedDict", "nodes", "edges", "conditional edges", "START", "END", "compile", "invoke", "stream", "graph structure"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-2.2", "name": "State Management in LangGraph",             "keywords": ["Annotated state", "reducer", "operator.add", "state schema", "state updates", "add_messages reducer", "MessagesState", "partial state update"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-2.3", "name": "Conditional Edges and Routing",             "keywords": ["conditional_edges", "add_conditional_edges", "routing function", "dynamic routing", "tools_condition", "should_continue", "branching logic", "graph control flow"], "difficulty": "advanced" },
+                        { "code": "AGT-LC-2.4", "name": "Human-in-the-Loop with LangGraph",         "keywords": ["interrupt_before", "interrupt_after", "human approval", "breakpoint", "update_state", "resume", "human feedback", "hitl", "Command"], "difficulty": "advanced" },
+                        { "code": "AGT-LC-2.5", "name": "Subgraphs and Multi-Agent in LangGraph",   "keywords": ["subgraph", "add_node with compiled graph", "supervisor agent", "handoff", "send", "map-reduce", "multi-agent LangGraph", "agent communication"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "AGT-LC-3",
+                    "name": "LangSmith and Observability",
+                    "dotPoints": [
+                        { "code": "AGT-LC-3.1", "name": "LangSmith Tracing",                         "keywords": ["LangSmith", "LANGCHAIN_TRACING_V2", "LANGCHAIN_API_KEY", "trace", "run", "span", "token usage", "latency", "feedback", "dataset", "evaluator"], "difficulty": "intermediate" },
+                        { "code": "AGT-LC-3.2", "name": "Debugging and Inspecting Agents",           "keywords": ["verbose mode", "debug mode", "set_debug", "intermediate steps", "agent_scratchpad", "tool call inspection", "token counting", "run metadata"], "difficulty": "intermediate" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-MULTI",
+            "name": "Multi-Agent Systems",
+            "level": "Advanced",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "AGT-MULTI-1",
+                    "name": "Multi-Agent Architectures",
+                    "dotPoints": [
+                        { "code": "AGT-MULTI-1.1", "name": "Supervisor and Hierarchical Patterns",   "keywords": ["supervisor agent", "worker agents", "orchestrator", "hierarchical multi-agent", "task delegation", "routing to agents", "LangGraph supervisor", "planner executor"], "difficulty": "advanced" },
+                        { "code": "AGT-MULTI-1.2", "name": "Peer-to-Peer and Swarm Patterns",        "keywords": ["peer agents", "swarm intelligence", "agent handoff", "collaborative agents", "emergent behaviour", "AutoGen swarm", "agent network", "message passing"], "difficulty": "advanced" },
+                        { "code": "AGT-MULTI-1.3", "name": "Agent Communication Protocols",          "keywords": ["message passing", "shared memory", "blackboard architecture", "agent state sharing", "handoff schema", "inter-agent messages", "structured communication"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "AGT-MULTI-2",
+                    "name": "AutoGen and CrewAI",
+                    "dotPoints": [
+                        { "code": "AGT-MULTI-2.1", "name": "AutoGen Framework",                      "keywords": ["AutoGen", "AssistantAgent", "UserProxyAgent", "ConversableAgent", "GroupChat", "GroupChatManager", "code execution", "human proxy", "two-agent chat"], "difficulty": "advanced" },
+                        { "code": "AGT-MULTI-2.2", "name": "CrewAI Framework",                       "keywords": ["CrewAI", "Crew", "Agent", "Task", "Process sequential parallel", "tools", "allow_delegation", "backstory", "role goal", "crew.kickoff"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-PLAN",
+            "name": "Planning and Reasoning",
+            "level": "Advanced",
+            "learningWeightPercent": 10,
+            "subtopics": [
+                {
+                    "code": "AGT-PLAN-1",
+                    "name": "Planning Strategies",
+                    "dotPoints": [
+                        { "code": "AGT-PLAN-1.1", "name": "Plan-and-Execute Pattern",                "keywords": ["plan-and-execute", "planner LLM", "executor LLM", "task decomposition", "PlanAndExecute", "multi-step planning", "re-planning", "step-back prompting"], "difficulty": "advanced" },
+                        { "code": "AGT-PLAN-1.2", "name": "Task Decomposition",                      "keywords": ["task decomposition", "subtasks", "dependency graph", "sequential tasks", "parallel tasks", "least-to-most prompting", "recursive task decomposition", "goal hierarchy"], "difficulty": "advanced" },
+                        { "code": "AGT-PLAN-1.3", "name": "Reflection and Self-Correction",          "keywords": ["Reflexion", "self-reflection", "self-correction", "critique model", "actor-evaluator", "verbal reinforcement learning", "iterative refinement", "error recovery"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "AGT-PLAN-2",
+                    "name": "Research Paper Implementations",
+                    "dotPoints": [
+                        { "code": "AGT-PLAN-2.1", "name": "ReAct Paper (Yao et al. 2022)",           "keywords": ["ReAct paper", "synergising reasoning acting", "HotpotQA", "ALFWorld", "WebShop", "thought action observation", "grounded reasoning", "hallucination reduction"], "difficulty": "advanced" },
+                        { "code": "AGT-PLAN-2.2", "name": "Reflexion Paper (Shinn et al. 2023)",     "keywords": ["Reflexion", "linguistic feedback", "episodic memory", "verbal reinforcement", "self-evaluation", "trial and error", "actor evaluator self-reflection model"], "difficulty": "advanced" },
+                        { "code": "AGT-PLAN-2.3", "name": "LLM-Compiler and Parallel Planning",      "keywords": ["LLM-Compiler", "parallel function calling", "DAG planner", "task fetching unit", "joiner", "replanning", "parallel tool execution", "latency reduction"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "AGT-EVAL",
+            "name": "Evaluation and Reliability",
+            "level": "Advanced",
+            "learningWeightPercent": 12,
+            "subtopics": [
+                {
+                    "code": "AGT-EVAL-1",
+                    "name": "Agent Evaluation",
+                    "dotPoints": [
+                        { "code": "AGT-EVAL-1.1", "name": "RAG Evaluation Metrics",                  "keywords": ["faithfulness", "answer relevancy", "context precision", "context recall", "RAGAS", "TruLens", "RAG triad", "groundedness", "answer correctness"], "difficulty": "intermediate" },
+                        { "code": "AGT-EVAL-1.2", "name": "Agent Task Evaluation",                   "keywords": ["task success rate", "trajectory evaluation", "step accuracy", "tool selection accuracy", "final answer quality", "LLM-as-judge", "pairwise evaluation", "AgentBench"], "difficulty": "advanced" },
+                        { "code": "AGT-EVAL-1.3", "name": "LangSmith Evaluation Datasets",           "keywords": ["LangSmith dataset", "evaluator", "run_on_dataset", "custom evaluator", "criteria evaluator", "string evaluator", "reference-free evaluation", "regression testing"], "difficulty": "advanced" }
+                    ]
+                },
+                {
+                    "code": "AGT-EVAL-2",
+                    "name": "Agent Failure Modes and Safety",
+                    "dotPoints": [
+                        { "code": "AGT-EVAL-2.1", "name": "Common Failure Modes",                    "keywords": ["hallucination", "tool misuse", "infinite loop", "task drift", "over-planning", "irreversible actions", "prompt injection", "max iterations", "stopping conditions"], "difficulty": "intermediate" },
+                        { "code": "AGT-EVAL-2.2", "name": "Guardrails and Safety Measures",          "keywords": ["guardrails", "input validation", "output validation", "Guardrails AI", "NeMo Guardrails", "content filtering", "tool permission scope", "human-in-the-loop safety"], "difficulty": "advanced" },
+                        { "code": "AGT-EVAL-2.3", "name": "Prompt Injection and Security",           "keywords": ["prompt injection", "indirect prompt injection", "malicious instructions", "untrusted content", "jailbreak", "adversarial prompt", "sandboxing", "defence strategies"], "difficulty": "advanced" }
+                    ]
+                }
+            ]
+        }
+    ]
+}
